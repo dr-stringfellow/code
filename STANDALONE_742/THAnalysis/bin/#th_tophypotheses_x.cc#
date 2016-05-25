@@ -1,0 +1,432 @@
+////////////////////////////////////////////////////////////////////////////////
+//
+// th_tophypotheses_x
+// -----------------
+//
+//            04/07/2013 Christian Boeser 
+//
+////////////////////////////////////////////////////////////////////////////////
+
+
+#include "../interface/CommandLine.h"
+
+#include <TSystem.h>
+#include <TFile.h>
+#include <TTree.h>
+#include <TKey.h>
+#include <TEventList.h>
+#include <TLorentzVector.h>
+#include <TBranch.h>
+
+#include <iostream>
+#include <sstream>
+#include <string>
+#include <vector>
+#include <cmath>
+#include <stdexcept>
+
+
+using namespace std;
+
+////////////////////////////////////////////////////////////////////////////////
+// helper
+////////////////////////////////////////////////////////////////////////////////
+Float_t Matchable(const TLorentzVector & toplep, const TLorentzVector & tophad, const TLorentzVector &whad, const TLorentzVector & gentoplep, const TLorentzVector & gentophad, const TLorentzVector & genwhad);
+static double DeltaR(const TLorentzVector & v1, const TLorentzVector & v2);
+
+////////////////////////////////////////////////////////////////////////////////
+// main
+////////////////////////////////////////////////////////////////////////////////
+
+//______________________________________________________________________________
+int main(int argc,char**argv)
+{
+  //
+  // evaluate command line options
+  //
+  CommandLine cl;
+  if (!cl.parse(argc,argv)) return 0;
+
+  vector<string> inputs      = cl.getVector<string>("inputs");
+  string         treename    = cl.getValue<string> ("treename",  "t");
+  string         dirname    =  cl.getValue<string> ("dirname", "utm");
+  bool           bestdR      = cl.getValue<bool>   ("bestdR",        false);
+  bool           perfmatch   = cl.getValue<bool>   ("perfmatch",     false);
+
+  if (!cl.check()) return 0;
+  cl.print();
+
+  //
+  // loop over all input files
+  //
+
+  for (unsigned iinput=0;iinput<inputs.size();iinput++) {
+  
+    // open input file
+    string input = inputs[iinput]; 
+
+    // read input file                                                                                                                                                                        
+    TFile* ifile = TFile::Open((input).c_str(),"READ");
+    if (!ifile->IsOpen()) { cout<<"Failed to open "<<input<<endl; return 0; }
+
+    // create temporary output file                                                                                                                                                           
+    size_t pos = input.find(".root");
+    string output = input.substr(0,pos);
+    //    output = output + ".sig.root";
+
+    TFile* ofile_hyp = new TFile((output+"_tophyp.root").c_str(),"RECREATE");
+    if (!ofile_hyp->IsOpen()) { cout<<"Failed to open "<<(output+"_tophyp.root").c_str()<<endl; return 0; }
+
+    // read input directory                                                                                                                                                                   
+    TDirectory* idir    = (TDirectory*)ifile->Get(dirname.c_str());
+    cout<<input<<"/"<<dirname<<":"<<endl;
+
+    // create output directory signal                                                                                                                                                     
+    TDirectory* odir_sig = (TDirectory*)ofile_hyp->mkdir(dirname.c_str());
+    if(0==odir_sig){cout<<"Failed to make "<<dirname<<" in "<<output<<endl;return 0;}
+
+    // create output directory background                                                                                                                                                         
+    // TDirectory* odir_bck = (TDirectory*)ofile_hyp->mkdir("other_hyp");
+    //if(0==odir_bck){cout<<"Failed to make "<<dirname<<" in "<<output<<endl;return 0;}
+
+    // open input tree                                                                                                                                                                        
+    TTree* itree = (TTree*)idir->Get(treename.c_str());
+    if(0==itree){cout<<"No "<<treename<<" in "<<output<<":"<<dirname<<endl;return 0;}
+    
+    //Don't copy reconstruction dependent information
+    if (0!=itree->FindBranch("evt")) itree->SetBranchStatus("evt",0); 
+    if (0!=itree->FindBranch("tophadwm")) itree->SetBranchStatus("tophadwm",0); 
+    if (0!=itree->FindBranch("tophadwpt")) itree->SetBranchStatus("tophadwpt",0);
+    if (0!=itree->FindBranch("tophadwphi")) itree->SetBranchStatus("tophadwphi",0);
+    if (0!=itree->FindBranch("tophadweta")) itree->SetBranchStatus("tophadweta",0);
+    if (0!=itree->FindBranch("tophadm")) itree->SetBranchStatus("tophadm",0); 
+    if (0!=itree->FindBranch("tophadpt")) itree->SetBranchStatus("tophadpt",0);
+    if (0!=itree->FindBranch("tophadphi")) itree->SetBranchStatus("tophadphi",0);
+    if (0!=itree->FindBranch("tophadeta")) itree->SetBranchStatus("tophadeta",0);
+    if (0!=itree->FindBranch("tophaddr")) itree->SetBranchStatus("tophaddr",0); 
+    if (0!=itree->FindBranch("tophadjtidx")) itree->SetBranchStatus("tophadjtidx",0);
+    if (0!=itree->FindBranch("tophadjtidx_1")) itree->SetBranchStatus("tophadjtidx_1",0);
+    if (0!=itree->FindBranch("tophadjtidx_2")) itree->SetBranchStatus("tophadjtidx_2",0);
+    if (0!=itree->FindBranch("tophadjtidx_3")) itree->SetBranchStatus("tophadjtidx_3",0);
+    if (0!=itree->FindBranch("toplepm")) itree->SetBranchStatus("toplepm",0);   
+    if (0!=itree->FindBranch("topleppt")) itree->SetBranchStatus("topleppt",0);  
+    if (0!=itree->FindBranch("toplepphi")) itree->SetBranchStatus("toplepphi",0); 
+    if (0!=itree->FindBranch("toplepeta")) itree->SetBranchStatus("toplepeta",0); 
+    if (0!=itree->FindBranch("toplepjtidx")) itree->SetBranchStatus("toplepjtidx",0);
+  
+    
+    odir_sig->cd();
+    TTree* otree = itree->CloneTree(0);
+    cout<<output<<"/"<<dirname<<"/"<<treename<<" created (temporary!)"<<endl;
+
+    //Create in otree reconstruction dependent information
+    // nEvent broken in signal MC => Popov?
+    ULong64_t evt=-99;               otree->Branch("evt",           &evt,                       "evt/l");
+    Int_t   hyp_isbest=-1;           otree->Branch("hyp_isbest",    &hyp_isbest,         "hyp_isbest/I");
+    Float_t hyp_weight=1.;           otree->Branch("hyp_weight",    &hyp_weight,         "hyp_weight/F");
+    // hyp_deltaRrel [ t+h+l , t , h , whad ];
+    Float_t hyp_deltaRrel[4]={-99};  otree->Branch("hyp_deltaRrel", hyp_deltaRrel, "hyp_deltaRrel[4]/F");    
+    Float_t tophadwm=-99;                otree->Branch("tophadwm",          &tophadwm,                     "tophadwm/F");
+    Float_t tophadwpt=-99;               otree->Branch("tophadwpt",         &tophadwpt,                   "tophadwpt/F");
+    Float_t tophadwphi=-99;              otree->Branch("tophadwphi",        &tophadwphi,                 "tophadwphi/F");
+    Float_t tophadweta=-99;              otree->Branch("tophadweta",        &tophadweta,                 "tophadweta/F");
+    Float_t tophadm=-99;                otree->Branch("tophadm",          &tophadm,                     "tophadm/F");
+    Float_t tophadpt=-99;               otree->Branch("tophadpt",         &tophadpt,                   "tophadpt/F");
+    Float_t tophadphi=-99;              otree->Branch("tophadphi",        &tophadphi,                 "tophadphi/F");
+    Float_t tophadeta=-99;              otree->Branch("tophadeta",        &tophadeta,                 "tophadeta/F");
+    Float_t tophaddr=-99;               otree->Branch("tophaddr",         &tophaddr,                   "tophaddr/F");
+
+    Int_t tophadjtidx[3]={-99,-99,-99}; otree->Branch("tophadjtidx",      tophadjtidx,           "tophadjtidx[3]/I");
+    Int_t tophadjtidx_1 = -99;          otree->Branch("tophadjtidx_1",    &tophadjtidx_1,          "tophadjtidx_1/I");
+    Int_t tophadjtidx_2 = -99;          otree->Branch("tophadjtidx_2",    &tophadjtidx_2,          "tophadjtidx_2/I");
+    Int_t tophadjtidx_3 = -99;          otree->Branch("tophadjtidx_3",    &tophadjtidx_3,         "tophadjtidx_3/I");
+    
+    Float_t toplepm=-99;                otree->Branch("toplepm",          &toplepm,                     "toplepm/F");
+    Float_t topleppt=-99;               otree->Branch("topleppt",         &topleppt,                   "topleppt/F");
+    Float_t toplepphi=-99;              otree->Branch("toplepphi",        &toplepphi,                 "toplepphi/F");
+    Float_t toplepeta=-99;              otree->Branch("toplepeta",        &toplepeta,                 "toplepeta/F");
+    Int_t toplepjtidx=-99;              otree->Branch("toplepjtidx",      &toplepjtidx,             "toplepjtidx/I");
+    
+
+    //odir_bck->cd();
+    //TTree* otree_bck = otree->CloneTree();
+
+    //Get relevant information for creating hypothesis
+    Int_t   i_njt=-99;               itree->SetBranchAddress("njt",            &i_njt);
+    Float_t i_jtpt[40]={-99};        itree->SetBranchAddress("jtpt",           i_jtpt);
+    Float_t i_jteta[40]={-99};       itree->SetBranchAddress("jteta",         i_jteta);
+    Float_t i_jtphi[40]={-99};       itree->SetBranchAddress("jtphi",         i_jtphi);
+    Float_t i_jte[40]={-99};         itree->SetBranchAddress("jte",             i_jte);
+    UChar_t i_nlepw={-99};           itree->SetBranchAddress("nlepw",        &i_nlepw);
+    Float_t i_lepwm={-99};           itree->SetBranchAddress("lepwm",        &i_lepwm);
+    Float_t i_lepwpt={-99};          itree->SetBranchAddress("lepwpt",      &i_lepwpt);
+    Float_t i_lepwphi={-99};         itree->SetBranchAddress("lepwphi",    &i_lepwphi);
+    Float_t i_lepweta={-99};         itree->SetBranchAddress("lepweta",    &i_lepweta);
+
+    Float_t i_top_tpt={-99};         itree->SetBranchAddress("top_tpt",    &i_top_tpt);
+    Float_t i_top_teta={-99};        itree->SetBranchAddress("top_teta",  &i_top_teta);
+    Float_t i_top_tphi={-99};        itree->SetBranchAddress("top_tphi",  &i_top_tphi);
+    Float_t i_top_te={-99};          itree->SetBranchAddress("top_te",      &i_top_te);
+
+    Float_t i_top_tbarpt={-99};      itree->SetBranchAddress("top_tbarpt",    &i_top_tbarpt);
+    Float_t i_top_tbareta={-99};     itree->SetBranchAddress("top_tbareta",  &i_top_tbareta);
+    Float_t i_top_tbarphi={-99};     itree->SetBranchAddress("top_tbarphi",  &i_top_tbarphi);
+    Float_t i_top_tbare={-99};       itree->SetBranchAddress("top_tbare",      &i_top_tbare);
+
+    Float_t i_top_twpt={-99};        itree->SetBranchAddress("top_twpt",    &i_top_twpt);
+    Float_t i_top_tweta={-99};       itree->SetBranchAddress("top_tweta",  &i_top_tweta);
+    Float_t i_top_twphi={-99};       itree->SetBranchAddress("top_twphi",  &i_top_twphi);
+    Float_t i_top_twe={-99};         itree->SetBranchAddress("top_twe",      &i_top_twe);
+
+    Float_t i_top_tbarwpt={-99};     itree->SetBranchAddress("top_tbarwpt",    &i_top_tbarwpt);
+    Float_t i_top_tbarweta={-99};    itree->SetBranchAddress("top_tbarweta",  &i_top_tbarweta);
+    Float_t i_top_tbarwphi={-99};    itree->SetBranchAddress("top_tbarwphi",  &i_top_tbarwphi);
+    Float_t i_top_tbarwe={-99};      itree->SetBranchAddress("top_tbarwe",      &i_top_tbarwe);
+    
+    Float_t i_top_lepcharge={-99};   itree->SetBranchAddress("top_lepcharge", &i_top_lepcharge);
+    
+    Int_t   i_nel={-99};             itree->SetBranchAddress("nel",            &i_nel);
+    Float_t i_elpt[10]={-99};        itree->SetBranchAddress("elpt",           i_elpt);
+    Float_t i_eleta[10]={-99};       itree->SetBranchAddress("eleta",         i_eleta);
+    Float_t i_elphi[10]={-99};       itree->SetBranchAddress("elphi",         i_elphi);
+    Float_t i_ele[10]={-99};         itree->SetBranchAddress("ele",             i_ele);
+    Float_t i_elcharge[10]={-99};    itree->SetBranchAddress("elcharge",   i_elcharge);
+
+    Int_t   i_nmu={-99};             itree->SetBranchAddress("nmu",            &i_nmu);
+    Float_t i_mupt[10]={-99};        itree->SetBranchAddress("mupt",           i_mupt);
+    Float_t i_mueta[10]={-99};       itree->SetBranchAddress("mueta",         i_mueta);
+    Float_t i_muphi[10]={-99};       itree->SetBranchAddress("muphi",         i_muphi);
+    Float_t i_mue[10]={-99};         itree->SetBranchAddress("mue",             i_mue);
+    Float_t i_mucharge[10]={-99};    itree->SetBranchAddress("mucharge",   i_mucharge);
+
+
+    int counter =0;
+    int counter_two = 0;
+
+    unsigned nevt = static_cast<unsigned>(itree->GetEntries());
+    cout<<nevt<<" events will be processed"<<endl;
+
+ 
+
+    //event loop
+    for (unsigned ievt=0;ievt<nevt;ievt++) {
+      //cout << "ievt: " << ievt << endl;
+
+      hyp_isbest=-99;
+      evt = ievt;
+      if (ievt%1000 == 0 || ievt <= 10)
+	std::cout << "--- ... Processing event: " << ievt << std::endl;
+      itree->GetEntry(ievt);      
+
+      // Is this correct? Only reconstruct for n(isolated lepton)==1
+      if(i_nlepw != 1) 
+	{
+	  counter++;
+	  continue;
+	}
+      if(i_njt<4) 
+	{
+	  counter++;
+	  continue;
+	}
+      TLorentzVector p4jets[100];
+      TLorentzVector p4toplep, p4tophad, p4whad;
+      TLorentzVector p4lepw;
+      for(int jets=0; jets<i_njt; jets++){
+	p4jets[jets].SetPtEtaPhiE(i_jtpt[jets],i_jteta[jets],i_jtphi[jets],i_jte[jets]);
+      }
+      p4lepw.SetPtEtaPhiM(i_lepwpt,i_lepweta,i_lepwphi,i_lepwm);
+      
+      bool has_wenu = i_nel==1;
+      bool has_wmunu = i_nmu==1;
+      TLorentzVector p4lepton;
+      Float_t lep_charge=0;
+
+      if (has_wenu)
+	{
+	  p4lepton.SetPtEtaPhiE(i_elpt[0],i_eleta[0],i_elphi[0],i_ele[0]);
+	  lep_charge = i_elcharge[0];
+	}
+      else
+	{
+	  p4lepton.SetPtEtaPhiE(i_mupt[0],i_mueta[0],i_muphi[0],i_mue[0]);
+	  lep_charge = i_mucharge[0];
+	}
+
+      //Fill GenInfo from Top and Anti-Top according to lepton charge
+      if(lep_charge > 0 && lep_charge==i_top_lepcharge){
+	p4toplep.SetPtEtaPhiE(i_top_tpt,i_top_teta,i_top_tphi,i_top_te);
+	p4tophad.SetPtEtaPhiE(i_top_tbarpt,i_top_tbareta,i_top_tbarphi,i_top_tbare);
+	p4whad.SetPtEtaPhiE(i_top_tbarwpt, i_top_tbarweta,i_top_tbarwphi,i_top_tbarwe);	    
+      }
+      else if (lep_charge <0 && lep_charge==i_top_lepcharge){
+	p4toplep.SetPtEtaPhiE(i_top_tbarpt,i_top_tbareta,i_top_tbarphi,i_top_tbare);
+	p4tophad.SetPtEtaPhiE(i_top_tpt,i_top_teta,i_top_tphi,i_top_te);
+	p4whad.SetPtEtaPhiE(i_top_twpt, i_top_tweta,i_top_twphi,i_top_twe);	    
+      }
+      else
+	{
+	  //cout << "Hier" << endl;
+	  continue;
+	}
+
+     if (!has_wenu &&!has_wmunu)
+	{
+	  counter++;
+	}
+      // gen particles
+      
+      // Storing DeltaR and jet idxs with [toplepjt, tophadq1, tophadq2, tophadbjt]
+      double best = numeric_limits<double>::infinity();
+      Int_t best_i[4]; best_i[0]=-1;best_i[1]=-1; best_i[2]=-1;best_i[3]=-1;
+      toplepjtidx=-1;
+      tophadjtidx[0]=-1;
+      tophadjtidx[1]=-1;
+      tophadjtidx[2]=-1;
+      Int_t count_hyp=-1; // -1 for signal hypothesis
+ 
+      // Loop over all jets i,j,k,l
+      for (Int_t i=0; i<i_njt; i++){  // b from toplep
+	if(i==0)
+	  counter_two++;
+
+	TLorentzVector rectoplep = p4lepw + p4jets[i];
+	for (Int_t j=0; j<i_njt; j++){  // q1 from Whad
+	  if (j!=i){
+	    for (Int_t k=0; k<i_njt; k++){  // q2 from Whad
+              if ((k!=i )&&(k>j)) {  // switching of q1 & q2 does not change Whad, so take only one
+		TLorentzVector recwhad = p4jets[j] + p4jets[k];	    
+		for (Int_t l=0; l<i_njt; l++){  // b from tophad
+		  if(l!=k && l!=j && l!=i) {
+		    count_hyp++;
+		    TLorentzVector rectophad;
+		    rectophad = recwhad + p4jets[l];		    
+		    Float_t DRtoplep = DeltaR(rectoplep,p4toplep) + fabs(rectoplep.Pt() - p4toplep.Pt())/p4toplep.Pt();
+		    Float_t DRtophad = DeltaR(rectophad,p4tophad) + fabs(rectophad.Pt() - p4tophad.Pt())/p4tophad.Pt();
+		    Float_t DRwhad = DeltaR(recwhad,p4whad) + fabs(recwhad.Pt() - p4whad.Pt())/p4whad.Pt();
+		    Float_t DeltaRval = DRtoplep + DRtophad + DRwhad;
+		    if(DeltaRval<best){
+		      //cout << " best \n ";
+		      best=DeltaRval;
+		      best_i[0]=i;
+		      best_i[1]=j;
+		      best_i[2]=k;
+		      best_i[3]=l;
+		    }
+		  }}//end thophad b jet
+	      }}//end q2 from Tophad
+	  }}//end q1 from Tophad
+      }  // end b from toplep 
+
+      //------- Uncomment if only Matchable events should be filled
+      // TLorentzVector besttoplep = p4lepw + p4jets[best_i[0]];
+      // TLorentzVector besttophad = p4jets[best_i[1]] + p4jets[best_i[2]];
+      // TLorentzVector bestwhad = p4jets[best_i[3]];
+      // if(! Matchable(besttoplep,besttophad,bestwhad, p4toplep, p4tophad, p4whad)) continue;
+      
+
+      for (Int_t i=0; i<i_njt; i++){  // b from toplep
+	TLorentzVector rectoplep = p4lepw + p4jets[i];
+	for (Int_t j=0; j<i_njt; j++){  // q1 from Tophad
+	  if (j!=i){
+	    for (Int_t k=0; k<i_njt; k++){  // q2 from Tophad
+              if ((k!=i )&&(k>j)) {  // switching of q1 & q2 does not change Tophad, so take only one
+		TLorentzVector recwhad = p4jets[j] + p4jets[k];	    
+		for (Int_t l=0; l<i_njt; l++){  // top had b jet
+		  if(l!=k && l!=j && l!=i) {
+		    TLorentzVector rectophad=recwhad + p4jets[l];		    
+		    if(best_i[0]==i && best_i[1]==j && best_i[2]==k && best_i[3]==l)
+		      {
+			hyp_isbest = 1;
+			//counter++;
+			hyp_weight = 1.0;
+		      }
+		    else if(best_i[0]==-1 || best_i[1]==-1 || best_i[2]==-1 ||best_i[3]==-1)
+		      {
+			hyp_isbest = -99;
+
+		      }
+		    else
+		      {
+			hyp_isbest = 0;
+			hyp_weight = 1./(Float_t)count_hyp;
+		      }
+
+		    Float_t DRtoplep = DeltaR(rectoplep,p4toplep) + fabs(rectoplep.Pt() - p4toplep.Pt())/p4toplep.Pt();
+		    Float_t DRtophad = DeltaR(rectophad,p4tophad) + fabs(rectophad.Pt() - p4tophad.Pt())/p4tophad.Pt();
+		    Float_t DRwhad = DeltaR(recwhad,p4whad) + fabs(recwhad.Pt() - p4whad.Pt())/p4whad.Pt();
+
+		    hyp_deltaRrel[0]= DRtoplep + DRtophad + DRwhad;
+		    hyp_deltaRrel[1]= DRtoplep;
+		    hyp_deltaRrel[2]= DRtophad;
+		    hyp_deltaRrel[3]= DRwhad;
+		    tophadwm=recwhad.M();
+		    tophadwpt=recwhad.Pt();
+		    tophadweta=recwhad.Eta();
+		    tophadwphi=recwhad.Phi();
+		    tophadm=rectophad.M();
+		    tophadpt=rectophad.Pt();
+		    tophadphi=rectophad.Phi();
+		    tophadeta=rectophad.Eta();
+		    tophaddr=p4jets[j].DeltaR(p4jets[k]);
+		    tophadjtidx[0]=j;
+		    //tophadjtidx_1 = j;
+		    tophadjtidx[1]=k;
+		    //tophadjtidx_2 = k;
+		    tophadjtidx[2]=l;
+		    //tophadjtidx_3 = l;
+		    toplepm=rectoplep.M();
+		    topleppt=rectoplep.Pt();
+		    toplepphi=rectoplep.Phi();
+		    toplepeta=rectoplep.Eta();
+		    toplepjtidx=i;
+
+		    otree->Fill();
+		    //cout<< "ievt2 " << ievt<< endl;
+		  }}//end top had b jet
+	      }}//end q2 from Tophad
+	  }}//end q1 from Tophad
+      }  // end b from toplep 
+     
+    }
+    
+    cout << "Counter: " << counter << endl;
+    cout << "Counter_two: " << counter_two << endl;
+    
+    cout<<"Save extended tree to "<<output<<" ... "<<flush;
+    ifile->Close();
+    delete ifile;
+    ofile_hyp->Write();
+    ofile_hyp->Close();
+    delete ofile_hyp;
+
+    cout<<"DONE!\n"<<endl;
+    
+  } // ifile
+  
+
+  return 0;
+}
+
+
+
+////////////////////////////////////////////////////////////////////////////////
+// helpers
+////////////////////////////////////////////////////////////////////////////////
+
+Float_t Matchable(const TLorentzVector & toplep, const TLorentzVector & tophad, const TLorentzVector & whad, const TLorentzVector & gentoplep, const TLorentzVector & gentophad, const TLorentzVector & genwhad){
+  Float_t DRtoplep = DeltaR(toplep,gentoplep); 
+  Float_t DRtophad = DeltaR(tophad,gentophad);
+  Float_t DRwhad = DeltaR(whad,genwhad); 
+  return (DRtoplep<0.5)&&(DRtophad<0.5)&&(DRwhad<0.5);//+ptreltoplep+ptreltophad+ptrelwhad;
+}
+
+static double DeltaR(const TLorentzVector & v1, const TLorentzVector & v2) {
+  Double_t DeltaR = 0.0;
+  Double_t DeltaPhi = TMath::Abs(v1.Phi()-v2.Phi());
+  if (DeltaPhi>TMath::Pi())
+    DeltaPhi = 2*TMath::Pi() - DeltaPhi;
+  Double_t DeltaEta = v1.Eta() - v2.Eta();
+  DeltaR = sqrt(TMath::Power(DeltaPhi, 2) + TMath::Power(DeltaEta, 2));
+  return DeltaR;
+}

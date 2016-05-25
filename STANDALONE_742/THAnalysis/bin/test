@@ -1,0 +1,20 @@
+            jtrawpt[i]        =   rawpt_temp[indices[i]];
+            jtpt[i]           =   pt_temp[indices[i]];
+            if(jtpt[i]>20)
+              njt++;
+            jteta[i]          =   eta_temp[indices[i]];
+            jtphi[i]          =   phi_temp[indices[i]];
+            jte[i]            =   e_temp[indices[i]];
+            jtcsvt[i]         =   csvt_temp[indices[i]];
+            jtntracks[i]      =   ntracks_temp[indices[i]];
+            jtarea[i]         =   area_temp[indices[i]];
+            jtpull[i]         =   pull_temp[indices[i]];
+            jtcharge[i]       =   charge_temp[indices[i]];
+            jtid[i]           =   id_temp[indices[i]];
+            jtchhadmult[i]    =   chhadmult_temp[indices[i]];
+
+            jtgenflv[i]       =   genflv_temp[indices[i]];
+            jtgenpt[i]        =   genpt_temp[indices[i]];
+            jtgeneta[i]       =   geneta_temp[indices[i]];
+            jtgenphi[i]       =   genphi_temp[indices[i]];
+            jtgene[i]         =   gene_temp[indices[i]];

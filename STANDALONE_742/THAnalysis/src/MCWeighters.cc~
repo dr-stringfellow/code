@@ -1,0 +1,371 @@
+#include "interface/MCWeighters.h"
+//#include "KITA/KITAObjects/interface/KITAObject.h"
+//#include "KITA/KITAObjects/src/classes.h"
+//#include "interface/Utils.hpp"
+
+
+#include <string>
+#include <TFile.h>
+#include <map>
+#include <string>
+#include <iostream>
+#include <iomanip>
+#include <vector>
+
+
+#include "TH1D.h"
+#include "TH3D.h"
+
+
+#include <boost/filesystem.hpp>
+#include <boost/optional.hpp>
+#include <boost/property_tree/info_parser.hpp>
+#include <boost/lexical_cast.hpp>
+
+//#include <boost/algorithm/string.hpp>
+#include <boost/algorithm/string/split.hpp>
+#include <boost/algorithm/string/classification.hpp>
+
+using namespace std;
+namespace fs = boost::filesystem;
+
+using boost::property_tree::ptree;
+using boost::optional;
+
+/*
+void print_tree(const ptree & tree){
+    for(ptree::const_iterator it=tree.begin(); it!=tree.end(); ++it){
+    cout << it->first << ": " << endl;
+    for(ptree::const_iterator itt=it->second.begin(); itt!=it->second.end(); ++itt){
+        cout << "    " << itt->first << ": " << itt->second.get_value<string>() << endl;
+    }
+    }
+}
+*/
+
+KITAGenInfo*  kitaGenInfo = new KITAGenInfo();
+
+
+namespace{
+
+/*     
+// see  https://twiki.cern.ch/twiki/bin/view/CMS/PileupMCReweightingUtilities
+// flat10 is from SimGeneral/MixingModule/python/mix_E7TeV_FlatDist10_2011EarlyData_inTimeOnly_cfi.py:
+const double flat10_vector[25] = {0.0698146584, 0.0698146584, 0.0698146584,0.0698146584,0.0698146584,0.0698146584,0.0698146584,0.0698146584,0.0698146584,0.0698146584,0.0698146584,  // <-- 10
+        0.0630151648,0.0526654164,0.0402754482,0.0292988928,0.0194384503,0.0122016783,0.007207042,0.004003637,0.0020278322,
+        0.0010739954,0.0004595759,0.0002229748,0.0001028162,4.58337152809607E-05};
+
+double summer11_pu_s4_vector[25] = {
+    0.104109,
+    0.0703573,
+    0.0698445,
+    0.0698254,
+    0.0697054,
+    0.0697907,
+    0.0696751,
+    0.0694486,
+    0.0680332,
+    0.0651044,
+    0.0598036,
+    0.0527395,
+    0.0439513,
+    0.0352202,
+    0.0266714,
+    0.019411,
+    0.0133974,
+    0.00898536,
+    0.0057516,
+    0.00351493,
+    0.00212087,
+    0.00122891,
+    0.00070592,
+    0.000384744,
+    0.000219377
+};*/
+
+
+
+TH1* get_histo(const string &fname, const string & hname){
+    TFile f(fname.c_str(), "read");
+    if(f.IsZombie()){
+        throw "get_histo: Could not open root file '" + fname + "'";
+    }
+    f.cd();
+    TH1* histo = dynamic_cast<TH1*>(gDirectory->Get(hname.c_str()));
+    if(histo==0){
+        throw "get_histo: Could not get histo '" + hname + "' from file '" + fname + "'";
+    }
+    histo->SetDirectory(0);
+    return histo;
+}
+}
+
+
+
+// cfg_spec[0] is the filename, cfg_spec[1] the histogram name and the optional cfg_spec[2] is the rebin factor
+TH1 * get_histo(const vector<string> & cfg_spec){
+    assert(cfg_spec.size()>=2 && cfg_spec.size()<=3);
+    TH1 * result = get_histo(cfg_spec[0], cfg_spec[1]);
+    if(cfg_spec.size()==3){
+        int rebin_factor = boost::lexical_cast<int>(cfg_spec[2]);
+        result->Rebin(rebin_factor);
+    }
+    return result;
+}
+
+OneDPileupReweighter::OneDPileupReweighter(TH1 * data_pileup, TH1 * mc_pileup){
+    assert(mc_pileup->GetXaxis()->GetXmin() == 0.0);
+    assert(data_pileup->GetXaxis()->GetXmin() == 0.0);   
+    double binwidth1 = data_pileup->GetXaxis()->GetXmax() / data_pileup->GetNbinsX();
+    double binwidth2 = mc_pileup->GetXaxis()->GetXmax() / mc_pileup->GetNbinsX();    
+    if(binwidth1!=binwidth2) {
+        cout << "Warning: Bin width in data histogram is " << binwidth1 <<". Should be equal to bin width in MC which is "<< binwidth2 << "."  <<endl;
+    }
+    assert(binwidth1==binwidth2);
+    binwidth = binwidth1;
+
+    int imax = min(data_pileup->GetNbinsX(), mc_pileup->GetNbinsX());
+    pileup_weights.resize(imax, 0.0);
+    double expected_weight = 0.0;
+    double expected_weight_totalw = 0;
+    for(int i=0; i<imax; ++i){
+        double npu_data = data_pileup->GetBinContent(i+1);
+        double npu_mc = mc_pileup->GetBinContent(i+1);
+        if(npu_mc==0.0){
+            if(npu_data > 0.0){
+                cout << "Warning: n_pileup=" << i << " was not generated in MC but is > 0 (" << npu_data << ") in data. --> will rescale rest of n_pileup weights!" << endl;
+            }
+            continue;
+        }
+        pileup_weights[i] = npu_data / npu_mc;
+        expected_weight += npu_data;  //pileup_weights[i] * npu_mc;
+        expected_weight_totalw += npu_mc;
+    }
+    expected_weight /= expected_weight_totalw;
+    for(int i=0; i<imax; ++i){
+        pileup_weights[i] /= expected_weight;
+	//        cout << "weight for npu=" << i*binwidth << ": " << result[i] << endl;
+    }
+}
+
+double OneDPileupReweighter::getPileupWeight(){
+  const double npu = kitaGenInfo->poisson_mean;// rec.genInfo->poisson_mean;
+    int index = npu / binwidth;
+    if(index < (int)pileup_weights.size()) return pileup_weights[index];
+    else return -1;
+}
+
+
+double get_sample_weight(const std::string & path_to_sampleinfo_cfg, const std::string & nickname, double lumi_pb){
+    ptree tree;
+    boost::property_tree::read_info(path_to_sampleinfo_cfg, tree);
+    ptree::const_iterator it = tree.begin();
+    for(; it!=tree.end(); ++it){
+        // skip the "DATA" entry as it has a special format
+        if(it->first=="DATA") continue;
+        string dsetpath_cfg = it->second.get<string>("datasetpath");
+        if(dsetpath_cfg == nickname) break;
+        //also allow wildcard '*' at the end:
+        if(dsetpath_cfg[dsetpath_cfg.size()-1]=='*' && nickname.find(dsetpath_cfg.substr(0, dsetpath_cfg.size()-1))==0) break;
+    }
+    if(it==tree.end()){
+        throw "SampleInfoWeighter: no entry in cfg file found for nickname '" + nickname + "'";
+    }
+    unsigned int nevents = it->second.get<unsigned int>("nevents");
+    double xsec = it->second.get<double>("xsec");
+    return lumi_pb * xsec / nevents;
+}
+
+ThreeDPileupReweighter::ThreeDPileupReweighter(std::string rootfilename, std::string histoname){
+    cout << "Using 3D pileup reweighting" << endl;
+    histfile = new TFile(rootfilename.c_str(), "read");
+    if(histfile->IsZombie()){
+        throw "SampleInfoWeighter: Could not open root file '" + rootfilename + "'";
+    }
+    TH3D* pileup_w_temp = dynamic_cast<TH3D*>((gDirectory->Get(histoname.c_str())));
+    //pileup_w_temp->Copy(*pileup_w);
+    pileup_w = new TH3D(*pileup_w_temp);
+    if(pileup_w==0){
+        throw "SampleInfoWeighter: Could get histo '" + histoname + "' from file '" + rootfilename + "'";
+    }
+                pileup_w_systup = pileup_w_systdown = NULL;
+    max_npu = pileup_w->GetXaxis()->GetXmax();
+    assert((int)pileup_w->GetYaxis()->GetXmax() == max_npu);
+    assert((int)pileup_w->GetZaxis()->GetXmax() == max_npu);
+                //open systematic distris if exist
+                gDirectory->ls();
+                TString systsuf="_up";
+    pileup_w_temp = dynamic_cast<TH3D*>((gDirectory->Get(histoname.c_str()+systsuf)));
+                if(pileup_w_temp)
+                        pileup_w_systup = new TH3D(*pileup_w_temp);
+                systsuf="_down";
+    pileup_w_temp = dynamic_cast<TH3D*>((gDirectory->Get(histoname.c_str()+systsuf)));
+                if(pileup_w_temp)
+                        pileup_w_systdown = new TH3D(*pileup_w_temp);
+                weight_pileup_i_up = weight_pileup_i_down = -1; 
+}
+
+
+double ThreeDPileupReweighter::getPileupWeight(){
+        if(pileup_w_systup!=NULL && weight_pileup_i_up==-1){
+	  weight_pileup_i_up = 1;//rec.addProcessor_var("weight_pileup_up");
+                //cout << "Setting up pileup_up" << endl;
+        }
+        if(pileup_w_systup!=NULL && weight_pileup_i_down==-1)
+	  weight_pileup_i_down = 2;//rec.addProcessor_var("weight_pileup_down");
+
+        int ootbef = kitaGenInfo->pileup_ootbefore;//rec.genInfo->pileup_ootbefore;
+        int ootaft = kitaGenInfo->pileup_ootafter;//rec.genInfo->pileup_ootafter;
+        int intime = kitaGenInfo->pileup_intime;//rec.genInfo->pileup_intime;
+        assert(intime>=0);
+        assert(ootbef>=0);
+        assert(ootaft>=0);
+        if(intime < max_npu && ootbef< max_npu && ootaft < max_npu){
+                double pu = pileup_w->GetBinContent(ootbef,intime,ootaft);
+                //cout << pu << endl;
+                if(pileup_w_systup)
+		  //  rec.current_processor_vars->at(weight_pileup_i_up).value =  pileup_w_systup->GetBinContent(ootbef,intime,ootaft);
+                if(pileup_w_systdown)
+		  //  rec.current_processor_vars->at(weight_pileup_i_down).value =  pileup_w_systdown->GetBinContent(ootbef,intime,ootaft);
+                return pu;
+        }
+        else{
+                if(pileup_w_systup)
+		  // rec.current_processor_vars->at(weight_pileup_i_up).value =   -1;
+                if(pileup_w_systdown)
+		  // rec.current_processor_vars->at(weight_pileup_i_down).value = -1;
+                return -1;
+        }
+}
+
+
+
+SampleInfoWeighter::SampleInfoWeighter(const std::string & path_to_sampleinfo_cfg, const std::string & datasetpath, const std::string & systematic_shift)
+  : pileup_weights_1D(0), pileup_weights_3D(0), apply_pileup(true), apply_xsec(true),weight_onepb_i(-1),weight_pileup_i(-1){
+    ptree tree;
+    string sinfo_path = path_to_sampleinfo_cfg;
+    if(path_to_sampleinfo_cfg==""){
+      std::cout << "PARSEFILENAMES" << endl;
+      vector<string> filenames;
+      //vector<string> filenames = parse_file_names(getEnv<string>("FILE_NAMES"));
+        if(filenames.size()==0){
+            throw string("SampleInfoWeighter: variable FILE_NAMES not set / does not contain a filename");
+        }
+        fs::path p(filenames[0]);
+        p.remove_filename();
+        p /= "..";
+        p /= "sample-info.cfg";
+        sinfo_path = p.string();
+    }
+    boost::property_tree::read_info(sinfo_path, tree);
+    string dsetpath = datasetpath;
+    cout << "datasetpath: " << datasetpath << endl;
+    if(dsetpath==""){
+      cout << "dsetpath was empty" << endl;
+      dsetpath = "";//getEnv<string>("DATASETPATH");
+    }
+    if(dsetpath.find("MC_") != 0){
+      cout <<  "SampleInfoWeighter: from dsetpath '" + dsetpath + "', it looks like we are processing data; but this works only for MC! ";
+    }
+    ptree::const_iterator it = tree.begin();
+    for(; it!=tree.end(); ++it){
+        // skip the "DATA" entry as it has a special format
+        if(it->first=="DATA") continue;
+        string dsetpath_cfg = it->second.get<string>("datasetpath");
+        if(dsetpath_cfg == dsetpath) break;
+        //also allow wildcard '*' at the end:
+        if(dsetpath_cfg[dsetpath_cfg.size()-1]=='*' && dsetpath.find(dsetpath_cfg.substr(0, dsetpath_cfg.size()-1))==0) break;
+    }
+    if(it==tree.end()){
+        throw "SampleInfoWeighter: no entry in cfg file found for datasetpath '" + dsetpath + "'";
+    }
+    unsigned int nevents = it->second.get<unsigned int>("nevents");
+    double xsec = it->second.get<double>("xsec");
+    // look for the data info:
+    ptree::assoc_iterator data_it = tree.find("DATA");
+    if(data_it==tree.not_found()){
+        throw string("SampleInfoWeighter: DATA entry not found!");
+    }
+    double lumi = data_it->second.get<double>("lumi");
+    xs_weight = lumi * xsec / nevents;
+    cout << "lumi = " << lumi << " xsec = " << xsec << " nevents = " << nevents << endl;
+    cout << "SampleInfoWeighter: using lumi " << lumi << "; xs_weight is " << xs_weight << " for " << dsetpath << endl;
+    
+    // handle pileup:
+    optional<string> pileup = it->second.get_optional<string>("pileup");
+    optional<string> data_pileup = data_it->second.get_optional<string>("pileup");
+    
+    if(systematic_shift.find("up") != string::npos)
+      data_pileup = data_it->second.get_optional<string>("pileup_sysup");
+    if(systematic_shift.find("down") != string::npos)
+      data_pileup = data_it->second.get_optional<string>("pileup_sysdown");
+    
+    if(data_pileup && pileup){
+        //construct path to the root file (relative to sample-info.cfg)
+        fs::path p(sinfo_path);
+        p.remove_filename();
+        vector<string> parts;
+        if(pileup->find("3D")!=string::npos){
+             boost::split(parts, *pileup, boost::is_any_of(":"));
+             assert(parts.size()==2);
+             pileup_weights_3D = new ThreeDPileupReweighter(p.string() + "/" + parts[0], parts[1]);
+        }
+        else{
+            boost::split(parts, *data_pileup, boost::is_any_of(":"));
+            // for backward compatibility, use the default name "pileup":
+            if(parts.size()==1){
+                parts.push_back("pileup");
+            }
+            parts[0] = p.string() + "/" + parts[0];
+            TH1 * data_histo = get_histo(parts);
+            
+            // read the mc histo
+            boost::split(parts, *pileup, boost::is_any_of(":"));
+            parts[0] = p.string() + "/" + parts[0];
+            TH1 * mc_histo = get_histo(parts);
+            pileup_weights_1D = new OneDPileupReweighter(data_histo, mc_histo);
+	    // cout << " bla " << pileup_weights->getPileupWeight() << endl;
+        }
+    }
+    else{
+       cout << "No pileup entry in sample-info.cfg for data / MC. Not doing the pileup reweighting!" << endl;
+    }
+}
+
+double SampleInfoWeighter::getWeights1D(){
+  return pileup_weights_1D->getPileupWeight();
+}
+
+double SampleInfoWeighter::getWeights3D(){
+  return pileup_weights_3D->getPileupWeight();
+}
+
+
+/*double
+ SampleInfoWeighter::getWeights(){
+    if(apply_xsec){
+        rec.weight *= xs_weight;
+        if(weight_onepb_i == -1){
+            weight_onepb_i = rec.addProcessor_var("weight_onepb");
+        }
+        rec.current_processor_vars->at(weight_onepb_i).value = xs_weight;
+	}
+    if(apply_pileup && pileup_weights){
+      // assert(kitaGenInfo->GenInfo);
+   
+        double pileupweight = pileup_weights->getPileupWeight(); //pileup_weights->getPileupWeight(rec);
+        cout << "pileup weight for pm " << kitaGenInfo->poisson_mean << ": " << pileupweight << endl;
+	//    if(pileupweight!=-1){
+	//        rec.weight *= pileupweight; 
+	//         rec.current_processor_vars->at(weight_pileup_i).value *=  pileupweight;
+	//   }
+        // what now? --> should usually not happen if we have weights for all generated pileup multiplicities; so output a warning.
+        // For now, the next best thing is to ignore this event since the rest of the n_pileup spectrum has been normalized properly.
+        else{
+            cout << "WARNING: found true pileup multiplicity " << kitaGenInfo->GenInfo.poisson_mean << " for which we do not have a weight!" << endl;
+            return -1;
+        }
+    }
+    return pileupweight;
+}*/
+

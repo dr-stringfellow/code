@@ -1,0 +1,104 @@
+Index: JetMETObjects/interface/JetCorrectorParameters.h
+===================================================================
+RCS file: /local/reps/CMSSW/CMSSW/CondFormats/JetMETObjects/interface/JetCorrectorParameters.h,v
+retrieving revision 1.17
+diff -r1.17 JetCorrectorParameters.h
+14d13
+< #include "FWCore/Utilities/interface/Exception.h"
+Index: JetMETObjects/src/JetCorrectionUncertainty.cc
+===================================================================
+RCS file: /local/reps/CMSSW/CMSSW/CondFormats/JetMETObjects/src/JetCorrectionUncertainty.cc,v
+retrieving revision 1.4
+diff -r1.4 JetCorrectionUncertainty.cc
+4d3
+< #include "FWCore/Utilities/interface/Exception.h"
+118c117
+<             throw cms::Exception("JetCorrectionUncertainty::")<<" jet eta is not set";
+---
+> 	    throw std::runtime_error("JetCorrectionUncertainty: jet eta is not set");
+124c123
+<             throw cms::Exception("JetCorrectionUncertainty::")<<" jet pt is not set";  
+---
+>             throw std::runtime_error("JetCorrectionUncertainty");
+130c129
+<             throw cms::Exception("JetCorrectionUncertainty::")<<" jet phi is not set";  
+---
+>             throw std::runtime_error("JetCorrectionUncertainty");
+136c135
+<             throw cms::Exception("JetCorrectionUncertainty::")<<" jet energy is not set";
+---
+>             throw std::runtime_error("JetCorrectionUncertainty");
+142c141
+<             throw cms::Exception("JetCorrectionUncertainty::")<<" jet emf is not set";
+---
+>             throw std::runtime_error("JetCorrectionUncertainty");
+148c147
+<             throw cms::Exception("JetCorrectionUncertainty::")<<" lepton px is not set";  
+---
+>             throw std::runtime_error("JetCorrectionUncertainty");
+154c153
+<             throw cms::Exception("JetCorrectionUncertainty::")<<" lepton py is not set";  
+---
+>             throw std::runtime_error("JetCorrectionUncertainty");
+160c159
+<             throw cms::Exception("JetCorrectionUncertainty::")<<" lepton pz is not set";  
+---
+>             throw std::runtime_error("JetCorrectionUncertainty");
+164c163
+<         throw cms::Exception("JetCorrectionUncertainty::")<<" unknown parameter "<<fNames[i];
+---
+>         throw std::runtime_error("JetCorrectionUncertainty");
+188c187
+<     throw cms::Exception("JetCorrectionUncertainty")<<" not positive lepton-jet momentum: "<<lj2;
+---
+>     throw std::runtime_error("JetCorrectionUncertainty");
+Index: JetMETObjects/src/JetCorrectorParameters.cc
+===================================================================
+RCS file: /local/reps/CMSSW/CMSSW/CondFormats/JetMETObjects/src/JetCorrectorParameters.cc,v
+retrieving revision 1.22
+diff -r1.22 JetCorrectorParameters.cc
+476,477c476
+<   throw cms::Exception("InvalidInput") << " cannot find key " << static_cast<int>(k) 
+< 				       << " in the JEC payload, this usually means you have to change the global tag" << std::endl;
+---
+>   throw std::runtime_error("InvalidInput: cannot find key k in the JEC payload, this usually means you have to change the global tag");
+558c557
+<   throw cms::Exception("InvalidInput") << " Cannot find label " << label << std::endl;
+---
+>   throw std::runtime_error("InvalidInput: cannot find label");
+566c565
+< #include "FWCore/Utilities/interface/typelookup.h"
+---
+> //#include "FWCore/Utilities/interface/typelookup.h"
+568,569c567,568
+< TYPELOOKUP_DATA_REG(JetCorrectorParameters);
+< TYPELOOKUP_DATA_REG(JetCorrectorParametersCollection);
+---
+> //TYPELOOKUP_DATA_REG(JetCorrectorParameters);
+> //TYPELOOKUP_DATA_REG(JetCorrectorParametersCollection);
+Index: JetMETObjects/src/SimpleJetCorrectionUncertainty.cc
+===================================================================
+RCS file: /local/reps/CMSSW/CMSSW/CondFormats/JetMETObjects/src/SimpleJetCorrectionUncertainty.cc,v
+retrieving revision 1.3
+diff -r1.3 SimpleJetCorrectionUncertainty.cc
+3d2
+< #include "FWCore/Utilities/interface/Exception.h"
+5a5,6
+> #include <stdexcept>
+> 
+33c34
+<     throw cms::Exception("SimpleJetCorrectionUncertainty")<<" bin variables out of range";
+---
+>     throw std::runtime_error("SimpleJetCorrectionUncertainty: bin variables out of range");
+41c42
+<     throw cms::Exception("SimpleJetCorrectionUncertainty")<<" wrong bin: "<<fBin<<": only "<<mParameters->size()<<" are available";
+---
+>     throw std::runtime_error("SimpleJetCorrectionUncertainty: wrong bin");
+44c45
+<     throw cms::Exception ("SimpleJetCorrectionUncertainty")<<"wrong # of parameters: multiple of 3 expected, "<<p.size()<< " got";
+---
+>     throw std::runtime_error("SimpleJetCorrectionUncertainty: wrong # of parameters: multiple of 3 expected");
+85c86
+<         throw cms::Exception("SimpleJetCorrectionUncertainty")<<" interpolation error";
+---
+> 	throw std::runtime_error("SimpleJetCorrectionUncertainty: interpolation error");

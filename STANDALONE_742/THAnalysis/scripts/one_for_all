@@ -1,0 +1,117 @@
+#!/bin/bash
+
+source ~/.profile
+
+if [ -z "$1" ]; then echo "Please specify rootfile! Usage:";
+    echo "$ one_for_all ttbar-semi.root";
+    exit 0; 
+fi;
+
+ROOTFILE=${1/.root/}.root
+
+if [ -z "$2" ]; then
+    title="__________________one for all!________________________"
+    prompt="Is sample $ROOTFILE already in all systematics folders?"
+    options=("Yes, go ahead!" "No, please do so!" "It is not needed for it", "Under constr: Special")
+    echo ""
+    echo "$title"
+    PS3="$prompt "
+    select opt in "${options[@]}" "Quit"; do 
+	case "$REPLY" in
+	    1 ) echo "$opt";;
+	    2 ) echo "$opt";;
+	    3 ) echo "$opt";;
+	    5 ) echo "Preparing coffee, please wait ..."; sleep 8; echo " just kidding, go to 9-2 !! "; break;;
+	    $(( ${#options[@]}+1 )) ) echo "Goodbye!"; break;;
+	    *) echo "Invalid option. Try another one.";continue;;
+	esac
+	break;
+    done
+else
+    REPLY=$2
+fi
+
+if [[ "$ROOTFILE" == *FullLept*.root ]]; then
+    tt_ext="--ext '-isFull 1'";
+elif [[ "$ROOTFILE" == *SemiLept*.root ]]; then
+    tt_ext="--ext '-isSemi 1'";
+    tt_sig="--ttsig '-signal 1'";
+elif [[ "$ROOTFILE" == TTbar-madgraph-*.root ]]; then
+    tt_ext="--ext '-isIncl 1'";
+fi;
+if [[ "$ROOTFILE" == TH-madgraph-Summer12.root ]]; then
+    th_sig="--thsig '-signal 1'";
+fi;
+
+##
+##  OPTION DEFINITIONS
+##
+
+if [[ "$REPLY" == "4" ]]; then
+    for syst in MET_UP MET_DOWN; do 
+	if [[ "$syst" == *_* ]]; then 
+	    sysstring=\-\-systematic\ $syst
+	fi
+	for i in 3tt_incl 4tt_incl ttbar_cr_incl; do
+	    COMMAND="all_for_one --sample ${ROOTFILE} --region ${i} ${tt_ext} ${tt_sig} ${th_sig} ${sysstring} --firsttime false"
+	    eval $COMMAND > tmp.sh
+	    th_submit.py -i tmp.sh -q long
+	    rm tmp.sh
+	done
+    done
+fi
+    
+if [[ "$REPLY" == "1" ]]; then
+    for syst in xx JER_UP JER_DOWN JES_UP JES_DOWN MET_UP MET_DOWN; do 
+	if [[ "$syst" == *_* ]]; then 
+	    sysstring=\-\-systematic\ $syst
+	fi
+	for i in 3tt_incl 4tt_incl ttbar_cr_incl; do
+	    COMMAND="all_for_one --sample ${ROOTFILE} --region ${i} ${tt_ext} ${tt_sig} ${th_sig} ${sysstring} --firsttime false"
+	    eval $COMMAND  > tmp.sh
+            th_submit_urgent.py -i tmp.sh -q long
+	    rm tmp.sh
+	done
+    done
+fi
+
+if [[ "$REPLY" == "2" ]]; then
+    for sys in JER_UP JER_DOWN JES_UP JES_DOWN MET_UP MET_DOWN; do 
+	COMMAND="all_for_one --sample ${1/.root/}.root --region ttbar_cr_incl --firsttime true --systematic ${sys}"
+	eval $COMMAND > tmp.sh;
+	th_submit.py -i tmp.sh -q medium; 
+        rm tmp.sh
+    done 
+    echo -e "\n !!!!!!!!!!!!!!!!!!!! \n"
+    echo Now wait until all jobs are finished! 
+    echo -e "\n !!!!!!!!!!!!!!!!!!!! \n"
+fi;
+
+if [[ "$REPLY" == "3" ]]; then
+    for i in 3tt_incl 4tt_incl ttbar_cr_incl; do
+	COMMAND="all_for_one --sample ${ROOTFILE} --region ${i} ${tt_ext} ${tt_sig} ${th_sig}"
+	eval $COMMAND > tmp.sh
+        th_submit.py -i tmp.sh -q long
+        rm tmp.sh
+    done
+fi
+
+if [[ "$REPLY" == "ttbar" ]]; then
+    COMMAND="all_for_one --sample ${ROOTFILE} --region ttbar_cr_incl ${tt_ext} ${tt_sig} ${th_sig}"
+    eval $COMMAND > tmp.sh
+    th_submit.py -i tmp.sh -q long
+    rm tmp.sh
+fi
+
+if [[ "$REPLY" == "ttbarsys" ]]; then
+    for syst in JES_UP JES_DOWN JER_UP JER_DOWN MET_UP MET_DOWN; do
+        if [[ "$syst" == *_* ]]; then
+            sysstring=\-\-systematic\ $syst
+        fi
+	COMMAND="all_for_one --sample ${ROOTFILE} --region ttbar_cr_incl ${tt_ext} ${tt_sig} ${th_sig} ${sysstring} --firsttime false"
+	eval $COMMAND > tmp.sh
+	th_submit.py -i tmp.sh -q long
+	rm tmp.sh
+    done
+fi
+
