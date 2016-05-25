@@ -1,0 +1,3 @@
+/usr/users/sfink/setup6_7120.sh: line 56: source: .profile: file not found
+Error when running the combination:
+	File /portal/ekpcms6/home/sfink/thanalysis/th_13phd/datacards/fits/cards/tH_comb_.txt does not exist

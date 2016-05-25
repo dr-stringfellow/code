@@ -1,0 +1,11 @@
+/usr/users/sfink/setup6_7120.sh: line 56: source: .profile: file not found
+TClass::TClass:0: RuntimeWarning: no dictionary for class stack<RooAbsArg*,deque<RooAbsArg*> > is available
+Missing background ModelConfig 'ModelConfig_bonly' in workspace 'w' in file roostats-Ryn29g.root
+Will make one from the signal ModelConfig 'ModelConfig' setting signal strenth 'r' to zero
+TClass::TClass:0: RuntimeWarning: no dictionary for class stack<RooAbsArg*,deque<RooAbsArg*> > is available
+Missing background ModelConfig 'ModelConfig_bonly' in workspace 'w' in file roostats-VpOoDY.root
+Will make one from the signal ModelConfig 'ModelConfig' setting signal strenth 'r' to zero
+Traceback (most recent call last):
+  File "mlfitNormsToText.py", line 21, in <module>
+    if fit_s  == None: raise RuntimeError, "Missing fit_s in %s. Did you run MaxLikelihoodFit with --saveNorm?" % file;
+RuntimeError: Missing fit_s in <ROOT.TFile object ("mlfit_17.root") at 0x2ac6480>. Did you run MaxLikelihoodFit with --saveNorm?

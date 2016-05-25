@@ -1,0 +1,21 @@
+/usr/users/bmaier/cluster_742.sh: line 3: .: setup_742.sh: file not found
+Error in <TCling::RegisterModule>: cannot find dictionary module AnaUtils_dict_rdict.pcm
+Processing bkg_JER_downlog(m3) ... 
+Storing data in mydata/logm3_bkg_JER_down.dat
+ done. 
+Processing bkg_JER_uplog(m3) ... 
+Storing data in mydata/logm3_bkg_JER_up.dat
+ done. 
+Processing bkglog(m3) ... 
+Storing data in mydata/logm3_bkg.dat
+ done. 
+Processing sig_JER_downlog(m3) ... 
+Storing data in mydata/logm3_sig_JER_down.dat
+ done. 
+Processing sig_JER_uplog(m3) ... 
+Storing data in mydata/logm3_sig_JER_up.dat
+ done. 
+Processing siglog(m3) ... 
+Storing data in mydata/logm3_sig.dat
+ done. 
+Info in <TCanvas::Print>: pdf file plots/lep_wolfram1.pdf has been created

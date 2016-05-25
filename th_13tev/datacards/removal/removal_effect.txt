@@ -1,0 +1,12 @@
+lumi_13TeV  Expected 50.0%: r < 5.7031
+CMS_eff_lep  Expected 50.0%: r < 5.7031
+CMS_tHq_ttbb,CMS_tHq_tt2b,CMS_tHq_tt1b,CMS_tHq_ttcc  Expected 50.0%: r < 5.5781
+pdf_gg,pdf_qg,pdf_qqbar  Expected 50.0%: r < 5.6719
+pu  Expected 50.0%: r < 5.7031
+CMS_jes  Expected 50.0%: r < 5.5469
+CMS_jer  Expected 50.0%: r < 5.4531
+Q2scale_tHq,Q2scale_tHW,Q2scale_ttbb,Q2scale_tt2b,Q2scale_tt1b,Q2scale_ttcc,Q2scale_ttlf,Q2scale_ttH,Q2scale_Wj,Q2scale_ttW,Q2scale_VV,QCDscale_ST  Expected 50.0%: r < 5.3594
+CSVCErr1,CSVCErr2  Expected 50.0%: r < 5.4844
+CSVHF,CSVHFStats1,CSVHFStats2  Expected 50.0%: r < 5.4219
+CSVLF,CSVLFStats1,CSVLFStats2  Expected 50.0%: r < 5.5469
+bbb  Expected 50.0%: r < 5.5781

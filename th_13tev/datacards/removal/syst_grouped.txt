@@ -1,0 +1,17 @@
+CMS_eff_e,CMS_eff_m
+CMS_res_j
+CMS_scale_j
+CMS_tHq_eff_b
+CMS_tHq_fake_b
+CMS_tHq_met
+CMS_tHq_pu
+CMS_tHq_topPtcorr
+CMS_tHq_tt1b
+CMS_tHq_tt2b
+CMS_tHq_ttc
+Matching_tt1b,Matching_tt2b,Matching_ttcc,Matching_ttlf
+Q2scale_tH,Q2scale_tt1b,Q2scale_tt2b,Q2scale_ttcc,Q2scale_ttlf
+QCDscale_V,QCDscale_VV,QCDscale_ttH,QCDscale_ttbar
+lumi_8TeV
+pdf_gg,pdf_qg,pdf_qqbar
+

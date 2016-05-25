@@ -1,0 +1,20 @@
+$$
+$$ LUMI SYSTEMATICS CONFIGURATION
+$$
+
+systematic = "QCDscale_ST"
+
+scale      = "1.04"
+
+channels   = "tH_2t"
+	     "tH_3t"
+	     "tH_4t"
+	     "tH_3m"
+	     "tH_4m"
+
+
+processes  = "s_Top"
+
+
+
+

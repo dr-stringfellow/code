@@ -1,0 +1,2 @@
+python diffNuisances.py mlfit.root  --all --stol 1.0 | tee diff_data.txt
+python diffNuisances.py mlfitasimov.root  --all --stol 1.0 | tee diff_asimov.txt

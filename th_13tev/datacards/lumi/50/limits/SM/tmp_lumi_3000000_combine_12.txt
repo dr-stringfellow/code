@@ -1,0 +1,41 @@
+12
+>>> including systematics
+>>> method used to compute upper limit is Asymptotic
+>>> random number generator seed is 123456
+[?1034hComputing limit starting from observation
+Will compute both limit(s) using minimizer Minuit2 with strategy 0 and tolerance 0.01
+  [WARNING] Found [Q2scale_VV] at boundary. 
+Median for expected limits: 3.95312
+Sigma  for expected limits: 2.01694
+Restricting r to positive values.
+
+Make global fit of real data
+NLL at global minimum of data: -6.8072e+07 (r = 1.34697e-05)
+
+Make global fit of asimov data
+NLL at global minimum of asimov: -6.8072e+07 (r = 2.08589e-06)
+At r = 4.716583:	q_mu = 7.91459	q_A  = 7.95129	CLsb = 0.00245	CLb  = 0.50260	CLs  = 0.00488
+At r = 2.358298:	q_mu = 5.48682	q_A  = 5.50870	CLsb = 0.00958	CLb  = 0.50186	CLs  = 0.01909
+At r = 1.179156:	q_mu = 4.97475	q_A  = 4.98118	CLsb = 0.01286	CLb  = 0.50057	CLs  = 0.02569
+At r = 0.589585:	q_mu = 4.92937	q_A  = 4.93009	CLsb = 0.01320	CLb  = 0.50006	CLs  = 0.02640
+At r = 0.294799:	q_mu = 4.93928	q_A  = 4.94845	CLsb = 0.01313	CLb  = 0.50082	CLs  = 0.02621
+At r = 0.147406:	q_mu = 4.96454	q_A  = 4.97342	CLsb = 0.01294	CLb  = 0.50079	CLs  = 0.02583
+At r = 0.073710:	q_mu = 4.98219	q_A  = 4.99099	CLsb = 0.01280	CLb  = 0.50079	CLs  = 0.02557
+At r = 0.036862:	q_mu = 4.99180	q_A  = 5.00067	CLsb = 0.01273	CLb  = 0.50079	CLs  = 0.02543
+At r = 0.018438:	q_mu = 4.99705	q_A  = 5.00600	CLsb = 0.01270	CLb  = 0.50080	CLs  = 0.02535
+At r = 0.009226:	q_mu = 4.99982	q_A  = 5.00811	CLsb = 0.01267	CLb  = 0.50074	CLs  = 0.02531
+At r = 0.004619:	q_mu = 5.00086	q_A  = 5.00943	CLsb = 0.01267	CLb  = 0.50076	CLs  = 0.02530
+At r = 0.002316:	q_mu = 5.00146	q_A  = 5.01007	CLsb = 0.01266	CLb  = 0.50077	CLs  = 0.02529
+At r = 0.001165:	q_mu = 5.00178	q_A  = 5.01039	CLsb = 0.01266	CLb  = 0.50077	CLs  = 0.02528
+At r = 0.000589:	q_mu = 5.00194	q_A  = 5.01056	CLsb = 0.01266	CLb  = 0.50077	CLs  = 0.02528
+At r = 0.000301:	q_mu = 5.00203	q_A  = 5.01064	CLsb = 0.01266	CLb  = 0.50077	CLs  = 0.02528
+
+ -- Asymptotic -- 
+Observed Limit: r < 0.0003
+Expected  2.5%: r < 1.7681
+Expected 16.0%: r < 2.5960
+Expected 50.0%: r < 3.9531
+Expected 84.0%: r < 6.0173
+Expected 97.5%: r < 8.6673
+
+Done in 0.19 min (cpu), 0.19 min (real)

@@ -1,0 +1,6 @@
+**** Following environment variables are going to be unset.
+       ROOT_GCC_TOOLCHAIN
+       MAGIC
+/usr/users/sfink/setup6_7120.sh: line 56: source: .profile: file not found
+/opt/ogs_sl6//ekpclusterSL6/spool/ekpblus001/job_scripts/213579: line 9: syntax error near unexpected token `done'
+/opt/ogs_sl6//ekpclusterSL6/spool/ekpblus001/job_scripts/213579: line 9: `done'

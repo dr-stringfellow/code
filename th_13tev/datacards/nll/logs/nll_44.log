@@ -1,0 +1,14 @@
+>>> including systematics
+>>> method used to compute upper limit is MaxLikelihoodFit
+>>> random number generator seed is 123456
+[?1034hComputing limit starting from observation
+Created Branches
+Searching for crossing at nll = -20642.8 in the interval 42.2019, 150
+Error: minimization failed at r = 42.2019
+Searching for crossing at nll = -20642.8 in the interval 42.2019, -150
+Error: minimization failed at r = 42.2019
+
+ --- MaxLikelihoodFit ---
+Best fit r: 42.2019  -192.202/+107.798  (68% CL)
+nll S+B -> -62.8441  nll B -> -62.6096
+Done in 0.17 min (cpu), 0.18 min (real)

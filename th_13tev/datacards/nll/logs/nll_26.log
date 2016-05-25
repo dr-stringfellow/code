@@ -1,0 +1,63 @@
+>>> including systematics
+>>> method used to compute upper limit is MaxLikelihoodFit
+>>> random number generator seed is 123456
+[?1034hComputing limit starting from observation
+Created Branches
+Searching for crossing at nll = -22325.7 in the interval 1.5762, 150
+      r      lvl-here  lvl-there   stepping
+75.788099    -14.33162  +0.49447    74.211901
+23.839768    -3.02062  -14.33162    22.263570
+8.255268    -0.01538  -3.02062    6.679071
+3.579919    +0.43557  -0.01538    2.003721
+5.583640    +0.27746  +0.43557    2.003721
+7.587361    +0.02909  +0.27746    2.003721
+9.591083    -0.28361  +0.02909    2.003721
+8.188478    -0.06128  -0.28361    0.601116
+7.767696    +0.00121  -0.06128    0.180335
+7.948031    -0.02227  +0.00121    0.180335
+7.821797    -0.00401  -0.02227    0.054100
+7.783926    +0.00180  -0.00401    0.016230
+7.800157    -0.00043  +0.00180    0.016230
+Searching for crossing at nll = -22325.7 in the interval 1.5762, -150
+      r      lvl-here  lvl-there   stepping
+WARNING: underflow to -15.3141 in pdf_bintH_3m_obsOnly for bin 9, weight 28
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(tH_3m) evaluation error, 
+ origin       : RooAbsReal::tH_3m[ params=(CMS_eff_lep,CMS_jer,CMS_jes,CMS_tHq_tt1b,CMS_tHq_tt2b,CMS_tHq_ttbb,CMS_tHq_ttcc,CSVCErr1,CSVCErr2,CSVHF,CSVHFStats1,CSVHFStats2,CSVLF,CSVLFStats1,CSVLFStats2,Q2scale_VV,Q2scale_Wj,Q2scale_tHW,Q2scale_tHq,Q2scale_tt1b,Q2scale_tt2b,Q2scale_ttH,Q2scale_ttW,Q2scale_ttbb,Q2scale_ttcc,Q2scale_ttlf,QCDscale_ST,lumi_13TeV,pdf_gg,pdf_qg,pdf_qqbar,pu,r) ]
+ message      : Number of events is negative or error
+ server values: params=(CMS_eff_lep = -0.0544473 +/- 0.498338,CMS_jer = 0.0705244 +/- 0.23146,CMS_jes = 0.160336 +/- 0.229223,CMS_tHq_tt1b = 0.361976 +/- 0.224536,CMS_tHq_tt2b = 0.262885 +/- 0.229827,CMS_tHq_ttbb = 0.45143 +/- 0.157105,CMS_tHq_ttcc = -0.0107939 +/- 0.0986832,CSVCErr1 = 0.97225 +/- 0.0705158,CSVCErr2 = -0.151786 +/- 0.420201,CSVHF = -0.126288 +/- 0.145796,CSVHFStats1 = 0.263112 +/- 0.203414,CSVHFStats2 = 0.00531959 +/- 0.265481,CSVLF = -0.16681 +/- 0.126091,CSVLFStats1 = -0.0205677 +/- 0.26733,CSVLFStats2 = -0.12521 +/- 0.815794,Q2scale_VV = -0.000201764 +/- 0.758706,Q2scale_Wj = -0.0309467 +/- 0.79332,Q2scale_tHW = -0.000857058 +/- 0.80175,Q2scale_tHq = 0.00546379 +/- 0.857409,Q2scale_tt1b = -0.179795 +/- 0.441584,Q2scale_tt2b = -0.123089 +/- 0.43355,Q2scale_ttH = -0.00100309 +/- 0.757675,Q2scale_ttW = 0.0187555 +/- 0.787981,Q2scale_ttbb = -0.263207 +/- 0.201533,Q2scale_ttcc = -0.0508954 +/- 0.214162,Q2scale_ttlf = 0.532009 +/- 0.188142,QCDscale_ST = 0.0082318 +/- 0.801106,lumi_13TeV = -0.0732525 +/- 0.481408,pdf_gg = -0.0971443 +/- 0.428657,pdf_qg = 0.00826847 +/- 0.802395,pdf_qqbar = 0.0144293 +/- 0.754019,pu = -0.0978209 +/- 0.751779,r = -74.2119 +/- 6.69761)
+WARNING: underflow to -5.03213 in pdf_bintH_4m_obsOnly for bin 7, weight 6
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(tH_4m) evaluation error, 
+ origin       : RooAbsReal::tH_4m[ params=(CMS_eff_lep,CMS_jer,CMS_jes,CMS_tHq_tt1b,CMS_tHq_tt2b,CMS_tHq_ttbb,CMS_tHq_ttcc,CSVCErr1,CSVCErr2,CSVHF,CSVHFStats1,CSVHFStats2,CSVLF,CSVLFStats1,CSVLFStats2,Q2scale_VV,Q2scale_Wj,Q2scale_tHW,Q2scale_tHq,Q2scale_tt1b,Q2scale_tt2b,Q2scale_ttH,Q2scale_ttW,Q2scale_ttbb,Q2scale_ttcc,Q2scale_ttlf,QCDscale_ST,lumi_13TeV,pdf_gg,pdf_qg,pdf_qqbar,pu,r) ]
+ message      : Number of events is negative or error
+ server values: params=(CMS_eff_lep = -0.0544473 +/- 0.498338,CMS_jer = 0.0705244 +/- 0.23146,CMS_jes = 0.160336 +/- 0.229223,CMS_tHq_tt1b = 0.361976 +/- 0.224536,CMS_tHq_tt2b = 0.262885 +/- 0.229827,CMS_tHq_ttbb = 0.45143 +/- 0.157105,CMS_tHq_ttcc = -0.0107939 +/- 0.0986832,CSVCErr1 = 0.97225 +/- 0.0705158,CSVCErr2 = -0.151786 +/- 0.420201,CSVHF = -0.126288 +/- 0.145796,CSVHFStats1 = 0.263112 +/- 0.203414,CSVHFStats2 = 0.00531959 +/- 0.265481,CSVLF = -0.16681 +/- 0.126091,CSVLFStats1 = -0.0205677 +/- 0.26733,CSVLFStats2 = -0.12521 +/- 0.815794,Q2scale_VV = -0.000201764 +/- 0.758706,Q2scale_Wj = -0.0309467 +/- 0.79332,Q2scale_tHW = -0.000857058 +/- 0.80175,Q2scale_tHq = 0.00546379 +/- 0.857409,Q2scale_tt1b = -0.179795 +/- 0.441584,Q2scale_tt2b = -0.123089 +/- 0.43355,Q2scale_ttH = -0.00100309 +/- 0.757675,Q2scale_ttW = 0.0187555 +/- 0.787981,Q2scale_ttbb = -0.263207 +/- 0.201533,Q2scale_ttcc = -0.0508954 +/- 0.214162,Q2scale_ttlf = 0.532009 +/- 0.188142,QCDscale_ST = 0.0082318 +/- 0.801106,lumi_13TeV = -0.0732525 +/- 0.481408,pdf_gg = -0.0971443 +/- 0.428657,pdf_qg = 0.00826847 +/- 0.802395,pdf_qqbar = 0.0144293 +/- 0.754019,pu = -0.0978209 +/- 0.751779,r = -74.2119 +/- 6.69761)
+WARNING: underflow to -15.3141 in pdf_bintH_3m_obsOnly for bin 9, weight 28
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(tH_3m) evaluation error, 
+ origin       : RooAbsReal::tH_3m[ params=(CMS_eff_lep,CMS_jer,CMS_jes,CMS_tHq_tt1b,CMS_tHq_tt2b,CMS_tHq_ttbb,CMS_tHq_ttcc,CSVCErr1,CSVCErr2,CSVHF,CSVHFStats1,CSVHFStats2,CSVLF,CSVLFStats1,CSVLFStats2,Q2scale_VV,Q2scale_Wj,Q2scale_tHW,Q2scale_tHq,Q2scale_tt1b,Q2scale_tt2b,Q2scale_ttH,Q2scale_ttW,Q2scale_ttbb,Q2scale_ttcc,Q2scale_ttlf,QCDscale_ST,lumi_13TeV,pdf_gg,pdf_qg,pdf_qqbar,pu,r) ]
+ message      : Number of events is negative or error
+ server values: params=(CMS_eff_lep = -0.0544473 +/- inf,CMS_jer = 0.0705244 +/- inf,CMS_jes = 0.160336 +/- inf,CMS_tHq_tt1b = 0.361976 +/- inf,CMS_tHq_tt2b = 0.262885 +/- inf,CMS_tHq_ttbb = 0.45143 +/- inf,CMS_tHq_ttcc = -0.0107939 +/- inf,CSVCErr1 = 0.97225 +/- inf,CSVCErr2 = -0.151786 +/- inf,CSVHF = -0.126288 +/- inf,CSVHFStats1 = 0.263112 +/- inf,CSVHFStats2 = 0.00531959 +/- inf,CSVLF = -0.16681 +/- inf,CSVLFStats1 = -0.0205677 +/- inf,CSVLFStats2 = -0.12521 +/- inf,Q2scale_VV = -0.000201764 +/- inf,Q2scale_Wj = -0.0309467 +/- inf,Q2scale_tHW = -0.000857058 +/- inf,Q2scale_tHq = 0.00546379 +/- inf,Q2scale_tt1b = -0.179795 +/- inf,Q2scale_tt2b = -0.123089 +/- inf,Q2scale_ttH = -0.00100309 +/- inf,Q2scale_ttW = 0.0187555 +/- inf,Q2scale_ttbb = -0.263207 +/- inf,Q2scale_ttcc = -0.0508954 +/- inf,Q2scale_ttlf = 0.532009 +/- inf,QCDscale_ST = 0.0082318 +/- inf,lumi_13TeV = -0.0732525 +/- inf,pdf_gg = -0.0971443 +/- inf,pdf_qg = 0.00826847 +/- inf,pdf_qqbar = 0.0144293 +/- inf,pu = -0.0978209 +/- inf,r = -74.2119 +/- 6.69761)
+WARNING: underflow to -5.03213 in pdf_bintH_4m_obsOnly for bin 7, weight 6
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(tH_4m) evaluation error, 
+ origin       : RooAbsReal::tH_4m[ params=(CMS_eff_lep,CMS_jer,CMS_jes,CMS_tHq_tt1b,CMS_tHq_tt2b,CMS_tHq_ttbb,CMS_tHq_ttcc,CSVCErr1,CSVCErr2,CSVHF,CSVHFStats1,CSVHFStats2,CSVLF,CSVLFStats1,CSVLFStats2,Q2scale_VV,Q2scale_Wj,Q2scale_tHW,Q2scale_tHq,Q2scale_tt1b,Q2scale_tt2b,Q2scale_ttH,Q2scale_ttW,Q2scale_ttbb,Q2scale_ttcc,Q2scale_ttlf,QCDscale_ST,lumi_13TeV,pdf_gg,pdf_qg,pdf_qqbar,pu,r) ]
+ message      : Number of events is negative or error
+ server values: params=(CMS_eff_lep = -0.0544473 +/- inf,CMS_jer = 0.0705244 +/- inf,CMS_jes = 0.160336 +/- inf,CMS_tHq_tt1b = 0.361976 +/- inf,CMS_tHq_tt2b = 0.262885 +/- inf,CMS_tHq_ttbb = 0.45143 +/- inf,CMS_tHq_ttcc = -0.0107939 +/- inf,CSVCErr1 = 0.97225 +/- inf,CSVCErr2 = -0.151786 +/- inf,CSVHF = -0.126288 +/- inf,CSVHFStats1 = 0.263112 +/- inf,CSVHFStats2 = 0.00531959 +/- inf,CSVLF = -0.16681 +/- inf,CSVLFStats1 = -0.0205677 +/- inf,CSVLFStats2 = -0.12521 +/- inf,Q2scale_VV = -0.000201764 +/- inf,Q2scale_Wj = -0.0309467 +/- inf,Q2scale_tHW = -0.000857058 +/- inf,Q2scale_tHq = 0.00546379 +/- inf,Q2scale_tt1b = -0.179795 +/- inf,Q2scale_tt2b = -0.123089 +/- inf,Q2scale_ttH = -0.00100309 +/- inf,Q2scale_ttW = 0.0187555 +/- inf,Q2scale_ttbb = -0.263207 +/- inf,Q2scale_ttcc = -0.0508954 +/- inf,Q2scale_ttlf = 0.532009 +/- inf,QCDscale_ST = 0.0082318 +/- inf,lumi_13TeV = -0.0732525 +/- inf,pdf_gg = -0.0971443 +/- inf,pdf_qg = 0.00826847 +/- inf,pdf_qqbar = 0.0144293 +/- inf,pu = -0.0978209 +/- inf,r = -74.2119 +/- 6.69761)
+-74.211901    -18000022326.64571  +0.49447    -75.788099
+-21.160232    -5.22565  -18000022326.64571    -22.736430
+-5.244732    -0.10147  -5.22565    -6.820929
+-0.470081    +0.43084  -0.10147    -2.046279
+-2.516360    +0.28296  +0.43084    -2.046279
+-4.562639    +0.01545  +0.28296    -2.046279
+-6.608917    -0.35150  +0.01545    -2.046279
+-5.176522    -0.07775  -0.35150    -0.613884
+-4.746804    -0.00808  -0.07775    -0.184165
+-4.617888    +0.01293  -0.00808    -0.055250
+-4.673138    +0.00370  +0.01293    -0.055250
+-4.728387    -0.00572  +0.00370    -0.055250
+-4.689713    +0.00090  -0.00572    -0.016575
+-4.706287    -0.00160  +0.00090    -0.016575
+-4.694685    +0.00110  -0.00160    -0.004972
+-4.699658    +0.00030  +0.00110    -0.004972
+
+ --- MaxLikelihoodFit ---
+Best fit r: 1.5762  -6.27544/+6.22396  (68% CL)
+nll S+B -> -60.4476  nll B -> -61.0205
+Done in 0.21 min (cpu), 0.23 min (real)

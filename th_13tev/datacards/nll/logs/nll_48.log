@@ -1,0 +1,10 @@
+>>> including systematics
+>>> method used to compute upper limit is MaxLikelihoodFit
+>>> random number generator seed is 123456
+[?1034hComputing limit starting from observation
+Created Branches
+
+ --- MaxLikelihoodFit ---
+Fit failed.
+nll S+B -> 1.80002e+10  nll B -> -64.2955
+Done in 0.12 min (cpu), 0.13 min (real)

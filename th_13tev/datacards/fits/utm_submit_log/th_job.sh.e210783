@@ -1,0 +1,8 @@
+/usr/users/sfink/setup6_7120.sh: line 56: source: .profile: file not found
+TClass::TClass:0: RuntimeWarning: no dictionary for class stack<RooAbsArg*,deque<RooAbsArg*> > is available
+Missing background ModelConfig 'ModelConfig_bonly' in workspace 'w' in file roostats-K80g08.root
+Will make one from the signal ModelConfig 'ModelConfig' setting signal strenth 'r' to zero
+TClass::TClass:0: RuntimeWarning: no dictionary for class stack<RooAbsArg*,deque<RooAbsArg*> > is available
+Missing background ModelConfig 'ModelConfig_bonly' in workspace 'w' in file roostats-xNzvtF.root
+Will make one from the signal ModelConfig 'ModelConfig' setting signal strenth 'r' to zero
+TClass::TClass:0: RuntimeWarning: no dictionary for class stack<RooAbsArg*,deque<RooAbsArg*> > is available

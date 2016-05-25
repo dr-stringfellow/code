@@ -1,0 +1,181 @@
+/usr/users/bmaier
+/usr/users/bmaier
+CommandLine INFO: include configuration file: ../../samples13tev_fancy/Data_new.config
+CommandLine INFO: include configuration file: ../../samples13tev_fancy/TH125-madgraph.config
+CommandLine INFO: include configuration file: ../../samples13tev_fancy/TTbar-powheg_lf.config
+CommandLine INFO: include configuration file: ../../samples13tev_fancy/TTbar-powheg_cc.config
+CommandLine INFO: include configuration file: ../../samples13tev_fancy/TTbar-powheg_b.config
+CommandLine INFO: include configuration file: ../../samples13tev_fancy/TTbar-powheg_bb.config
+CommandLine INFO: include configuration file: ../../samples13tev_fancy/TTbar-powheg_2b.config
+CommandLine INFO: include configuration file: ../../samples13tev_fancy/ST-powheg.config
+CommandLine INFO: include configuration file: ../../samples13tev_fancy/TTH-powheg.config
+CommandLine INFO: include configuration file: ../../samples13tev_fancy/Misc.config
+CommandLine INFO: include configuration file: ../../labels/2fbinv.config
+CommandLine INFO: include configuration file: ../../labels/CMSPreliminary.config
+------------------------------------------------------------
+th_datatomc_x options:
+------------------------------------------------------------
+data                    =               SingleMuon_json.root
+                                         SingleEle_json.root
+mcs                     =TH125-madgraph-13tev:THQ_Hincl_13TeV-madgraph-pythia8_TuneCUETP8M1.root
+TH125-madgraph-13tev:THW_Hincl_13TeV-madgraph-pythia8_TuneCUETP8M1.root
+       TTbar-powheg_lf:TTToSemiLeptonic_13TeV-powheg_lf.root
+        TTbar-powheg_lf:TTTo2L2Nu_13TeV-powheg_total_lf.root
+       TTbar-powheg_cc:TTToSemiLeptonic_13TeV-powheg_cc.root
+        TTbar-powheg_cc:TTTo2L2Nu_13TeV-powheg_total_cc.root
+        TTbar-powheg_b:TTToSemiLeptonic_13TeV-powheg_1b.root
+         TTbar-powheg_b:TTTo2L2Nu_13TeV-powheg_total_1b.root
+       TTbar-powheg_bb:TTToSemiLeptonic_13TeV-powheg_bb.root
+        TTbar-powheg_bb:TTTo2L2Nu_13TeV-powheg_total_bb.root
+       TTbar-powheg_2b:TTToSemiLeptonic_13TeV-powheg_2b.root
+        TTbar-powheg_2b:TTTo2L2Nu_13TeV-powheg_total_2b.root
+SingleTop-powheg:ST_tW_antitop_5f_inclusiveDecays_13TeV-powheg-pythia8_TuneCUETP8M1.root
+SingleTop-powheg:ST_tW_top_5f_inclusiveDecays_13TeV-powheg-pythia8_TuneCUETP8M1.root
+SingleTop-powheg:ST_t-channel_antitop_4f_leptonDecays_13TeV-powheg-pythia8_TuneCUETP8M1.root
+SingleTop-powheg:ST_t-channel_top_4f_leptonDecays_13TeV-powheg-pythia8_TuneCUETP8M1.root
+           TTH-powheg:ttHTobb_M125_13TeV_powheg_pythia8.root
+ Misc:WJetsToLNu_TuneCUETP8M1_13TeV-madgraphMLM-pythia8.root
+                     Misc:WW_TuneCUETP8M1_13TeV-pythia8.root
+                     Misc:WZ_TuneCUETP8M1_13TeV-pythia8.root
+                     Misc:ZZ_TuneCUETP8M1_13TeV-pythia8.root
+Misc:TTWJetsToQQ_TuneCUETP8M1_13TeV-amcatnloFXFX-madspin-pythia8.root
+Misc:TTWJetsToLNu_TuneCUETP8M1_13TeV-amcatnloFXFX-madspin-pythia8.root
+signal                  =TH125-madgraph:THQ_Hincl_13TeV-madgraph-pythia8_TuneCUETP8M1.root
+TH125-madgraph:THW_Hincl_13TeV-madgraph-pythia8_TuneCUETP8M1.root
+signalfac               =                                 50
+mcref                   =                                   
+dirname                 =                                utm
+filesuffix              =                              .root
+treename                =                                  t
+datapath                =/storage/jbod/sfink/th_samples/13tev/data_mar16/3m/naf
+mcpath                  =/storage/jbod/sfink/th_samples/13tev/mc_mar16/3m/naf
+mcsubpath               =                                   
+cuts                    =(((nmu==1 && nel==0 && nlmu ==1)*((Alt$(mupt[0],0))>25)*(met>35)) || ((nel==1 && nmu ==0 && nlel==1)*((Alt$(elpt[0],0))>30)*(met>45) ))
+                                                  bdtout>-10
+mccuts                  =                                   
+datacuts                =                                   
+mcweights               =                         Weight_CSV
+                                                   Weight_PU
+                                                sign(Weight)
+                                                  Weight_LSF
+mcweightsup             =                                   
+mcweightsdown           =                                   
+ignore                  =                                   
+tightcut                =                                iso
+mm                      =                                   
+epssig                  =                      0.99 +- 0.010
+epsqcd                  =                      0.40 +- 0.025
+varname                 =                                   
+varexpr                 =                         aplanarity
+xtitle                  =                         aplanarity
+ytitle                  =                         Events/Bin
+nbinsx                  =                                 20
+binsx                   =                                   
+xmin                    =                               -0.0
+xmax                    =                               0.35
+ymin                    =                                 -1
+overflow                =                                  1
+underflow               =                              false
+logx                    =                              false
+logy                    =                              false
+residuals               =                               true
+resmax                  =                                0.6
+fitresids               =                                   
+stats                   =                                  0
+lumi                    =                             2671.4
+log_min                 =                               0.01
+leginplot               =                              false
+legx                    =                              0.775
+legy                    =                               0.93
+legw                    =                               0.25
+legh                    =                               0.15
+datalabel               =                               Data
+mclabels                =  TH125-madgraph-13tev:tH(b#bar{b})
+                              TTbar-powheg_lf:t#bar{t}+light
+                           TTbar-powheg_cc:t#bar{t}+c#bar{c}
+                                   TTbar-powheg_b:t#bar{t}+b
+                           TTbar-powheg_bb:t#bar{t}+b#bar{b}
+                                 TTbar-powheg_2b:t#bar{t}+2b
+                                  SingleTop-powheg:t/#bar{t}
+                                        TTH-powheg:t#bar{t}H
+                                                     Misc:EW
+mccolors                =          TH125-madgraph-13tev:1308
+                                        TTbar-powheg_lf:1304
+                                        TTbar-powheg_cc:1305
+                                         TTbar-powheg_b:1306
+                                        TTbar-powheg_bb:1307
+                                        TTbar-powheg_2b:1309
+                                       SingleTop-powheg:1301
+                                             TTH-powheg:1303
+                                                   Misc:1302
+labels                  =    0.60:0.945:2.7 fb^{-1} (13 TeV)
+                        0.634:0.805:42:0.05:#it{Preliminary}
+                                  0.72:0.86:42:0.06:#bf{CMS}
+                          0.175:0.86:Muon + electron channel
+                                     0.175:0.80:3 tag region
+stackmc                 =                                  1
+reversemc               =                              false
+batch                   =                                  1
+formats                 =                                pdf
+opath                   =                        ./pdf_tHlep
+output                  =                                   
+prefix                  =                         tHlep_3tag
+suffix                  =                     lep_aplanarity
+chi2test                =                                  0
+kstest                  =                                  0
+mcuncert                =                                  1
+printdiff               =                              false
+printint                =                              false
+plotsys                 =                              false
+dd_file                 =                                   
+dd_hist                 =                                   
+poisson                 =                                  1
+binlabels               =                                   
+up_uncfile              =../systematics/mydata/aplanarity_bkg_tot_up.dat
+down_uncfile            =../systematics/mydata/aplanarity_bkg_tot_down.dat
+------------------------------------------------------------
+
+===================================================================================================================
+FILENAME                                                                            EVENTS      SELECTION  PRESCALE
+===================================================================================================================
+/storage/jbod/sfink/th_samples/13tev/data_mar16/3m/naf/SingleMuon_json.root           3667              1         1
+/storage/jbod/sfink/th_samples/13tev/data_mar16/3m/naf/SingleEle_json.root            2834              1         1
+===================================================================================================================
+
+====================================================================================================================================================================================================
+MC SAMPLE      FILENAME                                                                                                                            EVENTS  XSEC[PB]            EFF  KFAC     INTLUMI
+====================================================================================================================================================================================================
+Misc           /storage/jbod/sfink/th_samples/13tev/mc_mar16/3m/naf/TTWJetsToLNu_TuneCUETP8M1_13TeV-amcatnloFXFX-madspin-pythia8.root                3179      0.21      0.01274511.9478      609794
+Misc           /storage/jbod/sfink/th_samples/13tev/mc_mar16/3m/naf/TTWJetsToQQ_TuneCUETP8M1_13TeV-amcatnloFXFX-madspin-pythia8.root                 6389     0.435     0.00767048 1.938      988023
+Misc           /storage/jbod/sfink/th_samples/13tev/mc_mar16/3m/naf/ZZ_TuneCUETP8M1_13TeV-pythia8.root                                                  8    16.523    1.50632e-05     1     32142.8
+Misc           /storage/jbod/sfink/th_samples/13tev/mc_mar16/3m/naf/WZ_TuneCUETP8M1_13TeV-pythia8.root                                                 13     47.13    1.59781e-05     1     17263.2
+Misc           /storage/jbod/sfink/th_samples/13tev/mc_mar16/3m/naf/WW_TuneCUETP8M1_13TeV-pythia8.root                                                  5     118.7    7.06357e-06     1     5963.42
+Misc           /storage/jbod/sfink/th_samples/13tev/mc_mar16/3m/naf/WJetsToLNu_TuneCUETP8M1_13TeV-madgraphMLM-pythia8.root                             24   61526.7    6.33793e-07     1     615.461
+TTH-powheg     /storage/jbod/sfink/th_samples/13tev/mc_mar16/3m/naf/ttHTobb_M125_13TeV_powheg_pythia8.root                                         150086    0.2934      0.0504894     1 1.01316e+07
+SingleTop-powheg/storage/jbod/sfink/th_samples/13tev/mc_mar16/3m/naf/ST_t-channel_top_4f_leptonDecays_13TeV-powheg-pythia8_TuneCUETP8M1.root         10353      45.3    0.000178933     1 1.27726e+06
+SingleTop-powheg/storage/jbod/sfink/th_samples/13tev/mc_mar16/3m/naf/ST_t-channel_antitop_4f_leptonDecays_13TeV-powheg-pythia8_TuneCUETP8M1.root      6643        27    0.000181949     1 1.35223e+06
+SingleTop-powheg/storage/jbod/sfink/th_samples/13tev/mc_mar16/3m/naf/ST_tW_top_5f_inclusiveDecays_13TeV-powheg-pythia8_TuneCUETP8M1.root              1082      35.9     0.00125002     1       24111
+SingleTop-powheg/storage/jbod/sfink/th_samples/13tev/mc_mar16/3m/naf/ST_tW_antitop_5f_inclusiveDecays_13TeV-powheg-pythia8_TuneCUETP8M1.root          1134      35.9     0.00131258     1     24065.3
+TTbar-powheg_2b/storage/jbod/sfink/th_samples/13tev/mc_mar16/3m/naf/TTTo2L2Nu_13TeV-powheg_total_2b.root                                            22262    831.76    2.75424e-05     1      971770
+TTbar-powheg_2b/storage/jbod/sfink/th_samples/13tev/mc_mar16/3m/naf/TTToSemiLeptonic_13TeV-powheg_2b.root                                           38576    831.76    0.000141717     1      327263
+TTbar-powheg_bb/storage/jbod/sfink/th_samples/13tev/mc_mar16/3m/naf/TTTo2L2Nu_13TeV-powheg_total_bb.root                                            44472    831.76    5.39326e-05     1      991373
+TTbar-powheg_bb/storage/jbod/sfink/th_samples/13tev/mc_mar16/3m/naf/TTToSemiLeptonic_13TeV-powheg_bb.root                                           67964    831.76    0.000246821     1      331054
+TTbar-powheg_b /storage/jbod/sfink/th_samples/13tev/mc_mar16/3m/naf/TTTo2L2Nu_13TeV-powheg_total_1b.root                                            35194    831.76    4.68478e-05     1      903194
+TTbar-powheg_b /storage/jbod/sfink/th_samples/13tev/mc_mar16/3m/naf/TTToSemiLeptonic_13TeV-powheg_1b.root                                           72609    831.76    0.000267921     1      325826
+TTbar-powheg_cc/storage/jbod/sfink/th_samples/13tev/mc_mar16/3m/naf/TTTo2L2Nu_13TeV-powheg_total_cc.root                                            77349    831.76    9.56441e-05     1      972296
+TTbar-powheg_cc/storage/jbod/sfink/th_samples/13tev/mc_mar16/3m/naf/TTToSemiLeptonic_13TeV-powheg_cc.root                                          184018    831.76    0.000676786     1      326897
+TTbar-powheg_lf/storage/jbod/sfink/th_samples/13tev/mc_mar16/3m/naf/TTTo2L2Nu_13TeV-powheg_total_lf.root                                           109910    831.76    0.000142209     1      929205
+TTbar-powheg_lf/storage/jbod/sfink/th_samples/13tev/mc_mar16/3m/naf/TTToSemiLeptonic_13TeV-powheg_lf.root                                          543547    831.76     0.00205699     1      317693
+TH125-madgraph-13tev/storage/jbod/sfink/th_samples/13tev/mc_mar16/3m/naf/THW_Hincl_13TeV-madgraph-pythia8_TuneCUETP8M1.root                              35653    0.1472      0.0302695     1 8.00171e+06
+TH125-madgraph-13tev/storage/jbod/sfink/th_samples/13tev/mc_mar16/3m/naf/THQ_Hincl_13TeV-madgraph-pythia8_TuneCUETP8M1.root                              58252    0.2583      0.0367086     1 6.14354e+06
+====================================================================================================================================================================================================
+
+
+===========================================================================================================================================================================
+MC SAMPLE      FILENAME                                                                                                   EVENTS  XSEC[PB]            EFF  KFAC     INTLUMI
+===========================================================================================================================================================================
+TH125-madgraph /storage/jbod/sfink/th_samples/13tev/mc_mar16/3m/naf/THQ_Hincl_13TeV-madgraph-pythia8_TuneCUETP8M1.root     58252    0.2583      0.0367086     1 6.14354e+06
+TH125-madgraph /storage/jbod/sfink/th_samples/13tev/mc_mar16/3m/naf/THW_Hincl_13TeV-madgraph-pythia8_TuneCUETP8M1.root     35653    0.1472      0.0302695     1 8.00171e+06
+===========================================================================================================================================================================
+
+[[1;31m%[0m[1;31m%[0m------------------] [1;31m10%[0m completed.  

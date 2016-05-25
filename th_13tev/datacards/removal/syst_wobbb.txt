@@ -1,0 +1,11 @@
+lumi_13TeV
+CMS_eff_lep
+CMS_tHq_ttbb,CMS_tHq_tt2b,CMS_tHq_tt1b,CMS_tHq_ttcc
+pdf_gg,pdf_qg,pdf_qqbar
+pu
+CMS_jes
+CMS_jer
+Q2scale_tHq,Q2scale_tHW,Q2scale_ttbb,Q2scale_tt2b,Q2scale_tt1b,Q2scale_ttcc,Q2scale_ttlf,Q2scale_ttH,Q2scale_Wj,Q2scale_ttW,Q2scale_VV,QCDscale_ST
+CSVCErr1,CSVCErr2
+CSVHF,CSVHFStats1,CSVHFStats2
+CSVLF,CSVLFStats1,CSVLFStats2

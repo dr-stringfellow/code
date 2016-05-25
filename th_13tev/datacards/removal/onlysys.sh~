@@ -1,0 +1,19 @@
+echo $date > onlysys_effect.txt
+for i in $(cat syst_wobbb.txt); 
+  do echo -n "$i  : " | tee -a onlysys_effect.txt
+  freezing=''
+  for j in $(cat syst_wobbb.txt); do 
+      if [ "$i" != "$j" ]; then
+	  freezing+="$j,"; 
+      fi
+  done;  
+  for k in $(cat bbbsyst.txt); do
+      freezing+="$k,";
+  done;
+
+
+  combine -M Asymptotic -d higgsCombine_myanalysis_bestfit.MultiDimFit.mH120.root -w w -n cboeser3 --snapshotName MultiDimFit --toysFrequentist --bypassFreq  --freezeNuisances ${freezing%,}| grep "Expected\ 50.0\%" |tee -a  onlysys_effect.txt; 
+done
+
+#combine -M Asymptotic -d higgsCombinenicholas2.MultiDimFit.mH120.root -w w -n nicholas3 --snapshotName MultiDimFit --toysFrequentist --bypassFreq  --freezeNuisances ${i} | grep "Expected\ 50.0\%" >> removal_effect.txt; done
+#  LocalWords:  cOmbine

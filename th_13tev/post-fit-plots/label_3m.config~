@@ -1,0 +1,5 @@
+labels+  = "0.175:0.86:Muon + electron channel"
+           "0.175:0.80:3 medium tag region"
+	   "0.175:0.74:42:0.04:#it{C}_{t}=-1,  #it{C}_{V}=1"
+
+           $"0.175:0.74:m_{H}=125 GeV"

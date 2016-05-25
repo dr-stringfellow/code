@@ -1,0 +1,21 @@
+/usr/users/bmaier/cluster_742.sh: line 3: .: setup_742.sh: file not found
+Error in <TCling::RegisterModule>: cannot find dictionary module AnaUtils_dict_rdict.pcm
+Processing bkg_CSVLFStats1_downaplanarity ... 
+Storing data in mydata/aplanarity_bkg_CSVLFStats1_down.dat
+ done. 
+Processing bkg_CSVLFStats1_upaplanarity ... 
+Storing data in mydata/aplanarity_bkg_CSVLFStats1_up.dat
+ done. 
+Processing bkgaplanarity ... 
+Storing data in mydata/aplanarity_bkg.dat
+ done. 
+Processing sig_CSVLFStats1_downaplanarity ... 
+Storing data in mydata/aplanarity_sig_CSVLFStats1_down.dat
+ done. 
+Processing sig_CSVLFStats1_upaplanarity ... 
+Storing data in mydata/aplanarity_sig_CSVLFStats1_up.dat
+ done. 
+Processing sigaplanarity ... 
+Storing data in mydata/aplanarity_sig.dat
+ done. 
+Info in <TCanvas::Print>: pdf file plots/lep_wolfram1.pdf has been created

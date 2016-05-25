@@ -1,0 +1,88 @@
+>>> including systematics
+>>> method used to compute upper limit is MaxLikelihoodFit
+>>> random number generator seed is 123456
+[?1034hComputing limit starting from observation
+Created Branches
+
+ --- MaxLikelihoodFit ---
+Fit failed.
+nll S+B -> 9.53703e+09  nll B -> -64.6399
+Done in 0.73 min (cpu), 0.74 min (real)
+>>> including systematics
+>>> method used to compute upper limit is MaxLikelihoodFit
+>>> random number generator seed is 123456
+[?1034hComputing limit starting from expected outcome
+Created Branches
+Searching for crossing at nll = -27479.9 in the interval 0.018148, 20
+      r      lvl-here  lvl-there   stepping
+0.118057    +0.49254  +0.49447    0.099909
+0.217967    +0.48809  +0.49254    0.099909
+0.317876    +0.48099  +0.48809    0.099909
+0.417785    +0.47247  +0.48099    0.099909
+0.517694    +0.46157  +0.47247    0.099909
+0.617604    +0.44813  +0.46157    0.099909
+0.717513    +0.43374  +0.44813    0.099909
+0.817422    +0.41597  +0.43374    0.099909
+0.917331    +0.39756  +0.41597    0.099909
+1.017241    +0.37971  +0.39756    0.099909
+1.117150    +0.35907  +0.37971    0.099909
+1.217059    +0.33517  +0.35907    0.099909
+1.316968    +0.30808  +0.33517    0.099909
+1.416878    +0.28125  +0.30808    0.099909
+1.516787    +0.25313  +0.28125    0.099909
+1.616696    +0.22401  +0.25313    0.099909
+1.716605    +0.19176  +0.22401    0.099909
+1.816515    +0.15775  +0.19176    0.099909
+1.916424    +0.12470  +0.15775    0.099909
+2.016333    +0.08861  +0.12470    0.099909
+2.116242    +0.05114  +0.08861    0.099909
+2.216152    +0.01280  +0.05114    0.099909
+2.316061    -0.02229  +0.01280    0.099909
+2.246124    +0.00541  -0.02229    0.029973
+2.276097    -0.00586  +0.00541    0.029973
+2.255116    +0.00205  -0.00586    0.008992
+2.264108    -0.00132  +0.00205    0.008992
+2.257814    +0.00104  -0.00132    0.002698
+2.260511    +0.00003  +0.00104    0.002698
+Searching for crossing at nll = -27479.9 in the interval 0.018148, -20
+      r      lvl-here  lvl-there   stepping
+-0.081943    +0.49273  +0.49447    -0.100091
+-0.182033    +0.48866  +0.49273    -0.100091
+-0.282124    +0.48168  +0.48866    -0.100091
+-0.382215    +0.47404  +0.48168    -0.100091
+-0.482306    +0.46344  +0.47404    -0.100091
+-0.582396    +0.44890  +0.46344    -0.100091
+-0.682487    +0.43309  +0.44890    -0.100091
+-0.782578    +0.41452  +0.43309    -0.100091
+-0.882669    +0.39519  +0.41452    -0.100091
+-0.982759    +0.37213  +0.39519    -0.100091
+-1.082850    +0.34653  +0.37213    -0.100091
+-1.182941    +0.32220  +0.34653    -0.100091
+-1.283032    +0.29509  +0.32220    -0.100091
+-1.383122    +0.27678  +0.29509    -0.100091
+-1.483213    +0.24837  +0.27678    -0.100091
+-1.583304    +0.21444  +0.24837    -0.100091
+-1.683395    +0.17649  +0.21444    -0.100091
+-1.783485    +0.13134  +0.17649    -0.100091
+WARNING: underflow to -8.53436e-05 in pdf_bintH_3m_obsOnly for bin 14, weight 0.00689454
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(tH_3m) evaluation error, 
+ origin       : RooAbsReal::tH_3m[ params=(CMS_eff_lep,CMS_jer,CMS_jes,CMS_tHq_TT1b3m_bin1,CMS_tHq_TT1b3m_bin13,CMS_tHq_TT1b3m_bin14,CMS_tHq_TT1b3m_bin15,CMS_tHq_TT1b3m_bin16,CMS_tHq_TT1b3m_bin17,CMS_tHq_TT1b3m_bin18,CMS_tHq_TT1b3m_bin2,CMS_tHq_TT1b3m_bin3,CMS_tHq_TT1b3m_bin4,CMS_tHq_TT2b3m_bin1,CMS_tHq_TT2b3m_bin13,CMS_tHq_TT2b3m_bin14,CMS_tHq_TT2b3m_bin15,CMS_tHq_TT2b3m_bin16,CMS_tHq_TT2b3m_bin17,CMS_tHq_TT2b3m_bin18,CMS_tHq_TT2b3m_bin2,CMS_tHq_TT2b3m_bin3,CMS_tHq_TT2b3m_bin4,CMS_tHq_TTbb3m_bin1,CMS_tHq_TTbb3m_bin13,CMS_tHq_TTbb3m_bin14,CMS_tHq_TTbb3m_bin15,CMS_tHq_TTbb3m_bin16,CMS_tHq_TTbb3m_bin17,CMS_tHq_TTbb3m_bin18,CMS_tHq_TTbb3m_bin2,CMS_tHq_TTbb3m_bin3,CMS_tHq_TTbb3m_bin4,CMS_tHq_TTcc3m_bin1,CMS_tHq_TTcc3m_bin13,CMS_tHq_TTcc3m_bin14,CMS_tHq_TTcc3m_bin15,CMS_tHq_TTcc3m_bin16,CMS_tHq_TTcc3m_bin17,CMS_tHq_TTcc3m_bin18,CMS_tHq_TTcc3m_bin2,CMS_tHq_TTcc3m_bin3,CMS_tHq_TTlf3m_bin1,CMS_tHq_TTlf3m_bin14,CMS_tHq_TTlf3m_bin15,CMS_tHq_TTlf3m_bin16,CMS_tHq_TTlf3m_bin17,CMS_tHq_TTlf3m_bin18,CMS_tHq_TTlf3m_bin2,CMS_tHq_TTlf3m_bin3,CMS_tHq_VV3m_bin1,CMS_tHq_VV3m_bin10,CMS_tHq_VV3m_bin11,CMS_tHq_VV3m_bin12,CMS_tHq_VV3m_bin13,CMS_tHq_VV3m_bin14,CMS_tHq_VV3m_bin15,CMS_tHq_VV3m_bin16,CMS_tHq_VV3m_bin17,CMS_tHq_VV3m_bin18,CMS_tHq_VV3m_bin2,CMS_tHq_VV3m_bin3,CMS_tHq_VV3m_bin4,CMS_tHq_VV3m_bin5,CMS_tHq_VV3m_bin6,CMS_tHq_VV3m_bin7,CMS_tHq_VV3m_bin8,CMS_tHq_VV3m_bin9,CMS_tHq_Wj3m_bin1,CMS_tHq_Wj3m_bin10,CMS_tHq_Wj3m_bin11,CMS_tHq_Wj3m_bin12,CMS_tHq_Wj3m_bin13,CMS_tHq_Wj3m_bin14,CMS_tHq_Wj3m_bin15,CMS_tHq_Wj3m_bin16,CMS_tHq_Wj3m_bin17,CMS_tHq_Wj3m_bin18,CMS_tHq_Wj3m_bin2,CMS_tHq_Wj3m_bin3,CMS_tHq_Wj3m_bin4,CMS_tHq_Wj3m_bin5,CMS_tHq_Wj3m_bin6,CMS_tHq_Wj3m_bin7,CMS_tHq_Wj3m_bin8,CMS_tHq_Wj3m_bin9,CMS_tHq_sTop3m_bin1,CMS_tHq_sTop3m_bin10,CMS_tHq_sTop3m_bin11,CMS_tHq_sTop3m_bin12,CMS_tHq_sTop3m_bin13,CMS_tHq_sTop3m_bin14,CMS_tHq_sTop3m_bin15,CMS_tHq_sTop3m_bin16,CMS_tHq_sTop3m_bin17,CMS_tHq_sTop3m_bin18,CMS_tHq_sTop3m_bin2,CMS_tHq_sTop3m_bin3,CMS_tHq_sTop3m_bin4,CMS_tHq_sTop3m_bin5,CMS_tHq_sTop3m_bin6,CMS_tHq_sTop3m_bin7,CMS_tHq_sTop3m_bin8,CMS_tHq_sTop3m_bin9,CMS_tHq_tHW3m_bin1,CMS_tHq_tHW3m_bin13,CMS_tHq_tHW3m_bin14,CMS_tHq_tHW3m_bin15,CMS_tHq_tHW3m_bin16,CMS_tHq_tHW3m_bin17,CMS_tHq_tHW3m_bin18,CMS_tHq_tHW3m_bin2,CMS_tHq_tHW3m_bin3,CMS_tHq_tHW3m_bin4,CMS_tHq_tHq3m_bin1,CMS_tHq_tHq3m_bin14,CMS_tHq_tHq3m_bin15,CMS_tHq_tHq3m_bin16,CMS_tHq_tHq3m_bin17,CMS_tHq_tHq3m_bin18,CMS_tHq_tHq3m_bin2,CMS_tHq_tHq3m_bin3,CMS_tHq_tHq3m_bin4,CMS_tHq_tHq3m_bin5,CMS_tHq_tt1b,CMS_tHq_tt2b,CMS_tHq_ttH3m_bin1,CMS_tHq_ttH3m_bin13,CMS_tHq_ttH3m_bin14,CMS_tHq_ttH3m_bin15,CMS_tHq_ttH3m_bin16,CMS_tHq_ttH3m_bin17,CMS_tHq_ttH3m_bin18,CMS_tHq_ttH3m_bin2,CMS_tHq_ttH3m_bin3,CMS_tHq_ttW3m_bin1,CMS_tHq_ttW3m_bin10,CMS_tHq_ttW3m_bin11,CMS_tHq_ttW3m_bin12,CMS_tHq_ttW3m_bin13,CMS_tHq_ttW3m_bin14,CMS_tHq_ttW3m_bin15,CMS_tHq_ttW3m_bin16,CMS_tHq_ttW3m_bin17,CMS_tHq_ttW3m_bin18,CMS_tHq_ttW3m_bin2,CMS_tHq_ttW3m_bin3,CMS_tHq_ttW3m_bin4,CMS_tHq_ttbb,CMS_tHq_ttcc,CSVCErr1,CSVCErr2,CSVHF,CSVHFStats1,CSVHFStats2,CSVLF,CSVLFStats1,CSVLFStats2,Q2scale_VV,Q2scale_Wj,Q2scale_tHW,Q2scale_tHq,Q2scale_tt1b,Q2scale_tt2b,Q2scale_ttH,Q2scale_ttW,Q2scale_ttbb,Q2scale_ttcc,Q2scale_ttlf,QCDscale_ST,lumi_13TeV,pdf_gg,pdf_qg,pdf_qqbar,pu,r) ]
+ message      : Number of events is negative or error
+ server values: params=(CMS_eff_lep = 0.0274909 +/- 0.405043,CMS_jer = 0.227909 +/- 0.693428,CMS_jes = 0.0133472 +/- 0.199373,CMS_tHq_TT1b3m_bin1 = 0.0165453 +/- 0.76191,CMS_tHq_TT1b3m_bin13 = 0.021009 +/- 0.798002,CMS_tHq_TT1b3m_bin14 = 0.0178056 +/- 0.769595,CMS_tHq_TT1b3m_bin15 = 0.0108287 +/- 0.758501,CMS_tHq_TT1b3m_bin16 = 0.0201288 +/- 0.745651,CMS_tHq_TT1b3m_bin17 = 0.0173368 +/- 0.779137,CMS_tHq_TT1b3m_bin18 = 0.0182645 +/- 0.778094,CMS_tHq_TT1b3m_bin2 = 0.0180922 +/- 0.778489,CMS_tHq_TT1b3m_bin3 = 0.0136942 +/- 0.759408,CMS_tHq_TT1b3m_bin4 = 0.0100264 +/- 0.79374,CMS_tHq_TT2b3m_bin1 = 0.0187498 +/- 0.754899,CMS_tHq_TT2b3m_bin13 = 0.0196472 +/- 0.749492,CMS_tHq_TT2b3m_bin14 = 0.0226172 +/- 0.751587,CMS_tHq_TT2b3m_bin15 = 0.00121827 +/- 0.757833,CMS_tHq_TT2b3m_bin16 = 0.0225065 +/- 0.744958,CMS_tHq_TT2b3m_bin17 = 0.0213404 +/- 0.744647,CMS_tHq_TT2b3m_bin18 = 0.0229585 +/- 0.738806,CMS_tHq_TT2b3m_bin2 = 0.0222226 +/- 0.739451,CMS_tHq_TT2b3m_bin3 = 0.0161816 +/- 0.746705,CMS_tHq_TT2b3m_bin4 = 0.00928414 +/- 0.784148,CMS_tHq_TTbb3m_bin1 = 0.0178405 +/- 0.750298,CMS_tHq_TTbb3m_bin13 = 0.0200139 +/- 0.783666,CMS_tHq_TTbb3m_bin14 = 0.0197288 +/- 0.763617,CMS_tHq_TTbb3m_bin15 = 0.043031 +/- 0.780312,CMS_tHq_TTbb3m_bin16 = 0.0227102 +/- 0.744932,CMS_tHq_TTbb3m_bin17 = 0.0218553 +/- 0.745464,CMS_tHq_TTbb3m_bin18 = 0.0215177 +/- 0.743287,CMS_tHq_TTbb3m_bin2 = 0.0204338 +/- 0.749219,CMS_tHq_TTbb3m_bin3 = 0.0141099 +/- 0.759281,CMS_tHq_TTbb3m_bin4 = 0.0123147 +/- 0.815855,CMS_tHq_TTcc3m_bin1 = 0.0186806 +/- 0.777102,CMS_tHq_TTcc3m_bin13 = 0.018367 +/- 0.758054,CMS_tHq_TTcc3m_bin14 = 0.0229446 +/- 0.776748,CMS_tHq_TTcc3m_bin15 = 0.0156188 +/- 0.749761,CMS_tHq_TTcc3m_bin16 = 0.0184959 +/- 0.754562,CMS_tHq_TTcc3m_bin17 = 0.0179201 +/- 0.774739,CMS_tHq_TTcc3m_bin18 = 0.0185495 +/- 0.777942,CMS_tHq_TTcc3m_bin2 = 0.0159417 +/- 0.778034,CMS_tHq_TTcc3m_bin3 = 0.0130737 +/- 0.816657,CMS_tHq_TTlf3m_bin1 = 0.0179921 +/- 0.796373,CMS_tHq_TTlf3m_bin14 = 0.0243247 +/- 0.779001,CMS_tHq_TTlf3m_bin15 = 0.0442565 +/- 0.781254,CMS_tHq_TTlf3m_bin16 = 0.0183182 +/- 0.791864,CMS_tHq_TTlf3m_bin17 = 0.020253 +/- 0.778449,CMS_tHq_TTlf3m_bin18 = 0.0186416 +/- 0.777973,CMS_tHq_TTlf3m_bin2 = 0.0184288 +/- 0.777641,CMS_tHq_TTlf3m_bin3 = 0.0120847 +/- 0.778233,CMS_tHq_VV3m_bin1 = 0.0199593 +/- 0.749235,CMS_tHq_VV3m_bin10 = 0.0120997 +/- 0.777262,CMS_tHq_VV3m_bin11 = 0.0130417 +/- 0.802868,CMS_tHq_VV3m_bin12 = 0.0199285 +/- 0.781665,CMS_tHq_VV3m_bin13 = 0.0127088 +/- 0.820025,CMS_tHq_VV3m_bin14 = 0.010806 +/- 0.781132,CMS_tHq_VV3m_bin15 = 0.0156746 +/- 0.746511,CMS_tHq_VV3m_bin16 = 0.0183091 +/- 0.758151,CMS_tHq_VV3m_bin17 = 0.0188007 +/- 0.754933,CMS_tHq_VV3m_bin18 = 0.0221492 +/- 0.739953,CMS_tHq_VV3m_bin2 = 0.0224748 +/- 0.737911,CMS_tHq_VV3m_bin3 = 0.0142834 +/- 0.759798,CMS_tHq_VV3m_bin4 = 0.0153195 +/- 0.780365,CMS_tHq_VV3m_bin5 = 0.0129706 +/- 0.783547,CMS_tHq_VV3m_bin6 = 0.0105878 +/- 0.783773,CMS_tHq_VV3m_bin7 = 0.0104502 +/- 0.766814,CMS_tHq_VV3m_bin8 = 0.00491351 +/- 0.890064,CMS_tHq_VV3m_bin9 = 0.0161708 +/- 0.744477,CMS_tHq_Wj3m_bin1 = 0.0190437 +/- 0.781234,CMS_tHq_Wj3m_bin10 = -0.0155892 +/- 0.786743,CMS_tHq_Wj3m_bin11 = 0.0496574 +/- 0.732768,CMS_tHq_Wj3m_bin12 = 0.0590254 +/- 0.755678,CMS_tHq_Wj3m_bin13 = 0.0573614 +/- 0.754871,CMS_tHq_Wj3m_bin14 = 0.011413 +/- 0.780042,CMS_tHq_Wj3m_bin15 = 0.013769 +/- 0.750403,CMS_tHq_Wj3m_bin16 = 0.0220624 +/- 0.741565,CMS_tHq_Wj3m_bin17 = 0.0229855 +/- 0.737839,CMS_tHq_Wj3m_bin18 = 0.0161476 +/- 0.76459,CMS_tHq_Wj3m_bin2 = 0.0228277 +/- 0.737705,CMS_tHq_Wj3m_bin3 = 0.0113366 +/- 0.770746,CMS_tHq_Wj3m_bin4 = 0.0166374 +/- 0.777502,CMS_tHq_Wj3m_bin5 = 0.0147877 +/- 0.754209,CMS_tHq_Wj3m_bin6 = -0.022038 +/- 0.810601,CMS_tHq_Wj3m_bin7 = -0.0412127 +/- 0.837193,CMS_tHq_Wj3m_bin8 = -0.0277942 +/- 0.804127,CMS_tHq_Wj3m_bin9 = -0.0145703 +/- 0.850676,CMS_tHq_sTop3m_bin1 = 0.0192722 +/- 0.754739,CMS_tHq_sTop3m_bin10 = 0.0147126 +/- 0.779375,CMS_tHq_sTop3m_bin11 = 0.026529 +/- 0.775478,CMS_tHq_sTop3m_bin12 = 0.0256102 +/- 0.778434,CMS_tHq_sTop3m_bin13 = 0.0230114 +/- 0.780692,CMS_tHq_sTop3m_bin14 = 0.0157789 +/- 0.761608,CMS_tHq_sTop3m_bin15 = 0.00169545 +/- 0.778416,CMS_tHq_sTop3m_bin16 = 0.0184027 +/- 0.7969,CMS_tHq_sTop3m_bin17 = 0.0226921 +/- 0.743111,CMS_tHq_sTop3m_bin18 = 0.0161195 +/- 0.764331,CMS_tHq_sTop3m_bin2 = 0.0214463 +/- 0.739202,CMS_tHq_sTop3m_bin3 = 0.0136935 +/- 0.782425,CMS_tHq_sTop3m_bin4 = 0.00948797 +/- 0.780449,CMS_tHq_sTop3m_bin5 = 0.00912324 +/- 0.814658,CMS_tHq_sTop3m_bin6 = 0.00919475 +/- 0.775861,CMS_tHq_sTop3m_bin7 = 0.00939026 +/- 0.779561,CMS_tHq_sTop3m_bin8 = 0.00699111 +/- 0.781567,CMS_tHq_sTop3m_bin9 = 0.0101706 +/- 0.76359,CMS_tHq_tHW3m_bin1 = 0.0522992 +/- 0.759025,CMS_tHq_tHW3m_bin13 = 0.00627914 +/- 0.581969,CMS_tHq_tHW3m_bin14 = 0.0118704 +/- 0.611362,CMS_tHq_tHW3m_bin15 = -0.00106562 +/- 0.777498,CMS_tHq_tHW3m_bin16 = 0.0523327 +/- 0.758981,CMS_tHq_tHW3m_bin17 = 0.0523341 +/- 0.758907,CMS_tHq_tHW3m_bin18 = 0.0523584 +/- 0.758917,CMS_tHq_tHW3m_bin2 = 0.0523546 +/- 0.758821,CMS_tHq_tHW3m_bin3 = 0.0112726 +/- 0.770459,CMS_tHq_tHW3m_bin4 = 0.0124145 +/- 0.761451,CMS_tHq_tHq3m_bin1 = 0.0524323 +/- 0.758751,CMS_tHq_tHq3m_bin14 = 0.0104451 +/- 0.78247,CMS_tHq_tHq3m_bin15 = -0.0152188 +/- 0.715453,CMS_tHq_tHq3m_bin16 = 0.0524029 +/- 0.758749,CMS_tHq_tHq3m_bin17 = 0.0524448 +/- 0.75874,CMS_tHq_tHq3m_bin18 = 0.0524362 +/- 0.758657,CMS_tHq_tHq3m_bin2 = 0.0524176 +/- 0.758662,CMS_tHq_tHq3m_bin3 = 0.0139911 +/- 0.760587,CMS_tHq_tHq3m_bin4 = 0.0118121 +/- 0.766968,CMS_tHq_tHq3m_bin5 = 0.011523 +/- 0.769157,CMS_tHq_tt1b = 0.0158209 +/- 0.376978,CMS_tHq_tt2b = 0.0275543 +/- 0.411724,CMS_tHq_ttH3m_bin1 = 0.0212807 +/- 0.745807,CMS_tHq_ttH3m_bin13 = 0.0126678 +/- 0.806958,CMS_tHq_ttH3m_bin14 = 0.0170326 +/- 0.778537,CMS_tHq_ttH3m_bin15 = 0.0209775 +/- 0.787157,CMS_tHq_ttH3m_bin16 = 0.021546 +/- 0.743823,CMS_tHq_ttH3m_bin17 = 0.0220715 +/- 0.739821,CMS_tHq_ttH3m_bin18 = 0.0228506 +/- 0.737606,CMS_tHq_ttH3m_bin2 = 0.0220822 +/- 0.740175,CMS_tHq_ttH3m_bin3 = 0.0156753 +/- 0.783682,CMS_tHq_ttW3m_bin1 = 0.0168553 +/- 0.760257,CMS_tHq_ttW3m_bin10 = 0.0135968 +/- 0.797744,CMS_tHq_ttW3m_bin11 = 0.0133202 +/- 0.81452,CMS_tHq_ttW3m_bin12 = 0.0149584 +/- 0.782329,CMS_tHq_ttW3m_bin13 = 0.0122417 +/- 0.781041,CMS_tHq_ttW3m_bin14 = 0.0119392 +/- 0.784587,CMS_tHq_ttW3m_bin15 = 0.0120159 +/- 0.755426,CMS_tHq_ttW3m_bin16 = 0.0208098 +/- 0.647447,CMS_tHq_ttW3m_bin17 = 0.0231759 +/- 0.738512,CMS_tHq_ttW3m_bin18 = 0.0193366 +/- 0.754809,CMS_tHq_ttW3m_bin2 = 0.0207202 +/- 0.749512,CMS_tHq_ttW3m_bin3 = 0.0174193 +/- 0.746492,CMS_tHq_ttW3m_bin4 = 0.0114501 +/- 0.793008,CMS_tHq_ttbb = 0.0868067 +/- 0.326797,CMS_tHq_ttcc = 0.00836372 +/- 0.0929696,CSVCErr1 = -0.00120503 +/- 0.0686074,CSVCErr2 = 0.0329095 +/- 0.386863,CSVHF = 0.010651 +/- 0.197968,CSVHFStats1 = -0.00446679 +/- 0.186786,CSVHFStats2 = 0.0123162 +/- 0.203353,CSVLF = 0.00235545 +/- 0.19493,CSVLFStats1 = 0.020231 +/- 0.232948,CSVLFStats2 = -0.0565969 +/- 0.784096,Q2scale_VV = 0.0131606 +/- 0.407903,Q2scale_Wj = -0.0556764 +/- 0.801647,Q2scale_tHW = 0.0254489 +/- 0.777371,Q2scale_tHq = 0.0712176 +/- 0.837573,Q2scale_tt1b = -0.0200958 +/- 0.388543,Q2scale_tt2b = -0.0245567 +/- 0.781674,Q2scale_ttH = -0.000907224 +/- 0.763878,Q2scale_ttW = 0.0183285 +/- 0.797712,Q2scale_ttbb = -0.0370003 +/- 0.376507,Q2scale_ttcc = -0.00338773 +/- 0.367219,Q2scale_ttlf = 0.000799921 +/- 0.17192,QCDscale_ST = 0.022155 +/- 0.777232,lumi_13TeV = 0.0195464 +/- 0.374557,pdf_gg = 0.0192895 +/- 0.359831,pdf_qg = -0.00218066 +/- 0.830005,pdf_qqbar = 0.0293421 +/- 0.781004,pu = -0.0250717 +/- 0.782809,r = -1.88358 +/- 2.07668)
+-1.833531    +0.16781  +0.13134    -0.050045
+-1.883576    +0.15128  +0.16781    -0.050045
+-1.933621    +0.13331  +0.15128    -0.050045
+-1.983667    +0.11371  +0.13331    -0.050045
+-2.033712    +0.09385  +0.11371    -0.050045
+-2.083758    +0.07314  +0.09385    -0.050045
+-2.133803    +0.06536  +0.07314    -0.050045
+-2.183848    +0.04521  +0.06536    -0.050045
+-2.233894    +0.02349  +0.04521    -0.050045
+-2.283939    +0.00641  +0.02349    -0.050045
+-2.333984    -0.00890  +0.00641    -0.050045
+-2.298953    -0.00035  -0.00890    -0.015014
+
+ --- MaxLikelihoodFit ---
+Best fit r: 0.018148  -2.31747/+2.24239  (68% CL)
+nll S+B -> 0.656514  nll B -> 0
+Done in 16.61 min (cpu), 16.65 min (real)

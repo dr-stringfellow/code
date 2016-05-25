@@ -1,0 +1,11 @@
+**** Following environment variables are going to be unset.
+       ROOT_GCC_TOOLCHAIN
+       MAGIC
+/usr/users/sfink/setup6_7120.sh: line 56: source: .profile: file not found
+TClass::TClass:0: RuntimeWarning: no dictionary for class stack<RooAbsArg*,deque<RooAbsArg*> > is available
+Missing background ModelConfig 'ModelConfig_bonly' in workspace 'w' in file roostats-SOg7u9.root
+Will make one from the signal ModelConfig 'ModelConfig' setting signal strenth 'r' to zero
+TClass::TClass:0: RuntimeWarning: no dictionary for class stack<RooAbsArg*,deque<RooAbsArg*> > is available
+Missing background ModelConfig 'ModelConfig_bonly' in workspace 'w' in file roostats-EHdoTb.root
+Will make one from the signal ModelConfig 'ModelConfig' setting signal strenth 'r' to zero
+python: can't open file 'mlfitNormsToText.py': [Errno 2] No such file or directory

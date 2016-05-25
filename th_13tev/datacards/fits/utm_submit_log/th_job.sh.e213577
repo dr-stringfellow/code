@@ -1,0 +1,5 @@
+**** Following environment variables are going to be unset.
+       ROOT_GCC_TOOLCHAIN
+       MAGIC
+/usr/users/sfink/setup6_7120.sh: line 56: source: .profile: file not found
+/opt/ogs_sl6//ekpclusterSL6/spool/ekpblus002/job_scripts/213577: line 12: syntax error: unexpected end of file

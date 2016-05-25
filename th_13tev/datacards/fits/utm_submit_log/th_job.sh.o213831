@@ -1,0 +1,699 @@
+/usr/users/sfink
+Loading version: /cvmfs/cms.cern.ch/slc6_amd64_gcc481/cms/cmssw-patch/CMSSW_7_1_20_patch3/external/slc6_amd64_gcc481/bin/root ->[1m DONE.[0m
+Standalone framework setup and ready to roll...
+26
+>>> including systematics
+>>> method used to compute upper limit is MaxLikelihoodFit
+>>> random number generator seed is 123456
+[?1034hComputing limit starting from observation
+Created Branches
+Searching for crossing at nll = -22325.9 in the interval 2.02786, 20
+      r      lvl-here  lvl-there   stepping
+2.117725    +0.49426  +0.49447    0.089861
+2.207586    +0.49362  +0.49426    0.089861
+2.297447    +0.49257  +0.49362    0.089861
+2.387307    +0.49109  +0.49257    0.089861
+2.477168    +0.48954  +0.49109    0.089861
+2.567029    +0.48772  +0.48954    0.089861
+2.656889    +0.48549  +0.48772    0.089861
+2.746750    +0.48285  +0.48549    0.089861
+2.836611    +0.47979  +0.48285    0.089861
+2.926471    +0.47673  +0.47979    0.089861
+3.016332    +0.47359  +0.47673    0.089861
+3.106193    +0.47005  +0.47359    0.089861
+3.196053    +0.46609  +0.47005    0.089861
+3.285914    +0.46172  +0.46609    0.089861
+3.375775    +0.45695  +0.46172    0.089861
+3.465635    +0.45228  +0.45695    0.089861
+3.555496    +0.44761  +0.45228    0.089861
+3.645357    +0.44254  +0.44761    0.089861
+3.735217    +0.43706  +0.44254    0.089861
+3.825078    +0.43118  +0.43706    0.089861
+3.914939    +0.42678  +0.43118    0.089861
+4.004800    +0.42133  +0.42678    0.089861
+4.094660    +0.41548  +0.42133    0.089861
+4.184521    +0.40923  +0.41548    0.089861
+4.274382    +0.40259  +0.40923    0.089861
+4.364242    +0.39555  +0.40259    0.089861
+4.454103    +0.38811  +0.39555    0.089861
+4.543964    +0.38029  +0.38811    0.089861
+4.633824    +0.37207  +0.38029    0.089861
+4.723685    +0.36641  +0.37207    0.089861
+4.813546    +0.35908  +0.36641    0.089861
+4.903406    +0.35137  +0.35908    0.089861
+4.993267    +0.34328  +0.35137    0.089861
+5.083128    +0.33481  +0.34328    0.089861
+5.172988    +0.32595  +0.33481    0.089861
+5.262849    +0.31672  +0.32595    0.089861
+5.352710    +0.30788  +0.31672    0.089861
+5.442570    +0.29931  +0.30788    0.089861
+5.532431    +0.29037  +0.29931    0.089861
+5.622292    +0.28105  +0.29037    0.089861
+5.712152    +0.27135  +0.28105    0.089861
+5.802013    +0.26128  +0.27135    0.089861
+5.891874    +0.25221  +0.26128    0.089861
+5.981734    +0.24229  +0.25221    0.089861
+6.071595    +0.23199  +0.24229    0.089861
+6.161456    +0.22132  +0.23199    0.089861
+6.251316    +0.21029  +0.22132    0.089861
+6.341177    +0.20071  +0.21029    0.089861
+6.431038    +0.18999  +0.20071    0.089861
+6.520898    +0.17891  +0.18999    0.089861
+6.610759    +0.16747  +0.17891    0.089861
+6.700620    +0.15566  +0.16747    0.089861
+6.790480    +0.14349  +0.15566    0.089861
+6.880341    +0.13095  +0.14349    0.089861
+6.970202    +0.11806  +0.13095    0.089861
+7.060062    +0.10543  +0.11806    0.089861
+7.149923    +0.09295  +0.10543    0.089861
+7.239784    +0.08011  +0.09295    0.089861
+7.329644    +0.06834  +0.08011    0.089861
+7.419505    +0.05579  +0.06834    0.089861
+7.509366    +0.04288  +0.05579    0.089861
+7.599226    +0.02961  +0.04288    0.089861
+7.689087    +0.01600  +0.02961    0.089861
+7.778948    +0.00202  +0.01600    0.089861
+7.868809    -0.01230  +0.00202    0.089861
+7.805906    -0.00224  -0.01230    0.026958
+7.787035    +0.00075  -0.00224    0.008087
+7.795123    -0.00053  +0.00075    0.008087
+7.789462    +0.00037  -0.00053    0.002426
+Searching for crossing at nll = -22325.9 in the interval 2.02786, -20
+      r      lvl-here  lvl-there   stepping
+1.917725    +0.49416  +0.49447    -0.110139
+1.807586    +0.49320  +0.49416    -0.110139
+1.697447    +0.49161  +0.49320    -0.110139
+1.587307    +0.48941  +0.49161    -0.110139
+1.477168    +0.48754  +0.48941    -0.110139
+1.367029    +0.48563  +0.48754    -0.110139
+1.256889    +0.48283  +0.48563    -0.110139
+1.146750    +0.47938  +0.48283    -0.110139
+1.036611    +0.47527  +0.47938    -0.110139
+0.926471    +0.47050  +0.47527    -0.110139
+0.816332    +0.46518  +0.47050    -0.110139
+0.706193    +0.46028  +0.46518    -0.110139
+0.596053    +0.45471  +0.46028    -0.110139
+0.485914    +0.44849  +0.45471    -0.110139
+0.375775    +0.44169  +0.44849    -0.110139
+0.265636    +0.43547  +0.44169    -0.110139
+0.155496    +0.42865  +0.43547    -0.110139
+0.045357    +0.42179  +0.42865    -0.110139
+-0.064782    +0.41439  +0.42179    -0.110139
+-0.174922    +0.40632  +0.41439    -0.110139
+-0.285061    +0.39757  +0.40632    -0.110139
+-0.395200    +0.38881  +0.39757    -0.110139
+-0.505340    +0.38228  +0.38881    -0.110139
+-0.615479    +0.37302  +0.38228    -0.110139
+-0.725618    +0.36307  +0.37302    -0.110139
+-0.835758    +0.35243  +0.36307    -0.110139
+-0.945897    +0.34109  +0.35243    -0.110139
+-1.056036    +0.33070  +0.34109    -0.110139
+-1.166176    +0.31981  +0.33070    -0.110139
+-1.276315    +0.30822  +0.31981    -0.110139
+-1.386454    +0.29928  +0.30822    -0.110139
+-1.496594    +0.28735  +0.29928    -0.110139
+-1.606733    +0.27471  +0.28735    -0.110139
+-1.716872    +0.26350  +0.27471    -0.110139
+-1.827012    +0.25035  +0.26350    -0.110139
+-1.937151    +0.23649  +0.25035    -0.110139
+-2.047290    +0.22191  +0.23649    -0.110139
+-2.157430    +0.21081  +0.22191    -0.110139
+-2.267569    +0.19646  +0.21081    -0.110139
+-2.377708    +0.18139  +0.19646    -0.110139
+-2.487847    +0.16560  +0.18139    -0.110139
+-2.597987    +0.15215  +0.16560    -0.110139
+-2.708126    +0.13619  +0.15215    -0.110139
+-2.818265    +0.11950  +0.13619    -0.110139
+-2.928405    +0.10209  +0.11950    -0.110139
+-3.038544    +0.08620  +0.10209    -0.110139
+-3.148683    +0.06874  +0.08620    -0.110139
+-3.258823    +0.05054  +0.06874    -0.110139
+-3.368962    +0.03361  +0.05054    -0.110139
+-3.479101    +0.01506  +0.03361    -0.110139
+-3.589241    -0.00423  +0.01506    -0.110139
+-3.512143    +0.00935  -0.00423    -0.033042
+-3.545185    +0.00357  +0.00935    -0.033042
+-3.578227    -0.00227  +0.00357    -0.033042
+-3.555098    +0.00183  -0.00227    -0.009913
+-3.565010    +0.00008  +0.00183    -0.009913
+
+ --- MaxLikelihoodFit ---
+Best fit r: 2.02786  -5.5928/+5.76181  (68% CL)
+nll S+B -> -60.8694  nll B -> -61.2124
+Done in 2.83 min (cpu), 2.84 min (real)
+>>> including systematics
+>>> method used to compute upper limit is MaxLikelihoodFit
+>>> random number generator seed is 123456
+[?1034hComputing limit starting from expected outcome
+Created Branches
+Searching for crossing at nll = -27066 in the interval 0.011595, 20
+      r      lvl-here  lvl-there   stepping
+0.111537    +0.49414  +0.49447    0.099942
+0.211479    +0.49318  +0.49414    0.099942
+0.311421    +0.49166  +0.49318    0.099942
+0.411363    +0.48976  +0.49166    0.099942
+0.511305    +0.48725  +0.48976    0.099942
+0.611247    +0.48414  +0.48725    0.099942
+0.711189    +0.48105  +0.48414    0.099942
+0.811131    +0.47743  +0.48105    0.099942
+0.911073    +0.47321  +0.47743    0.099942
+1.011015    +0.46840  +0.47321    0.099942
+1.110957    +0.46299  +0.46840    0.099942
+1.210899    +0.45700  +0.46299    0.099942
+1.310841    +0.45203  +0.45700    0.099942
+1.410783    +0.44611  +0.45203    0.099942
+1.510725    +0.43961  +0.44611    0.099942
+1.610667    +0.43254  +0.43961    0.099942
+1.710609    +0.42490  +0.43254    0.099942
+1.810551    +0.41670  +0.42490    0.099942
+1.910493    +0.40797  +0.41670    0.099942
+2.010435    +0.39992  +0.40797    0.099942
+2.110377    +0.39132  +0.39992    0.099942
+2.210320    +0.38216  +0.39132    0.099942
+2.310262    +0.37244  +0.38216    0.099942
+2.410204    +0.36218  +0.37244    0.099942
+2.510146    +0.35137  +0.36218    0.099942
+2.610088    +0.34002  +0.35137    0.099942
+2.710030    +0.33268  +0.34002    0.099942
+2.809972    +0.32230  +0.33268    0.099942
+2.909914    +0.31138  +0.32230    0.099942
+3.009856    +0.29992  +0.31138    0.099942
+3.109798    +0.28794  +0.29992    0.099942
+3.209740    +0.27542  +0.28794    0.099942
+3.309682    +0.26304  +0.27542    0.099942
+3.409624    +0.25058  +0.26304    0.099942
+3.509566    +0.23759  +0.25058    0.099942
+3.609508    +0.22408  +0.23759    0.099942
+3.709450    +0.21006  +0.22408    0.099942
+3.809392    +0.19552  +0.21006    0.099942
+3.909334    +0.18046  +0.19552    0.099942
+4.009276    +0.16544  +0.18046    0.099942
+4.109218    +0.15087  +0.16544    0.099942
+4.209160    +0.13579  +0.15087    0.099942
+4.309102    +0.12020  +0.13579    0.099942
+4.409044    +0.10412  +0.12020    0.099942
+4.508986    +0.08753  +0.10412    0.099942
+4.608928    +0.07234  +0.08753    0.099942
+4.708870    +0.05604  +0.07234    0.099942
+4.808812    +0.03923  +0.05604    0.099942
+4.908754    +0.02194  +0.03923    0.099942
+5.008696    +0.00415  +0.02194    0.099942
+5.108638    -0.01337  +0.00415    0.099942
+5.038679    -0.00112  -0.01337    0.029983
+5.017691    +0.00252  -0.00112    0.008995
+5.026686    +0.00128  +0.00252    0.008995
+5.035681    -0.00029  +0.00128    0.008995
+Searching for crossing at nll = -27066 in the interval 0.011595, -20
+      r      lvl-here  lvl-there   stepping
+-0.088463    +0.49417  +0.49447    -0.100058
+-0.188521    +0.49323  +0.49417    -0.100058
+-0.288579    +0.49164  +0.49323    -0.100058
+WARNING: underflow to -8.96489e-08 in pdf_bintH_4m_obsOnly for bin 0, weight 1.19214e-06
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(tH_4m) evaluation error, 
+ origin       : RooAbsReal::tH_4m[ params=(CMS_eff_lep,CMS_jer,CMS_jes,CMS_tHq_TT1b4m_bin1,CMS_tHq_TT1b4m_bin11,CMS_tHq_TT1b4m_bin12,CMS_tHq_TT1b4m_bin13,CMS_tHq_TT1b4m_bin14,CMS_tHq_TT1b4m_bin15,CMS_tHq_TT1b4m_bin16,CMS_tHq_TT1b4m_bin17,CMS_tHq_TT1b4m_bin18,CMS_tHq_TT1b4m_bin2,CMS_tHq_TT1b4m_bin3,CMS_tHq_TT1b4m_bin4,CMS_tHq_TT1b4m_bin5,CMS_tHq_TT2b4m_bin1,CMS_tHq_TT2b4m_bin11,CMS_tHq_TT2b4m_bin12,CMS_tHq_TT2b4m_bin13,CMS_tHq_TT2b4m_bin14,CMS_tHq_TT2b4m_bin15,CMS_tHq_TT2b4m_bin16,CMS_tHq_TT2b4m_bin17,CMS_tHq_TT2b4m_bin18,CMS_tHq_TT2b4m_bin2,CMS_tHq_TT2b4m_bin3,CMS_tHq_TT2b4m_bin4,CMS_tHq_TT2b4m_bin5,CMS_tHq_TTbb4m_bin1,CMS_tHq_TTbb4m_bin13,CMS_tHq_TTbb4m_bin14,CMS_tHq_TTbb4m_bin15,CMS_tHq_TTbb4m_bin16,CMS_tHq_TTbb4m_bin17,CMS_tHq_TTbb4m_bin18,CMS_tHq_TTbb4m_bin2,CMS_tHq_TTbb4m_bin3,CMS_tHq_TTbb4m_bin4,CMS_tHq_TTcc4m_bin1,CMS_tHq_TTcc4m_bin12,CMS_tHq_TTcc4m_bin13,CMS_tHq_TTcc4m_bin14,CMS_tHq_TTcc4m_bin15,CMS_tHq_TTcc4m_bin16,CMS_tHq_TTcc4m_bin17,CMS_tHq_TTcc4m_bin18,CMS_tHq_TTcc4m_bin2,CMS_tHq_TTcc4m_bin3,CMS_tHq_TTcc4m_bin4,CMS_tHq_TTlf4m_bin1,CMS_tHq_TTlf4m_bin11,CMS_tHq_TTlf4m_bin12,CMS_tHq_TTlf4m_bin13,CMS_tHq_TTlf4m_bin14,CMS_tHq_TTlf4m_bin15,CMS_tHq_TTlf4m_bin16,CMS_tHq_TTlf4m_bin17,CMS_tHq_TTlf4m_bin18,CMS_tHq_TTlf4m_bin2,CMS_tHq_TTlf4m_bin3,CMS_tHq_TTlf4m_bin4,CMS_tHq_TTlf4m_bin5,CMS_tHq_VV4m_bin1,CMS_tHq_VV4m_bin10,CMS_tHq_VV4m_bin11,CMS_tHq_VV4m_bin12,CMS_tHq_VV4m_bin13,CMS_tHq_VV4m_bin14,CMS_tHq_VV4m_bin15,CMS_tHq_VV4m_bin16,CMS_tHq_VV4m_bin17,CMS_tHq_VV4m_bin18,CMS_tHq_VV4m_bin2,CMS_tHq_VV4m_bin3,CMS_tHq_VV4m_bin4,CMS_tHq_VV4m_bin5,CMS_tHq_VV4m_bin6,CMS_tHq_VV4m_bin7,CMS_tHq_VV4m_bin8,CMS_tHq_VV4m_bin9,CMS_tHq_Wj4m_bin1,CMS_tHq_Wj4m_bin10,CMS_tHq_Wj4m_bin11,CMS_tHq_Wj4m_bin12,CMS_tHq_Wj4m_bin13,CMS_tHq_Wj4m_bin14,CMS_tHq_Wj4m_bin15,CMS_tHq_Wj4m_bin16,CMS_tHq_Wj4m_bin17,CMS_tHq_Wj4m_bin18,CMS_tHq_Wj4m_bin2,CMS_tHq_Wj4m_bin3,CMS_tHq_Wj4m_bin4,CMS_tHq_Wj4m_bin5,CMS_tHq_Wj4m_bin6,CMS_tHq_Wj4m_bin7,CMS_tHq_Wj4m_bin8,CMS_tHq_Wj4m_bin9,CMS_tHq_sTop4m_bin1,CMS_tHq_sTop4m_bin10,CMS_tHq_sTop4m_bin11,CMS_tHq_sTop4m_bin12,CMS_tHq_sTop4m_bin13,CMS_tHq_sTop4m_bin14,CMS_tHq_sTop4m_bin15,CMS_tHq_sTop4m_bin16,CMS_tHq_sTop4m_bin17,CMS_tHq_sTop4m_bin18,CMS_tHq_sTop4m_bin2,CMS_tHq_sTop4m_bin3,CMS_tHq_sTop4m_bin4,CMS_tHq_sTop4m_bin5,CMS_tHq_sTop4m_bin6,CMS_tHq_sTop4m_bin7,CMS_tHq_sTop4m_bin8,CMS_tHq_sTop4m_bin9,CMS_tHq_tHW4m_bin1,CMS_tHq_tHW4m_bin12,CMS_tHq_tHW4m_bin13,CMS_tHq_tHW4m_bin14,CMS_tHq_tHW4m_bin15,CMS_tHq_tHW4m_bin16,CMS_tHq_tHW4m_bin17,CMS_tHq_tHW4m_bin18,CMS_tHq_tHW4m_bin2,CMS_tHq_tHW4m_bin3,CMS_tHq_tHW4m_bin4,CMS_tHq_tHW4m_bin5,CMS_tHq_tHW4m_bin6,CMS_tHq_tHq4m_bin1,CMS_tHq_tHq4m_bin15,CMS_tHq_tHq4m_bin16,CMS_tHq_tHq4m_bin17,CMS_tHq_tHq4m_bin18,CMS_tHq_tHq4m_bin2,CMS_tHq_tHq4m_bin3,CMS_tHq_tHq4m_bin4,CMS_tHq_tHq4m_bin5,CMS_tHq_tHq4m_bin6,CMS_tHq_tHq4m_bin7,CMS_tHq_tHq4m_bin8,CMS_tHq_tt1b,CMS_tHq_tt2b,CMS_tHq_ttH4m_bin1,CMS_tHq_ttH4m_bin14,CMS_tHq_ttH4m_bin15,CMS_tHq_ttH4m_bin16,CMS_tHq_ttH4m_bin17,CMS_tHq_ttH4m_bin18,CMS_tHq_ttH4m_bin2,CMS_tHq_ttH4m_bin3,CMS_tHq_ttH4m_bin4,CMS_tHq_ttW4m_bin1,CMS_tHq_ttW4m_bin10,CMS_tHq_ttW4m_bin11,CMS_tHq_ttW4m_bin12,CMS_tHq_ttW4m_bin13,CMS_tHq_ttW4m_bin14,CMS_tHq_ttW4m_bin15,CMS_tHq_ttW4m_bin16,CMS_tHq_ttW4m_bin17,CMS_tHq_ttW4m_bin18,CMS_tHq_ttW4m_bin2,CMS_tHq_ttW4m_bin3,CMS_tHq_ttW4m_bin4,CMS_tHq_ttW4m_bin5,CMS_tHq_ttW4m_bin6,CMS_tHq_ttW4m_bin7,CMS_tHq_ttW4m_bin8,CMS_tHq_ttW4m_bin9,CMS_tHq_ttbb,CMS_tHq_ttcc,CSVCErr1,CSVCErr2,CSVHF,CSVHFStats1,CSVHFStats2,CSVLF,CSVLFStats1,CSVLFStats2,Q2scale_VV,Q2scale_Wj,Q2scale_tHW,Q2scale_tHq,Q2scale_tt1b,Q2scale_tt2b,Q2scale_ttH,Q2scale_ttW,Q2scale_ttbb,Q2scale_ttcc,Q2scale_ttlf,QCDscale_ST,lumi_13TeV,pdf_gg,pdf_qg,pdf_qqbar,pu,r) ]
+ message      : Number of events is negative or error
+ server values: params=(CMS_eff_lep = -0.00133357 +/- 0.493859,CMS_jer = 0.00348091 +/- 0.474857,CMS_jes = -0.0027516 +/- 0.202722,CMS_tHq_TT1b4m_bin1 = 0.000271951 +/- 0.985347,CMS_tHq_TT1b4m_bin11 = 8.14627e-05 +/- 0.985621,CMS_tHq_TT1b4m_bin12 = 9.05367e-05 +/- 0.985727,CMS_tHq_TT1b4m_bin13 = 0.000138864 +/- 0.986044,CMS_tHq_TT1b4m_bin14 = 8.97906e-05 +/- 0.98631,CMS_tHq_TT1b4m_bin15 = 0.000127428 +/- 0.98576,CMS_tHq_TT1b4m_bin16 = 0.000271951 +/- 0.985244,CMS_tHq_TT1b4m_bin17 = 0.000271951 +/- 0.985391,CMS_tHq_TT1b4m_bin18 = 0.00027195 +/- 0.985256,CMS_tHq_TT1b4m_bin2 = 0.000271951 +/- 0.985199,CMS_tHq_TT1b4m_bin3 = 3.26192e-07 +/- 0.984984,CMS_tHq_TT1b4m_bin4 = -1.54022e-05 +/- 0.985142,CMS_tHq_TT1b4m_bin5 = -2.8163e-05 +/- 0.985327,CMS_tHq_TT2b4m_bin1 = 0.00026642 +/- 0.98542,CMS_tHq_TT2b4m_bin11 = 7.19801e-05 +/- 0.985542,CMS_tHq_TT2b4m_bin12 = 7.91712e-05 +/- 0.985703,CMS_tHq_TT2b4m_bin13 = 0.000109886 +/- 0.985872,CMS_tHq_TT2b4m_bin14 = 6.82378e-05 +/- 0.98602,CMS_tHq_TT2b4m_bin15 = 0.000127788 +/- 0.985757,CMS_tHq_TT2b4m_bin16 = 0.00026642 +/- 0.985426,CMS_tHq_TT2b4m_bin17 = 0.00026642 +/- 0.98542,CMS_tHq_TT2b4m_bin18 = 0.00026642 +/- 0.985425,CMS_tHq_TT2b4m_bin2 = 0.00026642 +/- 0.985445,CMS_tHq_TT2b4m_bin3 = -1.83166e-06 +/- 0.986112,CMS_tHq_TT2b4m_bin4 = -1.06313e-05 +/- 0.985509,CMS_tHq_TT2b4m_bin5 = -2.26221e-05 +/- 0.985455,CMS_tHq_TTbb4m_bin1 = 0.000315803 +/- 0.985414,CMS_tHq_TTbb4m_bin13 = 0.000258848 +/- 0.985936,CMS_tHq_TTbb4m_bin14 = 0.000173224 +/- 0.986263,CMS_tHq_TTbb4m_bin15 = 9.07679e-05 +/- 0.985337,CMS_tHq_TTbb4m_bin16 = 0.000315803 +/- 0.985394,CMS_tHq_TTbb4m_bin17 = 0.000315803 +/- 0.985379,CMS_tHq_TTbb4m_bin18 = 0.000315803 +/- 0.985419,CMS_tHq_TTbb4m_bin2 = 0.000315803 +/- 0.985362,CMS_tHq_TTbb4m_bin3 = -6.51832e-07 +/- 0.984542,CMS_tHq_TTbb4m_bin4 = -2.11452e-05 +/- 0.98497,CMS_tHq_TTcc4m_bin1 = 0.000291509 +/- 0.985163,CMS_tHq_TTcc4m_bin12 = 0.000114576 +/- 0.986073,CMS_tHq_TTcc4m_bin13 = 0.000143432 +/- 0.985926,CMS_tHq_TTcc4m_bin14 = 9.86828e-05 +/- 0.986342,CMS_tHq_TTcc4m_bin15 = 0.00012565 +/- 0.985722,CMS_tHq_TTcc4m_bin16 = 0.000291509 +/- 0.9851,CMS_tHq_TTcc4m_bin17 = 0.000291509 +/- 0.985086,CMS_tHq_TTcc4m_bin18 = 0.000291509 +/- 0.985089,CMS_tHq_TTcc4m_bin2 = 0.000291509 +/- 0.985201,CMS_tHq_TTcc4m_bin3 = 1.26733e-07 +/- 0.985577,CMS_tHq_TTcc4m_bin4 = -1.55741e-05 +/- 0.985263,CMS_tHq_TTlf4m_bin1 = 0.000276166 +/- 0.985106,CMS_tHq_TTlf4m_bin11 = 9.08849e-05 +/- 0.985522,CMS_tHq_TTlf4m_bin12 = 0.000101917 +/- 0.986129,CMS_tHq_TTlf4m_bin13 = 0.000117782 +/- 0.986161,CMS_tHq_TTlf4m_bin14 = 6.69725e-05 +/- 0.985895,CMS_tHq_TTlf4m_bin15 = 0.000127356 +/- 0.985755,CMS_tHq_TTlf4m_bin16 = 0.000276167 +/- 0.985139,CMS_tHq_TTlf4m_bin17 = 0.000276167 +/- 0.985174,CMS_tHq_TTlf4m_bin18 = 0.000276167 +/- 0.985162,CMS_tHq_TTlf4m_bin2 = 0.000276166 +/- 0.985119,CMS_tHq_TTlf4m_bin3 = 3.99759e-08 +/- 0.985387,CMS_tHq_TTlf4m_bin4 = -1.07828e-05 +/- 0.985557,CMS_tHq_TTlf4m_bin5 = -2.70745e-05 +/- 0.985446,CMS_tHq_VV4m_bin1 = 0.000343853 +/- 0.98543,CMS_tHq_VV4m_bin10 = -7.27674e-07 +/- 0.985716,CMS_tHq_VV4m_bin11 = -2.29373e-06 +/- 0.990789,CMS_tHq_VV4m_bin12 = -2.62926e-06 +/- 0.987022,CMS_tHq_VV4m_bin13 = 4.43965e-07 +/- 0.985552,CMS_tHq_VV4m_bin14 = 4.17596e-05 +/- 0.985474,CMS_tHq_VV4m_bin15 = 0.000123072 +/- 0.985764,CMS_tHq_VV4m_bin16 = 0.000343853 +/- 0.985421,CMS_tHq_VV4m_bin17 = 0.000343853 +/- 0.985427,CMS_tHq_VV4m_bin18 = 0.000343853 +/- 0.985408,CMS_tHq_VV4m_bin2 = 0.000343853 +/- 0.985407,CMS_tHq_VV4m_bin3 = 3.47435e-09 +/- 0.985939,CMS_tHq_VV4m_bin4 = 1.48903e-06 +/- 0.985551,CMS_tHq_VV4m_bin5 = 1.15408e-06 +/- 0.983637,CMS_tHq_VV4m_bin6 = 1.94154e-06 +/- 0.987721,CMS_tHq_VV4m_bin7 = 1.0856e-06 +/- 0.985539,CMS_tHq_VV4m_bin8 = 5.58888e-07 +/- 0.98563,CMS_tHq_VV4m_bin9 = 0.000360916 +/- 0.985123,CMS_tHq_Wj4m_bin1 = 9.58443e-09 +/- 0.993673,CMS_tHq_Wj4m_bin10 = -3.92003e-09 +/- 0.993413,CMS_tHq_Wj4m_bin11 = -3.91904e-09 +/- 0.993461,CMS_tHq_Wj4m_bin12 = -4.02427e-09 +/- 0.993351,CMS_tHq_Wj4m_bin13 = -4.03253e-09 +/- 0.993254,CMS_tHq_Wj4m_bin14 = -4.04791e-09 +/- 0.993145,CMS_tHq_Wj4m_bin15 = -4.15848e-09 +/- 0.993045,CMS_tHq_Wj4m_bin16 = 9.67581e-09 +/- 0.993664,CMS_tHq_Wj4m_bin17 = 9.67581e-09 +/- 0.993563,CMS_tHq_Wj4m_bin18 = 9.67581e-09 +/- 0.99346,CMS_tHq_Wj4m_bin2 = 9.58443e-09 +/- 0.99293,CMS_tHq_Wj4m_bin3 = -3.99793e-09 +/- 0.992871,CMS_tHq_Wj4m_bin4 = -3.99793e-09 +/- 0.992818,CMS_tHq_Wj4m_bin5 = -3.99793e-09 +/- 0.992751,CMS_tHq_Wj4m_bin6 = -3.99793e-09 +/- 0.992679,CMS_tHq_Wj4m_bin7 = -3.99231e-09 +/- 0.992671,CMS_tHq_Wj4m_bin8 = -3.99793e-09 +/- 0.992569,CMS_tHq_Wj4m_bin9 = -3.91442e-09 +/- 0.992507,CMS_tHq_sTop4m_bin1 = 0.000259919 +/- 0.985449,CMS_tHq_sTop4m_bin10 = 0.000108173 +/- 0.983895,CMS_tHq_sTop4m_bin11 = 0.000175518 +/- 0.985196,CMS_tHq_sTop4m_bin12 = 0.000236226 +/- 0.985514,CMS_tHq_sTop4m_bin13 = 0.000298547 +/- 0.985788,CMS_tHq_sTop4m_bin14 = 4.26734e-05 +/- 0.985757,CMS_tHq_sTop4m_bin15 = 0.000128504 +/- 0.985749,CMS_tHq_sTop4m_bin16 = 0.000259919 +/- 0.985476,CMS_tHq_sTop4m_bin17 = 0.000259919 +/- 0.98545,CMS_tHq_sTop4m_bin18 = 0.000259919 +/- 0.985192,CMS_tHq_sTop4m_bin2 = 0.000259919 +/- 0.985535,CMS_tHq_sTop4m_bin3 = 8.09946e-08 +/- 0.986079,CMS_tHq_sTop4m_bin4 = -1.46341e-06 +/- 0.985817,CMS_tHq_sTop4m_bin5 = -1.59675e-06 +/- 0.985773,CMS_tHq_sTop4m_bin6 = -0.000320981 +/- 0.983476,CMS_tHq_sTop4m_bin7 = -0.00016454 +/- 0.984339,CMS_tHq_sTop4m_bin8 = -5.99586e-05 +/- 0.984881,CMS_tHq_sTop4m_bin9 = -2.94424e-05 +/- 0.984635,CMS_tHq_tHW4m_bin1 = -8.59778e-05 +/- 0.985217,CMS_tHq_tHW4m_bin12 = 1.83028e-06 +/- 0.985726,CMS_tHq_tHW4m_bin13 = 3.44085e-06 +/- 0.985971,CMS_tHq_tHW4m_bin14 = 5.78797e-06 +/- 0.985943,CMS_tHq_tHW4m_bin15 = 2.45013e-06 +/- 0.985941,CMS_tHq_tHW4m_bin16 = -8.59779e-05 +/- 0.985218,CMS_tHq_tHW4m_bin17 = -8.59779e-05 +/- 0.985218,CMS_tHq_tHW4m_bin18 = -8.59779e-05 +/- 0.98523,CMS_tHq_tHW4m_bin2 = -8.59778e-05 +/- 0.985251,CMS_tHq_tHW4m_bin3 = 2.13563e-06 +/- 0.985811,CMS_tHq_tHW4m_bin4 = -8.3368e-08 +/- 0.985653,CMS_tHq_tHW4m_bin5 = -3.80848e-07 +/- 0.985821,CMS_tHq_tHW4m_bin6 = -1.06728e-06 +/- 0.985634,CMS_tHq_tHq4m_bin1 = -8.93926e-05 +/- 0.985324,CMS_tHq_tHq4m_bin15 = 1.12786e-05 +/- 0.985795,CMS_tHq_tHq4m_bin16 = -8.93926e-05 +/- 0.985342,CMS_tHq_tHq4m_bin17 = -8.93926e-05 +/- 0.985343,CMS_tHq_tHq4m_bin18 = -8.93926e-05 +/- 0.98535,CMS_tHq_tHq4m_bin2 = -8.93926e-05 +/- 0.985368,CMS_tHq_tHq4m_bin3 = -5.54264e-06 +/- 0.985608,CMS_tHq_tHq4m_bin4 = -9.97705e-08 +/- 0.985771,CMS_tHq_tHq4m_bin5 = -5.66569e-07 +/- 0.98563,CMS_tHq_tHq4m_bin6 = -1.65526e-06 +/- 0.985851,CMS_tHq_tHq4m_bin7 = -3.847e-06 +/- 0.985672,CMS_tHq_tHq4m_bin8 = -5.62332e-06 +/- 0.985715,CMS_tHq_tt1b = -0.00150823 +/- 0.238159,CMS_tHq_tt2b = -0.0012886 +/- 0.491562,CMS_tHq_ttH4m_bin1 = 0.000258376 +/- 0.985319,CMS_tHq_ttH4m_bin14 = 8.2252e-06 +/- 0.98576,CMS_tHq_ttH4m_bin15 = 3.01607e-06 +/- 0.985641,CMS_tHq_ttH4m_bin16 = 0.000258376 +/- 0.985482,CMS_tHq_ttH4m_bin17 = 0.000258376 +/- 0.985447,CMS_tHq_ttH4m_bin18 = 0.000258376 +/- 0.985377,CMS_tHq_ttH4m_bin2 = 0.000258376 +/- 0.985261,CMS_tHq_ttH4m_bin3 = -3.67955e-09 +/- 0.985552,CMS_tHq_ttH4m_bin4 = -1.09644e-06 +/- 0.98558,CMS_tHq_ttW4m_bin1 = 0.000254643 +/- 0.985535,CMS_tHq_ttW4m_bin10 = 1.14394e-05 +/- 0.985675,CMS_tHq_ttW4m_bin11 = 1.15611e-05 +/- 0.985567,CMS_tHq_ttW4m_bin12 = 2.18846e-05 +/- 0.985677,CMS_tHq_ttW4m_bin13 = 2.29879e-05 +/- 0.986049,CMS_tHq_ttW4m_bin14 = 9.58546e-06 +/- 0.985881,CMS_tHq_ttW4m_bin15 = 0.000129091 +/- 0.98573,CMS_tHq_ttW4m_bin16 = 0.000254643 +/- 0.985461,CMS_tHq_ttW4m_bin17 = 0.000254643 +/- 0.985537,CMS_tHq_ttW4m_bin18 = 0.000254643 +/- 0.985536,CMS_tHq_ttW4m_bin2 = 0.000254643 +/- 0.985503,CMS_tHq_ttW4m_bin3 = -3.44353e-07 +/- 0.985755,CMS_tHq_ttW4m_bin4 = -3.95337e-06 +/- 0.985693,CMS_tHq_ttW4m_bin5 = -4.16341e-06 +/- 0.98552,CMS_tHq_ttW4m_bin6 = -1.56607e-05 +/- 0.985822,CMS_tHq_ttW4m_bin7 = -9.14385e-06 +/- 0.985806,CMS_tHq_ttW4m_bin8 = -1.56179e-06 +/- 0.985588,CMS_tHq_ttW4m_bin9 = 3.70034e-06 +/- 0.985545,CMS_tHq_ttbb = -0.00246201 +/- 0.171978,CMS_tHq_ttcc = 0.00184857 +/- 0.110696,CSVCErr1 = -0.000548761 +/- 0.0765894,CSVCErr2 = -0.000170365 +/- 0.493668,CSVHF = -0.000943885 +/- 0.114221,CSVHFStats1 = 0.000405556 +/- 0.118679,CSVHFStats2 = -0.00249534 +/- 0.242155,CSVLF = -0.0010994 +/- 0.121887,CSVLFStats1 = -0.00252936 +/- 0.240484,CSVLFStats2 = 0.0010768 +/- 0.963424,Q2scale_VV = 0 +/- 0.497864,Q2scale_Wj = -5.85198e-05 +/- 0.980298,Q2scale_tHW = -1.83191e-05 +/- 0.9859,Q2scale_tHq = -0.000570805 +/- 0.988045,Q2scale_tt1b = -0.000565181 +/- 0.490422,Q2scale_tt2b = -0.00195661 +/- 0.491527,Q2scale_ttH = -0.0015508 +/- 0.978294,Q2scale_ttW = 0.00010206 +/- 0.991599,Q2scale_ttbb = -0.00148246 +/- 0.463962,Q2scale_ttcc = -0.00248936 +/- 0.24241,Q2scale_ttlf = -0.000274179 +/- 0.106148,QCDscale_ST = -3.13386e-05 +/- 0.986908,lumi_13TeV = -0.000953345 +/- 0.485312,pdf_gg = -0.000200436 +/- 0.487184,pdf_qg = 7.18129e-05 +/- 0.986215,pdf_qqbar = -8.3587e-05 +/- 0.988271,pu = -0.00101636 +/- 0.981819,r = -0.388637 +/- 5.60275)
+WARNING: underflow to -3.621e-08 in pdf_bintH_4m_obsOnly for bin 0, weight 1.19214e-06
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(tH_4m) evaluation error, 
+ origin       : RooAbsReal::tH_4m[ params=(CMS_eff_lep,CMS_jer,CMS_jes,CMS_tHq_TT1b4m_bin1,CMS_tHq_TT1b4m_bin11,CMS_tHq_TT1b4m_bin12,CMS_tHq_TT1b4m_bin13,CMS_tHq_TT1b4m_bin14,CMS_tHq_TT1b4m_bin15,CMS_tHq_TT1b4m_bin16,CMS_tHq_TT1b4m_bin17,CMS_tHq_TT1b4m_bin18,CMS_tHq_TT1b4m_bin2,CMS_tHq_TT1b4m_bin3,CMS_tHq_TT1b4m_bin4,CMS_tHq_TT1b4m_bin5,CMS_tHq_TT2b4m_bin1,CMS_tHq_TT2b4m_bin11,CMS_tHq_TT2b4m_bin12,CMS_tHq_TT2b4m_bin13,CMS_tHq_TT2b4m_bin14,CMS_tHq_TT2b4m_bin15,CMS_tHq_TT2b4m_bin16,CMS_tHq_TT2b4m_bin17,CMS_tHq_TT2b4m_bin18,CMS_tHq_TT2b4m_bin2,CMS_tHq_TT2b4m_bin3,CMS_tHq_TT2b4m_bin4,CMS_tHq_TT2b4m_bin5,CMS_tHq_TTbb4m_bin1,CMS_tHq_TTbb4m_bin13,CMS_tHq_TTbb4m_bin14,CMS_tHq_TTbb4m_bin15,CMS_tHq_TTbb4m_bin16,CMS_tHq_TTbb4m_bin17,CMS_tHq_TTbb4m_bin18,CMS_tHq_TTbb4m_bin2,CMS_tHq_TTbb4m_bin3,CMS_tHq_TTbb4m_bin4,CMS_tHq_TTcc4m_bin1,CMS_tHq_TTcc4m_bin12,CMS_tHq_TTcc4m_bin13,CMS_tHq_TTcc4m_bin14,CMS_tHq_TTcc4m_bin15,CMS_tHq_TTcc4m_bin16,CMS_tHq_TTcc4m_bin17,CMS_tHq_TTcc4m_bin18,CMS_tHq_TTcc4m_bin2,CMS_tHq_TTcc4m_bin3,CMS_tHq_TTcc4m_bin4,CMS_tHq_TTlf4m_bin1,CMS_tHq_TTlf4m_bin11,CMS_tHq_TTlf4m_bin12,CMS_tHq_TTlf4m_bin13,CMS_tHq_TTlf4m_bin14,CMS_tHq_TTlf4m_bin15,CMS_tHq_TTlf4m_bin16,CMS_tHq_TTlf4m_bin17,CMS_tHq_TTlf4m_bin18,CMS_tHq_TTlf4m_bin2,CMS_tHq_TTlf4m_bin3,CMS_tHq_TTlf4m_bin4,CMS_tHq_TTlf4m_bin5,CMS_tHq_VV4m_bin1,CMS_tHq_VV4m_bin10,CMS_tHq_VV4m_bin11,CMS_tHq_VV4m_bin12,CMS_tHq_VV4m_bin13,CMS_tHq_VV4m_bin14,CMS_tHq_VV4m_bin15,CMS_tHq_VV4m_bin16,CMS_tHq_VV4m_bin17,CMS_tHq_VV4m_bin18,CMS_tHq_VV4m_bin2,CMS_tHq_VV4m_bin3,CMS_tHq_VV4m_bin4,CMS_tHq_VV4m_bin5,CMS_tHq_VV4m_bin6,CMS_tHq_VV4m_bin7,CMS_tHq_VV4m_bin8,CMS_tHq_VV4m_bin9,CMS_tHq_Wj4m_bin1,CMS_tHq_Wj4m_bin10,CMS_tHq_Wj4m_bin11,CMS_tHq_Wj4m_bin12,CMS_tHq_Wj4m_bin13,CMS_tHq_Wj4m_bin14,CMS_tHq_Wj4m_bin15,CMS_tHq_Wj4m_bin16,CMS_tHq_Wj4m_bin17,CMS_tHq_Wj4m_bin18,CMS_tHq_Wj4m_bin2,CMS_tHq_Wj4m_bin3,CMS_tHq_Wj4m_bin4,CMS_tHq_Wj4m_bin5,CMS_tHq_Wj4m_bin6,CMS_tHq_Wj4m_bin7,CMS_tHq_Wj4m_bin8,CMS_tHq_Wj4m_bin9,CMS_tHq_sTop4m_bin1,CMS_tHq_sTop4m_bin10,CMS_tHq_sTop4m_bin11,CMS_tHq_sTop4m_bin12,CMS_tHq_sTop4m_bin13,CMS_tHq_sTop4m_bin14,CMS_tHq_sTop4m_bin15,CMS_tHq_sTop4m_bin16,CMS_tHq_sTop4m_bin17,CMS_tHq_sTop4m_bin18,CMS_tHq_sTop4m_bin2,CMS_tHq_sTop4m_bin3,CMS_tHq_sTop4m_bin4,CMS_tHq_sTop4m_bin5,CMS_tHq_sTop4m_bin6,CMS_tHq_sTop4m_bin7,CMS_tHq_sTop4m_bin8,CMS_tHq_sTop4m_bin9,CMS_tHq_tHW4m_bin1,CMS_tHq_tHW4m_bin12,CMS_tHq_tHW4m_bin13,CMS_tHq_tHW4m_bin14,CMS_tHq_tHW4m_bin15,CMS_tHq_tHW4m_bin16,CMS_tHq_tHW4m_bin17,CMS_tHq_tHW4m_bin18,CMS_tHq_tHW4m_bin2,CMS_tHq_tHW4m_bin3,CMS_tHq_tHW4m_bin4,CMS_tHq_tHW4m_bin5,CMS_tHq_tHW4m_bin6,CMS_tHq_tHq4m_bin1,CMS_tHq_tHq4m_bin15,CMS_tHq_tHq4m_bin16,CMS_tHq_tHq4m_bin17,CMS_tHq_tHq4m_bin18,CMS_tHq_tHq4m_bin2,CMS_tHq_tHq4m_bin3,CMS_tHq_tHq4m_bin4,CMS_tHq_tHq4m_bin5,CMS_tHq_tHq4m_bin6,CMS_tHq_tHq4m_bin7,CMS_tHq_tHq4m_bin8,CMS_tHq_tt1b,CMS_tHq_tt2b,CMS_tHq_ttH4m_bin1,CMS_tHq_ttH4m_bin14,CMS_tHq_ttH4m_bin15,CMS_tHq_ttH4m_bin16,CMS_tHq_ttH4m_bin17,CMS_tHq_ttH4m_bin18,CMS_tHq_ttH4m_bin2,CMS_tHq_ttH4m_bin3,CMS_tHq_ttH4m_bin4,CMS_tHq_ttW4m_bin1,CMS_tHq_ttW4m_bin10,CMS_tHq_ttW4m_bin11,CMS_tHq_ttW4m_bin12,CMS_tHq_ttW4m_bin13,CMS_tHq_ttW4m_bin14,CMS_tHq_ttW4m_bin15,CMS_tHq_ttW4m_bin16,CMS_tHq_ttW4m_bin17,CMS_tHq_ttW4m_bin18,CMS_tHq_ttW4m_bin2,CMS_tHq_ttW4m_bin3,CMS_tHq_ttW4m_bin4,CMS_tHq_ttW4m_bin5,CMS_tHq_ttW4m_bin6,CMS_tHq_ttW4m_bin7,CMS_tHq_ttW4m_bin8,CMS_tHq_ttW4m_bin9,CMS_tHq_ttbb,CMS_tHq_ttcc,CSVCErr1,CSVCErr2,CSVHF,CSVHFStats1,CSVHFStats2,CSVLF,CSVLFStats1,CSVLFStats2,Q2scale_VV,Q2scale_Wj,Q2scale_tHW,Q2scale_tHq,Q2scale_tt1b,Q2scale_tt2b,Q2scale_ttH,Q2scale_ttW,Q2scale_ttbb,Q2scale_ttcc,Q2scale_ttlf,QCDscale_ST,lumi_13TeV,pdf_gg,pdf_qg,pdf_qqbar,pu,r) ]
+ message      : Number of events is negative or error
+ server values: params=(CMS_eff_lep = -0.00133357 +/- 0.493859,CMS_jer = 0.00348091 +/- 0.474857,CMS_jes = -0.0027516 +/- 0.202722,CMS_tHq_TT1b4m_bin1 = 0.000271951 +/- 0.985347,CMS_tHq_TT1b4m_bin11 = 8.14627e-05 +/- 0.985621,CMS_tHq_TT1b4m_bin12 = 9.05367e-05 +/- 0.985727,CMS_tHq_TT1b4m_bin13 = 0.000138864 +/- 0.986044,CMS_tHq_TT1b4m_bin14 = 8.97906e-05 +/- 0.98631,CMS_tHq_TT1b4m_bin15 = 0.000127428 +/- 0.98576,CMS_tHq_TT1b4m_bin16 = 0.000271951 +/- 0.985244,CMS_tHq_TT1b4m_bin17 = 0.000271951 +/- 0.985391,CMS_tHq_TT1b4m_bin18 = 0.00027195 +/- 0.985256,CMS_tHq_TT1b4m_bin2 = 0.000271951 +/- 0.985199,CMS_tHq_TT1b4m_bin3 = 3.26192e-07 +/- 0.984984,CMS_tHq_TT1b4m_bin4 = -1.54022e-05 +/- 0.985142,CMS_tHq_TT1b4m_bin5 = -2.8163e-05 +/- 0.985327,CMS_tHq_TT2b4m_bin1 = 0.00026642 +/- 0.98542,CMS_tHq_TT2b4m_bin11 = 7.19801e-05 +/- 0.985542,CMS_tHq_TT2b4m_bin12 = 7.91712e-05 +/- 0.985703,CMS_tHq_TT2b4m_bin13 = 0.000109886 +/- 0.985872,CMS_tHq_TT2b4m_bin14 = 6.82378e-05 +/- 0.98602,CMS_tHq_TT2b4m_bin15 = 0.000127788 +/- 0.985757,CMS_tHq_TT2b4m_bin16 = 0.00026642 +/- 0.985426,CMS_tHq_TT2b4m_bin17 = 0.00026642 +/- 0.98542,CMS_tHq_TT2b4m_bin18 = 0.00026642 +/- 0.985425,CMS_tHq_TT2b4m_bin2 = 0.00026642 +/- 0.985445,CMS_tHq_TT2b4m_bin3 = -1.83166e-06 +/- 0.986112,CMS_tHq_TT2b4m_bin4 = -1.06313e-05 +/- 0.985509,CMS_tHq_TT2b4m_bin5 = -2.26221e-05 +/- 0.985455,CMS_tHq_TTbb4m_bin1 = 0.000315803 +/- 0.985414,CMS_tHq_TTbb4m_bin13 = 0.000258848 +/- 0.985936,CMS_tHq_TTbb4m_bin14 = 0.000173224 +/- 0.986263,CMS_tHq_TTbb4m_bin15 = 9.07679e-05 +/- 0.985337,CMS_tHq_TTbb4m_bin16 = 0.000315803 +/- 0.985394,CMS_tHq_TTbb4m_bin17 = 0.000315803 +/- 0.985379,CMS_tHq_TTbb4m_bin18 = 0.000315803 +/- 0.985419,CMS_tHq_TTbb4m_bin2 = 0.000315803 +/- 0.985362,CMS_tHq_TTbb4m_bin3 = -6.51832e-07 +/- 0.984542,CMS_tHq_TTbb4m_bin4 = -2.11452e-05 +/- 0.98497,CMS_tHq_TTcc4m_bin1 = 0.000291509 +/- 0.985163,CMS_tHq_TTcc4m_bin12 = 0.000114576 +/- 0.986073,CMS_tHq_TTcc4m_bin13 = 0.000143432 +/- 0.985926,CMS_tHq_TTcc4m_bin14 = 9.86828e-05 +/- 0.986342,CMS_tHq_TTcc4m_bin15 = 0.00012565 +/- 0.985722,CMS_tHq_TTcc4m_bin16 = 0.000291509 +/- 0.9851,CMS_tHq_TTcc4m_bin17 = 0.000291509 +/- 0.985086,CMS_tHq_TTcc4m_bin18 = 0.000291509 +/- 0.985089,CMS_tHq_TTcc4m_bin2 = 0.000291509 +/- 0.985201,CMS_tHq_TTcc4m_bin3 = 1.26733e-07 +/- 0.985577,CMS_tHq_TTcc4m_bin4 = -1.55741e-05 +/- 0.985263,CMS_tHq_TTlf4m_bin1 = 0.000276166 +/- 0.985106,CMS_tHq_TTlf4m_bin11 = 9.08849e-05 +/- 0.985522,CMS_tHq_TTlf4m_bin12 = 0.000101917 +/- 0.986129,CMS_tHq_TTlf4m_bin13 = 0.000117782 +/- 0.986161,CMS_tHq_TTlf4m_bin14 = 6.69725e-05 +/- 0.985895,CMS_tHq_TTlf4m_bin15 = 0.000127356 +/- 0.985755,CMS_tHq_TTlf4m_bin16 = 0.000276167 +/- 0.985139,CMS_tHq_TTlf4m_bin17 = 0.000276167 +/- 0.985174,CMS_tHq_TTlf4m_bin18 = 0.000276167 +/- 0.985162,CMS_tHq_TTlf4m_bin2 = 0.000276166 +/- 0.985119,CMS_tHq_TTlf4m_bin3 = 3.99759e-08 +/- 0.985387,CMS_tHq_TTlf4m_bin4 = -1.07828e-05 +/- 0.985557,CMS_tHq_TTlf4m_bin5 = -2.70745e-05 +/- 0.985446,CMS_tHq_VV4m_bin1 = 0.000343853 +/- 0.98543,CMS_tHq_VV4m_bin10 = -7.27674e-07 +/- 0.985716,CMS_tHq_VV4m_bin11 = -2.29373e-06 +/- 0.990789,CMS_tHq_VV4m_bin12 = -2.62926e-06 +/- 0.987022,CMS_tHq_VV4m_bin13 = 4.43965e-07 +/- 0.985552,CMS_tHq_VV4m_bin14 = 4.17596e-05 +/- 0.985474,CMS_tHq_VV4m_bin15 = 0.000123072 +/- 0.985764,CMS_tHq_VV4m_bin16 = 0.000343853 +/- 0.985421,CMS_tHq_VV4m_bin17 = 0.000343853 +/- 0.985427,CMS_tHq_VV4m_bin18 = 0.000343853 +/- 0.985408,CMS_tHq_VV4m_bin2 = 0.000343853 +/- 0.985407,CMS_tHq_VV4m_bin3 = 3.47435e-09 +/- 0.985939,CMS_tHq_VV4m_bin4 = 1.48903e-06 +/- 0.985551,CMS_tHq_VV4m_bin5 = 1.15408e-06 +/- 0.983637,CMS_tHq_VV4m_bin6 = 1.94154e-06 +/- 0.987721,CMS_tHq_VV4m_bin7 = 1.0856e-06 +/- 0.985539,CMS_tHq_VV4m_bin8 = 5.58888e-07 +/- 0.98563,CMS_tHq_VV4m_bin9 = 0.000360916 +/- 0.985123,CMS_tHq_Wj4m_bin1 = 9.58443e-09 +/- 0.993673,CMS_tHq_Wj4m_bin10 = -3.92003e-09 +/- 0.993413,CMS_tHq_Wj4m_bin11 = -3.91904e-09 +/- 0.993461,CMS_tHq_Wj4m_bin12 = -4.02427e-09 +/- 0.993351,CMS_tHq_Wj4m_bin13 = -4.03253e-09 +/- 0.993254,CMS_tHq_Wj4m_bin14 = -4.04791e-09 +/- 0.993145,CMS_tHq_Wj4m_bin15 = -4.15848e-09 +/- 0.993045,CMS_tHq_Wj4m_bin16 = 9.67581e-09 +/- 0.993664,CMS_tHq_Wj4m_bin17 = 9.67581e-09 +/- 0.993563,CMS_tHq_Wj4m_bin18 = 9.67581e-09 +/- 0.99346,CMS_tHq_Wj4m_bin2 = 9.58443e-09 +/- 0.99293,CMS_tHq_Wj4m_bin3 = -3.99793e-09 +/- 0.992871,CMS_tHq_Wj4m_bin4 = -3.99793e-09 +/- 0.992818,CMS_tHq_Wj4m_bin5 = -3.99793e-09 +/- 0.992751,CMS_tHq_Wj4m_bin6 = -3.99793e-09 +/- 0.992679,CMS_tHq_Wj4m_bin7 = -3.99231e-09 +/- 0.992671,CMS_tHq_Wj4m_bin8 = -3.99793e-09 +/- 0.992569,CMS_tHq_Wj4m_bin9 = -3.91442e-09 +/- 0.992507,CMS_tHq_sTop4m_bin1 = 0.000259919 +/- 0.985449,CMS_tHq_sTop4m_bin10 = 0.000108173 +/- 0.983895,CMS_tHq_sTop4m_bin11 = 0.000175518 +/- 0.985196,CMS_tHq_sTop4m_bin12 = 0.000236226 +/- 0.985514,CMS_tHq_sTop4m_bin13 = 0.000298547 +/- 0.985788,CMS_tHq_sTop4m_bin14 = 4.26734e-05 +/- 0.985757,CMS_tHq_sTop4m_bin15 = 0.000128504 +/- 0.985749,CMS_tHq_sTop4m_bin16 = 0.000259919 +/- 0.985476,CMS_tHq_sTop4m_bin17 = 0.000259919 +/- 0.98545,CMS_tHq_sTop4m_bin18 = 0.000259919 +/- 0.985192,CMS_tHq_sTop4m_bin2 = 0.000259919 +/- 0.985535,CMS_tHq_sTop4m_bin3 = 8.09946e-08 +/- 0.986079,CMS_tHq_sTop4m_bin4 = -1.46341e-06 +/- 0.985817,CMS_tHq_sTop4m_bin5 = -1.59675e-06 +/- 0.985773,CMS_tHq_sTop4m_bin6 = -0.000320981 +/- 0.983476,CMS_tHq_sTop4m_bin7 = -0.00016454 +/- 0.984339,CMS_tHq_sTop4m_bin8 = -5.99586e-05 +/- 0.984881,CMS_tHq_sTop4m_bin9 = -2.94424e-05 +/- 0.984635,CMS_tHq_tHW4m_bin1 = -8.59778e-05 +/- 0.985217,CMS_tHq_tHW4m_bin12 = 1.83028e-06 +/- 0.985726,CMS_tHq_tHW4m_bin13 = 3.44085e-06 +/- 0.985971,CMS_tHq_tHW4m_bin14 = 5.78797e-06 +/- 0.985943,CMS_tHq_tHW4m_bin15 = 2.45013e-06 +/- 0.985941,CMS_tHq_tHW4m_bin16 = -8.59779e-05 +/- 0.985218,CMS_tHq_tHW4m_bin17 = -8.59779e-05 +/- 0.985218,CMS_tHq_tHW4m_bin18 = -8.59779e-05 +/- 0.98523,CMS_tHq_tHW4m_bin2 = -8.59778e-05 +/- 0.985251,CMS_tHq_tHW4m_bin3 = 2.13563e-06 +/- 0.985811,CMS_tHq_tHW4m_bin4 = -8.3368e-08 +/- 0.985653,CMS_tHq_tHW4m_bin5 = -3.80848e-07 +/- 0.985821,CMS_tHq_tHW4m_bin6 = -1.06728e-06 +/- 0.985634,CMS_tHq_tHq4m_bin1 = -8.93926e-05 +/- 0.985324,CMS_tHq_tHq4m_bin15 = 1.12786e-05 +/- 0.985795,CMS_tHq_tHq4m_bin16 = -8.93926e-05 +/- 0.985342,CMS_tHq_tHq4m_bin17 = -8.93926e-05 +/- 0.985343,CMS_tHq_tHq4m_bin18 = -8.93926e-05 +/- 0.98535,CMS_tHq_tHq4m_bin2 = -8.93926e-05 +/- 0.985368,CMS_tHq_tHq4m_bin3 = -5.54264e-06 +/- 0.985608,CMS_tHq_tHq4m_bin4 = -9.97705e-08 +/- 0.985771,CMS_tHq_tHq4m_bin5 = -5.66569e-07 +/- 0.98563,CMS_tHq_tHq4m_bin6 = -1.65526e-06 +/- 0.985851,CMS_tHq_tHq4m_bin7 = -3.847e-06 +/- 0.985672,CMS_tHq_tHq4m_bin8 = -5.62332e-06 +/- 0.985715,CMS_tHq_tt1b = -0.00150823 +/- 0.238159,CMS_tHq_tt2b = -0.0012886 +/- 0.491562,CMS_tHq_ttH4m_bin1 = 0.000258376 +/- 0.985319,CMS_tHq_ttH4m_bin14 = 8.2252e-06 +/- 0.98576,CMS_tHq_ttH4m_bin15 = 3.01607e-06 +/- 0.985641,CMS_tHq_ttH4m_bin16 = 0.000258376 +/- 0.985482,CMS_tHq_ttH4m_bin17 = 0.000258376 +/- 0.985447,CMS_tHq_ttH4m_bin18 = 0.000258376 +/- 0.985377,CMS_tHq_ttH4m_bin2 = 0.000258376 +/- 0.985261,CMS_tHq_ttH4m_bin3 = -3.67955e-09 +/- 0.985552,CMS_tHq_ttH4m_bin4 = -1.09644e-06 +/- 0.98558,CMS_tHq_ttW4m_bin1 = 0.000254643 +/- 0.985535,CMS_tHq_ttW4m_bin10 = 1.14394e-05 +/- 0.985675,CMS_tHq_ttW4m_bin11 = 1.15611e-05 +/- 0.985567,CMS_tHq_ttW4m_bin12 = 2.18846e-05 +/- 0.985677,CMS_tHq_ttW4m_bin13 = 2.29879e-05 +/- 0.986049,CMS_tHq_ttW4m_bin14 = 9.58546e-06 +/- 0.985881,CMS_tHq_ttW4m_bin15 = 0.000129091 +/- 0.98573,CMS_tHq_ttW4m_bin16 = 0.000254643 +/- 0.985461,CMS_tHq_ttW4m_bin17 = 0.000254643 +/- 0.985537,CMS_tHq_ttW4m_bin18 = 0.000254643 +/- 0.985536,CMS_tHq_ttW4m_bin2 = 0.000254643 +/- 0.985503,CMS_tHq_ttW4m_bin3 = -3.44353e-07 +/- 0.985755,CMS_tHq_ttW4m_bin4 = -3.95337e-06 +/- 0.985693,CMS_tHq_ttW4m_bin5 = -4.16341e-06 +/- 0.98552,CMS_tHq_ttW4m_bin6 = -1.56607e-05 +/- 0.985822,CMS_tHq_ttW4m_bin7 = -9.14385e-06 +/- 0.985806,CMS_tHq_ttW4m_bin8 = -1.56179e-06 +/- 0.985588,CMS_tHq_ttW4m_bin9 = 3.70034e-06 +/- 0.985545,CMS_tHq_ttbb = -0.00246201 +/- 0.171978,CMS_tHq_ttcc = 0.00184857 +/- 0.110696,CSVCErr1 = -0.000548761 +/- 0.0765894,CSVCErr2 = -0.000170365 +/- 0.493668,CSVHF = -0.000943885 +/- 0.114221,CSVHFStats1 = 0.000405556 +/- 0.118679,CSVHFStats2 = -0.00249534 +/- 0.242155,CSVLF = -0.0010994 +/- 0.121887,CSVLFStats1 = -0.00252936 +/- 0.240484,CSVLFStats2 = 0.0010768 +/- 0.963424,Q2scale_VV = 0 +/- 0.497864,Q2scale_Wj = -5.85198e-05 +/- 0.980298,Q2scale_tHW = -1.83191e-05 +/- 0.9859,Q2scale_tHq = -0.000570805 +/- 0.988045,Q2scale_tt1b = -0.000565181 +/- 0.490422,Q2scale_tt2b = -0.00195661 +/- 0.491527,Q2scale_ttH = -0.0015508 +/- 0.978294,Q2scale_ttW = 0.00010206 +/- 0.991599,Q2scale_ttbb = -0.00148246 +/- 0.463962,Q2scale_ttcc = -0.00248936 +/- 0.24241,Q2scale_ttlf = -0.000274179 +/- 0.106148,QCDscale_ST = -3.13386e-05 +/- 0.986908,lumi_13TeV = -0.000953345 +/- 0.485312,pdf_gg = -0.000200436 +/- 0.487184,pdf_qg = 7.18129e-05 +/- 0.986215,pdf_qqbar = -8.3587e-05 +/- 0.988271,pu = -0.00101636 +/- 0.981819,r = -0.338608 +/- 5.60275)
+WARNING: underflow to -9.49047e-09 in pdf_bintH_4m_obsOnly for bin 0, weight 1.19214e-06
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(tH_4m) evaluation error, 
+ origin       : RooAbsReal::tH_4m[ params=(CMS_eff_lep,CMS_jer,CMS_jes,CMS_tHq_TT1b4m_bin1,CMS_tHq_TT1b4m_bin11,CMS_tHq_TT1b4m_bin12,CMS_tHq_TT1b4m_bin13,CMS_tHq_TT1b4m_bin14,CMS_tHq_TT1b4m_bin15,CMS_tHq_TT1b4m_bin16,CMS_tHq_TT1b4m_bin17,CMS_tHq_TT1b4m_bin18,CMS_tHq_TT1b4m_bin2,CMS_tHq_TT1b4m_bin3,CMS_tHq_TT1b4m_bin4,CMS_tHq_TT1b4m_bin5,CMS_tHq_TT2b4m_bin1,CMS_tHq_TT2b4m_bin11,CMS_tHq_TT2b4m_bin12,CMS_tHq_TT2b4m_bin13,CMS_tHq_TT2b4m_bin14,CMS_tHq_TT2b4m_bin15,CMS_tHq_TT2b4m_bin16,CMS_tHq_TT2b4m_bin17,CMS_tHq_TT2b4m_bin18,CMS_tHq_TT2b4m_bin2,CMS_tHq_TT2b4m_bin3,CMS_tHq_TT2b4m_bin4,CMS_tHq_TT2b4m_bin5,CMS_tHq_TTbb4m_bin1,CMS_tHq_TTbb4m_bin13,CMS_tHq_TTbb4m_bin14,CMS_tHq_TTbb4m_bin15,CMS_tHq_TTbb4m_bin16,CMS_tHq_TTbb4m_bin17,CMS_tHq_TTbb4m_bin18,CMS_tHq_TTbb4m_bin2,CMS_tHq_TTbb4m_bin3,CMS_tHq_TTbb4m_bin4,CMS_tHq_TTcc4m_bin1,CMS_tHq_TTcc4m_bin12,CMS_tHq_TTcc4m_bin13,CMS_tHq_TTcc4m_bin14,CMS_tHq_TTcc4m_bin15,CMS_tHq_TTcc4m_bin16,CMS_tHq_TTcc4m_bin17,CMS_tHq_TTcc4m_bin18,CMS_tHq_TTcc4m_bin2,CMS_tHq_TTcc4m_bin3,CMS_tHq_TTcc4m_bin4,CMS_tHq_TTlf4m_bin1,CMS_tHq_TTlf4m_bin11,CMS_tHq_TTlf4m_bin12,CMS_tHq_TTlf4m_bin13,CMS_tHq_TTlf4m_bin14,CMS_tHq_TTlf4m_bin15,CMS_tHq_TTlf4m_bin16,CMS_tHq_TTlf4m_bin17,CMS_tHq_TTlf4m_bin18,CMS_tHq_TTlf4m_bin2,CMS_tHq_TTlf4m_bin3,CMS_tHq_TTlf4m_bin4,CMS_tHq_TTlf4m_bin5,CMS_tHq_VV4m_bin1,CMS_tHq_VV4m_bin10,CMS_tHq_VV4m_bin11,CMS_tHq_VV4m_bin12,CMS_tHq_VV4m_bin13,CMS_tHq_VV4m_bin14,CMS_tHq_VV4m_bin15,CMS_tHq_VV4m_bin16,CMS_tHq_VV4m_bin17,CMS_tHq_VV4m_bin18,CMS_tHq_VV4m_bin2,CMS_tHq_VV4m_bin3,CMS_tHq_VV4m_bin4,CMS_tHq_VV4m_bin5,CMS_tHq_VV4m_bin6,CMS_tHq_VV4m_bin7,CMS_tHq_VV4m_bin8,CMS_tHq_VV4m_bin9,CMS_tHq_Wj4m_bin1,CMS_tHq_Wj4m_bin10,CMS_tHq_Wj4m_bin11,CMS_tHq_Wj4m_bin12,CMS_tHq_Wj4m_bin13,CMS_tHq_Wj4m_bin14,CMS_tHq_Wj4m_bin15,CMS_tHq_Wj4m_bin16,CMS_tHq_Wj4m_bin17,CMS_tHq_Wj4m_bin18,CMS_tHq_Wj4m_bin2,CMS_tHq_Wj4m_bin3,CMS_tHq_Wj4m_bin4,CMS_tHq_Wj4m_bin5,CMS_tHq_Wj4m_bin6,CMS_tHq_Wj4m_bin7,CMS_tHq_Wj4m_bin8,CMS_tHq_Wj4m_bin9,CMS_tHq_sTop4m_bin1,CMS_tHq_sTop4m_bin10,CMS_tHq_sTop4m_bin11,CMS_tHq_sTop4m_bin12,CMS_tHq_sTop4m_bin13,CMS_tHq_sTop4m_bin14,CMS_tHq_sTop4m_bin15,CMS_tHq_sTop4m_bin16,CMS_tHq_sTop4m_bin17,CMS_tHq_sTop4m_bin18,CMS_tHq_sTop4m_bin2,CMS_tHq_sTop4m_bin3,CMS_tHq_sTop4m_bin4,CMS_tHq_sTop4m_bin5,CMS_tHq_sTop4m_bin6,CMS_tHq_sTop4m_bin7,CMS_tHq_sTop4m_bin8,CMS_tHq_sTop4m_bin9,CMS_tHq_tHW4m_bin1,CMS_tHq_tHW4m_bin12,CMS_tHq_tHW4m_bin13,CMS_tHq_tHW4m_bin14,CMS_tHq_tHW4m_bin15,CMS_tHq_tHW4m_bin16,CMS_tHq_tHW4m_bin17,CMS_tHq_tHW4m_bin18,CMS_tHq_tHW4m_bin2,CMS_tHq_tHW4m_bin3,CMS_tHq_tHW4m_bin4,CMS_tHq_tHW4m_bin5,CMS_tHq_tHW4m_bin6,CMS_tHq_tHq4m_bin1,CMS_tHq_tHq4m_bin15,CMS_tHq_tHq4m_bin16,CMS_tHq_tHq4m_bin17,CMS_tHq_tHq4m_bin18,CMS_tHq_tHq4m_bin2,CMS_tHq_tHq4m_bin3,CMS_tHq_tHq4m_bin4,CMS_tHq_tHq4m_bin5,CMS_tHq_tHq4m_bin6,CMS_tHq_tHq4m_bin7,CMS_tHq_tHq4m_bin8,CMS_tHq_tt1b,CMS_tHq_tt2b,CMS_tHq_ttH4m_bin1,CMS_tHq_ttH4m_bin14,CMS_tHq_ttH4m_bin15,CMS_tHq_ttH4m_bin16,CMS_tHq_ttH4m_bin17,CMS_tHq_ttH4m_bin18,CMS_tHq_ttH4m_bin2,CMS_tHq_ttH4m_bin3,CMS_tHq_ttH4m_bin4,CMS_tHq_ttW4m_bin1,CMS_tHq_ttW4m_bin10,CMS_tHq_ttW4m_bin11,CMS_tHq_ttW4m_bin12,CMS_tHq_ttW4m_bin13,CMS_tHq_ttW4m_bin14,CMS_tHq_ttW4m_bin15,CMS_tHq_ttW4m_bin16,CMS_tHq_ttW4m_bin17,CMS_tHq_ttW4m_bin18,CMS_tHq_ttW4m_bin2,CMS_tHq_ttW4m_bin3,CMS_tHq_ttW4m_bin4,CMS_tHq_ttW4m_bin5,CMS_tHq_ttW4m_bin6,CMS_tHq_ttW4m_bin7,CMS_tHq_ttW4m_bin8,CMS_tHq_ttW4m_bin9,CMS_tHq_ttbb,CMS_tHq_ttcc,CSVCErr1,CSVCErr2,CSVHF,CSVHFStats1,CSVHFStats2,CSVLF,CSVLFStats1,CSVLFStats2,Q2scale_VV,Q2scale_Wj,Q2scale_tHW,Q2scale_tHq,Q2scale_tt1b,Q2scale_tt2b,Q2scale_ttH,Q2scale_ttW,Q2scale_ttbb,Q2scale_ttcc,Q2scale_ttlf,QCDscale_ST,lumi_13TeV,pdf_gg,pdf_qg,pdf_qqbar,pu,r) ]
+ message      : Number of events is negative or error
+ server values: params=(CMS_eff_lep = -0.00133357 +/- 0.493859,CMS_jer = 0.00348091 +/- 0.474857,CMS_jes = -0.0027516 +/- 0.202722,CMS_tHq_TT1b4m_bin1 = 0.000271951 +/- 0.985347,CMS_tHq_TT1b4m_bin11 = 8.14627e-05 +/- 0.985621,CMS_tHq_TT1b4m_bin12 = 9.05367e-05 +/- 0.985727,CMS_tHq_TT1b4m_bin13 = 0.000138864 +/- 0.986044,CMS_tHq_TT1b4m_bin14 = 8.97906e-05 +/- 0.98631,CMS_tHq_TT1b4m_bin15 = 0.000127428 +/- 0.98576,CMS_tHq_TT1b4m_bin16 = 0.000271951 +/- 0.985244,CMS_tHq_TT1b4m_bin17 = 0.000271951 +/- 0.985391,CMS_tHq_TT1b4m_bin18 = 0.00027195 +/- 0.985256,CMS_tHq_TT1b4m_bin2 = 0.000271951 +/- 0.985199,CMS_tHq_TT1b4m_bin3 = 3.26192e-07 +/- 0.984984,CMS_tHq_TT1b4m_bin4 = -1.54022e-05 +/- 0.985142,CMS_tHq_TT1b4m_bin5 = -2.8163e-05 +/- 0.985327,CMS_tHq_TT2b4m_bin1 = 0.00026642 +/- 0.98542,CMS_tHq_TT2b4m_bin11 = 7.19801e-05 +/- 0.985542,CMS_tHq_TT2b4m_bin12 = 7.91712e-05 +/- 0.985703,CMS_tHq_TT2b4m_bin13 = 0.000109886 +/- 0.985872,CMS_tHq_TT2b4m_bin14 = 6.82378e-05 +/- 0.98602,CMS_tHq_TT2b4m_bin15 = 0.000127788 +/- 0.985757,CMS_tHq_TT2b4m_bin16 = 0.00026642 +/- 0.985426,CMS_tHq_TT2b4m_bin17 = 0.00026642 +/- 0.98542,CMS_tHq_TT2b4m_bin18 = 0.00026642 +/- 0.985425,CMS_tHq_TT2b4m_bin2 = 0.00026642 +/- 0.985445,CMS_tHq_TT2b4m_bin3 = -1.83166e-06 +/- 0.986112,CMS_tHq_TT2b4m_bin4 = -1.06313e-05 +/- 0.985509,CMS_tHq_TT2b4m_bin5 = -2.26221e-05 +/- 0.985455,CMS_tHq_TTbb4m_bin1 = 0.000315803 +/- 0.985414,CMS_tHq_TTbb4m_bin13 = 0.000258848 +/- 0.985936,CMS_tHq_TTbb4m_bin14 = 0.000173224 +/- 0.986263,CMS_tHq_TTbb4m_bin15 = 9.07679e-05 +/- 0.985337,CMS_tHq_TTbb4m_bin16 = 0.000315803 +/- 0.985394,CMS_tHq_TTbb4m_bin17 = 0.000315803 +/- 0.985379,CMS_tHq_TTbb4m_bin18 = 0.000315803 +/- 0.985419,CMS_tHq_TTbb4m_bin2 = 0.000315803 +/- 0.985362,CMS_tHq_TTbb4m_bin3 = -6.51832e-07 +/- 0.984542,CMS_tHq_TTbb4m_bin4 = -2.11452e-05 +/- 0.98497,CMS_tHq_TTcc4m_bin1 = 0.000291509 +/- 0.985163,CMS_tHq_TTcc4m_bin12 = 0.000114576 +/- 0.986073,CMS_tHq_TTcc4m_bin13 = 0.000143432 +/- 0.985926,CMS_tHq_TTcc4m_bin14 = 9.86828e-05 +/- 0.986342,CMS_tHq_TTcc4m_bin15 = 0.00012565 +/- 0.985722,CMS_tHq_TTcc4m_bin16 = 0.000291509 +/- 0.9851,CMS_tHq_TTcc4m_bin17 = 0.000291509 +/- 0.985086,CMS_tHq_TTcc4m_bin18 = 0.000291509 +/- 0.985089,CMS_tHq_TTcc4m_bin2 = 0.000291509 +/- 0.985201,CMS_tHq_TTcc4m_bin3 = 1.26733e-07 +/- 0.985577,CMS_tHq_TTcc4m_bin4 = -1.55741e-05 +/- 0.985263,CMS_tHq_TTlf4m_bin1 = 0.000276166 +/- 0.985106,CMS_tHq_TTlf4m_bin11 = 9.08849e-05 +/- 0.985522,CMS_tHq_TTlf4m_bin12 = 0.000101917 +/- 0.986129,CMS_tHq_TTlf4m_bin13 = 0.000117782 +/- 0.986161,CMS_tHq_TTlf4m_bin14 = 6.69725e-05 +/- 0.985895,CMS_tHq_TTlf4m_bin15 = 0.000127356 +/- 0.985755,CMS_tHq_TTlf4m_bin16 = 0.000276167 +/- 0.985139,CMS_tHq_TTlf4m_bin17 = 0.000276167 +/- 0.985174,CMS_tHq_TTlf4m_bin18 = 0.000276167 +/- 0.985162,CMS_tHq_TTlf4m_bin2 = 0.000276166 +/- 0.985119,CMS_tHq_TTlf4m_bin3 = 3.99759e-08 +/- 0.985387,CMS_tHq_TTlf4m_bin4 = -1.07828e-05 +/- 0.985557,CMS_tHq_TTlf4m_bin5 = -2.70745e-05 +/- 0.985446,CMS_tHq_VV4m_bin1 = 0.000343853 +/- 0.98543,CMS_tHq_VV4m_bin10 = -7.27674e-07 +/- 0.985716,CMS_tHq_VV4m_bin11 = -2.29373e-06 +/- 0.990789,CMS_tHq_VV4m_bin12 = -2.62926e-06 +/- 0.987022,CMS_tHq_VV4m_bin13 = 4.43965e-07 +/- 0.985552,CMS_tHq_VV4m_bin14 = 4.17596e-05 +/- 0.985474,CMS_tHq_VV4m_bin15 = 0.000123072 +/- 0.985764,CMS_tHq_VV4m_bin16 = 0.000343853 +/- 0.985421,CMS_tHq_VV4m_bin17 = 0.000343853 +/- 0.985427,CMS_tHq_VV4m_bin18 = 0.000343853 +/- 0.985408,CMS_tHq_VV4m_bin2 = 0.000343853 +/- 0.985407,CMS_tHq_VV4m_bin3 = 3.47435e-09 +/- 0.985939,CMS_tHq_VV4m_bin4 = 1.48903e-06 +/- 0.985551,CMS_tHq_VV4m_bin5 = 1.15408e-06 +/- 0.983637,CMS_tHq_VV4m_bin6 = 1.94154e-06 +/- 0.987721,CMS_tHq_VV4m_bin7 = 1.0856e-06 +/- 0.985539,CMS_tHq_VV4m_bin8 = 5.58888e-07 +/- 0.98563,CMS_tHq_VV4m_bin9 = 0.000360916 +/- 0.985123,CMS_tHq_Wj4m_bin1 = 9.58443e-09 +/- 0.993673,CMS_tHq_Wj4m_bin10 = -3.92003e-09 +/- 0.993413,CMS_tHq_Wj4m_bin11 = -3.91904e-09 +/- 0.993461,CMS_tHq_Wj4m_bin12 = -4.02427e-09 +/- 0.993351,CMS_tHq_Wj4m_bin13 = -4.03253e-09 +/- 0.993254,CMS_tHq_Wj4m_bin14 = -4.04791e-09 +/- 0.993145,CMS_tHq_Wj4m_bin15 = -4.15848e-09 +/- 0.993045,CMS_tHq_Wj4m_bin16 = 9.67581e-09 +/- 0.993664,CMS_tHq_Wj4m_bin17 = 9.67581e-09 +/- 0.993563,CMS_tHq_Wj4m_bin18 = 9.67581e-09 +/- 0.99346,CMS_tHq_Wj4m_bin2 = 9.58443e-09 +/- 0.99293,CMS_tHq_Wj4m_bin3 = -3.99793e-09 +/- 0.992871,CMS_tHq_Wj4m_bin4 = -3.99793e-09 +/- 0.992818,CMS_tHq_Wj4m_bin5 = -3.99793e-09 +/- 0.992751,CMS_tHq_Wj4m_bin6 = -3.99793e-09 +/- 0.992679,CMS_tHq_Wj4m_bin7 = -3.99231e-09 +/- 0.992671,CMS_tHq_Wj4m_bin8 = -3.99793e-09 +/- 0.992569,CMS_tHq_Wj4m_bin9 = -3.91442e-09 +/- 0.992507,CMS_tHq_sTop4m_bin1 = 0.000259919 +/- 0.985449,CMS_tHq_sTop4m_bin10 = 0.000108173 +/- 0.983895,CMS_tHq_sTop4m_bin11 = 0.000175518 +/- 0.985196,CMS_tHq_sTop4m_bin12 = 0.000236226 +/- 0.985514,CMS_tHq_sTop4m_bin13 = 0.000298547 +/- 0.985788,CMS_tHq_sTop4m_bin14 = 4.26734e-05 +/- 0.985757,CMS_tHq_sTop4m_bin15 = 0.000128504 +/- 0.985749,CMS_tHq_sTop4m_bin16 = 0.000259919 +/- 0.985476,CMS_tHq_sTop4m_bin17 = 0.000259919 +/- 0.98545,CMS_tHq_sTop4m_bin18 = 0.000259919 +/- 0.985192,CMS_tHq_sTop4m_bin2 = 0.000259919 +/- 0.985535,CMS_tHq_sTop4m_bin3 = 8.09946e-08 +/- 0.986079,CMS_tHq_sTop4m_bin4 = -1.46341e-06 +/- 0.985817,CMS_tHq_sTop4m_bin5 = -1.59675e-06 +/- 0.985773,CMS_tHq_sTop4m_bin6 = -0.000320981 +/- 0.983476,CMS_tHq_sTop4m_bin7 = -0.00016454 +/- 0.984339,CMS_tHq_sTop4m_bin8 = -5.99586e-05 +/- 0.984881,CMS_tHq_sTop4m_bin9 = -2.94424e-05 +/- 0.984635,CMS_tHq_tHW4m_bin1 = -8.59778e-05 +/- 0.985217,CMS_tHq_tHW4m_bin12 = 1.83028e-06 +/- 0.985726,CMS_tHq_tHW4m_bin13 = 3.44085e-06 +/- 0.985971,CMS_tHq_tHW4m_bin14 = 5.78797e-06 +/- 0.985943,CMS_tHq_tHW4m_bin15 = 2.45013e-06 +/- 0.985941,CMS_tHq_tHW4m_bin16 = -8.59779e-05 +/- 0.985218,CMS_tHq_tHW4m_bin17 = -8.59779e-05 +/- 0.985218,CMS_tHq_tHW4m_bin18 = -8.59779e-05 +/- 0.98523,CMS_tHq_tHW4m_bin2 = -8.59778e-05 +/- 0.985251,CMS_tHq_tHW4m_bin3 = 2.13563e-06 +/- 0.985811,CMS_tHq_tHW4m_bin4 = -8.3368e-08 +/- 0.985653,CMS_tHq_tHW4m_bin5 = -3.80848e-07 +/- 0.985821,CMS_tHq_tHW4m_bin6 = -1.06728e-06 +/- 0.985634,CMS_tHq_tHq4m_bin1 = -8.93926e-05 +/- 0.985324,CMS_tHq_tHq4m_bin15 = 1.12786e-05 +/- 0.985795,CMS_tHq_tHq4m_bin16 = -8.93926e-05 +/- 0.985342,CMS_tHq_tHq4m_bin17 = -8.93926e-05 +/- 0.985343,CMS_tHq_tHq4m_bin18 = -8.93926e-05 +/- 0.98535,CMS_tHq_tHq4m_bin2 = -8.93926e-05 +/- 0.985368,CMS_tHq_tHq4m_bin3 = -5.54264e-06 +/- 0.985608,CMS_tHq_tHq4m_bin4 = -9.97705e-08 +/- 0.985771,CMS_tHq_tHq4m_bin5 = -5.66569e-07 +/- 0.98563,CMS_tHq_tHq4m_bin6 = -1.65526e-06 +/- 0.985851,CMS_tHq_tHq4m_bin7 = -3.847e-06 +/- 0.985672,CMS_tHq_tHq4m_bin8 = -5.62332e-06 +/- 0.985715,CMS_tHq_tt1b = -0.00150823 +/- 0.238159,CMS_tHq_tt2b = -0.0012886 +/- 0.491562,CMS_tHq_ttH4m_bin1 = 0.000258376 +/- 0.985319,CMS_tHq_ttH4m_bin14 = 8.2252e-06 +/- 0.98576,CMS_tHq_ttH4m_bin15 = 3.01607e-06 +/- 0.985641,CMS_tHq_ttH4m_bin16 = 0.000258376 +/- 0.985482,CMS_tHq_ttH4m_bin17 = 0.000258376 +/- 0.985447,CMS_tHq_ttH4m_bin18 = 0.000258376 +/- 0.985377,CMS_tHq_ttH4m_bin2 = 0.000258376 +/- 0.985261,CMS_tHq_ttH4m_bin3 = -3.67955e-09 +/- 0.985552,CMS_tHq_ttH4m_bin4 = -1.09644e-06 +/- 0.98558,CMS_tHq_ttW4m_bin1 = 0.000254643 +/- 0.985535,CMS_tHq_ttW4m_bin10 = 1.14394e-05 +/- 0.985675,CMS_tHq_ttW4m_bin11 = 1.15611e-05 +/- 0.985567,CMS_tHq_ttW4m_bin12 = 2.18846e-05 +/- 0.985677,CMS_tHq_ttW4m_bin13 = 2.29879e-05 +/- 0.986049,CMS_tHq_ttW4m_bin14 = 9.58546e-06 +/- 0.985881,CMS_tHq_ttW4m_bin15 = 0.000129091 +/- 0.98573,CMS_tHq_ttW4m_bin16 = 0.000254643 +/- 0.985461,CMS_tHq_ttW4m_bin17 = 0.000254643 +/- 0.985537,CMS_tHq_ttW4m_bin18 = 0.000254643 +/- 0.985536,CMS_tHq_ttW4m_bin2 = 0.000254643 +/- 0.985503,CMS_tHq_ttW4m_bin3 = -3.44353e-07 +/- 0.985755,CMS_tHq_ttW4m_bin4 = -3.95337e-06 +/- 0.985693,CMS_tHq_ttW4m_bin5 = -4.16341e-06 +/- 0.98552,CMS_tHq_ttW4m_bin6 = -1.56607e-05 +/- 0.985822,CMS_tHq_ttW4m_bin7 = -9.14385e-06 +/- 0.985806,CMS_tHq_ttW4m_bin8 = -1.56179e-06 +/- 0.985588,CMS_tHq_ttW4m_bin9 = 3.70034e-06 +/- 0.985545,CMS_tHq_ttbb = -0.00246201 +/- 0.171978,CMS_tHq_ttcc = 0.00184857 +/- 0.110696,CSVCErr1 = -0.000548761 +/- 0.0765894,CSVCErr2 = -0.000170365 +/- 0.493668,CSVHF = -0.000943885 +/- 0.114221,CSVHFStats1 = 0.000405556 +/- 0.118679,CSVHFStats2 = -0.00249534 +/- 0.242155,CSVLF = -0.0010994 +/- 0.121887,CSVLFStats1 = -0.00252936 +/- 0.240484,CSVLFStats2 = 0.0010768 +/- 0.963424,Q2scale_VV = 0 +/- 0.497864,Q2scale_Wj = -5.85198e-05 +/- 0.980298,Q2scale_tHW = -1.83191e-05 +/- 0.9859,Q2scale_tHq = -0.000570805 +/- 0.988045,Q2scale_tt1b = -0.000565181 +/- 0.490422,Q2scale_tt2b = -0.00195661 +/- 0.491527,Q2scale_ttH = -0.0015508 +/- 0.978294,Q2scale_ttW = 0.00010206 +/- 0.991599,Q2scale_ttbb = -0.00148246 +/- 0.463962,Q2scale_ttcc = -0.00248936 +/- 0.24241,Q2scale_ttlf = -0.000274179 +/- 0.106148,QCDscale_ST = -3.13386e-05 +/- 0.986908,lumi_13TeV = -0.000953345 +/- 0.485312,pdf_gg = -0.000200436 +/- 0.487184,pdf_qg = 7.18129e-05 +/- 0.986215,pdf_qqbar = -8.3587e-05 +/- 0.988271,pu = -0.00101636 +/- 0.981819,r = -0.313593 +/- 5.60275)
+-0.301086    +0.49139  +0.49164    -0.012507
+WARNING: underflow to -9.49047e-09 in pdf_bintH_4m_obsOnly for bin 0, weight 1.19214e-06
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(tH_4m) evaluation error, 
+ origin       : RooAbsReal::tH_4m[ params=(CMS_eff_lep,CMS_jer,CMS_jes,CMS_tHq_TT1b4m_bin1,CMS_tHq_TT1b4m_bin11,CMS_tHq_TT1b4m_bin12,CMS_tHq_TT1b4m_bin13,CMS_tHq_TT1b4m_bin14,CMS_tHq_TT1b4m_bin15,CMS_tHq_TT1b4m_bin16,CMS_tHq_TT1b4m_bin17,CMS_tHq_TT1b4m_bin18,CMS_tHq_TT1b4m_bin2,CMS_tHq_TT1b4m_bin3,CMS_tHq_TT1b4m_bin4,CMS_tHq_TT1b4m_bin5,CMS_tHq_TT2b4m_bin1,CMS_tHq_TT2b4m_bin11,CMS_tHq_TT2b4m_bin12,CMS_tHq_TT2b4m_bin13,CMS_tHq_TT2b4m_bin14,CMS_tHq_TT2b4m_bin15,CMS_tHq_TT2b4m_bin16,CMS_tHq_TT2b4m_bin17,CMS_tHq_TT2b4m_bin18,CMS_tHq_TT2b4m_bin2,CMS_tHq_TT2b4m_bin3,CMS_tHq_TT2b4m_bin4,CMS_tHq_TT2b4m_bin5,CMS_tHq_TTbb4m_bin1,CMS_tHq_TTbb4m_bin13,CMS_tHq_TTbb4m_bin14,CMS_tHq_TTbb4m_bin15,CMS_tHq_TTbb4m_bin16,CMS_tHq_TTbb4m_bin17,CMS_tHq_TTbb4m_bin18,CMS_tHq_TTbb4m_bin2,CMS_tHq_TTbb4m_bin3,CMS_tHq_TTbb4m_bin4,CMS_tHq_TTcc4m_bin1,CMS_tHq_TTcc4m_bin12,CMS_tHq_TTcc4m_bin13,CMS_tHq_TTcc4m_bin14,CMS_tHq_TTcc4m_bin15,CMS_tHq_TTcc4m_bin16,CMS_tHq_TTcc4m_bin17,CMS_tHq_TTcc4m_bin18,CMS_tHq_TTcc4m_bin2,CMS_tHq_TTcc4m_bin3,CMS_tHq_TTcc4m_bin4,CMS_tHq_TTlf4m_bin1,CMS_tHq_TTlf4m_bin11,CMS_tHq_TTlf4m_bin12,CMS_tHq_TTlf4m_bin13,CMS_tHq_TTlf4m_bin14,CMS_tHq_TTlf4m_bin15,CMS_tHq_TTlf4m_bin16,CMS_tHq_TTlf4m_bin17,CMS_tHq_TTlf4m_bin18,CMS_tHq_TTlf4m_bin2,CMS_tHq_TTlf4m_bin3,CMS_tHq_TTlf4m_bin4,CMS_tHq_TTlf4m_bin5,CMS_tHq_VV4m_bin1,CMS_tHq_VV4m_bin10,CMS_tHq_VV4m_bin11,CMS_tHq_VV4m_bin12,CMS_tHq_VV4m_bin13,CMS_tHq_VV4m_bin14,CMS_tHq_VV4m_bin15,CMS_tHq_VV4m_bin16,CMS_tHq_VV4m_bin17,CMS_tHq_VV4m_bin18,CMS_tHq_VV4m_bin2,CMS_tHq_VV4m_bin3,CMS_tHq_VV4m_bin4,CMS_tHq_VV4m_bin5,CMS_tHq_VV4m_bin6,CMS_tHq_VV4m_bin7,CMS_tHq_VV4m_bin8,CMS_tHq_VV4m_bin9,CMS_tHq_Wj4m_bin1,CMS_tHq_Wj4m_bin10,CMS_tHq_Wj4m_bin11,CMS_tHq_Wj4m_bin12,CMS_tHq_Wj4m_bin13,CMS_tHq_Wj4m_bin14,CMS_tHq_Wj4m_bin15,CMS_tHq_Wj4m_bin16,CMS_tHq_Wj4m_bin17,CMS_tHq_Wj4m_bin18,CMS_tHq_Wj4m_bin2,CMS_tHq_Wj4m_bin3,CMS_tHq_Wj4m_bin4,CMS_tHq_Wj4m_bin5,CMS_tHq_Wj4m_bin6,CMS_tHq_Wj4m_bin7,CMS_tHq_Wj4m_bin8,CMS_tHq_Wj4m_bin9,CMS_tHq_sTop4m_bin1,CMS_tHq_sTop4m_bin10,CMS_tHq_sTop4m_bin11,CMS_tHq_sTop4m_bin12,CMS_tHq_sTop4m_bin13,CMS_tHq_sTop4m_bin14,CMS_tHq_sTop4m_bin15,CMS_tHq_sTop4m_bin16,CMS_tHq_sTop4m_bin17,CMS_tHq_sTop4m_bin18,CMS_tHq_sTop4m_bin2,CMS_tHq_sTop4m_bin3,CMS_tHq_sTop4m_bin4,CMS_tHq_sTop4m_bin5,CMS_tHq_sTop4m_bin6,CMS_tHq_sTop4m_bin7,CMS_tHq_sTop4m_bin8,CMS_tHq_sTop4m_bin9,CMS_tHq_tHW4m_bin1,CMS_tHq_tHW4m_bin12,CMS_tHq_tHW4m_bin13,CMS_tHq_tHW4m_bin14,CMS_tHq_tHW4m_bin15,CMS_tHq_tHW4m_bin16,CMS_tHq_tHW4m_bin17,CMS_tHq_tHW4m_bin18,CMS_tHq_tHW4m_bin2,CMS_tHq_tHW4m_bin3,CMS_tHq_tHW4m_bin4,CMS_tHq_tHW4m_bin5,CMS_tHq_tHW4m_bin6,CMS_tHq_tHq4m_bin1,CMS_tHq_tHq4m_bin15,CMS_tHq_tHq4m_bin16,CMS_tHq_tHq4m_bin17,CMS_tHq_tHq4m_bin18,CMS_tHq_tHq4m_bin2,CMS_tHq_tHq4m_bin3,CMS_tHq_tHq4m_bin4,CMS_tHq_tHq4m_bin5,CMS_tHq_tHq4m_bin6,CMS_tHq_tHq4m_bin7,CMS_tHq_tHq4m_bin8,CMS_tHq_tt1b,CMS_tHq_tt2b,CMS_tHq_ttH4m_bin1,CMS_tHq_ttH4m_bin14,CMS_tHq_ttH4m_bin15,CMS_tHq_ttH4m_bin16,CMS_tHq_ttH4m_bin17,CMS_tHq_ttH4m_bin18,CMS_tHq_ttH4m_bin2,CMS_tHq_ttH4m_bin3,CMS_tHq_ttH4m_bin4,CMS_tHq_ttW4m_bin1,CMS_tHq_ttW4m_bin10,CMS_tHq_ttW4m_bin11,CMS_tHq_ttW4m_bin12,CMS_tHq_ttW4m_bin13,CMS_tHq_ttW4m_bin14,CMS_tHq_ttW4m_bin15,CMS_tHq_ttW4m_bin16,CMS_tHq_ttW4m_bin17,CMS_tHq_ttW4m_bin18,CMS_tHq_ttW4m_bin2,CMS_tHq_ttW4m_bin3,CMS_tHq_ttW4m_bin4,CMS_tHq_ttW4m_bin5,CMS_tHq_ttW4m_bin6,CMS_tHq_ttW4m_bin7,CMS_tHq_ttW4m_bin8,CMS_tHq_ttW4m_bin9,CMS_tHq_ttbb,CMS_tHq_ttcc,CSVCErr1,CSVCErr2,CSVHF,CSVHFStats1,CSVHFStats2,CSVLF,CSVLFStats1,CSVLFStats2,Q2scale_VV,Q2scale_Wj,Q2scale_tHW,Q2scale_tHq,Q2scale_tt1b,Q2scale_tt2b,Q2scale_ttH,Q2scale_ttW,Q2scale_ttbb,Q2scale_ttcc,Q2scale_ttlf,QCDscale_ST,lumi_13TeV,pdf_gg,pdf_qg,pdf_qqbar,pu,r) ]
+ message      : Number of events is negative or error
+ server values: params=(CMS_eff_lep = -0.00133357 +/- 0.408034,CMS_jer = 0.00348091 +/- 0.77978,CMS_jes = -0.0027516 +/- 0.167498,CMS_tHq_TT1b4m_bin1 = 0.000271951 +/- 0.811425,CMS_tHq_TT1b4m_bin11 = 8.14627e-05 +/- 0.812383,CMS_tHq_TT1b4m_bin12 = 9.05367e-05 +/- 0.8127,CMS_tHq_TT1b4m_bin13 = 0.000138864 +/- 0.812071,CMS_tHq_TT1b4m_bin14 = 8.97906e-05 +/- 0.811942,CMS_tHq_TT1b4m_bin15 = 0.000127428 +/- 0.811402,CMS_tHq_TT1b4m_bin16 = 0.000271951 +/- 0.811601,CMS_tHq_TT1b4m_bin17 = 0.000271951 +/- 0.811354,CMS_tHq_TT1b4m_bin18 = 0.00027195 +/- 0.811552,CMS_tHq_TT1b4m_bin2 = 0.000271951 +/- 0.811666,CMS_tHq_TT1b4m_bin3 = 3.26192e-07 +/- 0.811008,CMS_tHq_TT1b4m_bin4 = -1.54022e-05 +/- 0.811846,CMS_tHq_TT1b4m_bin5 = -2.8163e-05 +/- 0.811699,CMS_tHq_TT2b4m_bin1 = 0.00026642 +/- 0.811327,CMS_tHq_TT2b4m_bin11 = 7.19801e-05 +/- 0.812489,CMS_tHq_TT2b4m_bin12 = 7.91712e-05 +/- 0.812732,CMS_tHq_TT2b4m_bin13 = 0.000109886 +/- 0.812501,CMS_tHq_TT2b4m_bin14 = 6.82378e-05 +/- 0.812325,CMS_tHq_TT2b4m_bin15 = 0.000127788 +/- 0.8114,CMS_tHq_TT2b4m_bin16 = 0.00026642 +/- 0.811305,CMS_tHq_TT2b4m_bin17 = 0.00026642 +/- 0.811333,CMS_tHq_TT2b4m_bin18 = 0.00026642 +/- 0.811309,CMS_tHq_TT2b4m_bin2 = 0.00026642 +/- 0.811278,CMS_tHq_TT2b4m_bin3 = -1.83166e-06 +/- 0.811515,CMS_tHq_TT2b4m_bin4 = -1.06313e-05 +/- 0.811904,CMS_tHq_TT2b4m_bin5 = -2.26221e-05 +/- 0.811915,CMS_tHq_TTbb4m_bin1 = 0.000315803 +/- 0.811113,CMS_tHq_TTbb4m_bin13 = 0.000258848 +/- 0.811612,CMS_tHq_TTbb4m_bin14 = 0.000173224 +/- 0.811842,CMS_tHq_TTbb4m_bin15 = 9.07679e-05 +/- 0.812037,CMS_tHq_TTbb4m_bin16 = 0.000315803 +/- 0.811144,CMS_tHq_TTbb4m_bin17 = 0.000315803 +/- 0.811172,CMS_tHq_TTbb4m_bin18 = 0.000315803 +/- 0.811092,CMS_tHq_TTbb4m_bin2 = 0.000315803 +/- 0.811222,CMS_tHq_TTbb4m_bin3 = -6.51832e-07 +/- 0.811583,CMS_tHq_TTbb4m_bin4 = -2.11452e-05 +/- 0.811901,CMS_tHq_TTcc4m_bin1 = 0.000291509 +/- 0.811604,CMS_tHq_TTcc4m_bin12 = 0.000114576 +/- 0.811899,CMS_tHq_TTcc4m_bin13 = 0.000143432 +/- 0.812242,CMS_tHq_TTcc4m_bin14 = 9.86828e-05 +/- 0.811965,CMS_tHq_TTcc4m_bin15 = 0.00012565 +/- 0.811545,CMS_tHq_TTcc4m_bin16 = 0.000291509 +/- 0.811724,CMS_tHq_TTcc4m_bin17 = 0.000291509 +/- 0.811752,CMS_tHq_TTcc4m_bin18 = 0.000291509 +/- 0.811749,CMS_tHq_TTcc4m_bin2 = 0.000291509 +/- 0.811579,CMS_tHq_TTcc4m_bin3 = 1.26733e-07 +/- 0.812251,CMS_tHq_TTcc4m_bin4 = -1.55741e-05 +/- 0.811335,CMS_tHq_TTlf4m_bin1 = 0.000276166 +/- 0.811774,CMS_tHq_TTlf4m_bin11 = 9.08849e-05 +/- 0.812515,CMS_tHq_TTlf4m_bin12 = 0.000101917 +/- 0.811811,CMS_tHq_TTlf4m_bin13 = 0.000117782 +/- 0.811842,CMS_tHq_TTlf4m_bin14 = 6.69725e-05 +/- 0.812682,CMS_tHq_TTlf4m_bin15 = 0.000127356 +/- 0.811425,CMS_tHq_TTlf4m_bin16 = 0.000276167 +/- 0.811725,CMS_tHq_TTlf4m_bin17 = 0.000276167 +/- 0.811677,CMS_tHq_TTlf4m_bin18 = 0.000276167 +/- 0.811689,CMS_tHq_TTlf4m_bin2 = 0.000276166 +/- 0.811753,CMS_tHq_TTlf4m_bin3 = 3.99759e-08 +/- 0.811781,CMS_tHq_TTlf4m_bin4 = -1.07828e-05 +/- 0.811609,CMS_tHq_TTlf4m_bin5 = -2.70745e-05 +/- 0.811346,CMS_tHq_VV4m_bin1 = 0.000343853 +/- 0.810915,CMS_tHq_VV4m_bin10 = -7.27674e-07 +/- 0.812113,CMS_tHq_VV4m_bin11 = -2.29373e-06 +/- 0.814279,CMS_tHq_VV4m_bin12 = -2.62926e-06 +/- 0.811291,CMS_tHq_VV4m_bin13 = 4.43965e-07 +/- 0.812389,CMS_tHq_VV4m_bin14 = 4.17596e-05 +/- 0.812351,CMS_tHq_VV4m_bin15 = 0.000123072 +/- 0.811419,CMS_tHq_VV4m_bin16 = 0.000343853 +/- 0.810943,CMS_tHq_VV4m_bin17 = 0.000343853 +/- 0.810927,CMS_tHq_VV4m_bin18 = 0.000343853 +/- 0.810976,CMS_tHq_VV4m_bin2 = 0.000343853 +/- 0.810965,CMS_tHq_VV4m_bin3 = 3.47435e-09 +/- 0.811798,CMS_tHq_VV4m_bin4 = 1.48903e-06 +/- 0.812389,CMS_tHq_VV4m_bin5 = 1.15408e-06 +/- 0.811246,CMS_tHq_VV4m_bin6 = 1.94154e-06 +/- 0.811804,CMS_tHq_VV4m_bin7 = 1.0856e-06 +/- 0.812402,CMS_tHq_VV4m_bin8 = 5.58888e-07 +/- 0.812245,CMS_tHq_VV4m_bin9 = 0.000360916 +/- 0.812012,CMS_tHq_Wj4m_bin1 = 9.58443e-09 +/- 0.82217,CMS_tHq_Wj4m_bin10 = -3.92003e-09 +/- 0.821758,CMS_tHq_Wj4m_bin11 = -3.91904e-09 +/- 0.82167,CMS_tHq_Wj4m_bin12 = -4.02427e-09 +/- 0.821402,CMS_tHq_Wj4m_bin13 = -4.03253e-09 +/- 0.821026,CMS_tHq_Wj4m_bin14 = -4.04791e-09 +/- 0.820681,CMS_tHq_Wj4m_bin15 = -4.15848e-09 +/- 0.820383,CMS_tHq_Wj4m_bin16 = 9.67581e-09 +/- 0.8213,CMS_tHq_Wj4m_bin17 = 9.67581e-09 +/- 0.821021,CMS_tHq_Wj4m_bin18 = 9.67581e-09 +/- 0.820745,CMS_tHq_Wj4m_bin2 = 9.58443e-09 +/- 0.819725,CMS_tHq_Wj4m_bin3 = -3.99793e-09 +/- 0.81948,CMS_tHq_Wj4m_bin4 = -3.99793e-09 +/- 0.819225,CMS_tHq_Wj4m_bin5 = -3.99793e-09 +/- 0.819018,CMS_tHq_Wj4m_bin6 = -3.99793e-09 +/- 0.818726,CMS_tHq_Wj4m_bin7 = -3.99231e-09 +/- 0.818856,CMS_tHq_Wj4m_bin8 = -3.99793e-09 +/- 0.818831,CMS_tHq_Wj4m_bin9 = -3.91442e-09 +/- 0.818671,CMS_tHq_sTop4m_bin1 = 0.000259919 +/- 0.811303,CMS_tHq_sTop4m_bin10 = 0.000108173 +/- 0.81087,CMS_tHq_sTop4m_bin11 = 0.000175518 +/- 0.811341,CMS_tHq_sTop4m_bin12 = 0.000236226 +/- 0.811249,CMS_tHq_sTop4m_bin13 = 0.000298547 +/- 0.811469,CMS_tHq_sTop4m_bin14 = 4.26734e-05 +/- 0.812756,CMS_tHq_sTop4m_bin15 = 0.000128504 +/- 0.811452,CMS_tHq_sTop4m_bin16 = 0.000259919 +/- 0.811256,CMS_tHq_sTop4m_bin17 = 0.000259919 +/- 0.811304,CMS_tHq_sTop4m_bin18 = 0.000259919 +/- 0.81175,CMS_tHq_sTop4m_bin2 = 0.000259919 +/- 0.811134,CMS_tHq_sTop4m_bin3 = 8.09946e-08 +/- 0.811556,CMS_tHq_sTop4m_bin4 = -1.46341e-06 +/- 0.811942,CMS_tHq_sTop4m_bin5 = -1.59675e-06 +/- 0.812006,CMS_tHq_sTop4m_bin6 = -0.000320981 +/- 0.810454,CMS_tHq_sTop4m_bin7 = -0.00016454 +/- 0.811195,CMS_tHq_sTop4m_bin8 = -5.99586e-05 +/- 0.811651,CMS_tHq_sTop4m_bin9 = -2.94424e-05 +/- 0.811052,CMS_tHq_tHW4m_bin1 = -8.59778e-05 +/- 0.810773,CMS_tHq_tHW4m_bin12 = 1.83028e-06 +/- 0.812066,CMS_tHq_tHW4m_bin13 = 3.44085e-06 +/- 0.811711,CMS_tHq_tHW4m_bin14 = 5.78797e-06 +/- 0.811712,CMS_tHq_tHW4m_bin15 = 2.45013e-06 +/- 0.811757,CMS_tHq_tHW4m_bin16 = -8.59779e-05 +/- 0.81078,CMS_tHq_tHW4m_bin17 = -8.59779e-05 +/- 0.81078,CMS_tHq_tHW4m_bin18 = -8.59779e-05 +/- 0.810796,CMS_tHq_tHW4m_bin2 = -8.59778e-05 +/- 0.81082,CMS_tHq_tHW4m_bin3 = 2.13563e-06 +/- 0.811962,CMS_tHq_tHW4m_bin4 = -8.3368e-08 +/- 0.812211,CMS_tHq_tHW4m_bin5 = -3.80848e-07 +/- 0.811969,CMS_tHq_tHW4m_bin6 = -1.06728e-06 +/- 0.812252,CMS_tHq_tHq4m_bin1 = -8.93926e-05 +/- 0.810918,CMS_tHq_tHq4m_bin15 = 1.12786e-05 +/- 0.811857,CMS_tHq_tHq4m_bin16 = -8.93926e-05 +/- 0.810939,CMS_tHq_tHq4m_bin17 = -8.93926e-05 +/- 0.810946,CMS_tHq_tHq4m_bin18 = -8.93926e-05 +/- 0.810958,CMS_tHq_tHq4m_bin2 = -8.93926e-05 +/- 0.810957,CMS_tHq_tHq4m_bin3 = -5.54264e-06 +/- 0.812309,CMS_tHq_tHq4m_bin4 = -9.97705e-08 +/- 0.812046,CMS_tHq_tHq4m_bin5 = -5.66569e-07 +/- 0.81225,CMS_tHq_tHq4m_bin6 = -1.65526e-06 +/- 0.81196,CMS_tHq_tHq4m_bin7 = -3.847e-06 +/- 0.812207,CMS_tHq_tHq4m_bin8 = -5.62332e-06 +/- 0.812185,CMS_tHq_tt1b = -0.00150823 +/- 0.39112,CMS_tHq_tt2b = -0.0012886 +/- 0.405757,CMS_tHq_ttH4m_bin1 = 0.000258376 +/- 0.81152,CMS_tHq_ttH4m_bin14 = 8.2252e-06 +/- 0.812219,CMS_tHq_ttH4m_bin15 = 3.01607e-06 +/- 0.812294,CMS_tHq_ttH4m_bin16 = 0.000258376 +/- 0.811245,CMS_tHq_ttH4m_bin17 = 0.000258376 +/- 0.811307,CMS_tHq_ttH4m_bin18 = 0.000258376 +/- 0.811426,CMS_tHq_ttH4m_bin2 = 0.000258376 +/- 0.811618,CMS_tHq_ttH4m_bin3 = -3.67955e-09 +/- 0.812385,CMS_tHq_ttH4m_bin4 = -1.09644e-06 +/- 0.812305,CMS_tHq_ttW4m_bin1 = 0.000254643 +/- 0.811164,CMS_tHq_ttW4m_bin10 = 1.14394e-05 +/- 0.812209,CMS_tHq_ttW4m_bin11 = 1.15611e-05 +/- 0.812409,CMS_tHq_ttW4m_bin12 = 2.18846e-05 +/- 0.812414,CMS_tHq_ttW4m_bin13 = 2.29879e-05 +/- 0.811837,CMS_tHq_ttW4m_bin14 = 9.58546e-06 +/- 0.811862,CMS_tHq_ttW4m_bin15 = 0.000129091 +/- 0.811505,CMS_tHq_ttW4m_bin16 = 0.000254643 +/- 0.811295,CMS_tHq_ttW4m_bin17 = 0.000254643 +/- 0.811158,CMS_tHq_ttW4m_bin18 = 0.000254643 +/- 0.811163,CMS_tHq_ttW4m_bin2 = 0.000254643 +/- 0.811204,CMS_tHq_ttW4m_bin3 = -3.44353e-07 +/- 0.812067,CMS_tHq_ttW4m_bin4 = -3.95337e-06 +/- 0.811988,CMS_tHq_ttW4m_bin5 = -4.16341e-06 +/- 0.812366,CMS_tHq_ttW4m_bin6 = -1.56607e-05 +/- 0.811909,CMS_tHq_ttW4m_bin7 = -9.14385e-06 +/- 0.811899,CMS_tHq_ttW4m_bin8 = -1.56179e-06 +/- 0.812246,CMS_tHq_ttW4m_bin9 = 3.70034e-06 +/- 0.812386,CMS_tHq_ttbb = -0.00246201 +/- 0.282442,CMS_tHq_ttcc = 0.00184857 +/- 0.181784,CSVCErr1 = -0.000548761 +/- 0.0633342,CSVCErr2 = -0.000170365 +/- 0.407903,CSVHF = -0.000943885 +/- 0.187592,CSVHFStats1 = 0.000405556 +/- 0.194291,CSVHFStats2 = -0.00249534 +/- 0.200078,CSVLF = -0.0010994 +/- 0.201477,CSVLFStats1 = -0.00252936 +/- 0.198703,CSVLFStats2 = 0.0010768 +/- 0.789036,Q2scale_VV = 0 +/- 0.817679,Q2scale_Wj = -5.85198e-05 +/- 0.811453,Q2scale_tHW = -1.83191e-05 +/- 0.812362,Q2scale_tHq = -0.000570805 +/- 0.813397,Q2scale_tt1b = -0.000565181 +/- 0.404171,Q2scale_tt2b = -0.00195661 +/- 0.808237,Q2scale_ttH = -0.0015508 +/- 0.806385,Q2scale_ttW = 0.00010206 +/- 0.820826,Q2scale_ttbb = -0.00148246 +/- 0.383288,Q2scale_ttcc = -0.00248936 +/- 0.199767,Q2scale_ttlf = -0.000274179 +/- 0.174682,QCDscale_ST = -3.13386e-05 +/- 0.812466,lumi_13TeV = -0.000953345 +/- 0.399598,pdf_gg = -0.000200436 +/- 0.400439,pdf_qg = 7.18129e-05 +/- 0.817355,pdf_qqbar = -8.3587e-05 +/- 0.813438,pu = -0.00101636 +/- 0.810104,r = -0.313593 +/- 5.60275)
+WARNING: underflow to -2.8106e-09 in pdf_bintH_4m_obsOnly for bin 0, weight 1.19214e-06
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(tH_4m) evaluation error, 
+ origin       : RooAbsReal::tH_4m[ params=(CMS_eff_lep,CMS_jer,CMS_jes,CMS_tHq_TT1b4m_bin1,CMS_tHq_TT1b4m_bin11,CMS_tHq_TT1b4m_bin12,CMS_tHq_TT1b4m_bin13,CMS_tHq_TT1b4m_bin14,CMS_tHq_TT1b4m_bin15,CMS_tHq_TT1b4m_bin16,CMS_tHq_TT1b4m_bin17,CMS_tHq_TT1b4m_bin18,CMS_tHq_TT1b4m_bin2,CMS_tHq_TT1b4m_bin3,CMS_tHq_TT1b4m_bin4,CMS_tHq_TT1b4m_bin5,CMS_tHq_TT2b4m_bin1,CMS_tHq_TT2b4m_bin11,CMS_tHq_TT2b4m_bin12,CMS_tHq_TT2b4m_bin13,CMS_tHq_TT2b4m_bin14,CMS_tHq_TT2b4m_bin15,CMS_tHq_TT2b4m_bin16,CMS_tHq_TT2b4m_bin17,CMS_tHq_TT2b4m_bin18,CMS_tHq_TT2b4m_bin2,CMS_tHq_TT2b4m_bin3,CMS_tHq_TT2b4m_bin4,CMS_tHq_TT2b4m_bin5,CMS_tHq_TTbb4m_bin1,CMS_tHq_TTbb4m_bin13,CMS_tHq_TTbb4m_bin14,CMS_tHq_TTbb4m_bin15,CMS_tHq_TTbb4m_bin16,CMS_tHq_TTbb4m_bin17,CMS_tHq_TTbb4m_bin18,CMS_tHq_TTbb4m_bin2,CMS_tHq_TTbb4m_bin3,CMS_tHq_TTbb4m_bin4,CMS_tHq_TTcc4m_bin1,CMS_tHq_TTcc4m_bin12,CMS_tHq_TTcc4m_bin13,CMS_tHq_TTcc4m_bin14,CMS_tHq_TTcc4m_bin15,CMS_tHq_TTcc4m_bin16,CMS_tHq_TTcc4m_bin17,CMS_tHq_TTcc4m_bin18,CMS_tHq_TTcc4m_bin2,CMS_tHq_TTcc4m_bin3,CMS_tHq_TTcc4m_bin4,CMS_tHq_TTlf4m_bin1,CMS_tHq_TTlf4m_bin11,CMS_tHq_TTlf4m_bin12,CMS_tHq_TTlf4m_bin13,CMS_tHq_TTlf4m_bin14,CMS_tHq_TTlf4m_bin15,CMS_tHq_TTlf4m_bin16,CMS_tHq_TTlf4m_bin17,CMS_tHq_TTlf4m_bin18,CMS_tHq_TTlf4m_bin2,CMS_tHq_TTlf4m_bin3,CMS_tHq_TTlf4m_bin4,CMS_tHq_TTlf4m_bin5,CMS_tHq_VV4m_bin1,CMS_tHq_VV4m_bin10,CMS_tHq_VV4m_bin11,CMS_tHq_VV4m_bin12,CMS_tHq_VV4m_bin13,CMS_tHq_VV4m_bin14,CMS_tHq_VV4m_bin15,CMS_tHq_VV4m_bin16,CMS_tHq_VV4m_bin17,CMS_tHq_VV4m_bin18,CMS_tHq_VV4m_bin2,CMS_tHq_VV4m_bin3,CMS_tHq_VV4m_bin4,CMS_tHq_VV4m_bin5,CMS_tHq_VV4m_bin6,CMS_tHq_VV4m_bin7,CMS_tHq_VV4m_bin8,CMS_tHq_VV4m_bin9,CMS_tHq_Wj4m_bin1,CMS_tHq_Wj4m_bin10,CMS_tHq_Wj4m_bin11,CMS_tHq_Wj4m_bin12,CMS_tHq_Wj4m_bin13,CMS_tHq_Wj4m_bin14,CMS_tHq_Wj4m_bin15,CMS_tHq_Wj4m_bin16,CMS_tHq_Wj4m_bin17,CMS_tHq_Wj4m_bin18,CMS_tHq_Wj4m_bin2,CMS_tHq_Wj4m_bin3,CMS_tHq_Wj4m_bin4,CMS_tHq_Wj4m_bin5,CMS_tHq_Wj4m_bin6,CMS_tHq_Wj4m_bin7,CMS_tHq_Wj4m_bin8,CMS_tHq_Wj4m_bin9,CMS_tHq_sTop4m_bin1,CMS_tHq_sTop4m_bin10,CMS_tHq_sTop4m_bin11,CMS_tHq_sTop4m_bin12,CMS_tHq_sTop4m_bin13,CMS_tHq_sTop4m_bin14,CMS_tHq_sTop4m_bin15,CMS_tHq_sTop4m_bin16,CMS_tHq_sTop4m_bin17,CMS_tHq_sTop4m_bin18,CMS_tHq_sTop4m_bin2,CMS_tHq_sTop4m_bin3,CMS_tHq_sTop4m_bin4,CMS_tHq_sTop4m_bin5,CMS_tHq_sTop4m_bin6,CMS_tHq_sTop4m_bin7,CMS_tHq_sTop4m_bin8,CMS_tHq_sTop4m_bin9,CMS_tHq_tHW4m_bin1,CMS_tHq_tHW4m_bin12,CMS_tHq_tHW4m_bin13,CMS_tHq_tHW4m_bin14,CMS_tHq_tHW4m_bin15,CMS_tHq_tHW4m_bin16,CMS_tHq_tHW4m_bin17,CMS_tHq_tHW4m_bin18,CMS_tHq_tHW4m_bin2,CMS_tHq_tHW4m_bin3,CMS_tHq_tHW4m_bin4,CMS_tHq_tHW4m_bin5,CMS_tHq_tHW4m_bin6,CMS_tHq_tHq4m_bin1,CMS_tHq_tHq4m_bin15,CMS_tHq_tHq4m_bin16,CMS_tHq_tHq4m_bin17,CMS_tHq_tHq4m_bin18,CMS_tHq_tHq4m_bin2,CMS_tHq_tHq4m_bin3,CMS_tHq_tHq4m_bin4,CMS_tHq_tHq4m_bin5,CMS_tHq_tHq4m_bin6,CMS_tHq_tHq4m_bin7,CMS_tHq_tHq4m_bin8,CMS_tHq_tt1b,CMS_tHq_tt2b,CMS_tHq_ttH4m_bin1,CMS_tHq_ttH4m_bin14,CMS_tHq_ttH4m_bin15,CMS_tHq_ttH4m_bin16,CMS_tHq_ttH4m_bin17,CMS_tHq_ttH4m_bin18,CMS_tHq_ttH4m_bin2,CMS_tHq_ttH4m_bin3,CMS_tHq_ttH4m_bin4,CMS_tHq_ttW4m_bin1,CMS_tHq_ttW4m_bin10,CMS_tHq_ttW4m_bin11,CMS_tHq_ttW4m_bin12,CMS_tHq_ttW4m_bin13,CMS_tHq_ttW4m_bin14,CMS_tHq_ttW4m_bin15,CMS_tHq_ttW4m_bin16,CMS_tHq_ttW4m_bin17,CMS_tHq_ttW4m_bin18,CMS_tHq_ttW4m_bin2,CMS_tHq_ttW4m_bin3,CMS_tHq_ttW4m_bin4,CMS_tHq_ttW4m_bin5,CMS_tHq_ttW4m_bin6,CMS_tHq_ttW4m_bin7,CMS_tHq_ttW4m_bin8,CMS_tHq_ttW4m_bin9,CMS_tHq_ttbb,CMS_tHq_ttcc,CSVCErr1,CSVCErr2,CSVHF,CSVHFStats1,CSVHFStats2,CSVLF,CSVLFStats1,CSVLFStats2,Q2scale_VV,Q2scale_Wj,Q2scale_tHW,Q2scale_tHq,Q2scale_tt1b,Q2scale_tt2b,Q2scale_ttH,Q2scale_ttW,Q2scale_ttbb,Q2scale_ttcc,Q2scale_ttlf,QCDscale_ST,lumi_13TeV,pdf_gg,pdf_qg,pdf_qqbar,pu,r) ]
+ message      : Number of events is negative or error
+ server values: params=(CMS_eff_lep = -0.00133357 +/- 0.408034,CMS_jer = 0.00348091 +/- 0.77978,CMS_jes = -0.0027516 +/- 0.167498,CMS_tHq_TT1b4m_bin1 = 0.000271951 +/- 0.811425,CMS_tHq_TT1b4m_bin11 = 8.14627e-05 +/- 0.812383,CMS_tHq_TT1b4m_bin12 = 9.05367e-05 +/- 0.8127,CMS_tHq_TT1b4m_bin13 = 0.000138864 +/- 0.812071,CMS_tHq_TT1b4m_bin14 = 8.97906e-05 +/- 0.811942,CMS_tHq_TT1b4m_bin15 = 0.000127428 +/- 0.811402,CMS_tHq_TT1b4m_bin16 = 0.000271951 +/- 0.811601,CMS_tHq_TT1b4m_bin17 = 0.000271951 +/- 0.811354,CMS_tHq_TT1b4m_bin18 = 0.00027195 +/- 0.811552,CMS_tHq_TT1b4m_bin2 = 0.000271951 +/- 0.811666,CMS_tHq_TT1b4m_bin3 = 3.26192e-07 +/- 0.811008,CMS_tHq_TT1b4m_bin4 = -1.54022e-05 +/- 0.811846,CMS_tHq_TT1b4m_bin5 = -2.8163e-05 +/- 0.811699,CMS_tHq_TT2b4m_bin1 = 0.00026642 +/- 0.811327,CMS_tHq_TT2b4m_bin11 = 7.19801e-05 +/- 0.812489,CMS_tHq_TT2b4m_bin12 = 7.91712e-05 +/- 0.812732,CMS_tHq_TT2b4m_bin13 = 0.000109886 +/- 0.812501,CMS_tHq_TT2b4m_bin14 = 6.82378e-05 +/- 0.812325,CMS_tHq_TT2b4m_bin15 = 0.000127788 +/- 0.8114,CMS_tHq_TT2b4m_bin16 = 0.00026642 +/- 0.811305,CMS_tHq_TT2b4m_bin17 = 0.00026642 +/- 0.811333,CMS_tHq_TT2b4m_bin18 = 0.00026642 +/- 0.811309,CMS_tHq_TT2b4m_bin2 = 0.00026642 +/- 0.811278,CMS_tHq_TT2b4m_bin3 = -1.83166e-06 +/- 0.811515,CMS_tHq_TT2b4m_bin4 = -1.06313e-05 +/- 0.811904,CMS_tHq_TT2b4m_bin5 = -2.26221e-05 +/- 0.811915,CMS_tHq_TTbb4m_bin1 = 0.000315803 +/- 0.811113,CMS_tHq_TTbb4m_bin13 = 0.000258848 +/- 0.811612,CMS_tHq_TTbb4m_bin14 = 0.000173224 +/- 0.811842,CMS_tHq_TTbb4m_bin15 = 9.07679e-05 +/- 0.812037,CMS_tHq_TTbb4m_bin16 = 0.000315803 +/- 0.811144,CMS_tHq_TTbb4m_bin17 = 0.000315803 +/- 0.811172,CMS_tHq_TTbb4m_bin18 = 0.000315803 +/- 0.811092,CMS_tHq_TTbb4m_bin2 = 0.000315803 +/- 0.811222,CMS_tHq_TTbb4m_bin3 = -6.51832e-07 +/- 0.811583,CMS_tHq_TTbb4m_bin4 = -2.11452e-05 +/- 0.811901,CMS_tHq_TTcc4m_bin1 = 0.000291509 +/- 0.811604,CMS_tHq_TTcc4m_bin12 = 0.000114576 +/- 0.811899,CMS_tHq_TTcc4m_bin13 = 0.000143432 +/- 0.812242,CMS_tHq_TTcc4m_bin14 = 9.86828e-05 +/- 0.811965,CMS_tHq_TTcc4m_bin15 = 0.00012565 +/- 0.811545,CMS_tHq_TTcc4m_bin16 = 0.000291509 +/- 0.811724,CMS_tHq_TTcc4m_bin17 = 0.000291509 +/- 0.811752,CMS_tHq_TTcc4m_bin18 = 0.000291509 +/- 0.811749,CMS_tHq_TTcc4m_bin2 = 0.000291509 +/- 0.811579,CMS_tHq_TTcc4m_bin3 = 1.26733e-07 +/- 0.812251,CMS_tHq_TTcc4m_bin4 = -1.55741e-05 +/- 0.811335,CMS_tHq_TTlf4m_bin1 = 0.000276166 +/- 0.811774,CMS_tHq_TTlf4m_bin11 = 9.08849e-05 +/- 0.812515,CMS_tHq_TTlf4m_bin12 = 0.000101917 +/- 0.811811,CMS_tHq_TTlf4m_bin13 = 0.000117782 +/- 0.811842,CMS_tHq_TTlf4m_bin14 = 6.69725e-05 +/- 0.812682,CMS_tHq_TTlf4m_bin15 = 0.000127356 +/- 0.811425,CMS_tHq_TTlf4m_bin16 = 0.000276167 +/- 0.811725,CMS_tHq_TTlf4m_bin17 = 0.000276167 +/- 0.811677,CMS_tHq_TTlf4m_bin18 = 0.000276167 +/- 0.811689,CMS_tHq_TTlf4m_bin2 = 0.000276166 +/- 0.811753,CMS_tHq_TTlf4m_bin3 = 3.99759e-08 +/- 0.811781,CMS_tHq_TTlf4m_bin4 = -1.07828e-05 +/- 0.811609,CMS_tHq_TTlf4m_bin5 = -2.70745e-05 +/- 0.811346,CMS_tHq_VV4m_bin1 = 0.000343853 +/- 0.810915,CMS_tHq_VV4m_bin10 = -7.27674e-07 +/- 0.812113,CMS_tHq_VV4m_bin11 = -2.29373e-06 +/- 0.814279,CMS_tHq_VV4m_bin12 = -2.62926e-06 +/- 0.811291,CMS_tHq_VV4m_bin13 = 4.43965e-07 +/- 0.812389,CMS_tHq_VV4m_bin14 = 4.17596e-05 +/- 0.812351,CMS_tHq_VV4m_bin15 = 0.000123072 +/- 0.811419,CMS_tHq_VV4m_bin16 = 0.000343853 +/- 0.810943,CMS_tHq_VV4m_bin17 = 0.000343853 +/- 0.810927,CMS_tHq_VV4m_bin18 = 0.000343853 +/- 0.810976,CMS_tHq_VV4m_bin2 = 0.000343853 +/- 0.810965,CMS_tHq_VV4m_bin3 = 3.47435e-09 +/- 0.811798,CMS_tHq_VV4m_bin4 = 1.48903e-06 +/- 0.812389,CMS_tHq_VV4m_bin5 = 1.15408e-06 +/- 0.811246,CMS_tHq_VV4m_bin6 = 1.94154e-06 +/- 0.811804,CMS_tHq_VV4m_bin7 = 1.0856e-06 +/- 0.812402,CMS_tHq_VV4m_bin8 = 5.58888e-07 +/- 0.812245,CMS_tHq_VV4m_bin9 = 0.000360916 +/- 0.812012,CMS_tHq_Wj4m_bin1 = 9.58443e-09 +/- 0.82217,CMS_tHq_Wj4m_bin10 = -3.92003e-09 +/- 0.821758,CMS_tHq_Wj4m_bin11 = -3.91904e-09 +/- 0.82167,CMS_tHq_Wj4m_bin12 = -4.02427e-09 +/- 0.821402,CMS_tHq_Wj4m_bin13 = -4.03253e-09 +/- 0.821026,CMS_tHq_Wj4m_bin14 = -4.04791e-09 +/- 0.820681,CMS_tHq_Wj4m_bin15 = -4.15848e-09 +/- 0.820383,CMS_tHq_Wj4m_bin16 = 9.67581e-09 +/- 0.8213,CMS_tHq_Wj4m_bin17 = 9.67581e-09 +/- 0.821021,CMS_tHq_Wj4m_bin18 = 9.67581e-09 +/- 0.820745,CMS_tHq_Wj4m_bin2 = 9.58443e-09 +/- 0.819725,CMS_tHq_Wj4m_bin3 = -3.99793e-09 +/- 0.81948,CMS_tHq_Wj4m_bin4 = -3.99793e-09 +/- 0.819225,CMS_tHq_Wj4m_bin5 = -3.99793e-09 +/- 0.819018,CMS_tHq_Wj4m_bin6 = -3.99793e-09 +/- 0.818726,CMS_tHq_Wj4m_bin7 = -3.99231e-09 +/- 0.818856,CMS_tHq_Wj4m_bin8 = -3.99793e-09 +/- 0.818831,CMS_tHq_Wj4m_bin9 = -3.91442e-09 +/- 0.818671,CMS_tHq_sTop4m_bin1 = 0.000259919 +/- 0.811303,CMS_tHq_sTop4m_bin10 = 0.000108173 +/- 0.81087,CMS_tHq_sTop4m_bin11 = 0.000175518 +/- 0.811341,CMS_tHq_sTop4m_bin12 = 0.000236226 +/- 0.811249,CMS_tHq_sTop4m_bin13 = 0.000298547 +/- 0.811469,CMS_tHq_sTop4m_bin14 = 4.26734e-05 +/- 0.812756,CMS_tHq_sTop4m_bin15 = 0.000128504 +/- 0.811452,CMS_tHq_sTop4m_bin16 = 0.000259919 +/- 0.811256,CMS_tHq_sTop4m_bin17 = 0.000259919 +/- 0.811304,CMS_tHq_sTop4m_bin18 = 0.000259919 +/- 0.81175,CMS_tHq_sTop4m_bin2 = 0.000259919 +/- 0.811134,CMS_tHq_sTop4m_bin3 = 8.09946e-08 +/- 0.811556,CMS_tHq_sTop4m_bin4 = -1.46341e-06 +/- 0.811942,CMS_tHq_sTop4m_bin5 = -1.59675e-06 +/- 0.812006,CMS_tHq_sTop4m_bin6 = -0.000320981 +/- 0.810454,CMS_tHq_sTop4m_bin7 = -0.00016454 +/- 0.811195,CMS_tHq_sTop4m_bin8 = -5.99586e-05 +/- 0.811651,CMS_tHq_sTop4m_bin9 = -2.94424e-05 +/- 0.811052,CMS_tHq_tHW4m_bin1 = -8.59778e-05 +/- 0.810773,CMS_tHq_tHW4m_bin12 = 1.83028e-06 +/- 0.812066,CMS_tHq_tHW4m_bin13 = 3.44085e-06 +/- 0.811711,CMS_tHq_tHW4m_bin14 = 5.78797e-06 +/- 0.811712,CMS_tHq_tHW4m_bin15 = 2.45013e-06 +/- 0.811757,CMS_tHq_tHW4m_bin16 = -8.59779e-05 +/- 0.81078,CMS_tHq_tHW4m_bin17 = -8.59779e-05 +/- 0.81078,CMS_tHq_tHW4m_bin18 = -8.59779e-05 +/- 0.810796,CMS_tHq_tHW4m_bin2 = -8.59778e-05 +/- 0.81082,CMS_tHq_tHW4m_bin3 = 2.13563e-06 +/- 0.811962,CMS_tHq_tHW4m_bin4 = -8.3368e-08 +/- 0.812211,CMS_tHq_tHW4m_bin5 = -3.80848e-07 +/- 0.811969,CMS_tHq_tHW4m_bin6 = -1.06728e-06 +/- 0.812252,CMS_tHq_tHq4m_bin1 = -8.93926e-05 +/- 0.810918,CMS_tHq_tHq4m_bin15 = 1.12786e-05 +/- 0.811857,CMS_tHq_tHq4m_bin16 = -8.93926e-05 +/- 0.810939,CMS_tHq_tHq4m_bin17 = -8.93926e-05 +/- 0.810946,CMS_tHq_tHq4m_bin18 = -8.93926e-05 +/- 0.810958,CMS_tHq_tHq4m_bin2 = -8.93926e-05 +/- 0.810957,CMS_tHq_tHq4m_bin3 = -5.54264e-06 +/- 0.812309,CMS_tHq_tHq4m_bin4 = -9.97705e-08 +/- 0.812046,CMS_tHq_tHq4m_bin5 = -5.66569e-07 +/- 0.81225,CMS_tHq_tHq4m_bin6 = -1.65526e-06 +/- 0.81196,CMS_tHq_tHq4m_bin7 = -3.847e-06 +/- 0.812207,CMS_tHq_tHq4m_bin8 = -5.62332e-06 +/- 0.812185,CMS_tHq_tt1b = -0.00150823 +/- 0.39112,CMS_tHq_tt2b = -0.0012886 +/- 0.405757,CMS_tHq_ttH4m_bin1 = 0.000258376 +/- 0.81152,CMS_tHq_ttH4m_bin14 = 8.2252e-06 +/- 0.812219,CMS_tHq_ttH4m_bin15 = 3.01607e-06 +/- 0.812294,CMS_tHq_ttH4m_bin16 = 0.000258376 +/- 0.811245,CMS_tHq_ttH4m_bin17 = 0.000258376 +/- 0.811307,CMS_tHq_ttH4m_bin18 = 0.000258376 +/- 0.811426,CMS_tHq_ttH4m_bin2 = 0.000258376 +/- 0.811618,CMS_tHq_ttH4m_bin3 = -3.67955e-09 +/- 0.812385,CMS_tHq_ttH4m_bin4 = -1.09644e-06 +/- 0.812305,CMS_tHq_ttW4m_bin1 = 0.000254643 +/- 0.811164,CMS_tHq_ttW4m_bin10 = 1.14394e-05 +/- 0.812209,CMS_tHq_ttW4m_bin11 = 1.15611e-05 +/- 0.812409,CMS_tHq_ttW4m_bin12 = 2.18846e-05 +/- 0.812414,CMS_tHq_ttW4m_bin13 = 2.29879e-05 +/- 0.811837,CMS_tHq_ttW4m_bin14 = 9.58546e-06 +/- 0.811862,CMS_tHq_ttW4m_bin15 = 0.000129091 +/- 0.811505,CMS_tHq_ttW4m_bin16 = 0.000254643 +/- 0.811295,CMS_tHq_ttW4m_bin17 = 0.000254643 +/- 0.811158,CMS_tHq_ttW4m_bin18 = 0.000254643 +/- 0.811163,CMS_tHq_ttW4m_bin2 = 0.000254643 +/- 0.811204,CMS_tHq_ttW4m_bin3 = -3.44353e-07 +/- 0.812067,CMS_tHq_ttW4m_bin4 = -3.95337e-06 +/- 0.811988,CMS_tHq_ttW4m_bin5 = -4.16341e-06 +/- 0.812366,CMS_tHq_ttW4m_bin6 = -1.56607e-05 +/- 0.811909,CMS_tHq_ttW4m_bin7 = -9.14385e-06 +/- 0.811899,CMS_tHq_ttW4m_bin8 = -1.56179e-06 +/- 0.812246,CMS_tHq_ttW4m_bin9 = 3.70034e-06 +/- 0.812386,CMS_tHq_ttbb = -0.00246201 +/- 0.282442,CMS_tHq_ttcc = 0.00184857 +/- 0.181784,CSVCErr1 = -0.000548761 +/- 0.0633342,CSVCErr2 = -0.000170365 +/- 0.407903,CSVHF = -0.000943885 +/- 0.187592,CSVHFStats1 = 0.000405556 +/- 0.194291,CSVHFStats2 = -0.00249534 +/- 0.200078,CSVLF = -0.0010994 +/- 0.201477,CSVLFStats1 = -0.00252936 +/- 0.198703,CSVLFStats2 = 0.0010768 +/- 0.789036,Q2scale_VV = 0 +/- 0.817679,Q2scale_Wj = -5.85198e-05 +/- 0.811453,Q2scale_tHW = -1.83191e-05 +/- 0.812362,Q2scale_tHq = -0.000570805 +/- 0.813397,Q2scale_tt1b = -0.000565181 +/- 0.404171,Q2scale_tt2b = -0.00195661 +/- 0.808237,Q2scale_ttH = -0.0015508 +/- 0.806385,Q2scale_ttW = 0.00010206 +/- 0.820826,Q2scale_ttbb = -0.00148246 +/- 0.383288,Q2scale_ttcc = -0.00248936 +/- 0.199767,Q2scale_ttlf = -0.000274179 +/- 0.174682,QCDscale_ST = -3.13386e-05 +/- 0.812466,lumi_13TeV = -0.000953345 +/- 0.399598,pdf_gg = -0.000200436 +/- 0.400439,pdf_qg = 7.18129e-05 +/- 0.817355,pdf_qqbar = -8.3587e-05 +/- 0.813438,pu = -0.00101636 +/- 0.810104,r = -0.30734 +/- 5.60275)
+-0.304213    +0.49131  +0.49139    -0.003127
+WARNING: underflow to -2.8106e-09 in pdf_bintH_4m_obsOnly for bin 0, weight 1.19214e-06
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(tH_4m) evaluation error, 
+ origin       : RooAbsReal::tH_4m[ params=(CMS_eff_lep,CMS_jer,CMS_jes,CMS_tHq_TT1b4m_bin1,CMS_tHq_TT1b4m_bin11,CMS_tHq_TT1b4m_bin12,CMS_tHq_TT1b4m_bin13,CMS_tHq_TT1b4m_bin14,CMS_tHq_TT1b4m_bin15,CMS_tHq_TT1b4m_bin16,CMS_tHq_TT1b4m_bin17,CMS_tHq_TT1b4m_bin18,CMS_tHq_TT1b4m_bin2,CMS_tHq_TT1b4m_bin3,CMS_tHq_TT1b4m_bin4,CMS_tHq_TT1b4m_bin5,CMS_tHq_TT2b4m_bin1,CMS_tHq_TT2b4m_bin11,CMS_tHq_TT2b4m_bin12,CMS_tHq_TT2b4m_bin13,CMS_tHq_TT2b4m_bin14,CMS_tHq_TT2b4m_bin15,CMS_tHq_TT2b4m_bin16,CMS_tHq_TT2b4m_bin17,CMS_tHq_TT2b4m_bin18,CMS_tHq_TT2b4m_bin2,CMS_tHq_TT2b4m_bin3,CMS_tHq_TT2b4m_bin4,CMS_tHq_TT2b4m_bin5,CMS_tHq_TTbb4m_bin1,CMS_tHq_TTbb4m_bin13,CMS_tHq_TTbb4m_bin14,CMS_tHq_TTbb4m_bin15,CMS_tHq_TTbb4m_bin16,CMS_tHq_TTbb4m_bin17,CMS_tHq_TTbb4m_bin18,CMS_tHq_TTbb4m_bin2,CMS_tHq_TTbb4m_bin3,CMS_tHq_TTbb4m_bin4,CMS_tHq_TTcc4m_bin1,CMS_tHq_TTcc4m_bin12,CMS_tHq_TTcc4m_bin13,CMS_tHq_TTcc4m_bin14,CMS_tHq_TTcc4m_bin15,CMS_tHq_TTcc4m_bin16,CMS_tHq_TTcc4m_bin17,CMS_tHq_TTcc4m_bin18,CMS_tHq_TTcc4m_bin2,CMS_tHq_TTcc4m_bin3,CMS_tHq_TTcc4m_bin4,CMS_tHq_TTlf4m_bin1,CMS_tHq_TTlf4m_bin11,CMS_tHq_TTlf4m_bin12,CMS_tHq_TTlf4m_bin13,CMS_tHq_TTlf4m_bin14,CMS_tHq_TTlf4m_bin15,CMS_tHq_TTlf4m_bin16,CMS_tHq_TTlf4m_bin17,CMS_tHq_TTlf4m_bin18,CMS_tHq_TTlf4m_bin2,CMS_tHq_TTlf4m_bin3,CMS_tHq_TTlf4m_bin4,CMS_tHq_TTlf4m_bin5,CMS_tHq_VV4m_bin1,CMS_tHq_VV4m_bin10,CMS_tHq_VV4m_bin11,CMS_tHq_VV4m_bin12,CMS_tHq_VV4m_bin13,CMS_tHq_VV4m_bin14,CMS_tHq_VV4m_bin15,CMS_tHq_VV4m_bin16,CMS_tHq_VV4m_bin17,CMS_tHq_VV4m_bin18,CMS_tHq_VV4m_bin2,CMS_tHq_VV4m_bin3,CMS_tHq_VV4m_bin4,CMS_tHq_VV4m_bin5,CMS_tHq_VV4m_bin6,CMS_tHq_VV4m_bin7,CMS_tHq_VV4m_bin8,CMS_tHq_VV4m_bin9,CMS_tHq_Wj4m_bin1,CMS_tHq_Wj4m_bin10,CMS_tHq_Wj4m_bin11,CMS_tHq_Wj4m_bin12,CMS_tHq_Wj4m_bin13,CMS_tHq_Wj4m_bin14,CMS_tHq_Wj4m_bin15,CMS_tHq_Wj4m_bin16,CMS_tHq_Wj4m_bin17,CMS_tHq_Wj4m_bin18,CMS_tHq_Wj4m_bin2,CMS_tHq_Wj4m_bin3,CMS_tHq_Wj4m_bin4,CMS_tHq_Wj4m_bin5,CMS_tHq_Wj4m_bin6,CMS_tHq_Wj4m_bin7,CMS_tHq_Wj4m_bin8,CMS_tHq_Wj4m_bin9,CMS_tHq_sTop4m_bin1,CMS_tHq_sTop4m_bin10,CMS_tHq_sTop4m_bin11,CMS_tHq_sTop4m_bin12,CMS_tHq_sTop4m_bin13,CMS_tHq_sTop4m_bin14,CMS_tHq_sTop4m_bin15,CMS_tHq_sTop4m_bin16,CMS_tHq_sTop4m_bin17,CMS_tHq_sTop4m_bin18,CMS_tHq_sTop4m_bin2,CMS_tHq_sTop4m_bin3,CMS_tHq_sTop4m_bin4,CMS_tHq_sTop4m_bin5,CMS_tHq_sTop4m_bin6,CMS_tHq_sTop4m_bin7,CMS_tHq_sTop4m_bin8,CMS_tHq_sTop4m_bin9,CMS_tHq_tHW4m_bin1,CMS_tHq_tHW4m_bin12,CMS_tHq_tHW4m_bin13,CMS_tHq_tHW4m_bin14,CMS_tHq_tHW4m_bin15,CMS_tHq_tHW4m_bin16,CMS_tHq_tHW4m_bin17,CMS_tHq_tHW4m_bin18,CMS_tHq_tHW4m_bin2,CMS_tHq_tHW4m_bin3,CMS_tHq_tHW4m_bin4,CMS_tHq_tHW4m_bin5,CMS_tHq_tHW4m_bin6,CMS_tHq_tHq4m_bin1,CMS_tHq_tHq4m_bin15,CMS_tHq_tHq4m_bin16,CMS_tHq_tHq4m_bin17,CMS_tHq_tHq4m_bin18,CMS_tHq_tHq4m_bin2,CMS_tHq_tHq4m_bin3,CMS_tHq_tHq4m_bin4,CMS_tHq_tHq4m_bin5,CMS_tHq_tHq4m_bin6,CMS_tHq_tHq4m_bin7,CMS_tHq_tHq4m_bin8,CMS_tHq_tt1b,CMS_tHq_tt2b,CMS_tHq_ttH4m_bin1,CMS_tHq_ttH4m_bin14,CMS_tHq_ttH4m_bin15,CMS_tHq_ttH4m_bin16,CMS_tHq_ttH4m_bin17,CMS_tHq_ttH4m_bin18,CMS_tHq_ttH4m_bin2,CMS_tHq_ttH4m_bin3,CMS_tHq_ttH4m_bin4,CMS_tHq_ttW4m_bin1,CMS_tHq_ttW4m_bin10,CMS_tHq_ttW4m_bin11,CMS_tHq_ttW4m_bin12,CMS_tHq_ttW4m_bin13,CMS_tHq_ttW4m_bin14,CMS_tHq_ttW4m_bin15,CMS_tHq_ttW4m_bin16,CMS_tHq_ttW4m_bin17,CMS_tHq_ttW4m_bin18,CMS_tHq_ttW4m_bin2,CMS_tHq_ttW4m_bin3,CMS_tHq_ttW4m_bin4,CMS_tHq_ttW4m_bin5,CMS_tHq_ttW4m_bin6,CMS_tHq_ttW4m_bin7,CMS_tHq_ttW4m_bin8,CMS_tHq_ttW4m_bin9,CMS_tHq_ttbb,CMS_tHq_ttcc,CSVCErr1,CSVCErr2,CSVHF,CSVHFStats1,CSVHFStats2,CSVLF,CSVLFStats1,CSVLFStats2,Q2scale_VV,Q2scale_Wj,Q2scale_tHW,Q2scale_tHq,Q2scale_tt1b,Q2scale_tt2b,Q2scale_ttH,Q2scale_ttW,Q2scale_ttbb,Q2scale_ttcc,Q2scale_ttlf,QCDscale_ST,lumi_13TeV,pdf_gg,pdf_qg,pdf_qqbar,pu,r) ]
+ message      : Number of events is negative or error
+ server values: params=(CMS_eff_lep = -0.00133357 +/- 0.351962,CMS_jer = 0.00348091 +/- 0.668509,CMS_jes = -0.0027516 +/- 0.144484,CMS_tHq_TT1b4m_bin1 = 0.000271951 +/- 0.697398,CMS_tHq_TT1b4m_bin11 = 8.14627e-05 +/- 0.697634,CMS_tHq_TT1b4m_bin12 = 9.05367e-05 +/- 0.697817,CMS_tHq_TT1b4m_bin13 = 0.000138864 +/- 0.69763,CMS_tHq_TT1b4m_bin14 = 8.97906e-05 +/- 0.697399,CMS_tHq_TT1b4m_bin15 = 0.000127428 +/- 0.697895,CMS_tHq_TT1b4m_bin16 = 0.000271951 +/- 0.697175,CMS_tHq_TT1b4m_bin17 = 0.000271951 +/- 0.697401,CMS_tHq_TT1b4m_bin18 = 0.00027195 +/- 0.697228,CMS_tHq_TT1b4m_bin2 = 0.000271951 +/- 0.697148,CMS_tHq_TT1b4m_bin3 = 3.26192e-07 +/- 0.69731,CMS_tHq_TT1b4m_bin4 = -1.54022e-05 +/- 0.697108,CMS_tHq_TT1b4m_bin5 = -2.8163e-05 +/- 0.697359,CMS_tHq_TT2b4m_bin1 = 0.00026642 +/- 0.697482,CMS_tHq_TT2b4m_bin11 = 7.19801e-05 +/- 0.697697,CMS_tHq_TT2b4m_bin12 = 7.91712e-05 +/- 0.69787,CMS_tHq_TT2b4m_bin13 = 0.000109886 +/- 0.697992,CMS_tHq_TT2b4m_bin14 = 6.82378e-05 +/- 0.698489,CMS_tHq_TT2b4m_bin15 = 0.000127788 +/- 0.697899,CMS_tHq_TT2b4m_bin16 = 0.00026642 +/- 0.697506,CMS_tHq_TT2b4m_bin17 = 0.00026642 +/- 0.697471,CMS_tHq_TT2b4m_bin18 = 0.00026642 +/- 0.697496,CMS_tHq_TT2b4m_bin2 = 0.00026642 +/- 0.697533,CMS_tHq_TT2b4m_bin3 = -1.83166e-06 +/- 0.698468,CMS_tHq_TT2b4m_bin4 = -1.06313e-05 +/- 0.697523,CMS_tHq_TT2b4m_bin5 = -2.26221e-05 +/- 0.697412,CMS_tHq_TTbb4m_bin1 = 0.000315803 +/- 0.697476,CMS_tHq_TTbb4m_bin13 = 0.000258848 +/- 0.698926,CMS_tHq_TTbb4m_bin14 = 0.000173224 +/- 0.699071,CMS_tHq_TTbb4m_bin15 = 9.07679e-05 +/- 0.697838,CMS_tHq_TTbb4m_bin16 = 0.000315803 +/- 0.697438,CMS_tHq_TTbb4m_bin17 = 0.000315803 +/- 0.697405,CMS_tHq_TTbb4m_bin18 = 0.000315803 +/- 0.697502,CMS_tHq_TTbb4m_bin2 = 0.000315803 +/- 0.697419,CMS_tHq_TTbb4m_bin3 = -6.51832e-07 +/- 0.696451,CMS_tHq_TTbb4m_bin4 = -2.11452e-05 +/- 0.696771,CMS_tHq_TTcc4m_bin1 = 0.000291509 +/- 0.697107,CMS_tHq_TTcc4m_bin12 = 0.000114576 +/- 0.69774,CMS_tHq_TTcc4m_bin13 = 0.000143432 +/- 0.698481,CMS_tHq_TTcc4m_bin14 = 9.86828e-05 +/- 0.697265,CMS_tHq_TTcc4m_bin15 = 0.00012565 +/- 0.697832,CMS_tHq_TTcc4m_bin16 = 0.000291509 +/- 0.697153,CMS_tHq_TTcc4m_bin17 = 0.000291509 +/- 0.697044,CMS_tHq_TTcc4m_bin18 = 0.000291509 +/- 0.697027,CMS_tHq_TTcc4m_bin2 = 0.000291509 +/- 0.69708,CMS_tHq_TTcc4m_bin3 = 1.26733e-07 +/- 0.697774,CMS_tHq_TTcc4m_bin4 = -1.55741e-05 +/- 0.700609,CMS_tHq_TTlf4m_bin1 = 0.000276166 +/- 0.697191,CMS_tHq_TTlf4m_bin11 = 9.08849e-05 +/- 0.697677,CMS_tHq_TTlf4m_bin12 = 0.000101917 +/- 0.698274,CMS_tHq_TTlf4m_bin13 = 0.000117782 +/- 0.698386,CMS_tHq_TTlf4m_bin14 = 6.69725e-05 +/- 0.697993,CMS_tHq_TTlf4m_bin15 = 0.000127356 +/- 0.697864,CMS_tHq_TTlf4m_bin16 = 0.000276167 +/- 0.697257,CMS_tHq_TTlf4m_bin17 = 0.000276167 +/- 0.69711,CMS_tHq_TTlf4m_bin18 = 0.000276167 +/- 0.697231,CMS_tHq_TTlf4m_bin2 = 0.000276166 +/- 0.697233,CMS_tHq_TTlf4m_bin3 = 3.99759e-08 +/- 0.698594,CMS_tHq_TTlf4m_bin4 = -1.07828e-05 +/- 0.697644,CMS_tHq_TTlf4m_bin5 = -2.70745e-05 +/- 0.697265,CMS_tHq_VV4m_bin1 = 0.000343853 +/- 0.697588,CMS_tHq_VV4m_bin10 = -7.27674e-07 +/- 0.697799,CMS_tHq_VV4m_bin11 = -2.29373e-06 +/- 0.698169,CMS_tHq_VV4m_bin12 = -2.62926e-06 +/- 0.697645,CMS_tHq_VV4m_bin13 = 4.43965e-07 +/- 0.697594,CMS_tHq_VV4m_bin14 = 4.17596e-05 +/- 0.697184,CMS_tHq_VV4m_bin15 = 0.000123072 +/- 0.697878,CMS_tHq_VV4m_bin16 = 0.000343853 +/- 0.697509,CMS_tHq_VV4m_bin17 = 0.000343853 +/- 0.697562,CMS_tHq_VV4m_bin18 = 0.000343853 +/- 0.697526,CMS_tHq_VV4m_bin2 = 0.000343853 +/- 0.697552,CMS_tHq_VV4m_bin3 = 3.47435e-09 +/- 0.698024,CMS_tHq_VV4m_bin4 = 1.48903e-06 +/- 0.697649,CMS_tHq_VV4m_bin5 = 1.15408e-06 +/- 0.697485,CMS_tHq_VV4m_bin6 = 1.94154e-06 +/- 0.698741,CMS_tHq_VV4m_bin7 = 1.0856e-06 +/- 0.697655,CMS_tHq_VV4m_bin8 = 5.58888e-07 +/- 0.697797,CMS_tHq_VV4m_bin9 = 0.000360916 +/- 0.696552,CMS_tHq_Wj4m_bin1 = 9.58443e-09 +/- 0.711259,CMS_tHq_Wj4m_bin10 = -3.92003e-09 +/- 0.71066,CMS_tHq_Wj4m_bin11 = -3.91904e-09 +/- 0.710379,CMS_tHq_Wj4m_bin12 = -4.02427e-09 +/- 0.709933,CMS_tHq_Wj4m_bin13 = -4.03253e-09 +/- 0.709388,CMS_tHq_Wj4m_bin14 = -4.04791e-09 +/- 0.708885,CMS_tHq_Wj4m_bin15 = -4.15848e-09 +/- 0.708428,CMS_tHq_Wj4m_bin16 = 9.67581e-09 +/- 0.709367,CMS_tHq_Wj4m_bin17 = 9.67581e-09 +/- 0.708818,CMS_tHq_Wj4m_bin18 = 9.67581e-09 +/- 0.708302,CMS_tHq_Wj4m_bin2 = 9.58443e-09 +/- 0.707039,CMS_tHq_Wj4m_bin3 = -3.99793e-09 +/- 0.706628,CMS_tHq_Wj4m_bin4 = -3.99793e-09 +/- 0.706219,CMS_tHq_Wj4m_bin5 = -3.99793e-09 +/- 0.705845,CMS_tHq_Wj4m_bin6 = -3.99793e-09 +/- 0.706001,CMS_tHq_Wj4m_bin7 = -3.99231e-09 +/- 0.705418,CMS_tHq_Wj4m_bin8 = -3.99793e-09 +/- 0.705297,CMS_tHq_Wj4m_bin9 = -3.91442e-09 +/- 0.70559,CMS_tHq_sTop4m_bin1 = 0.000259919 +/- 0.697538,CMS_tHq_sTop4m_bin10 = 0.000108173 +/- 0.69644,CMS_tHq_sTop4m_bin11 = 0.000175518 +/- 0.697746,CMS_tHq_sTop4m_bin12 = 0.000236226 +/- 0.698643,CMS_tHq_sTop4m_bin13 = 0.000298547 +/- 0.698836,CMS_tHq_sTop4m_bin14 = 4.26734e-05 +/- 0.69789,CMS_tHq_sTop4m_bin15 = 0.000128504 +/- 0.697827,CMS_tHq_sTop4m_bin16 = 0.000259919 +/- 0.697557,CMS_tHq_sTop4m_bin17 = 0.000259919 +/- 0.697545,CMS_tHq_sTop4m_bin18 = 0.000259919 +/- 0.697366,CMS_tHq_sTop4m_bin2 = 0.000259919 +/- 0.697684,CMS_tHq_sTop4m_bin3 = 8.09946e-08 +/- 0.698266,CMS_tHq_sTop4m_bin4 = -1.46341e-06 +/- 0.699455,CMS_tHq_sTop4m_bin5 = -1.59675e-06 +/- 0.697817,CMS_tHq_sTop4m_bin6 = -0.000320981 +/- 0.695469,CMS_tHq_sTop4m_bin7 = -0.00016454 +/- 0.696056,CMS_tHq_sTop4m_bin8 = -5.99586e-05 +/- 0.696607,CMS_tHq_sTop4m_bin9 = -2.94424e-05 +/- 0.696737,CMS_tHq_tHW4m_bin1 = -8.59778e-05 +/- 0.6962,CMS_tHq_tHW4m_bin12 = 1.83028e-06 +/- 0.697781,CMS_tHq_tHW4m_bin13 = 3.44085e-06 +/- 0.698627,CMS_tHq_tHW4m_bin14 = 5.78797e-06 +/- 0.698538,CMS_tHq_tHW4m_bin15 = 2.45013e-06 +/- 0.702394,CMS_tHq_tHW4m_bin16 = -8.59779e-05 +/- 0.696212,CMS_tHq_tHW4m_bin17 = -8.59779e-05 +/- 0.696217,CMS_tHq_tHW4m_bin18 = -8.59779e-05 +/- 0.696236,CMS_tHq_tHW4m_bin2 = -8.59778e-05 +/- 0.696261,CMS_tHq_tHW4m_bin3 = 2.13563e-06 +/- 0.697879,CMS_tHq_tHW4m_bin4 = -8.3368e-08 +/- 0.697827,CMS_tHq_tHW4m_bin5 = -3.80848e-07 +/- 0.699092,CMS_tHq_tHW4m_bin6 = -1.06728e-06 +/- 0.697813,CMS_tHq_tHq4m_bin1 = -8.93926e-05 +/- 0.696384,CMS_tHq_tHq4m_bin15 = 1.12786e-05 +/- 0.697784,CMS_tHq_tHq4m_bin16 = -8.93926e-05 +/- 0.696415,CMS_tHq_tHq4m_bin17 = -8.93926e-05 +/- 0.696427,CMS_tHq_tHq4m_bin18 = -8.93926e-05 +/- 0.696442,CMS_tHq_tHq4m_bin2 = -8.93926e-05 +/- 0.696447,CMS_tHq_tHq4m_bin3 = -5.54264e-06 +/- 0.697776,CMS_tHq_tHq4m_bin4 = -9.97705e-08 +/- 0.697798,CMS_tHq_tHq4m_bin5 = -5.66569e-07 +/- 0.697835,CMS_tHq_tHq4m_bin6 = -1.65526e-06 +/- 0.699077,CMS_tHq_tHq4m_bin7 = -3.847e-06 +/- 0.697869,CMS_tHq_tHq4m_bin8 = -5.62332e-06 +/- 0.697911,CMS_tHq_tt1b = -0.00150823 +/- 0.340876,CMS_tHq_tt2b = -0.0012886 +/- 0.348952,CMS_tHq_ttH4m_bin1 = 0.000258376 +/- 0.697376,CMS_tHq_ttH4m_bin14 = 8.2252e-06 +/- 0.69804,CMS_tHq_ttH4m_bin15 = 3.01607e-06 +/- 0.697884,CMS_tHq_ttH4m_bin16 = 0.000258376 +/- 0.697619,CMS_tHq_ttH4m_bin17 = 0.000258376 +/- 0.697561,CMS_tHq_ttH4m_bin18 = 0.000258376 +/- 0.697478,CMS_tHq_ttH4m_bin2 = 0.000258376 +/- 0.697325,CMS_tHq_ttH4m_bin3 = -3.67955e-09 +/- 0.697604,CMS_tHq_ttH4m_bin4 = -1.09644e-06 +/- 0.697729,CMS_tHq_ttW4m_bin1 = 0.000254643 +/- 0.697681,CMS_tHq_ttW4m_bin10 = 1.14394e-05 +/- 0.697871,CMS_tHq_ttW4m_bin11 = 1.15611e-05 +/- 0.697698,CMS_tHq_ttW4m_bin12 = 2.18846e-05 +/- 0.697885,CMS_tHq_ttW4m_bin13 = 2.29879e-05 +/- 0.698075,CMS_tHq_ttW4m_bin14 = 9.58546e-06 +/- 0.698826,CMS_tHq_ttW4m_bin15 = 0.000129091 +/- 0.697812,CMS_tHq_ttW4m_bin16 = 0.000254643 +/- 0.697607,CMS_tHq_ttW4m_bin17 = 0.000254643 +/- 0.697681,CMS_tHq_ttW4m_bin18 = 0.000254643 +/- 0.697681,CMS_tHq_ttW4m_bin2 = 0.000254643 +/- 0.697632,CMS_tHq_ttW4m_bin3 = -3.44353e-07 +/- 0.697775,CMS_tHq_ttW4m_bin4 = -3.95337e-06 +/- 0.697713,CMS_tHq_ttW4m_bin5 = -4.16341e-06 +/- 0.697566,CMS_tHq_ttW4m_bin6 = -1.56607e-05 +/- 0.697837,CMS_tHq_ttW4m_bin7 = -9.14385e-06 +/- 0.697787,CMS_tHq_ttW4m_bin8 = -1.56179e-06 +/- 0.697768,CMS_tHq_ttW4m_bin9 = 3.70034e-06 +/- 0.697671,CMS_tHq_ttbb = -0.00246201 +/- 0.246049,CMS_tHq_ttcc = 0.00184857 +/- 0.158451,CSVCErr1 = -0.000548761 +/- 0.0543281,CSVCErr2 = -0.000170365 +/- 0.698581,CSVHF = -0.000943885 +/- 0.161755,CSVHFStats1 = 0.000405556 +/- 0.167524,CSVHFStats2 = -0.00249534 +/- 0.342726,CSVLF = -0.0010994 +/- 0.175769,CSVLFStats1 = -0.00252936 +/- 0.171606,CSVLFStats2 = 0.0010768 +/- 0.682369,Q2scale_VV = 0 +/- 0.701198,Q2scale_Wj = -5.85198e-05 +/- 0.700459,Q2scale_tHW = -1.83191e-05 +/- 0.698058,Q2scale_tHq = -0.000570805 +/- 0.700143,Q2scale_tt1b = -0.000565181 +/- 0.690826,Q2scale_tt2b = -0.00195661 +/- 0.698566,Q2scale_ttH = -0.0015508 +/- 0.704777,Q2scale_ttW = 0.00010206 +/- 0.709972,Q2scale_ttbb = -0.00148246 +/- 0.333981,Q2scale_ttcc = -0.00248936 +/- 0.342224,Q2scale_ttlf = -0.000274179 +/- 0.150635,QCDscale_ST = -3.13386e-05 +/- 0.700017,lumi_13TeV = -0.000953345 +/- 0.343458,pdf_gg = -0.000200436 +/- 0.343345,pdf_qg = 7.18129e-05 +/- 0.714073,pdf_qqbar = -8.3587e-05 +/- 0.699734,pu = -0.00101636 +/- 0.699495,r = -0.30734 +/- 5.60275)
+WARNING: underflow to -1.14063e-09 in pdf_bintH_4m_obsOnly for bin 0, weight 1.19214e-06
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(tH_4m) evaluation error, 
+ origin       : RooAbsReal::tH_4m[ params=(CMS_eff_lep,CMS_jer,CMS_jes,CMS_tHq_TT1b4m_bin1,CMS_tHq_TT1b4m_bin11,CMS_tHq_TT1b4m_bin12,CMS_tHq_TT1b4m_bin13,CMS_tHq_TT1b4m_bin14,CMS_tHq_TT1b4m_bin15,CMS_tHq_TT1b4m_bin16,CMS_tHq_TT1b4m_bin17,CMS_tHq_TT1b4m_bin18,CMS_tHq_TT1b4m_bin2,CMS_tHq_TT1b4m_bin3,CMS_tHq_TT1b4m_bin4,CMS_tHq_TT1b4m_bin5,CMS_tHq_TT2b4m_bin1,CMS_tHq_TT2b4m_bin11,CMS_tHq_TT2b4m_bin12,CMS_tHq_TT2b4m_bin13,CMS_tHq_TT2b4m_bin14,CMS_tHq_TT2b4m_bin15,CMS_tHq_TT2b4m_bin16,CMS_tHq_TT2b4m_bin17,CMS_tHq_TT2b4m_bin18,CMS_tHq_TT2b4m_bin2,CMS_tHq_TT2b4m_bin3,CMS_tHq_TT2b4m_bin4,CMS_tHq_TT2b4m_bin5,CMS_tHq_TTbb4m_bin1,CMS_tHq_TTbb4m_bin13,CMS_tHq_TTbb4m_bin14,CMS_tHq_TTbb4m_bin15,CMS_tHq_TTbb4m_bin16,CMS_tHq_TTbb4m_bin17,CMS_tHq_TTbb4m_bin18,CMS_tHq_TTbb4m_bin2,CMS_tHq_TTbb4m_bin3,CMS_tHq_TTbb4m_bin4,CMS_tHq_TTcc4m_bin1,CMS_tHq_TTcc4m_bin12,CMS_tHq_TTcc4m_bin13,CMS_tHq_TTcc4m_bin14,CMS_tHq_TTcc4m_bin15,CMS_tHq_TTcc4m_bin16,CMS_tHq_TTcc4m_bin17,CMS_tHq_TTcc4m_bin18,CMS_tHq_TTcc4m_bin2,CMS_tHq_TTcc4m_bin3,CMS_tHq_TTcc4m_bin4,CMS_tHq_TTlf4m_bin1,CMS_tHq_TTlf4m_bin11,CMS_tHq_TTlf4m_bin12,CMS_tHq_TTlf4m_bin13,CMS_tHq_TTlf4m_bin14,CMS_tHq_TTlf4m_bin15,CMS_tHq_TTlf4m_bin16,CMS_tHq_TTlf4m_bin17,CMS_tHq_TTlf4m_bin18,CMS_tHq_TTlf4m_bin2,CMS_tHq_TTlf4m_bin3,CMS_tHq_TTlf4m_bin4,CMS_tHq_TTlf4m_bin5,CMS_tHq_VV4m_bin1,CMS_tHq_VV4m_bin10,CMS_tHq_VV4m_bin11,CMS_tHq_VV4m_bin12,CMS_tHq_VV4m_bin13,CMS_tHq_VV4m_bin14,CMS_tHq_VV4m_bin15,CMS_tHq_VV4m_bin16,CMS_tHq_VV4m_bin17,CMS_tHq_VV4m_bin18,CMS_tHq_VV4m_bin2,CMS_tHq_VV4m_bin3,CMS_tHq_VV4m_bin4,CMS_tHq_VV4m_bin5,CMS_tHq_VV4m_bin6,CMS_tHq_VV4m_bin7,CMS_tHq_VV4m_bin8,CMS_tHq_VV4m_bin9,CMS_tHq_Wj4m_bin1,CMS_tHq_Wj4m_bin10,CMS_tHq_Wj4m_bin11,CMS_tHq_Wj4m_bin12,CMS_tHq_Wj4m_bin13,CMS_tHq_Wj4m_bin14,CMS_tHq_Wj4m_bin15,CMS_tHq_Wj4m_bin16,CMS_tHq_Wj4m_bin17,CMS_tHq_Wj4m_bin18,CMS_tHq_Wj4m_bin2,CMS_tHq_Wj4m_bin3,CMS_tHq_Wj4m_bin4,CMS_tHq_Wj4m_bin5,CMS_tHq_Wj4m_bin6,CMS_tHq_Wj4m_bin7,CMS_tHq_Wj4m_bin8,CMS_tHq_Wj4m_bin9,CMS_tHq_sTop4m_bin1,CMS_tHq_sTop4m_bin10,CMS_tHq_sTop4m_bin11,CMS_tHq_sTop4m_bin12,CMS_tHq_sTop4m_bin13,CMS_tHq_sTop4m_bin14,CMS_tHq_sTop4m_bin15,CMS_tHq_sTop4m_bin16,CMS_tHq_sTop4m_bin17,CMS_tHq_sTop4m_bin18,CMS_tHq_sTop4m_bin2,CMS_tHq_sTop4m_bin3,CMS_tHq_sTop4m_bin4,CMS_tHq_sTop4m_bin5,CMS_tHq_sTop4m_bin6,CMS_tHq_sTop4m_bin7,CMS_tHq_sTop4m_bin8,CMS_tHq_sTop4m_bin9,CMS_tHq_tHW4m_bin1,CMS_tHq_tHW4m_bin12,CMS_tHq_tHW4m_bin13,CMS_tHq_tHW4m_bin14,CMS_tHq_tHW4m_bin15,CMS_tHq_tHW4m_bin16,CMS_tHq_tHW4m_bin17,CMS_tHq_tHW4m_bin18,CMS_tHq_tHW4m_bin2,CMS_tHq_tHW4m_bin3,CMS_tHq_tHW4m_bin4,CMS_tHq_tHW4m_bin5,CMS_tHq_tHW4m_bin6,CMS_tHq_tHq4m_bin1,CMS_tHq_tHq4m_bin15,CMS_tHq_tHq4m_bin16,CMS_tHq_tHq4m_bin17,CMS_tHq_tHq4m_bin18,CMS_tHq_tHq4m_bin2,CMS_tHq_tHq4m_bin3,CMS_tHq_tHq4m_bin4,CMS_tHq_tHq4m_bin5,CMS_tHq_tHq4m_bin6,CMS_tHq_tHq4m_bin7,CMS_tHq_tHq4m_bin8,CMS_tHq_tt1b,CMS_tHq_tt2b,CMS_tHq_ttH4m_bin1,CMS_tHq_ttH4m_bin14,CMS_tHq_ttH4m_bin15,CMS_tHq_ttH4m_bin16,CMS_tHq_ttH4m_bin17,CMS_tHq_ttH4m_bin18,CMS_tHq_ttH4m_bin2,CMS_tHq_ttH4m_bin3,CMS_tHq_ttH4m_bin4,CMS_tHq_ttW4m_bin1,CMS_tHq_ttW4m_bin10,CMS_tHq_ttW4m_bin11,CMS_tHq_ttW4m_bin12,CMS_tHq_ttW4m_bin13,CMS_tHq_ttW4m_bin14,CMS_tHq_ttW4m_bin15,CMS_tHq_ttW4m_bin16,CMS_tHq_ttW4m_bin17,CMS_tHq_ttW4m_bin18,CMS_tHq_ttW4m_bin2,CMS_tHq_ttW4m_bin3,CMS_tHq_ttW4m_bin4,CMS_tHq_ttW4m_bin5,CMS_tHq_ttW4m_bin6,CMS_tHq_ttW4m_bin7,CMS_tHq_ttW4m_bin8,CMS_tHq_ttW4m_bin9,CMS_tHq_ttbb,CMS_tHq_ttcc,CSVCErr1,CSVCErr2,CSVHF,CSVHFStats1,CSVHFStats2,CSVLF,CSVLFStats1,CSVLFStats2,Q2scale_VV,Q2scale_Wj,Q2scale_tHW,Q2scale_tHq,Q2scale_tt1b,Q2scale_tt2b,Q2scale_ttH,Q2scale_ttW,Q2scale_ttbb,Q2scale_ttcc,Q2scale_ttlf,QCDscale_ST,lumi_13TeV,pdf_gg,pdf_qg,pdf_qqbar,pu,r) ]
+ message      : Number of events is negative or error
+ server values: params=(CMS_eff_lep = -0.00133357 +/- 0.351962,CMS_jer = 0.00348091 +/- 0.668509,CMS_jes = -0.0027516 +/- 0.144484,CMS_tHq_TT1b4m_bin1 = 0.000271951 +/- 0.697398,CMS_tHq_TT1b4m_bin11 = 8.14627e-05 +/- 0.697634,CMS_tHq_TT1b4m_bin12 = 9.05367e-05 +/- 0.697817,CMS_tHq_TT1b4m_bin13 = 0.000138864 +/- 0.69763,CMS_tHq_TT1b4m_bin14 = 8.97906e-05 +/- 0.697399,CMS_tHq_TT1b4m_bin15 = 0.000127428 +/- 0.697895,CMS_tHq_TT1b4m_bin16 = 0.000271951 +/- 0.697175,CMS_tHq_TT1b4m_bin17 = 0.000271951 +/- 0.697401,CMS_tHq_TT1b4m_bin18 = 0.00027195 +/- 0.697228,CMS_tHq_TT1b4m_bin2 = 0.000271951 +/- 0.697148,CMS_tHq_TT1b4m_bin3 = 3.26192e-07 +/- 0.69731,CMS_tHq_TT1b4m_bin4 = -1.54022e-05 +/- 0.697108,CMS_tHq_TT1b4m_bin5 = -2.8163e-05 +/- 0.697359,CMS_tHq_TT2b4m_bin1 = 0.00026642 +/- 0.697482,CMS_tHq_TT2b4m_bin11 = 7.19801e-05 +/- 0.697697,CMS_tHq_TT2b4m_bin12 = 7.91712e-05 +/- 0.69787,CMS_tHq_TT2b4m_bin13 = 0.000109886 +/- 0.697992,CMS_tHq_TT2b4m_bin14 = 6.82378e-05 +/- 0.698489,CMS_tHq_TT2b4m_bin15 = 0.000127788 +/- 0.697899,CMS_tHq_TT2b4m_bin16 = 0.00026642 +/- 0.697506,CMS_tHq_TT2b4m_bin17 = 0.00026642 +/- 0.697471,CMS_tHq_TT2b4m_bin18 = 0.00026642 +/- 0.697496,CMS_tHq_TT2b4m_bin2 = 0.00026642 +/- 0.697533,CMS_tHq_TT2b4m_bin3 = -1.83166e-06 +/- 0.698468,CMS_tHq_TT2b4m_bin4 = -1.06313e-05 +/- 0.697523,CMS_tHq_TT2b4m_bin5 = -2.26221e-05 +/- 0.697412,CMS_tHq_TTbb4m_bin1 = 0.000315803 +/- 0.697476,CMS_tHq_TTbb4m_bin13 = 0.000258848 +/- 0.698926,CMS_tHq_TTbb4m_bin14 = 0.000173224 +/- 0.699071,CMS_tHq_TTbb4m_bin15 = 9.07679e-05 +/- 0.697838,CMS_tHq_TTbb4m_bin16 = 0.000315803 +/- 0.697438,CMS_tHq_TTbb4m_bin17 = 0.000315803 +/- 0.697405,CMS_tHq_TTbb4m_bin18 = 0.000315803 +/- 0.697502,CMS_tHq_TTbb4m_bin2 = 0.000315803 +/- 0.697419,CMS_tHq_TTbb4m_bin3 = -6.51832e-07 +/- 0.696451,CMS_tHq_TTbb4m_bin4 = -2.11452e-05 +/- 0.696771,CMS_tHq_TTcc4m_bin1 = 0.000291509 +/- 0.697107,CMS_tHq_TTcc4m_bin12 = 0.000114576 +/- 0.69774,CMS_tHq_TTcc4m_bin13 = 0.000143432 +/- 0.698481,CMS_tHq_TTcc4m_bin14 = 9.86828e-05 +/- 0.697265,CMS_tHq_TTcc4m_bin15 = 0.00012565 +/- 0.697832,CMS_tHq_TTcc4m_bin16 = 0.000291509 +/- 0.697153,CMS_tHq_TTcc4m_bin17 = 0.000291509 +/- 0.697044,CMS_tHq_TTcc4m_bin18 = 0.000291509 +/- 0.697027,CMS_tHq_TTcc4m_bin2 = 0.000291509 +/- 0.69708,CMS_tHq_TTcc4m_bin3 = 1.26733e-07 +/- 0.697774,CMS_tHq_TTcc4m_bin4 = -1.55741e-05 +/- 0.700609,CMS_tHq_TTlf4m_bin1 = 0.000276166 +/- 0.697191,CMS_tHq_TTlf4m_bin11 = 9.08849e-05 +/- 0.697677,CMS_tHq_TTlf4m_bin12 = 0.000101917 +/- 0.698274,CMS_tHq_TTlf4m_bin13 = 0.000117782 +/- 0.698386,CMS_tHq_TTlf4m_bin14 = 6.69725e-05 +/- 0.697993,CMS_tHq_TTlf4m_bin15 = 0.000127356 +/- 0.697864,CMS_tHq_TTlf4m_bin16 = 0.000276167 +/- 0.697257,CMS_tHq_TTlf4m_bin17 = 0.000276167 +/- 0.69711,CMS_tHq_TTlf4m_bin18 = 0.000276167 +/- 0.697231,CMS_tHq_TTlf4m_bin2 = 0.000276166 +/- 0.697233,CMS_tHq_TTlf4m_bin3 = 3.99759e-08 +/- 0.698594,CMS_tHq_TTlf4m_bin4 = -1.07828e-05 +/- 0.697644,CMS_tHq_TTlf4m_bin5 = -2.70745e-05 +/- 0.697265,CMS_tHq_VV4m_bin1 = 0.000343853 +/- 0.697588,CMS_tHq_VV4m_bin10 = -7.27674e-07 +/- 0.697799,CMS_tHq_VV4m_bin11 = -2.29373e-06 +/- 0.698169,CMS_tHq_VV4m_bin12 = -2.62926e-06 +/- 0.697645,CMS_tHq_VV4m_bin13 = 4.43965e-07 +/- 0.697594,CMS_tHq_VV4m_bin14 = 4.17596e-05 +/- 0.697184,CMS_tHq_VV4m_bin15 = 0.000123072 +/- 0.697878,CMS_tHq_VV4m_bin16 = 0.000343853 +/- 0.697509,CMS_tHq_VV4m_bin17 = 0.000343853 +/- 0.697562,CMS_tHq_VV4m_bin18 = 0.000343853 +/- 0.697526,CMS_tHq_VV4m_bin2 = 0.000343853 +/- 0.697552,CMS_tHq_VV4m_bin3 = 3.47435e-09 +/- 0.698024,CMS_tHq_VV4m_bin4 = 1.48903e-06 +/- 0.697649,CMS_tHq_VV4m_bin5 = 1.15408e-06 +/- 0.697485,CMS_tHq_VV4m_bin6 = 1.94154e-06 +/- 0.698741,CMS_tHq_VV4m_bin7 = 1.0856e-06 +/- 0.697655,CMS_tHq_VV4m_bin8 = 5.58888e-07 +/- 0.697797,CMS_tHq_VV4m_bin9 = 0.000360916 +/- 0.696552,CMS_tHq_Wj4m_bin1 = 9.58443e-09 +/- 0.711259,CMS_tHq_Wj4m_bin10 = -3.92003e-09 +/- 0.71066,CMS_tHq_Wj4m_bin11 = -3.91904e-09 +/- 0.710379,CMS_tHq_Wj4m_bin12 = -4.02427e-09 +/- 0.709933,CMS_tHq_Wj4m_bin13 = -4.03253e-09 +/- 0.709388,CMS_tHq_Wj4m_bin14 = -4.04791e-09 +/- 0.708885,CMS_tHq_Wj4m_bin15 = -4.15848e-09 +/- 0.708428,CMS_tHq_Wj4m_bin16 = 9.67581e-09 +/- 0.709367,CMS_tHq_Wj4m_bin17 = 9.67581e-09 +/- 0.708818,CMS_tHq_Wj4m_bin18 = 9.67581e-09 +/- 0.708302,CMS_tHq_Wj4m_bin2 = 9.58443e-09 +/- 0.707039,CMS_tHq_Wj4m_bin3 = -3.99793e-09 +/- 0.706628,CMS_tHq_Wj4m_bin4 = -3.99793e-09 +/- 0.706219,CMS_tHq_Wj4m_bin5 = -3.99793e-09 +/- 0.705845,CMS_tHq_Wj4m_bin6 = -3.99793e-09 +/- 0.706001,CMS_tHq_Wj4m_bin7 = -3.99231e-09 +/- 0.705418,CMS_tHq_Wj4m_bin8 = -3.99793e-09 +/- 0.705297,CMS_tHq_Wj4m_bin9 = -3.91442e-09 +/- 0.70559,CMS_tHq_sTop4m_bin1 = 0.000259919 +/- 0.697538,CMS_tHq_sTop4m_bin10 = 0.000108173 +/- 0.69644,CMS_tHq_sTop4m_bin11 = 0.000175518 +/- 0.697746,CMS_tHq_sTop4m_bin12 = 0.000236226 +/- 0.698643,CMS_tHq_sTop4m_bin13 = 0.000298547 +/- 0.698836,CMS_tHq_sTop4m_bin14 = 4.26734e-05 +/- 0.69789,CMS_tHq_sTop4m_bin15 = 0.000128504 +/- 0.697827,CMS_tHq_sTop4m_bin16 = 0.000259919 +/- 0.697557,CMS_tHq_sTop4m_bin17 = 0.000259919 +/- 0.697545,CMS_tHq_sTop4m_bin18 = 0.000259919 +/- 0.697366,CMS_tHq_sTop4m_bin2 = 0.000259919 +/- 0.697684,CMS_tHq_sTop4m_bin3 = 8.09946e-08 +/- 0.698266,CMS_tHq_sTop4m_bin4 = -1.46341e-06 +/- 0.699455,CMS_tHq_sTop4m_bin5 = -1.59675e-06 +/- 0.697817,CMS_tHq_sTop4m_bin6 = -0.000320981 +/- 0.695469,CMS_tHq_sTop4m_bin7 = -0.00016454 +/- 0.696056,CMS_tHq_sTop4m_bin8 = -5.99586e-05 +/- 0.696607,CMS_tHq_sTop4m_bin9 = -2.94424e-05 +/- 0.696737,CMS_tHq_tHW4m_bin1 = -8.59778e-05 +/- 0.6962,CMS_tHq_tHW4m_bin12 = 1.83028e-06 +/- 0.697781,CMS_tHq_tHW4m_bin13 = 3.44085e-06 +/- 0.698627,CMS_tHq_tHW4m_bin14 = 5.78797e-06 +/- 0.698538,CMS_tHq_tHW4m_bin15 = 2.45013e-06 +/- 0.702394,CMS_tHq_tHW4m_bin16 = -8.59779e-05 +/- 0.696212,CMS_tHq_tHW4m_bin17 = -8.59779e-05 +/- 0.696217,CMS_tHq_tHW4m_bin18 = -8.59779e-05 +/- 0.696236,CMS_tHq_tHW4m_bin2 = -8.59778e-05 +/- 0.696261,CMS_tHq_tHW4m_bin3 = 2.13563e-06 +/- 0.697879,CMS_tHq_tHW4m_bin4 = -8.3368e-08 +/- 0.697827,CMS_tHq_tHW4m_bin5 = -3.80848e-07 +/- 0.699092,CMS_tHq_tHW4m_bin6 = -1.06728e-06 +/- 0.697813,CMS_tHq_tHq4m_bin1 = -8.93926e-05 +/- 0.696384,CMS_tHq_tHq4m_bin15 = 1.12786e-05 +/- 0.697784,CMS_tHq_tHq4m_bin16 = -8.93926e-05 +/- 0.696415,CMS_tHq_tHq4m_bin17 = -8.93926e-05 +/- 0.696427,CMS_tHq_tHq4m_bin18 = -8.93926e-05 +/- 0.696442,CMS_tHq_tHq4m_bin2 = -8.93926e-05 +/- 0.696447,CMS_tHq_tHq4m_bin3 = -5.54264e-06 +/- 0.697776,CMS_tHq_tHq4m_bin4 = -9.97705e-08 +/- 0.697798,CMS_tHq_tHq4m_bin5 = -5.66569e-07 +/- 0.697835,CMS_tHq_tHq4m_bin6 = -1.65526e-06 +/- 0.699077,CMS_tHq_tHq4m_bin7 = -3.847e-06 +/- 0.697869,CMS_tHq_tHq4m_bin8 = -5.62332e-06 +/- 0.697911,CMS_tHq_tt1b = -0.00150823 +/- 0.340876,CMS_tHq_tt2b = -0.0012886 +/- 0.348952,CMS_tHq_ttH4m_bin1 = 0.000258376 +/- 0.697376,CMS_tHq_ttH4m_bin14 = 8.2252e-06 +/- 0.69804,CMS_tHq_ttH4m_bin15 = 3.01607e-06 +/- 0.697884,CMS_tHq_ttH4m_bin16 = 0.000258376 +/- 0.697619,CMS_tHq_ttH4m_bin17 = 0.000258376 +/- 0.697561,CMS_tHq_ttH4m_bin18 = 0.000258376 +/- 0.697478,CMS_tHq_ttH4m_bin2 = 0.000258376 +/- 0.697325,CMS_tHq_ttH4m_bin3 = -3.67955e-09 +/- 0.697604,CMS_tHq_ttH4m_bin4 = -1.09644e-06 +/- 0.697729,CMS_tHq_ttW4m_bin1 = 0.000254643 +/- 0.697681,CMS_tHq_ttW4m_bin10 = 1.14394e-05 +/- 0.697871,CMS_tHq_ttW4m_bin11 = 1.15611e-05 +/- 0.697698,CMS_tHq_ttW4m_bin12 = 2.18846e-05 +/- 0.697885,CMS_tHq_ttW4m_bin13 = 2.29879e-05 +/- 0.698075,CMS_tHq_ttW4m_bin14 = 9.58546e-06 +/- 0.698826,CMS_tHq_ttW4m_bin15 = 0.000129091 +/- 0.697812,CMS_tHq_ttW4m_bin16 = 0.000254643 +/- 0.697607,CMS_tHq_ttW4m_bin17 = 0.000254643 +/- 0.697681,CMS_tHq_ttW4m_bin18 = 0.000254643 +/- 0.697681,CMS_tHq_ttW4m_bin2 = 0.000254643 +/- 0.697632,CMS_tHq_ttW4m_bin3 = -3.44353e-07 +/- 0.697775,CMS_tHq_ttW4m_bin4 = -3.95337e-06 +/- 0.697713,CMS_tHq_ttW4m_bin5 = -4.16341e-06 +/- 0.697566,CMS_tHq_ttW4m_bin6 = -1.56607e-05 +/- 0.697837,CMS_tHq_ttW4m_bin7 = -9.14385e-06 +/- 0.697787,CMS_tHq_ttW4m_bin8 = -1.56179e-06 +/- 0.697768,CMS_tHq_ttW4m_bin9 = 3.70034e-06 +/- 0.697671,CMS_tHq_ttbb = -0.00246201 +/- 0.246049,CMS_tHq_ttcc = 0.00184857 +/- 0.158451,CSVCErr1 = -0.000548761 +/- 0.0543281,CSVCErr2 = -0.000170365 +/- 0.698581,CSVHF = -0.000943885 +/- 0.161755,CSVHFStats1 = 0.000405556 +/- 0.167524,CSVHFStats2 = -0.00249534 +/- 0.342726,CSVLF = -0.0010994 +/- 0.175769,CSVLFStats1 = -0.00252936 +/- 0.171606,CSVLFStats2 = 0.0010768 +/- 0.682369,Q2scale_VV = 0 +/- 0.701198,Q2scale_Wj = -5.85198e-05 +/- 0.700459,Q2scale_tHW = -1.83191e-05 +/- 0.698058,Q2scale_tHq = -0.000570805 +/- 0.700143,Q2scale_tt1b = -0.000565181 +/- 0.690826,Q2scale_tt2b = -0.00195661 +/- 0.698566,Q2scale_ttH = -0.0015508 +/- 0.704777,Q2scale_ttW = 0.00010206 +/- 0.709972,Q2scale_ttbb = -0.00148246 +/- 0.333981,Q2scale_ttcc = -0.00248936 +/- 0.342224,Q2scale_ttlf = -0.000274179 +/- 0.150635,QCDscale_ST = -3.13386e-05 +/- 0.700017,lumi_13TeV = -0.000953345 +/- 0.343458,pdf_gg = -0.000200436 +/- 0.343345,pdf_qg = 7.18129e-05 +/- 0.714073,pdf_qqbar = -8.3587e-05 +/- 0.699734,pu = -0.00101636 +/- 0.699495,r = -0.305776 +/- 5.60275)
+WARNING: underflow to -3.05646e-10 in pdf_bintH_4m_obsOnly for bin 0, weight 1.19214e-06
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(tH_4m) evaluation error, 
+ origin       : RooAbsReal::tH_4m[ params=(CMS_eff_lep,CMS_jer,CMS_jes,CMS_tHq_TT1b4m_bin1,CMS_tHq_TT1b4m_bin11,CMS_tHq_TT1b4m_bin12,CMS_tHq_TT1b4m_bin13,CMS_tHq_TT1b4m_bin14,CMS_tHq_TT1b4m_bin15,CMS_tHq_TT1b4m_bin16,CMS_tHq_TT1b4m_bin17,CMS_tHq_TT1b4m_bin18,CMS_tHq_TT1b4m_bin2,CMS_tHq_TT1b4m_bin3,CMS_tHq_TT1b4m_bin4,CMS_tHq_TT1b4m_bin5,CMS_tHq_TT2b4m_bin1,CMS_tHq_TT2b4m_bin11,CMS_tHq_TT2b4m_bin12,CMS_tHq_TT2b4m_bin13,CMS_tHq_TT2b4m_bin14,CMS_tHq_TT2b4m_bin15,CMS_tHq_TT2b4m_bin16,CMS_tHq_TT2b4m_bin17,CMS_tHq_TT2b4m_bin18,CMS_tHq_TT2b4m_bin2,CMS_tHq_TT2b4m_bin3,CMS_tHq_TT2b4m_bin4,CMS_tHq_TT2b4m_bin5,CMS_tHq_TTbb4m_bin1,CMS_tHq_TTbb4m_bin13,CMS_tHq_TTbb4m_bin14,CMS_tHq_TTbb4m_bin15,CMS_tHq_TTbb4m_bin16,CMS_tHq_TTbb4m_bin17,CMS_tHq_TTbb4m_bin18,CMS_tHq_TTbb4m_bin2,CMS_tHq_TTbb4m_bin3,CMS_tHq_TTbb4m_bin4,CMS_tHq_TTcc4m_bin1,CMS_tHq_TTcc4m_bin12,CMS_tHq_TTcc4m_bin13,CMS_tHq_TTcc4m_bin14,CMS_tHq_TTcc4m_bin15,CMS_tHq_TTcc4m_bin16,CMS_tHq_TTcc4m_bin17,CMS_tHq_TTcc4m_bin18,CMS_tHq_TTcc4m_bin2,CMS_tHq_TTcc4m_bin3,CMS_tHq_TTcc4m_bin4,CMS_tHq_TTlf4m_bin1,CMS_tHq_TTlf4m_bin11,CMS_tHq_TTlf4m_bin12,CMS_tHq_TTlf4m_bin13,CMS_tHq_TTlf4m_bin14,CMS_tHq_TTlf4m_bin15,CMS_tHq_TTlf4m_bin16,CMS_tHq_TTlf4m_bin17,CMS_tHq_TTlf4m_bin18,CMS_tHq_TTlf4m_bin2,CMS_tHq_TTlf4m_bin3,CMS_tHq_TTlf4m_bin4,CMS_tHq_TTlf4m_bin5,CMS_tHq_VV4m_bin1,CMS_tHq_VV4m_bin10,CMS_tHq_VV4m_bin11,CMS_tHq_VV4m_bin12,CMS_tHq_VV4m_bin13,CMS_tHq_VV4m_bin14,CMS_tHq_VV4m_bin15,CMS_tHq_VV4m_bin16,CMS_tHq_VV4m_bin17,CMS_tHq_VV4m_bin18,CMS_tHq_VV4m_bin2,CMS_tHq_VV4m_bin3,CMS_tHq_VV4m_bin4,CMS_tHq_VV4m_bin5,CMS_tHq_VV4m_bin6,CMS_tHq_VV4m_bin7,CMS_tHq_VV4m_bin8,CMS_tHq_VV4m_bin9,CMS_tHq_Wj4m_bin1,CMS_tHq_Wj4m_bin10,CMS_tHq_Wj4m_bin11,CMS_tHq_Wj4m_bin12,CMS_tHq_Wj4m_bin13,CMS_tHq_Wj4m_bin14,CMS_tHq_Wj4m_bin15,CMS_tHq_Wj4m_bin16,CMS_tHq_Wj4m_bin17,CMS_tHq_Wj4m_bin18,CMS_tHq_Wj4m_bin2,CMS_tHq_Wj4m_bin3,CMS_tHq_Wj4m_bin4,CMS_tHq_Wj4m_bin5,CMS_tHq_Wj4m_bin6,CMS_tHq_Wj4m_bin7,CMS_tHq_Wj4m_bin8,CMS_tHq_Wj4m_bin9,CMS_tHq_sTop4m_bin1,CMS_tHq_sTop4m_bin10,CMS_tHq_sTop4m_bin11,CMS_tHq_sTop4m_bin12,CMS_tHq_sTop4m_bin13,CMS_tHq_sTop4m_bin14,CMS_tHq_sTop4m_bin15,CMS_tHq_sTop4m_bin16,CMS_tHq_sTop4m_bin17,CMS_tHq_sTop4m_bin18,CMS_tHq_sTop4m_bin2,CMS_tHq_sTop4m_bin3,CMS_tHq_sTop4m_bin4,CMS_tHq_sTop4m_bin5,CMS_tHq_sTop4m_bin6,CMS_tHq_sTop4m_bin7,CMS_tHq_sTop4m_bin8,CMS_tHq_sTop4m_bin9,CMS_tHq_tHW4m_bin1,CMS_tHq_tHW4m_bin12,CMS_tHq_tHW4m_bin13,CMS_tHq_tHW4m_bin14,CMS_tHq_tHW4m_bin15,CMS_tHq_tHW4m_bin16,CMS_tHq_tHW4m_bin17,CMS_tHq_tHW4m_bin18,CMS_tHq_tHW4m_bin2,CMS_tHq_tHW4m_bin3,CMS_tHq_tHW4m_bin4,CMS_tHq_tHW4m_bin5,CMS_tHq_tHW4m_bin6,CMS_tHq_tHq4m_bin1,CMS_tHq_tHq4m_bin15,CMS_tHq_tHq4m_bin16,CMS_tHq_tHq4m_bin17,CMS_tHq_tHq4m_bin18,CMS_tHq_tHq4m_bin2,CMS_tHq_tHq4m_bin3,CMS_tHq_tHq4m_bin4,CMS_tHq_tHq4m_bin5,CMS_tHq_tHq4m_bin6,CMS_tHq_tHq4m_bin7,CMS_tHq_tHq4m_bin8,CMS_tHq_tt1b,CMS_tHq_tt2b,CMS_tHq_ttH4m_bin1,CMS_tHq_ttH4m_bin14,CMS_tHq_ttH4m_bin15,CMS_tHq_ttH4m_bin16,CMS_tHq_ttH4m_bin17,CMS_tHq_ttH4m_bin18,CMS_tHq_ttH4m_bin2,CMS_tHq_ttH4m_bin3,CMS_tHq_ttH4m_bin4,CMS_tHq_ttW4m_bin1,CMS_tHq_ttW4m_bin10,CMS_tHq_ttW4m_bin11,CMS_tHq_ttW4m_bin12,CMS_tHq_ttW4m_bin13,CMS_tHq_ttW4m_bin14,CMS_tHq_ttW4m_bin15,CMS_tHq_ttW4m_bin16,CMS_tHq_ttW4m_bin17,CMS_tHq_ttW4m_bin18,CMS_tHq_ttW4m_bin2,CMS_tHq_ttW4m_bin3,CMS_tHq_ttW4m_bin4,CMS_tHq_ttW4m_bin5,CMS_tHq_ttW4m_bin6,CMS_tHq_ttW4m_bin7,CMS_tHq_ttW4m_bin8,CMS_tHq_ttW4m_bin9,CMS_tHq_ttbb,CMS_tHq_ttcc,CSVCErr1,CSVCErr2,CSVHF,CSVHFStats1,CSVHFStats2,CSVLF,CSVLFStats1,CSVLFStats2,Q2scale_VV,Q2scale_Wj,Q2scale_tHW,Q2scale_tHq,Q2scale_tt1b,Q2scale_tt2b,Q2scale_ttH,Q2scale_ttW,Q2scale_ttbb,Q2scale_ttcc,Q2scale_ttlf,QCDscale_ST,lumi_13TeV,pdf_gg,pdf_qg,pdf_qqbar,pu,r) ]
+ message      : Number of events is negative or error
+ server values: params=(CMS_eff_lep = -0.00133357 +/- 0.351962,CMS_jer = 0.00348091 +/- 0.668509,CMS_jes = -0.0027516 +/- 0.144484,CMS_tHq_TT1b4m_bin1 = 0.000271951 +/- 0.697398,CMS_tHq_TT1b4m_bin11 = 8.14627e-05 +/- 0.697634,CMS_tHq_TT1b4m_bin12 = 9.05367e-05 +/- 0.697817,CMS_tHq_TT1b4m_bin13 = 0.000138864 +/- 0.69763,CMS_tHq_TT1b4m_bin14 = 8.97906e-05 +/- 0.697399,CMS_tHq_TT1b4m_bin15 = 0.000127428 +/- 0.697895,CMS_tHq_TT1b4m_bin16 = 0.000271951 +/- 0.697175,CMS_tHq_TT1b4m_bin17 = 0.000271951 +/- 0.697401,CMS_tHq_TT1b4m_bin18 = 0.00027195 +/- 0.697228,CMS_tHq_TT1b4m_bin2 = 0.000271951 +/- 0.697148,CMS_tHq_TT1b4m_bin3 = 3.26192e-07 +/- 0.69731,CMS_tHq_TT1b4m_bin4 = -1.54022e-05 +/- 0.697108,CMS_tHq_TT1b4m_bin5 = -2.8163e-05 +/- 0.697359,CMS_tHq_TT2b4m_bin1 = 0.00026642 +/- 0.697482,CMS_tHq_TT2b4m_bin11 = 7.19801e-05 +/- 0.697697,CMS_tHq_TT2b4m_bin12 = 7.91712e-05 +/- 0.69787,CMS_tHq_TT2b4m_bin13 = 0.000109886 +/- 0.697992,CMS_tHq_TT2b4m_bin14 = 6.82378e-05 +/- 0.698489,CMS_tHq_TT2b4m_bin15 = 0.000127788 +/- 0.697899,CMS_tHq_TT2b4m_bin16 = 0.00026642 +/- 0.697506,CMS_tHq_TT2b4m_bin17 = 0.00026642 +/- 0.697471,CMS_tHq_TT2b4m_bin18 = 0.00026642 +/- 0.697496,CMS_tHq_TT2b4m_bin2 = 0.00026642 +/- 0.697533,CMS_tHq_TT2b4m_bin3 = -1.83166e-06 +/- 0.698468,CMS_tHq_TT2b4m_bin4 = -1.06313e-05 +/- 0.697523,CMS_tHq_TT2b4m_bin5 = -2.26221e-05 +/- 0.697412,CMS_tHq_TTbb4m_bin1 = 0.000315803 +/- 0.697476,CMS_tHq_TTbb4m_bin13 = 0.000258848 +/- 0.698926,CMS_tHq_TTbb4m_bin14 = 0.000173224 +/- 0.699071,CMS_tHq_TTbb4m_bin15 = 9.07679e-05 +/- 0.697838,CMS_tHq_TTbb4m_bin16 = 0.000315803 +/- 0.697438,CMS_tHq_TTbb4m_bin17 = 0.000315803 +/- 0.697405,CMS_tHq_TTbb4m_bin18 = 0.000315803 +/- 0.697502,CMS_tHq_TTbb4m_bin2 = 0.000315803 +/- 0.697419,CMS_tHq_TTbb4m_bin3 = -6.51832e-07 +/- 0.696451,CMS_tHq_TTbb4m_bin4 = -2.11452e-05 +/- 0.696771,CMS_tHq_TTcc4m_bin1 = 0.000291509 +/- 0.697107,CMS_tHq_TTcc4m_bin12 = 0.000114576 +/- 0.69774,CMS_tHq_TTcc4m_bin13 = 0.000143432 +/- 0.698481,CMS_tHq_TTcc4m_bin14 = 9.86828e-05 +/- 0.697265,CMS_tHq_TTcc4m_bin15 = 0.00012565 +/- 0.697832,CMS_tHq_TTcc4m_bin16 = 0.000291509 +/- 0.697153,CMS_tHq_TTcc4m_bin17 = 0.000291509 +/- 0.697044,CMS_tHq_TTcc4m_bin18 = 0.000291509 +/- 0.697027,CMS_tHq_TTcc4m_bin2 = 0.000291509 +/- 0.69708,CMS_tHq_TTcc4m_bin3 = 1.26733e-07 +/- 0.697774,CMS_tHq_TTcc4m_bin4 = -1.55741e-05 +/- 0.700609,CMS_tHq_TTlf4m_bin1 = 0.000276166 +/- 0.697191,CMS_tHq_TTlf4m_bin11 = 9.08849e-05 +/- 0.697677,CMS_tHq_TTlf4m_bin12 = 0.000101917 +/- 0.698274,CMS_tHq_TTlf4m_bin13 = 0.000117782 +/- 0.698386,CMS_tHq_TTlf4m_bin14 = 6.69725e-05 +/- 0.697993,CMS_tHq_TTlf4m_bin15 = 0.000127356 +/- 0.697864,CMS_tHq_TTlf4m_bin16 = 0.000276167 +/- 0.697257,CMS_tHq_TTlf4m_bin17 = 0.000276167 +/- 0.69711,CMS_tHq_TTlf4m_bin18 = 0.000276167 +/- 0.697231,CMS_tHq_TTlf4m_bin2 = 0.000276166 +/- 0.697233,CMS_tHq_TTlf4m_bin3 = 3.99759e-08 +/- 0.698594,CMS_tHq_TTlf4m_bin4 = -1.07828e-05 +/- 0.697644,CMS_tHq_TTlf4m_bin5 = -2.70745e-05 +/- 0.697265,CMS_tHq_VV4m_bin1 = 0.000343853 +/- 0.697588,CMS_tHq_VV4m_bin10 = -7.27674e-07 +/- 0.697799,CMS_tHq_VV4m_bin11 = -2.29373e-06 +/- 0.698169,CMS_tHq_VV4m_bin12 = -2.62926e-06 +/- 0.697645,CMS_tHq_VV4m_bin13 = 4.43965e-07 +/- 0.697594,CMS_tHq_VV4m_bin14 = 4.17596e-05 +/- 0.697184,CMS_tHq_VV4m_bin15 = 0.000123072 +/- 0.697878,CMS_tHq_VV4m_bin16 = 0.000343853 +/- 0.697509,CMS_tHq_VV4m_bin17 = 0.000343853 +/- 0.697562,CMS_tHq_VV4m_bin18 = 0.000343853 +/- 0.697526,CMS_tHq_VV4m_bin2 = 0.000343853 +/- 0.697552,CMS_tHq_VV4m_bin3 = 3.47435e-09 +/- 0.698024,CMS_tHq_VV4m_bin4 = 1.48903e-06 +/- 0.697649,CMS_tHq_VV4m_bin5 = 1.15408e-06 +/- 0.697485,CMS_tHq_VV4m_bin6 = 1.94154e-06 +/- 0.698741,CMS_tHq_VV4m_bin7 = 1.0856e-06 +/- 0.697655,CMS_tHq_VV4m_bin8 = 5.58888e-07 +/- 0.697797,CMS_tHq_VV4m_bin9 = 0.000360916 +/- 0.696552,CMS_tHq_Wj4m_bin1 = 9.58443e-09 +/- 0.711259,CMS_tHq_Wj4m_bin10 = -3.92003e-09 +/- 0.71066,CMS_tHq_Wj4m_bin11 = -3.91904e-09 +/- 0.710379,CMS_tHq_Wj4m_bin12 = -4.02427e-09 +/- 0.709933,CMS_tHq_Wj4m_bin13 = -4.03253e-09 +/- 0.709388,CMS_tHq_Wj4m_bin14 = -4.04791e-09 +/- 0.708885,CMS_tHq_Wj4m_bin15 = -4.15848e-09 +/- 0.708428,CMS_tHq_Wj4m_bin16 = 9.67581e-09 +/- 0.709367,CMS_tHq_Wj4m_bin17 = 9.67581e-09 +/- 0.708818,CMS_tHq_Wj4m_bin18 = 9.67581e-09 +/- 0.708302,CMS_tHq_Wj4m_bin2 = 9.58443e-09 +/- 0.707039,CMS_tHq_Wj4m_bin3 = -3.99793e-09 +/- 0.706628,CMS_tHq_Wj4m_bin4 = -3.99793e-09 +/- 0.706219,CMS_tHq_Wj4m_bin5 = -3.99793e-09 +/- 0.705845,CMS_tHq_Wj4m_bin6 = -3.99793e-09 +/- 0.706001,CMS_tHq_Wj4m_bin7 = -3.99231e-09 +/- 0.705418,CMS_tHq_Wj4m_bin8 = -3.99793e-09 +/- 0.705297,CMS_tHq_Wj4m_bin9 = -3.91442e-09 +/- 0.70559,CMS_tHq_sTop4m_bin1 = 0.000259919 +/- 0.697538,CMS_tHq_sTop4m_bin10 = 0.000108173 +/- 0.69644,CMS_tHq_sTop4m_bin11 = 0.000175518 +/- 0.697746,CMS_tHq_sTop4m_bin12 = 0.000236226 +/- 0.698643,CMS_tHq_sTop4m_bin13 = 0.000298547 +/- 0.698836,CMS_tHq_sTop4m_bin14 = 4.26734e-05 +/- 0.69789,CMS_tHq_sTop4m_bin15 = 0.000128504 +/- 0.697827,CMS_tHq_sTop4m_bin16 = 0.000259919 +/- 0.697557,CMS_tHq_sTop4m_bin17 = 0.000259919 +/- 0.697545,CMS_tHq_sTop4m_bin18 = 0.000259919 +/- 0.697366,CMS_tHq_sTop4m_bin2 = 0.000259919 +/- 0.697684,CMS_tHq_sTop4m_bin3 = 8.09946e-08 +/- 0.698266,CMS_tHq_sTop4m_bin4 = -1.46341e-06 +/- 0.699455,CMS_tHq_sTop4m_bin5 = -1.59675e-06 +/- 0.697817,CMS_tHq_sTop4m_bin6 = -0.000320981 +/- 0.695469,CMS_tHq_sTop4m_bin7 = -0.00016454 +/- 0.696056,CMS_tHq_sTop4m_bin8 = -5.99586e-05 +/- 0.696607,CMS_tHq_sTop4m_bin9 = -2.94424e-05 +/- 0.696737,CMS_tHq_tHW4m_bin1 = -8.59778e-05 +/- 0.6962,CMS_tHq_tHW4m_bin12 = 1.83028e-06 +/- 0.697781,CMS_tHq_tHW4m_bin13 = 3.44085e-06 +/- 0.698627,CMS_tHq_tHW4m_bin14 = 5.78797e-06 +/- 0.698538,CMS_tHq_tHW4m_bin15 = 2.45013e-06 +/- 0.702394,CMS_tHq_tHW4m_bin16 = -8.59779e-05 +/- 0.696212,CMS_tHq_tHW4m_bin17 = -8.59779e-05 +/- 0.696217,CMS_tHq_tHW4m_bin18 = -8.59779e-05 +/- 0.696236,CMS_tHq_tHW4m_bin2 = -8.59778e-05 +/- 0.696261,CMS_tHq_tHW4m_bin3 = 2.13563e-06 +/- 0.697879,CMS_tHq_tHW4m_bin4 = -8.3368e-08 +/- 0.697827,CMS_tHq_tHW4m_bin5 = -3.80848e-07 +/- 0.699092,CMS_tHq_tHW4m_bin6 = -1.06728e-06 +/- 0.697813,CMS_tHq_tHq4m_bin1 = -8.93926e-05 +/- 0.696384,CMS_tHq_tHq4m_bin15 = 1.12786e-05 +/- 0.697784,CMS_tHq_tHq4m_bin16 = -8.93926e-05 +/- 0.696415,CMS_tHq_tHq4m_bin17 = -8.93926e-05 +/- 0.696427,CMS_tHq_tHq4m_bin18 = -8.93926e-05 +/- 0.696442,CMS_tHq_tHq4m_bin2 = -8.93926e-05 +/- 0.696447,CMS_tHq_tHq4m_bin3 = -5.54264e-06 +/- 0.697776,CMS_tHq_tHq4m_bin4 = -9.97705e-08 +/- 0.697798,CMS_tHq_tHq4m_bin5 = -5.66569e-07 +/- 0.697835,CMS_tHq_tHq4m_bin6 = -1.65526e-06 +/- 0.699077,CMS_tHq_tHq4m_bin7 = -3.847e-06 +/- 0.697869,CMS_tHq_tHq4m_bin8 = -5.62332e-06 +/- 0.697911,CMS_tHq_tt1b = -0.00150823 +/- 0.340876,CMS_tHq_tt2b = -0.0012886 +/- 0.348952,CMS_tHq_ttH4m_bin1 = 0.000258376 +/- 0.697376,CMS_tHq_ttH4m_bin14 = 8.2252e-06 +/- 0.69804,CMS_tHq_ttH4m_bin15 = 3.01607e-06 +/- 0.697884,CMS_tHq_ttH4m_bin16 = 0.000258376 +/- 0.697619,CMS_tHq_ttH4m_bin17 = 0.000258376 +/- 0.697561,CMS_tHq_ttH4m_bin18 = 0.000258376 +/- 0.697478,CMS_tHq_ttH4m_bin2 = 0.000258376 +/- 0.697325,CMS_tHq_ttH4m_bin3 = -3.67955e-09 +/- 0.697604,CMS_tHq_ttH4m_bin4 = -1.09644e-06 +/- 0.697729,CMS_tHq_ttW4m_bin1 = 0.000254643 +/- 0.697681,CMS_tHq_ttW4m_bin10 = 1.14394e-05 +/- 0.697871,CMS_tHq_ttW4m_bin11 = 1.15611e-05 +/- 0.697698,CMS_tHq_ttW4m_bin12 = 2.18846e-05 +/- 0.697885,CMS_tHq_ttW4m_bin13 = 2.29879e-05 +/- 0.698075,CMS_tHq_ttW4m_bin14 = 9.58546e-06 +/- 0.698826,CMS_tHq_ttW4m_bin15 = 0.000129091 +/- 0.697812,CMS_tHq_ttW4m_bin16 = 0.000254643 +/- 0.697607,CMS_tHq_ttW4m_bin17 = 0.000254643 +/- 0.697681,CMS_tHq_ttW4m_bin18 = 0.000254643 +/- 0.697681,CMS_tHq_ttW4m_bin2 = 0.000254643 +/- 0.697632,CMS_tHq_ttW4m_bin3 = -3.44353e-07 +/- 0.697775,CMS_tHq_ttW4m_bin4 = -3.95337e-06 +/- 0.697713,CMS_tHq_ttW4m_bin5 = -4.16341e-06 +/- 0.697566,CMS_tHq_ttW4m_bin6 = -1.56607e-05 +/- 0.697837,CMS_tHq_ttW4m_bin7 = -9.14385e-06 +/- 0.697787,CMS_tHq_ttW4m_bin8 = -1.56179e-06 +/- 0.697768,CMS_tHq_ttW4m_bin9 = 3.70034e-06 +/- 0.697671,CMS_tHq_ttbb = -0.00246201 +/- 0.246049,CMS_tHq_ttcc = 0.00184857 +/- 0.158451,CSVCErr1 = -0.000548761 +/- 0.0543281,CSVCErr2 = -0.000170365 +/- 0.698581,CSVHF = -0.000943885 +/- 0.161755,CSVHFStats1 = 0.000405556 +/- 0.167524,CSVHFStats2 = -0.00249534 +/- 0.342726,CSVLF = -0.0010994 +/- 0.175769,CSVLFStats1 = -0.00252936 +/- 0.171606,CSVLFStats2 = 0.0010768 +/- 0.682369,Q2scale_VV = 0 +/- 0.701198,Q2scale_Wj = -5.85198e-05 +/- 0.700459,Q2scale_tHW = -1.83191e-05 +/- 0.698058,Q2scale_tHq = -0.000570805 +/- 0.700143,Q2scale_tt1b = -0.000565181 +/- 0.690826,Q2scale_tt2b = -0.00195661 +/- 0.698566,Q2scale_ttH = -0.0015508 +/- 0.704777,Q2scale_ttW = 0.00010206 +/- 0.709972,Q2scale_ttbb = -0.00148246 +/- 0.333981,Q2scale_ttcc = -0.00248936 +/- 0.342224,Q2scale_ttlf = -0.000274179 +/- 0.150635,QCDscale_ST = -3.13386e-05 +/- 0.700017,lumi_13TeV = -0.000953345 +/- 0.343458,pdf_gg = -0.000200436 +/- 0.343345,pdf_qg = 7.18129e-05 +/- 0.714073,pdf_qqbar = -8.3587e-05 +/- 0.699734,pu = -0.00101636 +/- 0.699495,r = -0.304995 +/- 5.60275)
+-0.304604    +0.49139  +0.49131    -0.000391
+-0.304995    +0.49138  +0.49139    -0.000391
+-0.305386    +0.49137  +0.49138    -0.000391
+-0.305776    +0.49137  +0.49137    -0.000391
+-0.306167    +0.49136  +0.49137    -0.000391
+-0.306558    +0.49136  +0.49136    -0.000391
+-0.306949    +0.49135  +0.49136    -0.000391
+-0.307340    +0.49134  +0.49135    -0.000391
+-0.307731    +0.49134  +0.49134    -0.000391
+-0.308121    +0.49133  +0.49134    -0.000391
+-0.308512    +0.49133  +0.49133    -0.000391
+-0.308903    +0.49132  +0.49133    -0.000391
+-0.309294    +0.49131  +0.49132    -0.000391
+-0.309685    +0.49131  +0.49131    -0.000391
+-0.310076    +0.49130  +0.49131    -0.000391
+-0.310467    +0.49130  +0.49130    -0.000391
+-0.310857    +0.49129  +0.49130    -0.000391
+-0.311248    +0.49128  +0.49129    -0.000391
+-0.311639    +0.49128  +0.49128    -0.000391
+-0.312030    +0.49127  +0.49128    -0.000391
+-0.312421    +0.49126  +0.49127    -0.000391
+-0.312812    +0.49126  +0.49126    -0.000391
+-0.313203    +0.49125  +0.49126    -0.000391
+-0.313593    +0.49125  +0.49125    -0.000391
+-0.313984    +0.49124  +0.49125    -0.000391
+-0.314375    +0.49123  +0.49124    -0.000391
+-0.314766    +0.49123  +0.49123    -0.000391
+-0.315157    +0.49122  +0.49123    -0.000391
+-0.315548    +0.49121  +0.49122    -0.000391
+-0.315938    +0.49121  +0.49121    -0.000391
+-0.316329    +0.49120  +0.49121    -0.000391
+-0.316720    +0.49120  +0.49120    -0.000391
+-0.317111    +0.49119  +0.49120    -0.000391
+-0.317502    +0.49118  +0.49119    -0.000391
+-0.317893    +0.49118  +0.49118    -0.000391
+-0.318284    +0.49117  +0.49118    -0.000391
+-0.318674    +0.49116  +0.49117    -0.000391
+-0.319065    +0.49116  +0.49116    -0.000391
+-0.319456    +0.49115  +0.49116    -0.000391
+-0.319847    +0.49115  +0.49115    -0.000391
+-0.320238    +0.49114  +0.49115    -0.000391
+-0.320629    +0.49113  +0.49114    -0.000391
+-0.321020    +0.49113  +0.49113    -0.000391
+-0.321410    +0.49112  +0.49113    -0.000391
+-0.321801    +0.49111  +0.49112    -0.000391
+-0.322192    +0.49111  +0.49111    -0.000391
+-0.322583    +0.49110  +0.49111    -0.000391
+-0.322974    +0.49109  +0.49110    -0.000391
+-0.323365    +0.49109  +0.49109    -0.000391
+-0.323756    +0.49108  +0.49109    -0.000391
+-0.324146    +0.49107  +0.49108    -0.000391
+-0.324537    +0.49107  +0.49107    -0.000391
+-0.324928    +0.49106  +0.49107    -0.000391
+-0.325319    +0.49106  +0.49106    -0.000391
+-0.325710    +0.49105  +0.49106    -0.000391
+-0.326101    +0.49104  +0.49105    -0.000391
+-0.326491    +0.49104  +0.49104    -0.000391
+-0.326882    +0.49103  +0.49104    -0.000391
+-0.327273    +0.49102  +0.49103    -0.000391
+-0.327664    +0.49102  +0.49102    -0.000391
+-0.328055    +0.49101  +0.49102    -0.000391
+-0.328446    +0.49100  +0.49101    -0.000391
+-0.328837    +0.49100  +0.49100    -0.000391
+-0.329227    +0.49099  +0.49100    -0.000391
+-0.329618    +0.49098  +0.49099    -0.000391
+-0.330009    +0.49098  +0.49098    -0.000391
+-0.330400    +0.49097  +0.49098    -0.000391
+-0.330791    +0.49096  +0.49097    -0.000391
+-0.331182    +0.49096  +0.49096    -0.000391
+-0.331573    +0.49095  +0.49096    -0.000391
+-0.331963    +0.49094  +0.49095    -0.000391
+-0.332354    +0.49094  +0.49094    -0.000391
+-0.332745    +0.49093  +0.49094    -0.000391
+-0.333136    +0.49092  +0.49093    -0.000391
+-0.333527    +0.49092  +0.49092    -0.000391
+-0.333918    +0.49091  +0.49092    -0.000391
+-0.334309    +0.49090  +0.49091    -0.000391
+-0.334699    +0.49090  +0.49090    -0.000391
+-0.335090    +0.49089  +0.49090    -0.000391
+-0.335481    +0.49088  +0.49089    -0.000391
+-0.335872    +0.49088  +0.49088    -0.000391
+-0.336263    +0.49087  +0.49088    -0.000391
+-0.336654    +0.49086  +0.49087    -0.000391
+-0.337044    +0.49086  +0.49086    -0.000391
+-0.337435    +0.49085  +0.49086    -0.000391
+-0.337826    +0.49084  +0.49085    -0.000391
+-0.338217    +0.49084  +0.49084    -0.000391
+-0.338608    +0.49083  +0.49084    -0.000391
+-0.338999    +0.49082  +0.49083    -0.000391
+-0.339390    +0.49081  +0.49082    -0.000391
+-0.339780    +0.49081  +0.49081    -0.000391
+-0.340171    +0.49080  +0.49081    -0.000391
+-0.340562    +0.49079  +0.49080    -0.000391
+-0.340953    +0.49079  +0.49079    -0.000391
+-0.341344    +0.49078  +0.49079    -0.000391
+-0.341735    +0.49077  +0.49078    -0.000391
+-0.342126    +0.49077  +0.49077    -0.000391
+-0.342516    +0.49076  +0.49077    -0.000391
+-0.342907    +0.49075  +0.49076    -0.000391
+-0.343298    +0.49075  +0.49075    -0.000391
+-0.343689    +0.49074  +0.49075    -0.000391
+-0.344080    +0.49073  +0.49074    -0.000391
+-0.344471    +0.49072  +0.49073    -0.000391
+-0.344862    +0.49072  +0.49072    -0.000391
+-0.345252    +0.49071  +0.49072    -0.000391
+-0.345643    +0.49070  +0.49071    -0.000391
+-0.346034    +0.49070  +0.49070    -0.000391
+-0.346425    +0.49069  +0.49070    -0.000391
+-0.346816    +0.49068  +0.49069    -0.000391
+-0.347207    +0.49068  +0.49068    -0.000391
+-0.347597    +0.49067  +0.49068    -0.000391
+-0.347988    +0.49066  +0.49067    -0.000391
+-0.348379    +0.49065  +0.49066    -0.000391
+-0.348770    +0.49065  +0.49065    -0.000391
+-0.349161    +0.49064  +0.49065    -0.000391
+-0.349552    +0.49063  +0.49064    -0.000391
+-0.349943    +0.49063  +0.49063    -0.000391
+-0.350333    +0.49062  +0.49063    -0.000391
+-0.350724    +0.49061  +0.49062    -0.000391
+-0.351115    +0.49060  +0.49061    -0.000391
+-0.351506    +0.49060  +0.49060    -0.000391
+-0.351897    +0.49059  +0.49060    -0.000391
+-0.352288    +0.49058  +0.49059    -0.000391
+-0.352679    +0.49058  +0.49058    -0.000391
+-0.353069    +0.49057  +0.49058    -0.000391
+-0.353460    +0.49056  +0.49057    -0.000391
+-0.353851    +0.49055  +0.49056    -0.000391
+-0.354242    +0.49055  +0.49055    -0.000391
+-0.354633    +0.49054  +0.49055    -0.000391
+-0.355024    +0.49053  +0.49054    -0.000391
+-0.355414    +0.49052  +0.49053    -0.000391
+-0.355805    +0.49052  +0.49052    -0.000391
+-0.356196    +0.49051  +0.49052    -0.000391
+-0.356587    +0.49050  +0.49051    -0.000391
+-0.356978    +0.49050  +0.49050    -0.000391
+-0.357369    +0.49049  +0.49050    -0.000391
+-0.357760    +0.49048  +0.49049    -0.000391
+-0.358150    +0.49047  +0.49048    -0.000391
+-0.358541    +0.49047  +0.49047    -0.000391
+-0.358932    +0.49046  +0.49047    -0.000391
+-0.359323    +0.49045  +0.49046    -0.000391
+-0.359714    +0.49044  +0.49045    -0.000391
+-0.360105    +0.49044  +0.49044    -0.000391
+-0.360496    +0.49043  +0.49044    -0.000391
+-0.360886    +0.49042  +0.49043    -0.000391
+-0.361277    +0.49041  +0.49042    -0.000391
+-0.361668    +0.49041  +0.49041    -0.000391
+-0.362059    +0.49040  +0.49041    -0.000391
+-0.362450    +0.49039  +0.49040    -0.000391
+-0.362841    +0.49038  +0.49039    -0.000391
+-0.363232    +0.49038  +0.49038    -0.000391
+-0.363622    +0.49037  +0.49038    -0.000391
+-0.364013    +0.49036  +0.49037    -0.000391
+-0.364404    +0.49035  +0.49036    -0.000391
+-0.364795    +0.49035  +0.49035    -0.000391
+-0.365186    +0.49034  +0.49035    -0.000391
+-0.365577    +0.49033  +0.49034    -0.000391
+-0.365967    +0.49032  +0.49033    -0.000391
+-0.366358    +0.49032  +0.49032    -0.000391
+-0.366749    +0.49031  +0.49032    -0.000391
+-0.367140    +0.49030  +0.49031    -0.000391
+-0.367531    +0.49029  +0.49030    -0.000391
+-0.367922    +0.49029  +0.49029    -0.000391
+-0.368313    +0.49028  +0.49029    -0.000391
+-0.368703    +0.49027  +0.49028    -0.000391
+-0.369094    +0.49026  +0.49027    -0.000391
+-0.369485    +0.49026  +0.49026    -0.000391
+-0.369876    +0.49025  +0.49026    -0.000391
+-0.370267    +0.49024  +0.49025    -0.000391
+-0.370658    +0.49023  +0.49024    -0.000391
+-0.371049    +0.49023  +0.49023    -0.000391
+-0.371439    +0.49022  +0.49023    -0.000391
+-0.371830    +0.49021  +0.49022    -0.000391
+-0.372221    +0.49020  +0.49021    -0.000391
+-0.372612    +0.49020  +0.49020    -0.000391
+-0.373003    +0.49019  +0.49020    -0.000391
+-0.373394    +0.49018  +0.49019    -0.000391
+-0.373785    +0.49017  +0.49018    -0.000391
+-0.374175    +0.49016  +0.49017    -0.000391
+-0.374566    +0.49016  +0.49016    -0.000391
+-0.374957    +0.49015  +0.49016    -0.000391
+-0.375348    +0.49014  +0.49015    -0.000391
+-0.375739    +0.49013  +0.49014    -0.000391
+-0.376130    +0.49013  +0.49013    -0.000391
+-0.376520    +0.49012  +0.49013    -0.000391
+-0.376911    +0.49011  +0.49012    -0.000391
+-0.377302    +0.49010  +0.49011    -0.000391
+-0.377693    +0.49009  +0.49010    -0.000391
+-0.378084    +0.49009  +0.49009    -0.000391
+-0.378475    +0.49008  +0.49009    -0.000391
+-0.378866    +0.49007  +0.49008    -0.000391
+-0.379256    +0.49006  +0.49007    -0.000391
+-0.379647    +0.49005  +0.49006    -0.000391
+-0.380038    +0.49005  +0.49005    -0.000391
+-0.380429    +0.49004  +0.49005    -0.000391
+-0.380820    +0.49003  +0.49004    -0.000391
+-0.381211    +0.49002  +0.49003    -0.000391
+-0.381602    +0.49002  +0.49002    -0.000391
+-0.381992    +0.49001  +0.49002    -0.000391
+-0.382383    +0.49000  +0.49001    -0.000391
+-0.382774    +0.48999  +0.49000    -0.000391
+-0.383165    +0.48998  +0.48999    -0.000391
+-0.383556    +0.48998  +0.48998    -0.000391
+-0.383947    +0.48997  +0.48998    -0.000391
+-0.384338    +0.48996  +0.48997    -0.000391
+-0.384728    +0.48995  +0.48996    -0.000391
+-0.385119    +0.48994  +0.48995    -0.000391
+-0.385510    +0.48994  +0.48994    -0.000391
+-0.385901    +0.48993  +0.48994    -0.000391
+-0.386292    +0.48992  +0.48993    -0.000391
+-0.386683    +0.48991  +0.48992    -0.000391
+-0.387073    +0.48990  +0.48991    -0.000391
+-0.387464    +0.48990  +0.48990    -0.000391
+-0.387855    +0.48989  +0.48990    -0.000391
+-0.388246    +0.48988  +0.48989    -0.000391
+-0.388637    +0.48987  +0.48988    -0.000391
+-0.389028    +0.48986  +0.48987    -0.000391
+-0.389419    +0.48985  +0.48986    -0.000391
+-0.389809    +0.48985  +0.48985    -0.000391
+-0.390200    +0.48984  +0.48985    -0.000391
+-0.390591    +0.48983  +0.48984    -0.000391
+-0.390982    +0.48982  +0.48983    -0.000391
+-0.391373    +0.48981  +0.48982    -0.000391
+-0.391764    +0.48981  +0.48981    -0.000391
+-0.392155    +0.48980  +0.48981    -0.000391
+-0.392545    +0.48979  +0.48980    -0.000391
+-0.392936    +0.48978  +0.48979    -0.000391
+-0.393327    +0.48977  +0.48978    -0.000391
+-0.393718    +0.48976  +0.48977    -0.000391
+-0.394109    +0.48976  +0.48976    -0.000391
+-0.394500    +0.48975  +0.48976    -0.000391
+-0.394890    +0.48974  +0.48975    -0.000391
+-0.395281    +0.48973  +0.48974    -0.000391
+-0.395672    +0.48972  +0.48973    -0.000391
+-0.396063    +0.48971  +0.48972    -0.000391
+-0.396454    +0.48971  +0.48971    -0.000391
+-0.396845    +0.48970  +0.48971    -0.000391
+-0.397236    +0.48969  +0.48970    -0.000391
+-0.397626    +0.48968  +0.48969    -0.000391
+-0.398017    +0.48967  +0.48968    -0.000391
+-0.398408    +0.48966  +0.48967    -0.000391
+-0.398799    +0.48966  +0.48966    -0.000391
+-0.399190    +0.48965  +0.48966    -0.000391
+-0.399581    +0.48964  +0.48965    -0.000391
+-0.399972    +0.48963  +0.48964    -0.000391
+-0.400362    +0.48962  +0.48963    -0.000391
+-0.400753    +0.48961  +0.48962    -0.000391
+-0.401144    +0.48961  +0.48961    -0.000391
+-0.401535    +0.48960  +0.48961    -0.000391
+-0.401926    +0.48959  +0.48960    -0.000391
+-0.402317    +0.48958  +0.48959    -0.000391
+-0.402708    +0.48957  +0.48958    -0.000391
+-0.403098    +0.48956  +0.48957    -0.000391
+-0.403489    +0.48956  +0.48956    -0.000391
+-0.403880    +0.48955  +0.48956    -0.000391
+-0.404271    +0.48954  +0.48955    -0.000391
+-0.404662    +0.48953  +0.48954    -0.000391
+-0.405053    +0.48952  +0.48953    -0.000391
+-0.405443    +0.48951  +0.48952    -0.000391
+-0.405834    +0.48950  +0.48951    -0.000391
+-0.406225    +0.48950  +0.48950    -0.000391
+-0.406616    +0.48949  +0.48950    -0.000391
+-0.407007    +0.48948  +0.48949    -0.000391
+-0.407398    +0.48947  +0.48948    -0.000391
+-0.407789    +0.48946  +0.48947    -0.000391
+-0.408179    +0.48945  +0.48946    -0.000391
+-0.408570    +0.48944  +0.48945    -0.000391
+-0.408961    +0.48944  +0.48944    -0.000391
+-0.409352    +0.48943  +0.48944    -0.000391
+-0.409743    +0.48942  +0.48943    -0.000391
+-0.410134    +0.48941  +0.48942    -0.000391
+-0.410525    +0.48940  +0.48941    -0.000391
+-0.410915    +0.48939  +0.48940    -0.000391
+-0.411306    +0.48938  +0.48939    -0.000391
+-0.411697    +0.48937  +0.48938    -0.000391
+-0.412088    +0.48937  +0.48937    -0.000391
+-0.412479    +0.48936  +0.48937    -0.000391
+-0.412870    +0.48935  +0.48936    -0.000391
+-0.413261    +0.48934  +0.48935    -0.000391
+-0.413651    +0.48933  +0.48934    -0.000391
+-0.414042    +0.48932  +0.48933    -0.000391
+-0.414433    +0.48931  +0.48932    -0.000391
+-0.414824    +0.48930  +0.48931    -0.000391
+-0.415215    +0.48930  +0.48930    -0.000391
+-0.415606    +0.48929  +0.48930    -0.000391
+-0.415996    +0.48928  +0.48929    -0.000391
+-0.416387    +0.48927  +0.48928    -0.000391
+-0.416778    +0.48926  +0.48927    -0.000391
+-0.417169    +0.48925  +0.48926    -0.000391
+-0.417560    +0.48924  +0.48925    -0.000391
+-0.417951    +0.48923  +0.48924    -0.000391
+-0.418342    +0.48923  +0.48923    -0.000391
+-0.418732    +0.48922  +0.48923    -0.000391
+-0.419123    +0.48921  +0.48922    -0.000391
+-0.419514    +0.48920  +0.48921    -0.000391
+-0.419905    +0.48919  +0.48920    -0.000391
+-0.420296    +0.48918  +0.48919    -0.000391
+-0.420687    +0.48917  +0.48918    -0.000391
+-0.421078    +0.48916  +0.48917    -0.000391
+-0.421468    +0.48915  +0.48916    -0.000391
+-0.421859    +0.48914  +0.48915    -0.000391
+-0.422250    +0.48914  +0.48914    -0.000391
+-0.422641    +0.48913  +0.48914    -0.000391
+-0.423032    +0.48912  +0.48913    -0.000391
+-0.423423    +0.48911  +0.48912    -0.000391
+-0.423814    +0.48910  +0.48911    -0.000391
+-0.424204    +0.48909  +0.48910    -0.000391
+-0.424595    +0.48908  +0.48909    -0.000391
+-0.424986    +0.48907  +0.48908    -0.000391
+-0.425377    +0.48906  +0.48907    -0.000391
+-0.425768    +0.48905  +0.48906    -0.000391
+-0.426159    +0.48905  +0.48905    -0.000391
+-0.426549    +0.48904  +0.48905    -0.000391
+-0.426940    +0.48903  +0.48904    -0.000391
+-0.427331    +0.48902  +0.48903    -0.000391
+-0.427722    +0.48901  +0.48902    -0.000391
+-0.428113    +0.48900  +0.48901    -0.000391
+-0.428504    +0.48899  +0.48900    -0.000391
+-0.428895    +0.48898  +0.48899    -0.000391
+-0.429285    +0.48897  +0.48898    -0.000391
+-0.429676    +0.48896  +0.48897    -0.000391
+-0.430067    +0.48895  +0.48896    -0.000391
+-0.430458    +0.48895  +0.48895    -0.000391
+-0.430849    +0.48894  +0.48895    -0.000391
+-0.431240    +0.48893  +0.48894    -0.000391
+-0.431631    +0.48892  +0.48893    -0.000391
+-0.432021    +0.48891  +0.48892    -0.000391
+-0.432412    +0.48890  +0.48891    -0.000391
+-0.432803    +0.48889  +0.48890    -0.000391
+-0.433194    +0.48888  +0.48889    -0.000391
+-0.433585    +0.48887  +0.48888    -0.000391
+-0.433976    +0.48886  +0.48887    -0.000391
+-0.434366    +0.48885  +0.48886    -0.000391
+-0.434757    +0.48884  +0.48885    -0.000391
+-0.435148    +0.48883  +0.48884    -0.000391
+-0.435539    +0.48882  +0.48883    -0.000391
+-0.435930    +0.48882  +0.48882    -0.000391
+-0.436321    +0.48881  +0.48882    -0.000391
+-0.436712    +0.48880  +0.48881    -0.000391
+-0.437102    +0.48879  +0.48880    -0.000391
+-0.437493    +0.48878  +0.48879    -0.000391
+-0.437884    +0.48877  +0.48878    -0.000391
+-0.438275    +0.48876  +0.48877    -0.000391
+-0.438666    +0.48875  +0.48876    -0.000391
+-0.439057    +0.48874  +0.48875    -0.000391
+-0.439448    +0.48873  +0.48874    -0.000391
+-0.439838    +0.48872  +0.48873    -0.000391
+-0.440229    +0.48871  +0.48872    -0.000391
+-0.440620    +0.48870  +0.48871    -0.000391
+-0.441011    +0.48869  +0.48870    -0.000391
+-0.441402    +0.48868  +0.48869    -0.000391
+-0.441793    +0.48867  +0.48868    -0.000391
+-0.442184    +0.48867  +0.48867    -0.000391
+-0.442574    +0.48866  +0.48867    -0.000391
+-0.442965    +0.48865  +0.48866    -0.000391
+-0.443356    +0.48864  +0.48865    -0.000391
+-0.443747    +0.48863  +0.48864    -0.000391
+-0.444138    +0.48862  +0.48863    -0.000391
+-0.444529    +0.48861  +0.48862    -0.000391
+-0.444919    +0.48860  +0.48861    -0.000391
+-0.445310    +0.48859  +0.48860    -0.000391
+-0.445701    +0.48858  +0.48859    -0.000391
+-0.446092    +0.48857  +0.48858    -0.000391
+-0.446483    +0.48856  +0.48857    -0.000391
+-0.446874    +0.48855  +0.48856    -0.000391
+-0.447265    +0.48854  +0.48855    -0.000391
+-0.447655    +0.48853  +0.48854    -0.000391
+-0.448046    +0.48852  +0.48853    -0.000391
+-0.448437    +0.48851  +0.48852    -0.000391
+-0.448828    +0.48850  +0.48851    -0.000391
+-0.449219    +0.48849  +0.48850    -0.000391
+-0.449610    +0.48848  +0.48849    -0.000391
+-0.450001    +0.48847  +0.48848    -0.000391
+-0.450391    +0.48846  +0.48847    -0.000391
+-0.450782    +0.48845  +0.48846    -0.000391
+-0.451173    +0.48844  +0.48845    -0.000391
+-0.451564    +0.48843  +0.48844    -0.000391
+-0.451955    +0.48842  +0.48843    -0.000391
+-0.452346    +0.48842  +0.48842    -0.000391
+-0.452737    +0.48841  +0.48842    -0.000391
+-0.453127    +0.48840  +0.48841    -0.000391
+-0.453518    +0.48839  +0.48840    -0.000391
+-0.453909    +0.48838  +0.48839    -0.000391
+-0.454300    +0.48837  +0.48838    -0.000391
+-0.454691    +0.48836  +0.48837    -0.000391
+-0.455082    +0.48835  +0.48836    -0.000391
+-0.455472    +0.48834  +0.48835    -0.000391
+-0.455863    +0.48833  +0.48834    -0.000391
+-0.456254    +0.48832  +0.48833    -0.000391
+-0.456645    +0.48831  +0.48832    -0.000391
+-0.457036    +0.48830  +0.48831    -0.000391
+-0.457427    +0.48829  +0.48830    -0.000391
+-0.457818    +0.48828  +0.48829    -0.000391
+-0.458208    +0.48827  +0.48828    -0.000391
+-0.458599    +0.48826  +0.48827    -0.000391
+-0.458990    +0.48825  +0.48826    -0.000391
+-0.459381    +0.48824  +0.48825    -0.000391
+-0.459772    +0.48823  +0.48824    -0.000391
+-0.460163    +0.48822  +0.48823    -0.000391
+-0.460554    +0.48821  +0.48822    -0.000391
+-0.460944    +0.48820  +0.48821    -0.000391
+-0.461335    +0.48819  +0.48820    -0.000391
+-0.461726    +0.48818  +0.48819    -0.000391
+-0.462117    +0.48817  +0.48818    -0.000391
+-0.462508    +0.48816  +0.48817    -0.000391
+-0.462899    +0.48815  +0.48816    -0.000391
+-0.463289    +0.48814  +0.48815    -0.000391
+-0.463680    +0.48813  +0.48814    -0.000391
+-0.464071    +0.48812  +0.48813    -0.000391
+-0.464462    +0.48811  +0.48812    -0.000391
+-0.464853    +0.48810  +0.48811    -0.000391
+-0.465244    +0.48809  +0.48810    -0.000391
+-0.465635    +0.48808  +0.48809    -0.000391
+-0.466025    +0.48807  +0.48808    -0.000391
+-0.466416    +0.48806  +0.48807    -0.000391
+-0.466807    +0.48805  +0.48806    -0.000391
+-0.467198    +0.48804  +0.48805    -0.000391
+-0.467589    +0.48803  +0.48804    -0.000391
+-0.467980    +0.48802  +0.48803    -0.000391
+-0.468371    +0.48801  +0.48802    -0.000391
+-0.468761    +0.48800  +0.48801    -0.000391
+-0.469152    +0.48799  +0.48800    -0.000391
+-0.469543    +0.48798  +0.48799    -0.000391
+[?1034htH_4m                          Wj                               0.000 \pm   0.000     0.000 \pm   0.000    0.000 \pm   0.000
+tH_3m                          TT1b                           389.292 \pm 228.658   441.755 \pm 208.926  432.152 \pm 256.468
+tH_3m                          TT2b                           210.669 \pm 119.847   235.102 \pm 153.401  230.768 \pm 157.172
+tH_3m                          TTbb                           395.017 \pm 202.696   488.105 \pm 127.902  477.981 \pm 114.315
+tH_3m                          TTcc                           975.665 \pm 677.624   756.732 \pm 330.787  741.012 \pm 278.511
+tH_3m                          TTlf                           2616.140 \pm 996.805   1998.632 \pm 268.908  2009.954 \pm 287.802
+tH_3m                          VV                               2.392 \pm   2.283     1.597 \pm   1.425    1.607 \pm   1.480
+tH_3m                          Wj                              45.472 \pm  22.067    38.677 \pm  12.020   39.533 \pm  13.386
+tH_3m                          s_Top                          158.381 \pm  44.000   135.618 \pm  17.043  135.770 \pm  19.311
+tH_3m                          tHW                              2.459 \pm   0.342     4.724 \pm  16.084    0.000 \pm   0.000
+tH_3m                          tHq                              5.202 \pm   1.363    10.034 \pm  37.057    0.000 \pm   0.000
+tH_3m                          ttH                             18.502 \pm   8.145    17.958 \pm   6.811   17.942 \pm   7.711
+tH_3m                          ttW                             19.070 \pm  10.315    15.829 \pm   5.746   15.986 \pm   6.781
+tH_4m                          TT1b                            22.290 \pm  18.904    22.030 \pm  10.553   21.653 \pm  12.741
+tH_4m                          TT2b                            15.663 \pm  12.084    15.204 \pm  10.099   15.023 \pm  10.968
+tH_4m                          TTbb                            83.976 \pm  47.998    99.948 \pm  27.096   97.878 \pm  24.148
+tH_4m                          TTcc                            45.678 \pm  53.985    29.319 \pm  15.128   28.801 \pm  12.543
+tH_4m                          TTlf                            26.246 \pm  38.532    20.508 \pm  12.599   21.607 \pm  17.950
+tH_4m                          VV                               0.109 \pm   0.103     0.103 \pm   0.091    0.104 \pm   0.094
+tH_4m                          s_Top                            6.207 \pm   2.240     5.183 \pm   0.846    5.214 \pm   0.973
+tH_4m                          tHW                              0.397 \pm   0.085     0.728 \pm   2.521    0.000 \pm   0.000
+tH_4m                          tHq                              0.733 \pm   0.252     1.393 \pm   5.456    0.000 \pm   0.000
+tH_4m                          ttH                              4.839 \pm   2.487     4.501 \pm   1.804    4.499 \pm   2.065
+tH_4m                          ttW                              1.290 \pm   1.095     0.979 \pm   0.483    0.996 \pm   0.536

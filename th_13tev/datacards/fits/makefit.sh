@@ -1,0 +1,3 @@
+for i in {0..50}; do 
+echo "echo $i  && combine -M MaxLikelihoodFit  cards/tH_comb_$i.txt --saveNLL --saveNormalizations --saveWithUncertainties --saveShapes -n _${i}  -m 125 --robustFit=1 --stepSize=0.005 --rMin=-20 --rMax=20 | tee  mlfit_$i.txt && combine -M MaxLikelihoodFit  cards/tH_comb_$i.txt -t -1 --saveNLL --saveNormalizations --saveWithUncertainties --saveShapes -n _asimov_${i}  -m 125 --robustFit=1 --stepSize=0.005 --rMin=-20 --rMax=20 | tee -a mlfit_$i.txt && python mlfitNormsToText.py -u mlfit_${i}.root | tee -a mlfit_$i.txt"
+done

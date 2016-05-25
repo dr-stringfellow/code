@@ -1,0 +1,1 @@
+combine -M MultiDimFit --robustFit 1 --minimizerTolerance 0.00000001 --minimizerStrategy 2 --saveWorkspace -n _myanalysis_bestfit -v9 myanalysis.ws.root

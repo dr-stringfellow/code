@@ -1,0 +1,23 @@
+processes = "Misc:Wj"
+            "Misc:ttW"
+            "Misc:VV"
+	    
+$$	    "EW:s_Top"
+
+            "TTH-powheg:ttH"
+	    "SingleTop-powheg:s_Top"
+
+
+	    "TTbar-powheg_lf:TTlf"
+	    "TTbar-powheg_cc:TTcc"
+
+	    "TTbar-powheg_b:TT1b"
+
+	    "TTbar-powheg_bb:TTbb"
+	    "TTbar-powheg_2b:TT2b"
+
+            "TH125-madgraph-13tev:tHq"
+            "TH125-madgraph-13tev:tHW"
+	    
+	    "QCDmuInclPt-pythia6:QCD"
+	    "QCDel-pythia6:QCD"

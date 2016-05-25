@@ -1,0 +1,33 @@
+imax   1   number of channels
+jmax   11   number of backgrounds
+kmax   *   number of systematics (automatic)
+------------------------------
+shapes * * ./bla.root  $CHANNEL__$PROCESS__nominal  $CHANNEL__$PROCESS__$SYSTEMATIC
+------------------------------
+bin                              tH_3m             
+observation                      1.81336e+06       
+------------------------------
+bin                              tH_3m             tH_3m             tH_3m             tH_3m             tH_3m             tH_3m             tH_3m             tH_3m             tH_3m             tH_3m             tH_3m             tH_3m             
+process                          tHq               tHW               TTbb              TT2b              TT1b              TTcc              TTlf              s_Top             ttH               Wj                VV                ttW               
+process                          -1                0                 1                 2                 3                 4                 5                 6                 7                 8                 9                 10                
+rate                             5136.89           2995.55           147869            78860.7           145726            365226            979316            59287.8           9026.17           17021.8           895.322           7138.69           
+------------------------------
+lumi_13TeV             lnN       1.027             1.027             1.027             1.027             1.027             1.027             1.027             1.027             1.027             1.027             1.027             1.027             
+CMS_eff_lep            lnN       1.02              1.02              1.02              1.02              1.02              1.02              1.02              1.02              1.02              1.02              1.02              1.02              
+CMS_tHq_ttbb           lnN       -                 -                 1.50              -                 -                 -                 -                 -                 -                 -                 -                 -                 
+CMS_tHq_tt2b           lnN       -                 -                 -                 1.50              -                 -                 -                 -                 -                 -                 -                 -                 
+CMS_tHq_tt1b           lnN       -                 -                 -                 -                 1.50              -                 -                 -                 -                 -                 -                 -                 
+CMS_tHq_ttcc           lnN       -                 -                 -                 -                 -                 1.50              -                 -                 -                 -                 -                 -                 
+pdf_gg                 lnN       -                 -                 1.03              1.03              1.03              1.03              1.03              -                 1.036             -                 -                 -                 
+pdf_qg                 lnN       1.037             1.04              -                 -                 -                 -                 -                 1.04              -                 -                 -                 -                 
+pdf_qqbar              lnN       -                 -                 -                 -                 -                 -                 -                 -                 -                 1.04              1.02              1.02              
+QCDscale_ST            lnN       -                 -                 -                 -                 -                 -                 -                 1.04              -                 -                 -                 -                 
+pu                     shape     1                 1                 1                 1                 1                 1                 1                 1                 1                 1                 1                 1                 
+CMS_jes                shape     1                 1                 1                 1                 1                 1                 1                 1                 1                 1                 1                 1                 
+CMS_jer                shape     1                 1                 1                 1                 1                 1                 1                 1                 1                 1                 1                 1                 
+Q2scale_tHq            shape     1                 1                 1                 1                 1                 1                 1                 1                 1                 1                 1                 1                 
+Q2scale_tHW            shape     1                 1                 1                 1                 1                 1                 1                 1                 1                 1                 1                 1                 
+Q2scale_ttbb           shape     1                 1                 1                 1                 1                 1                 1                 1                 1                 1                 1                 1                 
+Q2scale_tt2b           shape     1                 1                 1                 1                 1                 1                 1                 1                 1                 1                 1                 1                 
+Q2scale_tt1b           shape     1                 1                 1                 1                 1                 1                 1                 1                 1                 1                 1                 1                 
+Q2scale_ttcc           shape     1                 1                 1                 1                 1                 1                 1                 1                 1                 1                 1                 1                 

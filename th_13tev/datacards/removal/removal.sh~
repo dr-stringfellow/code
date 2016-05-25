@@ -1,0 +1,5 @@
+echo $date > removal_effect.txt
+
+for i in $(cat syst_wobbb.txt); do 
+    echo -n "$i  " |tee -a removal_effect.txt; combine -M Asymptotic -d higgsCombine_myanalysis_bestfit.MultiDimFit.mH120.root -w w -n cboeser2 --snapshotName MultiDimFit --toysFrequentist --bypassFreq  --freezeNuisances ${i} | grep "Expected\ 50.0\%" |tee -a removal_effect.txt; 
+done

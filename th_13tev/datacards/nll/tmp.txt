@@ -1,0 +1,12 @@
+>>> including systematics
+>>> method used to compute upper limit is MaxLikelihoodFit
+>>> random number generator seed is 123456
+[?1034hComputing limit starting from observation
+Running Minos for POI 
+Real time 0:00:00, CP time 0.290
+
+
+ --- MaxLikelihoodFit ---
+Best fit r: 1  0/+0  (68% CL)
+nll S+B -> -70.3727  nll B -> -1
+Done in 0.00 min (cpu), 0.01 min (real)

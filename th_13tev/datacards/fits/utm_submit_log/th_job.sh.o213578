@@ -1,0 +1,4 @@
+/usr/users/sfink
+Loading version: /cvmfs/cms.cern.ch/slc6_amd64_gcc481/cms/cmssw-patch/CMSSW_7_1_20_patch3/external/slc6_amd64_gcc481/bin/root ->[1m DONE.[0m
+Standalone framework setup and ready to roll...
+echo   && combine -M MaxLikelihoodFit  cards/tH_comb_.txt --saveNLL --saveNormalizations --saveWithUncertainties --saveShapes -n _  -m 125 --robustFit=1 --stepSize=0.005 --rMin=-5 --rMax=5 | tee  mlfit_.txt && combine -M MaxLikelihoodFit  cards/tH_comb_.txt -t -1 --saveNLL --saveNormalizations --saveWithUncertainties --saveShapes -n _asimov_  -m 125 --robustFit=1 --stepSize=0.005 --rMin=-5 --rMax=5 | tee -a mlfit_.txt && python mlfitNormsToText.py -u mlfit_.root | tee -a mlfit_.txt

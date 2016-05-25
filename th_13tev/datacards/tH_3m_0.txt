@@ -1,0 +1,27 @@
+imax   1   number of channels
+jmax   11   number of backgrounds
+kmax   *   number of systematics (automatic)
+------------------------------
+shapes * * ./tH_3m_0.root  $CHANNEL__$PROCESS__nominal  $CHANNEL__$PROCESS__$SYSTEMATIC
+------------------------------
+bin                              tH_3m             
+observation                      4102              
+------------------------------
+bin                              tH_3m             tH_3m             tH_3m             tH_3m             tH_3m             tH_3m             tH_3m             tH_3m             tH_3m             tH_3m             tH_3m             tH_3m             
+process                          tHq               tHW               TTbb              TT2b              TT1b              TTcc              TTlf              s_Top             ttH               Wj                VV                ttW               
+process                          -1                0                 1                 2                 3                 4                 5                 6                 7                 8                 9                 10                
+rate                             25.6844           14.9778           739.344           394.303           728.628           1826.13           4896.58           296.439           45.1309           85.1089           4.47661           35.6935           
+------------------------------
+lumi_13TeV             lnN       1.027             1.027             1.027             1.027             1.027             1.027             1.027             1.027             1.027             1.027             1.027             1.027             
+CMS_eff_lep            lnN       1.02              1.02              1.02              1.02              1.02              1.02              1.02              1.02              1.02              1.02              1.02              1.02              
+CMS_tHq_ttbb           lnN       -                 -                 1.50              -                 -                 -                 -                 -                 -                 -                 -                 -                 
+CMS_tHq_tt2b           lnN       -                 -                 -                 1.50              -                 -                 -                 -                 -                 -                 -                 -                 
+CMS_tHq_tt1b           lnN       -                 -                 -                 -                 1.50              -                 -                 -                 -                 -                 -                 -                 
+CMS_tHq_ttcc           lnN       -                 -                 -                 -                 -                 1.50              -                 -                 -                 -                 -                 -                 
+pdf_gg                 lnN       -                 -                 1.03              1.03              1.03              1.03              1.03              -                 1.036             -                 -                 -                 
+pdf_qg                 lnN       1.037             1.04              -                 -                 -                 -                 -                 1.04              -                 -                 -                 -                 
+pdf_qqbar              lnN       -                 -                 -                 -                 -                 -                 -                 -                 -                 1.04              1.02              1.02              
+QCDscale_ST            lnN       -                 -                 -                 -                 -                 -                 -                 1.04              -                 -                 -                 -                 
+pu                     shape     1                 1                 1                 1                 1                 1                 1                 1                 1                 1                 1                 1                 
+CMS_jes                shape     1                 1                 1                 1                 1                 1                 1                 1                 1                 1                 1                 1                 
+CMS_jer                shape     1                 1                 1                 1                 1                 1                 1                 1                 1                 1                 1                 1                 

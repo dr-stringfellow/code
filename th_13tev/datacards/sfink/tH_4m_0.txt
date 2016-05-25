@@ -1,0 +1,42 @@
+imax   1   number of channels
+jmax   11   number of backgrounds
+kmax   *   number of systematics (automatic)
+------------------------------
+shapes * * ./tH_4m_0.root  $CHANNEL__$PROCESS__nominal  $CHANNEL__$PROCESS__$SYSTEMATIC
+------------------------------
+bin                              tH_4m             
+observation                      194               
+------------------------------
+bin                              tH_4m             tH_4m             tH_4m             tH_4m             tH_4m             tH_4m             tH_4m             tH_4m             tH_4m             tH_4m             tH_4m             tH_4m             
+process                          tHq               tHW               TTbb              TT2b              TT1b              TTcc              TTlf              s_Top             ttH               Wj                VV                ttW               
+process                          -1                0                 1                 2                 3                 4                 5                 6                 7                 8                 9                 10                
+rate                             1.97847           1.30524           83.9757           15.6983           22.3424           45.6784           26.2693           6.21346           6.30691           2.14577e-06       0.109164          1.29764           
+------------------------------
+lumi_13TeV             lnN       1.045             1.045             1.045             1.045             1.045             1.045             1.045             1.045             1.045             1.045             1.045             1.045             
+CMS_eff_lep            lnN       1.02              1.02              1.02              1.02              1.02              1.02              1.02              1.02              1.02              1.02              1.02              1.02              
+CMS_tHq_ttbb           lnN       -                 -                 1.50              -                 -                 -                 -                 -                 -                 -                 -                 -                 
+CMS_tHq_tt2b           lnN       -                 -                 -                 1.50              -                 -                 -                 -                 -                 -                 -                 -                 
+CMS_tHq_tt1b           lnN       -                 -                 -                 -                 1.50              -                 -                 -                 -                 -                 -                 -                 
+CMS_tHq_ttcc           lnN       -                 -                 -                 -                 -                 1.50              -                 -                 -                 -                 -                 -                 
+pdf_gg                 lnN       -                 -                 1.042             1.042             1.042             1.042             1.042             -                 1.09              -                 -                 1.09              
+pdf_qg                 lnN       1.02              1.02              -                 -                 -                 -                 -                 1.047             -                 -                 -                 -                 
+pdf_qqbar              lnN       -                 -                 -                 -                 -                 -                 -                 -                 -                 1.048             -                 -                 
+QCDscale_VV            lnN       -                 -                 -                 -                 -                 -                 -                 -                 -                 -                 1.035             -                 
+QCDscale_ST            lnN       -                 -                 -                 -                 -                 -                 -                 1.027/1.021       -                 -                 -                 -                 
+Q2scale_tHq            shape     1                 1                 1                 1                 1                 1                 1                 1                 1                 1                 1                 1                 
+Q2scale_tHW            shape     1                 1                 1                 1                 1                 1                 1                 1                 1                 1                 1                 1                 
+Q2scale_ttbb           shape     1                 1                 1                 1                 1                 1                 1                 1                 1                 1                 1                 1                 
+Q2scale_tt2b           shape     1                 1                 1                 1                 1                 1                 1                 1                 1                 1                 1                 1                 
+Q2scale_tt1b           shape     1                 1                 1                 1                 1                 1                 1                 1                 1                 1                 1                 1                 
+Q2scale_ttcc           shape     1                 1                 1                 1                 1                 1                 1                 1                 1                 1                 1                 1                 
+Q2scale_ttlf           shape     1                 1                 1                 1                 1                 1                 1                 1                 1                 1                 1                 1                 
+Q2scale_ttH            shape     1                 1                 1                 1                 1                 1                 1                 1                 1                 1                 1                 1                 
+Q2scale_Wj             shape     1                 1                 1                 1                 1                 1                 1                 1                 1                 1                 1                 1                 
+CSVCErr1               shape     1                 1                 1                 1                 1                 1                 1                 1                 1                 1                 1                 1                 
+CSVCErr2               shape     1                 1                 1                 1                 1                 1                 1                 1                 1                 1                 1                 1                 
+CSVHF                  shape     1                 1                 1                 1                 1                 1                 1                 1                 1                 1                 1                 1                 
+CSVHFStats1            shape     1                 1                 1                 1                 1                 1                 1                 1                 1                 1                 1                 1                 
+CSVHFStats2            shape     1                 1                 1                 1                 1                 1                 1                 1                 1                 1                 1                 1                 
+CSVLF                  shape     1                 1                 1                 1                 1                 1                 1                 1                 1                 1                 1                 1                 
+CSVLFStats1            shape     1                 1                 1                 1                 1                 1                 1                 1                 1                 1                 1                 1                 
+CSVLFStats2            shape     1                 1                 1                 1                 1                 1                 1                 1                 1                 1                 1                 1                 

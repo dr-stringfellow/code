@@ -1,0 +1,11 @@
+imax   1   number of channels
+jmax   8   number of backgrounds
+kmax   0   number of systematics (automatic)
+------------------------------
+bin                              tH_3tt_mu         
+observation                      1514              
+------------------------------
+bin                              tH_3tt_mu         tH_3tt_mu         tH_3tt_mu         tH_3tt_mu         tH_3tt_mu         tH_3tt_mu         tH_3tt_mu         tH_3tt_mu         tH_3tt_mu         
+process                          tH                TTbb              TTb               TTcc              TTlf              s_Top             ttH               VV                Wj                
+process                          0                 1                 2                 3                 4                 5                 6                 7                 8                 
+rate                             7.48399           222.509           125.886           178.882           533.952           38.8656           12.783            0.85577           10.9186           

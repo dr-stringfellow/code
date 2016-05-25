@@ -1,0 +1,1364 @@
+['wolframh1_bkg.dat', 'wolframh1_bkg_CSVCErr1_down.dat', 'wolframh1_bkg_CSVCErr2_down.dat', 'wolframh1_bkg_CSVHFStats1_down.dat', 'wolframh1_bkg_CSVHFStats2_down.dat', 'wolframh1_bkg_CSVHF_down.dat', 'wolframh1_bkg_CSVLFStats1_down.dat', 'wolframh1_bkg_CSVLFStats2_down.dat', 'wolframh1_bkg_CSVLF_down.dat', 'wolframh1_bkg_JER_down.dat', 'wolframh1_bkg_JES_down.dat', 'wolframh1_bkg_q2_down.dat']
+wolframh1_bkg_tot
+##########################
+# combine_sys.py #
+##########################
+
+Input File: ['wolframh1_bkg.dat', 'wolframh1_bkg_CSVCErr1_down.dat', 'wolframh1_bkg_CSVCErr2_down.dat', 'wolframh1_bkg_CSVHFStats1_down.dat', 'wolframh1_bkg_CSVHFStats2_down.dat', 'wolframh1_bkg_CSVHF_down.dat', 'wolframh1_bkg_CSVLFStats1_down.dat', 'wolframh1_bkg_CSVLFStats2_down.dat', 'wolframh1_bkg_CSVLF_down.dat', 'wolframh1_bkg_JER_down.dat', 'wolframh1_bkg_JES_down.dat', 'wolframh1_bkg_q2_down.dat']
+Output Path: wolframh1_bkg_tot
+
+Beginning CategorizeInput : 
+
+[]
+['wolframh1_bkg.dat', 'wolframh1_bkg_CSVCErr1_', 'wolframh1_bkg_CSVCErr2_', 'wolframh1_bkg_CSVHFStats1_', 'wolframh1_bkg_CSVHFStats2_', 'wolframh1_bkg_CSVHF_', 'wolframh1_bkg_CSVLFStats1_', 'wolframh1_bkg_CSVLFStats2_', 'wolframh1_bkg_CSVLF_', 'wolframh1_bkg_JER_', 'wolframh1_bkg_JES_', 'wolframh1_bkg_q2_']
+Beginning GetRefDataFromInput : 
+
+
+=======================
+Starting with Background calculation
+=======================
+
+
+-----------------------
+Starting with wolframh1_bkg_CSVCErr1_ 
+-----------------------
+
+Beginning SortVariations 
+
+Beginning FillUpVariations: 
+
+Beginning FillDownVariations: 
+
+Value # 0
+Down: 12.461884 x: 10.172641 Up : 8.531510 
+Up error smaller than x, Down error larger than x -> changing
+Value # 1
+Down: 115.092285 x: 93.950531 Up : 78.940186 
+Up error smaller than x, Down error larger than x -> changing
+Value # 2
+Down: 363.922241 x: 301.909729 Up : 256.991516 
+Up error smaller than x, Down error larger than x -> changing
+Value # 3
+Down: 684.733643 x: 568.159790 Up : 484.072662 
+Up error smaller than x, Down error larger than x -> changing
+Value # 4
+Down: 794.744263 x: 662.900574 Up : 567.914612 
+Up error smaller than x, Down error larger than x -> changing
+Value # 5
+Down: 651.686707 x: 535.591065 Up : 453.989777 
+Up error smaller than x, Down error larger than x -> changing
+Value # 6
+Down: 521.308960 x: 431.565002 Up : 366.804169 
+Up error smaller than x, Down error larger than x -> changing
+Value # 7
+Down: 454.202332 x: 376.657959 Up : 320.098969 
+Up error smaller than x, Down error larger than x -> changing
+Value # 8
+Down: 393.661346 x: 326.158234 Up : 277.336670 
+Up error smaller than x, Down error larger than x -> changing
+Value # 9
+Down: 348.753662 x: 287.320129 Up : 242.868164 
+Up error smaller than x, Down error larger than x -> changing
+Value # 10
+Down: 315.282471 x: 259.924927 Up : 219.736954 
+Up error smaller than x, Down error larger than x -> changing
+Value # 11
+Down: 286.354645 x: 233.949249 Up : 196.249161 
+Up error smaller than x, Down error larger than x -> changing
+Value # 12
+Down: 241.251450 x: 197.516708 Up : 165.999252 
+Up error smaller than x, Down error larger than x -> changing
+Value # 13
+Down: 207.891037 x: 170.847870 Up : 143.837036 
+Up error smaller than x, Down error larger than x -> changing
+Value # 14
+Down: 168.076920 x: 138.067810 Up : 116.281044 
+Up error smaller than x, Down error larger than x -> changing
+Value # 15
+Down: 131.544220 x: 107.761383 Up : 90.615448 
+Up error smaller than x, Down error larger than x -> changing
+Value # 16
+Down: 83.257782 x: 68.466736 Up : 57.679817 
+Up error smaller than x, Down error larger than x -> changing
+Value # 17
+Down: 41.736439 x: 34.460613 Up : 29.140556 
+Up error smaller than x, Down error larger than x -> changing
+Value # 18
+Down: 12.114800 x: 9.955196 Up : 8.409233 
+Up error smaller than x, Down error larger than x -> changing
+Value # 19
+Down: 1.275288 x: 1.089566 Up : 0.945556 
+Up error smaller than x, Down error larger than x -> changing
+
+Sorted Up Variations:
+[12.46188354, 115.0922852, 363.9222412, 684.7336426, 794.7442627, 651.6867065, 521.30896, 454.2023315, 393.6613464, 348.7536621, 315.2824707, 286.3546448, 241.2514496, 207.891037, 168.0769196, 131.54422, 83.25778198, 41.73643875, 12.1147995, 1.275288105]
+
+Sorted Down Variations:
+[8.531510353, 78.94018555, 256.9915161, 484.0726624, 567.9146118, 453.9897766, 366.8041687, 320.0989685, 277.3366699, 242.8681641, 219.7369537, 196.2491608, 165.9992523, 143.8370361, 116.281044, 90.615448, 57.6798172, 29.14055634, 8.409233093, 0.9455562234]
+Down: 8.531510 x: 10.172641 Diff : 1.641130 SquareOfDiff:2.693309 
+Up: 12.461884 x: 10.172641 Diff : 2.289243 SquareOfDiff:5.240632 
+Down: 78.940186 x: 93.950531 Diff : 15.010345 SquareOfDiff:225.310471 
+Up: 115.092285 x: 93.950531 Diff : 21.141754 SquareOfDiff:446.973770 
+Down: 256.991516 x: 301.909729 Diff : 44.918213 SquareOfDiff:2017.645850 
+Up: 363.922241 x: 301.909729 Diff : 62.012512 SquareOfDiff:3845.551669 
+Down: 484.072662 x: 568.159790 Diff : 84.087128 SquareOfDiff:7070.645028 
+Up: 684.733643 x: 568.159790 Diff : 116.573853 SquareOfDiff:13589.463110 
+Down: 567.914612 x: 662.900574 Diff : 94.985962 SquareOfDiff:9022.332958 
+Up: 794.744263 x: 662.900574 Diff : 131.843689 SquareOfDiff:17382.758329 
+Down: 453.989777 x: 535.591065 Diff : 81.601288 SquareOfDiff:6658.770187 
+Up: 651.686707 x: 535.591065 Diff : 116.095642 SquareOfDiff:13478.198091 
+Down: 366.804169 x: 431.565002 Diff : 64.760834 SquareOfDiff:4193.965582 
+Up: 521.308960 x: 431.565002 Diff : 89.743958 SquareOfDiff:8053.977926 
+Down: 320.098969 x: 376.657959 Diff : 56.558990 SquareOfDiff:3198.919406 
+Up: 454.202332 x: 376.657959 Diff : 77.544373 SquareOfDiff:6013.129706 
+Down: 277.336670 x: 326.158234 Diff : 48.821564 SquareOfDiff:2383.545082 
+Up: 393.661346 x: 326.158234 Diff : 67.503113 SquareOfDiff:4556.670238 
+Down: 242.868164 x: 287.320129 Diff : 44.451965 SquareOfDiff:1975.977219 
+Up: 348.753662 x: 287.320129 Diff : 61.433533 SquareOfDiff:3774.078940 
+Down: 219.736954 x: 259.924927 Diff : 40.187973 SquareOfDiff:1615.073182 
+Up: 315.282471 x: 259.924927 Diff : 55.357544 SquareOfDiff:3064.457667 
+Down: 196.249161 x: 233.949249 Diff : 37.700088 SquareOfDiff:1421.296673 
+Up: 286.354645 x: 233.949249 Diff : 52.405396 SquareOfDiff:2746.325478 
+Down: 165.999252 x: 197.516708 Diff : 31.517456 SquareOfDiff:993.350039 
+Up: 241.251450 x: 197.516708 Diff : 43.734741 SquareOfDiff:1912.727588 
+Down: 143.837036 x: 170.847870 Diff : 27.010834 SquareOfDiff:729.585143 
+Up: 207.891037 x: 170.847870 Diff : 37.043167 SquareOfDiff:1372.196229 
+Down: 116.281044 x: 138.067810 Diff : 21.786766 SquareOfDiff:474.663177 
+Up: 168.076920 x: 138.067810 Diff : 30.009109 SquareOfDiff:900.546653 
+Down: 90.615448 x: 107.761383 Diff : 17.145935 SquareOfDiff:293.983090 
+Up: 131.544220 x: 107.761383 Diff : 23.782837 SquareOfDiff:565.623331 
+Down: 57.679817 x: 68.466736 Diff : 10.786919 SquareOfDiff:116.357614 
+Up: 83.257782 x: 68.466736 Diff : 14.791046 SquareOfDiff:218.775046 
+Down: 29.140556 x: 34.460613 Diff : 5.320057 SquareOfDiff:28.303006 
+Up: 41.736439 x: 34.460613 Diff : 7.275825 SquareOfDiff:52.937637 
+Down: 8.409233 x: 9.955196 Diff : 1.545963 SquareOfDiff:2.390002 
+Up: 12.114800 x: 9.955196 Diff : 2.159603 SquareOfDiff:4.663886 
+Down: 0.945556 x: 1.089566 Diff : 0.144009 SquareOfDiff:0.020739 
+Up: 1.275288 x: 1.089566 Diff : 0.185723 SquareOfDiff:0.034493 
+Quadratic sums
+
+Summed Squared Up Variations:
+[5.2406323226427105, 446.97377023038257, 3845.551669355142, 13589.463110006529, 17382.75832912873, 13478.198091392163, 8053.977925710586, 6013.129706418757, 4556.670237689524, 3774.0789400019694, 3064.457666640427, 2746.325477511423, 1912.7275878309777, 1372.1962287985227, 900.5466529829898, 565.6233310120012, 218.77504591560907, 52.9376367064502, 4.663885631594527, 0.03449288006486294]
+
+Summed Squared Down Variations:
+[2.69330914407042, 225.31047082854292, 2017.6458501297277, 7070.645028018687, 9022.332958068253, 6658.770186938685, 4193.96558151906, 3198.9194063790897, 2383.545082113159, 1975.9772190324027, 1615.073181886323, 1421.2966729078316, 993.3500390154275, 729.5851425712225, 474.66317709610956, 293.9830904534121, 116.35761374597936, 28.303005525638767, 2.3900024878437747, 0.0207386763551524]
+
+-----------------------
+Starting with wolframh1_bkg_CSVCErr2_ 
+-----------------------
+
+Beginning SortVariations 
+
+Beginning FillUpVariations: 
+
+Beginning FillDownVariations: 
+
+Value # 0
+Down: 10.029812 x: 10.172641 Up : 10.307276 
+Value # 1
+Down: 92.249100 x: 93.950531 Up : 95.566483 
+Value # 2
+Down: 296.328613 x: 301.909729 Up : 307.237915 
+Value # 3
+Down: 558.588013 x: 568.159790 Up : 577.308166 
+Value # 4
+Down: 651.796753 x: 662.900574 Up : 673.470825 
+Value # 5
+Down: 526.590881 x: 535.591065 Up : 544.142822 
+Value # 6
+Down: 423.881256 x: 431.565002 Up : 438.932251 
+Value # 7
+Down: 369.658691 x: 376.657959 Up : 383.398438 
+Value # 8
+Down: 320.353394 x: 326.158234 Up : 331.656525 
+Value # 9
+Down: 282.348816 x: 287.320129 Up : 292.041626 
+Value # 10
+Down: 255.555771 x: 259.924927 Up : 264.113739 
+Value # 11
+Down: 229.624161 x: 233.949249 Up : 238.002014 
+Value # 12
+Down: 194.040054 x: 197.516708 Up : 200.860962 
+Value # 13
+Down: 167.727753 x: 170.847870 Up : 173.807465 
+Value # 14
+Down: 135.641495 x: 138.067810 Up : 140.392059 
+Value # 15
+Down: 106.050423 x: 107.761383 Up : 109.389389 
+Value # 16
+Down: 67.411247 x: 68.466736 Up : 69.447655 
+Value # 17
+Down: 33.968945 x: 34.460613 Up : 34.933773 
+Value # 18
+Down: 9.835407 x: 9.955196 Up : 10.066895 
+Value # 19
+Down: 1.080405 x: 1.089566 Up : 1.099066 
+
+Sorted Up Variations:
+[10.30727577, 95.56648254, 307.237915, 577.3081665, 673.4708252, 544.1428223, 438.932251, 383.3984375, 331.6565247, 292.041626, 264.113739, 238.0020142, 200.8609619, 173.8074646, 140.3920593, 109.389389, 69.44765472, 34.93377304, 10.06689453, 1.099065661]
+
+Sorted Down Variations:
+[10.02981186, 92.24909973, 296.3286133, 558.5880127, 651.7967529, 526.5908813, 423.8812561, 369.6586914, 320.3533936, 282.3488159, 255.5557709, 229.6241608, 194.0400543, 167.7277527, 135.6414948, 106.0504227, 67.41124725, 33.96894455, 9.835407257, 1.080405116]
+Down: 10.029812 x: 10.172641 Diff : 0.142829 SquareOfDiff:0.020400 
+Up: 10.307276 x: 10.172641 Diff : 0.134635 SquareOfDiff:0.018127 
+Down: 92.249100 x: 93.950531 Diff : 1.701431 SquareOfDiff:2.894868 
+Up: 95.566483 x: 93.950531 Diff : 1.615952 SquareOfDiff:2.611299 
+Down: 296.328613 x: 301.909729 Diff : 5.581116 SquareOfDiff:31.148852 
+Up: 307.237915 x: 301.909729 Diff : 5.328186 SquareOfDiff:28.389566 
+Down: 558.588013 x: 568.159790 Diff : 9.571777 SquareOfDiff:91.618921 
+Up: 577.308166 x: 568.159790 Diff : 9.148376 SquareOfDiff:83.692793 
+Down: 651.796753 x: 662.900574 Diff : 11.103821 SquareOfDiff:123.294836 
+Up: 673.470825 x: 662.900574 Diff : 10.570252 SquareOfDiff:111.730217 
+Down: 526.590881 x: 535.591065 Diff : 9.000183 SquareOfDiff:81.003298 
+Up: 544.142822 x: 535.591065 Diff : 8.551758 SquareOfDiff:73.132561 
+Down: 423.881256 x: 431.565002 Diff : 7.683746 SquareOfDiff:59.039957 
+Up: 438.932251 x: 431.565002 Diff : 7.367249 SquareOfDiff:54.276352 
+Down: 369.658691 x: 376.657959 Diff : 6.999268 SquareOfDiff:48.989747 
+Up: 383.398438 x: 376.657959 Diff : 6.740478 SquareOfDiff:45.434050 
+Down: 320.353394 x: 326.158234 Diff : 5.804840 SquareOfDiff:33.696167 
+Up: 331.656525 x: 326.158234 Diff : 5.498291 SquareOfDiff:30.231205 
+Down: 282.348816 x: 287.320129 Diff : 4.971314 SquareOfDiff:24.713958 
+Up: 292.041626 x: 287.320129 Diff : 4.721497 SquareOfDiff:22.292530 
+Down: 255.555771 x: 259.924927 Diff : 4.369156 SquareOfDiff:19.089523 
+Up: 264.113739 x: 259.924927 Diff : 4.188812 SquareOfDiff:17.546148 
+Down: 229.624161 x: 233.949249 Diff : 4.325088 SquareOfDiff:18.706391 
+Up: 238.002014 x: 233.949249 Diff : 4.052765 SquareOfDiff:16.424903 
+Down: 194.040054 x: 197.516708 Diff : 3.476654 SquareOfDiff:12.087124 
+Up: 200.860962 x: 197.516708 Diff : 3.344254 SquareOfDiff:11.184031 
+Down: 167.727753 x: 170.847870 Diff : 3.120117 SquareOfDiff:9.735131 
+Up: 173.807465 x: 170.847870 Diff : 2.959595 SquareOfDiff:8.759201 
+Down: 135.641495 x: 138.067810 Diff : 2.426315 SquareOfDiff:5.887006 
+Up: 140.392059 x: 138.067810 Diff : 2.324249 SquareOfDiff:5.402134 
+Down: 106.050423 x: 107.761383 Diff : 1.710960 SquareOfDiff:2.927385 
+Up: 109.389389 x: 107.761383 Diff : 1.628006 SquareOfDiff:2.650403 
+Down: 67.411247 x: 68.466736 Diff : 1.055489 SquareOfDiff:1.114056 
+Up: 69.447655 x: 68.466736 Diff : 0.980919 SquareOfDiff:0.962202 
+Down: 33.968945 x: 34.460613 Diff : 0.491669 SquareOfDiff:0.241738 
+Up: 34.933773 x: 34.460613 Diff : 0.473160 SquareOfDiff:0.223880 
+Down: 9.835407 x: 9.955196 Diff : 0.119789 SquareOfDiff:0.014349 
+Up: 10.066895 x: 9.955196 Diff : 0.111698 SquareOfDiff:0.012476 
+Down: 1.080405 x: 1.089566 Diff : 0.009160 SquareOfDiff:0.000084 
+Up: 1.099066 x: 1.089566 Diff : 0.009500 SquareOfDiff:0.000090 
+Quadratic sums
+
+Summed Squared Up Variations:
+[5.258758897789612, 449.58506957769185, 3873.9412354057376, 13673.15590259228, 17494.488545901982, 13551.330652862025, 8108.254277644787, 6058.56375682772, 4586.901442709863, 3796.371470145781, 3082.003814287296, 2762.7503808460947, 1923.91161930324, 1380.9554295867908, 905.9487873266904, 568.273734222436, 219.73724776474953, 53.16151689332304, 4.676362108084554, 0.03458313281988396]
+
+Summed Squared Down Variations:
+[2.7137092501719438, 228.2053392291054, 2048.7947025865146, 7162.263948699483, 9145.627794426766, 6739.773484572248, 4253.005538721824, 3247.909153315499, 2417.241249538759, 2000.691176947685, 1634.1627051648277, 1440.0030634406637, 1005.4371627464742, 739.3202739129584, 480.55018303112365, 296.9104759437803, 117.47166990959954, 28.544743636198454, 2.404351922072462, 0.0208225892833124]
+
+-----------------------
+Starting with wolframh1_bkg_CSVHFStats1_ 
+-----------------------
+
+Beginning SortVariations 
+
+Beginning FillUpVariations: 
+
+Beginning FillDownVariations: 
+
+Value # 0
+Down: 10.877929 x: 10.172641 Up : 9.454805 
+Up error smaller than x, Down error larger than x -> changing
+Value # 1
+Down: 100.361816 x: 93.950531 Up : 87.417992 
+Up error smaller than x, Down error larger than x -> changing
+Value # 2
+Down: 321.258881 x: 301.909729 Up : 282.150085 
+Up error smaller than x, Down error larger than x -> changing
+Value # 3
+Down: 604.713501 x: 568.159790 Up : 530.843689 
+Up error smaller than x, Down error larger than x -> changing
+Value # 4
+Down: 705.462891 x: 662.900574 Up : 619.438538 
+Up error smaller than x, Down error larger than x -> changing
+Value # 5
+Down: 569.598755 x: 535.591065 Up : 500.845032 
+Up error smaller than x, Down error larger than x -> changing
+Value # 6
+Down: 459.584992 x: 431.565002 Up : 402.971741 
+Up error smaller than x, Down error larger than x -> changing
+Value # 7
+Down: 401.009613 x: 376.657959 Up : 351.810394 
+Up error smaller than x, Down error larger than x -> changing
+Value # 8
+Down: 347.345581 x: 326.158234 Up : 304.567413 
+Up error smaller than x, Down error larger than x -> changing
+Value # 9
+Down: 306.185089 x: 287.320129 Up : 268.066101 
+Up error smaller than x, Down error larger than x -> changing
+Value # 10
+Down: 277.095825 x: 259.924927 Up : 242.431763 
+Up error smaller than x, Down error larger than x -> changing
+Value # 11
+Down: 249.195908 x: 233.949249 Up : 218.382324 
+Up error smaller than x, Down error larger than x -> changing
+Value # 12
+Down: 210.576355 x: 197.516708 Up : 184.208405 
+Up error smaller than x, Down error larger than x -> changing
+Value # 13
+Down: 182.111237 x: 170.847870 Up : 159.354889 
+Up error smaller than x, Down error larger than x -> changing
+Value # 14
+Down: 147.253494 x: 138.067810 Up : 128.705154 
+Up error smaller than x, Down error larger than x -> changing
+Value # 15
+Down: 114.902229 x: 107.761383 Up : 100.487328 
+Up error smaller than x, Down error larger than x -> changing
+Value # 16
+Down: 73.008453 x: 68.466736 Up : 63.832718 
+Up error smaller than x, Down error larger than x -> changing
+Value # 17
+Down: 36.747684 x: 34.460613 Up : 32.127697 
+Up error smaller than x, Down error larger than x -> changing
+Value # 18
+Down: 10.612315 x: 9.955196 Up : 9.283095 
+Up error smaller than x, Down error larger than x -> changing
+Value # 19
+Down: 1.162355 x: 1.089566 Up : 1.015064 
+Up error smaller than x, Down error larger than x -> changing
+
+Sorted Up Variations:
+[10.87792873, 100.3618164, 321.2588806, 604.713501, 705.4628906, 569.5987549, 459.5849915, 401.009613, 347.3455811, 306.1850891, 277.0958252, 249.1959076, 210.576355, 182.1112366, 147.2534943, 114.9022293, 73.00845337, 36.74768448, 10.61231518, 1.162355065]
+
+Sorted Down Variations:
+[9.454805374, 87.41799164, 282.1500854, 530.843689, 619.4385376, 500.8450317, 402.9717407, 351.8103943, 304.5674133, 268.0661011, 242.4317627, 218.3823242, 184.2084045, 159.3548889, 128.7051544, 100.4873276, 63.8327179, 32.12769699, 9.28309536, 1.015063643]
+Down: 9.454805 x: 10.172641 Diff : 0.717835 SquareOfDiff:0.515288 
+Up: 10.877929 x: 10.172641 Diff : 0.705288 SquareOfDiff:0.497431 
+Down: 87.417992 x: 93.950531 Diff : 6.532539 SquareOfDiff:42.674071 
+Up: 100.361816 x: 93.950531 Diff : 6.411285 SquareOfDiff:41.104580 
+Down: 282.150085 x: 301.909729 Diff : 19.759644 SquareOfDiff:390.443515 
+Up: 321.258881 x: 301.909729 Diff : 19.349152 SquareOfDiff:374.389668 
+Down: 530.843689 x: 568.159790 Diff : 37.316101 SquareOfDiff:1392.491394 
+Up: 604.713501 x: 568.159790 Diff : 36.553711 SquareOfDiff:1336.173788 
+Down: 619.438538 x: 662.900574 Diff : 43.462036 SquareOfDiff:1888.948582 
+Up: 705.462891 x: 662.900574 Diff : 42.562317 SquareOfDiff:1811.550820 
+Down: 500.845032 x: 535.591065 Diff : 34.746033 SquareOfDiff:1207.286795 
+Up: 569.598755 x: 535.591065 Diff : 34.007690 SquareOfDiff:1156.523006 
+Down: 402.971741 x: 431.565002 Diff : 28.593262 SquareOfDiff:817.574615 
+Up: 459.584992 x: 431.565002 Diff : 28.019989 SquareOfDiff:785.119789 
+Down: 351.810394 x: 376.657959 Diff : 24.847565 SquareOfDiff:617.401472 
+Up: 401.009613 x: 376.657959 Diff : 24.351654 SquareOfDiff:593.003053 
+Down: 304.567413 x: 326.158234 Diff : 21.590820 SquareOfDiff:466.163521 
+Up: 347.345581 x: 326.158234 Diff : 21.187347 SquareOfDiff:448.903694 
+Down: 268.066101 x: 287.320129 Diff : 19.254028 SquareOfDiff:370.717606 
+Up: 306.185089 x: 287.320129 Diff : 18.864960 SquareOfDiff:355.886704 
+Down: 242.431763 x: 259.924927 Diff : 17.493164 SquareOfDiff:306.010790 
+Up: 277.095825 x: 259.924927 Diff : 17.170898 SquareOfDiff:294.839752 
+Down: 218.382324 x: 233.949249 Diff : 15.566925 SquareOfDiff:242.329157 
+Up: 249.195908 x: 233.949249 Diff : 15.246658 SquareOfDiff:232.460589 
+Down: 184.208405 x: 197.516708 Diff : 13.308304 SquareOfDiff:177.110953 
+Up: 210.576355 x: 197.516708 Diff : 13.059647 SquareOfDiff:170.554369 
+Down: 159.354889 x: 170.847870 Diff : 11.492981 SquareOfDiff:132.088612 
+Up: 182.111237 x: 170.847870 Diff : 11.263367 SquareOfDiff:126.863429 
+Down: 128.705154 x: 138.067810 Diff : 9.362656 SquareOfDiff:87.659322 
+Up: 147.253494 x: 138.067810 Diff : 9.185684 SquareOfDiff:84.376794 
+Down: 100.487328 x: 107.761383 Diff : 7.274056 SquareOfDiff:52.911883 
+Up: 114.902229 x: 107.761383 Diff : 7.140846 SquareOfDiff:50.991684 
+Down: 63.832718 x: 68.466736 Diff : 4.634018 SquareOfDiff:21.474122 
+Up: 73.008453 x: 68.466736 Diff : 4.541718 SquareOfDiff:20.627198 
+Down: 32.127697 x: 34.460613 Diff : 2.332916 SquareOfDiff:5.442498 
+Up: 36.747684 x: 34.460613 Diff : 2.287071 SquareOfDiff:5.230695 
+Down: 9.283095 x: 9.955196 Diff : 0.672101 SquareOfDiff:0.451720 
+Up: 10.612315 x: 9.955196 Diff : 0.657119 SquareOfDiff:0.431805 
+Down: 1.015064 x: 1.089566 Diff : 0.074502 SquareOfDiff:0.005551 
+Up: 1.162355 x: 1.089566 Diff : 0.072790 SquareOfDiff:0.005298 
+Quadratic sums
+
+Summed Squared Up Variations:
+[5.7561899619932975, 490.68964992971917, 4248.330903045519, 15009.329690463794, 19306.039365798013, 14707.853659204276, 8893.374066808905, 6651.566809363436, 5035.805136795619, 4152.258174628407, 3376.843566150418, 2995.210970163054, 2094.4659886201316, 1507.81885900546, 990.32558154882, 619.2654186744904, 240.36444588705882, 58.39221170441673, 5.108167224083755, 0.03988145126350738]
+
+Summed Squared Down Variations:
+[3.2289969489925463, 270.8794098497055, 2439.2382177855357, 8554.755342541685, 11034.576376384466, 7947.060279910926, 5070.580153366513, 3865.3106248361864, 2883.404770765652, 2371.4087827248845, 1940.1734953943555, 1682.3322205096736, 1182.5481154412294, 871.4088861793198, 568.2095047878662, 349.82235936086056, 138.94579217784138, 33.98724191237086, 2.856071704501704, 0.02637311836382053]
+
+-----------------------
+Starting with wolframh1_bkg_CSVHFStats2_ 
+-----------------------
+
+Beginning SortVariations 
+
+Beginning FillUpVariations: 
+
+Beginning FillDownVariations: 
+
+Value # 0
+Down: 9.698840 x: 10.172641 Up : 10.630501 
+Value # 1
+Down: 89.465370 x: 93.950531 Up : 98.289032 
+Value # 2
+Down: 287.964539 x: 301.909729 Up : 315.367340 
+Value # 3
+Down: 542.160278 x: 568.159790 Up : 593.276184 
+Value # 4
+Down: 632.525330 x: 662.900574 Up : 692.254272 
+Value # 5
+Down: 511.250763 x: 535.591065 Up : 559.067688 
+Value # 6
+Down: 411.826141 x: 431.565002 Up : 450.612976 
+Value # 7
+Down: 359.394714 x: 376.657959 Up : 393.323456 
+Value # 8
+Down: 311.315216 x: 326.158234 Up : 340.486969 
+Value # 9
+Down: 273.988434 x: 287.320129 Up : 300.198761 
+Value # 10
+Down: 248.006912 x: 259.924927 Up : 271.422089 
+Value # 11
+Down: 223.244171 x: 233.949249 Up : 244.286102 
+Value # 12
+Down: 188.444367 x: 197.516708 Up : 206.276016 
+Value # 13
+Down: 162.952240 x: 170.847870 Up : 178.465408 
+Value # 14
+Down: 131.690369 x: 138.067810 Up : 144.231705 
+Value # 15
+Down: 102.813446 x: 107.761383 Up : 112.538155 
+Value # 16
+Down: 65.312538 x: 68.466736 Up : 71.516685 
+Value # 17
+Down: 32.944435 x: 34.460613 Up : 35.923519 
+Value # 18
+Down: 9.517920 x: 9.955196 Up : 10.377529 
+Value # 19
+Down: 1.042551 x: 1.089566 Up : 1.135364 
+
+Sorted Up Variations:
+[10.63050079, 98.28903198, 315.3673401, 593.2761841, 692.2542725, 559.067688, 450.6129761, 393.3234558, 340.486969, 300.198761, 271.4220886, 244.2861023, 206.2760162, 178.4654083, 144.2317047, 112.5381546, 71.51668549, 35.92351913, 10.37752914, 1.135364175]
+
+Sorted Down Variations:
+[9.698840141, 89.46537018, 287.9645386, 542.1602783, 632.5253296, 511.2507629, 411.8261414, 359.3947144, 311.3152161, 273.9884338, 248.0069122, 223.2441711, 188.4443665, 162.95224, 131.6903687, 102.813446, 65.31253815, 32.94443512, 9.517920494, 1.042550802]
+Down: 9.698840 x: 10.172641 Diff : 0.473801 SquareOfDiff:0.224487 
+Up: 10.630501 x: 10.172641 Diff : 0.457860 SquareOfDiff:0.209636 
+Down: 89.465370 x: 93.950531 Diff : 4.485161 SquareOfDiff:20.116668 
+Up: 98.289032 x: 93.950531 Diff : 4.338501 SquareOfDiff:18.822591 
+Down: 287.964539 x: 301.909729 Diff : 13.945190 SquareOfDiff:194.468335 
+Up: 315.367340 x: 301.909729 Diff : 13.457611 SquareOfDiff:181.107297 
+Down: 542.160278 x: 568.159790 Diff : 25.999512 SquareOfDiff:675.974609 
+Up: 593.276184 x: 568.159790 Diff : 25.116394 SquareOfDiff:630.833253 
+Down: 632.525330 x: 662.900574 Diff : 30.375244 SquareOfDiff:922.655454 
+Up: 692.254272 x: 662.900574 Diff : 29.353699 SquareOfDiff:861.639633 
+Down: 511.250763 x: 535.591065 Diff : 24.340302 SquareOfDiff:592.450282 
+Up: 559.067688 x: 535.591065 Diff : 23.476623 SquareOfDiff:551.151851 
+Down: 411.826141 x: 431.565002 Diff : 19.738861 SquareOfDiff:389.622634 
+Up: 450.612976 x: 431.565002 Diff : 19.047974 SquareOfDiff:362.825302 
+Down: 359.394714 x: 376.657959 Diff : 17.263245 SquareOfDiff:298.019614 
+Up: 393.323456 x: 376.657959 Diff : 16.665497 SquareOfDiff:277.738784 
+Down: 311.315216 x: 326.158234 Diff : 14.843018 SquareOfDiff:220.315169 
+Up: 340.486969 x: 326.158234 Diff : 14.328735 SquareOfDiff:205.312658 
+Down: 273.988434 x: 287.320129 Diff : 13.331696 SquareOfDiff:177.734108 
+Up: 300.198761 x: 287.320129 Diff : 12.878632 SquareOfDiff:165.859152 
+Down: 248.006912 x: 259.924927 Diff : 11.918015 SquareOfDiff:142.039072 
+Up: 271.422089 x: 259.924927 Diff : 11.497162 SquareOfDiff:132.184729 
+Down: 223.244171 x: 233.949249 Diff : 10.705078 SquareOfDiff:114.598699 
+Up: 244.286102 x: 233.949249 Diff : 10.336853 SquareOfDiff:106.850530 
+Down: 188.444367 x: 197.516708 Diff : 9.072342 SquareOfDiff:82.307388 
+Up: 206.276016 x: 197.516708 Diff : 8.759308 SquareOfDiff:76.725473 
+Down: 162.952240 x: 170.847870 Diff : 7.895630 SquareOfDiff:62.340972 
+Up: 178.465408 x: 170.847870 Diff : 7.617538 SquareOfDiff:58.026891 
+Down: 131.690369 x: 138.067810 Diff : 6.377441 SquareOfDiff:40.671759 
+Up: 144.231705 x: 138.067810 Diff : 6.163895 SquareOfDiff:37.993597 
+Down: 102.813446 x: 107.761383 Diff : 4.947937 SquareOfDiff:24.482082 
+Up: 112.538155 x: 107.761383 Diff : 4.776771 SquareOfDiff:22.817546 
+Down: 65.312538 x: 68.466736 Diff : 3.154198 SquareOfDiff:9.948963 
+Up: 71.516685 x: 68.466736 Diff : 3.049950 SquareOfDiff:9.302193 
+Down: 32.944435 x: 34.460613 Diff : 1.516178 SquareOfDiff:2.298796 
+Up: 35.923519 x: 34.460613 Diff : 1.462906 SquareOfDiff:2.140094 
+Down: 9.517920 x: 9.955196 Diff : 0.437276 SquareOfDiff:0.191210 
+Up: 10.377529 x: 9.955196 Diff : 0.422333 SquareOfDiff:0.178365 
+Down: 1.042551 x: 1.089566 Diff : 0.047015 SquareOfDiff:0.002210 
+Up: 1.135364 x: 1.089566 Diff : 0.045799 SquareOfDiff:0.002098 
+Quadratic sums
+
+Summed Squared Up Variations:
+[5.965825732436097, 509.5122405964101, 4429.438199564362, 15640.162943050307, 20167.678999039133, 15259.005510165027, 9256.199368884796, 6929.305592954245, 5241.117794958831, 4318.1173265169255, 3509.0282956057977, 3102.061500106663, 2171.191461755272, 1565.8457502809345, 1028.319178188729, 642.0829646377026, 249.66663875459395, 60.53230531815531, 5.2865321834083066, 0.04197896842970567]
+
+Summed Squared Down Variations:
+[3.453484013461381, 290.9960775206719, 2633.7065530777877, 9230.729951180127, 11957.231830519053, 8539.510561889889, 5460.202786943835, 4163.330238955616, 3103.719939270959, 2549.1428902959437, 2082.2125674001686, 1796.9309197777889, 1264.855502991725, 933.7498576970941, 608.8812635983003, 374.304440906417, 148.89475524544275, 36.28603803426116, 3.047281905853341, 0.028583501696322317]
+
+-----------------------
+Starting with wolframh1_bkg_CSVHF_ 
+-----------------------
+
+Beginning SortVariations 
+
+Beginning FillUpVariations: 
+
+Beginning FillDownVariations: 
+
+Value # 0
+Down: 11.372339 x: 10.172641 Up : 9.788774 
+Up error smaller than x, Down error larger than x -> changing
+Value # 1
+Down: 103.738426 x: 93.950531 Up : 90.697311 
+Up error smaller than x, Down error larger than x -> changing
+Value # 2
+Down: 332.030151 x: 301.909729 Up : 286.859955 
+Up error smaller than x, Down error larger than x -> changing
+Value # 3
+Down: 620.824463 x: 568.159790 Up : 542.541077 
+Up error smaller than x, Down error larger than x -> changing
+Value # 4
+Down: 718.425354 x: 662.900574 Up : 634.676147 
+Up error smaller than x, Down error larger than x -> changing
+Value # 5
+Down: 581.252563 x: 535.591065 Up : 510.167053 
+Up error smaller than x, Down error larger than x -> changing
+Value # 6
+Down: 468.230438 x: 431.565002 Up : 412.607117 
+Up error smaller than x, Down error larger than x -> changing
+Value # 7
+Down: 409.084992 x: 376.657959 Up : 359.284393 
+Up error smaller than x, Down error larger than x -> changing
+Value # 8
+Down: 356.111969 x: 326.158234 Up : 311.020019 
+Up error smaller than x, Down error larger than x -> changing
+Value # 9
+Down: 311.960876 x: 287.320129 Up : 275.394745 
+Up error smaller than x, Down error larger than x -> changing
+Value # 10
+Down: 281.379394 x: 259.924927 Up : 249.801971 
+Up error smaller than x, Down error larger than x -> changing
+Value # 11
+Down: 254.505753 x: 233.949249 Up : 224.006576 
+Up error smaller than x, Down error larger than x -> changing
+Value # 12
+Down: 214.136414 x: 197.516708 Up : 191.396820 
+Up error smaller than x, Down error larger than x -> changing
+Value # 13
+Down: 185.204575 x: 170.847870 Up : 166.663177 
+Up error smaller than x, Down error larger than x -> changing
+Value # 14
+Down: 150.037277 x: 138.067810 Up : 134.217010 
+Up error smaller than x, Down error larger than x -> changing
+Value # 15
+Down: 117.032021 x: 107.761383 Up : 105.212303 
+Up error smaller than x, Down error larger than x -> changing
+Value # 16
+Down: 74.287621 x: 68.466736 Up : 67.585487 
+Up error smaller than x, Down error larger than x -> changing
+Value # 17
+Down: 37.451412 x: 34.460613 Up : 33.582905 
+Up error smaller than x, Down error larger than x -> changing
+Value # 18
+Down: 10.754156 x: 9.955196 Up : 9.717072 
+Up error smaller than x, Down error larger than x -> changing
+Value # 19
+Down: 1.181859 x: 1.089566 Up : 1.083776 
+Up error smaller than x, Down error larger than x -> changing
+
+Sorted Up Variations:
+[11.37233925, 103.7384262, 332.0301514, 620.8244629, 718.425354, 581.2525635, 468.2304382, 409.0849915, 356.111969, 311.9608765, 281.3793945, 254.5057526, 214.1364136, 185.2045746, 150.0372772, 117.0320206, 74.28762054, 37.4514122, 10.75415611, 1.181858897]
+
+Sorted Down Variations:
+[9.78877449, 90.6973114, 286.8599548, 542.5410767, 634.6761475, 510.1670532, 412.6071167, 359.2843933, 311.0200195, 275.3947449, 249.8019714, 224.0065765, 191.3968201, 166.6631775, 134.2170105, 105.2123032, 67.58548737, 33.58290482, 9.717071533, 1.08377564]
+Down: 9.788774 x: 10.172641 Diff : 0.383866 SquareOfDiff:0.147353 
+Up: 11.372339 x: 10.172641 Diff : 1.199698 SquareOfDiff:1.439276 
+Down: 90.697311 x: 93.950531 Diff : 3.253220 SquareOfDiff:10.583438 
+Up: 103.738426 x: 93.950531 Diff : 9.787895 SquareOfDiff:95.802892 
+Down: 286.859955 x: 301.909729 Diff : 15.049774 SquareOfDiff:226.495703 
+Up: 332.030151 x: 301.909729 Diff : 30.120422 SquareOfDiff:907.239846 
+Down: 542.541077 x: 568.159790 Diff : 25.618713 SquareOfDiff:656.318471 
+Up: 620.824463 x: 568.159790 Diff : 52.664673 SquareOfDiff:2773.567772 
+Down: 634.676147 x: 662.900574 Diff : 28.224426 SquareOfDiff:796.618234 
+Up: 718.425354 x: 662.900574 Diff : 55.524780 SquareOfDiff:3083.001227 
+Down: 510.167053 x: 535.591065 Diff : 25.424011 SquareOfDiff:646.380351 
+Up: 581.252563 x: 535.591065 Diff : 45.661499 SquareOfDiff:2084.972491 
+Down: 412.607117 x: 431.565002 Diff : 18.957886 SquareOfDiff:359.401430 
+Up: 468.230438 x: 431.565002 Diff : 36.665436 SquareOfDiff:1344.354182 
+Down: 359.284393 x: 376.657959 Diff : 17.373566 SquareOfDiff:301.840785 
+Up: 409.084992 x: 376.657959 Diff : 32.427032 SquareOfDiff:1051.512437 
+Down: 311.020019 x: 326.158234 Diff : 15.138214 SquareOfDiff:229.165526 
+Up: 356.111969 x: 326.158234 Diff : 29.953735 SquareOfDiff:897.226264 
+Down: 275.394745 x: 287.320129 Diff : 11.925385 SquareOfDiff:142.214795 
+Up: 311.960876 x: 287.320129 Diff : 24.640747 SquareOfDiff:607.166418 
+Down: 249.801971 x: 259.924927 Diff : 10.122955 SquareOfDiff:102.474226 
+Up: 281.379394 x: 259.924927 Diff : 21.454468 SquareOfDiff:460.294184 
+Down: 224.006576 x: 233.949249 Diff : 9.942673 SquareOfDiff:98.856742 
+Up: 254.505753 x: 233.949249 Diff : 20.556503 SquareOfDiff:422.569828 
+Down: 191.396820 x: 197.516708 Diff : 6.119888 SquareOfDiff:37.453033 
+Up: 214.136414 x: 197.516708 Diff : 16.619705 SquareOfDiff:276.214601 
+Down: 166.663177 x: 170.847870 Diff : 4.184692 SquareOfDiff:17.511650 
+Up: 185.204575 x: 170.847870 Diff : 14.356705 SquareOfDiff:206.114970 
+Down: 134.217010 x: 138.067810 Diff : 3.850800 SquareOfDiff:14.828658 
+Up: 150.037277 x: 138.067810 Diff : 11.969467 SquareOfDiff:143.268143 
+Down: 105.212303 x: 107.761383 Diff : 2.549080 SquareOfDiff:6.497808 
+Up: 117.032021 x: 107.761383 Diff : 9.270637 SquareOfDiff:85.944720 
+Down: 67.585487 x: 68.466736 Diff : 0.881248 SquareOfDiff:0.776599 
+Up: 74.287621 x: 68.466736 Diff : 5.820885 SquareOfDiff:33.882699 
+Down: 33.582905 x: 34.460613 Diff : 0.877708 SquareOfDiff:0.770372 
+Up: 37.451412 x: 34.460613 Diff : 2.990799 SquareOfDiff:8.944878 
+Down: 9.717072 x: 9.955196 Diff : 0.238125 SquareOfDiff:0.056703 
+Up: 10.754156 x: 9.955196 Diff : 0.798960 SquareOfDiff:0.638337 
+Down: 1.083776 x: 1.089566 Diff : 0.005790 SquareOfDiff:0.000034 
+Up: 1.181859 x: 1.089566 Diff : 0.092293 SquareOfDiff:0.008518 
+Quadratic sums
+
+Summed Squared Up Variations:
+[7.405102103368499, 605.3151328468352, 5336.678045118783, 18413.730714714293, 23250.680226402397, 17343.978001092022, 10600.553551288715, 7980.818029710301, 6138.3440593720425, 4925.283744163084, 3969.3224798961414, 3524.631328029574, 2447.406062690179, 1771.9607201239364, 1171.5873208467115, 728.0276842941087, 283.54933744528813, 69.4771836774764, 5.92486883197206, 0.050497036606116825]
+
+Summed Squared Down Variations:
+[3.600837357414397, 301.5795153515605, 2860.202256548773, 9887.048422327727, 12753.850064838301, 9185.890912472418, 5819.6042171581, 4465.171024087833, 3332.8854654083984, 2691.357685768784, 2184.686793430557, 1895.7876621856487, 1302.3085357962016, 951.261508179712, 623.7099211576606, 380.8022492430011, 149.67135411132008, 37.05641012235422, 3.103985349088364, 0.02861702436041769]
+
+-----------------------
+Starting with wolframh1_bkg_CSVLFStats1_ 
+-----------------------
+
+Beginning SortVariations 
+
+Beginning FillUpVariations: 
+
+Beginning FillDownVariations: 
+
+Value # 0
+Down: 10.969279 x: 10.172641 Up : 9.953086 
+Up error smaller than x, Down error larger than x -> changing
+Value # 1
+Down: 100.400482 x: 93.950531 Up : 91.694092 
+Up error smaller than x, Down error larger than x -> changing
+Value # 2
+Down: 322.206573 x: 301.909729 Up : 291.293030 
+Up error smaller than x, Down error larger than x -> changing
+Value # 3
+Down: 604.295288 x: 568.159790 Up : 549.316772 
+Up error smaller than x, Down error larger than x -> changing
+Value # 4
+Down: 702.283875 x: 662.900574 Up : 641.047180 
+Up error smaller than x, Down error larger than x -> changing
+Value # 5
+Down: 567.578064 x: 535.591065 Up : 515.908203 
+Up error smaller than x, Down error larger than x -> changing
+Value # 6
+Down: 456.985657 x: 431.565002 Up : 417.186523 
+Up error smaller than x, Down error larger than x -> changing
+Value # 7
+Down: 399.382324 x: 376.657959 Up : 363.271942 
+Up error smaller than x, Down error larger than x -> changing
+Value # 8
+Down: 347.317779 x: 326.158234 Up : 314.746704 
+Up error smaller than x, Down error larger than x -> changing
+Value # 9
+Down: 304.279785 x: 287.320129 Up : 278.573181 
+Up error smaller than x, Down error larger than x -> changing
+Value # 10
+Down: 274.771759 x: 259.924927 Up : 252.402771 
+Up error smaller than x, Down error larger than x -> changing
+Value # 11
+Down: 248.166031 x: 233.949249 Up : 226.312500 
+Up error smaller than x, Down error larger than x -> changing
+Value # 12
+Down: 209.097611 x: 197.516708 Up : 192.557770 
+Up error smaller than x, Down error larger than x -> changing
+Value # 13
+Down: 180.930115 x: 170.847870 Up : 167.303116 
+Up error smaller than x, Down error larger than x -> changing
+Value # 14
+Down: 146.632340 x: 138.067810 Up : 134.887222 
+Up error smaller than x, Down error larger than x -> changing
+Value # 15
+Down: 114.453873 x: 107.761383 Up : 105.726891 
+Up error smaller than x, Down error larger than x -> changing
+Value # 16
+Down: 72.761223 x: 68.466736 Up : 67.561386 
+Up error smaller than x, Down error larger than x -> changing
+Value # 17
+Down: 36.741936 x: 34.460613 Up : 33.684612 
+Up error smaller than x, Down error larger than x -> changing
+Value # 18
+Down: 10.605774 x: 9.955196 Up : 9.746609 
+Up error smaller than x, Down error larger than x -> changing
+Value # 19
+Down: 1.168027 x: 1.089566 Up : 1.086932 
+Up error smaller than x, Down error larger than x -> changing
+
+Sorted Up Variations:
+[10.96927929, 100.4004822, 322.2065735, 604.2952881, 702.2838745, 567.578064, 456.9856567, 399.3823242, 347.3177795, 304.2797852, 274.771759, 248.1660309, 209.0976105, 180.9301147, 146.6323395, 114.4538727, 72.76122284, 36.74193573, 10.60577393, 1.168027163]
+
+Sorted Down Variations:
+[9.953085899, 91.6940918, 291.2930298, 549.3167725, 641.0471802, 515.9082031, 417.1865234, 363.2719421, 314.7467041, 278.5731812, 252.402771, 226.3125, 192.5577698, 167.3031158, 134.8872223, 105.7268906, 67.56138611, 33.68461227, 9.746608734, 1.086931586]
+Down: 9.953086 x: 10.172641 Diff : 0.219555 SquareOfDiff:0.048204 
+Up: 10.969279 x: 10.172641 Diff : 0.796638 SquareOfDiff:0.634633 
+Down: 91.694092 x: 93.950531 Diff : 2.256439 SquareOfDiff:5.091518 
+Up: 100.400482 x: 93.950531 Diff : 6.449951 SquareOfDiff:41.601870 
+Down: 291.293030 x: 301.909729 Diff : 10.616699 SquareOfDiff:112.714302 
+Up: 322.206573 x: 301.909729 Diff : 20.296844 SquareOfDiff:411.961897 
+Down: 549.316772 x: 568.159790 Diff : 18.843018 SquareOfDiff:355.059309 
+Up: 604.295288 x: 568.159790 Diff : 36.135498 SquareOfDiff:1305.774223 
+Down: 641.047180 x: 662.900574 Diff : 21.853394 SquareOfDiff:477.570807 
+Up: 702.283875 x: 662.900574 Diff : 39.383301 SquareOfDiff:1551.044382 
+Down: 515.908203 x: 535.591065 Diff : 19.682861 SquareOfDiff:387.415033 
+Up: 567.578064 x: 535.591065 Diff : 31.987000 SquareOfDiff:1023.168137 
+Down: 417.186523 x: 431.565002 Diff : 14.378479 SquareOfDiff:206.740658 
+Up: 456.985657 x: 431.565002 Diff : 25.420654 SquareOfDiff:646.209665 
+Down: 363.271942 x: 376.657959 Diff : 13.386017 SquareOfDiff:179.185448 
+Up: 399.382324 x: 376.657959 Diff : 22.724365 SquareOfDiff:516.396774 
+Down: 314.746704 x: 326.158234 Diff : 11.411530 SquareOfDiff:130.223006 
+Up: 347.317779 x: 326.158234 Diff : 21.159546 SquareOfDiff:447.726383 
+Down: 278.573181 x: 287.320129 Diff : 8.746948 SquareOfDiff:76.509103 
+Up: 304.279785 x: 287.320129 Diff : 16.959656 SquareOfDiff:287.629925 
+Down: 252.402771 x: 259.924927 Diff : 7.522156 SquareOfDiff:56.582828 
+Up: 274.771759 x: 259.924927 Diff : 14.846832 SquareOfDiff:220.428426 
+Down: 226.312500 x: 233.949249 Diff : 7.636749 SquareOfDiff:58.319940 
+Up: 248.166031 x: 233.949249 Diff : 14.216782 SquareOfDiff:202.116879 
+Down: 192.557770 x: 197.516708 Diff : 4.958939 SquareOfDiff:24.591072 
+Up: 209.097611 x: 197.516708 Diff : 11.580902 SquareOfDiff:134.117293 
+Down: 167.303116 x: 170.847870 Diff : 3.544754 SquareOfDiff:12.565282 
+Up: 180.930115 x: 170.847870 Diff : 10.082245 SquareOfDiff:101.651660 
+Down: 134.887222 x: 138.067810 Diff : 3.180588 SquareOfDiff:10.116139 
+Up: 146.632340 x: 138.067810 Diff : 8.564529 SquareOfDiff:73.351164 
+Down: 105.726891 x: 107.761383 Diff : 2.034492 SquareOfDiff:4.139160 
+Up: 114.453873 x: 107.761383 Diff : 6.692490 SquareOfDiff:44.789417 
+Down: 67.561386 x: 68.466736 Diff : 0.905350 SquareOfDiff:0.819658 
+Up: 72.761223 x: 68.466736 Diff : 4.294487 SquareOfDiff:18.442619 
+Down: 33.684612 x: 34.460613 Diff : 0.776001 SquareOfDiff:0.602178 
+Up: 36.741936 x: 34.460613 Diff : 2.281322 SquareOfDiff:5.204432 
+Down: 9.746609 x: 9.955196 Diff : 0.208588 SquareOfDiff:0.043509 
+Up: 10.605774 x: 9.955196 Diff : 0.650578 SquareOfDiff:0.423251 
+Down: 1.086932 x: 1.089566 Diff : 0.002634 SquareOfDiff:0.000007 
+Up: 1.168027 x: 1.089566 Diff : 0.078462 SquareOfDiff:0.006156 
+Quadratic sums
+
+Summed Squared Up Variations:
+[8.039734987117978, 646.9170032002176, 5748.639941775962, 19719.50493764939, 24801.72460830568, 18367.146138105025, 11246.763216328822, 8497.214803453273, 6586.070442066248, 5212.913669017557, 4189.750906271098, 3726.748207091673, 2581.5233561399637, 1873.6123803310632, 1244.9384846901758, 772.8171013402168, 301.99195603845715, 74.68161593522976, 6.348119979234907, 0.056653266656069456]
+
+Summed Squared Down Variations:
+[3.649041711967517, 306.67103325998596, 2972.9165584520542, 10242.107730833037, 13231.420872304145, 9573.305945364027, 6026.344875511542, 4644.356472534919, 3463.108470937769, 2767.8667885822665, 2241.2696213100303, 1954.107602056699, 1326.8996078347716, 963.8267898091789, 633.8260599111695, 384.94140897555735, 150.49101224493114, 37.65858764331518, 3.147494155569361, 0.02862396194766259]
+
+-----------------------
+Starting with wolframh1_bkg_CSVLFStats2_ 
+-----------------------
+
+Beginning SortVariations 
+
+Beginning FillUpVariations: 
+
+Beginning FillDownVariations: 
+
+Value # 0
+Down: 10.315840 x: 10.172641 Up : 10.380863 
+Both variations are larger than x
+Setting down error to x
+Value # 1
+Down: 94.464005 x: 93.950531 Up : 95.635956 
+Both variations are larger than x
+Setting down error to x
+Value # 2
+Down: 302.115967 x: 301.909729 Up : 306.633758 
+Both variations are larger than x
+Setting down error to x
+Value # 3
+Down: 569.569214 x: 568.159790 Up : 575.419006 
+Both variations are larger than x
+Setting down error to x
+Value # 4
+Down: 665.042481 x: 662.900574 Up : 669.405823 
+Both variations are larger than x
+Setting down error to x
+Value # 5
+Down: 536.190796 x: 535.591065 Up : 540.827332 
+Both variations are larger than x
+Setting down error to x
+Value # 6
+Down: 432.325989 x: 431.565002 Up : 436.324554 
+Both variations are larger than x
+Setting down error to x
+Value # 7
+Down: 377.092590 x: 376.657959 Up : 380.432587 
+Both variations are larger than x
+Setting down error to x
+Value # 8
+Down: 326.775482 x: 326.158234 Up : 329.913818 
+Both variations are larger than x
+Setting down error to x
+Value # 9
+Down: 287.846252 x: 287.320129 Up : 290.743378 
+Both variations are larger than x
+Setting down error to x
+Value # 10
+Down: 260.313904 x: 259.924927 Up : 263.098083 
+Both variations are larger than x
+Setting down error to x
+Value # 11
+Down: 234.301117 x: 233.949249 Up : 236.912293 
+Both variations are larger than x
+Setting down error to x
+Value # 12
+Down: 198.400116 x: 197.516708 Up : 200.052887 
+Both variations are larger than x
+Setting down error to x
+Value # 13
+Down: 172.029022 x: 170.847870 Up : 173.018280 
+Both variations are larger than x
+Setting down error to x
+Value # 14
+Down: 138.741760 x: 138.067810 Up : 140.034531 
+Both variations are larger than x
+Setting down error to x
+Value # 15
+Down: 108.637619 x: 107.761383 Up : 109.288940 
+Both variations are larger than x
+Setting down error to x
+Value # 16
+Down: 69.324417 x: 68.466736 Up : 69.547691 
+Both variations are larger than x
+Setting down error to x
+Value # 17
+Down: 34.753910 x: 34.460613 Up : 34.991226 
+Both variations are larger than x
+Setting down error to x
+Value # 18
+Down: 10.078427 x: 9.955196 Up : 10.080942 
+Both variations are larger than x
+Setting down error to x
+Value # 19
+Down: 1.126093 x: 1.089566 Up : 1.109759 
+Both variations are larger than x
+Setting down error to x
+Down error larger than up, change down to up
+
+Sorted Up Variations:
+[10.38086319, 95.63595581, 306.6337585, 575.4190063, 669.4058228, 540.8273315, 436.3245544, 380.4325867, 329.9138184, 290.7433777, 263.0980835, 236.9122925, 200.052887, 173.01828, 140.0345306, 109.2889404, 69.54769135, 34.9912262, 10.08094215, 1.126093268]
+
+Sorted Down Variations:
+[10.1726408, 93.95053101, 301.909729, 568.15979, 662.9005737, 535.5910645, 431.5650024, 376.657959, 326.1582336, 287.3201294, 259.9249268, 233.9492493, 197.5167084, 170.8478699, 138.0678101, 107.7613831, 68.46673584, 34.46061325, 9.955196381, 1.089565516]
+Down: 10.172641 x: 10.172641 Diff : 0.000000 SquareOfDiff:0.000000 
+Up: 10.380863 x: 10.172641 Diff : 0.208222 SquareOfDiff:0.043357 
+Down: 93.950531 x: 93.950531 Diff : 0.000000 SquareOfDiff:0.000000 
+Up: 95.635956 x: 93.950531 Diff : 1.685425 SquareOfDiff:2.840657 
+Down: 301.909729 x: 301.909729 Diff : 0.000000 SquareOfDiff:0.000000 
+Up: 306.633758 x: 301.909729 Diff : 4.724029 SquareOfDiff:22.316455 
+Down: 568.159790 x: 568.159790 Diff : 0.000000 SquareOfDiff:0.000000 
+Up: 575.419006 x: 568.159790 Diff : 7.259216 SquareOfDiff:52.696221 
+Down: 662.900574 x: 662.900574 Diff : 0.000000 SquareOfDiff:0.000000 
+Up: 669.405823 x: 662.900574 Diff : 6.505249 SquareOfDiff:42.318266 
+Down: 535.591065 x: 535.591065 Diff : 0.000000 SquareOfDiff:0.000000 
+Up: 540.827332 x: 535.591065 Diff : 5.236267 SquareOfDiff:27.418492 
+Down: 431.565002 x: 431.565002 Diff : 0.000000 SquareOfDiff:0.000000 
+Up: 436.324554 x: 431.565002 Diff : 4.759552 SquareOfDiff:22.653335 
+Down: 376.657959 x: 376.657959 Diff : 0.000000 SquareOfDiff:0.000000 
+Up: 380.432587 x: 376.657959 Diff : 3.774628 SquareOfDiff:14.247814 
+Down: 326.158234 x: 326.158234 Diff : 0.000000 SquareOfDiff:0.000000 
+Up: 329.913818 x: 326.158234 Diff : 3.755585 SquareOfDiff:14.104417 
+Down: 287.320129 x: 287.320129 Diff : 0.000000 SquareOfDiff:0.000000 
+Up: 290.743378 x: 287.320129 Diff : 3.423248 SquareOfDiff:11.718629 
+Down: 259.924927 x: 259.924927 Diff : 0.000000 SquareOfDiff:0.000000 
+Up: 263.098083 x: 259.924927 Diff : 3.173157 SquareOfDiff:10.068923 
+Down: 233.949249 x: 233.949249 Diff : 0.000000 SquareOfDiff:0.000000 
+Up: 236.912293 x: 233.949249 Diff : 2.963043 SquareOfDiff:8.779625 
+Down: 197.516708 x: 197.516708 Diff : 0.000000 SquareOfDiff:0.000000 
+Up: 200.052887 x: 197.516708 Diff : 2.536179 SquareOfDiff:6.432202 
+Down: 170.847870 x: 170.847870 Diff : 0.000000 SquareOfDiff:0.000000 
+Up: 173.018280 x: 170.847870 Diff : 2.170410 SquareOfDiff:4.710680 
+Down: 138.067810 x: 138.067810 Diff : 0.000000 SquareOfDiff:0.000000 
+Up: 140.034531 x: 138.067810 Diff : 1.966721 SquareOfDiff:3.867990 
+Down: 107.761383 x: 107.761383 Diff : 0.000000 SquareOfDiff:0.000000 
+Up: 109.288940 x: 107.761383 Diff : 1.527557 SquareOfDiff:2.333431 
+Down: 68.466736 x: 68.466736 Diff : 0.000000 SquareOfDiff:0.000000 
+Up: 69.547691 x: 68.466736 Diff : 1.080956 SquareOfDiff:1.168465 
+Down: 34.460613 x: 34.460613 Diff : 0.000000 SquareOfDiff:0.000000 
+Up: 34.991226 x: 34.460613 Diff : 0.530613 SquareOfDiff:0.281550 
+Down: 9.955196 x: 9.955196 Diff : 0.000000 SquareOfDiff:0.000000 
+Up: 10.080942 x: 9.955196 Diff : 0.125746 SquareOfDiff:0.015812 
+Down: 1.089566 x: 1.089566 Diff : 0.000000 SquareOfDiff:0.000000 
+Up: 1.126093 x: 1.089566 Diff : 0.036528 SquareOfDiff:0.001334 
+Quadratic sums
+
+Summed Squared Up Variations:
+[8.08309155081529, 649.7576599566726, 5770.956396492832, 19772.201158939577, 24844.04287415873, 18394.564630200315, 11269.416551569526, 8511.46261772688, 6600.174859256239, 5224.632297941011, 4199.819829713852, 3735.5278320967395, 2587.9555580310616, 1878.3230603332452, 1248.806474215296, 775.1505326450001, 303.1604208530565, 74.96316603793746, 6.363931977656308, 0.057987543322242964]
+
+Summed Squared Down Variations:
+[3.649041711967517, 306.67103325998596, 2972.9165584520542, 10242.107730833037, 13231.420872304145, 9573.305945364027, 6026.344875511542, 4644.356472534919, 3463.108470937769, 2767.8667885822665, 2241.2696213100303, 1954.107602056699, 1326.8996078347716, 963.8267898091789, 633.8260599111695, 384.94140897555735, 150.49101224493114, 37.65858764331518, 3.147494155569361, 0.02862396194766259]
+
+-----------------------
+Starting with wolframh1_bkg_CSVLF_ 
+-----------------------
+
+Beginning SortVariations 
+
+Beginning FillUpVariations: 
+
+Beginning FillDownVariations: 
+
+Value # 0
+Down: 9.599734 x: 10.172641 Up : 10.986916 
+Value # 1
+Down: 88.747169 x: 93.950531 Up : 101.295021 
+Value # 2
+Down: 286.224365 x: 301.909729 Up : 323.913910 
+Value # 3
+Down: 538.106323 x: 568.159790 Up : 609.900574 
+Value # 4
+Down: 627.589844 x: 662.900574 Up : 712.152954 
+Value # 5
+Down: 506.932709 x: 535.591065 Up : 575.555481 
+Value # 6
+Down: 408.077057 x: 431.565002 Up : 464.661957 
+Value # 7
+Down: 356.243866 x: 376.657959 Up : 405.389252 
+Value # 8
+Down: 308.467987 x: 326.158234 Up : 351.252594 
+Value # 9
+Down: 271.536774 x: 287.320129 Up : 309.641632 
+Value # 10
+Down: 245.669174 x: 259.924927 Up : 280.074341 
+Value # 11
+Down: 221.250580 x: 233.949249 Up : 251.818451 
+Value # 12
+Down: 186.667068 x: 197.516708 Up : 212.878082 
+Value # 13
+Down: 161.531921 x: 170.847870 Up : 184.002869 
+Value # 14
+Down: 130.473572 x: 138.067810 Up : 148.833618 
+Value # 15
+Down: 101.855179 x: 107.761383 Up : 116.136604 
+Value # 16
+Down: 64.720749 x: 68.466736 Up : 73.716522 
+Value # 17
+Down: 32.617882 x: 34.460613 Up : 37.046700 
+Value # 18
+Down: 9.411580 x: 9.955196 Up : 10.713814 
+Value # 19
+Down: 1.027170 x: 1.089566 Up : 1.178639 
+
+Sorted Up Variations:
+[10.98691559, 101.2950211, 323.9139099, 609.9005737, 712.1529541, 575.555481, 464.6619568, 405.3892517, 351.252594, 309.6416321, 280.0743408, 251.8184509, 212.8780823, 184.0028687, 148.8336182, 116.1366043, 73.71652222, 37.04669952, 10.71381378, 1.178638697]
+
+Sorted Down Variations:
+[9.599734306, 88.74716949, 286.2243652, 538.1063232, 627.5898438, 506.9327087, 408.0770569, 356.243866, 308.4679871, 271.5367737, 245.6691742, 221.2505798, 186.6670685, 161.5319214, 130.4735718, 101.8551788, 64.7207489, 32.61788177, 9.411580086, 1.027169824]
+Down: 9.599734 x: 10.172641 Diff : 0.572906 SquareOfDiff:0.328222 
+Up: 10.986916 x: 10.172641 Diff : 0.814275 SquareOfDiff:0.663043 
+Down: 88.747169 x: 93.950531 Diff : 5.203362 SquareOfDiff:27.074971 
+Up: 101.295021 x: 93.950531 Diff : 7.344490 SquareOfDiff:53.941535 
+Down: 286.224365 x: 301.909729 Diff : 15.685364 SquareOfDiff:246.030638 
+Up: 323.913910 x: 301.909729 Diff : 22.004181 SquareOfDiff:484.183977 
+Down: 538.106323 x: 568.159790 Diff : 30.053467 SquareOfDiff:903.210867 
+Up: 609.900574 x: 568.159790 Diff : 41.740784 SquareOfDiff:1742.293024 
+Down: 627.589844 x: 662.900574 Diff : 35.310730 SquareOfDiff:1246.847646 
+Up: 712.152954 x: 662.900574 Diff : 49.252380 SquareOfDiff:2425.796975 
+Down: 506.932709 x: 535.591065 Diff : 28.658356 SquareOfDiff:821.301357 
+Up: 575.555481 x: 535.591065 Diff : 39.964416 SquareOfDiff:1597.154586 
+Down: 408.077057 x: 431.565002 Diff : 23.487946 SquareOfDiff:551.683584 
+Up: 464.661957 x: 431.565002 Diff : 33.096954 SquareOfDiff:1095.408391 
+Down: 356.243866 x: 376.657959 Diff : 20.414093 SquareOfDiff:416.735193 
+Up: 405.389252 x: 376.657959 Diff : 28.731293 SquareOfDiff:825.487180 
+Down: 308.467987 x: 326.158234 Diff : 17.690247 SquareOfDiff:312.944821 
+Up: 351.252594 x: 326.158234 Diff : 25.094360 SquareOfDiff:629.726924 
+Down: 271.536774 x: 287.320129 Diff : 15.783356 SquareOfDiff:249.114317 
+Up: 309.641632 x: 287.320129 Diff : 22.321503 SquareOfDiff:498.249483 
+Down: 245.669174 x: 259.924927 Diff : 14.255753 SquareOfDiff:203.226482 
+Up: 280.074341 x: 259.924927 Diff : 20.149414 SquareOfDiff:405.998885 
+Down: 221.250580 x: 233.949249 Diff : 12.698669 SquareOfDiff:161.256207 
+Up: 251.818451 x: 233.949249 Diff : 17.869202 SquareOfDiff:319.308366 
+Down: 186.667068 x: 197.516708 Diff : 10.849640 SquareOfDiff:117.714686 
+Up: 212.878082 x: 197.516708 Diff : 15.361374 SquareOfDiff:235.971808 
+Down: 161.531921 x: 170.847870 Diff : 9.315949 SquareOfDiff:86.786896 
+Up: 184.002869 x: 170.847870 Diff : 13.154999 SquareOfDiff:173.053993 
+Down: 130.473572 x: 138.067810 Diff : 7.594238 SquareOfDiff:57.672455 
+Up: 148.833618 x: 138.067810 Diff : 10.765808 SquareOfDiff:115.902624 
+Down: 101.855179 x: 107.761383 Diff : 5.906204 SquareOfDiff:34.883249 
+Up: 116.136604 x: 107.761383 Diff : 8.375221 SquareOfDiff:70.144330 
+Down: 64.720749 x: 68.466736 Diff : 3.745987 SquareOfDiff:14.032418 
+Up: 73.716522 x: 68.466736 Diff : 5.249786 SquareOfDiff:27.560257 
+Down: 32.617882 x: 34.460613 Diff : 1.842731 SquareOfDiff:3.395659 
+Up: 37.046700 x: 34.460613 Diff : 2.586086 SquareOfDiff:6.687842 
+Down: 9.411580 x: 9.955196 Diff : 0.543616 SquareOfDiff:0.295519 
+Up: 10.713814 x: 9.955196 Diff : 0.758617 SquareOfDiff:0.575500 
+Down: 1.027170 x: 1.089566 Diff : 0.062396 SquareOfDiff:0.003893 
+Up: 1.178639 x: 1.089566 Diff : 0.089073 SquareOfDiff:0.007934 
+Quadratic sums
+
+Summed Squared Up Variations:
+[8.746134984444835, 703.6991946387807, 6255.140373572756, 21514.49418282976, 27269.839849225034, 19991.719216385784, 12364.824942125202, 9336.949797939953, 7229.901783141326, 5722.881780727118, 4605.81871425725, 4054.836197918182, 2823.9273661266625, 2051.3770537612463, 1364.7090982613213, 845.2948627939295, 330.72067788869003, 81.65100823381995, 6.9394323357218335, 0.06592157489570173]
+
+Summed Squared Down Variations:
+[3.9772635628348887, 333.7460043678027, 3218.947195990405, 11145.318597531741, 14478.268518374896, 10394.607302523424, 6578.028459322513, 5061.091665547567, 3776.0532921685317, 3016.9811057349875, 2444.496103502437, 2115.363809126929, 1444.6142937944435, 1050.6136862638314, 691.4985152683564, 419.8246582088958, 164.52343039958166, 41.054246950698186, 3.4430128317588875, 0.03251718432782145]
+
+-----------------------
+Starting with wolframh1_bkg_JER_ 
+-----------------------
+
+Beginning SortVariations 
+
+Beginning FillUpVariations: 
+
+Beginning FillDownVariations: 
+
+Value # 0
+Down: 10.436757 x: 10.172641 Up : 10.752367 
+Both variations are larger than x
+Setting down error to x
+Value # 1
+Down: 92.672714 x: 93.950531 Up : 94.695946 
+Value # 2
+Down: 296.384216 x: 301.909729 Up : 295.322388 
+Both variations are smaller than x
+Setting up error to x
+up error smaller than down, change up error to down
+Value # 3
+Down: 565.185547 x: 568.159790 Up : 572.164123 
+Value # 4
+Down: 660.435120 x: 662.900574 Up : 661.982971 
+Both variations are smaller than x
+Setting up error to x
+Value # 5
+Down: 528.161255 x: 535.591065 Up : 533.473694 
+Both variations are smaller than x
+Setting up error to x
+Value # 6
+Down: 430.077850 x: 431.565002 Up : 428.994171 
+Both variations are smaller than x
+Setting up error to x
+up error smaller than down, change up error to down
+Value # 7
+Down: 371.806976 x: 376.657959 Up : 374.248261 
+Both variations are smaller than x
+Setting up error to x
+Value # 8
+Down: 324.539887 x: 326.158234 Up : 325.751465 
+Both variations are smaller than x
+Setting up error to x
+Value # 9
+Down: 284.670074 x: 287.320129 Up : 286.194763 
+Both variations are smaller than x
+Setting up error to x
+Value # 10
+Down: 257.622436 x: 259.924927 Up : 257.908539 
+Both variations are smaller than x
+Setting up error to x
+Value # 11
+Down: 230.379761 x: 233.949249 Up : 232.509705 
+Both variations are smaller than x
+Setting up error to x
+Value # 12
+Down: 195.319458 x: 197.516708 Up : 196.622818 
+Both variations are smaller than x
+Setting up error to x
+Value # 13
+Down: 168.770279 x: 170.847870 Up : 168.517380 
+Both variations are smaller than x
+Setting up error to x
+up error smaller than down, change up error to down
+Value # 14
+Down: 137.427292 x: 138.067810 Up : 138.723114 
+Value # 15
+Down: 106.418388 x: 107.761383 Up : 106.710716 
+Both variations are smaller than x
+Setting up error to x
+Value # 16
+Down: 68.947441 x: 68.466736 Up : 69.583809 
+Both variations are larger than x
+Setting down error to x
+Value # 17
+Down: 34.392082 x: 34.460613 Up : 34.523567 
+Value # 18
+Down: 10.243666 x: 9.955196 Up : 10.370731 
+Both variations are larger than x
+Setting down error to x
+Value # 19
+Down: 1.223744 x: 1.089566 Up : 1.262157 
+Both variations are larger than x
+Setting down error to x
+
+Sorted Up Variations:
+[10.75236702, 94.69594574, 301.909729, 572.1641235, 662.9005737, 535.5910645, 431.5650024, 376.657959, 326.1582336, 287.3201294, 259.9249268, 233.9492493, 197.5167084, 170.8478699, 138.723114, 107.7613831, 69.5838089, 34.5235672, 10.37073135, 1.262157321]
+
+Sorted Down Variations:
+[10.1726408, 92.67271423, 295.3223877, 565.1855469, 660.4351196, 528.1612549, 428.9941711, 371.8069763, 324.5398865, 284.6700745, 257.6224365, 230.3797607, 195.319458, 168.5173798, 137.4272919, 106.4183884, 68.46673584, 34.39208221, 9.955196381, 1.089565516]
+Down: 10.172641 x: 10.172641 Diff : 0.000000 SquareOfDiff:0.000000 
+Up: 10.752367 x: 10.172641 Diff : 0.579726 SquareOfDiff:0.336082 
+Down: 92.672714 x: 93.950531 Diff : 1.277817 SquareOfDiff:1.632816 
+Up: 94.695946 x: 93.950531 Diff : 0.745415 SquareOfDiff:0.555643 
+Down: 295.322388 x: 301.909729 Diff : 6.587341 SquareOfDiff:43.393065 
+Up: 301.909729 x: 301.909729 Diff : 0.000000 SquareOfDiff:0.000000 
+Down: 565.185547 x: 568.159790 Diff : 2.974243 SquareOfDiff:8.846122 
+Up: 572.164123 x: 568.159790 Diff : 4.004333 SquareOfDiff:16.034687 
+Down: 660.435120 x: 662.900574 Diff : 2.465454 SquareOfDiff:6.078464 
+Up: 662.900574 x: 662.900574 Diff : 0.000000 SquareOfDiff:0.000000 
+Down: 528.161255 x: 535.591065 Diff : 7.429810 SquareOfDiff:55.202071 
+Up: 535.591065 x: 535.591065 Diff : 0.000000 SquareOfDiff:0.000000 
+Down: 428.994171 x: 431.565002 Diff : 2.570831 SquareOfDiff:6.609174 
+Up: 431.565002 x: 431.565002 Diff : 0.000000 SquareOfDiff:0.000000 
+Down: 371.806976 x: 376.657959 Diff : 4.850983 SquareOfDiff:23.532033 
+Up: 376.657959 x: 376.657959 Diff : 0.000000 SquareOfDiff:0.000000 
+Down: 324.539887 x: 326.158234 Diff : 1.618347 SquareOfDiff:2.619047 
+Up: 326.158234 x: 326.158234 Diff : 0.000000 SquareOfDiff:0.000000 
+Down: 284.670074 x: 287.320129 Diff : 2.650055 SquareOfDiff:7.022791 
+Up: 287.320129 x: 287.320129 Diff : 0.000000 SquareOfDiff:0.000000 
+Down: 257.622436 x: 259.924927 Diff : 2.302490 SquareOfDiff:5.301462 
+Up: 259.924927 x: 259.924927 Diff : 0.000000 SquareOfDiff:0.000000 
+Down: 230.379761 x: 233.949249 Diff : 3.569489 SquareOfDiff:12.741249 
+Up: 233.949249 x: 233.949249 Diff : 0.000000 SquareOfDiff:0.000000 
+Down: 195.319458 x: 197.516708 Diff : 2.197250 SquareOfDiff:4.827909 
+Up: 197.516708 x: 197.516708 Diff : 0.000000 SquareOfDiff:0.000000 
+Down: 168.517380 x: 170.847870 Diff : 2.330490 SquareOfDiff:5.431184 
+Up: 170.847870 x: 170.847870 Diff : 0.000000 SquareOfDiff:0.000000 
+Down: 137.427292 x: 138.067810 Diff : 0.640518 SquareOfDiff:0.410264 
+Up: 138.723114 x: 138.067810 Diff : 0.655304 SquareOfDiff:0.429423 
+Down: 106.418388 x: 107.761383 Diff : 1.342995 SquareOfDiff:1.803635 
+Up: 107.761383 x: 107.761383 Diff : 0.000000 SquareOfDiff:0.000000 
+Down: 68.466736 x: 68.466736 Diff : 0.000000 SquareOfDiff:0.000000 
+Up: 69.583809 x: 68.466736 Diff : 1.117073 SquareOfDiff:1.247852 
+Down: 34.392082 x: 34.460613 Diff : 0.068531 SquareOfDiff:0.004697 
+Up: 34.523567 x: 34.460613 Diff : 0.062954 SquareOfDiff:0.003963 
+Down: 9.955196 x: 9.955196 Diff : 0.000000 SquareOfDiff:0.000000 
+Up: 10.370731 x: 9.955196 Diff : 0.415535 SquareOfDiff:0.172669 
+Down: 1.089566 x: 1.089566 Diff : 0.000000 SquareOfDiff:0.000000 
+Up: 1.262157 x: 1.089566 Diff : 0.172592 SquareOfDiff:0.029788 
+Quadratic sums
+
+Summed Squared Up Variations:
+[9.082217474600322, 704.2548377584817, 6255.140373572756, 21530.52886960898, 27269.839849225034, 19991.719216385784, 12364.824942125202, 9336.949797939953, 7229.901783141326, 5722.881780727118, 4605.81871425725, 4054.836197918182, 2823.9273661266625, 2051.3770537612463, 1365.1385214626764, 845.2948627939295, 331.9685301100678, 81.65497143364055, 7.112101646183664, 0.0957095060488598]
+
+Summed Squared Down Variations:
+[3.9772635628348887, 335.37882009105226, 3262.340261393091, 11154.164719549639, 14484.346982294102, 10449.809373215676, 6584.637632895573, 5084.623698703266, 3778.67233950461, 3024.0038967080013, 2449.7975650840312, 2128.105057992459, 1449.4422031147437, 1056.0448703700295, 691.9087788328876, 421.6282929731239, 164.52343039958166, 41.05894345414167, 3.4430128317588875, 0.03251718432782145]
+
+-----------------------
+Starting with wolframh1_bkg_JES_ 
+-----------------------
+
+Beginning SortVariations 
+
+Beginning FillUpVariations: 
+
+Beginning FillDownVariations: 
+
+Value # 0
+Down: 10.240381 x: 10.172641 Up : 11.533480 
+Both variations are larger than x
+Setting down error to x
+Value # 1
+Down: 87.422668 x: 93.950531 Up : 99.455849 
+Value # 2
+Down: 282.906342 x: 301.909729 Up : 309.397675 
+Value # 3
+Down: 538.672729 x: 568.159790 Up : 601.672546 
+Value # 4
+Down: 621.863464 x: 662.900574 Up : 696.025330 
+Value # 5
+Down: 501.015595 x: 535.591065 Up : 559.553284 
+Value # 6
+Down: 405.141785 x: 431.565002 Up : 457.000824 
+Value # 7
+Down: 352.992188 x: 376.657959 Up : 391.237152 
+Value # 8
+Down: 307.773529 x: 326.158234 Up : 343.444763 
+Value # 9
+Down: 270.206299 x: 287.320129 Up : 300.496033 
+Value # 10
+Down: 244.324234 x: 259.924927 Up : 272.097076 
+Value # 11
+Down: 219.224991 x: 233.949249 Up : 242.625717 
+Value # 12
+Down: 184.544861 x: 197.516708 Up : 208.230774 
+Value # 13
+Down: 159.342682 x: 170.847870 Up : 179.461456 
+Value # 14
+Down: 129.412857 x: 138.067810 Up : 147.985184 
+Value # 15
+Down: 99.392097 x: 107.761383 Up : 115.015778 
+Value # 16
+Down: 64.008713 x: 68.466736 Up : 75.934044 
+Value # 17
+Down: 31.346165 x: 34.460613 Up : 38.408669 
+Value # 18
+Down: 9.105062 x: 9.955196 Up : 11.985441 
+Value # 19
+Down: 0.970703 x: 1.089566 Up : 1.639412 
+
+Sorted Up Variations:
+[11.53347969, 99.45584869, 309.3976746, 601.6725464, 696.0253296, 559.5532837, 457.000824, 391.2371521, 343.4447632, 300.4960327, 272.0970764, 242.6257172, 208.2307739, 179.4614563, 147.9851837, 115.0157776, 75.93404388, 38.40866852, 11.98544121, 1.639411926]
+
+Sorted Down Variations:
+[10.1726408, 87.42266846, 282.9063416, 538.6727295, 621.8634644, 501.0155945, 405.1417847, 352.9921875, 307.7735291, 270.2062988, 244.324234, 219.2249908, 184.5448608, 159.3426819, 129.4128571, 99.39209747, 64.00871277, 31.3461647, 9.105062485, 0.9707030654]
+Down: 10.172641 x: 10.172641 Diff : 0.000000 SquareOfDiff:0.000000 
+Up: 11.533480 x: 10.172641 Diff : 1.360839 SquareOfDiff:1.851882 
+Down: 87.422668 x: 93.950531 Diff : 6.527863 SquareOfDiff:42.612989 
+Up: 99.455849 x: 93.950531 Diff : 5.505318 SquareOfDiff:30.308523 
+Down: 282.906342 x: 301.909729 Diff : 19.003387 SquareOfDiff:361.128733 
+Up: 309.397675 x: 301.909729 Diff : 7.487946 SquareOfDiff:56.069329 
+Down: 538.672729 x: 568.159790 Diff : 29.487061 SquareOfDiff:869.486737 
+Up: 601.672546 x: 568.159790 Diff : 33.512756 SquareOfDiff:1123.104842 
+Down: 621.863464 x: 662.900574 Diff : 41.037109 SquareOfDiff:1684.044340 
+Up: 696.025330 x: 662.900574 Diff : 33.124756 SquareOfDiff:1097.249453 
+Down: 501.015595 x: 535.591065 Diff : 34.575470 SquareOfDiff:1195.463126 
+Up: 559.553284 x: 535.591065 Diff : 23.962219 SquareOfDiff:574.187949 
+Down: 405.141785 x: 431.565002 Diff : 26.423218 SquareOfDiff:698.186434 
+Up: 457.000824 x: 431.565002 Diff : 25.435822 SquareOfDiff:646.981020 
+Down: 352.992188 x: 376.657959 Diff : 23.665772 SquareOfDiff:560.068741 
+Up: 391.237152 x: 376.657959 Diff : 14.579193 SquareOfDiff:212.552871 
+Down: 307.773529 x: 326.158234 Diff : 18.384704 SquareOfDiff:337.997360 
+Up: 343.444763 x: 326.158234 Diff : 17.286530 SquareOfDiff:298.824106 
+Down: 270.206299 x: 287.320129 Diff : 17.113831 SquareOfDiff:292.883198 
+Up: 300.496033 x: 287.320129 Diff : 13.175903 SquareOfDiff:173.604428 
+Down: 244.324234 x: 259.924927 Diff : 15.600693 SquareOfDiff:243.381616 
+Up: 272.097076 x: 259.924927 Diff : 12.172150 SquareOfDiff:148.161226 
+Down: 219.224991 x: 233.949249 Diff : 14.724258 SquareOfDiff:216.803788 
+Up: 242.625717 x: 233.949249 Diff : 8.676468 SquareOfDiff:75.281095 
+Down: 184.544861 x: 197.516708 Diff : 12.971848 SquareOfDiff:168.268830 
+Up: 208.230774 x: 197.516708 Diff : 10.714066 SquareOfDiff:114.791200 
+Down: 159.342682 x: 170.847870 Diff : 11.505188 SquareOfDiff:132.369351 
+Up: 179.461456 x: 170.847870 Diff : 8.613586 SquareOfDiff:74.193871 
+Down: 129.412857 x: 138.067810 Diff : 8.654953 SquareOfDiff:74.908211 
+Up: 147.985184 x: 138.067810 Diff : 9.917374 SquareOfDiff:98.354299 
+Down: 99.392097 x: 107.761383 Diff : 8.369286 SquareOfDiff:70.044942 
+Up: 115.015778 x: 107.761383 Diff : 7.254395 SquareOfDiff:52.626240 
+Down: 64.008713 x: 68.466736 Diff : 4.458023 SquareOfDiff:19.873970 
+Up: 75.934044 x: 68.466736 Diff : 7.467308 SquareOfDiff:55.760689 
+Down: 31.346165 x: 34.460613 Diff : 3.114449 SquareOfDiff:9.699790 
+Up: 38.408669 x: 34.460613 Diff : 3.948055 SquareOfDiff:15.587140 
+Down: 9.105062 x: 9.955196 Diff : 0.850134 SquareOfDiff:0.722728 
+Up: 11.985441 x: 9.955196 Diff : 2.030245 SquareOfDiff:4.121894 
+Down: 0.970703 x: 1.089566 Diff : 0.118862 SquareOfDiff:0.014128 
+Up: 1.639412 x: 1.089566 Diff : 0.549846 SquareOfDiff:0.302331 
+Quadratic sums
+
+Summed Squared Up Variations:
+[10.934099959136754, 734.5633605162021, 6311.209702881316, 22653.633711134717, 28367.089302659617, 20565.90716537463, 13011.805962592229, 9549.50266938704, 7528.7258887530015, 5896.48620849807, 4753.9799401420305, 4130.117293137912, 2938.7185656649526, 2125.5709244315112, 1463.4928205846531, 897.9211023555598, 387.7292194743165, 97.24211184861531, 11.2339957118649, 0.3980405806387479]
+
+Summed Squared Down Variations:
+[3.9772635628348887, 377.9918095627449, 3623.4689940675703, 12023.651456480306, 16168.391321994248, 11645.272498936576, 7282.824066517167, 5644.692439393479, 4116.669699056931, 3316.887094513497, 2693.1791809240026, 2344.908846367281, 1617.7110332723691, 1188.4142212853735, 766.8169902650967, 491.6732349296485, 184.39740009223385, 50.75873322473879, 4.165740472887028, 0.04664546649045889]
+
+-----------------------
+Starting with wolframh1_bkg_q2_ 
+-----------------------
+
+Beginning SortVariations 
+
+Beginning FillUpVariations: 
+
+Beginning FillDownVariations: 
+
+Value # 0
+Down: 11.666512 x: 10.172641 Up : 7.902847 
+Up error smaller than x, Down error larger than x -> changing
+Value # 1
+Down: 107.955063 x: 93.950531 Up : 76.095673 
+Up error smaller than x, Down error larger than x -> changing
+Value # 2
+Down: 344.851807 x: 301.909729 Up : 246.830872 
+Up error smaller than x, Down error larger than x -> changing
+Value # 3
+Down: 650.405945 x: 568.159790 Up : 468.101807 
+Up error smaller than x, Down error larger than x -> changing
+Value # 4
+Down: 758.016113 x: 662.900574 Up : 546.596130 
+Up error smaller than x, Down error larger than x -> changing
+Value # 5
+Down: 608.901733 x: 535.591065 Up : 442.459686 
+Up error smaller than x, Down error larger than x -> changing
+Value # 6
+Down: 486.942993 x: 431.565002 Up : 358.359100 
+Up error smaller than x, Down error larger than x -> changing
+Value # 7
+Down: 421.464630 x: 376.657959 Up : 311.891632 
+Up error smaller than x, Down error larger than x -> changing
+Value # 8
+Down: 368.289764 x: 326.158234 Up : 272.685364 
+Up error smaller than x, Down error larger than x -> changing
+Value # 9
+Down: 321.955383 x: 287.320129 Up : 238.603577 
+Up error smaller than x, Down error larger than x -> changing
+Value # 10
+Down: 290.389618 x: 259.924927 Up : 216.909302 
+Up error smaller than x, Down error larger than x -> changing
+Value # 11
+Down: 261.716888 x: 233.949249 Up : 196.379501 
+Up error smaller than x, Down error larger than x -> changing
+Value # 12
+Down: 220.631851 x: 197.516708 Up : 166.032990 
+Up error smaller than x, Down error larger than x -> changing
+Value # 13
+Down: 191.235580 x: 170.847870 Up : 143.628128 
+Up error smaller than x, Down error larger than x -> changing
+Value # 14
+Down: 153.999481 x: 138.067810 Up : 117.110390 
+Up error smaller than x, Down error larger than x -> changing
+Value # 15
+Down: 118.472107 x: 107.761383 Up : 90.661362 
+Up error smaller than x, Down error larger than x -> changing
+Value # 16
+Down: 76.762451 x: 68.466736 Up : 58.372284 
+Up error smaller than x, Down error larger than x -> changing
+Value # 17
+Down: 38.515675 x: 34.460613 Up : 29.423683 
+Up error smaller than x, Down error larger than x -> changing
+Value # 18
+Down: 11.096073 x: 9.955196 Up : 8.372041 
+Up error smaller than x, Down error larger than x -> changing
+Value # 19
+Down: 1.256265 x: 1.089566 Up : 0.941775 
+Up error smaller than x, Down error larger than x -> changing
+
+Sorted Up Variations:
+[11.66651154, 107.9550629, 344.8518066, 650.4059448, 758.0161133, 608.9017334, 486.9429932, 421.4646301, 368.2897644, 321.9553833, 290.3896179, 261.7168884, 220.6318512, 191.2355804, 153.9994812, 118.4721069, 76.76245117, 38.51567459, 11.09607315, 1.256265402]
+
+Sorted Down Variations:
+[7.90284729, 76.09567261, 246.8308716, 468.1018066, 546.5961304, 442.4596863, 358.3591003, 311.8916321, 272.6853638, 238.6035767, 216.9093018, 196.3795013, 166.0329895, 143.6281281, 117.1103897, 90.66136169, 58.37228394, 29.42368317, 8.372040749, 0.9417747855]
+Down: 7.902847 x: 10.172641 Diff : 2.269794 SquareOfDiff:5.151963 
+Up: 11.666512 x: 10.172641 Diff : 1.493871 SquareOfDiff:2.231650 
+Down: 76.095673 x: 93.950531 Diff : 17.854858 SquareOfDiff:318.795968 
+Up: 107.955063 x: 93.950531 Diff : 14.004532 SquareOfDiff:196.126913 
+Down: 246.830872 x: 301.909729 Diff : 55.078857 SquareOfDiff:3033.680532 
+Up: 344.851807 x: 301.909729 Diff : 42.942078 SquareOfDiff:1844.022029 
+Down: 468.101807 x: 568.159790 Diff : 100.057983 SquareOfDiff:10011.600042 
+Up: 650.405945 x: 568.159790 Diff : 82.246155 SquareOfDiff:6764.429979 
+Down: 546.596130 x: 662.900574 Diff : 116.304443 SquareOfDiff:13526.723531 
+Up: 758.016113 x: 662.900574 Diff : 95.115540 SquareOfDiff:9046.965873 
+Down: 442.459686 x: 535.591065 Diff : 93.131378 SquareOfDiff:8673.453605 
+Up: 608.901733 x: 535.591065 Diff : 73.310669 SquareOfDiff:5374.454175 
+Down: 358.359100 x: 431.565002 Diff : 73.205902 SquareOfDiff:5359.104102 
+Up: 486.942993 x: 431.565002 Diff : 55.377991 SquareOfDiff:3066.721865 
+Down: 311.891632 x: 376.657959 Diff : 64.766327 SquareOfDiff:4194.677100 
+Up: 421.464630 x: 376.657959 Diff : 44.806671 SquareOfDiff:2007.637775 
+Down: 272.685364 x: 326.158234 Diff : 53.472870 SquareOfDiff:2859.347805 
+Up: 368.289764 x: 326.158234 Diff : 42.131531 SquareOfDiff:1775.065888 
+Down: 238.603577 x: 287.320129 Diff : 48.716553 SquareOfDiff:2373.302507 
+Up: 321.955383 x: 287.320129 Diff : 34.635254 SquareOfDiff:1199.600813 
+Down: 216.909302 x: 259.924927 Diff : 43.015625 SquareOfDiff:1850.343994 
+Up: 290.389618 x: 259.924927 Diff : 30.464691 SquareOfDiff:928.097404 
+Down: 196.379501 x: 233.949249 Diff : 37.569748 SquareOfDiff:1411.485965 
+Up: 261.716888 x: 233.949249 Diff : 27.767639 SquareOfDiff:771.041781 
+Down: 166.032990 x: 197.516708 Diff : 31.483719 SquareOfDiff:991.224556 
+Up: 220.631851 x: 197.516708 Diff : 23.115143 SquareOfDiff:534.309827 
+Down: 143.628128 x: 170.847870 Diff : 27.219742 SquareOfDiff:740.914344 
+Up: 191.235580 x: 170.847870 Diff : 20.387710 SquareOfDiff:415.658739 
+Down: 117.110390 x: 138.067810 Diff : 20.957420 SquareOfDiff:439.213470 
+Up: 153.999481 x: 138.067810 Diff : 15.931671 SquareOfDiff:253.818144 
+Down: 90.661362 x: 107.761383 Diff : 17.100021 SquareOfDiff:292.410732 
+Up: 118.472107 x: 107.761383 Diff : 10.710724 SquareOfDiff:114.719604 
+Down: 58.372284 x: 68.466736 Diff : 10.094452 SquareOfDiff:101.897959 
+Up: 76.762451 x: 68.466736 Diff : 8.295715 SquareOfDiff:68.818893 
+Down: 29.423683 x: 34.460613 Diff : 5.036930 SquareOfDiff:25.370665 
+Up: 38.515675 x: 34.460613 Diff : 4.055061 SquareOfDiff:16.443522 
+Down: 8.372041 x: 9.955196 Diff : 1.583156 SquareOfDiff:2.506382 
+Up: 11.096073 x: 9.955196 Diff : 1.140877 SquareOfDiff:1.301600 
+Down: 0.941775 x: 1.089566 Diff : 0.147791 SquareOfDiff:0.021842 
+Up: 1.256265 x: 1.089566 Diff : 0.166700 SquareOfDiff:0.027789 
+Quadratic sums
+
+Summed Squared Up Variations:
+[13.165749746964902, 930.690273974229, 8155.231731485734, 29418.063690520277, 37414.05517605879, 25940.361339940056, 16078.52782763711, 11557.140444450617, 9303.791776304352, 7096.087021215535, 5682.077343960452, 4901.159074325763, 3473.0283923293446, 2541.2296638633215, 1717.310964623228, 1012.6407066754462, 456.54811231071363, 113.68563431977792, 12.53559551390878, 0.4258294326311609]
+
+Summed Squared Down Variations:
+[9.129226140873007, 696.7877780467959, 6657.149526557108, 22035.251498554993, 29695.114853317165, 20318.72610436802, 12641.928168791952, 9839.369539511146, 6976.017503704685, 5690.189601485374, 4543.523175064625, 3756.3948111507852, 2608.9355890465854, 1929.3285649440413, 1206.030460087433, 784.0839671521068, 286.29535925364735, 76.12939785554761, 6.672122228020349, 0.06848756651218249]
+Calculating Squareroots of each bin
+Filling final values
+Final Up Error 
+[13.801104627429577, 124.4577477623396, 392.2160506584849, 739.6767386975566, 856.3277051372903, 696.6511816610777, 558.3661373619439, 484.16210052231816, 422.6143986507854, 371.558404674459, 335.3044820120099, 303.95752791278807, 256.44911368206317, 221.25848052775694, 179.5082609255307, 139.58339916868186, 89.83372234513716, 45.122959817232655, 13.495760674147178, 1.7421215922349553]
+
+Final Down Error 
+[7.151179871761309, 67.55379299094174, 220.3183720646168, 419.7170350452533, 490.57786813478094, 393.04729541706877, 319.12867300068194, 277.4643627373826, 242.63567674435362, 211.88678397845996, 192.5192655016741, 172.65981455671994, 146.43896775843888, 126.92374708640199, 103.33986083593558, 79.75988372671453, 51.546471088712934, 25.735397043191853, 7.372151234661991, 0.827864223469408]
+
+Writing to file.
+
+
+=======================
+Starting with Signal calculations
+=======================
+
+
+Empty Signal Input
+
+
+Done.
+
+

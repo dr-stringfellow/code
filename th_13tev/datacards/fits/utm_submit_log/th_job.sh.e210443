@@ -1,0 +1,13 @@
+/usr/users/sfink/setup6_7120.sh: line 56: source: .profile: file not found
+TFile::Init:0: RuntimeWarning: file mlfit.root probably not closed, trying to recover
+Info in <TFile::Recover>: mlfit.root, recovered key TProcessID:ProcessID0 at address 220
+Info in <TFile::Recover>: mlfit.root, recovered key RooFitResult:nuisances_prefit_res at address 375
+Info in <TFile::Recover>: mlfit.root, recovered key RooArgSet:nuisances_prefit at address 2716
+Info in <TFile::Recover>: mlfit.root, recovered key RooArgSet:norm_prefit at address 4149
+Info in <TFile::Recover>: mlfit.root, recovered key RooFitResult:fit_b at address 5261
+Info in <TFile::Recover>: mlfit.root, recovered key RooArgSet:norm_fit_b at address 16722
+TFile::Init:0: RuntimeWarning: successfully recovered 6 keys
+Traceback (most recent call last):
+  File "mlfitNormsToText.py", line 21, in <module>
+    if fit_s  == None: raise RuntimeError, "Missing fit_s in %s. Did you run MaxLikelihoodFit with --saveNorm?" % file;
+RuntimeError: Missing fit_s in <ROOT.TFile object ("mlfit.root") at 0x2cbf5e0>. Did you run MaxLikelihoodFit with --saveNorm?
