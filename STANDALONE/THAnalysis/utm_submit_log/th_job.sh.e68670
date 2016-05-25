@@ -1,0 +1,3 @@
+/opt/ogs_sl6//ekpclusterSL6/spool/ekpblus001/job_scripts/68670: line 7: source: cmsswmaster.sh: file not found
+Error in <TCling::RegisterModule>: cannot find dictionary module AnaUtils_dict_rdict.pcm
+Error in <TFile::TFile>: file /storage/a/singletophiggs/13tev/mc_nov16/t/TT_TuneCUETP8M1_13TeV-powheg-pythia8.root does not exist

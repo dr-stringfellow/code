@@ -1,0 +1,128 @@
+imax   1   number of channels
+jmax   5   number of backgrounds
+kmax   *   number of systematics (automatic)
+------------------------------
+shapes * * ./tH_4tt_el.root  $CHANNEL__$PROCESS__nominal  $CHANNEL__$PROCESS__$SYSTEMATIC
+------------------------------
+bin                              tH_4tt_el         
+observation                      32                
+------------------------------
+bin                              tH_4tt_el         tH_4tt_el         tH_4tt_el         tH_4tt_el         tH_4tt_el         tH_4tt_el         
+process                          tH                s_Top             ttH               VV                Wj                TTdd              
+process                          0                 1                 2                 3                 4                 5                 
+rate                             0.578596          1.12712           1.45031           1.78814e-06       1.10512           25.2526           
+------------------------------
+CMS_tHq_CRPurity       shape     1                 1                 1                 1                 1                 1                 
+CMS_tHq_Closure        shape     1                 1                 1                 1                 1                 1                 
+CMS_tHq_BTagSFb        shape     1                 1                 1                 1                 1                 1                 
+CMS_tHq_BTagSFl        shape     1                 1                 1                 1                 1                 1                 
+CMS_tHq_Scale          shape     1                 1                 1                 1                 1                 1                 
+CMS_tHq_HFb            shape     1                 1                 1                 1                 1                 1                 
+CMS_tHq_HFbb           shape     1                 1                 1                 1                 1                 1                 
+CMS_tHq_HFc            shape     1                 1                 1                 1                 1                 1                 
+pdf_gg            lnN       -           -           1.09        -           -           -           
+pdf_qg            lnN       1.02        1.046       -           -           -           -           
+pdf_qqbar         lnN       -           -           -           -           1.048       -           
+QCDscale_ttbar    lnN       -           1.02        -           -           -           -           
+QCDscale_ttH      lnN       -           -           1.125       -           -           -           
+QCDscale_V        lnN       -           -           -           -           1.013       -           
+QCDscale_VV       lnN       -           -           -           1.035       -           -           
+lumi_8TeV         lnN       1.026       1.026       1.026       1.026       1.026       -           
+CMS_eff_m         lnN       -           -           -           -           -           -           
+CMS_eff_e         lnN       1.02        1.02        1.02        1.02        1.02        -           
+CMS_tHq_fake_b         shape     1                 1                 1                 1                 1                 1                 
+CMS_tHq_eff_b          shape     1                 1                 1                 1                 1                 1                 
+CMS_tHq_pu             shape     1                 1                 1                 1                 1                 1                 
+CMS_tHq_topPtcorr      shape     1                 1                 1                 1                 1                 1                 
+CMS_tHq_met            shape     1                 1                 1                 1                 1                 1                 
+CMS_res_j              shape     1                 1                 1                 1                 1                 1                 
+CMS_scale_j            shape     1                 1                 1                 1                 1                 1                 
+Q2scale_tH             shape     1                 1                 1                 1                 1                 1                 
+CMS_tHq_tH4el_bin1     shape     1.00        -           -           -           -           -           
+CMS_tHq_tH4el_bin2     shape     1.00        -           -           -           -           -           
+CMS_tHq_tH4el_bin3     shape     1.00        -           -           -           -           -           
+CMS_tHq_tH4el_bin4     shape     1.00        -           -           -           -           -           
+CMS_tHq_tH4el_bin5     shape     1.00        -           -           -           -           -           
+CMS_tHq_tH4el_bin6     shape     1.00        -           -           -           -           -           
+CMS_tHq_tH4el_bin7     shape     1.00        -           -           -           -           -           
+CMS_tHq_tH4el_bin8     shape     1.00        -           -           -           -           -           
+CMS_tHq_tH4el_bin9     shape     1.00        -           -           -           -           -           
+CMS_tHq_tH4el_bin10    shape     1.00        -           -           -           -           -           
+CMS_tHq_tH4el_bin11    shape     1.00        -           -           -           -           -           
+CMS_tHq_tH4el_bin12    shape     1.00        -           -           -           -           -           
+CMS_tHq_tH4el_bin14    shape     1.00        -           -           -           -           -           
+CMS_tHq_tH4el_bin15    shape     1.00        -           -           -           -           -           
+CMS_tHq_sTop4el_bin1   shape     -           1.00        -           -           -           -           
+CMS_tHq_sTop4el_bin2   shape     -           1.00        -           -           -           -           
+CMS_tHq_sTop4el_bin3   shape     -           1.00        -           -           -           -           
+CMS_tHq_sTop4el_bin4   shape     -           1.00        -           -           -           -           
+CMS_tHq_sTop4el_bin5   shape     -           1.00        -           -           -           -           
+CMS_tHq_sTop4el_bin6   shape     -           1.00        -           -           -           -           
+CMS_tHq_sTop4el_bin7   shape     -           1.00        -           -           -           -           
+CMS_tHq_sTop4el_bin8   shape     -           1.00        -           -           -           -           
+CMS_tHq_sTop4el_bin9   shape     -           1.00        -           -           -           -           
+CMS_tHq_sTop4el_bin10  shape     -           1.00        -           -           -           -           
+CMS_tHq_sTop4el_bin11  shape     -           1.00        -           -           -           -           
+CMS_tHq_sTop4el_bin12  shape     -           1.00        -           -           -           -           
+CMS_tHq_sTop4el_bin13  shape     -           1.00        -           -           -           -           
+CMS_tHq_sTop4el_bin14  shape     -           1.00        -           -           -           -           
+CMS_tHq_sTop4el_bin15  shape     -           1.00        -           -           -           -           
+CMS_tHq_ttH4el_bin1    shape     -           -           1.00        -           -           -           
+CMS_tHq_ttH4el_bin2    shape     -           -           1.00        -           -           -           
+CMS_tHq_ttH4el_bin3    shape     -           -           1.00        -           -           -           
+CMS_tHq_ttH4el_bin4    shape     -           -           1.00        -           -           -           
+CMS_tHq_ttH4el_bin5    shape     -           -           1.00        -           -           -           
+CMS_tHq_ttH4el_bin6    shape     -           -           1.00        -           -           -           
+CMS_tHq_ttH4el_bin7    shape     -           -           1.00        -           -           -           
+CMS_tHq_ttH4el_bin8    shape     -           -           1.00        -           -           -           
+CMS_tHq_ttH4el_bin9    shape     -           -           1.00        -           -           -           
+CMS_tHq_ttH4el_bin10   shape     -           -           1.00        -           -           -           
+CMS_tHq_ttH4el_bin11   shape     -           -           1.00        -           -           -           
+CMS_tHq_ttH4el_bin12   shape     -           -           1.00        -           -           -           
+CMS_tHq_ttH4el_bin13   shape     -           -           1.00        -           -           -           
+CMS_tHq_ttH4el_bin14   shape     -           -           1.00        -           -           -           
+CMS_tHq_ttH4el_bin15   shape     -           -           1.00        -           -           -           
+CMS_tHq_VV4el_bin1     shape     -           -           -           1.00        -           -           
+CMS_tHq_VV4el_bin2     shape     -           -           -           1.00        -           -           
+CMS_tHq_VV4el_bin3     shape     -           -           -           1.00        -           -           
+CMS_tHq_VV4el_bin4     shape     -           -           -           1.00        -           -           
+CMS_tHq_VV4el_bin5     shape     -           -           -           1.00        -           -           
+CMS_tHq_VV4el_bin6     shape     -           -           -           1.00        -           -           
+CMS_tHq_VV4el_bin7     shape     -           -           -           1.00        -           -           
+CMS_tHq_VV4el_bin8     shape     -           -           -           1.00        -           -           
+CMS_tHq_VV4el_bin9     shape     -           -           -           1.00        -           -           
+CMS_tHq_VV4el_bin10    shape     -           -           -           1.00        -           -           
+CMS_tHq_VV4el_bin11    shape     -           -           -           1.00        -           -           
+CMS_tHq_VV4el_bin12    shape     -           -           -           1.00        -           -           
+CMS_tHq_VV4el_bin13    shape     -           -           -           1.00        -           -           
+CMS_tHq_VV4el_bin14    shape     -           -           -           1.00        -           -           
+CMS_tHq_VV4el_bin15    shape     -           -           -           1.00        -           -           
+CMS_tHq_Wj4el_bin1     shape     -           -           -           -           1.00        -           
+CMS_tHq_Wj4el_bin2     shape     -           -           -           -           1.00        -           
+CMS_tHq_Wj4el_bin3     shape     -           -           -           -           1.00        -           
+CMS_tHq_Wj4el_bin4     shape     -           -           -           -           1.00        -           
+CMS_tHq_Wj4el_bin5     shape     -           -           -           -           1.00        -           
+CMS_tHq_Wj4el_bin6     shape     -           -           -           -           1.00        -           
+CMS_tHq_Wj4el_bin7     shape     -           -           -           -           1.00        -           
+CMS_tHq_Wj4el_bin8     shape     -           -           -           -           1.00        -           
+CMS_tHq_Wj4el_bin9     shape     -           -           -           -           1.00        -           
+CMS_tHq_Wj4el_bin10    shape     -           -           -           -           1.00        -           
+CMS_tHq_Wj4el_bin11    shape     -           -           -           -           1.00        -           
+CMS_tHq_Wj4el_bin12    shape     -           -           -           -           1.00        -           
+CMS_tHq_Wj4el_bin13    shape     -           -           -           -           1.00        -           
+CMS_tHq_Wj4el_bin14    shape     -           -           -           -           1.00        -           
+CMS_tHq_Wj4el_bin15    shape     -           -           -           -           1.00        -           
+CMS_tHq_TTdd4el_bin2   shape     -           -           -           -           -           1.00        
+CMS_tHq_TTdd4el_bin3   shape     -           -           -           -           -           1.00        
+CMS_tHq_TTdd4el_bin4   shape     -           -           -           -           -           1.00        
+CMS_tHq_TTdd4el_bin5   shape     -           -           -           -           -           1.00        
+CMS_tHq_TTdd4el_bin6   shape     -           -           -           -           -           1.00        
+CMS_tHq_TTdd4el_bin7   shape     -           -           -           -           -           1.00        
+CMS_tHq_TTdd4el_bin8   shape     -           -           -           -           -           1.00        
+CMS_tHq_TTdd4el_bin9   shape     -           -           -           -           -           1.00        
+CMS_tHq_TTdd4el_bin10  shape     -           -           -           -           -           1.00        
+CMS_tHq_TTdd4el_bin11  shape     -           -           -           -           -           1.00        
+CMS_tHq_TTdd4el_bin12  shape     -           -           -           -           -           1.00        
+CMS_tHq_TTdd4el_bin13  shape     -           -           -           -           -           1.00        
+CMS_tHq_TTdd4el_bin14  shape     -           -           -           -           -           1.00        
+CMS_tHq_TTdd4el_bin15  shape     -           -           -           -           -           1.00        

@@ -1,0 +1,117 @@
+#######################
+#                     #
+#    th_datatomc_x    #
+#                     #
+#######################
+
+tool to produce plots comparing mc to data using the command line
+
+
+Minimal example:
+
+th_datatomc_x -mcs "mc.root" -varexpr "mupt" -xmin 0 -xmax 200 -nbinsx 30
+
+___________________________________________________________________________________________
+
+Certain flags are initialized and can get multiple parameters.
+
+Example:
+th_datatomc_x -mcs "mc.root" -varexpr "mupt" -xmin 0 -xmax 200 -nbinsx 30  -mcs+ "mc2.root"
+
+___________________________________________________________________________________________
+
+To keep things easy and readable, flags can be put in config files.
+
+Example:
+th_datatomc_x MyConfig.config -varexpr "jteta" -xmin -2.4 -xmax 2.4 -nbinsx 30
+
+___________________________________________________________________________________________
+
+In the config flags are set with equal signs and plus signs. Inside the config other configs can be included using the keyword "include"
+
+
+Config example:
+
+mcpath   = "/storage/a/singletophiggs/13tev/mc_nov16/2t"
+include ../samples/TH125-madgraph.config
+
+formats  = pdf
+formats+ = png
+
+
+___________________________________________________________________________________________
+
+Available flags:
+
+
+   vector<string> data          // name of the data files                                              
+   vector<string> mcs           // name of the mc files                                                
+   vector<string> signal        // allows you to specify your signal                                   
+   double         signalfac     // scale factor for your signal                                        
+   string         mcref         // draw residuals to a specific background                             
+   string         dirname       // tree directory name                                                 
+   string         filesuffix    // file suffix                                                         
+   string         treename      // name of the tree                                                    
+   string         datapath      // path to your data files                                             
+   string         mcpath        // path to your mc files                                               
+   string         mcsubpath     // possible sub folder in your mc path                                 
+   vector<string> cuts          // applied cuts                                                        
+   vector<string> mccuts        // cuts only applied to mc                                             
+   vector<string> datacuts      // cuts only applied to data                                           
+   vector<string> mcweights     // weights applied to mc                                               
+   vector<string> mcweightsup   // upward weights applied to mc                                        
+   vector<string> mcweightsdown // downward weights applied to mc                                      
+   vector<string> ignore        // ignore specific cuts                                                
+   string         tightcut      // allows to specify a tight selection                                 
+   string         mm            // use matrix method (currently unused)                                
+   string         epssig        // parameter for matrix method (currently unused)                      
+   string         epsqcd        // parameter for matrix method (currently unused)                      
+   string         varname       // name of the plotted variable (see src/Histogram.cc)                 
+   string         varexpr       // custom variable definition                                          
+   string         xtitle        // title of x axis                                                     
+   string         ytitle        // title of y axis                                                     
+   unsigned       nbinsx        // number of bins                                                      
+   vector<double> binsx         // set in width                                                        
+   double         xmin          // minimum on x axis
+   double         xmax          // maximum on x axis
+   double         ymin          // minimum for y axis
+   bool           overflow      // possible overflow bin
+   bool           underflow     // possible underflow bin
+   bool           logx          // logarithmic x axis
+   bool           logy          // logarithmic y axis
+   bool           residuals     // draw residuals
+   double         resmax        // maximum of residuals - i.e. y-axis range for the ratio plot
+   string         fitresids     // fit function to residuals
+   unsigned       stats         // draw ROOT stats
+   double         lumi          // set luminosity (lumi 0: scale to data)
+   bool           leginplot     // draw legend inside plot
+   double         legx          // set x position of legend
+   double         legy          // set y position of legend
+   double         legw          // set width of legend
+   double         legh          // set height of single legend entry
+   string         datalabel     // set label for data entry in legend
+   vector<string> mclabels      // set label for mc entries in legend
+   vector<string> mccolors      // set color for mc entries in legend
+   vector<string> labels        // set labels in plot
+   bool           stackmc       // draw stacked histogram
+   bool           reversemc     // reverse ordering of mc
+   bool           batch         // prevent opening of root display 
+   vector<string> formats       // output format
+   string         opath         // output path
+   string         output        // name of output file
+   vector<string> prefix        // add prefix to output file
+   vector<string> suffix        // add suffix to output file
+   bool           chi2test      // show chi2test of mc to data agreement
+   bool           kstest        // show kstest of mc to data agreement
+   bool           mcuncert      // show statistical mc uncertainties
+   bool           printdiff     // print the total difference of mc to data
+   bool           printint      // print integral and scalefactors
+   bool           plotsys       // plot systematic uncertainties (when using different up and down sys.)
+   string         dd_file       // draw histograms from file
+   string         dd_hist       // name of histogram from file
+   bool           poisson       // use poissonian errors for error bars
+
+
+
+
+

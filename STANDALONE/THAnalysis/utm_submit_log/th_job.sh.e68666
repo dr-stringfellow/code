@@ -1,0 +1,3 @@
+/opt/ogs_sl6//ekpclusterSL6/spool/ekpblus001/job_scripts/68666: line 7: source: cmsswmaster.sh: file not found
+/opt/ogs_sl6//ekpclusterSL6/spool/ekpblus001/job_scripts/68666: line 10: syntax error near unexpected token `do'
+/opt/ogs_sl6//ekpclusterSL6/spool/ekpblus001/job_scripts/68666: line 10: `do'

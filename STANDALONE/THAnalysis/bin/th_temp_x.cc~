@@ -1,0 +1,98 @@
+////////////////////////////////////////////////////////////////////////////////                                                   
+//                                                                                                                                 
+// th_hypotheses_x                                                                                                                 
+// -----------------                                                                                                               
+//                                                                                                                                 
+//            04/07/2013 Christian Boeser                                                                                          
+//                                                                                                                                 
+////////////////////////////////////////////////////////////////////////////////                                                   
+
+
+#include "../interface/CommandLine.h"
+
+#include <TSystem.h>
+#include <TFile.h>
+#include <TTree.h>
+#include <TKey.h>
+#include <TEventList.h>
+#include <TLorentzVector.h>
+#include <TBranch.h>
+#include <TError.h>
+
+#include <iostream>
+#include <iomanip>
+#include <stdlib.h>
+#include <time.h>
+#include <sstream>
+#include <string>
+#include <vector>
+#include <cmath>
+#include <stdexcept>
+#include <algorithm>
+#include <map>
+////////////////////////////////////////////////////////////////////////////////                                                   
+// main                                                                                                                            
+////////////////////////////////////////////////////////////////////////////////                                                  
+
+using namespace std; 
+
+int main(int argc,char**argv)
+{
+  //                                                                                                                              
+  // evaluate command line options                                                                                                
+  //                                                                                                                              
+  CommandLine cl;
+  if (!cl.parse(argc,argv)) return 0;
+  vector<string> inputs      = cl.getVector<string>("inputs");
+  string         treename    = cl.getValue<string> ("treename",        "t");
+  string         dirname     = cl.getValue<string> ("dirname",       "utm");
+
+
+  if (!cl.check())
+    return 0;
+  cl.print();
+  
+  for (unsigned int iinput = 0; iinput<inputs.size(); ++iinput) { // open input file                                                                                                             
+    string input = inputs[iinput];
+    // read input file                                                                                                          
+    TFile* ifile = TFile::Open((input).c_str(),"READ");
+    if (!ifile->IsOpen()){
+      cout << "\033[31m  > Failed to open '" << input << "'\033[0m" << endl;
+      return 0;
+    }else{
+      cout << "Processing input file \033[33m'" << ifile->GetName() << "'\033[0m" << endl;
+    }
+  
+
+    // read input directory                                                                                                        
+    TDirectory* idir = (TDirectory*)ifile->Get(dirname.c_str());
+    if (0 == idir) {
+      cout << "\033[31m  > Failed to access directory '" << dirname << "' in input file '" << input << ".root'\033[0m"\
+	   << endl;
+      return 0;
+    }
+   
+    // open input tree                                                                                           
+    
+    TTree* itree = (TTree*)idir->Get(treename.c_str());
+    if(0==itree){
+      cout << "\033[31m  > No TTree named '" << treename << "' in '" << input << ":" << dirname << "'\033[0m" << endl;
+      return 0;
+    }
+
+    Int_t   i_njt=-99;               itree->SetBranchAddress("njt",            &i_njt);
+    Float_t i_jtpt[40]={-99};        itree->SetBranchAddress("jtpt",           i_jtpt);
+    
+    Float_t i_top_tbarwdaupt[2]={-99}; itree->SetBranchAddress("top_tbarwdaupt",    i_top_tbarwdaupt);
+    
+
+    unsigned int nEvt = (unsigned int)(itree->GetEntries());
+    for (unsigned int iEvt = 0; iEvt < nEvt; ++iEvt) {
+      cout << "output !=  " << i_njt << " " << i_jtpt[0]<< " " << i_jtpt[1] << " " << i_top_tbarwdaupt[0] << endl;
+    }
+
+    ifile->Close();
+    delete ifile;
+  }
+  return 0;
+}//main(...)

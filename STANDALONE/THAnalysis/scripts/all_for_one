@@ -1,0 +1,302 @@
+#!/usr/bin/perl
+################################################################################
+#
+# all_for_one
+# ----------------
+#
+################################################################################
+
+my $path       = "/storage/a/singletophiggs/Moriond/winter14-jan28/mc/";
+my $sample     = "";
+my $region     = "";
+my $script     = "th_submit.py";
+my $extension  = "";
+my $thsig      = "";
+my $ttsig      = "";
+my $systematic = "";
+my $skim       = "true";
+my $firsttime  = "true";
+
+# CHECK WETHER ROOT WAS SETUP
+$standalonesys = $ENV{'STANDALONE_DIR'};
+print "\n\# \$STANDALONE_DIR:              " . $standalonesys . "\n\n";
+die "\$STANDALONE_DIR not set, abort!" if ($standalonesys eq "");
+
+# EVALUATE COMMAND-LINE ARGUMENTS
+while (@ARGV)
+{
+    my $arg = shift @ARGV;
+    if    ($arg eq "--sample")     { $sample     = shift @ARGV; }
+    elsif    ($arg eq "--region")     { $region     = shift @ARGV; }
+    elsif    ($arg eq "--script")     { $script     = shift @ARGV; }
+    elsif    ($arg eq "--ext")        { $extension  = shift @ARGV; }
+    elsif    ($arg eq "--thsig")      { $thsig      = shift @ARGV; }
+    elsif    ($arg eq "--ttsig")      { $ttsig      = shift @ARGV; }
+    elsif    ($arg eq "--path")       { $path       = shift @ARGV; }
+    elsif    ($arg eq "--systematic") { $systematic = shift @ARGV; }
+    elsif    ($arg eq "--firsttime")  { $firsttime  = shift @ARGV; }
+    elsif    ($arg eq "--skim")       { $skim       = shift @ARGV; }
+    else { die "unknown argument '$arg'"; }
+}
+
+print "# Perform all steps for sample : " . $sample . "\n";
+print "# ... from folder :              " . $path . "\n";
+print "# ... to region :                " . $region . "\n";
+if($systematic ne ""){ 
+    print "# ... for systematic :           " . $systematic . "\n"; 
+}
+print "# ... with extensions :          " . $extension . " " . $ttsig . " " . $thsig . "\n";
+print "# ... using script :             " . $script . "\n";
+
+die "ABORT: --sample must be specified!\n"  if ($sample eq "");
+die "ABORT: --region must be specified!\n"  if ($region eq "");
+die "ABORT: Please specify --sample with .root!\n" if (index($sample, '.root') == -1);
+die "ABORT: --path must be specified!\n"    if ($path eq "");
+die "ABORT: --script must be specified!\n"  if ($script eq "");
+die "ABORT: --firsttime must be either true or false!\n"  if (!($firsttime eq "true" || $firsttime eq "false"));
+die "ABORT: --skim must be either true or false!\n"  if (!($skim eq "true" || $skim eq "false"));
+die "ABORT: --region must be either \033[1;31m3tt_incl, 4tt_incl\033[0m or \033[1;31mttbar_cr_incl\033[0m ! For other regions you have to modify this script.\n" if ( !($region eq "3tt_incl" || $region eq "4tt_incl" || $region eq "ttbar_cr_incl"));
+my $sysoperation = "";
+if($systematic ne ""){
+    $systematic = uc($systematic);
+    if($systematic eq "JER_UP"){
+	$sysoperation = "th_scalejer_x -inputs ../" . $sample . " -opath ./JER_UP -systematic  1 &&";
+    }
+    elsif($systematic eq "JER_DOWN"){
+        $sysoperation = "th_scalejer_x -inputs ../" . $sample . " -opath ./JER_DOWN -systematic -1 && ";
+    }
+    elsif($systematic eq "JER_B_UP"){
+	$sysoperation = "th_scalejer_x -inputs ../" . $sample . " -opath ./JER_B_UP -systematic  1 -bflav 1 &&";
+    }
+    elsif($systematic eq "JER_B_DOWN"){
+        $sysoperation = "th_scalejer_x -inputs ../" . $sample . " -opath ./JER_B_DOWN -systematic -1 -bflav 1 && ";
+    }
+    elsif($systematic eq "JER_LIGHT_UP"){
+	$sysoperation = "th_scalejer_x -inputs ../" . $sample . " -opath ./JER_LIGHT_UP -systematic  1 -bflav 2 &&";
+    }
+    elsif($systematic eq "JER_LIGHT_DOWN"){
+        $sysoperation = "th_scalejer_x -inputs ../" . $sample . " -opath ./JER_LIGHT_DOWN -systematic -1 -bflav 2 && ";
+    }
+    elsif($systematic eq "JESMC_UP"){
+	$sysoperation = "th_scalejes_x -inputs ../" . $sample . " -opath ./JESMC_UP -jesfile ./Summer13_V4_MC_Uncertainty_AK5PFchs.txt -systematic  1 &&";
+    }
+    elsif($systematic eq "JESMC_DOWN"){
+        $sysoperation = "th_scalejes_x -inputs ../" . $sample . " -opath ./JESMC_DOWN -jesfile ./Summer13_V4_MC_Uncertainty_AK5PFchs.txt -systematic -1 &&";
+    }
+    elsif($systematic eq "JES_UP"){
+	$sysoperation = "th_scalejessources_x -inputs ../" . $sample . " -opath ./JES_UP -jesfile ./Summer13_V4_DATA_UncertaintySources_AK5PFchs.txt -systematic 1 &&";
+    }
+    elsif($systematic eq "JES_DOWN"){
+        $sysoperation = "th_scalejessources_x -inputs ../" . $sample . " -opath ./JES_DOWN -jesfile ./Summer13_V4_DATA_UncertaintySources_AK5PFchs.txt -systematic -1 &&";
+    }
+    elsif($systematic eq "JES0_UP"){
+	$sysoperation = "th_scalejessources_x -inputs ../" . $sample . " -opath ./JES0_UP -jesfile ./Summer13_V4_DATA_UncertaintySources_AK5PFchs.txt -systematic 1 -onlysource 0 &&";
+    }
+    elsif($systematic eq "JES0_DOWN"){
+	$sysoperation = "th_scalejessources_x -inputs ../" . $sample . " -opath ./JES0_DOWN -jesfile ./Summer13_V4_DATA_UncertaintySources_AK5PFchs.txt -systematic -1 -onlysource 0 &&";
+    }
+    elsif($systematic eq "JES1_UP"){
+	$sysoperation = "th_scalejessources_x -inputs ../" . $sample . " -opath ./JES1_UP -jesfile ./Summer13_V4_DATA_UncertaintySources_AK5PFchs.txt -systematic 1 -onlysource 1 &&";
+    }
+    elsif($systematic eq "JES1_DOWN"){
+	$sysoperation = "th_scalejessources_x -inputs ../" . $sample . " -opath ./JES1_DOWN -jesfile ./Summer13_V4_DATA_UncertaintySources_AK5PFchs.txt -systematic -1 -onlysource 1 &&";
+    }
+    elsif($systematic eq "JES2_UP"){
+	$sysoperation = "th_scalejessources_x -inputs ../" . $sample . " -opath ./JES2_UP -jesfile ./Summer13_V4_DATA_UncertaintySources_AK5PFchs.txt -systematic 1 -onlysource 2 &&";
+    }
+    elsif($systematic eq "JES2_DOWN"){
+	$sysoperation = "th_scalejessources_x -inputs ../" . $sample . " -opath ./JES2_DOWN -jesfile ./Summer13_V4_DATA_UncertaintySources_AK5PFchs.txt -systematic -1 -onlysource 2 &&";
+    }
+    elsif($systematic eq "JES3_UP"){
+	$sysoperation = "th_scalejessources_x -inputs ../" . $sample . " -opath ./JES3_UP -jesfile ./Summer13_V4_DATA_UncertaintySources_AK5PFchs.txt -systematic 1 -onlysource 3 &&";
+    }
+    elsif($systematic eq "JES3_DOWN"){
+	$sysoperation = "th_scalejessources_x -inputs ../" . $sample . " -opath ./JES3_DOWN -jesfile ./Summer13_V4_DATA_UncertaintySources_AK5PFchs.txt -systematic -1 -onlysource 3 &&";
+    }
+    elsif($systematic eq "JES4_UP"){
+	$sysoperation = "th_scalejessources_x -inputs ../" . $sample . " -opath ./JES4_UP -jesfile ./Summer13_V4_DATA_UncertaintySources_AK5PFchs.txt -systematic 1 -onlysource 4 &&";
+    }
+    elsif($systematic eq "JES4_DOWN"){
+	$sysoperation = "th_scalejessources_x -inputs ../" . $sample . " -opath ./JES4_DOWN -jesfile ./Summer13_V4_DATA_UncertaintySources_AK5PFchs.txt -systematic -1 -onlysource 4 &&";
+    }
+    elsif($systematic eq "JES5_UP"){
+	$sysoperation = "th_scalejessources_x -inputs ../" . $sample . " -opath ./JES5_UP -jesfile ./Summer13_V4_DATA_UncertaintySources_AK5PFchs.txt -systematic 1 -onlysource 5 &&";
+    }
+    elsif($systematic eq "JES5_DOWN"){
+	$sysoperation = "th_scalejessources_x -inputs ../" . $sample . " -opath ./JES5_DOWN -jesfile ./Summer13_V4_DATA_UncertaintySources_AK5PFchs.txt -systematic -1 -onlysource 5 &&";
+    }
+    elsif($systematic eq "JES6_UP"){
+	$sysoperation = "th_scalejessources_x -inputs ../" . $sample . " -opath ./JES6_UP -jesfile ./Summer13_V4_DATA_UncertaintySources_AK5PFchs.txt -systematic 1 -onlysource 6 &&";
+    }
+    elsif($systematic eq "JES6_DOWN"){
+	$sysoperation = "th_scalejessources_x -inputs ../" . $sample . " -opath ./JES6_DOWN -jesfile ./Summer13_V4_DATA_UncertaintySources_AK5PFchs.txt -systematic -1 -onlysource 6 &&";
+    }
+    elsif($systematic eq "JES7_UP"){
+	$sysoperation = "th_scalejessources_x -inputs ../" . $sample . " -opath ./JES7_UP -jesfile ./Summer13_V4_DATA_UncertaintySources_AK5PFchs.txt -systematic 1 -onlysource 7 &&";
+    }
+    elsif($systematic eq "JES7_DOWN"){
+	$sysoperation = "th_scalejessources_x -inputs ../" . $sample . " -opath ./JES7_DOWN -jesfile ./Summer13_V4_DATA_UncertaintySources_AK5PFchs.txt -systematic -1 -onlysource 7 &&";
+    }
+    elsif($systematic eq "JES8_UP"){
+	$sysoperation = "th_scalejessources_x -inputs ../" . $sample . " -opath ./JES8_UP -jesfile ./Summer13_V4_DATA_UncertaintySources_AK5PFchs.txt -systematic 1 -onlysource 8 &&";
+    }
+    elsif($systematic eq "JES8_DOWN"){
+	$sysoperation = "th_scalejessources_x -inputs ../" . $sample . " -opath ./JES8_DOWN -jesfile ./Summer13_V4_DATA_UncertaintySources_AK5PFchs.txt -systematic -1 -onlysource 8 &&";
+    }
+    elsif($systematic eq "JES9_UP"){
+	$sysoperation = "th_scalejessources_x -inputs ../" . $sample . " -opath ./JES9_UP -jesfile ./Summer13_V4_DATA_UncertaintySources_AK5PFchs.txt -systematic 1 -onlysource 9 &&";
+    }
+    elsif($systematic eq "JES9_DOWN"){
+	$sysoperation = "th_scalejessources_x -inputs ../" . $sample . " -opath ./JES9_DOWN -jesfile ./Summer13_V4_DATA_UncertaintySources_AK5PFchs.txt -systematic -1 -onlysource 9 &&";
+    }
+    elsif($systematic eq "JES10_UP"){
+	$sysoperation = "th_scalejessources_x -inputs ../" . $sample . " -opath ./JES10_UP -jesfile ./Summer13_V4_DATA_UncertaintySources_AK5PFchs.txt -systematic 1 -onlysource 10 &&";
+    }
+    elsif($systematic eq "JES10_DOWN"){
+	$sysoperation = "th_scalejessources_x -inputs ../" . $sample . " -opath ./JES10_DOWN -jesfile ./Summer13_V4_DATA_UncertaintySources_AK5PFchs.txt -systematic -1 -onlysource 10 &&";
+}
+    elsif($systematic eq "JES11_UP"){
+	$sysoperation = "th_scalejessources_x -inputs ../" . $sample . " -opath ./JES11_UP -jesfile ./Summer13_V4_DATA_UncertaintySources_AK5PFchs.txt -systematic 1 -onlysource 11 &&";
+    }
+    elsif($systematic eq "JES11_DOWN"){
+	$sysoperation = "th_scalejessources_x -inputs ../" . $sample . " -opath ./JES11_DOWN -jesfile ./Summer13_V4_DATA_UncertaintySources_AK5PFchs.txt -systematic -1 -onlysource 11 &&";
+    }
+    elsif($systematic eq "JES12_UP"){
+	$sysoperation = "th_scalejessources_x -inputs ../" . $sample . " -opath ./JES12_UP -jesfile ./Summer13_V4_DATA_UncertaintySources_AK5PFchs.txt -systematic 1 -onlysource 12 &&";
+}
+    elsif($systematic eq "JES12_DOWN"){
+	$sysoperation = "th_scalejessources_x -inputs ../" . $sample . " -opath ./JES12_DOWN -jesfile ./Summer13_V4_DATA_UncertaintySources_AK5PFchs.txt -systematic -1 -onlysource 12 &&";
+    }
+    elsif($systematic eq "JES13_UP"){
+	$sysoperation = "th_scalejessources_x -inputs ../" . $sample . " -opath ./JES13_UP -jesfile ./Summer13_V4_DATA_UncertaintySources_AK5PFchs.txt -systematic 1 -onlysource 13 &&";
+    }
+    elsif($systematic eq "JES13_DOWN"){
+	$sysoperation = "th_scalejessources_x -inputs ../" . $sample . " -opath ./JES13_DOWN -jesfile ./Summer13_V4_DATA_UncertaintySources_AK5PFchs.txt -systematic -1 -onlysource 13 &&";
+    }
+    elsif($systematic eq "JES14_UP"){
+	$sysoperation = "th_scalejessources_x -inputs ../" . $sample . " -opath ./JES14_UP -jesfile ./Summer13_V4_DATA_UncertaintySources_AK5PFchs.txt -systematic 1 -onlysource 14 &&";
+    }
+    elsif($systematic eq "JES14_DOWN"){
+	$sysoperation = "th_scalejessources_x -inputs ../" . $sample . " -opath ./JES14_DOWN -jesfile ./Summer13_V4_DATA_UncertaintySources_AK5PFchs.txt -systematic -1 -onlysource 14 &&";
+    }
+    elsif($systematic eq "JES15_UP"){
+	$sysoperation = "th_scalejessources_x -inputs ../" . $sample . " -opath ./JES15_UP -jesfile ./Summer13_V4_DATA_UncertaintySources_AK5PFchs.txt -systematic 1 -onlysource 15 &&";
+    }
+    elsif($systematic eq "JES15_DOWN"){
+	$sysoperation = "th_scalejessources_x -inputs ../" . $sample . " -opath ./JES15_DOWN -jesfile ./Summer13_V4_DATA_UncertaintySources_AK5PFchs.txt -systematic -1 -onlysource 15 &&";
+    }
+    elsif($systematic eq "JES16_UP"){
+	$sysoperation = "th_scalejessources_x -inputs ../" . $sample . " -opath ./JES16_UP -jesfile ./Summer13_V4_DATA_UncertaintySources_AK5PFchs.txt -systematic 1 -onlysource 16 &&";
+    }
+    elsif($systematic eq "JES16_DOWN"){
+	$sysoperation = "th_scalejessources_x -inputs ../" . $sample . " -opath ./JES16_DOWN -jesfile ./Summer13_V4_DATA_UncertaintySources_AK5PFchs.txt -systematic -1 -onlysource 16 &&";
+    }
+    elsif($systematic eq "JESQUARK_UP"){
+	$sysoperation = "th_scalejessources_x -inputs ../" . $sample . " -opath ./JESQUARK_UP -jesfile ./Summer13_V4_DATA_UncertaintySources_AK5PFchs.txt -systematic 1 -flavor quark  &&";
+    }
+    elsif($systematic eq "JESQUARK_DOWN"){
+        $sysoperation = "th_scalejessources_x -inputs ../" . $sample . " -opath ./JESQUARK_DOWN -jesfile ./Summer13_V4_DATA_UncertaintySources_AK5PFchs.txt -systematic -1  -flavor quark &&";
+    }
+    elsif($systematic eq "JES_B_UP"){
+	$sysoperation = "th_scalejessources_x -inputs ../" . $sample . " -opath ./JES_B_UP -jesfile ./Summer13_V4_DATA_UncertaintySources_AK5PFchs.txt -systematic 1 -bflav 1 &&";
+    }
+    elsif($systematic eq "JES_B_DOWN"){
+        $sysoperation = "th_scalejessources_x -inputs ../" . $sample . " -opath ./JES_B_DOWN -jesfile ./Summer13_V4_DATA_UncertaintySources_AK5PFchs.txt -systematic -1  -bflav 1 &&";
+    }
+    elsif($systematic eq "JES_LIGHT_UP"){
+	$sysoperation = "th_scalejessources_x -inputs ../" . $sample . " -opath ./JES_LIGHT_UP -jesfile ./Summer13_V4_DATA_UncertaintySources_AK5PFchs.txt -systematic 1 -bflav 2 &&";
+    }
+    elsif($systematic eq "JES_LIGHT_DOWN"){
+        $sysoperation = "th_scalejessources_x -inputs ../" . $sample . " -opath ./JES_LIGHT_DOWN -jesfile ./Summer13_V4_DATA_UncertaintySources_AK5PFchs.txt -systematic -1  -bflav 2 &&";
+    }
+    elsif($systematic eq "MET_UP"){
+	$sysoperation = "th_metrecalculator_x -inputs ../" . $sample . " -opath ./MET_UP -systematic 1 && ";
+    }
+    elsif($systematic eq "MET_DOWN"){
+        $sysoperation = "th_metrecalculator_x -inputs ../" . $sample . " -opath ./MET_DOWN -systematic -1 && ";
+    }    
+    elsif($systematic eq "NO_JER"){
+	$sysoperation = " 1 && ";
+    }
+    else{ 
+	die "ABORT: --systematic must be either \033[1;31mJES_UP, JES_DOWN, JER_UP, JER_DOWN, MET_UP\033[0m or \033[1;31mMET_DOWN\033[0m ! For other systematics you have to modify this script.\n";
+    }
+}
+
+
+
+my $region2 = $region;
+$region2 =~ s/_incl//g;
+my $lowersys="";
+my $uppersys="";
+if($systematic ne "")
+{
+    $capsys=uc($systematic);
+    $smallsys=lc($systematic);
+}
+
+#print "cd " . $path . "/ana-nominal && ls -l " . $sample . " && ";
+print "cd " . $path . "/ana-ichep && ls -l " . $sample . " && ";
+if($systematic ne ""){
+    print "cd systematics/ && ";
+    if($firsttime eq "true"){
+	print $sysoperation . " 1 \n" ;
+	exit 1;
+    }
+    print " cd " . $capsys . " && ls -l " . $sample . " && ";
+}
+
+# Perform cuts according to a first config file - usually demands any of a list of triggers, and does jet cuts
+print "th_skim_x " . $region . ".config -input " . $sample . " -output " . $region . "/" . $sample . " && ";
+# Switch to the appropriate subfolder with the output...
+print "cd " . $region . " && ";
+#  ... and do 2 selections: either electron- or muon-specific cuts
+print "th_skim_x el.config -input " . $sample . " -output el/" . $sample . " && ";
+print "th_skim_x mu.config -input " . $sample . " -output mu/" . $sample . " && ";
+
+
+## Now all other scripts; first for el/, then for mu/
+
+# ele
+print "cd el/ && th_addvariables_x -inputs " . $sample .  " && ";
+#print "th_icheper_x -inputs  " . $sample .  " && ";  # currently irrelevant program that drops some jets from the tree
+print "th_csvreweight_x -inputs  " . $sample .  " && ";
+print "th_recexpertpop_x -bdtpath /storage/a/singletophiggs/th_ichep/nn-reco-popov/ -input " . $sample . " " . $thsig . " && ";
+print "th_toprecexpertpop_x -bdtpath /storage/a/singletophiggs/th_ichep/nn-top-reco-popov/ -input " . $sample .  " " . $ttsig . " && ";
+print "th_lepscales_x -inputs " . $sample .  " && ";
+print "th_toppt_x -inputs " . $sample . " " . $extension . " && ";
+print "th_bdtexpertpop_x -bdtpath /storage/a/singletophiggs/th_ichep/nn-class-popov/ -input " . $sample . " && ";
+#print "th_bdtexpertpop_b_x -bdtpath /storage/a/singletophiggs/th_ichep/nn-class-popov/ -input " . $sample . " && ";
+#print "th_bdtexpertpop_c_x -bdtpath /storage/a/singletophiggs/th_ichep/nn-class-popov/ -input " . $sample . " && ";
+#print "th_bdtexpert2_x -bdtpath /portal/ekpcms5/home/sfink/thanalysis/th_ichep/bdt-class-csv/th_popvar_fancy_150/weights -input " . $sample . " && ";
+#if($region ne "ttbar_cr_incl"){
+    # FIXME : NEW REBINNING
+    # print "th_addtransform_x -bdtpath /portal/ekpcms5/home/sfink/thanalysis/th_ichep/mva-" . $region2 . "-binning-el -input " . $sample . " -bdtout mlpout && ";
+    # print "th_addtransform_x -bdtpath /portal/ekpcms5/home/sfink/thanalysis/th_ichep/mva-" . $region2 . "-binning-el -input " . $sample . " -bdtout mlpout_b && ";
+    # print "th_addtransform_x -bdtpath /portal/ekpcms5/home/sfink/thanalysis/th_ichep/mva-" . $region2 . "-binning-el -input " . $sample . " -bdtout mlpout_c && ";
+#   print "th_addtransform_x -bdtpath /portal/ekpcms5/home/sfink/thanalysis/th_ichep/mva-" . $region2 . "-binning-el -input " . $sample . " -bdtout bdtgout && ";
+#}
+
+# mu
+print "cd ../mu && th_addvariables_x -inputs " . $sample .  " && ";
+#print "th_icheper_x -inputs  " . $sample .  " && ";  # currently irrelevant program that drops some jets from the tree
+print "th_csvreweight_x -inputs  " . $sample .  " && ";
+print "th_recexpertpop_x -bdtpath /storage/a/singletophiggs/th_ichep/nn-reco-popov/ -input " . $sample . " " . $thsig . " && ";
+print "th_toprecexpertpop_x -bdtpath /storage/a/singletophiggs/th_ichep/nn-top-reco-popov/ -input " . $sample .  " " . $ttsig . " && ";
+print "th_lepscales_x -inputs " . $sample .  " && ";
+print "th_toppt_x -inputs " . $sample . " " . $extension . " && ";
+print "th_bdtexpertpop_x -bdtpath /storage/a/singletophiggs/th_ichep/nn-class-popov/ -input " . $sample . " && ";
+#print "th_bdtexpertpop_b_x -bdtpath /storage/a/singletophiggs/th_ichep/nn-class-popov/ -input " . $sample . " && ";
+#print "th_bdtexpertpop_c_x -bdtpath /storage/a/singletophiggs/th_ichep/nn-class-popov/ -input " . $sample . " && ";
+#print "th_bdtexpert2_x -bdtpath /portal/ekpcms5/home/sfink/thanalysis/th_ichep/bdt-class-csv/th_popvar_fancy_150/weights -input " . $sample . " && ";
+#if($region ne "ttbar_cr_incl"){
+ #   print "th_addtransform_x -bdtpath /portal/ekpcms5/home/sfink/thanalysis/th_ichep/mva-" . $region2 . "-binning-mu -input " . $sample . " -bdtout mlpout &&";
+ #   print "th_addtransform_x -bdtpath /portal/ekpcms5/home/sfink/thanalysis/th_ichep/mva-" . $region2 . "-binning-mu -input " . $sample . " -bdtout mlpout_b &&";
+ #   print "th_addtransform_x -bdtpath /portal/ekpcms5/home/sfink/thanalysis/th_ichep/mva-" . $region2 . "-binning-mu -input " . $sample . " -bdtout mlpout_c &&";
+#    print "th_addtransform_x -bdtpath /portal/ekpcms5/home/sfink/thanalysis/th_ichep/mva-" . $region2 . "-binning-mu -input " . $sample . " -bdtout bdtgout && ";
+#}
+print " 1 \n";
+
+
+
+

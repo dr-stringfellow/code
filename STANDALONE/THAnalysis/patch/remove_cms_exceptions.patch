@@ -1,0 +1,186 @@
+diff --git a/CondFormats/JetMETObjects/interface/JetCorrectorParameters.h b/CondFormats/JetMETObjects/interface/JetCorrectorParameters.h
+index ea735a1..2fbff17 100644
+--- a/CondFormats/JetMETObjects/interface/JetCorrectorParameters.h
++++ b/CondFormats/JetMETObjects/interface/JetCorrectorParameters.h
+@@ -13,7 +13,6 @@
+ #include <vector>
+ #include <algorithm>
+ #include <iostream>
+-#include "FWCore/Utilities/interface/Exception.h"
+ #include "FWCore/MessageLogger/interface/MessageLogger.h"
+ 
+ class JetCorrectorParameters 
+diff --git a/CondFormats/JetMETObjects/src/JetCorrectionUncertainty.cc b/CondFormats/JetMETObjects/src/JetCorrectionUncertainty.cc
+index 6d7a4ed..a9cdd04 100644
+--- a/CondFormats/JetMETObjects/src/JetCorrectionUncertainty.cc
++++ b/CondFormats/JetMETObjects/src/JetCorrectionUncertainty.cc
+@@ -115,7 +115,7 @@ std::vector<float> JetCorrectionUncertainty::fillVector(const std::vector<std::s
+       if (fNames[i] == "JetEta")
+         {
+           if (!mIsJetEtaset) {
+-	    edm::LogError("JetCorrectionUncertainty::")<<" jet eta is not set";
++	    throw std::runtime_error("JetCorrectionUncertainty: jet eta is not set");
+ 	    result.push_back(-999.0);
+ 	  } else {
+ 	    result.push_back(mJetEta);
+@@ -124,7 +124,7 @@ std::vector<float> JetCorrectionUncertainty::fillVector(const std::vector<std::s
+       else if (fNames[i] == "JetPt")
+         {
+           if (!mIsJetPtset){
+-	    edm::LogError("JetCorrectionUncertainty::")<<" jet pt is not set";  
++            throw std::runtime_error("JetCorrectionUncertainty");
+ 	    result.push_back(-999.0);
+ 	  } else {
+ 	    result.push_back(mJetPt);
+@@ -133,7 +133,7 @@ std::vector<float> JetCorrectionUncertainty::fillVector(const std::vector<std::s
+       else if (fNames[i] == "JetPhi")
+         {
+           if (!mIsJetPhiset) {
+-	    edm::LogError("JetCorrectionUncertainty::")<<" jet phi is not set";  
++            throw std::runtime_error("JetCorrectionUncertainty");
+ 	    result.push_back(-999.0);
+ 	  } else {
+ 	    result.push_back(mJetPt);
+@@ -142,7 +142,7 @@ std::vector<float> JetCorrectionUncertainty::fillVector(const std::vector<std::s
+       else if (fNames[i] == "JetE")
+         {
+           if (!mIsJetEset) {
+-	    edm::LogError("JetCorrectionUncertainty::")<<" jet energy is not set";
++            throw std::runtime_error("JetCorrectionUncertainty");
+ 	    result.push_back(-999.0);
+ 	  } else {
+ 	    result.push_back(mJetE);
+@@ -151,7 +151,7 @@ std::vector<float> JetCorrectionUncertainty::fillVector(const std::vector<std::s
+       else if (fNames[i] == "JetEMF")
+         {
+           if (!mIsJetEMFset) {
+-	    edm::LogError("JetCorrectionUncertainty::")<<" jet emf is not set";
++            throw std::runtime_error("JetCorrectionUncertainty");
+ 	    result.push_back(-999.0);
+ 	  } else {
+ 	    result.push_back(mJetEMF);
+@@ -160,7 +160,7 @@ std::vector<float> JetCorrectionUncertainty::fillVector(const std::vector<std::s
+       else if (fNames[i] == "LepPx")
+         {
+           if (!mIsLepPxset){
+-	    edm::LogError("JetCorrectionUncertainty::")<<" lepton px is not set";
++            throw std::runtime_error("JetCorrectionUncertainty");
+ 	    result.push_back(-999.0);
+ 	  } else {
+ 	    result.push_back(mLepPx);
+@@ -169,7 +169,7 @@ std::vector<float> JetCorrectionUncertainty::fillVector(const std::vector<std::s
+       else if (fNames[i] == "LepPy")
+         {
+           if (!mIsLepPyset){
+-	    edm::LogError("JetCorrectionUncertainty::")<<" lepton py is not set";
++            throw std::runtime_error("JetCorrectionUncertainty");
+ 	    result.push_back(-999.0);
+ 	  } else {
+ 	    result.push_back(mLepPy);
+@@ -178,7 +178,7 @@ std::vector<float> JetCorrectionUncertainty::fillVector(const std::vector<std::s
+       else if (fNames[i] == "LepPz")
+         {
+           if (!mIsLepPzset){
+-	    edm::LogError("JetCorrectionUncertainty::")<<" lepton pz is not set";
++            throw std::runtime_error("JetCorrectionUncertainty");
+ 	    result.push_back(-999.0);
+ 	  } else {
+ 	    result.push_back(mLepPz);
+@@ -186,7 +186,7 @@ std::vector<float> JetCorrectionUncertainty::fillVector(const std::vector<std::s
+         }
+      
+       else {
+-	edm::LogError("JetCorrectionUncertainty::")<<" unknown parameter "<<fNames[i];
++        throw std::runtime_error("JetCorrectionUncertainty");
+ 	result.push_back(-999.0);
+       }
+     }     
+@@ -221,7 +221,7 @@ float JetCorrectionUncertainty::getPtRel()
+     // lep2 = pTrel2 + pLrel2
+     pTrel2 = lep2-pLrel2;
+   } else
+-    edm::LogError("JetCorrectionUncertainty")<<" not positive lepton-jet momentum: "<<lj2;
++    throw std::runtime_error("JetCorrectionUncertainty");
+   return (pTrel2 > 0) ? std::sqrt(pTrel2) : 0.0;
+ }
+ //------------------------------------------------------------------------ 
+diff --git a/CondFormats/JetMETObjects/src/JetCorrectorParameters.cc b/CondFormats/JetMETObjects/src/JetCorrectorParameters.cc
+index 265dd17..45177ec 100644
+--- a/CondFormats/JetMETObjects/src/JetCorrectorParameters.cc
++++ b/CondFormats/JetMETObjects/src/JetCorrectorParameters.cc
+@@ -473,8 +473,7 @@ JetCorrectorParameters const & JetCorrectorParametersCollection::operator[]( key
+   for ( ; i != iend; ++i ) {
+     if ( k == i->first ) return i->second;
+   }
+-  throw cms::Exception("InvalidInput") << " cannot find key " << static_cast<int>(k)
+-				       << " in the JEC payload, this usually means you have to change the global tag" << std::endl;
++  throw std::runtime_error("InvalidInput: cannot find key k in the JEC payload, this usually means you have to change the global tag");
+ }
+ 
+ // Get a list of valid keys. These will contain hashed keys
+@@ -555,7 +554,7 @@ JetCorrectorParametersCollection::findKey( std::string const & label ) const {
+   }
+ 
+   // Didn't find default corrections, throw exception
+-  throw cms::Exception("InvalidInput") << " Cannot find label " << label << std::endl;
++  throw std::runtime_error("InvalidInput: cannot find label");
+ 
+ }
+ 
+@@ -563,7 +562,7 @@ JetCorrectorParametersCollection::findKey( std::string const & label ) const {
+ //#include "FWCore/Framework/interface/EventSetup.h"
+ //#include "FWCore/Framework/interface/ESHandle.h"
+ //#include "FWCore/Framework/interface/ModuleFactory.h"
+-#include "FWCore/Utilities/interface/typelookup.h"
++//#include "FWCore/Utilities/interface/typelookup.h"
+ 
+-TYPELOOKUP_DATA_REG(JetCorrectorParameters);
+-TYPELOOKUP_DATA_REG(JetCorrectorParametersCollection);
++//TYPELOOKUP_DATA_REG(JetCorrectorParameters);
++//TYPELOOKUP_DATA_REG(JetCorrectorParametersCollection);
+diff --git a/CondFormats/JetMETObjects/src/SimpleJetCorrectionUncertainty.cc b/CondFormats/JetMETObjects/src/SimpleJetCorrectionUncertainty.cc
+index 87db48e..30d7429 100644
+--- a/CondFormats/JetMETObjects/src/SimpleJetCorrectionUncertainty.cc
++++ b/CondFormats/JetMETObjects/src/SimpleJetCorrectionUncertainty.cc
+@@ -3,6 +3,8 @@
+ #include "FWCore/MessageLogger/interface/MessageLogger.h"
+ #include <vector>
+ #include <string>
++#include <stdexcept>
++
+ 
+ /////////////////////////////////////////////////////////////////////////
+ SimpleJetCorrectionUncertainty::SimpleJetCorrectionUncertainty () 
+@@ -30,7 +32,7 @@ float SimpleJetCorrectionUncertainty::uncertainty(const std::vector<float>& fX,
+   float result = 1.;
+   int bin = mParameters->binIndex(fX);
+   if (bin<0) {
+-    edm::LogError("SimpleJetCorrectionUncertainty")<<" bin variables out of range";
++    throw std::runtime_error("SimpleJetCorrectionUncertainty: bin variables out of range");
+     result = -999.0;
+   } else 
+     result = uncertaintyBin((unsigned)bin,fY,fDirection);
+@@ -40,12 +42,12 @@ float SimpleJetCorrectionUncertainty::uncertainty(const std::vector<float>& fX,
+ float SimpleJetCorrectionUncertainty::uncertaintyBin(unsigned fBin, float fY, bool fDirection) const 
+ {
+   if (fBin >= mParameters->size()) { 
+-    edm::LogError("SimpleJetCorrectionUncertainty")<<" wrong bin: "<<fBin<<": only "<<mParameters->size()<<" are available";
++    throw std::runtime_error("SimpleJetCorrectionUncertainty: wrong bin");
+     return -999.0;
+   }
+   const std::vector<float>& p = mParameters->record(fBin).parameters();
+   if ((p.size() % 3) != 0)
+-    throw cms::Exception ("SimpleJetCorrectionUncertainty")<<"wrong # of parameters: multiple of 3 expected, "<<p.size()<< " got";
++    throw std::runtime_error("SimpleJetCorrectionUncertainty: wrong # of parameters: multiple of 3 expected");
+   std::vector<float> yGrid,value;
+   unsigned int N = p.size()/3;
+   float result = -1.0;
+@@ -86,7 +88,7 @@ float SimpleJetCorrectionUncertainty::linearInterpolation(float fZ, const float
+       if (fY[0] == fY[1])
+         r = fY[0];
+       else {
+-	edm::LogError("SimpleJetCorrectionUncertainty")<<" interpolation error";
++	throw std::runtime_error("SimpleJetCorrectionUncertainty: interpolation error");
+ 	return -999.0;
+       }
+     } 

@@ -1,0 +1,11 @@
+------------------------------------------------------------
+th_skim_x options:
+------------------------------------------------------------
+input                   =/storage/a/singletophiggs/13tev/mc_nov16/t/TT_TuneCUETP8M1_13TeV-powheg-pythia8.root
+cuts                    =(genevt_ttxid%100)==41||(genevt_ttxid%100)==42||(genevt_ttxid%100)==43||(genevt_ttxid%100)==44||(genevt_ttxid%100)==45
+dirs                    =                                   
+treename                =                                  t
+output                  =/storage/jbod/kfloeh/t/TT_TuneCUETP8M1_13TeV-powheg-pythia8_cc.root
+or                      =                              false
+noeff                   =                              false
+------------------------------------------------------------

@@ -1,0 +1,345 @@
+////////////////////////////////////////////////////////////////////////////////
+//
+// th_pileupreweighter_x
+// -----------------
+//
+// This program applies the pileup reweighting (gone wrong in 76cmssw processing)
+//
+//            03/27/2016 Simon Fink
+//            
+//                                                    
+////////////////////////////////////////////////////////////////////////////////
+
+
+#include "../interface/CommandLine.h"
+#include <assert.h>
+#include <TSystem.h>
+#include <TFile.h>
+#include <TTree.h>
+#include <TKey.h>
+#include <TEventList.h>
+#include <TLorentzVector.h>
+#include <TH1.h>
+#include <TH2.h>
+#include "TGraphAsymmErrors.h"
+#include <iostream>
+#include <sstream>
+#include <string>
+#include <vector>
+#include <cmath>
+#include <stdexcept>
+
+
+using namespace std;
+
+////////////////////////////////////////////////////////////////////////////////
+// helper
+////////////////////////////////////////////////////////////////////////////////
+
+
+////////////////////////////////////////////////////////////////////////////////
+// main
+////////////////////////////////////////////////////////////////////////////////
+
+//______________________________________________________________________________
+int main(int argc,char**argv)
+{
+  //
+  // evaluate command line options
+  //
+  CommandLine cl;
+  if (!cl.parse(argc,argv)) return 0;
+
+  vector<string> inputs      = cl.getVector<string>("inputs");
+  string         treename    = cl.getValue<string> ("treename",  "t");
+  string         datapath    = cl.getValue<string> ("datapath",  "/");
+  string         mcfile      = cl.getValue<string> ("mcfile");
+  string         datafile    = cl.getValue<string> ("datafile");
+  
+  if (!cl.check()) return 0;
+  cl.print();
+
+  TH1F* h_data_npv;
+  TH1F* h_mc_npv;
+  
+  string fullpath = "/portal/ekpcms6/home/sfink/thanalysis/STANDALONE/THAnalysis/";
+  
+  TFile mc_file((fullpath + mcfile).c_str(),"READ");
+  
+  cout << "Looking for file in " << (fullpath + mcfile).c_str() << endl;
+  if(mc_file.IsOpen()==0) {
+    cout << "No mc file found." << endl;
+    throw;
+  }
+  mc_file.GetObject("",h_mc_npv);
+  if( h_mc_npv == 0) {
+    throw;
+  }
+  cout << "Opened MC file." << endl;
+
+  TFile data_file((fullpath + "/data_npv.root").c_str(),"READ");
+  if(data_file.IsOpen()==0){
+    cout << "No data file found." << endl;
+    throw;
+  }
+  data_file.GetObject("",h_data_npv);
+  if( h_mc_npv == 0 ) {
+    throw;
+  }
+  cout << "Opened data file." << endl;
+  
+  //Check for same binning
+  
+  Int_t nbins_mc = h_mc_npv->GetNbinsX();
+  Int_t nbins_data = h_data_npv->GetNbinsX();
+
+  assert(nbins_mc==nbins_data);
+  cout << "Same binning found in both histograms." << endl;
+  
+  //Scale histograms 
+
+  h_mc_npv->Scale(1.0/h_mc_npv->Integral());
+  h_data_npv->Scale(1.0/h_data_npv->Integral());
+
+  std::vector<double> weights;
+
+  for( int bin = 0; bin <= nbins_mc; bin++){
+    const Float_t npv_mc = h_mc_npv->GetBinContent(bin);
+    const Float_t npv_data = h_data_npv->GetBinContent(bin);
+    if(npv_mc==0) npv_mc=1;
+    const Float_t ratio = npv_data/npv_mc;
+    weights.push_back(ratio);
+    cout << "Bin " << bin << " :   MC -> "  << npv_mc << "   Data -> " << npv_data << "     ---> " << ratio << endl;
+  }
+  
+  delete h_mc_npv;
+  delete h_data_npv;
+
+
+
+
+  /*
+
+  
+  //
+  // loop over all input files
+  //
+  for (unsigned iinput=0;iinput<inputs.size();iinput++) {
+  
+    // open input file
+    string input = inputs[iinput]; //input = datapath + "/" + input;
+    TFile* ifile = new TFile(input.c_str(),"READ");
+    if (!ifile->IsOpen()) { cout<<"Failed to open "<<input<<endl; return 0; }
+
+    // create temporary output file
+    size_t pos = input.find(".root");
+    string output = input.substr(0,pos);
+    output = output + ".lsf.root";
+    TFile* ofile = new TFile(output.c_str(),"CREATE");
+    if (!ofile->IsOpen()) { cout<<"Failed to create "<<output<<endl; return 0; }
+    
+    // loop over input directories
+    TIter next(ifile->GetListOfKeys());
+    TKey* key(0);
+    while ((key=(TKey*)next())) {
+
+      if (strcmp(key->GetClassName(),"TDirectoryFile")!=0) continue;
+      
+      // read input directory
+      TDirectory* idir    = (TDirectory*)key->ReadObj();
+      string      dirname = idir->GetName();
+      cout<<input<<"/"<<dirname<<":"<<endl;
+      
+      // create output directory
+      TDirectory* odir = (TDirectory*)ofile->mkdir(dirname.c_str());
+      if(0==odir){cout<<"Failed to make "<<dirname<<" in "<<output<<endl;return 0;}
+      
+      // open input tree
+      TTree* itree = (TTree*)idir->Get(treename.c_str());
+      if(0==itree){cout<<"No "<<treename<<" in "<<output<<":"<<dirname<<endl;return 0;}
+      
+      // check wether relevant branches are present
+      if (0==itree->FindBranch("nlepw")){ cout<<"no W->lnu branches stored!"<<endl; return 0; }
+
+      // don't copy branches if they already exist
+      if (0!=itree->FindBranch("weight_lsf"))      itree->SetBranchStatus("weight_lsf",     0);
+      
+      // clone input tree into output directory
+      odir->cd();
+      TTree* otree = itree->CloneTree();
+      cout<<output<<"/"<<dirname<<"/"<<treename<<" created (temporary!)"<<endl;
+      
+      
+      // create H->bb branches in output tree
+       
+      Float_t weight_lsf;
+      Float_t weight_lsf_up;
+      Float_t weight_lsf_down;
+      
+      TBranch* b_weight_lsf        =otree->Branch("weight_lsf",         &weight_lsf,           "weight_lsf/F");
+      TBranch* b_weight_lsf_up     =otree->Branch("weight_lsf_up"      ,&weight_lsf_up,     "weight_lsf_up/F");
+      TBranch* b_weight_lsf_down   =otree->Branch("weight_lsf_down",&weight_lsf_down,     "weight_lsf_down/F");
+      
+      // setup input branches needed to fill H->bb branches
+      
+      Int_t   njt;             itree->SetBranchAddress("njt",          &njt);
+      Float_t jtpt[140];       itree->SetBranchAddress("jtpt",         jtpt);
+      Float_t jteta[140];      itree->SetBranchAddress("jteta",       jteta);
+      Int_t   nmu;             itree->SetBranchAddress("nmu",          &nmu);
+      Float_t mueta[110];      itree->SetBranchAddress("mueta",       mueta);
+      Float_t mupt[110];       itree->SetBranchAddress("mupt",         mupt);
+      Float_t mucharge[110];   itree->SetBranchAddress("mucharge", mucharge);
+      Int_t   nel;             itree->SetBranchAddress("nel",          &nel);
+      Float_t eleta[110];      itree->SetBranchAddress("eleta",       eleta);
+      Float_t elpt[110];       itree->SetBranchAddress("elpt",         elpt);
+      Float_t elcharge[110];   itree->SetBranchAddress("elcharge", elcharge);
+
+      // declare files and fill histograms
+
+      string rootfile_dir = "/portal/ekpcms6/home/sfink/thanalysis/STANDALONE/THAnalysis/";
+      
+      TFile mu_id_file((rootfile_dir+"/MuonID_Z_RunCD_Reco76X_Feb15.root").c_str());
+      h_muon_id = (TH2F *) mu_id_file.Get("MC_NUM_TightIDandIPCut_DEN_genTracks_PAR_pt_spliteta_bin1/pt_abseta_ratio");
+
+      TFile mu_iso_file((rootfile_dir + "/MuonIso_Z_RunCD_Reco76X_Feb15.root").c_str());
+      h_muon_iso = (TH2F *) mu_iso_file.Get("MC_NUM_TightRelIso_DEN_TightID_PAR_pt_spliteta_bin1/pt_abseta_ratio");
+  
+      TFile mu_trigger_file((rootfile_dir + "/SingleMuonTrigger_Z_RunCD_Reco76X_Feb15.root").c_str());
+      h_muon_trigger = (TH2F*) mu_trigger_file.Get("runD_IsoMu20_OR_IsoTkMu20_HLTv4p3_PtEtaBins/pt_abseta_ratio");
+
+      TFile el_id_file((rootfile_dir + "/ScaleFactor_GsfElectronToRECO_passingTrigWP80.txt.egamma_SF2D.root").c_str());
+      h_el_id = (TH2F*) el_id_file.Get("EGamma_SF2D");
+
+      TFile el_reco_file((rootfile_dir + "/eleRECO.txt.egamma_SF2D.root").c_str());
+      h_el_reco = (TH2F*) el_reco_file.Get("EGamma_SF2D");
+
+      
+      // loop over all events and fill branches
+      unsigned nevt = static_cast<unsigned>(itree->GetEntries());
+      cout<<nevt<<" events will be processed"<<endl;
+      
+      for (unsigned ievt=0;ievt<nevt;ievt++) {
+
+        itree->GetEntry(ievt);
+	cout << "===== EVENT " << ievt << " =====" << endl;
+
+        weight_lsf = 1.;
+
+        float eta = -99;
+        float abseta = fabs(eta);
+        float pt = -99;
+
+        // Depends on the lepton flavour.
+
+
+        // these three are to be calculated now
+        float overall_eff = 0;
+        float overall_abserr_up = 0;
+        float overall_abserr_down = 0;
+
+	
+	
+        if(nmu==1)
+        {
+
+          eta = mueta[0];
+          abseta = fabs(eta);
+          pt = mupt[0];
+
+	  float id_eff, id_err;
+	  muonIDScaleFactor(pt, abseta, &id_eff, &id_err);
+
+          float iso_eff, iso_err;
+          muonIsoScaleFactor(pt, abseta, &iso_eff, &iso_err);
+
+          float trigger_eff, trigger_err;
+          muonTriggerScaleFactor(pt, abseta, &trigger_eff, &trigger_err);
+	  //	  cout << "Efficiencies: Id, Iso, Trig: " << id_eff << " " << iso_eff << " " << trigger_eff << endl;
+          // calculate mean value of overall efficiency
+          overall_eff = id_eff * iso_eff * trigger_eff;
+	  assert(overall_eff != 0);
+
+          // calculate relative errors
+	  const float id_relerr = sqrt(pow(id_err / id_eff, 2) + pow(MU_ID_SYS, 2));
+          const float iso_relerr = sqrt(pow(iso_err / iso_eff, 2) + pow(MU_ISO_SYS, 2));
+          const float trigger_relerr = sqrt(pow(trigger_err / trigger_eff, 2) + pow(MU_TRIG_SYS, 2));
+
+          // relative uncertainty on overall efficiency
+          const float overall_relerr = sqrt( pow(id_relerr, 2.) +
+					     pow(iso_relerr, 2.) + pow(trigger_relerr, 2.) );
+	  
+          // absolute uncertainty on overall efficiency
+          overall_abserr_up = overall_abserr_down = overall_relerr * overall_eff;
+        }
+        else if(nel == 1) //electron
+        {
+          eta = eleta[0];
+          abseta = fabs(eta);
+          pt = elpt[0];
+	  
+	  float id_eff, id_err;
+	  electronIDScaleFactor(pt, eta, &id_eff, &id_err);
+
+          float reco_eff, reco_err;
+          electronRecoScaleFactor(pt, eta, &reco_eff, &reco_err);
+
+          float trigger_eff =1;
+	  float trigger_err =0;
+	  //          muonTriggerScaleFactor(pt, abseta, &trigger_eff, &trigger_err);
+	  cout << "Efficiencies: Id, Reco, Trig: " << id_eff << " " << reco_eff << " " << trigger_eff << endl;
+          // calculate mean value of overall efficiency
+          overall_eff = id_eff * reco_eff * trigger_eff;
+	  assert(overall_eff != 0);
+
+          // calculate relative errors
+	  const float id_relerr = sqrt(pow(id_err / id_eff, 2) + pow(MU_ID_SYS, 2));
+          const float reco_relerr = sqrt(pow(reco_err / reco_eff, 2)); // + pow(MU_ISO_SYS, 2));
+          const float trigger_relerr = sqrt(pow(trigger_err / trigger_eff, 2)); // + pow(MU_TRIG_SYS, 2));
+
+          // relative uncertainty on overall efficiency
+          const float overall_relerr = sqrt( pow(id_relerr, 2.) +
+					     pow(reco_relerr, 2.) + pow(trigger_relerr, 2.) );
+	  
+          // absolute uncertainty on overall efficiency
+          overall_abserr_up = overall_abserr_down = overall_relerr * overall_eff;
+          
+	}
+        
+
+	
+
+	
+	weight_lsf = overall_eff;
+        
+	const float low_eff  = overall_eff - overall_abserr_down; // complete down-variation
+	const float high_eff = overall_eff + overall_abserr_up;   // complete up-variation
+
+	weight_lsf_down =  low_eff;
+	weight_lsf_up = high_eff;
+	
+	
+	b_weight_lsf->Fill();
+	b_weight_lsf_up->Fill();
+	b_weight_lsf_down->Fill();
+	
+      
+      } // ievt
+      
+    } // idir
+    
+    cout<<"Save extended tree to "<<input<<" ... "<<flush;
+    ifile->Close();
+    delete ifile;
+    ofile->Write();
+    ofile->Close();
+    delete ofile;
+    string cmd = "mv " + output + " " + input;
+    gSystem->Exec(cmd.c_str());
+    cout<<"DONE!\n"<<endl;
+    
+  } // ifile
+  
+  */  
+  return 0;
+}
+

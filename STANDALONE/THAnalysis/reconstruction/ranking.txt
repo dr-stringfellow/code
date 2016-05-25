@@ -1,0 +1,41 @@
+--- BDT                      : Creating weight file in xml format: weights/BDTreco_expert_BDT.weights.xml
+--- BDT                      : Creating standalone response class: weights/BDTreco_expert_BDT.class.C
+--- BDT                      : Write monitoring histograms to file: ./bdt_recoBDTreco.root:/Method_BDT/BDT
+--- Factory                  : Training finished
+--- Factory                  : 
+--- Factory                  : Ranking input variables (method specific)...
+--- BDT                      : Ranking result (top variable is best ranked)
+--- BDT                      : -----------------------------------------------------------------------------------------
+--- BDT                      : Rank : Variable                                                : Variable Importance
+--- BDT                      : -----------------------------------------------------------------------------------------
+--- BDT                      :    1 : abs(hbbeta)                                             : 1.250e-01
+--- BDT                      :    2 : hbbpt                                                   : 1.183e-01
+--- BDT                      :    3 : deltaleptop                                             : 9.210e-02
+--- BDT                      :    4 : deltaR(topeta,topphi,hbbeta,hbbphi)                     : 8.263e-02
+--- BDT                      :    5 : hbbm                                                    : 7.154e-02
+--- BDT                      :    6 : jtcsvt[ljtidx]>0.679                                    : 5.438e-02
+--- BDT                      :    7 : topm                                                    : 5.048e-02
+--- BDT                      :    8 : costwlt2_rec                                            : 4.856e-02
+--- BDT                      :    9 : hbbdr                                                   : 4.813e-02
+--- BDT                      :   10 : (toppt+hbbpt)/sumHt                                     : 4.599e-02
+--- BDT                      :   11 : abs(jteta[ljtidx])                                      : 4.592e-02
+--- BDT                      :   12 : deltaR(jteta[topjtidx],jtphi[topjtidx],lepweta,lepwphi) : 4.513e-02
+--- BDT                      :   13 : abs(topeta)                                             : 4.171e-02
+--- BDT                      :   14 : (jtcsvt[hbbjtidx[0]]>0.679)+(jtcsvt[hbbjtidx[1]]>0.679) : 3.664e-02
+--- BDT                      :   15 : deltaR(topeta,topphi,lepweta,lepwphi)                   : 3.296e-02
+--- BDT                      :   16 : jtpt[ljtidx]                                            : 2.307e-02
+--- BDT                      :   17 : toppt                                                   : 1.929e-02
+--- BDT                      :   18 : jtcsvt[topjtidx]>0.679                                  : 1.820e-02
+--- BDT                      : -----------------------------------------------------------------------------------------
+--- Factory                  : 
+--- Factory                  : === Destroy and recreate all methods via weight files for testing ===
+--- Factory                  : 
+--- MethodBase               : Reading weight file: weights/BDTreco_expert_BDT.weights.xml
+--- BDT                      : Read method "BDT" of type "BDT"
+--- BDT                      : MVA method was trained with TMVA Version: 4.1.2
+--- BDT                      : MVA method was trained with ROOT Version: 5.32/00
+2
+--- Factory                  : Test all methods...
+--- Factory                  : Test method: BDT for Classification performance
+--- BDT                      : Evaluation of BDT on testing sample (3027348 events)
+--- BDT                      : Elapsed time for evaluation of 3027348 events: 206 sec       

@@ -1,0 +1,266 @@
+////////////////////////////////////////////////////////////////////////////////
+//
+// th_lepscales_x
+// -----------------
+//
+// This program applies scale factors (weights) to correct the lepton selection
+//  efficiencies in the simulation.
+//
+//            02/09/2014 Benedikt Maier <benedikt.maier@cern.ch>
+//             (he valiantly stole this code from another framework)
+//                                                    
+////////////////////////////////////////////////////////////////////////////////
+
+
+
+#include "../interface/CommandLine.h"
+#include <assert.h>
+#include <TSystem.h>
+#include <TFile.h>
+#include <TTree.h>
+#include <TKey.h>
+#include <TEventList.h>
+#include <TLorentzVector.h>
+#include <TLatex.h>
+#include <TH1.h>
+#include <TCanvas.h>
+#include <TGaxis.h>
+#include <TColor.h>
+#include <TLegend.h>
+
+#include "TGraphAsymmErrors.h"
+#include <iostream>
+#include <sstream>
+#include <string>
+#include <vector>
+#include <cmath>
+#include <stdexcept>
+
+
+using namespace std;
+
+////////////////////////////////////////////////////////////////////////////////
+// helper
+////////////////////////////////////////////////////////////////////////////////
+
+
+////////////////////////////////////////////////////////////////////////////////
+// main
+////////////////////////////////////////////////////////////////////////////////
+
+//______________________________________________________________________________
+int main(int argc,char**argv)
+{
+  //
+  // evaluate command line options
+  //
+  CommandLine cl;
+  if (!cl.parse(argc,argv)) return 0;
+
+  vector<string> inputs      = cl.getVector<string>("inputs");
+  string         treename    = cl.getValue<string> ("treename",  "t");
+  string         datapath    = cl.getValue<string> ("datapath",  "/");
+  vector<string> varexpr     = cl.getVector<string> ("varexpr");
+  
+  if (!cl.check()) return 0;
+  cl.print();
+
+  new TColor(1308,0.7686274509803922, 0.3058823529411765, 0.3215686274509804
+	     );
+  new TColor(1307,0.24073795863422207, 0.34003177164489373, 0.4786370052053605
+	     );
+  new TColor(1306,0.3256286372570367, 0.5824294714811111, 0.551260440725878
+	     );
+  new TColor(1305,0.5488483550919352, 0.7555792405897566, 0.5823941160739373
+	     );
+  new TColor(1304,0.8423298817793848, 0.8737404427964184, 0.7524954030731037
+	     );
+  new TColor(1303,0.3333333333333333, 0.6588235294117647, 0.40784313725490196
+	     );
+  new TColor(1302,0.5058823529411764, 0.4470588235294118, 0.6980392156862745
+	     );
+  new TColor(1301,0.8, 0.7254901960784313, 0.4549019607843137
+	     );
+  
+
+  //
+  // loop over all input files
+  //
+  for (unsigned iinput=0;iinput<inputs.size();iinput++) {
+  
+    // open input file
+    string input = inputs[iinput]; //input = datapath + "/" + input;
+    TFile* ifile = new TFile(input.c_str(),"READ");
+    if (!ifile->IsOpen()) { cout<<"Failed to open "<<input<<endl; return 0; }
+
+    // create temporary output file
+    size_t pos = input.find(".root");
+    string output = input.substr(0,pos);
+    output = output + ".lsf.root";
+    TFile* ofile = new TFile(output.c_str(),"CREATE");
+    if (!ofile->IsOpen()) { cout<<"Failed to create "<<output<<endl; return 0; }
+    
+    // loop over input directories
+    TIter next(ifile->GetListOfKeys());
+    TKey* key(0);
+    while ((key=(TKey*)next())) {
+
+      if (strcmp(key->GetClassName(),"TDirectoryFile")!=0) continue;
+      
+      // read input directory
+      TDirectory* idir    = (TDirectory*)key->ReadObj();
+      string      dirname = idir->GetName();
+      cout<<input<<"/"<<dirname<<":"<<endl;
+      
+      // create output directory
+      TDirectory* odir = (TDirectory*)ofile->mkdir(dirname.c_str());
+      if(0==odir){cout<<"Failed to make "<<dirname<<" in "<<output<<endl;return 0;}
+      
+      // open input tree
+      TTree* itree = (TTree*)idir->Get(treename.c_str());
+      if(0==itree){cout<<"No "<<treename<<" in "<<output<<":"<<dirname<<endl;return 0;}
+      
+      
+      // check wether relevant branches are present
+      if (0==itree->FindBranch("nlepw")){ cout<<"no W->lnu branches stored!"<<endl; return 0; }
+
+      // clone input tree into output directory
+      odir->cd();
+      TTree* otree = itree->CloneTree();
+      cout<<output<<"/"<<dirname<<"/"<<treename<<" created (temporary!)"<<endl;
+
+
+      // create an empty root file first
+      
+      TH1F *h_sbpt = new TH1F("sbpt", "Pt of second b ",35,0,350);
+      TH1F *h_tpt = new TH1F("tpt", "Pt of top ",35,0,350);
+      TH1F *h_hpt = new TH1F("hpt", "Pt of higgs ",35,0,350);
+      TH1F *h_lqpt = new TH1F("lqpt", "Pt of lq ",35,0,350);
+
+      
+  
+      TH1F* harray[20];
+      harray[0] = h_sbpt;
+      harray[2] = h_tpt;
+      harray[3] = h_hpt;
+      harray[1] = h_lqpt;
+      
+      Float_t vars[20];
+      /*vars[0]= sbpt;
+      vars[1] = Hpt;
+      vars[2] = tpt;
+      vars[3] = lqpt;*/
+            
+      itree->SetBranchAddress("sbpt",&vars[0]);
+      itree->SetBranchAddress("lqpt",&vars[1]);
+      //      itree->SetBranchAddress("tpt",&vars[2]);
+      itree->SetBranchAddress("btoppt",&vars[2]);
+      itree->SetBranchAddress("Hdaupt",vars+3);
+      
+            
+      vector<string> leg_entries;
+      leg_entries.push_back("second b quark");
+      leg_entries.push_back("light quark");
+      leg_entries.push_back("b quark of top decay");
+      leg_entries.push_back("Higgs daughter 1");      
+      leg_entries.push_back("Higgs daughter 2"); 
+
+
+      
+      Int_t nentries = Int_t(itree->GetEntriesFast());
+
+      unsigned nevt = static_cast<unsigned>(itree->GetEntries());
+      cout<<nevt<<" events will be processed"<<endl;
+
+      for (unsigned ievt=0;ievt<nevt;ievt++) {
+
+	if(ievt%10000) cout << "Event " << ievt << endl;
+        itree->GetEntry(ievt);
+
+	for(unsigned i=0; i< 4; i++){
+	  harray[i]->Fill(vars[i]);
+	  /*h_sbpt->Fill(sbpt);  
+	  h_tpt->Fill(tpt);  
+	  h_hpt->Fill(Hpt);  
+	  h_lqpt->Fill(lqpt);*/
+	}
+      }
+
+
+      TCanvas* c = new TCanvas("c","c",1000,800);
+      c->cd(0);
+
+      gPad->SetTopMargin(0.1);
+      gPad->SetLeftMargin(0.15);
+      gPad->SetRightMargin(0.1);
+      gPad->SetBottomMargin(0.15);
+
+      TColor::SetPalette(1,0);
+      TGaxis::SetMaxDigits(3);
+      TGaxis::SetMaxDigits(2);
+      TGaxis::SetExponentOffset(0.01, 0, "x"); // Y and Y offset for X axis      
+      
+
+      harray[0]->GetXaxis()->SetTitle("p^{gen}_{T}");
+      harray[0]->GetYaxis()->SetTitle("normalized to unity (a.u.)");
+      harray[0]->SetTitle("");
+
+      
+      TLegend* l = new TLegend(0.6,0.65,0.8,0.85);
+      l->SetFillColor(10); l->SetLineColor(10); l->SetBorderSize(0); l->SetTextSize(0.045);
+
+      for(unsigned i=0; i< 4;i++){
+	harray[i]->Scale(1.0/harray[i]->Integral());
+	harray[i]->GetYaxis()->SetTitleSize(0.05);
+	harray[i]->GetYaxis()->SetLabelOffset(0.004);
+	harray[i]->GetYaxis()->SetTitleOffset(1.25);
+	harray[i]->GetYaxis()->SetLabelSize(0.05);
+	harray[i]->GetYaxis()->SetNdivisions(505);
+	harray[i]->GetXaxis()->SetTitleSize(0.05);
+	harray[i]->GetXaxis()->SetLabelSize(0.05);
+	harray[i]->GetXaxis()->SetTitleOffset(1.05);
+	harray[i]->GetXaxis()->SetLabelOffset(0.006);
+	harray[i]->GetXaxis()->SetNdivisions(505);
+	harray[i]->GetXaxis()->SetTickLength(harray[i]->GetXaxis()->GetTickLength() * 3.0 );
+	harray[i]->GetXaxis()->SetNoExponent(true);
+	harray[i]->GetYaxis()->SetNoExponent(true);
+	harray[i]->SetStats(0);
+	harray[i]->SetMaximum(0.25);
+	harray[i]->SetLineWidth(3);
+	harray[i]->SetLineColor(1301+1*i);
+
+	l->AddEntry(harray[i],leg_entries.at(i).c_str(),"l");
+
+	harray[i]->Draw("HISTSAME");
+      }
+      l->Draw();
+      TLatex tex;    
+      tex.SetTextSize(0.05);
+      tex.SetTextFont(42);
+      tex.SetNDC(true);
+      tex.DrawLatex(0.7,0.92,"#sqrt{s}=13 TeV");
+      
+      
+      c->Print("bla.pdf");
+     
+      for(unsigned i=0; i< 4;i++){
+	harray[i]->Write();
+      }
+
+    } // idir
+    
+    ifile->Close();
+    delete ifile;
+    ofile->Write();
+    ofile->Close();
+    delete ofile;
+    //    string cmd = "mv " + output + " " + input;
+    //    gSystem->Exec(cmd.c_str());
+    cout<<"DONE!\n"<<endl;
+    
+  } // ifile
+  
+
+  return 0;
+}
+

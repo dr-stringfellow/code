@@ -1,0 +1,3 @@
+/opt/ogs_sl6//ekpclusterSL6/spool/ekpblus002/job_scripts/68673: line 7: source: cmsswmaster.sh: file not found
+/opt/ogs_sl6//ekpclusterSL6/spool/ekpblus002/job_scripts/68673: line 10: syntax error near unexpected token `done'
+/opt/ogs_sl6//ekpclusterSL6/spool/ekpblus002/job_scripts/68673: line 10: `done'
