@@ -1,0 +1,18 @@
+bdtconfig = "!H:!V:NTrees=1200:MinNodeSize=2:MaxDepth=3:BoostType=AdaBoost:AdaBoostBeta=0.3:SeparationType=GiniIndex:nCuts=20:PruneMethod=NoPruning"
+
+variables+ = "(nel==1 && nmu==0)*Alt$(elcharge[0],0)+(nel==0 && nmu==1)*Alt$(mucharge[0],0)"
+	     "log(tophadm[0])"
+	     "jtcsvt[hbbjtidx[0][0]]"
+             "jtcsvt[hbbjtidx[1][0]]"
+	     "log(hbbpt[0])"
+	     "deltaR(jteta[tophadjtidx[0]],jtphi[tophadjtidx[0]],jteta[tophadjtidx[1]],jtphi[tophadjtidx[1]])"
+	     "jtcsvt[tophadjtidx[0]]"
+             "jtcsvt[tophadjtidx[1]]"
+	     "log(jtpt[ljtidx[0]])"
+	     "abs(jteta[ljtidx[0]])"
+
+cvcf_weight_idx = "0"
+
+methods = "BDT"	     
+cuts = "((nmu==1)*(met>35) || (nel==1)*(met>45))"
+

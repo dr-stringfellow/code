@@ -1,0 +1,16 @@
+<p>Rates for all observables and processes as given by the 'nominal' templates. If errors are given, they are MC stat. uncertainties.</p>
+<table cellpadding="2" border="1">
+<tr><th>process / observable</th><th>tH_4tt_mu</th></tr>
+<tr><td>TTb</td><td>3.1197 +/- 0.35249</td></tr>
+<tr><td>TTbb</td><td>20.195 +/- 0.86982</td></tr>
+<tr><td>TTcc</td><td>2.8203 +/- 0.31093</td></tr>
+<tr><td>TTlf</td><td>2.824 +/- 0.37345</td></tr>
+<tr><td>VV</td><td>0.081373 +/- 0.081382</td></tr>
+<tr><td>Wj</td><td>1.7881e-06 +/- 0.0013372</td></tr>
+<tr><td>s_Top</td><td>0.74183 +/- 0.33309</td></tr>
+<tr><td>ttH</td><td>1.7312 +/- 0.073432</td></tr>
+<tr><td><b>total background</b></td><td>31.513 +/- 1.1135</td></tr>
+<tr><td>tH</td><td>0.79978 +/- 0.012112</td></tr>
+<tr><td><b>DATA</b></td><td>48</td></tr>
+</table>
+

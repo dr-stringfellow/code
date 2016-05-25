@@ -1,0 +1,790 @@
+tH_3tt_mu__tH__nominal: 8.25868
+tH_3tt_mu__TTbb__nominal: 253.254
+tH_3tt_mu__TTb__nominal: 139.042
+tH_3tt_mu__TTcc__nominal: 221.052
+tH_3tt_mu__TTlf__nominal: 707.989
+tH_3tt_mu__s_Top__nominal: 50.5147
+tH_3tt_mu__ttH__nominal: 13.7623
+tH_3tt_mu__VV__nominal: 1.18825
+tH_3tt_mu__Wj__nominal: 40.1533
+tH_3tt_mu__Zj__nominal: 1.78814e-06
+tH_3tt_mu__data_obs__nominal: 1539
+
+tH_3tt_mu__tH__btagUp: 8.23983
+tH_3tt_mu__TTbb__btagUp: 249.349
+tH_3tt_mu__TTb__btagUp: 135.513
+tH_3tt_mu__TTcc__btagUp: 207.325
+tH_3tt_mu__TTlf__btagUp: 635.633
+tH_3tt_mu__s_Top__btagUp: 45.4552
+tH_3tt_mu__ttH__btagUp: 13.5106
+tH_3tt_mu__VV__btagUp: 1.03127
+tH_3tt_mu__Wj__btagUp: 13.7995
+tH_3tt_mu__Zj__btagUp: 1.78814e-06 (empty nominal yield - unchanged)
+
+tH_3tt_mu__tH__btagDown: 8.27701
+tH_3tt_mu__TTbb__btagDown: 257.076
+tH_3tt_mu__TTb__btagDown: 142.445
+tH_3tt_mu__TTcc__btagDown: 235.39
+tH_3tt_mu__TTlf__btagDown: 779.799
+tH_3tt_mu__s_Top__btagDown: 55.5488
+tH_3tt_mu__ttH__btagDown: 14.0401
+tH_3tt_mu__VV__btagDown: 1.39618
+tH_3tt_mu__Wj__btagDown: 109.362
+tH_3tt_mu__Zj__btagDown: 1.78814e-06 (empty nominal yield - unchanged)
+
+tH_3tt_mu__tH__mistagUp: 9.07203
+tH_3tt_mu__TTbb__mistagUp: 275.903
+tH_3tt_mu__TTb__mistagUp: 153.104
+tH_3tt_mu__TTcc__mistagUp: 236.883
+tH_3tt_mu__TTlf__mistagUp: 759.939
+tH_3tt_mu__s_Top__mistagUp: 54.8465
+tH_3tt_mu__ttH__mistagUp: 14.8948
+tH_3tt_mu__VV__mistagUp: 1.27269
+tH_3tt_mu__Wj__mistagUp: 41.0342
+tH_3tt_mu__Zj__mistagUp: 1.78814e-06 (empty nominal yield - unchanged)
+
+tH_3tt_mu__tH__mistagDown: 7.48487
+tH_3tt_mu__TTbb__mistagDown: 231.57
+tH_3tt_mu__TTb__mistagDown: 125.86
+tH_3tt_mu__TTcc__mistagDown: 205.771
+tH_3tt_mu__TTlf__mistagDown: 657.882
+tH_3tt_mu__s_Top__mistagDown: 46.3908
+tH_3tt_mu__ttH__mistagDown: 12.664
+tH_3tt_mu__VV__mistagDown: 1.10917
+tH_3tt_mu__Wj__mistagDown: 39.3106
+tH_3tt_mu__Zj__mistagDown: 1.78814e-06 (empty nominal yield - unchanged)
+
+tH_3tt_mu__tH__pileupUp: 8.20266
+tH_3tt_mu__TTbb__pileupUp: 251.763
+tH_3tt_mu__TTb__pileupUp: 138.223
+tH_3tt_mu__TTcc__pileupUp: 219.785
+tH_3tt_mu__TTlf__pileupUp: 706.76
+tH_3tt_mu__s_Top__pileupUp: 49.7474
+tH_3tt_mu__ttH__pileupUp: 13.6993
+tH_3tt_mu__VV__pileupUp: 1.19443
+tH_3tt_mu__Wj__pileupUp: 40.6477
+tH_3tt_mu__Zj__pileupUp: 1.78814e-06 (empty nominal yield - unchanged)
+
+tH_3tt_mu__tH__pileupDown: 8.31404
+tH_3tt_mu__TTbb__pileupDown: 254.532
+tH_3tt_mu__TTb__pileupDown: 140.027
+tH_3tt_mu__TTcc__pileupDown: 222.116
+tH_3tt_mu__TTlf__pileupDown: 708.717
+tH_3tt_mu__s_Top__pileupDown: 50.7503
+tH_3tt_mu__ttH__pileupDown: 13.836
+tH_3tt_mu__VV__pileupDown: 1.1739
+tH_3tt_mu__Wj__pileupDown: 38.4128
+tH_3tt_mu__Zj__pileupDown: 1.78814e-06 (empty nominal yield - unchanged)
+
+tH_3tt_mu__tH__topptUp: 8.25868
+tH_3tt_mu__TTbb__topptUp: 245.019
+tH_3tt_mu__TTb__topptUp: 134.951
+tH_3tt_mu__TTcc__topptUp: 214.53
+tH_3tt_mu__TTlf__topptUp: 695.891
+tH_3tt_mu__s_Top__topptUp: 50.5147
+tH_3tt_mu__ttH__topptUp: 13.7623
+tH_3tt_mu__VV__topptUp: 1.18825
+tH_3tt_mu__Wj__topptUp: 40.1533
+tH_3tt_mu__Zj__topptUp: 1.78814e-06 (empty nominal yield - unchanged)
+
+tH_3tt_mu__tH__topptDown: 8.25868
+tH_3tt_mu__TTbb__topptDown: 264.409
+tH_3tt_mu__TTb__topptDown: 144.658
+tH_3tt_mu__TTcc__topptDown: 230.168
+tH_3tt_mu__TTlf__topptDown: 727.099
+tH_3tt_mu__s_Top__topptDown: 50.5147
+tH_3tt_mu__ttH__topptDown: 13.7623
+tH_3tt_mu__VV__topptDown: 1.18825
+tH_3tt_mu__Wj__topptDown: 40.1533
+tH_3tt_mu__Zj__topptDown: 1.78814e-06 (empty nominal yield - unchanged)
+
+tH_3tt_mu__tH__metUp: 8.36062
+tH_3tt_mu__TTbb__metUp: 255.7
+tH_3tt_mu__TTb__metUp: 140.917
+tH_3tt_mu__TTcc__metUp: 220.803
+tH_3tt_mu__TTlf__metUp: 725.117
+tH_3tt_mu__s_Top__metUp: 49.8346
+tH_3tt_mu__ttH__metUp: 13.8154
+tH_3tt_mu__VV__metUp: 1.20147
+tH_3tt_mu__Wj__metUp: 40.8193
+tH_3tt_mu__Zj__metUp: 1.78814e-06 (empty nominal yield - unchanged)
+
+tH_3tt_mu__tH__metDown: 8.29216
+tH_3tt_mu__TTbb__metDown: 253.284
+tH_3tt_mu__TTb__metDown: 139.529
+tH_3tt_mu__TTcc__metDown: 220.709
+tH_3tt_mu__TTlf__metDown: 710.442
+tH_3tt_mu__s_Top__metDown: 50.798
+tH_3tt_mu__ttH__metDown: 13.8751
+tH_3tt_mu__VV__metDown: 1.20074
+tH_3tt_mu__Wj__metDown: 40.107
+tH_3tt_mu__Zj__metDown: 1.78814e-06 (empty nominal yield - unchanged)
+
+tH_3tt_mu__tH__jerUp: 8.28382
+tH_3tt_mu__TTbb__jerUp: 254.239
+tH_3tt_mu__TTb__jerUp: 139.349
+tH_3tt_mu__TTcc__jerUp: 224.087
+tH_3tt_mu__TTlf__jerUp: 721.137
+tH_3tt_mu__s_Top__jerUp: 52.6372
+tH_3tt_mu__ttH__jerUp: 13.7863
+tH_3tt_mu__VV__jerUp: 1.26202
+tH_3tt_mu__Wj__jerUp: 30.7148
+tH_3tt_mu__Zj__jerUp: 1.78814e-06 (empty nominal yield - unchanged)
+
+tH_3tt_mu__tH__jerDown: 8.35492
+tH_3tt_mu__TTbb__jerDown: 255.608
+tH_3tt_mu__TTb__jerDown: 141.684
+tH_3tt_mu__TTcc__jerDown: 229.957
+tH_3tt_mu__TTlf__jerDown: 756.472
+tH_3tt_mu__s_Top__jerDown: 52.3897
+tH_3tt_mu__ttH__jerDown: 13.8575
+tH_3tt_mu__VV__jerDown: 1.25544
+tH_3tt_mu__Wj__jerDown: 46.577
+tH_3tt_mu__Zj__jerDown: 1.78814e-06 (empty nominal yield - unchanged)
+systematic              =                                jes
+tH_3tt_mu__tH__jesUp: 8.45649
+tH_3tt_mu__TTbb__jesUp: 259.997
+tH_3tt_mu__TTb__jesUp: 142.473
+tH_3tt_mu__TTcc__jesUp: 229.345
+tH_3tt_mu__TTlf__jesUp: 736.579
+tH_3tt_mu__s_Top__jesUp: 54.4284
+tH_3tt_mu__ttH__jesUp: 13.9153
+tH_3tt_mu__VV__jesUp: 1.32695
+tH_3tt_mu__Wj__jesUp: 45.9764
+tH_3tt_mu__Zj__jesUp: 1.78814e-06 (empty nominal yield - unchanged)
+systematic              =                                jes
+tH_3tt_mu__tH__jesDown: 8.19391
+tH_3tt_mu__TTbb__jesDown: 250.737
+tH_3tt_mu__TTb__jesDown: 140.125
+tH_3tt_mu__TTcc__jesDown: 230.495
+tH_3tt_mu__TTlf__jesDown: 754.272
+tH_3tt_mu__s_Top__jesDown: 51.0014
+tH_3tt_mu__ttH__jesDown: 13.7304
+tH_3tt_mu__VV__jesDown: 1.19051
+tH_3tt_mu__Wj__jesDown: 40.0929
+tH_3tt_mu__Zj__jesDown: 1.78814e-06 (empty nominal yield - unchanged)
+systematic              =                              match
+tH_3tt_mu__tH__matchUp: 8.25868
+tH_3tt_mu__TTbb__matchUp: 244.33
+tH_3tt_mu__TTb__matchUp: 139.501
+tH_3tt_mu__TTcc__matchUp: 240.756
+tH_3tt_mu__TTlf__matchUp: 767.303
+tH_3tt_mu__s_Top__matchUp: 50.5147
+tH_3tt_mu__ttH__matchUp: 13.7623
+tH_3tt_mu__VV__matchUp: 1.18825
+tH_3tt_mu__Wj__matchUp: 40.1533
+tH_3tt_mu__Zj__matchUp: 1.78814e-06 (empty nominal yield - unchanged)
+systematic              =                              match
+tH_3tt_mu__tH__matchDown: 8.25868
+tH_3tt_mu__TTbb__matchDown: 240.902
+tH_3tt_mu__TTb__matchDown: 145.662
+tH_3tt_mu__TTcc__matchDown: 238.876
+tH_3tt_mu__TTlf__matchDown: 764.275
+tH_3tt_mu__s_Top__matchDown: 50.5147
+tH_3tt_mu__ttH__matchDown: 13.7623
+tH_3tt_mu__VV__matchDown: 1.18825
+tH_3tt_mu__Wj__matchDown: 40.1533
+tH_3tt_mu__Zj__matchDown: 1.78814e-06 (empty nominal yield - unchanged)
+systematic              =                                   
+tH_3tt_el__tH__nominal: 5.69778
+tH_3tt_el__TTbb__nominal: 169.238
+tH_3tt_el__TTb__nominal: 98.5104
+tH_3tt_el__TTcc__nominal: 161.308
+tH_3tt_el__TTlf__nominal: 458.922
+tH_3tt_el__s_Top__nominal: 38.8484
+tH_3tt_el__ttH__nominal: 10.058
+tH_3tt_el__VV__nominal: 0.788022
+tH_3tt_el__Wj__nominal: 5.53975
+tH_3tt_el__Zj__nominal: 1.59685
+tH_3tt_el__data_obs__nominal: 1036
+systematic              =                             pdf_gg
+systematic              =                             pdf_qg
+systematic              =                          pdf_qqbar
+systematic              =                           scale_tt
+systematic              =                          scale_ttH
+systematic              =                            scale_V
+systematic              =                           scale_VV
+systematic              =                               lumi
+systematic              =                              eff_m
+systematic              =                              eff_e
+systematic              =                            tthf_bb
+systematic              =                             tthf_b
+systematic              =                            tthf_cc
+systematic              =                               btag
+tH_3tt_el__tH__btagUp: 5.68451
+tH_3tt_el__TTbb__btagUp: 167.226
+tH_3tt_el__TTb__btagUp: 96.409
+tH_3tt_el__TTcc__btagUp: 151.494
+tH_3tt_el__TTlf__btagUp: 409.249
+tH_3tt_el__s_Top__btagUp: 33.4713
+tH_3tt_el__ttH__btagUp: 9.90929
+tH_3tt_el__VV__btagUp: 0.796021
+tH_3tt_el__Wj__btagUp: 4.52471
+tH_3tt_el__Zj__btagUp: 1.63042
+systematic              =                               btag
+tH_3tt_el__tH__btagDown: 5.71028
+tH_3tt_el__TTbb__btagDown: 171.22
+tH_3tt_el__TTb__btagDown: 100.558
+tH_3tt_el__TTcc__btagDown: 170.889
+tH_3tt_el__TTlf__btagDown: 508.201
+tH_3tt_el__s_Top__btagDown: 44.9827
+tH_3tt_el__ttH__btagDown: 10.2117
+tH_3tt_el__VV__btagDown: 0.779678
+tH_3tt_el__Wj__btagDown: 6.52242
+tH_3tt_el__Zj__btagDown: 1.56216
+systematic              =                             mistag
+tH_3tt_el__tH__mistagUp: 6.26151
+tH_3tt_el__TTbb__mistagUp: 184.188
+tH_3tt_el__TTb__mistagUp: 108.644
+tH_3tt_el__TTcc__mistagUp: 172.917
+tH_3tt_el__TTlf__mistagUp: 493.581
+tH_3tt_el__s_Top__mistagUp: 42.0322
+tH_3tt_el__ttH__mistagUp: 10.8815
+tH_3tt_el__VV__mistagUp: 0.875082
+tH_3tt_el__Wj__mistagUp: 5.8096
+tH_3tt_el__Zj__mistagUp: 1.69091
+systematic              =                             mistag
+tH_3tt_el__tH__mistagDown: 5.16194
+tH_3tt_el__TTbb__mistagDown: 154.902
+tH_3tt_el__TTb__mistagDown: 89.0221
+tH_3tt_el__TTcc__mistagDown: 150.106
+tH_3tt_el__TTlf__mistagDown: 425.525
+tH_3tt_el__s_Top__mistagDown: 35.8288
+tH_3tt_el__ttH__mistagDown: 9.25732
+tH_3tt_el__VV__mistagDown: 0.705928
+tH_3tt_el__Wj__mistagDown: 5.26037
+tH_3tt_el__Zj__mistagDown: 1.50547
+systematic              =                             pileup
+tH_3tt_el__tH__pileupUp: 5.68183
+tH_3tt_el__TTbb__pileupUp: 167.92
+tH_3tt_el__TTb__pileupUp: 98.5596
+tH_3tt_el__TTcc__pileupUp: 161.498
+tH_3tt_el__TTlf__pileupUp: 458.319
+tH_3tt_el__s_Top__pileupUp: 37.3435
+tH_3tt_el__ttH__pileupUp: 10.0456
+tH_3tt_el__VV__pileupUp: 0.827545
+tH_3tt_el__Wj__pileupUp: 5.54517
+tH_3tt_el__Zj__pileupUp: 1.55729
+systematic              =                             pileup
+tH_3tt_el__tH__pileupDown: 5.71079
+tH_3tt_el__TTbb__pileupDown: 170.73
+tH_3tt_el__TTb__pileupDown: 98.2234
+tH_3tt_el__TTcc__pileupDown: 161.379
+tH_3tt_el__TTlf__pileupDown: 459.276
+tH_3tt_el__s_Top__pileupDown: 40.0837
+tH_3tt_el__ttH__pileupDown: 10.0755
+tH_3tt_el__VV__pileupDown: 0.74681
+tH_3tt_el__Wj__pileupDown: 5.79713
+tH_3tt_el__Zj__pileupDown: 1.618
+systematic              =                              toppt
+tH_3tt_el__tH__topptUp: 5.69778
+tH_3tt_el__TTbb__topptUp: 162.59
+tH_3tt_el__TTb__topptUp: 94.8714
+tH_3tt_el__TTcc__topptUp: 155.195
+tH_3tt_el__TTlf__topptUp: 446.25
+tH_3tt_el__s_Top__topptUp: 38.8484
+tH_3tt_el__ttH__topptUp: 10.058
+tH_3tt_el__VV__topptUp: 0.788022
+tH_3tt_el__Wj__topptUp: 5.53975
+tH_3tt_el__Zj__topptUp: 1.59685
+systematic              =                              toppt
+tH_3tt_el__tH__topptDown: 5.69778
+tH_3tt_el__TTbb__topptDown: 178.038
+tH_3tt_el__TTb__topptDown: 103.341
+tH_3tt_el__TTcc__topptDown: 169.469
+tH_3tt_el__TTlf__topptDown: 476.885
+tH_3tt_el__s_Top__topptDown: 38.8484
+tH_3tt_el__ttH__topptDown: 10.058
+tH_3tt_el__VV__topptDown: 0.788022
+tH_3tt_el__Wj__topptDown: 5.53975
+tH_3tt_el__Zj__topptDown: 1.59685
+systematic              =                                met
+tH_3tt_el__tH__metUp: 5.75442
+tH_3tt_el__TTbb__metUp: 171.285
+tH_3tt_el__TTb__metUp: 99.3062
+tH_3tt_el__TTcc__metUp: 162.602
+tH_3tt_el__TTlf__metUp: 465.582
+tH_3tt_el__s_Top__metUp: 39.0183
+tH_3tt_el__ttH__metUp: 10.0696
+tH_3tt_el__VV__metUp: 0.772286
+tH_3tt_el__Wj__metUp: 6.28782
+tH_3tt_el__Zj__metUp: 1.59685
+systematic              =                                met
+tH_3tt_el__tH__metDown: 5.75848
+tH_3tt_el__TTbb__metDown: 170.275
+tH_3tt_el__TTb__metDown: 99.4301
+tH_3tt_el__TTcc__metDown: 164.692
+tH_3tt_el__TTlf__metDown: 465.214
+tH_3tt_el__s_Top__metDown: 38.2353
+tH_3tt_el__ttH__metDown: 10.1906
+tH_3tt_el__VV__metDown: 0.895811
+tH_3tt_el__Wj__metDown: 4.98617
+tH_3tt_el__Zj__metDown: 1.59685
+systematic              =                                jer
+tH_3tt_el__tH__jerUp: 5.70665
+tH_3tt_el__TTbb__jerUp: 169.444
+tH_3tt_el__TTb__jerUp: 99.1573
+tH_3tt_el__TTcc__jerUp: 162.504
+tH_3tt_el__TTlf__jerUp: 470.676
+tH_3tt_el__s_Top__jerUp: 39.2516
+tH_3tt_el__ttH__jerUp: 10.0825
+tH_3tt_el__VV__jerUp: 0.803662
+tH_3tt_el__Wj__jerUp: 11.0321
+tH_3tt_el__Zj__jerUp: 1.59685
+systematic              =                                jer
+tH_3tt_el__tH__jerDown: 5.75912
+tH_3tt_el__TTbb__jerDown: 172.707
+tH_3tt_el__TTb__jerDown: 99.5042
+tH_3tt_el__TTcc__jerDown: 166.459
+tH_3tt_el__TTlf__jerDown: 490.707
+tH_3tt_el__s_Top__jerDown: 39.7816
+tH_3tt_el__ttH__jerDown: 10.1759
+tH_3tt_el__VV__jerDown: 0.833175
+tH_3tt_el__Wj__jerDown: 5.62126
+tH_3tt_el__Zj__jerDown: 1.59685
+systematic              =                                jes
+tH_3tt_el__tH__jesUp: 5.81415
+tH_3tt_el__TTbb__jesUp: 174.62
+tH_3tt_el__TTb__jesUp: 101.411
+tH_3tt_el__TTcc__jesUp: 165.392
+tH_3tt_el__TTlf__jesUp: 477.038
+tH_3tt_el__s_Top__jesUp: 40.493
+tH_3tt_el__ttH__jesUp: 10.2047
+tH_3tt_el__VV__jesUp: 0.947517
+tH_3tt_el__Wj__jesUp: 5.53975
+tH_3tt_el__Zj__jesUp: 1.59685
+systematic              =                                jes
+tH_3tt_el__tH__jesDown: 5.64511
+tH_3tt_el__TTbb__jesDown: 167.481
+tH_3tt_el__TTb__jesDown: 98.3737
+tH_3tt_el__TTcc__jesDown: 165.549
+tH_3tt_el__TTlf__jesDown: 495.523
+tH_3tt_el__s_Top__jesDown: 40.3718
+tH_3tt_el__ttH__jesDown: 10.07
+tH_3tt_el__VV__jesDown: 0.78486
+tH_3tt_el__Wj__jesDown: 5.5218
+tH_3tt_el__Zj__jesDown: 1.59685
+systematic              =                              match
+tH_3tt_el__tH__matchUp: 5.69778
+tH_3tt_el__TTbb__matchUp: 183.826
+tH_3tt_el__TTb__matchUp: 99.4802
+tH_3tt_el__TTcc__matchUp: 150.867
+tH_3tt_el__TTlf__matchUp: 509.266
+tH_3tt_el__s_Top__matchUp: 38.8484
+tH_3tt_el__ttH__matchUp: 10.058
+tH_3tt_el__VV__matchUp: 0.788022
+tH_3tt_el__Wj__matchUp: 5.53975
+tH_3tt_el__Zj__matchUp: 1.59685
+systematic              =                              match
+tH_3tt_el__tH__matchDown: 5.69778
+tH_3tt_el__TTbb__matchDown: 180.325
+tH_3tt_el__TTb__matchDown: 104.071
+tH_3tt_el__TTcc__matchDown: 158.848
+tH_3tt_el__TTlf__matchDown: 504.419
+tH_3tt_el__s_Top__matchDown: 38.8484
+tH_3tt_el__ttH__matchDown: 10.058
+tH_3tt_el__VV__matchDown: 0.788022
+tH_3tt_el__Wj__matchDown: 5.53975
+tH_3tt_el__Zj__matchDown: 1.59685
+systematic              =                                   
+tH_4tt_mu__tH__nominal: 0.761302
+tH_4tt_mu__TTbb__nominal: 19.7509
+tH_4tt_mu__TTb__nominal: 2.79076
+tH_4tt_mu__TTcc__nominal: 3.87703
+tH_4tt_mu__TTlf__nominal: 4.59083
+tH_4tt_mu__s_Top__nominal: 0.58837
+tH_4tt_mu__ttH__nominal: 1.59091
+tH_4tt_mu__VV__nominal: 0.0425209
+tH_4tt_mu__Wj__nominal: 1.78814e-06
+tH_4tt_mu__Zj__nominal: 1.78814e-06
+tH_4tt_mu__data_obs__nominal: 43
+systematic              =                             pdf_gg
+systematic              =                             pdf_qg
+systematic              =                          pdf_qqbar
+systematic              =                           scale_tt
+systematic              =                          scale_ttH
+systematic              =                            scale_V
+systematic              =                           scale_VV
+systematic              =                               lumi
+systematic              =                              eff_m
+systematic              =                              eff_e
+systematic              =                            tthf_bb
+systematic              =                             tthf_b
+systematic              =                            tthf_cc
+systematic              =                               btag
+tH_4tt_mu__tH__btagUp: 0.752896
+tH_4tt_mu__TTbb__btagUp: 19.1017
+tH_4tt_mu__TTb__btagUp: 2.51637
+tH_4tt_mu__TTcc__btagUp: 3.11365
+tH_4tt_mu__TTlf__btagUp: 2.5674
+tH_4tt_mu__s_Top__btagUp: 0.562051
+tH_4tt_mu__ttH__btagUp: 1.56921
+tH_4tt_mu__VV__btagUp: 0.0428115
+tH_4tt_mu__Wj__btagUp: 1.78814e-06 (empty nominal yield - unchanged)
+tH_4tt_mu__Zj__btagUp: 1.78814e-06 (empty nominal yield - unchanged)
+systematic              =                               btag
+tH_4tt_mu__tH__btagDown: 0.770221
+tH_4tt_mu__TTbb__btagDown: 20.3571
+tH_4tt_mu__TTb__btagDown: 3.06226
+tH_4tt_mu__TTcc__btagDown: 4.82704
+tH_4tt_mu__TTlf__btagDown: 7.12592
+tH_4tt_mu__s_Top__btagDown: 0.614331
+tH_4tt_mu__ttH__btagDown: 1.61426
+tH_4tt_mu__VV__btagDown: 0.0423371
+tH_4tt_mu__Wj__btagDown: 1.78814e-06 (empty nominal yield - unchanged)
+tH_4tt_mu__Zj__btagDown: 1.78814e-06 (empty nominal yield - unchanged)
+systematic              =                             mistag
+tH_4tt_mu__tH__mistagUp: 0.881415
+tH_4tt_mu__TTbb__mistagUp: 22.4831
+tH_4tt_mu__TTb__mistagUp: 3.06607
+tH_4tt_mu__TTcc__mistagUp: 4.159
+tH_4tt_mu__TTlf__mistagUp: 4.81742
+tH_4tt_mu__s_Top__mistagUp: 0.659869
+tH_4tt_mu__ttH__mistagUp: 1.82426
+tH_4tt_mu__VV__mistagUp: 0.0538573
+tH_4tt_mu__Wj__mistagUp: 1.78814e-06 (empty nominal yield - unchanged)
+tH_4tt_mu__Zj__mistagUp: 1.78814e-06 (empty nominal yield - unchanged)
+systematic              =                             mistag
+tH_4tt_mu__tH__mistagDown: 0.653827
+tH_4tt_mu__TTbb__mistagDown: 17.2755
+tH_4tt_mu__TTb__mistagDown: 2.533
+tH_4tt_mu__TTcc__mistagDown: 3.60546
+tH_4tt_mu__TTlf__mistagDown: 4.36692
+tH_4tt_mu__s_Top__mistagDown: 0.521854
+tH_4tt_mu__ttH__mistagDown: 1.3806
+tH_4tt_mu__VV__mistagDown: 0.0330589
+tH_4tt_mu__Wj__mistagDown: 1.78814e-06 (empty nominal yield - unchanged)
+tH_4tt_mu__Zj__mistagDown: 1.78814e-06 (empty nominal yield - unchanged)
+systematic              =                             pileup
+tH_4tt_mu__tH__pileupUp: 0.755944
+tH_4tt_mu__TTbb__pileupUp: 19.9115
+tH_4tt_mu__TTb__pileupUp: 2.82309
+tH_4tt_mu__TTcc__pileupUp: 3.91073
+tH_4tt_mu__TTlf__pileupUp: 4.84188
+tH_4tt_mu__s_Top__pileupUp: 0.672135
+tH_4tt_mu__ttH__pileupUp: 1.59296
+tH_4tt_mu__VV__pileupUp: 0.0341133
+tH_4tt_mu__Wj__pileupUp: 1.78814e-06 (empty nominal yield - unchanged)
+tH_4tt_mu__Zj__pileupUp: 1.78814e-06 (empty nominal yield - unchanged)
+systematic              =                             pileup
+tH_4tt_mu__tH__pileupDown: 0.766643
+tH_4tt_mu__TTbb__pileupDown: 19.6097
+tH_4tt_mu__TTb__pileupDown: 2.78023
+tH_4tt_mu__TTcc__pileupDown: 3.84009
+tH_4tt_mu__TTlf__pileupDown: 4.37216
+tH_4tt_mu__s_Top__pileupDown: 0.510817
+tH_4tt_mu__ttH__pileupDown: 1.59348
+tH_4tt_mu__VV__pileupDown: 0.0503423
+tH_4tt_mu__Wj__pileupDown: 1.78814e-06 (empty nominal yield - unchanged)
+tH_4tt_mu__Zj__pileupDown: 1.78814e-06 (empty nominal yield - unchanged)
+systematic              =                              toppt
+tH_4tt_mu__tH__topptUp: 0.761302
+tH_4tt_mu__TTbb__topptUp: 18.8428
+tH_4tt_mu__TTb__topptUp: 2.61163
+tH_4tt_mu__TTcc__topptUp: 3.68826
+tH_4tt_mu__TTlf__topptUp: 4.64979
+tH_4tt_mu__s_Top__topptUp: 0.58837
+tH_4tt_mu__ttH__topptUp: 1.59091
+tH_4tt_mu__VV__topptUp: 0.0425209
+tH_4tt_mu__Wj__topptUp: 1.78814e-06 (empty nominal yield - unchanged)
+tH_4tt_mu__Zj__topptUp: 1.78814e-06 (empty nominal yield - unchanged)
+systematic              =                              toppt
+tH_4tt_mu__tH__topptDown: 0.761302
+tH_4tt_mu__TTbb__topptDown: 20.9182
+tH_4tt_mu__TTb__topptDown: 3.00578
+tH_4tt_mu__TTcc__topptDown: 4.10137
+tH_4tt_mu__TTlf__topptDown: 4.56204
+tH_4tt_mu__s_Top__topptDown: 0.58837
+tH_4tt_mu__ttH__topptDown: 1.59091
+tH_4tt_mu__VV__topptDown: 0.0425209
+tH_4tt_mu__Wj__topptDown: 1.78814e-06 (empty nominal yield - unchanged)
+tH_4tt_mu__Zj__topptDown: 1.78814e-06 (empty nominal yield - unchanged)
+systematic              =                                met
+tH_4tt_mu__tH__metUp: 0.769569
+tH_4tt_mu__TTbb__metUp: 19.9783
+tH_4tt_mu__TTb__metUp: 2.79551
+tH_4tt_mu__TTcc__metUp: 4.0537
+tH_4tt_mu__TTlf__metUp: 4.59083
+tH_4tt_mu__s_Top__metUp: 0.67419
+tH_4tt_mu__ttH__metUp: 1.5889
+tH_4tt_mu__VV__metUp: 0.0425209
+tH_4tt_mu__Wj__metUp: 1.78814e-06 (empty nominal yield - unchanged)
+tH_4tt_mu__Zj__metUp: 1.78814e-06 (empty nominal yield - unchanged)
+systematic              =                                met
+tH_4tt_mu__tH__metDown: 0.764981
+tH_4tt_mu__TTbb__metDown: 20.1414
+tH_4tt_mu__TTb__metDown: 2.76372
+tH_4tt_mu__TTcc__metDown: 3.99026
+tH_4tt_mu__TTlf__metDown: 4.59083
+tH_4tt_mu__s_Top__metDown: 0.58837
+tH_4tt_mu__ttH__metDown: 1.58516
+tH_4tt_mu__VV__metDown: 0.0425209
+tH_4tt_mu__Wj__metDown: 1.78814e-06 (empty nominal yield - unchanged)
+tH_4tt_mu__Zj__metDown: 1.78814e-06 (empty nominal yield - unchanged)
+systematic              =                                jer
+tH_4tt_mu__tH__jerUp: 0.765421
+tH_4tt_mu__TTbb__jerUp: 19.9771
+tH_4tt_mu__TTb__jerUp: 2.93466
+tH_4tt_mu__TTcc__jerUp: 5.31654
+tH_4tt_mu__TTlf__jerUp: 4.47104
+tH_4tt_mu__s_Top__jerUp: 0.707164
+tH_4tt_mu__ttH__jerUp: 1.57843
+tH_4tt_mu__VV__jerUp: 0.0425209
+tH_4tt_mu__Wj__jerUp: 1.78814e-06 (empty nominal yield - unchanged)
+tH_4tt_mu__Zj__jerUp: 1.78814e-06 (empty nominal yield - unchanged)
+systematic              =                                jer
+tH_4tt_mu__tH__jerDown: 0.773047
+tH_4tt_mu__TTbb__jerDown: 20.17
+tH_4tt_mu__TTb__jerDown: 2.88126
+tH_4tt_mu__TTcc__jerDown: 4.19779
+tH_4tt_mu__TTlf__jerDown: 5.35615
+tH_4tt_mu__s_Top__jerDown: 0.798575
+tH_4tt_mu__ttH__jerDown: 1.60556
+tH_4tt_mu__VV__jerDown: 0.0425209
+tH_4tt_mu__Wj__jerDown: 1.78814e-06 (empty nominal yield - unchanged)
+tH_4tt_mu__Zj__jerDown: 1.78814e-06 (empty nominal yield - unchanged)
+systematic              =                                jes
+tH_4tt_mu__tH__jesUp: 0.789394
+tH_4tt_mu__TTbb__jesUp: 20.2853
+tH_4tt_mu__TTb__jesUp: 2.85939
+tH_4tt_mu__TTcc__jesUp: 3.85956
+tH_4tt_mu__TTlf__jesUp: 5.0171
+tH_4tt_mu__s_Top__jesUp: 0.827727
+tH_4tt_mu__ttH__jesUp: 1.63114
+tH_4tt_mu__VV__jesUp: 0.0425209
+tH_4tt_mu__Wj__jesUp: 1.78814e-06 (empty nominal yield - unchanged)
+tH_4tt_mu__Zj__jesUp: 1.78814e-06 (empty nominal yield - unchanged)
+systematic              =                                jes
+tH_4tt_mu__tH__jesDown: 0.750611
+tH_4tt_mu__TTbb__jesDown: 19.8176
+tH_4tt_mu__TTb__jesDown: 2.78329
+tH_4tt_mu__TTcc__jesDown: 4.15841
+tH_4tt_mu__TTlf__jesDown: 5.41105
+tH_4tt_mu__s_Top__jesDown: 1.69164
+tH_4tt_mu__ttH__jesDown: 1.59695
+tH_4tt_mu__VV__jesDown: 0.0511889
+tH_4tt_mu__Wj__jesDown: 1.78814e-06 (empty nominal yield - unchanged)
+tH_4tt_mu__Zj__jesDown: 1.78814e-06 (empty nominal yield - unchanged)
+systematic              =                              match
+tH_4tt_mu__tH__matchUp: 0.761302
+tH_4tt_mu__TTbb__matchUp: 19.3127
+tH_4tt_mu__TTb__matchUp: 2.49734
+tH_4tt_mu__TTcc__matchUp: 4.601
+tH_4tt_mu__TTlf__matchUp: 5.45338
+tH_4tt_mu__s_Top__matchUp: 0.58837
+tH_4tt_mu__ttH__matchUp: 1.59091
+tH_4tt_mu__VV__matchUp: 0.0425209
+tH_4tt_mu__Wj__matchUp: 1.78814e-06 (empty nominal yield - unchanged)
+tH_4tt_mu__Zj__matchUp: 1.78814e-06 (empty nominal yield - unchanged)
+systematic              =                              match
+tH_4tt_mu__tH__matchDown: 0.761302
+tH_4tt_mu__TTbb__matchDown: 19.7983
+tH_4tt_mu__TTb__matchDown: 3.06938
+tH_4tt_mu__TTcc__matchDown: 2.2703
+tH_4tt_mu__TTlf__matchDown: 2.98554
+tH_4tt_mu__s_Top__matchDown: 0.58837
+tH_4tt_mu__ttH__matchDown: 1.59091
+tH_4tt_mu__VV__matchDown: 0.0425209
+tH_4tt_mu__Wj__matchDown: 1.78814e-06 (empty nominal yield - unchanged)
+tH_4tt_mu__Zj__matchDown: 1.78814e-06 (empty nominal yield - unchanged)
+systematic              =                                   
+tH_4tt_el__tH__nominal: 0.536894
+tH_4tt_el__TTbb__nominal: 14.434
+tH_4tt_el__TTb__nominal: 1.26099
+tH_4tt_el__TTcc__nominal: 1.73352
+tH_4tt_el__TTlf__nominal: 2.50416
+tH_4tt_el__s_Top__nominal: 0.747863
+tH_4tt_el__ttH__nominal: 1.40894
+tH_4tt_el__VV__nominal: 1.78814e-06
+tH_4tt_el__Wj__nominal: 23.7645
+tH_4tt_el__Zj__nominal: 1.78814e-06
+tH_4tt_el__data_obs__nominal: 30
+systematic              =                             pdf_gg
+systematic              =                             pdf_qg
+systematic              =                          pdf_qqbar
+systematic              =                           scale_tt
+systematic              =                          scale_ttH
+systematic              =                            scale_V
+systematic              =                           scale_VV
+systematic              =                               lumi
+systematic              =                              eff_m
+systematic              =                              eff_e
+systematic              =                            tthf_bb
+systematic              =                             tthf_b
+systematic              =                            tthf_cc
+systematic              =                               btag
+tH_4tt_el__tH__btagUp: 0.529185
+tH_4tt_el__TTbb__btagUp: 14.085
+tH_4tt_el__TTb__btagUp: 1.17753
+tH_4tt_el__TTcc__btagUp: 1.53943
+tH_4tt_el__TTlf__btagUp: 1.43177
+tH_4tt_el__s_Top__btagUp: 0.571067
+tH_4tt_el__ttH__btagUp: 1.38431
+tH_4tt_el__VV__btagUp: 1.78814e-06 (empty nominal yield - unchanged)
+tH_4tt_el__Wj__btagUp: 0.392299
+tH_4tt_el__Zj__btagUp: 1.78814e-06 (empty nominal yield - unchanged)
+systematic              =                               btag
+tH_4tt_el__tH__btagDown: 0.544275
+tH_4tt_el__TTbb__btagDown: 14.7614
+tH_4tt_el__TTb__btagDown: 1.34717
+tH_4tt_el__TTcc__btagDown: 1.93527
+tH_4tt_el__TTlf__btagDown: 3.79392
+tH_4tt_el__s_Top__btagDown: 0.915719
+tH_4tt_el__ttH__btagDown: 1.43362
+tH_4tt_el__VV__btagDown: 1.78814e-06 (empty nominal yield - unchanged)
+tH_4tt_el__Wj__btagDown: 188.972
+tH_4tt_el__Zj__btagDown: 1.78814e-06 (empty nominal yield - unchanged)
+systematic              =                             mistag
+tH_4tt_el__tH__mistagUp: 0.621583
+tH_4tt_el__TTbb__mistagUp: 16.4655
+tH_4tt_el__TTb__mistagUp: 1.41988
+tH_4tt_el__TTcc__mistagUp: 1.84482
+tH_4tt_el__TTlf__mistagUp: 2.66913
+tH_4tt_el__s_Top__mistagUp: 0.866504
+tH_4tt_el__ttH__mistagUp: 1.6168
+tH_4tt_el__VV__mistagUp: 1.78814e-06 (empty nominal yield - unchanged)
+tH_4tt_el__Wj__mistagUp: 23.7645
+tH_4tt_el__Zj__mistagUp: 1.78814e-06 (empty nominal yield - unchanged)
+systematic              =                             mistag
+tH_4tt_el__tH__mistagDown: 0.461124
+tH_4tt_el__TTbb__mistagDown: 12.5946
+tH_4tt_el__TTb__mistagDown: 1.11377
+tH_4tt_el__TTcc__mistagDown: 1.62573
+tH_4tt_el__TTlf__mistagDown: 2.34442
+tH_4tt_el__s_Top__mistagDown: 0.641019
+tH_4tt_el__ttH__mistagDown: 1.22153
+tH_4tt_el__VV__mistagDown: 1.78814e-06 (empty nominal yield - unchanged)
+tH_4tt_el__Wj__mistagDown: 23.7645
+tH_4tt_el__Zj__mistagDown: 1.78814e-06 (empty nominal yield - unchanged)
+systematic              =                             pileup
+tH_4tt_el__tH__pileupUp: 0.533028
+tH_4tt_el__TTbb__pileupUp: 14.5295
+tH_4tt_el__TTb__pileupUp: 1.25633
+tH_4tt_el__TTcc__pileupUp: 1.80803
+tH_4tt_el__TTlf__pileupUp: 2.29784
+tH_4tt_el__s_Top__pileupUp: 0.732265
+tH_4tt_el__ttH__pileupUp: 1.40502
+tH_4tt_el__VV__pileupUp: 1.78814e-06 (empty nominal yield - unchanged)
+tH_4tt_el__Wj__pileupUp: 33.4166
+tH_4tt_el__Zj__pileupUp: 1.78814e-06 (empty nominal yield - unchanged)
+systematic              =                             pileup
+tH_4tt_el__tH__pileupDown: 0.540976
+tH_4tt_el__TTbb__pileupDown: 14.4259
+tH_4tt_el__TTb__pileupDown: 1.28089
+tH_4tt_el__TTcc__pileupDown: 1.73328
+tH_4tt_el__TTlf__pileupDown: 2.82509
+tH_4tt_el__s_Top__pileupDown: 0.754726
+tH_4tt_el__ttH__pileupDown: 1.41348
+tH_4tt_el__VV__pileupDown: 1.78814e-06 (empty nominal yield - unchanged)
+tH_4tt_el__Wj__pileupDown: 13.9324
+tH_4tt_el__Zj__pileupDown: 1.78814e-06 (empty nominal yield - unchanged)
+systematic              =                              toppt
+tH_4tt_el__tH__topptUp: 0.536894
+tH_4tt_el__TTbb__topptUp: 13.7577
+tH_4tt_el__TTb__topptUp: 1.22609
+tH_4tt_el__TTcc__topptUp: 1.69947
+tH_4tt_el__TTlf__topptUp: 2.29725
+tH_4tt_el__s_Top__topptUp: 0.747863
+tH_4tt_el__ttH__topptUp: 1.40894
+tH_4tt_el__VV__topptUp: 1.78814e-06 (empty nominal yield - unchanged)
+tH_4tt_el__Wj__topptUp: 23.7645
+tH_4tt_el__Zj__topptUp: 1.78814e-06 (empty nominal yield - unchanged)
+systematic              =                              toppt
+tH_4tt_el__tH__topptDown: 0.536894
+tH_4tt_el__TTbb__topptDown: 15.2947
+tH_4tt_el__TTb__topptDown: 1.30195
+tH_4tt_el__TTcc__topptDown: 1.7826
+tH_4tt_el__TTlf__topptDown: 2.7491
+tH_4tt_el__s_Top__topptDown: 0.747863
+tH_4tt_el__ttH__topptDown: 1.40894
+tH_4tt_el__VV__topptDown: 1.78814e-06 (empty nominal yield - unchanged)
+tH_4tt_el__Wj__topptDown: 23.7645
+tH_4tt_el__Zj__topptDown: 1.78814e-06 (empty nominal yield - unchanged)
+systematic              =                                met
+tH_4tt_el__tH__metUp: 0.539021
+tH_4tt_el__TTbb__metUp: 14.5077
+tH_4tt_el__TTb__metUp: 1.58852
+tH_4tt_el__TTcc__metUp: 1.82569
+tH_4tt_el__TTlf__metUp: 2.82883
+tH_4tt_el__s_Top__metUp: 0.743938
+tH_4tt_el__ttH__metUp: 1.41041
+tH_4tt_el__VV__metUp: 1.78814e-06 (empty nominal yield - unchanged)
+tH_4tt_el__Wj__metUp: 23.7645
+tH_4tt_el__Zj__metUp: 1.78814e-06 (empty nominal yield - unchanged)
+systematic              =                                met
+tH_4tt_el__tH__metDown: 0.547203
+tH_4tt_el__TTbb__metDown: 15.2045
+tH_4tt_el__TTb__metDown: 1.19497
+tH_4tt_el__TTcc__metDown: 1.69451
+tH_4tt_el__TTlf__metDown: 2.31834
+tH_4tt_el__s_Top__metDown: 1.22144
+tH_4tt_el__ttH__metDown: 1.38454
+tH_4tt_el__VV__metDown: 1.78814e-06 (empty nominal yield - unchanged)
+tH_4tt_el__Wj__metDown: 23.7645
+tH_4tt_el__Zj__metDown: 1.78814e-06 (empty nominal yield - unchanged)
+systematic              =                                jer
+tH_4tt_el__tH__jerUp: 0.540596
+tH_4tt_el__TTbb__jerUp: 14.4211
+tH_4tt_el__TTb__jerUp: 1.29899
+tH_4tt_el__TTcc__jerUp: 1.75889
+tH_4tt_el__TTlf__jerUp: 2.53321
+tH_4tt_el__s_Top__jerUp: 0.747866
+tH_4tt_el__ttH__jerUp: 1.40274
+tH_4tt_el__VV__jerUp: 1.78814e-06 (empty nominal yield - unchanged)
+tH_4tt_el__Wj__jerUp: 23.7645
+tH_4tt_el__Zj__jerUp: 1.78814e-06 (empty nominal yield - unchanged)
+systematic              =                                jer
+tH_4tt_el__tH__jerDown: 0.548616
+tH_4tt_el__TTbb__jerDown: 14.4654
+tH_4tt_el__TTb__jerDown: 1.45892
+tH_4tt_el__TTcc__jerDown: 1.75973
+tH_4tt_el__TTlf__jerDown: 2.92112
+tH_4tt_el__s_Top__jerDown: 0.747866
+tH_4tt_el__ttH__jerDown: 1.44457
+tH_4tt_el__VV__jerDown: 1.78814e-06 (empty nominal yield - unchanged)
+tH_4tt_el__Wj__jerDown: 23.7645
+tH_4tt_el__Zj__jerDown: 1.78814e-06 (empty nominal yield - unchanged)
+systematic              =                                jes
+tH_4tt_el__tH__jesUp: 0.556668
+tH_4tt_el__TTbb__jesUp: 15.0226
+tH_4tt_el__TTb__jesUp: 1.29749
+tH_4tt_el__TTcc__jesUp: 1.8912
+tH_4tt_el__TTlf__jesUp: 2.53507
+tH_4tt_el__s_Top__jesUp: 1.23285
+tH_4tt_el__ttH__jesUp: 1.43882
+tH_4tt_el__VV__jesUp: 1.78814e-06 (empty nominal yield - unchanged)
+tH_4tt_el__Wj__jesUp: 23.7645
+tH_4tt_el__Zj__jesUp: 1.78814e-06 (empty nominal yield - unchanged)
+systematic              =                                jes
+tH_4tt_el__tH__jesDown: 0.531084
+tH_4tt_el__TTbb__jesDown: 13.8345
+tH_4tt_el__TTb__jesDown: 1.22629
+tH_4tt_el__TTcc__jesDown: 1.81417
+tH_4tt_el__TTlf__jesDown: 3.03655
+tH_4tt_el__s_Top__jesDown: 0.742924
+tH_4tt_el__ttH__jesDown: 1.40722
+tH_4tt_el__VV__jesDown: 1.78814e-06 (empty nominal yield - unchanged)
+tH_4tt_el__Wj__jesDown: 23.7645
+tH_4tt_el__Zj__jesDown: 1.78814e-06 (empty nominal yield - unchanged)
+systematic              =                              match
+tH_4tt_el__tH__matchUp: 0.536894
+tH_4tt_el__TTbb__matchUp: 12.5044
+tH_4tt_el__TTb__matchUp: 2.00947
+tH_4tt_el__TTcc__matchUp: 1.85541
+tH_4tt_el__TTlf__matchUp: 3.44077
+tH_4tt_el__s_Top__matchUp: 0.747863
+tH_4tt_el__ttH__matchUp: 1.40894
+tH_4tt_el__VV__matchUp: 1.78814e-06 (empty nominal yield - unchanged)
+tH_4tt_el__Wj__matchUp: 23.7645
+tH_4tt_el__Zj__matchUp: 1.78814e-06 (empty nominal yield - unchanged)
+systematic              =                              match
+tH_4tt_el__tH__matchDown: 0.536894
+tH_4tt_el__TTbb__matchDown: 14.7104
+tH_4tt_el__TTb__matchDown: 1.65388
+tH_4tt_el__TTcc__matchDown: 2.77422
+tH_4tt_el__TTlf__matchDown: 2.15192
+tH_4tt_el__s_Top__matchDown: 0.747863
+tH_4tt_el__ttH__matchDown: 1.40894
+tH_4tt_el__VV__matchDown: 1.78814e-06 (empty nominal yield - unchanged)
+tH_4tt_el__Wj__matchDown: 23.7645
+tH_4tt_el__Zj__matchDown: 1.78814e-06 (empty nominal yield - unchanged)

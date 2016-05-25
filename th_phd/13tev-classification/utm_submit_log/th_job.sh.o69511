@@ -1,0 +1,430 @@
+/usr/users/bmaier
+/usr/users/bmaier
+/usr/users/bmaier
+CommandLine INFO: include configuration file: ../../samples/13tev/TH125-madgraph.config
+CommandLine INFO: include configuration file: ../../samples/13tev/TTbar-powheg.config
+CommandLine INFO: include configuration file: ../../samples/13tev/TTH-powheg.config
+CommandLine INFO: include configuration file: ../../samples/13tev/WJets-madgraph.config
+------------------------------------------------------------
+th_bdtteacher_x options:
+------------------------------------------------------------
+mcs                     =TH125-madgraph-13tev:THQ_Hincl_13TeV-madgraph-pythia8_TuneCUETP8M1.root
+      TTbar-powheg:TT_TuneCUETP8M1_13TeV-powheg-pythia8.root
+           TTH-powheg:ttHTobb_M125_13TeV_powheg_pythia8.root
+WJets-madgraph:WJetsToLNu_TuneCUETP8M1_13TeV-madgraphMLM-pythia8.root
+dirname                 =                                utm
+filesuffix              =                              .root
+treename                =                                  t
+mcpath                  =/storage/a/singletophiggs/13tev/mc_nov16/3t/eval/class_train
+mcpath_train            =/storage/a/singletophiggs/13tev/mc_nov16/3t/eval/class_train
+opath                   =/storage/a/singletophiggs/13tev/mc_nov16/3t/eval/class_train_class_481
+cvcf                    =                                481
+cvcf_weight_idx         =                                 36
+prunestrength           =                                  0
+prunemethod             =                          NoPruning
+bdtconfig               =!H:!V:NTrees=1200:MinNodeSize=2:MaxDepth=3:BoostType=AdaBoost:AdaBoostBeta=0.3:SeparationType=GiniIndex:nCuts=20:PruneMethod=NoPruning
+shrinkage               =                               0.30
+methods                 =                                BDT
+mccuts                  =                                   
+cuts                    =((nmu==1)*(met>35) || (nel==1)*(met>45))
+mcweights               =                         Weight_CSV
+                                                   Weight_PU
+signalweight            =                  weights_syst[481]
+signals                 =               TH125-madgraph-13tev
+variables               =(nel==1 && nmu==0)*Alt$(elcharge[0],0)+(nel==0 && nmu==1)*Alt$(mucharge[0],0)
+                                                log(tophadm)
+0.+(jtcsvt[hbbjtidx[0][36]]>0.941)*(abs(jteta[hbbjtidx[0][36]])<2.4)+(jtcsvt[hbbjtidx[1][36]]>0.941)*(abs(jteta[hbbjtidx[1][36]])<2.4)
+                                              log(hbbpt[36])
+deltaR(jteta[tophadjtidx[0]],jtphi[tophadjtidx[0]],jteta[tophadjtidx[1]],jtphi[tophadjtidx[1]])
+0.+(jtcsvt[tophadjtidx[0]]>0.941)*(abs(jteta[tophadjtidx[0]])<2.4)+(jtcsvt[tophadjtidx[1]]>0.941)*(abs(jteta[tophadjtidx[1]])<2.4)
+                                       log(jtpt[ljtidx[36]])
+                                      abs(jteta[ljtidx[36]])
+doanalysis              =                               true
+lumi                    =                              10000
+ntrees                  =                                100
+nevtmin                 =                                100
+adaboostbeta            =                                  1
+mclabels                =TH125-madgraph-13tev:tHq #scale[0.8]{(^{}#it{C}_{t}=-1)}
+                                TTbar-powheg:t#bar{t} powheg
+                                        TTH-powheg:t#bar{t}H
+                                       WJets-madgraph:W+jets
+mccolors                =           TH125-madgraph-13tev:633
+                                            TTbar-powheg:832
+                                              TTH-powheg:616
+                                          WJets-madgraph:422
+labels                  =                                   
+------------------------------------------------------------
+
+Test/Evaluation Samples:
+
+
+=======================================================================================================================================================================================
+MC SAMPLE      FILENAME                                                                                                               EVENTS  XSEC[PB]            EFF  KFAC     INTLUMI
+=======================================================================================================================================================================================
+TH125-madgraph-13tev/storage/a/singletophiggs/13tev/mc_nov16/3t/eval/class_train/THQ_Hincl_13TeV-madgraph-pythia8_TuneCUETP8M1.root          5382    0.7927      0.0117351     1      578560
+TTbar-powheg   /storage/a/singletophiggs/13tev/mc_nov16/3t/eval/class_train/TT_TuneCUETP8M1_13TeV-powheg-pythia8.root                  15309    831.76    0.000569509     1     32318.3
+TTH-powheg     /storage/a/singletophiggs/13tev/mc_nov16/3t/eval/class_train/ttHTobb_M125_13TeV_powheg_pythia8.root                     20647   0.29344       0.031839     1 2.20993e+06
+WJets-madgraph /storage/a/singletophiggs/13tev/mc_nov16/3t/eval/class_train/WJetsToLNu_TuneCUETP8M1_13TeV-madgraphMLM-pythia8.root         5   61526.7    1.10986e-07     1     732.213
+=======================================================================================================================================================================================
+
+
+
+Training Samples:
+
+
+=======================================================================================================================================================================================
+MC SAMPLE      FILENAME                                                                                                               EVENTS  XSEC[PB]            EFF  KFAC     INTLUMI
+=======================================================================================================================================================================================
+TH125-madgraph-13tev/storage/a/singletophiggs/13tev/mc_nov16/3t/eval/class_train/THQ_Hincl_13TeV-madgraph-pythia8_TuneCUETP8M1.root          5382    0.7927      0.0117351     1      578560
+TTbar-powheg   /storage/a/singletophiggs/13tev/mc_nov16/3t/eval/class_train/TT_TuneCUETP8M1_13TeV-powheg-pythia8.root                  15309    831.76    0.000569509     1     32318.3
+TTH-powheg     /storage/a/singletophiggs/13tev/mc_nov16/3t/eval/class_train/ttHTobb_M125_13TeV_powheg_pythia8.root                     20647   0.29344       0.031839     1 2.20993e+06
+WJets-madgraph /storage/a/singletophiggs/13tev/mc_nov16/3t/eval/class_train/WJetsToLNu_TuneCUETP8M1_13TeV-madgraphMLM-pythia8.root         5   61526.7    1.10986e-07     1     732.213
+=======================================================================================================================================================================================
+
+
+======================
+Start TMVA Setup
+======================
+
+
+--- Factory                  : You are running ROOT Version: 5.34/18, Mar 14, 2014
+--- Factory                  : 
+--- Factory                  : _/_/_/_/_/ _|      _|  _|      _|    _|_|   
+--- Factory                  :    _/      _|_|  _|_|  _|      _|  _|    _| 
+--- Factory                  :   _/       _|  _|  _|  _|      _|  _|_|_|_| 
+--- Factory                  :  _/        _|      _|    _|  _|    _|    _| 
+--- Factory                  : _/         _|      _|      _|      _|    _| 
+--- Factory                  : 
+--- Factory                  : ___________TMVA Version 4.2.0, Sep 19, 2013
+--- Factory                  : 
+used variables: 
+WEIGHT 0 : Weight_CSV
+WEIGHT 1 : Weight_PU
+Loading Samples Training:
+Debug b
+sample 0
+/storage/a/singletophiggs/13tev/mc_nov16/3t/eval/class_train/THQ_Hincl_13TeV-madgraph-pythia8_TuneCUETP8M1.root
+--- DataSetInfo              : Added class "Signal"	 with internal class number 0
+--- Factory                  : Add Tree t of type Signal with 5382 events
+is signal
+done.
+sample 1
+/storage/a/singletophiggs/13tev/mc_nov16/3t/eval/class_train/TT_TuneCUETP8M1_13TeV-powheg-pythia8.root
+--- DataSetInfo              : Added class "Background"	 with internal class number 1
+--- Factory                  : Add Tree t of type Background with 15309 events
+is background
+done.
+sample 2
+/storage/a/singletophiggs/13tev/mc_nov16/3t/eval/class_train/ttHTobb_M125_13TeV_powheg_pythia8.root
+--- Factory                  : Add Tree t of type Background with 20647 events
+is background
+done.
+sample 3
+/storage/a/singletophiggs/13tev/mc_nov16/3t/eval/class_train/WJetsToLNu_TuneCUETP8M1_13TeV-madgraphMLM-pythia8.root
+--- Factory                  : Add Tree t of type Background with 5 events
+is background
+done.
+Loading Samples Test/Evaluation:
+sample 0
+/storage/a/singletophiggs/13tev/mc_nov16/3t/eval/class_train/THQ_Hincl_13TeV-madgraph-pythia8_TuneCUETP8M1.root
+--- Factory                  : Add Tree t of type Signal with 5382 events
+is signal
+done.
+sample 1
+/storage/a/singletophiggs/13tev/mc_nov16/3t/eval/class_train/TT_TuneCUETP8M1_13TeV-powheg-pythia8.root
+--- Factory                  : Add Tree t of type Background with 15309 events
+is background
+done.
+sample 2
+/storage/a/singletophiggs/13tev/mc_nov16/3t/eval/class_train/ttHTobb_M125_13TeV_powheg_pythia8.root
+--- Factory                  : Add Tree t of type Background with 20647 events
+is background
+done.
+sample 3
+/storage/a/singletophiggs/13tev/mc_nov16/3t/eval/class_train/WJetsToLNu_TuneCUETP8M1_13TeV-madgraphMLM-pythia8.root
+--- Factory                  : Add Tree t of type Background with 5 events
+is background
+done.
+#############################
+weight expression:
+Weight_CSV*Weight_PU
+Weight_CSV*Weight_PU*weights_syst[481]
+#############################
+--- Factory                  : Preparing trees for training and testing...
+Evaluating the training
+--- Factory                  : Booking method: [1mBDT[0m
+--- DataSetFactory           : Splitmode is: "RANDOM" the mixmode is: "SAMEASSPLITMODE"
+--- DataSetFactory           : Create training and testing trees -- looping over class "Signal" ...
+--- DataSetFactory           : Weight expression for class 'Signal': "Weight_CSV*Weight_PU*weights_syst[481]"
+--- DataSetFactory           : Create training and testing trees -- looping over class "Background" ...
+--- DataSetFactory           : Weight expression for class 'Background': "Weight_CSV*Weight_PU"
+--- DataSetFactory           : Number of events in input trees (after possible flattening of arrays):
+--- DataSetFactory           :     Signal          -- number of events       : 10764  / sum of weights: 0.00029607
+--- DataSetFactory           :     Background      -- number of events       : 71922  / sum of weights: 6287.99
+--- DataSetFactory           :     Signal     tree -- total number of entries: 10764
+--- DataSetFactory           :     Background tree -- total number of entries: 71922
+--- DataSetFactory           : Preselection: (will NOT affect number of requested training and testing events)
+--- DataSetFactory           :     Signal     requirement: "((nmu==1)*(met>35) || (nel==1)*(met>45))"
+--- DataSetFactory           :     Signal          -- number of events passed: 8416   / sum of weights: 0.000232624
+--- DataSetFactory           :     Signal          -- efficiency             : 0.785705
+--- DataSetFactory           :     Background requirement: "((nmu==1)*(met>35) || (nel==1)*(met>45))"
+--- DataSetFactory           :     Background      -- number of events passed: 56512  / sum of weights: 4973.34
+--- DataSetFactory           :     Background      -- efficiency             : 0.790926
+--- DataSetFactory           :  you have opted for interpreting the requested number of training/testing events
+--- DataSetFactory           :  to be the number of events AFTER your preselection cuts
+--- DataSetFactory           :  you have opted for interpreting the requested number of training/testing events
+--- DataSetFactory           :  to be the number of events AFTER your preselection cuts
+--- DataSetFactory           : Weight renormalisation mode: "EqualNumEvents": renormalises all event classes ...
+--- DataSetFactory           :  such that the effective (weighted) number of events in each class is the same 
+--- DataSetFactory           :  (and equals the number of events (entries) given for class=0 )
+--- DataSetFactory           : ... i.e. such that Sum[i=1..N_j]{w_i} = N_classA, j=classA, classB, ...
+--- DataSetFactory           : ... (note that N_j is the sum of TRAINING events
+--- DataSetFactory           :  ..... Testing events are not renormalised nor included in the renormalisation factor!)
+--- DataSetFactory           : --> Rescale Signal     event weights by factor: 3.61786e+07
+--- DataSetFactory           : --> Rescale Background event weights by factor: 1.69246
+--- DataSetFactory           : Number of training and testing events after rescaling:
+--- DataSetFactory           : ------------------------------------------------------
+--- DataSetFactory           : Signal     -- training events            : 4208 (sum of weights: 4208) - requested were 0 events
+--- DataSetFactory           : Signal     -- testing events             : 4208 (sum of weights: 0.000116312) - requested were 0 events
+--- DataSetFactory           : Signal     -- training and testing events: 8416 (sum of weights: 4208)
+--- DataSetFactory           : Signal     -- due to the preselection a scaling factor has been applied to the numbers of requested events: 0.781865
+--- DataSetFactory           : Background -- training events            : 28256 (sum of weights: 4208) - requested were 0 events
+--- DataSetFactory           : Background -- testing events             : 28256 (sum of weights: 2486.32) - requested were 0 events
+--- DataSetFactory           : Background -- training and testing events: 56512 (sum of weights: 6694.32)
+--- DataSetFactory           : Background -- due to the preselection a scaling factor has been applied to the numbers of requested events: 0.78574
+--- DataSetFactory           : Create internal training tree
+--- DataSetFactory           : Create internal testing tree
+--- DataSetInfo              : Correlation matrix (Signal):
+--- DataSetInfo              : --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+--- DataSetInfo              :                                                                                                                                         (nel==1&&nmu==0)*Alt$(elcharge[0],0)+(nel==0&&nmu==1)*Alt$(mucharge[0],0) log(tophadm) 0.+(jtcsvt[hbbjtidx[0][36]]>0.941)*(abs(jteta[hbbjtidx[0][36]])<2.4)+(jtcsvt[hbbjtidx[1][36]]>0.941)*(abs(jteta[hbbjtidx[1][36]])<2.4) log(hbbpt[36]) deltaR(jteta[tophadjtidx[0]],jtphi[tophadjtidx[0]],jteta[tophadjtidx[1]],jtphi[tophadjtidx[1]]) 0.+(jtcsvt[tophadjtidx[0]]>0.941)*(abs(jteta[tophadjtidx[0]])<2.4)+(jtcsvt[tophadjtidx[1]]>0.941)*(abs(jteta[tophadjtidx[1]])<2.4) log(jtpt[ljtidx[36]]) abs(jteta[ljtidx[36]])
+--- DataSetInfo              :                                                              (nel==1&&nmu==0)*Alt$(elcharge[0],0)+(nel==0&&nmu==1)*Alt$(mucharge[0],0):                                                                    +1.000       +0.031                                                                                                                                 +0.018         +0.018                                                                                          +0.021                                                                                                                             +0.019                +0.005                 +0.016
+--- DataSetInfo              :                                                                                                                           log(tophadm):                                                                    +0.031       +1.000                                                                                                                                 +0.191         +0.250                                                                                          +0.698                                                                                                                             -0.084                +0.183                 +0.169
+--- DataSetInfo              : 0.+(jtcsvt[hbbjtidx[0][36]]>0.941)*(abs(jteta[hbbjtidx[0][36]])<2.4)+(jtcsvt[hbbjtidx[1][36]]>0.941)*(abs(jteta[hbbjtidx[1][36]])<2.4):                                                                    +0.018       +0.191                                                                                                                                 +1.000         -0.023                                                                                          +0.194                                                                                                                             +0.212                -0.013                 -0.037
+--- DataSetInfo              :                                                                                                                         log(hbbpt[36]):                                                                    +0.018       +0.250                                                                                                                                 -0.023         +1.000                                                                                          -0.037                                                                                                                             -0.085                +0.139                 -0.034
+--- DataSetInfo              :                                        deltaR(jteta[tophadjtidx[0]],jtphi[tophadjtidx[0]],jteta[tophadjtidx[1]],jtphi[tophadjtidx[1]]):                                                                    +0.021       +0.698                                                                                                                                 +0.194         -0.037                                                                                          +1.000                                                                                                                             -0.124                -0.073                 +0.211
+--- DataSetInfo              :     0.+(jtcsvt[tophadjtidx[0]]>0.941)*(abs(jteta[tophadjtidx[0]])<2.4)+(jtcsvt[tophadjtidx[1]]>0.941)*(abs(jteta[tophadjtidx[1]])<2.4):                                                                    +0.019       -0.084                                                                                                                                 +0.212         -0.085                                                                                          -0.124                                                                                                                             +1.000                +0.042                 +0.112
+--- DataSetInfo              :                                                                                                                  log(jtpt[ljtidx[36]]):                                                                    +0.005       +0.183                                                                                                                                 -0.013         +0.139                                                                                          -0.073                                                                                                                             +0.042                +1.000                 -0.154
+--- DataSetInfo              :                                                                                                                 abs(jteta[ljtidx[36]]):                                                                    +0.016       +0.169                                                                                                                                 -0.037         -0.034                                                                                          +0.211                                                                                                                             +0.112                -0.154                 +1.000
+--- DataSetInfo              : --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+--- DataSetInfo              : Correlation matrix (Background):
+--- DataSetInfo              : --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+--- DataSetInfo              :                                                                                                                                         (nel==1&&nmu==0)*Alt$(elcharge[0],0)+(nel==0&&nmu==1)*Alt$(mucharge[0],0) log(tophadm) 0.+(jtcsvt[hbbjtidx[0][36]]>0.941)*(abs(jteta[hbbjtidx[0][36]])<2.4)+(jtcsvt[hbbjtidx[1][36]]>0.941)*(abs(jteta[hbbjtidx[1][36]])<2.4) log(hbbpt[36]) deltaR(jteta[tophadjtidx[0]],jtphi[tophadjtidx[0]],jteta[tophadjtidx[1]],jtphi[tophadjtidx[1]]) 0.+(jtcsvt[tophadjtidx[0]]>0.941)*(abs(jteta[tophadjtidx[0]])<2.4)+(jtcsvt[tophadjtidx[1]]>0.941)*(abs(jteta[tophadjtidx[1]])<2.4) log(jtpt[ljtidx[36]]) abs(jteta[ljtidx[36]])
+--- DataSetInfo              :                                                              (nel==1&&nmu==0)*Alt$(elcharge[0],0)+(nel==0&&nmu==1)*Alt$(mucharge[0],0):                                                                    +1.000       +0.028                                                                                                                                 +0.005         +0.015                                                                                          -0.016                                                                                                                             +0.017                +0.031                 -0.016
+--- DataSetInfo              :                                                                                                                           log(tophadm):                                                                    +0.028       +1.000                                                                                                                                 +0.152         +0.220                                                                                          +0.450                                                                                                                             +0.083                +0.271                 +0.065
+--- DataSetInfo              : 0.+(jtcsvt[hbbjtidx[0][36]]>0.941)*(abs(jteta[hbbjtidx[0][36]])<2.4)+(jtcsvt[hbbjtidx[1][36]]>0.941)*(abs(jteta[hbbjtidx[1][36]])<2.4):                                                                    +0.005       +0.152                                                                                                                                 +1.000         -0.135                                                                                          +0.188                                                                                                                             +0.345                -0.063                 -0.146
+--- DataSetInfo              :                                                                                                                         log(hbbpt[36]):                                                                    +0.015       +0.220                                                                                                                                 -0.135         +1.000                                                                                          -0.185                                                                                                                             -0.083                +0.217                 +0.033
+--- DataSetInfo              :                                        deltaR(jteta[tophadjtidx[0]],jtphi[tophadjtidx[0]],jteta[tophadjtidx[1]],jtphi[tophadjtidx[1]]):                                                                    -0.016       +0.450                                                                                                                                 +0.188         -0.185                                                                                          +1.000                                                                                                                             +0.043                -0.212                 +0.141
+--- DataSetInfo              :     0.+(jtcsvt[tophadjtidx[0]]>0.941)*(abs(jteta[tophadjtidx[0]])<2.4)+(jtcsvt[tophadjtidx[1]]>0.941)*(abs(jteta[tophadjtidx[1]])<2.4):                                                                    +0.017       +0.083                                                                                                                                 +0.345         -0.083                                                                                          +0.043                                                                                                                             +1.000                -0.023                 -0.039
+--- DataSetInfo              :                                                                                                                  log(jtpt[ljtidx[36]]):                                                                    +0.031       +0.271                                                                                                                                 -0.063         +0.217                                                                                          -0.212                                                                                                                             -0.023                +1.000                 -0.155
+--- DataSetInfo              :                                                                                                                 abs(jteta[ljtidx[36]]):                                                                    -0.016       +0.065                                                                                                                                 -0.146         +0.033                                                                                          +0.141                                                                                                                             -0.039                -0.155                 +1.000
+--- DataSetInfo              : --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+--- DataSetFactory           :  
+--- Factory                  : 
+--- Factory                  : current transformation string: 'I'
+--- Factory                  : Create Transformation "I" with events from all classes.
+--- Id                       : Transformation, Variable selection : 
+--- Id                       : Input : variable '(nel==1&&nmu==0)*Alt$(elcharge[0],0)+(nel==0&&nmu==1)*Alt$(mucharge[0],0)' (index=0).   <---> Output : variable '(nel==1&&nmu==0)*Alt$(elcharge[0],0)+(nel==0&&nmu==1)*Alt$(mucharge[0],0)' (index=0).
+--- Id                       : Input : variable 'log(tophadm)' (index=1).   <---> Output : variable 'log(tophadm)' (index=1).
+--- Id                       : Input : variable '0.+(jtcsvt[hbbjtidx[0][36]]>0.941)*(abs(jteta[hbbjtidx[0][36]])<2.4)+(jtcsvt[hbbjtidx[1][36]]>0.941)*(abs(jteta[hbbjtidx[1][36]])<2.4)' (index=2).   <---> Output : variable '0.+(jtcsvt[hbbjtidx[0][36]]>0.941)*(abs(jteta[hbbjtidx[0][36]])<2.4)+(jtcsvt[hbbjtidx[1][36]]>0.941)*(abs(jteta[hbbjtidx[1][36]])<2.4)' (index=2).
+--- Id                       : Input : variable 'log(hbbpt[36])' (index=3).   <---> Output : variable 'log(hbbpt[36])' (index=3).
+--- Id                       : Input : variable 'deltaR(jteta[tophadjtidx[0]],jtphi[tophadjtidx[0]],jteta[tophadjtidx[1]],jtphi[tophadjtidx[1]])' (index=4).   <---> Output : variable 'deltaR(jteta[tophadjtidx[0]],jtphi[tophadjtidx[0]],jteta[tophadjtidx[1]],jtphi[tophadjtidx[1]])' (index=4).
+--- Id                       : Input : variable '0.+(jtcsvt[tophadjtidx[0]]>0.941)*(abs(jteta[tophadjtidx[0]])<2.4)+(jtcsvt[tophadjtidx[1]]>0.941)*(abs(jteta[tophadjtidx[1]])<2.4)' (index=5).   <---> Output : variable '0.+(jtcsvt[tophadjtidx[0]]>0.941)*(abs(jteta[tophadjtidx[0]])<2.4)+(jtcsvt[tophadjtidx[1]]>0.941)*(abs(jteta[tophadjtidx[1]])<2.4)' (index=5).
+--- Id                       : Input : variable 'log(jtpt[ljtidx[36]])' (index=6).   <---> Output : variable 'log(jtpt[ljtidx[36]])' (index=6).
+--- Id                       : Input : variable 'abs(jteta[ljtidx[36]])' (index=7).   <---> Output : variable 'abs(jteta[ljtidx[36]])' (index=7).
+--- Factory                  : 
+--- Factory                  : current transformation string: 'D'
+--- Factory                  : Create Transformation "D" with events from all classes.
+--- Deco                     : Transformation, Variable selection : 
+--- Deco                     : Input : variable '(nel==1&&nmu==0)*Alt$(elcharge[0],0)+(nel==0&&nmu==1)*Alt$(mucharge[0],0)' (index=0).   <---> Output : variable '(nel==1&&nmu==0)*Alt$(elcharge[0],0)+(nel==0&&nmu==1)*Alt$(mucharge[0],0)' (index=0).
+--- Deco                     : Input : variable 'log(tophadm)' (index=1).   <---> Output : variable 'log(tophadm)' (index=1).
+--- Deco                     : Input : variable '0.+(jtcsvt[hbbjtidx[0][36]]>0.941)*(abs(jteta[hbbjtidx[0][36]])<2.4)+(jtcsvt[hbbjtidx[1][36]]>0.941)*(abs(jteta[hbbjtidx[1][36]])<2.4)' (index=2).   <---> Output : variable '0.+(jtcsvt[hbbjtidx[0][36]]>0.941)*(abs(jteta[hbbjtidx[0][36]])<2.4)+(jtcsvt[hbbjtidx[1][36]]>0.941)*(abs(jteta[hbbjtidx[1][36]])<2.4)' (index=2).
+--- Deco                     : Input : variable 'log(hbbpt[36])' (index=3).   <---> Output : variable 'log(hbbpt[36])' (index=3).
+--- Deco                     : Input : variable 'deltaR(jteta[tophadjtidx[0]],jtphi[tophadjtidx[0]],jteta[tophadjtidx[1]],jtphi[tophadjtidx[1]])' (index=4).   <---> Output : variable 'deltaR(jteta[tophadjtidx[0]],jtphi[tophadjtidx[0]],jteta[tophadjtidx[1]],jtphi[tophadjtidx[1]])' (index=4).
+--- Deco                     : Input : variable '0.+(jtcsvt[tophadjtidx[0]]>0.941)*(abs(jteta[tophadjtidx[0]])<2.4)+(jtcsvt[tophadjtidx[1]]>0.941)*(abs(jteta[tophadjtidx[1]])<2.4)' (index=5).   <---> Output : variable '0.+(jtcsvt[tophadjtidx[0]]>0.941)*(abs(jteta[tophadjtidx[0]])<2.4)+(jtcsvt[tophadjtidx[1]]>0.941)*(abs(jteta[tophadjtidx[1]])<2.4)' (index=5).
+--- Deco                     : Input : variable 'log(jtpt[ljtidx[36]])' (index=6).   <---> Output : variable 'log(jtpt[ljtidx[36]])' (index=6).
+--- Deco                     : Input : variable 'abs(jteta[ljtidx[36]])' (index=7).   <---> Output : variable 'abs(jteta[ljtidx[36]])' (index=7).
+--- Id                       : Preparing the Identity transformation...
+--- TFHandler_Factory        : -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+--- TFHandler_Factory        :                                                                                                                               Variable                                                                                                                                      Mean                                                                                                                                      RMS                                                                                                                              [        Min                                                                                                                                      Max ]
+--- TFHandler_Factory        : -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+--- TFHandler_Factory        :                                                              (nel==1&&nmu==0)*Alt$(elcharge[0],0)+(nel==0&&nmu==1)*Alt$(mucharge[0],0):                                                                                                                                 0.15989                                                                                                                                 0.98714   [                                                                                                                                 -1.0000                                                                                                                                  1.0000 ]
+--- TFHandler_Factory        :                                                                                                                           log(tophadm):                                                                                                                                  5.3373                                                                                                                                 0.46363   [                                                                                                                                  3.6863                                                                                                                                  8.2033 ]
+--- TFHandler_Factory        : 0.+(jtcsvt[hbbjtidx[0][36]]>0.941)*(abs(jteta[hbbjtidx[0][36]])<2.4)+(jtcsvt[hbbjtidx[1][36]]>0.941)*(abs(jteta[hbbjtidx[1][36]])<2.4):                                                                                                                                  1.6419                                                                                                                                 0.54354   [                                                                                                                                  0.0000                                                                                                                                  2.0000 ]
+--- TFHandler_Factory        :                                                                                                                         log(hbbpt[36]):                                                                                                                                  4.7596                                                                                                                                 0.73262   [                                                                                                                                 -1.4263                                                                                                                                  7.0487 ]
+--- TFHandler_Factory        :                                        deltaR(jteta[tophadjtidx[0]],jtphi[tophadjtidx[0]],jteta[tophadjtidx[1]],jtphi[tophadjtidx[1]]):                                                                                                                                  1.9205                                                                                                                                 0.97649   [                                                                                                                                 0.38583                                                                                                                                  7.8429 ]
+--- TFHandler_Factory        :     0.+(jtcsvt[tophadjtidx[0]]>0.941)*(abs(jteta[tophadjtidx[0]])<2.4)+(jtcsvt[tophadjtidx[1]]>0.941)*(abs(jteta[tophadjtidx[1]])<2.4):                                                                                                                                 0.84765                                                                                                                                 0.43082   [                                                                                                                                  0.0000                                                                                                                                  2.0000 ]
+--- TFHandler_Factory        :                                                                                                                  log(jtpt[ljtidx[36]]):                                                                                                                                  4.2276                                                                                                                                 0.61536   [                                                                                                                                  3.4012                                                                                                                                  7.3900 ]
+--- TFHandler_Factory        :                                                                                                                 abs(jteta[ljtidx[36]]):                                                                                                                                  1.8403                                                                                                                                  1.0632   [                                                                                                                              0.00011420                                                                                                                                  4.6408 ]
+--- TFHandler_Factory        : -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+--- TFHandler_Factory        : Plot event variables for Id
+--- TFHandler_Factory        : Create scatter and profile plots in target-file directory: 
+--- TFHandler_Factory        : BDT_tH_481.root:/InputVariables_Id/CorrelationPlots
+--- Deco                     : Preparing the Decorrelation transformation...
+--- TFHandler_Factory        : -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+--- TFHandler_Factory        :                                                                                                                               Variable                                                                                                                                      Mean                                                                                                                                      RMS                                                                                                                              [        Min                                                                                                                                      Max ]
+--- TFHandler_Factory        : -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+--- TFHandler_Factory        :                                                              (nel==1&&nmu==0)*Alt$(elcharge[0],0)+(nel==0&&nmu==1)*Alt$(mucharge[0],0):                                                                                                                                -0.18675                                                                                                                                  1.0000   [                                                                                                                                 -1.5118                                                                                                                                 0.77305 ]
+--- TFHandler_Factory        :                                                                                                                           log(tophadm):                                                                                                                                  11.536                                                                                                                                  1.0000   [                                                                                                                                  7.1465                                                                                                                                  18.382 ]
+--- TFHandler_Factory        : 0.+(jtcsvt[hbbjtidx[0][36]]>0.941)*(abs(jteta[hbbjtidx[0][36]])<2.4)+(jtcsvt[hbbjtidx[1][36]]>0.941)*(abs(jteta[hbbjtidx[1][36]])<2.4):                                                                                                                                  2.4199                                                                                                                                  1.0000   [                                                                                                                                 -1.1756                                                                                                                                  3.9010 ]
+--- TFHandler_Factory        :                                                                                                                         log(hbbpt[36]):                                                                                                                                  4.9726                                                                                                                                  1.0000   [                                                                                                                                 -3.7631                                                                                                                                  7.9873 ]
+--- TFHandler_Factory        :                                        deltaR(jteta[tophadjtidx[0]],jtphi[tophadjtidx[0]],jteta[tophadjtidx[1]],jtphi[tophadjtidx[1]]):                                                                                                                                -0.48785                                                                                                                                  1.0000   [                                                                                                                                 -3.3580                                                                                                                                  5.0681 ]
+--- TFHandler_Factory        :     0.+(jtcsvt[tophadjtidx[0]]>0.941)*(abs(jteta[tophadjtidx[0]])<2.4)+(jtcsvt[tophadjtidx[1]]>0.941)*(abs(jteta[tophadjtidx[1]])<2.4):                                                                                                                                  1.4630                                                                                                                                  1.0000   [                                                                                                                                 -1.1512                                                                                                                                  4.6351 ]
+--- TFHandler_Factory        :                                                                                                                  log(jtpt[ljtidx[36]]):                                                                                                                                  5.3557                                                                                                                                  1.0000   [                                                                                                                                  3.2189                                                                                                                                  10.612 ]
+--- TFHandler_Factory        :                                                                                                                 abs(jteta[ljtidx[36]]):                                                                                                                                  1.5087                                                                                                                                  1.0000   [                                                                                                                                -0.53867                                                                                                                                  4.2520 ]
+--- TFHandler_Factory        : -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+--- TFHandler_Factory        : Plot event variables for Deco
+--- TFHandler_Factory        : Create scatter and profile plots in target-file directory: 
+--- TFHandler_Factory        : BDT_tH_481.root:/InputVariables_Deco/CorrelationPlots
+--- TFHandler_Factory        :  
+--- TFHandler_Factory        : Ranking input variables (method unspecific)...
+--- IdTransformation         : Ranking result (top variable is best ranked)
+--- IdTransformation         : ---------------------------------------------------------------------------------------------------------------------------------------------------------------
+--- IdTransformation         : Rank : Variable                                                                                                                               : Separation
+--- IdTransformation         : ---------------------------------------------------------------------------------------------------------------------------------------------------------------
+--- IdTransformation         :    1 : log(tophadm)                                                                                                                           : 1.172e-01
+--- IdTransformation         :    2 : abs(jteta[ljtidx[36]])                                                                                                                 : 9.202e-02
+--- IdTransformation         :    3 : deltaR(jteta[tophadjtidx[0]],jtphi[tophadjtidx[0]],jteta[tophadjtidx[1]],jtphi[tophadjtidx[1]])                                        : 8.674e-02
+--- IdTransformation         :    4 : 0.+(jtcsvt[hbbjtidx[0][36]]>0.941)*(abs(jteta[hbbjtidx[0][36]])<2.4)+(jtcsvt[hbbjtidx[1][36]]>0.941)*(abs(jteta[hbbjtidx[1][36]])<2.4) : 3.839e-02
+--- IdTransformation         :    5 : 0.+(jtcsvt[tophadjtidx[0]]>0.941)*(abs(jteta[tophadjtidx[0]])<2.4)+(jtcsvt[tophadjtidx[1]]>0.941)*(abs(jteta[tophadjtidx[1]])<2.4)     : 3.505e-02
+--- IdTransformation         :    6 : (nel==1&&nmu==0)*Alt$(elcharge[0],0)+(nel==0&&nmu==1)*Alt$(mucharge[0],0)                                                              : 1.803e-02
+--- IdTransformation         :    7 : log(jtpt[ljtidx[36]])                                                                                                                  : 1.567e-02
+--- IdTransformation         :    8 : log(hbbpt[36])                                                                                                                         : 1.304e-02
+--- IdTransformation         : ---------------------------------------------------------------------------------------------------------------------------------------------------------------
+--- Factory                  :  
+--- Factory                  : Train all methods for Classification ...
+--- Factory                  : Train method: BDT for Classification
+--- BDT                      : Begin training
+--- BDT                      :  found and suggest the following possible pre-selection cuts 
+--- BDT                      : as option DoPreselection was not used, these cuts however will not be performed, but the training will see the full sample
+--- BDT                      : Events with weight == 0 are going to be simply ignored 
+--- BDT                      : <InitEventSample> For classification trees, 
+--- BDT                      :  the effective number of backgrounds is scaled to match 
+--- BDT                      :  the signal. Othersise the first boosting step would do 'just that'!
+--- BDT                      : re-normlise events such that Sig and Bkg have respective sum of weights = 1
+--- BDT                      :   sig->sig*3.85706ev. bkg->bkg*3.85706ev.
+--- BDT                      : #events: (reweighted) sig: 16230.5 bkg: 16230.5
+--- BDT                      : #events: (unweighted) sig: 4208 bkg: 28253
+--- BDT                      : Training 1200 Decision Trees ... patience please
+--- BinaryTree               : The minimal node size MinNodeSize=2 fMinNodeSize=2% is translated to an actual number of events = 649.22 for the training sample size of 32461
+--- BinaryTree               : Note: This number will be taken as absolute minimum in the node, 
+--- BinaryTree               :       in terms of 'weighted events' and unweighted ones !! 
+--- BDT                      : <Train> elapsed time: [1;31m67.8 sec[0m                              
+--- BDT                      : <Train> average number of nodes (w/o pruning) : 10
+--- BDT                      : End of training                                              
+--- BDT                      : Elapsed time for training with 32464 events: [1;31m68.2 sec[0m         
+--- BDT                      : Create MVA output for classification on training sample
+--- BDT                      : Evaluation of BDT on training sample (32464 events)
+--- BDT                      : Elapsed time for evaluation of 32464 events: [1;31m13.1 sec[0m       
+--- BDT                      : Creating weight file in xml format: [0;36mweights/tH_481_BDT.weights.xml[0m
+--- BDT                      : Creating standalone response class: [0;36mweights/tH_481_BDT.class.C[0m
+--- BDT                      : Write monitoring histograms to file: BDT_tH_481.root:/Method_BDT/BDT
+--- Factory                  : Training finished
+--- Factory                  : 
+--- Factory                  : Ranking input variables (method specific)...
+--- BDT                      : Ranking result (top variable is best ranked)
+--- BDT                      : ------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+--- BDT                      : Rank : Variable                                                                                                                               : Variable Importance
+--- BDT                      : ------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+--- BDT                      :    1 : log(jtpt[ljtidx[36]])                                                                                                                  : 1.766e-01
+--- BDT                      :    2 : deltaR(jteta[tophadjtidx[0]],jtphi[tophadjtidx[0]],jteta[tophadjtidx[1]],jtphi[tophadjtidx[1]])                                        : 1.717e-01
+--- BDT                      :    3 : abs(jteta[ljtidx[36]])                                                                                                                 : 1.698e-01
+--- BDT                      :    4 : log(tophadm)                                                                                                                           : 1.476e-01
+--- BDT                      :    5 : log(hbbpt[36])                                                                                                                         : 1.437e-01
+--- BDT                      :    6 : 0.+(jtcsvt[hbbjtidx[0][36]]>0.941)*(abs(jteta[hbbjtidx[0][36]])<2.4)+(jtcsvt[hbbjtidx[1][36]]>0.941)*(abs(jteta[hbbjtidx[1][36]])<2.4) : 7.482e-02
+--- BDT                      :    7 : (nel==1&&nmu==0)*Alt$(elcharge[0],0)+(nel==0&&nmu==1)*Alt$(mucharge[0],0)                                                              : 6.556e-02
+--- BDT                      :    8 : 0.+(jtcsvt[tophadjtidx[0]]>0.941)*(abs(jteta[tophadjtidx[0]])<2.4)+(jtcsvt[tophadjtidx[1]]>0.941)*(abs(jteta[tophadjtidx[1]])<2.4)     : 5.024e-02
+--- BDT                      : ------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+--- Factory                  : 
+--- Factory                  : === Destroy and recreate all methods via weight files for testing ===
+--- Factory                  : 
+--- MethodBase               : Reading weight file: [0;36mweights/tH_481_BDT.weights.xml[0m
+--- BDT                      : Read method "BDT" of type "BDT"
+--- BDT                      : MVA method was trained with TMVA Version: 4.2.0
+--- BDT                      : MVA method was trained with ROOT Version: 5.34/18
+--- Factory                  : Test all methods...
+--- Factory                  : Test method: BDT for Classification performance
+--- BDT                      : Evaluation of BDT on testing sample (32464 events)
+--- BDT                      : Elapsed time for evaluation of 32464 events: [1;31m5.07 sec[0m       
+--- Factory                  : Evaluate all methods...
+--- Factory                  : Evaluate classifier: BDT
+--- BDT                      : Loop over test events and fill histograms with classifier response...
+--- Factory                  : Write evaluation histograms to file
+--- TFHandler_BDT            : Plot event variables for BDT
+--- TFHandler_BDT            : -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+--- TFHandler_BDT            :                                                                                                                               Variable                                                                                                                                      Mean                                                                                                                                      RMS                                                                                                                              [        Min                                                                                                                                      Max ]
+--- TFHandler_BDT            : -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+--- TFHandler_BDT            :                                                              (nel==1&&nmu==0)*Alt$(elcharge[0],0)+(nel==0&&nmu==1)*Alt$(mucharge[0],0):                                                                                                                                0.027352                                                                                                                                 0.99963   [                                                                                                                                 -1.0000                                                                                                                                  1.0000 ]
+--- TFHandler_BDT            :                                                                                                                           log(tophadm):                                                                                                                                  5.2111                                                                                                                                 0.33985   [                                                                                                                                  3.6863                                                                                                                                  8.2033 ]
+--- TFHandler_BDT            : 0.+(jtcsvt[hbbjtidx[0][36]]>0.941)*(abs(jteta[hbbjtidx[0][36]])<2.4)+(jtcsvt[hbbjtidx[1][36]]>0.941)*(abs(jteta[hbbjtidx[1][36]])<2.4):                                                                                                                                  1.5354                                                                                                                                 0.59514   [                                                                                                                                  0.0000                                                                                                                                  2.0000 ]
+--- TFHandler_BDT            :                                                                                                                         log(hbbpt[36]):                                                                                                                                  4.7137                                                                                                                                 0.71285   [                                                                                                                                 -1.4263                                                                                                                                  7.0487 ]
+--- TFHandler_BDT            :                                        deltaR(jteta[tophadjtidx[0]],jtphi[tophadjtidx[0]],jteta[tophadjtidx[1]],jtphi[tophadjtidx[1]]):                                                                                                                                  1.6515                                                                                                                                 0.79838   [                                                                                                                                 0.38583                                                                                                                                  7.8429 ]
+--- TFHandler_BDT            :     0.+(jtcsvt[tophadjtidx[0]]>0.941)*(abs(jteta[tophadjtidx[0]])<2.4)+(jtcsvt[tophadjtidx[1]]>0.941)*(abs(jteta[tophadjtidx[1]])<2.4):                                                                                                                                 0.76908                                                                                                                                 0.44048   [                                                                                                                                  0.0000                                                                                                                                  2.0000 ]
+--- TFHandler_BDT            :                                                                                                                  log(jtpt[ljtidx[36]]):                                                                                                                                  4.2228                                                                                                                                 0.64886   [                                                                                                                                  3.4012                                                                                                                                  7.3900 ]
+--- TFHandler_BDT            :                                                                                                                 abs(jteta[ljtidx[36]]):                                                                                                                                  1.5469                                                                                                                                 0.96884   [                                                                                                                              0.00011420                                                                                                                                  4.6408 ]
+--- TFHandler_BDT            : -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+--- TFHandler_BDT            : Create scatter and profile plots in target-file directory: 
+--- TFHandler_BDT            : BDT_tH_481.root:/Method_BDT/BDT/CorrelationPlots
+--- Factory                  : Correlations between input variables and MVA response (signal):
+--- Factory                  : ----------------
+--- Factory                  :                                                                                                                                             BDT
+--- Factory                  :                                                              (nel==1&&nmu==0)*Alt$(elcharge[0],0)+(nel==0&&nmu==1)*Alt$(mucharge[0],0):  +0.229
+--- Factory                  :                                                                                                                           log(tophadm):  +0.532
+--- Factory                  : 0.+(jtcsvt[hbbjtidx[0][36]]>0.941)*(abs(jteta[hbbjtidx[0][36]])<2.4)+(jtcsvt[hbbjtidx[1][36]]>0.941)*(abs(jteta[hbbjtidx[1][36]])<2.4):  +0.326
+--- Factory                  :                                                                                                                         log(hbbpt[36]):  +0.183
+--- Factory                  :                                        deltaR(jteta[tophadjtidx[0]],jtphi[tophadjtidx[0]],jteta[tophadjtidx[1]],jtphi[tophadjtidx[1]]):  +0.454
+--- Factory                  :     0.+(jtcsvt[tophadjtidx[0]]>0.941)*(abs(jteta[tophadjtidx[0]])<2.4)+(jtcsvt[tophadjtidx[1]]>0.941)*(abs(jteta[tophadjtidx[1]])<2.4):  +0.197
+--- Factory                  :                                                                                                                  log(jtpt[ljtidx[36]]):  +0.166
+--- Factory                  :                                                                                                                 abs(jteta[ljtidx[36]]):  +0.473
+--- Factory                  : ----------------
+--- Factory                  : 
+--- Factory                  : Correlations between input variables and MVA response (background):
+--- Factory                  : ----------------
+--- Factory                  :                                                                                                                                             BDT
+--- Factory                  :                                                              (nel==1&&nmu==0)*Alt$(elcharge[0],0)+(nel==0&&nmu==1)*Alt$(mucharge[0],0):  +0.180
+--- Factory                  :                                                                                                                           log(tophadm):  +0.391
+--- Factory                  : 0.+(jtcsvt[hbbjtidx[0][36]]>0.941)*(abs(jteta[hbbjtidx[0][36]])<2.4)+(jtcsvt[hbbjtidx[1][36]]>0.941)*(abs(jteta[hbbjtidx[1][36]])<2.4):  +0.425
+--- Factory                  :                                                                                                                         log(hbbpt[36]):  -0.004
+--- Factory                  :                                        deltaR(jteta[tophadjtidx[0]],jtphi[tophadjtidx[0]],jteta[tophadjtidx[1]],jtphi[tophadjtidx[1]]):  +0.497
+--- Factory                  :     0.+(jtcsvt[tophadjtidx[0]]>0.941)*(abs(jteta[tophadjtidx[0]])<2.4)+(jtcsvt[tophadjtidx[1]]>0.941)*(abs(jteta[tophadjtidx[1]])<2.4):  +0.444
+--- Factory                  :                                                                                                                  log(jtpt[ljtidx[36]]):  -0.109
+--- Factory                  :                                                                                                                 abs(jteta[ljtidx[36]]):  +0.325
+--- Factory                  : ----------------
+--- Factory                  : 
+--- Factory                  : The following "overlap" matrices contain the fraction of events for which 
+--- Factory                  : the MVAs 'i' and 'j' have returned conform answers about "signal-likeness"
+--- Factory                  : An event is signal-like, if its MVA output exceeds the following value:
+--- Factory                  : --------------------
+--- Factory                  :  Method:  Cut value:
+--- Factory                  : --------------------
+--- Factory                  :     BDT:     +0.002
+--- Factory                  : --------------------
+--- Factory                  : which correspond to the working point: eff(signal) = 1 - eff(background)
+--- Factory                  : 
+--- Factory                  : Evaluation results ranked by best signal efficiency and purity (area)
+--- Factory                  : --------------------------------------------------------------------------------
+--- Factory                  : MVA              Signal efficiency at bkg eff.(error):       | Sepa-    Signifi- 
+--- Factory                  : Method:          @B=0.01    @B=0.10    @B=0.30    ROC-integ. | ration:  cance:   
+--- Factory                  : --------------------------------------------------------------------------------
+--- Factory                  : BDT            : 0.183(35852)  0.573(45864)  0.854(32741)    0.862    | 0.398    1.085
+--- Factory                  : --------------------------------------------------------------------------------
+--- Factory                  : 
+--- Factory                  : Testing efficiency compared to training efficiency (overtraining check)
+--- Factory                  : --------------------------------------------------------------------------------
+--- Factory                  : MVA              Signal efficiency: from test sample (from training sample) 
+--- Factory                  : Method:          @B=0.01             @B=0.10            @B=0.30   
+--- Factory                  : --------------------------------------------------------------------------------
+--- Factory                  : BDT            : 0.183 (0.183)       0.573 (0.573)      0.854 (0.854)
+--- Factory                  : --------------------------------------------------------------------------------
+--- Factory                  : 
+--- Dataset:Default          : Created tree 'TestTree' with 32464 events
+--- Dataset:Default          : Created tree 'TrainTree' with 32464 events
+--- Factory                  :   
+--- Factory                  : [1mThank you for using TMVA![0m
+--- Factory                  : [1mFor citation information, please visit: http://tmva.sf.net/citeTMVA.html[0m
+==> Wrote root file: /storage/a/singletophiggs/13tev/mc_nov16/3t/eval/class_train_class_481/BDT_tH_481.root
+==> TMVAClassification is done! Hell Yeah!
+TMVA GUI PART
+--- Launch TMVA GUI to view input file: BDT_tH_481.root
+=== Note: inactive buttons indicate classifiers that were not trained, ===
+===       or functionalities that were not invoked during the training ===
+DONE.

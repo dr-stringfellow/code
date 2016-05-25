@@ -1,0 +1,1 @@
+Matching effiency is 49-50% (to be compared with 66% when pt(j) > 20 GeV/c was used in the forward region).

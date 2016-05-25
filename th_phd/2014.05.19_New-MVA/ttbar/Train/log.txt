@@ -1,0 +1,274 @@
+--- Factory                  : You are running ROOT Version: 5.34/11, Oct 31, 2013
+--- Factory                  : 
+--- Factory                  : _/_/_/_/_/ _|      _|  _|      _|    _|_|   
+--- Factory                  :    _/      _|_|  _|_|  _|      _|  _|    _| 
+--- Factory                  :   _/       _|  _|  _|  _|      _|  _|_|_|_| 
+--- Factory                  :  _/        _|      _|    _|  _|    _|    _| 
+--- Factory                  : _/         _|      _|      _|      _|    _| 
+--- Factory                  : 
+--- Factory                  : ___________TMVA Version 4.2.0, Sep 19, 2013
+--- Factory                  : 
+--- DataSetInfo              : Added class "Signal"	 with internal class number 0
+--- Factory                  : Add Tree Vars of type Signal with 15564 events
+--- DataSetInfo              : Added class "Background"	 with internal class number 1
+--- Factory                  : Add Tree Vars of type Background with 15564 events
+--- Factory                  : Add Tree Vars of type Signal with 33449 events
+--- Factory                  : Add Tree Vars of type Background with 33449 events
+--- DataSetInfo              : Class index : 0  name : Signal
+--- DataSetInfo              : Class index : 1  name : Background
+--- Factory                  : Booking method: [1mGlobalTTbarReco_BFGS[0m
+--- GlobalTTbarReco_BFGS     : Create Transformation "N" with events from all classes.
+--- Norm                     : Transformation, Variable selection : 
+--- Norm                     : Input : variable 'log(Mass_TopHad-Mass_WHad)' (index=0).   <---> Output : variable 'log(Mass_TopHad-Mass_WHad)' (index=0).
+--- Norm                     : Input : variable 'log(Mass_WHad)' (index=1).   <---> Output : variable 'log(Mass_WHad)' (index=1).
+--- Norm                     : Input : variable 'log(Mass_BTopLepLep)' (index=2).   <---> Output : variable 'log(Mass_BTopLepLep)' (index=2).
+--- Norm                     : Input : variable 'abs(Eta_TopHad)' (index=3).   <---> Output : variable 'abs(Eta_TopHad)' (index=3).
+--- Norm                     : Input : variable 'NumBTag_Light' (index=4).   <---> Output : variable 'NumBTag_Light' (index=4).
+--- Norm                     : Input : variable 'DeltaR_Light' (index=5).   <---> Output : variable 'DeltaR_Light' (index=5).
+--- Norm                     : Input : variable 'DeltaR_BTopHadWHad' (index=6).   <---> Output : variable 'DeltaR_BTopHadWHad' (index=6).
+--- Norm                     : Input : variable 'DeltaR_BTopLepWLep' (index=7).   <---> Output : variable 'DeltaR_BTopLepWLep' (index=7).
+--- Norm                     : Input : variable 'RelHt' (index=8).   <---> Output : variable 'RelHt' (index=8).
+--- Norm                     : Input : variable 'log(Pt_TopLep)' (index=9).   <---> Output : variable 'log(Pt_TopLep)' (index=9).
+--- Norm                     : Input : variable 'log(Pt_TopHad)' (index=10).   <---> Output : variable 'log(Pt_TopHad)' (index=10).
+--- Norm                     : Input : variable 'Charge_BTopHad-Charge_BTopLep' (index=11).   <---> Output : variable 'Charge_BTopHad-Charge_BTopLep' (index=11).
+--- Norm                     : Input : variable 'SumCharge_Light' (index=12).   <---> Output : variable 'SumCharge_Light' (index=12).
+--- GlobalTTbarReco_BFGS     : Building Network
+--- GlobalTTbarReco_BFGS     : Initializing weights
+--- DataSetFactory           : Splitmode is: "RANDOM" the mixmode is: "SAMEASSPLITMODE"
+--- DataSetFactory           : Create training and testing trees -- looping over class "Signal" ...
+--- DataSetFactory           : Weight expression for class 'Signal': "Weight"
+--- DataSetFactory           : Create training and testing trees -- looping over class "Background" ...
+--- DataSetFactory           : Weight expression for class 'Background': "Weight"
+--- DataSetFactory           : Number of events in input trees (after possible flattening of arrays):
+--- DataSetFactory           :     Signal          -- number of events       : 49013  / sum of weights: 952.718
+--- DataSetFactory           :     Background      -- number of events       : 49013  / sum of weights: 952.718
+--- DataSetFactory           :     Signal     tree -- total number of entries: 49013
+--- DataSetFactory           :     Background tree -- total number of entries: 49013
+--- DataSetFactory           : Preselection: (will NOT affect number of requested training and testing events)
+--- DataSetFactory           :     No preselection cuts applied on event classes
+--- DataSetFactory           : Weight renormalisation mode: "EqualNumEvents": renormalises all event classes ...
+--- DataSetFactory           :  such that the effective (weighted) number of events in each class is the same 
+--- DataSetFactory           :  (and equals the number of events (entries) given for class=0 )
+--- DataSetFactory           : ... i.e. such that Sum[i=1..N_j]{w_i} = N_classA, j=classA, classB, ...
+--- DataSetFactory           : ... (note that N_j is the sum of TRAINING events
+--- DataSetFactory           :  ..... Testing events are not renormalised nor included in the renormalisation factor!)
+--- DataSetFactory           : --> Rescale Signal     event weights by factor: 51.619
+--- DataSetFactory           : --> Rescale Background event weights by factor: 51.619
+--- DataSetFactory           : Number of training and testing events after rescaling:
+--- DataSetFactory           : ------------------------------------------------------
+--- DataSetFactory           : Signal     -- training events            : 15564 (sum of weights: 15564) - requested were 0 events
+--- DataSetFactory           : Signal     -- testing events             : 33449 (sum of weights: 651.2) - requested were 0 events
+--- DataSetFactory           : Signal     -- training and testing events: 49013 (sum of weights: 16215.2)
+--- DataSetFactory           : Background -- training events            : 15564 (sum of weights: 15564) - requested were 0 events
+--- DataSetFactory           : Background -- testing events             : 33449 (sum of weights: 651.2) - requested were 0 events
+--- DataSetFactory           : Background -- training and testing events: 49013 (sum of weights: 16215.2)
+--- DataSetFactory           : Create internal training tree
+--- DataSetFactory           : Create internal testing tree
+--- DataSetInfo              : Correlation matrix (Signal):
+--- DataSetInfo              : ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+--- DataSetInfo              :                                log(Mass_TopHad-Mass_WHad) log(Mass_WHad) log(Mass_BTopLepLep) abs(Eta_TopHad) NumBTag_Light DeltaR_Light DeltaR_BTopHadWHad DeltaR_BTopLepWLep   RelHt log(Pt_TopLep) log(Pt_TopHad) Charge_BTopHad-Charge_BTopLep SumCharge_Light
+--- DataSetInfo              :    log(Mass_TopHad-Mass_WHad):                     +1.000         +0.071               +0.000          -0.043        +0.012       -0.040             +0.050             -0.053  +0.072         +0.066         +0.133                        -0.025          -0.002
+--- DataSetInfo              :                log(Mass_WHad):                     +0.071         +1.000               +0.015          +0.008        -0.010       +0.156             -0.009             -0.071  +0.054         +0.076         +0.122                        -0.018          -0.007
+--- DataSetInfo              :          log(Mass_BTopLepLep):                     +0.000         +0.015               +1.000          +0.004        -0.015       -0.001             +0.014             +0.115  -0.058         -0.014         -0.006                        -0.001          +0.010
+--- DataSetInfo              :               abs(Eta_TopHad):                     -0.043         +0.008               +0.004          +1.000        -0.000       +0.199             +0.388             +0.227  -0.379         -0.281         -0.512                        -0.001          +0.020
+--- DataSetInfo              :                 NumBTag_Light:                     +0.012         -0.010               -0.015          -0.000        +1.000       +0.002             +0.029             +0.038  +0.115         -0.049         -0.036                        -0.000          +0.052
+--- DataSetInfo              :                  DeltaR_Light:                     -0.040         +0.156               -0.001          +0.199        +0.002       +1.000             +0.357             +0.258  -0.418         -0.305         -0.465                        +0.004          +0.012
+--- DataSetInfo              :            DeltaR_BTopHadWHad:                     +0.050         -0.009               +0.014          +0.388        +0.029       +0.357             +1.000             +0.396  -0.650         -0.489         -0.798                        +0.005          +0.007
+--- DataSetInfo              :            DeltaR_BTopLepWLep:                     -0.053         -0.071               +0.115          +0.227        +0.038       +0.258             +0.396             +1.000  -0.639         -0.759         -0.458                        +0.005          -0.001
+--- DataSetInfo              :                         RelHt:                     +0.072         +0.054               -0.058          -0.379        +0.115       -0.418             -0.650             -0.639  +1.000         +0.759         +0.757                        -0.013          -0.014
+--- DataSetInfo              :                log(Pt_TopLep):                     +0.066         +0.076               -0.014          -0.281        -0.049       -0.305             -0.489             -0.759  +0.759         +1.000         +0.575                        -0.022          -0.012
+--- DataSetInfo              :                log(Pt_TopHad):                     +0.133         +0.122               -0.006          -0.512        -0.036       -0.465             -0.798             -0.458  +0.757         +0.575         +1.000                        -0.018          -0.018
+--- DataSetInfo              : Charge_BTopHad-Charge_BTopLep:                     -0.025         -0.018               -0.001          -0.001        -0.000       +0.004             +0.005             +0.005  -0.013         -0.022         -0.018                        +1.000          +0.001
+--- DataSetInfo              :               SumCharge_Light:                     -0.002         -0.007               +0.010          +0.020        +0.052       +0.012             +0.007             -0.001  -0.014         -0.012         -0.018                        +0.001          +1.000
+--- DataSetInfo              : ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+--- DataSetInfo              : Correlation matrix (Background):
+--- DataSetInfo              : ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+--- DataSetInfo              :                                log(Mass_TopHad-Mass_WHad) log(Mass_WHad) log(Mass_BTopLepLep) abs(Eta_TopHad) NumBTag_Light DeltaR_Light DeltaR_BTopHadWHad DeltaR_BTopLepWLep   RelHt log(Pt_TopLep) log(Pt_TopHad) Charge_BTopHad-Charge_BTopLep SumCharge_Light
+--- DataSetInfo              :    log(Mass_TopHad-Mass_WHad):                     +1.000         +0.012               +0.044          +0.147        -0.020       -0.149             +0.614             +0.034  -0.152         +0.003         +0.035                        +0.004          +0.021
+--- DataSetInfo              :                log(Mass_WHad):                     +0.012         +1.000               +0.018          +0.223        +0.003       +0.722             +0.153             -0.020  -0.065         +0.058         +0.106                        +0.019          +0.008
+--- DataSetInfo              :          log(Mass_BTopLepLep):                     +0.044         +0.018               +1.000          +0.003        -0.000       +0.006             +0.059             +0.493  -0.191         -0.031         -0.015                        -0.029          -0.006
+--- DataSetInfo              :               abs(Eta_TopHad):                     +0.147         +0.223               +0.003          +1.000        -0.029       +0.227             +0.416             +0.117  -0.361         -0.194         -0.466                        -0.006          +0.011
+--- DataSetInfo              :                 NumBTag_Light:                     -0.020         +0.003               -0.000          -0.029        +1.000       -0.103             -0.037             +0.036  +0.080         -0.065         -0.036                        -0.017          +0.009
+--- DataSetInfo              :                  DeltaR_Light:                     -0.149         +0.722               +0.006          +0.227        -0.103       +1.000             +0.190             +0.050  -0.218         -0.088         -0.179                        +0.026          +0.013
+--- DataSetInfo              :            DeltaR_BTopHadWHad:                     +0.614         +0.153               +0.059          +0.416        -0.037       +0.190             +1.000             +0.191  -0.513         -0.246         -0.501                        -0.002          +0.013
+--- DataSetInfo              :            DeltaR_BTopLepWLep:                     +0.034         -0.020               +0.493          +0.117        +0.036       +0.050             +0.191             +1.000  -0.549         -0.589         -0.285                        -0.030          -0.026
+--- DataSetInfo              :                         RelHt:                     -0.152         -0.065               -0.191          -0.361        +0.080       -0.218             -0.513             -0.549  +1.000         +0.694         +0.689                        +0.021          -0.006
+--- DataSetInfo              :                log(Pt_TopLep):                     +0.003         +0.058               -0.031          -0.194        -0.065       -0.088             -0.246             -0.589  +0.694         +1.000         +0.465                        +0.026          +0.022
+--- DataSetInfo              :                log(Pt_TopHad):                     +0.035         +0.106               -0.015          -0.466        -0.036       -0.179             -0.501             -0.285  +0.689         +0.465         +1.000                        +0.018          +0.008
+--- DataSetInfo              : Charge_BTopHad-Charge_BTopLep:                     +0.004         +0.019               -0.029          -0.006        -0.017       +0.026             -0.002             -0.030  +0.021         +0.026         +0.018                        +1.000          -0.012
+--- DataSetInfo              :               SumCharge_Light:                     +0.021         +0.008               -0.006          +0.011        +0.009       +0.013             +0.013             -0.026  -0.006         +0.022         +0.008                        -0.012          +1.000
+--- DataSetInfo              : ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+--- DataSetFactory           :  
+--- Factory                  :  
+--- Factory                  : Train all methods for Classification ...
+--- Factory                  : Train method: GlobalTTbarReco_BFGS for Classification
+--- Norm                     : Preparing the transformation.
+--- TFHandler_GlobalTTbarR...: --------------------------------------------------------------------------------------------------------------------------------------------------------------------
+--- TFHandler_GlobalTTbarR...:                      Variable                             Mean                             RMS                     [        Min                             Max ]
+--- TFHandler_GlobalTTbarR...: --------------------------------------------------------------------------------------------------------------------------------------------------------------------
+--- TFHandler_GlobalTTbarR...:    log(Mass_TopHad-Mass_WHad):                      -0.046555                        0.20549   [                        -1.0000                         1.0000 ]
+--- TFHandler_GlobalTTbarR...:                log(Mass_WHad):                       -0.24485                        0.19443   [                        -1.0000                         1.0000 ]
+--- TFHandler_GlobalTTbarR...:          log(Mass_BTopLepLep):                       -0.14870                        0.19981   [                        -1.0000                         1.0000 ]
+--- TFHandler_GlobalTTbarR...:               abs(Eta_TopHad):                       -0.64564                        0.24412   [                        -1.0000                         1.0000 ]
+--- TFHandler_GlobalTTbarR...:                 NumBTag_Light:                       -0.33431                        0.47656   [                        -1.0000                         1.0000 ]
+--- TFHandler_GlobalTTbarR...:                  DeltaR_Light:                       -0.54642                        0.26511   [                        -1.0000                         1.0000 ]
+--- TFHandler_GlobalTTbarR...:            DeltaR_BTopHadWHad:                       -0.41160                        0.23471   [                        -1.0000                         1.0000 ]
+--- TFHandler_GlobalTTbarR...:            DeltaR_BTopLepWLep:                       -0.35734                        0.26557   [                        -1.0000                         1.0000 ]
+--- TFHandler_GlobalTTbarR...:                         RelHt:                      -0.068357                        0.38981   [                        -1.0000                         1.0000 ]
+--- TFHandler_GlobalTTbarR...:                log(Pt_TopLep):                        0.35063                        0.21178   [                        -1.0000                         1.0000 ]
+--- TFHandler_GlobalTTbarR...:                log(Pt_TopHad):                        0.42654                        0.18765   [                        -1.0000                         1.0000 ]
+--- TFHandler_GlobalTTbarR...: Charge_BTopHad-Charge_BTopLep:                       0.046220                        0.23570   [                        -1.0000                         1.0000 ]
+--- TFHandler_GlobalTTbarR...:               SumCharge_Light:                      -0.015692                        0.24889   [                        -1.0000                         1.0000 ]
+--- TFHandler_GlobalTTbarR...: --------------------------------------------------------------------------------------------------------------------------------------------------------------------
+--- GlobalTTbarReco_BFGS     : Begin training
+--- GlobalTTbarReco_BFGS     : Training Network
+--- GlobalTTbarReco_BFGS     : End of training                                              
+--- GlobalTTbarReco_BFGS     : Elapsed time for training with 31128 events: [1;31m1.96e+03 sec[0m         
+--- GlobalTTbarReco_BFGS     : Create MVA output for classification on training sample
+--- GlobalTTbarReco_BFGS     : Evaluation of GlobalTTbarReco_BFGS on training sample (31128 events)
+--- GlobalTTbarReco_BFGS     : Elapsed time for evaluation of 31128 events: [1;31m0.402 sec[0m       
+--- GlobalTTbarReco_BFGS     : Creating weight file in xml format: [0;36mweights/GlobalTTbarReco_GlobalTTbarReco_BFGS.weights.xml[0m
+--- GlobalTTbarReco_BFGS     : Creating standalone response class: [0;36mweights/GlobalTTbarReco_GlobalTTbarReco_BFGS.class.C[0m
+--- GlobalTTbarReco_BFGS     : Write special histos to file: infoGlobalTTbarReco.root:/Method_MLP/GlobalTTbarReco_BFGS
+--- Factory                  : Training finished
+--- Factory                  : 
+--- Factory                  : Ranking input variables (method specific)...
+--- GlobalTTbarReco_BFGS     : Ranking result (top variable is best ranked)
+--- GlobalTTbarReco_BFGS     : --------------------------------------------------------
+--- GlobalTTbarReco_BFGS     : Rank : Variable                        : Importance
+--- GlobalTTbarReco_BFGS     : --------------------------------------------------------
+--- GlobalTTbarReco_BFGS     :    1 : log_Mass_WHad_                  : 2.948e+01
+--- GlobalTTbarReco_BFGS     :    2 : log_Mass_TopHad_M_Mass_WHad_    : 1.132e+01
+--- GlobalTTbarReco_BFGS     :    3 : DeltaR_Light                    : 1.114e+01
+--- GlobalTTbarReco_BFGS     :    4 : abs_Eta_TopHad_                 : 1.031e+01
+--- GlobalTTbarReco_BFGS     :    5 : log_Pt_TopHad_                  : 6.404e+00
+--- GlobalTTbarReco_BFGS     :    6 : NumBTag_Light                   : 5.345e+00
+--- GlobalTTbarReco_BFGS     :    7 : log_Pt_TopLep_                  : 5.288e+00
+--- GlobalTTbarReco_BFGS     :    8 : DeltaR_BTopHadWHad              : 5.163e+00
+--- GlobalTTbarReco_BFGS     :    9 : RelHt                           : 4.513e+00
+--- GlobalTTbarReco_BFGS     :   10 : DeltaR_BTopLepWLep              : 4.325e+00
+--- GlobalTTbarReco_BFGS     :   11 : log_Mass_BTopLepLep_            : 4.125e+00
+--- GlobalTTbarReco_BFGS     :   12 : Charge_BTopHad_M_Charge_BTopLep : 1.117e+00
+--- GlobalTTbarReco_BFGS     :   13 : SumCharge_Light                 : 9.066e-01
+--- GlobalTTbarReco_BFGS     : --------------------------------------------------------
+--- Factory                  : 
+--- Factory                  : === Destroy and recreate all methods via weight files for testing ===
+--- Factory                  : 
+--- MethodBase               : Reading weight file: [0;36mweights/GlobalTTbarReco_GlobalTTbarReco_BFGS.weights.xml[0m
+--- GlobalTTbarReco_BFGS     : Read method "GlobalTTbarReco_BFGS" of type "MLP"
+--- GlobalTTbarReco_BFGS     : MVA method was trained with TMVA Version: 4.2.0
+--- GlobalTTbarReco_BFGS     : MVA method was trained with ROOT Version: 5.34/11
+--- GlobalTTbarReco_BFGS     : Building Network
+--- GlobalTTbarReco_BFGS     : Initializing weights
+--- Factory                  : Test all methods...
+--- Factory                  : Test method: GlobalTTbarReco_BFGS for Classification performance
+--- GlobalTTbarReco_BFGS     : Evaluation of GlobalTTbarReco_BFGS on testing sample (66898 events)
+--- GlobalTTbarReco_BFGS     : Elapsed time for evaluation of 66898 events: [1;31m0.82 sec[0m       
+--- Factory                  : Evaluate all methods...
+--- Factory                  : Evaluate classifier: GlobalTTbarReco_BFGS
+--- TFHandler_GlobalTTbarR...: --------------------------------------------------------------------------------------------------------------------------------------------------------------------
+--- TFHandler_GlobalTTbarR...:                      Variable                             Mean                             RMS                     [        Min                             Max ]
+--- TFHandler_GlobalTTbarR...: --------------------------------------------------------------------------------------------------------------------------------------------------------------------
+--- TFHandler_GlobalTTbarR...:    log(Mass_TopHad-Mass_WHad):                      -0.046258                        0.20597   [                        -1.0566                         1.1305 ]
+--- TFHandler_GlobalTTbarR...:                log(Mass_WHad):                       -0.24361                        0.19380   [                       -0.98261                         1.2075 ]
+--- TFHandler_GlobalTTbarR...:          log(Mass_BTopLepLep):                       -0.15166                        0.20119   [                        -1.2683                        0.84466 ]
+--- TFHandler_GlobalTTbarR...:               abs(Eta_TopHad):                       -0.64786                        0.24207   [                       -0.99999                        0.90829 ]
+--- TFHandler_GlobalTTbarR...:                 NumBTag_Light:                       -0.32845                        0.47403   [                        -1.0000                         1.0000 ]
+--- TFHandler_GlobalTTbarR...:                  DeltaR_Light:                       -0.54566                        0.26511   [                       -0.99881                        0.88192 ]
+--- TFHandler_GlobalTTbarR...:            DeltaR_BTopHadWHad:                       -0.41091                        0.23556   [                       -0.99465                        0.98349 ]
+--- TFHandler_GlobalTTbarR...:            DeltaR_BTopLepWLep:                       -0.35867                        0.26451   [                        -1.0131                         1.0095 ]
+--- TFHandler_GlobalTTbarR...:                         RelHt:                      -0.067857                        0.39140   [                       -0.99654                         1.0154 ]
+--- TFHandler_GlobalTTbarR...:                log(Pt_TopLep):                        0.35078                        0.21336   [                        -2.0667                         1.0623 ]
+--- TFHandler_GlobalTTbarR...:                log(Pt_TopHad):                        0.42616                        0.18910   [                       -0.92333                         1.0295 ]
+--- TFHandler_GlobalTTbarR...: Charge_BTopHad-Charge_BTopLep:                       0.045189                        0.23705   [                       -0.82107                        0.93519 ]
+--- TFHandler_GlobalTTbarR...:               SumCharge_Light:                      -0.016584                        0.24939   [                        -1.0824                         1.1028 ]
+--- TFHandler_GlobalTTbarR...: --------------------------------------------------------------------------------------------------------------------------------------------------------------------
+--- GlobalTTbarReco_BFGS     : Loop over test events and fill histograms with classifier response...
+--- Factory                  : Write evaluation histograms to file
+--- TFHandler_GlobalTTbarR...: Plot event variables for GlobalTTbarReco_BFGS
+--- TFHandler_GlobalTTbarR...: --------------------------------------------------------------------------------------------------------------------------------------------------------------------
+--- TFHandler_GlobalTTbarR...:                      Variable                             Mean                             RMS                     [        Min                             Max ]
+--- TFHandler_GlobalTTbarR...: --------------------------------------------------------------------------------------------------------------------------------------------------------------------
+--- TFHandler_GlobalTTbarR...:    log(Mass_TopHad-Mass_WHad):                      -0.046258                        0.20597   [                        -1.0566                         1.1305 ]
+--- TFHandler_GlobalTTbarR...:                log(Mass_WHad):                       -0.24361                        0.19380   [                       -0.98261                         1.2075 ]
+--- TFHandler_GlobalTTbarR...:          log(Mass_BTopLepLep):                       -0.15166                        0.20119   [                        -1.2683                        0.84466 ]
+--- TFHandler_GlobalTTbarR...:               abs(Eta_TopHad):                       -0.64786                        0.24207   [                       -0.99999                        0.90829 ]
+--- TFHandler_GlobalTTbarR...:                 NumBTag_Light:                       -0.32845                        0.47403   [                        -1.0000                         1.0000 ]
+--- TFHandler_GlobalTTbarR...:                  DeltaR_Light:                       -0.54566                        0.26511   [                       -0.99881                        0.88192 ]
+--- TFHandler_GlobalTTbarR...:            DeltaR_BTopHadWHad:                       -0.41091                        0.23556   [                       -0.99465                        0.98349 ]
+--- TFHandler_GlobalTTbarR...:            DeltaR_BTopLepWLep:                       -0.35867                        0.26451   [                        -1.0131                         1.0095 ]
+--- TFHandler_GlobalTTbarR...:                         RelHt:                      -0.067857                        0.39140   [                       -0.99654                         1.0154 ]
+--- TFHandler_GlobalTTbarR...:                log(Pt_TopLep):                        0.35078                        0.21336   [                        -2.0667                         1.0623 ]
+--- TFHandler_GlobalTTbarR...:                log(Pt_TopHad):                        0.42616                        0.18910   [                       -0.92333                         1.0295 ]
+--- TFHandler_GlobalTTbarR...: Charge_BTopHad-Charge_BTopLep:                       0.045189                        0.23705   [                       -0.82107                        0.93519 ]
+--- TFHandler_GlobalTTbarR...:               SumCharge_Light:                      -0.016584                        0.24939   [                        -1.0824                         1.1028 ]
+--- TFHandler_GlobalTTbarR...: --------------------------------------------------------------------------------------------------------------------------------------------------------------------
+--- TFHandler_GlobalTTbarR...: Create scatter and profile plots in target-file directory: 
+--- TFHandler_GlobalTTbarR...: infoGlobalTTbarReco.root:/Method_MLP/GlobalTTbarReco_BFGS/CorrelationPlots
+--- Factory                  : Correlations between input variables and MVA response (signal):
+--- Factory                  : ------------------------------------------
+--- Factory                  :                                GlobalTTbarReco_BFGS
+--- Factory                  :    log(Mass_TopHad-Mass_WHad):               +0.102
+--- Factory                  :                log(Mass_WHad):               -0.257
+--- Factory                  :          log(Mass_BTopLepLep):               -0.021
+--- Factory                  :               abs(Eta_TopHad):               -0.080
+--- Factory                  :                 NumBTag_Light:               +0.066
+--- Factory                  :                  DeltaR_Light:               -0.349
+--- Factory                  :            DeltaR_BTopHadWHad:               -0.282
+--- Factory                  :            DeltaR_BTopLepWLep:               -0.218
+--- Factory                  :                         RelHt:               +0.265
+--- Factory                  :                log(Pt_TopLep):               +0.230
+--- Factory                  :                log(Pt_TopHad):               +0.305
+--- Factory                  : Charge_BTopHad-Charge_BTopLep:               +0.194
+--- Factory                  :               SumCharge_Light:               -0.114
+--- Factory                  : ------------------------------------------
+--- Factory                  : 
+--- Factory                  : Correlations between input variables and MVA response (background):
+--- Factory                  : ------------------------------------------
+--- Factory                  :                                GlobalTTbarReco_BFGS
+--- Factory                  :    log(Mass_TopHad-Mass_WHad):               -0.093
+--- Factory                  :                log(Mass_WHad):               -0.308
+--- Factory                  :          log(Mass_BTopLepLep):               -0.181
+--- Factory                  :               abs(Eta_TopHad):               -0.104
+--- Factory                  :                 NumBTag_Light:               +0.068
+--- Factory                  :                  DeltaR_Light:               -0.263
+--- Factory                  :            DeltaR_BTopHadWHad:               -0.156
+--- Factory                  :            DeltaR_BTopLepWLep:               -0.155
+--- Factory                  :                         RelHt:               +0.212
+--- Factory                  :                log(Pt_TopLep):               +0.062
+--- Factory                  :                log(Pt_TopHad):               +0.070
+--- Factory                  : Charge_BTopHad-Charge_BTopLep:               +0.133
+--- Factory                  :               SumCharge_Light:               -0.036
+--- Factory                  : ------------------------------------------
+--- Factory                  : 
+--- Factory                  : The following "overlap" matrices contain the fraction of events for which 
+--- Factory                  : the MVAs 'i' and 'j' have returned conform answers about "signal-likeness"
+--- Factory                  : An event is signal-like, if its MVA output exceeds the following value:
+--- Factory                  : -------------------------------------------
+--- Factory                  :               Method:            Cut value:
+--- Factory                  : -------------------------------------------
+--- Factory                  : GlobalTTbarReco_BFGS:               +0.578
+--- Factory                  : -------------------------------------------
+--- Factory                  : which correspond to the working point: eff(signal) = 1 - eff(background)
+--- Factory                  : 
+--- Factory                  : Evaluation results ranked by best signal efficiency and purity (area)
+--- Factory                  : --------------------------------------------------------------------------------
+--- Factory                  : MVA              Signal efficiency at bkg eff.(error):       | Sepa-    Signifi- 
+--- Factory                  : Method:          @B=0.01    @B=0.10    @B=0.30    ROC-integ. | ration:  cance:   
+--- Factory                  : --------------------------------------------------------------------------------
+--- Factory                  : GlobalTTbarReco_BFGS: 0.293(17)  0.824(14)  0.973(06)    0.940    | 0.630    1.780
+--- Factory                  : --------------------------------------------------------------------------------
+--- Factory                  : 
+--- Factory                  : Testing efficiency compared to training efficiency (overtraining check)
+--- Factory                  : --------------------------------------------------------------------------------
+--- Factory                  : MVA              Signal efficiency: from test sample (from training sample) 
+--- Factory                  : Method:          @B=0.01             @B=0.10            @B=0.30   
+--- Factory                  : --------------------------------------------------------------------------------
+--- Factory                  : GlobalTTbarReco_BFGS: 0.293 (0.303)       0.824 (0.823)      0.973 (0.975)
+--- Factory                  : --------------------------------------------------------------------------------
+--- Factory                  : 
+--- Dataset:Default          : Created tree 'TestTree' with 66898 events
+--- Dataset:Default          : Created tree 'TrainTree' with 31128 events
+--- Factory                  :   
+--- Factory                  : [1mThank you for using TMVA![0m
+--- Factory                  : [1mFor citation information, please visit: http://tmva.sf.net/citeTMVA.html[0m

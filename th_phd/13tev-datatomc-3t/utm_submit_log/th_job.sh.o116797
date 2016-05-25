@@ -1,0 +1,92 @@
+/usr/users/bmaier
+/usr/users/bmaier
+------------------------------------------------------------
+th_datatomc_x options:
+------------------------------------------------------------
+data                    =                                   
+mcs                     =case_1:merged_THQ_rootfile_nominal.root
+                   case_1p5:merged_THQ_rootfile_nominal.root
+                   case_0p5:merged_THQ_rootfile_nominal.root
+signal                  =                                   
+signalfac               =                                  1
+mcref                   =                                   
+dirname                 =                                utm
+filesuffix              =                              .root
+treename                =                                  t
+datapath                = /storage/jbod/bmaier/13tev/data_3t
+mcpath                  =               /storage/jbod/bmaier
+mcsubpath               =                                   
+cuts                    =                                   
+mccuts                  =                                   
+datacuts                =                                   
+mcweights               =            case_1:weights_syst[12]
+                                   case_1p5:weights_syst[29]
+                                   case_0p5:weights_syst[46]
+mcweightsup             =                                   
+mcweightsdown           =                                   
+ignore                  =                                   
+tightcut                =                                iso
+mm                      =                                   
+epssig                  =                      0.99 +- 0.010
+epsqcd                  =                      0.40 +- 0.025
+varname                 =                                   
+varexpr                 =                               sbpt
+xtitle                  =                                   
+ytitle                  =                         Events/Bin
+nbinsx                  =                                 40
+binsx                   =                                   
+xmin                    =                                  0
+xmax                    =                                400
+ymin                    =                                 -1
+overflow                =                                  0
+underflow               =                              false
+logx                    =                              false
+logy                    =                              false
+residuals               =                               true
+resmax                  =                                0.6
+fitresids               =                                   
+stats                   =                                  0
+lumi                    =                                  0
+log_min                 =                               0.01
+leginplot               =                              false
+legx                    =                              0.775
+legy                    =                               0.93
+legw                    =                               0.25
+legh                    =                               0.09
+datalabel               =                               Data
+mclabels                =                                   
+mccolors                =                         case_1:432
+                                                case_1p5:600
+                                                case_0p5:830
+labels                  =                                   
+stackmc                 =                                  0
+reversemc               =                              false
+batch                   =                              false
+formats                 =                                pdf
+opath                   =                                   
+output                  =                                   
+prefix                  =                       tH_inclusive
+suffix                  =                               sbpt
+chi2test                =                                  0
+kstest                  =                                  0
+mcuncert                =                                  1
+printdiff               =                              false
+printint                =                              false
+plotsys                 =                              false
+dd_file                 =                                   
+dd_hist                 =                                   
+poisson                 =                                  1
+binlabels               =                                   
+up_uncfile              =                                   
+down_uncfile            =                                   
+------------------------------------------------------------
+
+=========================================================================================================================
+MC SAMPLE      FILENAME                                                 EVENTS  XSEC[PB]            EFF  KFAC     INTLUMI
+=========================================================================================================================
+case_0p5       /storage/jbod/bmaier/merged_THQ_rootfile_nominal.root   3498596    0.2583              1     1 1.35447e+07
+case_1p5       /storage/jbod/bmaier/merged_THQ_rootfile_nominal.root   3498596    0.2583              1     1 1.35447e+07
+case_1         /storage/jbod/bmaier/merged_THQ_rootfile_nominal.root   3498596    0.2583              1     1 1.35447e+07
+=========================================================================================================================
+
+[[1;33m%[0m[1;33m%[0m[1;33m%[0m[1;33m%[0m[1;33m%[0m[1;33m%[0m[1;33m%[0m-------------] [1;33m35%[0m completed.  [[1;33m%[0m[1;33m%[0m[1;33m%[0m[1;33m%[0m[1;33m%[0m[1;33m%[0m[1;33m%[0m[1;33m%[0m[1;33m%[0m[1;33m%[0m[1;33m%[0m[1;33m%[0m[1;33m%[0m-------] [1;33m65%[0m completed.  [[1;32m%[0m[1;32m%[0m[1;32m%[0m[1;32m%[0m[1;32m%[0m[1;32m%[0m[1;32m%[0m[1;32m%[0m[1;32m%[0m[1;32m%[0m[1;32m%[0m[1;32m%[0m[1;32m%[0m[1;32m%[0m[1;32m%[0m[1;32m%[0m[1;32m%[0m[1;32m%[0m[1;32m%[0m[1;32m%[0m] [1;32m100%[0m completed.  

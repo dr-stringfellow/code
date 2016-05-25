@@ -1,0 +1,114 @@
+[
+[
+"log_Mass_TopHad_M_Mass_WHad_",
+2.5,
+7.0,
+35,
+"log((m (t_{had}) - m (W_{had}))/GeV)"
+],
+[
+"log_Mass_WHad_",
+2.5,
+7.0,
+35,
+"log m (W_{had})/GeV"
+],
+[
+"log_Mass_BTopLepLep_",
+2.5,
+6.5,
+35,
+"log m (b_{t_{lep}} + l)/GeV"
+],
+[
+"abs_Eta_TopHad_",
+0,
+6.0,
+35,
+"|#eta (t_{had})|"
+],
+[
+"Numbtag_Light",
+-0.5,
+2.5,
+3,
+"# b tags of W_{had} jets"
+],
+[
+"DeltaR_Light",
+0,
+6.0,
+35,
+"#DeltaR (W_{had})"
+],
+[
+"DeltaR_BTopHadWHad",
+0,
+7.0,
+35,
+"#DeltaR (b_{t_{had}},W_{had})"
+],
+[
+"DeltaR_BTopLepWLep",
+0,
+6.0,
+35,
+"#DeltaR (b_{t_{lep}},W_{lep})"
+],
+[
+"RelHt",
+0,
+1.0,
+35,
+"relative H_{T}"
+],
+[
+"log_Pt_TopLep_",
+1,
+7.0,
+35,
+"log p_{T} (t_{lep})/GeV"
+],
+[
+"log_Pt_TopHad_",
+1,
+7.0,
+35,
+"log p_{T} (t_{had})/GeV"
+],
+[
+"Charge_BTopHad_M_Charge_BTopLep",
+-1.3600000000000136,
+2.0,
+35,
+"(q (b_{t_{lep}}) - q (b_{t_{had}})) #upoint q (l)"
+],
+[
+"SumCharge_Light",
+-1.740000000000009,
+2.0,
+35,
+"#Sigma q (W_{had} jets) #upoint q (l)"
+],
+[
+"weight",
+-99999,
+-99999.0,
+100,
+"weight"
+],
+[
+"GlobalTTbarReco_BFGS",
+-0.67999999999995,
+2.0,
+100,
+"GlobalTTbarReco_BFGS"
+],
+[
+"NumBTag_Light",
+-0.5,
+2.5,
+3,
+"# b tags of W_{had} jets"
+]
+]

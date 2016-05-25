@@ -1,0 +1,25 @@
+$
+$ MCS
+$
+
+mcpath   = [TH_MCDIR]/[REGION]/eval
+
+include ../../samples/13tev/TTbar-FXFX_bb.config
+include ../../samples/13tev/TTbar-FXFX_2b.config
+include ../../samples/13tev/TTbar-FXFX_b.config
+include ../../samples/13tev/TTbar-FXFX_cc.config
+include ../../samples/13tev/TTbar-FXFX_lf.config
+include ../../samples/13tev/ST-powheg_DC.config
+include ../../samples/13tev/TTH-powheg.config
+include ../../samples/13tev/Electroweak_DC.config
+
+
+$$ MCWEIGHTS (without errors)
+mcweights+ = "Weight_PU"
+	     "Weight_CSV" 
+             "TTbar-FXFX_lf:((genevt_ttxid%100)==0)"
+             "TTbar-FXFX_b:((genevt_ttxid%100)==51)"
+             "TTbar-FXFX_2b:((genevt_ttxid%100)==52)"
+	     "TTbar-FXFX_bb:((genevt_ttxid%100)==53||(genevt_ttxid%100)==54||(genevt_ttxid%100)==55)"
+	     "TTbar-FXFX_cc:((genevt_ttxid%100)==41||(genevt_ttxid%100)==42||(genevt_ttxid%100)==43||(genevt_ttxid%100)==44||(genevt_ttxid%100)==45)"
+ 

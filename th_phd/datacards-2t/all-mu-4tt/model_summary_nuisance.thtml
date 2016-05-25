@@ -1,0 +1,31 @@
+<h3>Prior Parameters</h3>
+<table cellpadding="2" border="1">
+<tr><th>parameter</th><th>distribution type</th><th>distribution parameters</th></tr>
+<tr><td>scale_ttH</td><td>gauss</td><td>width = 1.0; range = [-inf, inf]; mean = 0.0</td></tr>
+<tr><td>pdf_qg</td><td>gauss</td><td>width = 1.0; range = [-inf, inf]; mean = 0.0</td></tr>
+<tr><td>btagHF</td><td>gauss</td><td>width = 1.0; range = [-inf, inf]; mean = 0.0</td></tr>
+<tr><td>lumi</td><td>gauss</td><td>width = 1.0; range = [-inf, inf]; mean = 0.0</td></tr>
+<tr><td>eff_m</td><td>gauss</td><td>width = 1.0; range = [-inf, inf]; mean = 0.0</td></tr>
+<tr><td>scale_V</td><td>gauss</td><td>width = 1.0; range = [-inf, inf]; mean = 0.0</td></tr>
+<tr><td>pileup</td><td>gauss</td><td>width = 1.0; range = [-inf, inf]; mean = 0.0</td></tr>
+<tr><td>madgraphQ2_ttbb</td><td>gauss</td><td>width = 1.0; range = [-inf, inf]; mean = 0.0</td></tr>
+<tr><td>jer</td><td>gauss</td><td>width = 1.0; range = [-inf, inf]; mean = 0.0</td></tr>
+<tr><td>jes</td><td>gauss</td><td>width = 1.0; range = [-inf, inf]; mean = 0.0</td></tr>
+<tr><td>scale_tt</td><td>gauss</td><td>width = 1.0; range = [-inf, inf]; mean = 0.0</td></tr>
+<tr><td>scale_VV</td><td>gauss</td><td>width = 1.0; range = [-inf, inf]; mean = 0.0</td></tr>
+<tr><td>match_ttbb</td><td>gauss</td><td>width = 1.0; range = [-inf, inf]; mean = 0.0</td></tr>
+<tr><td>tthf_b</td><td>gauss</td><td>width = 1.0; range = [-inf, inf]; mean = 0.0</td></tr>
+<tr><td>tthf_bb</td><td>gauss</td><td>width = 1.0; range = [-inf, inf]; mean = 0.0</td></tr>
+<tr><td>match_ttlf</td><td>gauss</td><td>width = 1.0; range = [-inf, inf]; mean = 0.0</td></tr>
+<tr><td>pdf_qqbar</td><td>gauss</td><td>width = 1.0; range = [-inf, inf]; mean = 0.0</td></tr>
+<tr><td>toppt</td><td>gauss</td><td>width = 1.0; range = [-inf, inf]; mean = 0.0</td></tr>
+<tr><td>met</td><td>gauss</td><td>width = 1.0; range = [-inf, inf]; mean = 0.0</td></tr>
+<tr><td>madgraphQ2_tH</td><td>gauss</td><td>width = 1.0; range = [-inf, inf]; mean = 0.0</td></tr>
+<tr><td>madgraphQ2_ttcc</td><td>gauss</td><td>width = 1.0; range = [-inf, inf]; mean = 0.0</td></tr>
+<tr><td>match_ttcc</td><td>gauss</td><td>width = 1.0; range = [-inf, inf]; mean = 0.0</td></tr>
+<tr><td>madgraphQ2_ttlf</td><td>gauss</td><td>width = 1.0; range = [-inf, inf]; mean = 0.0</td></tr>
+<tr><td>tthf_cc</td><td>gauss</td><td>width = 1.0; range = [-inf, inf]; mean = 0.0</td></tr>
+<tr><td>pdf_gg</td><td>gauss</td><td>width = 1.0; range = [-inf, inf]; mean = 0.0</td></tr>
+<tr><td>btagLF</td><td>gauss</td><td>width = 1.0; range = [-inf, inf]; mean = 0.0</td></tr>
+</table>
+

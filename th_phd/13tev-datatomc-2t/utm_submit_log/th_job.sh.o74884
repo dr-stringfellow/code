@@ -1,0 +1,17 @@
+/usr/users/bmaier
+/usr/users/bmaier
+Loading version: /cvmfs/cms.cern.ch/slc6_amd64_gcc481/lcg/root/5.34.18-cms5/bin/root ->[1m DONE.[0m
+Standalone framework setup and ready to roll...
+/usr/users/bmaier
+CommandLine INFO: include configuration file: ../../samples/13tev/DataMu.config
+CommandLine INFO: include configuration file: ../../samples/13tev/TH125-madgraph.config
+CommandLine INFO: include configuration file: ../../samples/13tev/TTbar-powheg_bb.config
+CommandLine INFO: include configuration file: ../../samples/13tev/TTbar-powheg_2b.config
+CommandLine INFO: include configuration file: ../../samples/13tev/TTbar-powheg_b.config
+CommandLine INFO: include configuration file: ../../samples/13tev/TTbar-powheg_cc.config
+CommandLine INFO: include configuration file: ../../samples/13tev/TTbar-powheg_lf.config
+CommandLine INFO: include configuration file: ../../samples/13tev/TTH-powheg.config
+CommandLine INFO: include configuration file: ../../samples/13tev/TTW-amcatnlo.config
+CommandLine INFO: include configuration file: ../../samples/13tev/Electroweak.config
+CommandLine INFO: include configuration file: ../../labels/2fbinv.config
+CommandLine WARNING: unused option 'log_min'!

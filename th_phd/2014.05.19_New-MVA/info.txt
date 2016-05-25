@@ -1,0 +1,27 @@
+The task is to retrain MVAs for jet assignment and classification. The code is mostly copied from 2014.02.24_Full-analysis/Step1_MVA. An important change is that forward jets are treated differently: a larger pt threshold is used there, and pseudorapidity is considered in wide bins only. This is implemented in a hacked version of PECFwk: modified-forward-jets@8317ebbca34faf749c28e06fbd2c15a851dbe045.
+
+Another major change is that I use an optimised set of observables provided by Afiq (excluding mismodelled ones).
+
+Use tHbb package of version master@5e03511cbca37d416bb7a2680e31c0e51ad3784a.
+
+
+=== tHq ===
+
+Compared to 2014.02.24_Full-analysis, now the recoil jet is chosen among untagged jets only. A bug in RecoTHInputVarsPlugin::ChooseElements has been fixed. Training is performed with events with (eventID.eventNumber % 25) <= 5 (as in 2014.02.24_Full-analysis/Step1_MVA/thq).
+
+
+=== ttbar ===
+
+Now jets matched to b-quark jets from top decays are searched among b-tagged jets only (true for ~95% of all events that pass the selection). Training is performed with events with (eventID.eventNumber % 25) <= 7 (as in 2014.02.24_Full-analysis/Step1_MVA/ttbar).
+
+
+=== Class ===
+
+After the tuples are split into training and examining sets with the splitTuples program, all tuples in each of the two sets are merged with hadd.
+
+Three NNs are prepared. They have different sets of inputs:
+ a) the optimised set by Afiq, but without the sphericity and with jet pseudorapidity instead of rapidity;
+ b) the old set without mismodelled variables (sphericity, s-hat, cos(theta*));
+ c) the old set as is.
+
+ROCs obtained for cases a and b are virtually indistinguishable.

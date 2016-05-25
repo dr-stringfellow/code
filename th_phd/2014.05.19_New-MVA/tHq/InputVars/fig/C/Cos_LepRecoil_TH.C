@@ -1,0 +1,225 @@
+{
+//=========Macro generated from canvas: canvas/canvas
+//=========  (Tue May 20 17:07:26 2014) by ROOT version5.34/09
+   TCanvas *canvas = new TCanvas("canvas", "canvas",1,1,1200,776);
+   gStyle->SetOptStat(0);
+   canvas->SetHighLightColor(2);
+   canvas->Range(0,0,1,1);
+   canvas->SetFillColor(0);
+   canvas->SetBorderMode(0);
+   canvas->SetBorderSize(2);
+   canvas->SetFrameBorderMode(0);
+  
+// ------------>Primitives in pad: mainPad
+   TPad *mainPad = new TPad("mainPad", "",0,0,0.9,1);
+   mainPad->Draw();
+   mainPad->cd();
+   mainPad->Range(-1.249957,-0.09821203,1.249989,0.8839082);
+   mainPad->SetFillColor(0);
+   mainPad->SetBorderMode(0);
+   mainPad->SetBorderSize(2);
+   mainPad->SetGridx();
+   mainPad->SetGridy();
+   mainPad->SetTickx(1);
+   mainPad->SetTicky(1);
+   mainPad->SetFrameBorderMode(0);
+   mainPad->SetFrameBorderMode(0);
+   
+   THStack *hStack = new THStack();
+   hStack->SetName("hStack");
+   hStack->SetTitle("cos #theta_{t+h}(l, j');cos #theta_{t+h}(l, j');Probability density");
+   Double_t xAxis61[16] = {-0.9999629, -0.7273579, -0.533598, -0.3682715, -0.2275631, -0.09629681, 0.02338603, 0.1356628, 0.2415274, 0.3416094, 0.4385298, 0.5324462, 0.6239147, 0.7157118, 0.8159294, 0.999994}; 
+   
+   TH1F *hStack_stack_21 = new TH1F("hStack_stack_21","cos #theta_{t+h}(l, j')",15, xAxis61);
+   hStack_stack_21->SetMinimum(0);
+   hStack_stack_21->SetMaximum(0.7856962);
+   hStack_stack_21->SetDirectory(0);
+   hStack_stack_21->SetStats(0);
+
+   Int_t ci;   // for color index setting
+   ci = TColor::GetColor("#000099");
+   hStack_stack_21->SetLineColor(ci);
+   hStack_stack_21->SetLineWidth(2);
+   hStack_stack_21->GetXaxis()->SetTitle("cos #theta_{t+h}(l, j')");
+   hStack_stack_21->GetXaxis()->SetLabelFont(42);
+   hStack_stack_21->GetXaxis()->SetLabelSize(0.035);
+   hStack_stack_21->GetXaxis()->SetTitleSize(0.035);
+   hStack_stack_21->GetXaxis()->SetTitleFont(42);
+   hStack_stack_21->GetYaxis()->SetTitle("Probability density");
+   hStack_stack_21->GetYaxis()->SetLabelFont(42);
+   hStack_stack_21->GetYaxis()->SetLabelSize(0.035);
+   hStack_stack_21->GetYaxis()->SetTitleSize(0.035);
+   hStack_stack_21->GetYaxis()->SetTitleOffset(1.5);
+   hStack_stack_21->GetYaxis()->SetTitleFont(42);
+   hStack_stack_21->GetZaxis()->SetLabelFont(42);
+   hStack_stack_21->GetZaxis()->SetLabelSize(0.035);
+   hStack_stack_21->GetZaxis()->SetTitleSize(0.035);
+   hStack_stack_21->GetZaxis()->SetTitleFont(42);
+   hStack->SetHistogram(hStack_stack_21);
+   
+   Double_t xAxis62[16] = {-0.9999629, -0.7273579, -0.533598, -0.3682715, -0.2275631, -0.09629681, 0.02338603, 0.1356628, 0.2415274, 0.3416094, 0.4385298, 0.5324462, 0.6239147, 0.7157118, 0.8159294, 0.999994}; 
+   
+   TH1D *PDFSgn560280__41 = new TH1D("PDFSgn560280__41","",15, xAxis62);
+   PDFSgn560280__41->SetBinContent(1,0.2179303);
+   PDFSgn560280__41->SetBinContent(2,0.3030092);
+   PDFSgn560280__41->SetBinContent(3,0.3852157);
+   PDFSgn560280__41->SetBinContent(4,0.4609809);
+   PDFSgn560280__41->SetBinContent(5,0.5046019);
+   PDFSgn560280__41->SetBinContent(6,0.5836337);
+   PDFSgn560280__41->SetBinContent(7,0.6225691);
+   PDFSgn560280__41->SetBinContent(8,0.6457796);
+   PDFSgn560280__41->SetBinContent(9,0.7076886);
+   PDFSgn560280__41->SetBinContent(10,0.7071018);
+   PDFSgn560280__41->SetBinContent(11,0.7375462);
+   PDFSgn560280__41->SetBinContent(12,0.7482821);
+   PDFSgn560280__41->SetBinContent(13,0.7192466);
+   PDFSgn560280__41->SetBinContent(14,0.6799587);
+   PDFSgn560280__41->SetBinContent(15,0.3680038);
+   PDFSgn560280__41->SetBinError(1,0.003955554);
+   PDFSgn560280__41->SetBinError(2,0.005508644);
+   PDFSgn560280__41->SetBinError(3,0.006717646);
+   PDFSgn560280__41->SetBinError(4,0.007969032);
+   PDFSgn560280__41->SetBinError(5,0.008612392);
+   PDFSgn560280__41->SetBinError(6,0.009682796);
+   PDFSgn560280__41->SetBinError(7,0.01037521);
+   PDFSgn560280__41->SetBinError(8,0.01085524);
+   PDFSgn560280__41->SetBinError(9,0.01173206);
+   PDFSgn560280__41->SetBinError(10,0.01187569);
+   PDFSgn560280__41->SetBinError(11,0.01226653);
+   PDFSgn560280__41->SetBinError(12,0.01258029);
+   PDFSgn560280__41->SetBinError(13,0.01227622);
+   PDFSgn560280__41->SetBinError(14,0.01149829);
+   PDFSgn560280__41->SetBinError(15,0.006227121);
+   PDFSgn560280__41->SetEntries(58680);
+   PDFSgn560280__41->SetDirectory(0);
+   PDFSgn560280__41->SetFillColor(38);
+
+   ci = TColor::GetColor("#0000ff");
+   PDFSgn560280__41->SetLineColor(ci);
+   PDFSgn560280__41->GetXaxis()->SetLabelFont(42);
+   PDFSgn560280__41->GetXaxis()->SetLabelSize(0.035);
+   PDFSgn560280__41->GetXaxis()->SetTitleSize(0.035);
+   PDFSgn560280__41->GetXaxis()->SetTitleFont(42);
+   PDFSgn560280__41->GetYaxis()->SetLabelFont(42);
+   PDFSgn560280__41->GetYaxis()->SetLabelSize(0.035);
+   PDFSgn560280__41->GetYaxis()->SetTitleSize(0.035);
+   PDFSgn560280__41->GetYaxis()->SetTitleFont(42);
+   PDFSgn560280__41->GetZaxis()->SetLabelFont(42);
+   PDFSgn560280__41->GetZaxis()->SetLabelSize(0.035);
+   PDFSgn560280__41->GetZaxis()->SetTitleSize(0.035);
+   PDFSgn560280__41->GetZaxis()->SetTitleFont(42);
+   hStack->Add(PDFSgn560280,"hist");
+   Double_t xAxis63[16] = {-0.9999629, -0.7273579, -0.533598, -0.3682715, -0.2275631, -0.09629681, 0.02338603, 0.1356628, 0.2415274, 0.3416094, 0.4385298, 0.5324462, 0.6239147, 0.7157118, 0.8159294, 0.999994}; 
+   
+   TH1D *PDFBkg560280__42 = new TH1D("PDFBkg560280__42","",15, xAxis63);
+   PDFBkg560280__42->SetBinContent(1,0.3162405);
+   PDFBkg560280__42->SetBinContent(2,0.3670153);
+   PDFBkg560280__42->SetBinContent(3,0.4158604);
+   PDFBkg560280__42->SetBinContent(4,0.4744724);
+   PDFBkg560280__42->SetBinContent(5,0.4949156);
+   PDFBkg560280__42->SetBinContent(6,0.5273033);
+   PDFBkg560280__42->SetBinContent(7,0.5426369);
+   PDFBkg560280__42->SetBinContent(8,0.5871226);
+   PDFBkg560280__42->SetBinContent(9,0.6213839);
+   PDFBkg560280__42->SetBinContent(10,0.6362104);
+   PDFBkg560280__42->SetBinContent(11,0.6681037);
+   PDFBkg560280__42->SetBinContent(12,0.6804806);
+   PDFBkg560280__42->SetBinContent(13,0.7011854);
+   PDFBkg560280__42->SetBinContent(14,0.6498779);
+   PDFBkg560280__42->SetBinContent(15,0.4218476);
+   PDFBkg560280__42->SetBinContent(16,0.0001346651);
+   PDFBkg560280__42->SetBinError(1,0.004732248);
+   PDFBkg560280__42->SetBinError(2,0.006060142);
+   PDFBkg560280__42->SetBinError(3,0.0069997);
+   PDFBkg560280__42->SetBinError(4,0.008089881);
+   PDFBkg560280__42->SetBinError(5,0.00852998);
+   PDFBkg560280__42->SetBinError(6,0.009195874);
+   PDFBkg560280__42->SetBinError(7,0.00966026);
+   PDFBkg560280__42->SetBinError(8,0.01039265);
+   PDFBkg560280__42->SetBinError(9,0.01096199);
+   PDFBkg560280__42->SetBinError(10,0.01123212);
+   PDFBkg560280__42->SetBinError(11,0.01174071);
+   PDFBkg560280__42->SetBinError(12,0.01194818);
+   PDFBkg560280__42->SetBinError(13,0.01217643);
+   PDFBkg560280__42->SetBinError(14,0.01125862);
+   PDFBkg560280__42->SetBinError(15,0.006666915);
+   PDFBkg560280__42->SetBinError(16,0.0001346651);
+   PDFBkg560280__42->SetEntries(58680);
+   PDFBkg560280__42->SetDirectory(0);
+
+   ci = TColor::GetColor("#ff0000");
+   PDFBkg560280__42->SetFillColor(ci);
+   PDFBkg560280__42->SetFillStyle(3354);
+
+   ci = TColor::GetColor("#ff0000");
+   PDFBkg560280__42->SetLineColor(ci);
+   PDFBkg560280__42->GetXaxis()->SetLabelFont(42);
+   PDFBkg560280__42->GetXaxis()->SetLabelSize(0.035);
+   PDFBkg560280__42->GetXaxis()->SetTitleSize(0.035);
+   PDFBkg560280__42->GetXaxis()->SetTitleFont(42);
+   PDFBkg560280__42->GetYaxis()->SetLabelFont(42);
+   PDFBkg560280__42->GetYaxis()->SetLabelSize(0.035);
+   PDFBkg560280__42->GetYaxis()->SetTitleSize(0.035);
+   PDFBkg560280__42->GetYaxis()->SetTitleFont(42);
+   PDFBkg560280__42->GetZaxis()->SetLabelFont(42);
+   PDFBkg560280__42->GetZaxis()->SetLabelSize(0.035);
+   PDFBkg560280__42->GetZaxis()->SetTitleSize(0.035);
+   PDFBkg560280__42->GetZaxis()->SetTitleFont(42);
+   hStack->Add(PDFBkg560280,"hist");
+   hStack->Draw("nostack");
+   
+   TPaveText *pt = new TPaveText(0.386414,0.9281606,0.613586,0.995,"blNDC");
+   pt->SetName("title");
+   pt->SetBorderSize(0);
+   pt->SetFillColor(0);
+   pt->SetFillStyle(0);
+   pt->SetTextFont(42);
+   TText *text = pt->AddText("cos #theta_{t+h}(l, j')");
+   pt->Draw();
+   mainPad->Modified();
+   canvas->cd();
+   
+   TLegend *leg = new TLegend(0.83,0.7,0.98,0.85,NULL,"brNDC");
+   leg->SetBorderSize(1);
+   leg->SetLineColor(1);
+   leg->SetLineStyle(1);
+   leg->SetLineWidth(1);
+   leg->SetFillColor(0);
+   leg->SetFillStyle(1001);
+   TLegendEntry *entry=leg->AddEntry("NULL"," tHq reco ","h");
+   entry->SetLineColor(1);
+   entry->SetLineStyle(1);
+   entry->SetLineWidth(1);
+   entry->SetMarkerColor(1);
+   entry->SetMarkerStyle(21);
+   entry->SetMarkerSize(1);
+   entry->SetTextFont(42);
+   entry=leg->AddEntry("PDFSgn560280"," correct comb. ","f");
+   entry->SetFillColor(38);
+   entry->SetFillStyle(1001);
+
+   ci = TColor::GetColor("#0000ff");
+   entry->SetLineColor(ci);
+   entry->SetLineStyle(1);
+   entry->SetLineWidth(1);
+   entry->SetMarkerColor(1);
+   entry->SetMarkerStyle(21);
+   entry->SetMarkerSize(1);
+   entry=leg->AddEntry("PDFBkg560280"," wrong comb. ","f");
+
+   ci = TColor::GetColor("#ff0000");
+   entry->SetFillColor(ci);
+   entry->SetFillStyle(3354);
+
+   ci = TColor::GetColor("#ff0000");
+   entry->SetLineColor(ci);
+   entry->SetLineStyle(1);
+   entry->SetLineWidth(1);
+   entry->SetMarkerColor(1);
+   entry->SetMarkerStyle(21);
+   entry->SetMarkerSize(1);
+   leg->Draw();
+   canvas->Modified();
+   canvas->cd();
+   canvas->SetSelected(canvas);
+}

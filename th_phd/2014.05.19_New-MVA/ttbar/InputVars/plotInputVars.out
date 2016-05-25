@@ -1,0 +1,42 @@
+Construction of adaptive binnings started.
+Adaptive binnings have been filled with signal events.
+Adaptive binnings have been filled with background events.
+Filling of performance-evaluating objects started.
+Signal files have been processed.
+Background files have been processed.
+
+Formula   Title   (1 - CrossArea)   KS statistis   Sym. chi2   Jensen-Shannon
+Mass_WHad &  $m(W_{had})$ &  0.532 &  0.442 &  0.339 &  0.283 \\
+Mass_TopHad &  $m(t_{had})$ &  0.528 &  0.451 &  0.339 &  0.286 \\
+Mass_TopHad - Mass_WHad &  $m(t_{had}) - m(W_{had})$ &  0.527 &  0.302 &  0.348 &  0.293 \\
+MaxMass_BTopHadLight &  $max m(b_{thad}+q_{thad})$ &  0.463 &  0.355 &  0.282 &  0.237 \\
+DeltaR_Light &  $#DeltaR(q1_{thad},q2_{thad})$ &  0.297 &  0.297 &  0.126 &  0.102 \\
+Mass_TopLep &  $m(t_{lep})$ &  0.251 &  0.192 &  0.099 &  0.078 \\
+Mass_BTopLepLep &  $m(b_{tlep}+l)$ &  0.231 &  0.208 &  0.109 &  0.095 \\
+DeltaR_BTopHadWHad &  $#DeltaR(b_{thad},W_{had})$ &  0.215 &  0.215 &  0.077 &  0.059 \\
+RelHt &  $(p_{T}(t_{lep}) + p_{T}(t_{had})) / H_{T}$ &  0.214 &  0.214 &  0.071 &  0.053 \\
+Pt_TopHad &  $p_{T}(t_{had})$ &  0.198 &  0.198 &  0.057 &  0.042 \\
+Charge_BTopHad - Charge_BTopLep &  $(Q(b_{thad}) - Q(b_{tlep}))#times Q(l)$ &  0.180 &  0.180 &  0.049 &  0.036 \\
+DeltaR_BTopLepWLep &  $#DeltaR(b_{tlep},W_{lep})$ &  0.175 &  0.175 &  0.042 &  0.031 \\
+Pt_TopLep &  $p_{T}(t_{lep})$ &  0.154 &  0.154 &  0.033 &  0.024 \\
+MaxEta_Light &  $max |#eta(q_{thad})|$ &  0.152 &  0.152 &  0.045 &  0.035 \\
+Charge_BTopHad &  $Q(b_{thad})#times Q(l)$ &  0.140 &  0.140 &  0.030 &  0.022 \\
+Mass_TopLepTopHad &  $m(t_{lep} + t_{had})$ &  0.113 &  0.101 &  0.025 &  0.018 \\
+Charge_BTopLep &  $Q(b_{tlep}) #times Q(l)$ &  0.113 &  0.113 &  0.021 &  0.016 \\
+abs(Eta_WHad) &  $|#eta(W_{had})|$ &  0.108 &  0.108 &  0.021 &  0.015 \\
+abs(Eta_TopHad) &  $|#eta(t_{had})|$ &  0.104 &  0.104 &  0.019 &  0.014 \\
+Pt_WHad &  $p_{T}(W_{had})$ &  0.104 &  0.104 &  0.014 &  0.010 \\
+MinPt_Light &  $min p_{T}(q_{thad})$ &  0.093 &  0.077 &  0.015 &  0.011 \\
+DEta_TopLepLep &  $|#eta(t_{lep}) - #eta(l)|$ &  0.091 &  0.091 &  0.016 &  0.011 \\
+DeltaR_TopLepTopHad &  $#DeltaR(t_{lep}, t_{had})$ &  0.084 &  0.080 &  0.009 &  0.007 \\
+NumBTag_Light &  $#tagged(q_{thad})$ &  0.080 &  0.078 &  0.007 &  0.005 \\
+SumCharge_Light &  $#SigmaQ(q_{thad}) #times Q(l)$ &  0.076 &  0.076 &  0.009 &  0.007 \\
+Pt_BTopHad &  $p_{T}(b_{thad})$ &  0.071 &  0.071 &  0.009 &  0.007 \\
+Pt_BTopLep &  $p_{T}(b_{tlep})$ &  0.069 &  0.069 &  0.008 &  0.006 \\
+Cos_LepBTopLep_WLep &  $cos#theta_{Wlep}(l, b_{tlep})$ &  0.068 &  0.068 &  0.006 &  0.004 \\
+Pt_TopLepTopHad &  $p_{T}(t_{lep} + t_{had})$ &  0.056 &  0.033 &  0.005 &  0.004 \\
+abs(Eta_TopLep) &  $|#eta(t_{lep})|$ &  0.042 &  0.042 &  0.003 &  0.002 \\
+abs(Eta_BTopHad) &  $|#eta(b_{thad})|$ &  0.022 &  0.018 &  0.001 &  0.001 \\
+abs(Eta_BTopLep) &  $|#eta(b_{tlep})|$ &  0.017 &  0.015 &  0.001 &  0.001 \\
+abs(Eta_TopLepTopHad) &  $|#eta(t_{lep} + t_{had})|$ &  0.013 &  0.011 &  0.000 &  0.000 \\
+

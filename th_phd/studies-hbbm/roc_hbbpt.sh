@@ -1,0 +1,1 @@
+th_roc_x tH.config -batch 1 -xmin 0 -xmax 10 -nbinsx 500 -varexpr "log(hbbpt)" -labels   "0.2:0.95:ROC curve of reconstructed Higgs p_{T}" "0.6:0.82:Muon + electron channel" "0.6:0.76:3 tag region" -varname HbbPt -legxmin 0.2 -legxmax 0.64 -legymin 0.2 -legymax 0.4

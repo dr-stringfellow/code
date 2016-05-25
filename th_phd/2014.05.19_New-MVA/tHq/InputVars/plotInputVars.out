@@ -1,0 +1,34 @@
+Construction of adaptive binnings started.
+Adaptive binnings have been filled with signal events.
+Adaptive binnings have been filled with background events.
+Filling of performance-evaluating objects started.
+Signal files have been processed.
+Background files have been processed.
+
+Formula   Title   (1 - CrossArea)   KS statistis   Sym. chi2   Jensen-Shannon
+Mass_Higgs &  $m(h)$ &  0.553 &  0.382 &  0.368 &  0.314 \\
+Mass_BTopLep &  $m(b_{t}+l)$ &  0.332 &  0.315 &  0.184 &  0.161 \\
+Mass_Top &  $m(t)$ &  0.327 &  0.275 &  0.154 &  0.123 \\
+DeltaR_BJetsHiggs &  $#DeltaR(b_{h},b_{h})$ &  0.293 &  0.293 &  0.119 &  0.093 \\
+RelHt &  $(p_{T}(h) + p_{T}(t) + p_{T}(j')) / H_{T}$ &  0.285 &  0.285 &  0.122 &  0.093 \\
+NumBTag_Higgs &  $#tagged(b_{h})$ &  0.246 &  0.246 &  0.078 &  0.062 \\
+Pt_Higgs &  $p_{T}(h)$ &  0.219 &  0.219 &  0.066 &  0.049 \\
+DeltaR_BTopW &  $#DeltaR(b_{t},W)$ &  0.209 &  0.209 &  0.057 &  0.042 \\
+abs(Eta_Recoil) &  $|#eta(j')|$ &  0.166 &  0.166 &  0.049 &  0.037 \\
+PassBTag_BTop &  $tagged(b_{t})$ &  0.163 &  0.163 &  0.039 &  0.029 \\
+MaxEta_BHiggs &  $max |#eta(b_{h})|$ &  0.158 &  0.158 &  0.039 &  0.029 \\
+Pt_Recoil &  $p_{T}(j')$ &  0.148 &  0.148 &  0.048 &  0.037 \\
+DEta_TopLep &  $|#eta(t) - #eta(l)|$ &  0.143 &  0.143 &  0.033 &  0.025 \\
+Pt_Top &  $p_{T}(t)$ &  0.133 &  0.133 &  0.028 &  0.020 \\
+MinPt_BHiggs &  $min p_{T}(b_{h})$ &  0.122 &  0.122 &  0.027 &  0.020 \\
+Pt_BTop &  $p_{T}(b_{t})$ &  0.110 &  0.061 &  0.024 &  0.017 \\
+Charge_BTop &  $Q(b_{t})#times Q(l)$ &  0.107 &  0.107 &  0.019 &  0.014 \\
+abs(Eta_Higgs) &  $|#eta(h)|$ &  0.106 &  0.106 &  0.015 &  0.011 \\
+Cos_LepBTop_W &  $cos#theta_{W}(l, b_{t})$ &  0.104 &  0.104 &  0.014 &  0.010 \\
+abs(Eta_BTop) &  $|#eta(b_{t})|$ &  0.096 &  0.096 &  0.019 &  0.014 \\
+DeltaR_TopHiggs &  $#DeltaR(t,h)$ &  0.093 &  0.053 &  0.012 &  0.009 \\
+abs(Eta_Top) &  $|#eta(t)|$ &  0.077 &  0.077 &  0.008 &  0.006 \\
+Cos_LepRecoil_TH &  $cos #theta_{t+h}(l, j')$ &  0.056 &  0.046 &  0.005 &  0.004 \\
+Charge_Recoil &  $Q(j')$ &  0.051 &  0.019 &  0.004 &  0.003 \\
+SumCharge_Higgs &  $|#SigmaQ(b_{h})|$ &  0.027 &  0.027 &  0.002 &  0.001 \\
+

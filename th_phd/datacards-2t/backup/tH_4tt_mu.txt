@@ -1,0 +1,35 @@
+imax   1   number of channels
+jmax   8   number of backgrounds
+kmax   *   number of systematics (automatic)
+-------------------------
+shapes * * ./tH_4tt_mu.root  $CHANNEL__$PROCESS__nominal  $CHANNEL__$PROCESS__$SYSTEMATIC
+-------------------------
+bin                         tH_4tt_mu   
+observation                 40          
+-------------------------
+bin                         tH_4tt_mu   tH_4tt_mu   tH_4tt_mu   tH_4tt_mu   tH_4tt_mu   tH_4tt_mu   tH_4tt_mu   tH_4tt_mu   tH_4tt_mu   
+process                     tH          TTbb        TTb         TTcc        TTlf        s_Top       ttH         VV          Wj          
+process                     0           1           2           3           4           5           6           7           8           
+rate                        0.618617    16.5263     2.24276     2.17889     1.84503     0.426704    1.45318     0.0813733   1.78814e-06 
+-------------------------
+pdf_gg            lnN       -           1.026       1.026       1.026       1.026       -           1.09        -           -           
+pdf_qg            lnN       -           -           -           -           -           1.046       -           -           -           
+pdf_qqbar         lnN       -           -           -           -           -           -           -           -           1.048       
+scale_tt          lnN       -           1.03        1.03        1.03        1.03        1.02        -           -           -           
+scale_ttH         lnN       -           -           -           -           -           -           1.125       -           -           
+scale_V           lnN       -           -           -           -           -           -           -           -           1.013       
+scale_VV          lnN       -           -           -           -           -           -           -           1.035       -           
+lumi              lnN       1.026       1.026       1.026       1.026       1.026       1.026       1.026       -           1.026       
+eff_m             lnN       1.02        1.02        1.02        1.02        1.02        1.02        1.02        1.02        1.02        
+eff_e             lnN       -           -           -           -           -           -           -           -           -           
+tthf_bb           lnN       -           1.50        -           -           -           -           -           -           -           
+tthf_b            lnN       -           -           1.50        -           -           -           -           -           -           
+tthf_cc           lnN       -           -           -           1.50        -           -           -           -           -           
+btag              shape     1           1           1           1           1           1           1           1           1           
+pileup            shape     1           1           1           1           1           1           1           1           1           
+toppt             shape     1           1           1           1           1           1           1           1           1           
+met               shape     1           1           1           1           1           1           1           1           1           
+jer               shape     1           1           1           1           1           1           1           1           1           
+jes               shape     1           1           1           1           1           1           1           1           1           
+madgraphQ2        shape     1           1           1           1           1           1           1           1           1           
+match             shape     1           1           1           1           1           1           1           1           1           

@@ -1,0 +1,5 @@
+th_datatomc_paper_x 3t.config -varexpr "exp(popvar11)" -stackmc 1 -batch 1 -nbinsx 30 -xmin 100 -xmax 300 -overflow 0 -lumi 0 -xtitle "m (t_{had}) [GeV]" -suffix bb_mthad  -signalfac 50 -overflow 0
+th_datatomc_paper_x 3t.config -varexpr popvar8 -stackmc 1 -batch 1 -nbinsx 30 -xmin 0 -xmax 4.7 -lumi 0 -xtitle "|#eta (j')|" -suffix bb_etarecoiljet  -signalfac 50  -ytitle "Events/Bin width" -varname LightJetEta2 -overflow 0
+th_datatomc_paper_x 3t.config -varexpr popvar1 -stackmc 1 -batch 1 -nbinsx 3 -xmin -1.5 -xmax 1.5 -lumi 0 -xtitle "lepton charge" -suffix bb_lepcharge  -signalfac 50 
+th_datatomc_paper_x 4t.config -varexpr popvar17 -stackmc 1 -batch 1 -nbinsx 15 -xmin 0.5 -xmax 4.5 -lumi 0 -xtitle "#DeltaR (W_{had} jets)" -suffix bb_whaddr  -signalfac 20 
+th_datatomc_paper_x 4t.config -varexpr "exp(popvar5)" -stackmc 1 -batch 1 -nbinsx 15 -xmin 0 -xmax 400 -lumi 0 -xtitle "p_{T} (H) [GeV]" -suffix bb_pthiggs  -signalfac 20

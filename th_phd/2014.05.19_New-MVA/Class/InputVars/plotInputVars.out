@@ -1,0 +1,67 @@
+Construction of adaptive binnings started.
+Adaptive binnings have been filled with signal events.
+Adaptive binnings have been filled with background events.
+Filling of performance-evaluating objects started.
+Signal files have been processed.
+Background files have been processed.
+
+Formula   Title   (1 - CrossArea)   KS statistis   Sym. chi2   Jensen-Shannon
+abs(tHq_Eta_Recoil) &  $|#eta(j')| [tHq]$ &  0.314 &  0.314 &  0.133 &  0.100 \\
+tt_Mass_TopHad &  $m(t_{had}) [t#bar{t}]$ &  0.300 &  0.290 &  0.126 &  0.097 \\
+tt_Mass_WHad &  $m(W_{had}) [t#bar{t}]$ &  0.290 &  0.272 &  0.119 &  0.092 \\
+glb_Sphericity &  $Sphericity$ &  0.265 &  0.265 &  0.095 &  0.071 \\
+glb_SqrtSHat &  $#sqrt{#hat{s}}$ &  0.260 &  0.260 &  0.090 &  0.067 \\
+tt_MaxMass_BTopHadLight &  $max m(b_{thad}, q_{Whad}) [t#bar{t}]$ &  0.245 &  0.244 &  0.096 &  0.074 \\
+tt_DMass_TopHadWHad &  $m(t_{had}) - m(W_{had}) [t#bar{t}]$ &  0.241 &  0.209 &  0.088 &  0.068 \\
+tt_DeltaR_Light &  $#DeltaR(q_{Whad}, q_{Whad}) [t#bar{t}]$ &  0.185 &  0.185 &  0.063 &  0.049 \\
+glb_Charge_Lep &  $Q(l)$ &  0.182 &  0.182 &  0.034 &  0.025 \\
+tt_MaxEta_Light &  $max |#eta(q_{Whad})| [t#bar{t}]$ &  0.168 &  0.168 &  0.060 &  0.047 \\
+tHq_Pt_Recoil &  $p_{T}(j') [tHq]$ &  0.149 &  0.149 &  0.030 &  0.022 \\
+tt_Mass_BTopLepLep &  $m(b_{tlep}+l) [t#bar{t}]$ &  0.139 &  0.135 &  0.042 &  0.032 \\
+abs(tt_Eta_WHad) &  $|#eta(W_{had})| [t#bar{t}]$ &  0.138 &  0.138 &  0.036 &  0.027 \\
+tHq_Cos_LepRecoil_TH &  $cos_{t+h}(l, j') [tHq]$ &  0.138 &  0.138 &  0.026 &  0.019 \\
+tHq_Pt_Higgs &  $p_{T}(H) [tHq]$ &  0.131 &  0.131 &  0.028 &  0.020 \\
+tHq_NumBTag_Higgs &  $#tagged(b_{H}) [tHq]$ &  0.122 &  0.122 &  0.018 &  0.013 \\
+glb_Pt_J1 &  $p_{T}(j_{1})$ &  0.122 &  0.122 &  0.022 &  0.016 \\
+tt_Mass_TopLep &  $m(t_{lep}) [t#bar{t}]$ &  0.120 &  0.117 &  0.026 &  0.019 \\
+tt_DeltaR_BTopHadWHad &  $#DeltaR(b_{thad},W_{had}) [t#bar{t}]$ &  0.115 &  0.111 &  0.035 &  0.027 \\
+tHq_DeltaR_BJetsHiggs &  $#DeltaR(b_{H}, b_{H}) [tHq]$ &  0.108 &  0.108 &  0.018 &  0.013 \\
+glb_Pt_J2 &  $p_{T}(j_{2})$ &  0.105 &  0.105 &  0.017 &  0.013 \\
+glb_Ht &  $Total H_{T}$ &  0.097 &  0.097 &  0.014 &  0.010 \\
+tt_SumCharge_Light &  $#SigmaQ(q_{Whad}) #times Q(l) [t#bar{t}]$ &  0.094 &  0.094 &  0.014 &  0.010 \\
+abs(tt_Eta_TopHad) &  $|#eta(t_{had})| [t#bar{t}]$ &  0.093 &  0.093 &  0.018 &  0.013 \\
+tt_NumPassBTag_Light &  $#tagged(q_{Whad}) [t#bar{t}]$ &  0.084 &  0.084 &  0.023 &  0.018 \\
+tHq_RelHt &  $(p_{T}(t) + p_{T}(H) + p_{T}(j')) / H_{T} [tHq]$ &  0.082 &  0.082 &  0.012 &  0.009 \\
+tt_Pt_BTopLep &  $p_{T}(b_{tlep}) [t#bar{t}]$ &  0.079 &  0.079 &  0.011 &  0.008 \\
+tHq_Mass_TopHiggs &  $m(t+H) [tHq]$ &  0.076 &  0.076 &  0.009 &  0.007 \\
+tt_Pt_BTopHad &  $p_{T}(b_{thad}) [t#bar{t}]$ &  0.072 &  0.072 &  0.015 &  0.011 \\
+tHq_MinPt_BHiggs &  $min p_{T}(b_{H}) [tHq]$ &  0.071 &  0.071 &  0.011 &  0.008 \\
+tHq_Mass_Higgs &  $m(H) [tHq]$ &  0.061 &  0.052 &  0.005 &  0.004 \\
+tt_DeltaR_BTopLepWLep &  $#DeltaR(b_{tlep},W_{lep}) [t#bar{t}]$ &  0.051 &  0.048 &  0.004 &  0.003 \\
+tt_Charge_BTopLep &  $Q(b_{tlep}) #times Q(l) [t#bar{t}]$ &  0.047 &  0.047 &  0.004 &  0.003 \\
+tt_Charge_BTopHad &  $Q(b_{thad}) #times Q(l) [t#bar{t}]$ &  0.044 &  0.044 &  0.004 &  0.003 \\
+tHq_Pt_Top &  $p_{T}(t) [tHq]$ &  0.042 &  0.041 &  0.004 &  0.003 \\
+tHq_DeltaR_TopHiggs &  $#DeltaR(t, H) [tHq]$ &  0.034 &  0.034 &  0.002 &  0.001 \\
+tt_Pt_WHad &  $p_{T}(W_{had}) [t#bar{t}]$ &  0.033 &  0.020 &  0.002 &  0.002 \\
+tHq_PassBTag_BTop &  $tagged(b_{t}) [tHq]$ &  0.033 &  0.033 &  0.005 &  0.004 \\
+tt_RelHt &  $(p_{T}(t_{lep}) + p_{T}(t_{had})) / H_{T} [t#bar{t}]$ &  0.033 &  0.033 &  0.002 &  0.002 \\
+tt_Pt_TopHad &  $p_{T}(t_{had}) [t#bar{t}]$ &  0.031 &  0.029 &  0.002 &  0.002 \\
+tHq_DeltaR_BTopW &  $#DeltaR(b_{t},W) [tHq]$ &  0.031 &  0.031 &  0.002 &  0.001 \\
+tHq_Pt_BTop &  $p_{T}(b_{t}) [tHq]$ &  0.030 &  0.029 &  0.002 &  0.001 \\
+abs(tHq_Eta_BTop) &  $|#eta(b_{t})| [tHq]$ &  0.030 &  0.030 &  0.001 &  0.001 \\
+abs(tt_Eta_BTopLep) &  $|#eta(b_{tlep})| [t#bar{t}]$ &  0.029 &  0.029 &  0.001 &  0.001 \\
+abs(tHq_Eta_Higgs) &  $|#eta(H)| [tHq]$ &  0.029 &  0.029 &  0.001 &  0.001 \\
+abs(tHq_Eta_Top) &  $|#eta(t)| [tHq]$ &  0.026 &  0.026 &  0.001 &  0.001 \\
+tHq_Charge_BTop &  $Q(b_{t}) #times Q(l) [tHq]$ &  0.020 &  0.020 &  0.001 &  0.001 \\
+abs(tt_Eta_BTopHad) &  $|#eta(b_{thad})| [t#bar{t}]$ &  0.019 &  0.019 &  0.001 &  0.000 \\
+tt_Pt_TopLep &  $p_{T}(t_{lep}) [t#bar{t}]$ &  0.019 &  0.015 &  0.001 &  0.000 \\
+tHq_Mass_BTopLep &  $m(b_{t}+l) [tHq]$ &  0.018 &  0.010 &  0.001 &  0.000 \\
+tHq_DEta_TopLep &  $|#eta(t) - #eta(l)| [tHq]$ &  0.013 &  0.012 &  0.000 &  0.000 \\
+abs(tt_Eta_TopLep) &  $|#eta(t_{lep})| [t#bar{t}]$ &  0.013 &  0.013 &  0.000 &  0.000 \\
+tHq_Mass_Top &  $m(t) [tHq]$ &  0.011 &  0.005 &  0.000 &  0.000 \\
+tHq_MaxEta_BHiggs &  $max |#eta(b_{H})| [tHq]$ &  0.011 &  0.010 &  0.000 &  0.000 \\
+glb_MET &  $MET$ &  0.011 &  0.004 &  0.000 &  0.000 \\
+tHq_AbsCharge_Higgs &  $|#SigmaQ(b_{H})| [tHq]$ &  0.009 &  0.006 &  0.000 &  0.000 \\
+tt_PassBTag_BTopLep &  $tagged(b_{tlep}) [t#bar{t}]$ &  0.000 &  0.000 &  0.000 &  0.000 \\
+tt_PassBTag_BTopHad &  $tagged(b_{thad}) [t#bar{t}]$ &  0.000 &  0.000 &  0.000 &  0.000 \\
+

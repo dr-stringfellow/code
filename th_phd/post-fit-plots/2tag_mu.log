@@ -1,0 +1,212 @@
+CommandLine INFO: include configuration file: ../../samples/Off-TH125-madgraph_ct.config
+CommandLine INFO: include configuration file: ../../samples/Off-TTbar-madgraph-b.config
+CommandLine INFO: include configuration file: ../../samples/Off-TTbar-madgraph-bb.config
+CommandLine INFO: include configuration file: ../../samples/Off-TTbar-madgraph-cc.config
+CommandLine INFO: include configuration file: ../../samples/Off-TTbar-madgraph-lf.config
+CommandLine INFO: include configuration file: ../../samples/Off-TTbar-madgraph.config
+CommandLine INFO: include configuration file: ../../samples/Off-TTH125-aMCatNLO.config
+CommandLine INFO: include configuration file: ../../samples/Off-Electroweak-DC.config
+CommandLine INFO: include configuration file: ../../samples/Off-SingleTop-Lep-powheg.config
+------------------------------------------------------------
+th_drawdc_x options:
+------------------------------------------------------------
+mcs                     =TH125-madgraph:TH-madgraph-Summer12.root
+ TTbar-madgraph-1b:TTbar-madgraph-SemiLept-Summer12-hf2.root
+ TTbar-madgraph-1b:TTbar-madgraph-FullLept-Summer12-hf2.root
+ TTbar-madgraph-1b:TTbar-madgraph-SemiLept-Summer12-hf3.root
+ TTbar-madgraph-1b:TTbar-madgraph-FullLept-Summer12-hf3.root
+ TTbar-madgraph-2b:TTbar-madgraph-SemiLept-Summer12-hf1.root
+ TTbar-madgraph-2b:TTbar-madgraph-FullLept-Summer12-hf1.root
+ TTbar-madgraph-cc:TTbar-madgraph-SemiLept-Summer12-hf4.root
+ TTbar-madgraph-cc:TTbar-madgraph-FullLept-Summer12-hf4.root
+ TTbar-madgraph-cc:TTbar-madgraph-SemiLept-Summer12-hf5.root
+ TTbar-madgraph-cc:TTbar-madgraph-FullLept-Summer12-hf5.root
+ TTbar-madgraph-cc:TTbar-madgraph-SemiLept-Summer12-hf6.root
+ TTbar-madgraph-cc:TTbar-madgraph-FullLept-Summer12-hf6.root
+ TTbar-madgraph-lf:TTbar-madgraph-SemiLept-Summer12-hf7.root
+ TTbar-madgraph-lf:TTbar-madgraph-FullLept-Summer12-hf7.root
+ TTbar-madgraph-lf:TTbar-madgraph-SemiLept-Summer12-hf8.root
+ TTbar-madgraph-lf:TTbar-madgraph-FullLept-Summer12-hf8.root
+ TTbar-madgraph-lf:TTbar-madgraph-SemiLept-Summer12-hf9.root
+ TTbar-madgraph-lf:TTbar-madgraph-FullLept-Summer12-hf9.root
+                 TTbar-madgraph:TTbar-madgraph-Summer12.root
+                  TTH125-aMCatNLO:TTH-aMCatNLO-Summer12.root
+                            Diboson:WW-pythia6-Summer12.root
+                            Diboson:WZ-pythia6-Summer12.root
+                            Diboson:ZZ-pythia6-Summer12.root
+                         Wjets:W2Jets-madgraph-Summer12.root
+                         Wjets:W3Jets-madgraph-Summer12.root
+                         Wjets:W4Jets-madgraph-Summer12.root
+  SingleTop-powheg:SingleTop_Leptonic_t-powheg-Summer12.root
+SingleTop-powheg:SingleTopBar_Leptonic_t-powheg-Summer12.root
+          SingleTop-powheg:SingleTop_tW-powheg-Summer12.root
+       SingleTop-powheg:SingleTopBar_tW-powheg-Summer12.root
+  SingleTop-powheg:SingleTop_Leptonic_s-powheg-Summer12.root
+SingleTop-powheg:SingleTopBar_Leptonic_s-powheg-Summer12.root
+cuts                    =                                   
+mccuts                  =                                   
+mcweights               =                                   
+varname                 =                                   
+varexpr                 =                                   
+nbinsx                  =                                  0
+binsx                   =                                   
+xmin                    =                             -1e+10
+xmax                    =                              1e+10
+ymin                    =                                 -1
+overflow                =                              false
+batch                   =                                  1
+formats                 =                                   
+prefix                  =                                   
+suffix                  =                with_2tag_10percent
+residuals               =                                  1
+mcuncert                =                                  1
+chi2test                =                                  0
+kstest                  =                                  0
+reversemc               =                                  0
+datadriven              =                              false
+xtitle                  =                          NN output
+ytitle                  =                                   
+resmax                  =                                0.6
+signal                  =                                   
+signalfac               =                                300
+datalabel               =                               data
+mclabels                =TH125-madgraph:tHq #scale[0.8]{(^{}#it{C}_{t}=-1)}
+                                TTbar-madgraph-1b:t#bar{t}+b
+                         TTbar-madgraph-2b:t#bar{t}+b#bar{b}
+                               TTbar-madgraph-cc:t#bar{t}+cc
+                               TTbar-madgraph-lf:t#bar{t}+lf
+                                     TTbar-madgraph:t#bar{t}
+                                   TTH125-aMCatNLO:t#bar{t}H
+                                             Diboson:Diboson
+                                                Wjets:W+Jets
+                           SingleTop-powheg:Single t/#bar{t}
+mccolors                =                 TH125-madgraph:633
+                                       TTbar-madgraph-1b:803
+                                       TTbar-madgraph-2b:805
+                                       TTbar-madgraph-cc:800
+                                       TTbar-madgraph-lf:797
+                                          TTbar-madgraph:797
+                                         TTH125-aMCatNLO:616
+                                                 Diboson:417
+                                                   Wjets:417
+                                             Electroweak:417
+                                                     EWK:417
+                                                      EW:417
+                                        SingleTop-powheg:600
+labels                  =   0.585:0.945:19.7 fb^{-1} (8 TeV)
+                                     0.175:0.86:Muon channel
+                                     0.175:0.80:2 tag region
+datacard                =                       datacard.txt
+ipath                   =                                 ./
+opath                   =                                  .
+rootfile                =histos-mle-withsignal-with-2tag-10percent.root
+channel                 =                     tH_ttbar_cr_mu
+processes               =                              EW:Wj
+                                                       EW:Zj
+                                                       EW:VV
+                                                    EW:s_Top
+                                         TTH125-aMCatNLO:ttH
+                                      TTbar-madgraph-lf:TTlf
+                                      TTbar-madgraph-cc:TTcc
+                                       TTbar-madgraph-1b:TTb
+                                      TTbar-madgraph-2b:TTbb
+                                         TTbar-madgraph:TTdd
+                                           TH125-madgraph:tH
+                                     QCDmuInclPt-pythia6:QCD
+                                           QCDel-pythia6:QCD
+systematic              =                                   
+direction               =                                   
+legx                    =                               0.76
+legy                    =                               0.93
+legw                    =                               0.25
+legh                    =                               0.15
+legsize                 =                              0.054
+cwidth                  =                               1000
+cheight                 =                                800
+blind                   =                                  0
+theta                   =                                  1
+combine                 =                              false
+bfit                    =                              false
+histo                   =                tH_ttbar_cr_mu.root
+hpath                   =                                 ./
+logy                    =                                  0
+poisson                 =                                  1
+------------------------------------------------------------
+signal:  => 
+tH_4tt_el|VV||
+tH_ttbar_cr_el|ttH||
+tH_4tt_mu|tH||
+tH_ttbar_cr_el|TTcc||
+tH_4tt_mu|Wj||
+tH_ttbar_cr_mu|TTcc||
+tH_ttbar_cr_mu|ttH||
+tH_4tt_mu|TTcc||
+tH_3tt_el|TTbb||
+tH_3tt_mu|TTbb||
+tH_4tt_el|TTcc||
+tH_4tt_el|TTb||
+tH_3tt_mu|VV||
+tH_ttbar_cr_el|Wj||
+tH_3tt_mu|s_Top||
+tH_3tt_mu|tH||
+tH_ttbar_cr_el|TTb||
+tH_4tt_mu|TTb||
+tH_3tt_el|VV||
+tH_4tt_el|TTbb||
+tH_3tt_el|TTlf||
+tH_3tt_el|s_Top||
+tH_3tt_el|tH||
+tH_ttbar_cr_mu|TTb||
+tH_ttbar_cr_mu|Wj||
+tH_4tt_el|Wj||
+tH_4tt_el|s_Top||
+tH_3tt_el|Wj||
+tH_ttbar_cr_mu|VV||
+tH_4tt_el|tH||
+tH_3tt_mu|TTlf||
+tH_ttbar_cr_mu|TTlf||
+tH_ttbar_cr_mu|TTbb||
+tH_3tt_mu|ttH||
+tH_3tt_mu|TTcc||
+tH_4tt_mu|TTbb||
+tH_ttbar_cr_el|TTbb||
+tH_4tt_el|ttH||
+tH_4tt_mu|ttH||
+tH_3tt_el|TTcc||
+tH_3tt_el|ttH||
+tH_ttbar_cr_mu|s_Top||
+tH_3tt_mu|Wj||
+tH_ttbar_cr_el|VV||
+tH_ttbar_cr_el|tH||
+tH_3tt_mu|TTb||
+tH_ttbar_cr_el|TTlf||
+tH_4tt_el|TTlf||
+tH_ttbar_cr_el|s_Top||
+tH_4tt_mu|s_Top||
+tH_3tt_el|TTb||
+tH_ttbar_cr_mu|tH||
+tH_4tt_mu|TTlf||
+tH_4tt_mu|VV||
+Found      9 mc templates
+Found      0 mc up variation templates
+Found      0 mc down variation templates
+Found      1 data templates
+tH_ttbar_cr_mu__Wj tH_ttbar_cr_mu__Wj
+662.997 662.997
+tH_ttbar_cr_mu__VV tH_ttbar_cr_mu__VV
+38.9283 38.9283
+tH_ttbar_cr_mu__s_Top tH_ttbar_cr_mu__s_Top
+1781.59 1781.59
+tH_ttbar_cr_mu__ttH tH_ttbar_cr_mu__ttH
+52.6158 52.6158
+tH_ttbar_cr_mu__TTlf tH_ttbar_cr_mu__TTlf
+30413.8 30413.8
+tH_ttbar_cr_mu__TTcc tH_ttbar_cr_mu__TTcc
+6914.37 6914.37
+tH_ttbar_cr_mu__TTb tH_ttbar_cr_mu__TTb
+1679.47 1679.47
+tH_ttbar_cr_mu__TTbb tH_ttbar_cr_mu__TTbb
+1832.42 1832.42
+tH_ttbar_cr_mu__tH tH_ttbar_cr_mu__tH
+58.261 58.261
+Data integral: 43281

@@ -1,0 +1,201 @@
+<?xml version="1.0" ?>
+    <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+    <html xmlns="http://www.w3.org/1999/xhtml">
+    <head><title>theta-auto Report</title>
+    <script type="text/javascript" src="js/prototype.js"></script>
+    <script type="text/javascript" src="js/scriptaculous.js?load=effects,builder"></script>
+    <script type="text/javascript" src="js/lightbox.js"></script>
+    <link rel="stylesheet" href="css/lightbox.css" type="text/css" media="screen" />
+    <style type="text/css">
+    body {margin: 30px; font-family: Verdana, Arial, sans-serif; font-size: 12px; background:#eee;}
+    h1, h2, h3 { padding: 0.2ex; padding-left:.8ex;}
+    h1 {font-size: 150%%; background: #d44;}
+    h2 {font-size: 110%%; background: #f88; padding-left:1.3ex;}
+    h3 {font-size: 100%%; background: #aaa; padding-left:1.3ex;}
+    .inner {padding-left: 3ex;}
+    a img{ border: none;}
+    p {margin:0 0 0 0; margin-top: 1.3ex;}
+    ul {margin:0 0 0 0;}
+    </style>
+    </head><body>
+    <p>Hint: click on top-level headers to toggle visibility of that section.</p>
+    <h1 onclick=$('div1').toggle()>1. General Model Info</h1><div class="inner" id="div1">
+<p>Observables (xmin, xmax, nbins):</p>
+<ul>
+<li>tH_3tt_mu (-0.1, 1.1, 15)</li>
+</ul>
+<p>Background processes:</p>
+<ul>
+<li>TTb</li>
+<li>TTbb</li>
+<li>TTcc</li>
+<li>TTlf</li>
+<li>VV</li>
+<li>Wj</li>
+<li>s_Top</li>
+<li>ttH</li>
+</ul>
+<p>Signal processes:</p><ul>
+<li>tH</li>
+</ul>
+<p>Nuisance parameters (includes only those which apply to the background-only model):</p>
+<ul>
+<li>btagHF (morph and rate)</li>
+<li>btagLF (morph and rate)</li>
+<li>eff_m (rate only)</li>
+<li>jer (morph and rate)</li>
+<li>jes (morph and rate)</li>
+<li>lumi (rate only)</li>
+<li>madgraphQ2_tH (morph and rate)</li>
+<li>madgraphQ2_ttbb (morph and rate)</li>
+<li>madgraphQ2_ttcc (morph and rate)</li>
+<li>madgraphQ2_ttlf (morph and rate)</li>
+<li>match_ttbb (morph and rate)</li>
+<li>match_ttcc (morph and rate)</li>
+<li>match_ttlf (morph and rate)</li>
+<li>met (morph and rate)</li>
+<li>pdf_gg (rate only)</li>
+<li>pdf_qg (rate only)</li>
+<li>pdf_qqbar (rate only)</li>
+<li>pileup (morph and rate)</li>
+<li>scale_V (rate only)</li>
+<li>scale_VV (rate only)</li>
+<li>scale_tt (rate only)</li>
+<li>scale_ttH (rate only)</li>
+<li>toppt (morph and rate)</li>
+<li>tthf_b (rate only)</li>
+<li>tthf_bb (rate only)</li>
+<li>tthf_cc (rate only)</li>
+</ul>
+
+</div>
+<h1 onclick=$('div2').toggle()>2. Rate Summary</h1><div class="inner" id="div2">
+<p>Rates for all observables and processes as given by the 'nominal' templates. If errors are given, they are MC stat. uncertainties.</p>
+<table cellpadding="2" border="1">
+<tr><th>process / observable</th><th>tH_3tt_mu</th></tr>
+<tr><td>TTb</td><td>125.85 +/- 2.2335</td></tr>
+<tr><td>TTbb</td><td>222.12 +/- 3.0239</td></tr>
+<tr><td>TTcc</td><td>178.85 +/- 2.6638</td></tr>
+<tr><td>TTlf</td><td>533.75 +/- 4.6306</td></tr>
+<tr><td>VV</td><td>0.85577 +/- 0.24201</td></tr>
+<tr><td>Wj</td><td>10.919 +/- 2.1036</td></tr>
+<tr><td>s_Top</td><td>38.866 +/- 3.5329</td></tr>
+<tr><td>ttH</td><td>12.771 +/- 0.21227</td></tr>
+<tr><td><b>total background</b></td><td>1124 +/- 7.7253</td></tr>
+<tr><td>tH</td><td>7.4778 +/- 0.03885</td></tr>
+<tr><td><b>DATA</b></td><td>1513</td></tr>
+</table>
+
+
+</div>
+<h1 onclick=$('div3').toggle()>3. Rate Impact of Systematic Uncertainties</h1><div class="inner" id="div3">
+<p>The table below summarises the impact of an nuisance parameter on the rate prediction of a process.</p>
+    <p>For a nuisance parameter, (gauss) indicates that this nuisance parameter has a gaussian prior, (gamma) that it has a gamma prior.</p>
+    <p>For the individual cells, (r) indicates the 'rate only' part of the uncertainty, (s) indicates the effect on the rate of an uncertainty
+    treated via template morphing (i.e., the <em>rate</em> effect of an uncertainty treated as part of the
+    template morphing; even if this is zero, the shape effect is still taken into account). Note that both effects are applied seperatly, so
+    the total rate change is about the linear sum of these two.<br/>
+    The rate change in 'plus' direction of the uncertainty is written as superscript,
+    the 'minus' direction as subscript.<br/>All numbers are in percent.</p>
+<h2>Observable 'tH_3tt_mu'</h2>
+<table cellpadding="2" border="1">
+<tr><th>process / nuisance parameter</th><th>btagHF (gauss)</th><th>btagLF (gauss)</th><th>eff_m (gauss)</th><th>jer (gauss)</th><th>jes (gauss)</th><th>lumi (gauss)</th><th>madgraphQ2_tH (gauss)</th><th>madgraphQ2_ttbb (gauss)</th><th>madgraphQ2_ttcc (gauss)</th><th>madgraphQ2_ttlf (gauss)</th><th>match_ttbb (gauss)</th><th>match_ttcc (gauss)</th><th>match_ttlf (gauss)</th><th>met (gauss)</th><th>pdf_gg (gauss)</th><th>pdf_qg (gauss)</th><th>pdf_qqbar (gauss)</th><th>pileup (gauss)</th><th>scale_V (gauss)</th><th>scale_VV (gauss)</th><th>scale_tt (gauss)</th><th>scale_ttH (gauss)</th><th>toppt (gauss)</th><th>tthf_b (gauss)</th><th>tthf_bb (gauss)</th><th>tthf_cc (gauss)</th></tr>
+<tr><td>TTb</td><td><sup>+0.00</sup><sub>+0.00</sub> (s) <sup>+9.35</sup><sub>-9.68</sub> (r) </td><td><sup>+0.00</sup><sub>+0.00</sub> (s) <sup>+0.64</sup><sub>-0.64</sub> (r) </td><td>&#xb1;2.00 (r)</td><td><sup>+0.00</sup><sub>+0.00</sub> (s) <sup>-0.28</sup><sub>+0.37</sub> (r) </td><td><sup>+0.00</sup><sub>+0.00</sub> (s) <sup>+2.08</sup><sub>-1.85</sub> (r) </td><td>&#xb1;2.60 (r)</td><td><sup>+0.00</sup><sub>+0.00</sub> (s) </td><td><sup>+0.00</sup><sub>+0.00</sub> (s) </td><td><sup>+0.00</sup><sub>+0.00</sub> (s) </td><td><sup>+0.00</sup><sub>+0.00</sub> (s) </td><td><sup>+0.00</sup><sub>+0.00</sub> (s) </td><td><sup>+0.00</sup><sub>+0.00</sub> (s) </td><td><sup>+0.00</sup><sub>+0.00</sub> (s) </td><td><sup>+0.00</sup><sub>+0.00</sub> (s) <sup>+1.34</sup><sub>+0.73</sub> (r) </td><td>&#xb1;2.60 (r)</td><td>---</td><td>---</td><td><sup>+0.00</sup><sub>+0.00</sub> (s) <sup>-1.15</sup><sub>+1.10</sub> (r) </td><td>---</td><td>---</td><td>&#xb1;3.00 (r)</td><td>---</td><td><sup>+0.00</sup><sub>+0.00</sub> (s) <sup>-3.41</sup><sub>+4.37</sub> (r) </td><td>&#xb1;50.00 (r)</td><td>---</td><td>---</td></tr>
+<tr><td>TTbb</td><td><sup>+0.00</sup><sub>+0.00</sub> (s) <sup>+8.22</sup><sub>-8.56</sub> (r) </td><td><sup>+0.00</sup><sub>+0.00</sub> (s) <sup>+0.43</sup><sub>-0.44</sub> (r) </td><td>&#xb1;2.00 (r)</td><td><sup>+0.00</sup><sub>+0.00</sub> (s) <sup>-0.02</sup><sub>+0.49</sub> (r) </td><td><sup>+0.00</sup><sub>+0.00</sub> (s) <sup>+2.24</sup><sub>-2.02</sub> (r) </td><td>&#xb1;2.60 (r)</td><td><sup>+0.00</sup><sub>+0.00</sub> (s) </td><td><sup>+0.00</sup><sub>+0.00</sub> (s) <sup>-15.82</sup><sub>+12.36</sub> (r) </td><td><sup>+0.00</sup><sub>+0.00</sub> (s) </td><td><sup>+0.00</sup><sub>+0.00</sub> (s) </td><td><sup>+0.00</sup><sub>+0.00</sub> (s) <sup>-4.20</sup><sub>-6.08</sub> (r) </td><td><sup>+0.00</sup><sub>+0.00</sub> (s) </td><td><sup>+0.00</sup><sub>+0.00</sub> (s) </td><td><sup>+0.00</sup><sub>+0.00</sub> (s) <sup>+1.26</sup><sub>-0.09</sub> (r) </td><td>&#xb1;2.60 (r)</td><td>---</td><td>---</td><td><sup>+0.00</sup><sub>+0.00</sub> (s) <sup>-0.64</sup><sub>+0.62</sub> (r) </td><td>---</td><td>---</td><td>&#xb1;3.00 (r)</td><td>---</td><td><sup>+0.00</sup><sub>+0.00</sub> (s) <sup>-3.30</sup><sub>+4.22</sub> (r) </td><td>---</td><td>&#xb1;50.00 (r)</td><td>---</td></tr>
+<tr><td>TTcc</td><td><sup>+0.00</sup><sub>+0.00</sub> (s) <sup>+11.72</sup><sub>-12.28</sub> (r) </td><td><sup>+0.00</sup><sub>+0.00</sub> (s) <sup>+2.24</sup><sub>-2.26</sub> (r) </td><td>&#xb1;2.00 (r)</td><td><sup>+0.00</sup><sub>+0.00</sub> (s) <sup>+0.41</sup><sub>+0.32</sub> (r) </td><td><sup>+0.00</sup><sub>+0.00</sub> (s) <sup>+3.09</sup><sub>-2.22</sub> (r) </td><td>&#xb1;2.60 (r)</td><td><sup>+0.00</sup><sub>+0.00</sub> (s) </td><td><sup>+0.00</sup><sub>+0.00</sub> (s) </td><td><sup>+0.00</sup><sub>+0.00</sub> (s) <sup>-8.05</sup><sub>+14.56</sub> (r) </td><td><sup>+0.00</sup><sub>+0.00</sub> (s) </td><td><sup>+0.00</sup><sub>+0.00</sub> (s) </td><td><sup>+0.00</sup><sub>+0.00</sub> (s) <sup>+3.44</sup><sub>+2.53</sub> (r) </td><td><sup>+0.00</sup><sub>+0.00</sub> (s) </td><td><sup>+0.00</sup><sub>+0.00</sub> (s) <sup>+0.66</sup><sub>-0.13</sub> (r) </td><td>&#xb1;2.60 (r)</td><td>---</td><td>---</td><td><sup>+0.00</sup><sub>+0.00</sub> (s) <sup>-0.34</sup><sub>+0.39</sub> (r) </td><td>---</td><td>---</td><td>&#xb1;3.00 (r)</td><td>---</td><td><sup>+0.00</sup><sub>+0.00</sub> (s) <sup>-2.70</sup><sub>+3.64</sub> (r) </td><td>---</td><td>---</td><td>&#xb1;50.00 (r)</td></tr>
+<tr><td>TTlf</td><td><sup>+0.00</sup><sub>+0.00</sub> (s) <sup>+10.71</sup><sub>-11.14</sub> (r) </td><td><sup>+0.00</sup><sub>+0.00</sub> (s) <sup>+4.20</sup><sub>-4.36</sub> (r) </td><td>&#xb1;2.00 (r)</td><td><sup>+0.00</sup><sub>+0.00</sub> (s) <sup>+0.33</sup><sub>+0.70</sub> (r) </td><td><sup>+0.00</sup><sub>+0.00</sub> (s) <sup>+3.49</sup><sub>-2.24</sub> (r) </td><td>&#xb1;2.60 (r)</td><td><sup>+0.00</sup><sub>+0.00</sub> (s) </td><td><sup>+0.00</sup><sub>+0.00</sub> (s) </td><td><sup>+0.00</sup><sub>+0.00</sub> (s) </td><td><sup>+0.00</sup><sub>+0.00</sub> (s) <sup>-0.04</sup><sub>+4.90</sub> (r) </td><td><sup>+0.00</sup><sub>+0.00</sub> (s) </td><td><sup>+0.00</sup><sub>+0.00</sub> (s) </td><td><sup>+0.00</sup><sub>+0.00</sub> (s) <sup>+6.05</sup><sub>+5.52</sub> (r) </td><td><sup>+0.00</sup><sub>+0.00</sub> (s) <sup>+1.58</sup><sub>+0.06</sub> (r) </td><td>&#xb1;2.60 (r)</td><td>---</td><td>---</td><td><sup>+0.00</sup><sub>+0.00</sub> (s) <sup>-0.49</sup><sub>+0.54</sub> (r) </td><td>---</td><td>---</td><td>&#xb1;3.00 (r)</td><td>---</td><td><sup>+0.00</sup><sub>+0.00</sub> (s) <sup>-1.82</sup><sub>+2.74</sub> (r) </td><td>---</td><td>---</td><td>---</td></tr>
+<tr><td>VV</td><td><sup>+0.00</sup><sub>+0.00</sub> (s) <sup>+12.05</sup><sub>-12.60</sub> (r) </td><td><sup>+0.00</sup><sub>+0.00</sub> (s) <sup>+4.24</sup><sub>-3.78</sub> (r) </td><td>&#xb1;2.00 (r)</td><td><sup>+0.00</sup><sub>+0.00</sub> (s) <sup>+7.21</sup><sub>+6.70</sub> (r) </td><td><sup>+0.00</sup><sub>+0.00</sub> (s) <sup>+14.42</sup><sub>-0.03</sub> (r) </td><td>&#xb1;2.60 (r)</td><td><sup>+0.00</sup><sub>+0.00</sub> (s) </td><td><sup>+0.00</sup><sub>+0.00</sub> (s) </td><td><sup>+0.00</sup><sub>+0.00</sub> (s) </td><td><sup>+0.00</sup><sub>+0.00</sub> (s) </td><td><sup>+0.00</sup><sub>+0.00</sub> (s) </td><td><sup>+0.00</sup><sub>+0.00</sub> (s) </td><td><sup>+0.00</sup><sub>+0.00</sub> (s) </td><td><sup>+0.00</sup><sub>+0.00</sub> (s) <sup>+6.49</sup><sub>+1.20</sub> (r) </td><td>---</td><td>---</td><td>---</td><td><sup>+0.00</sup><sub>+0.00</sub> (s) <sup>-0.15</sup><sub>-0.75</sub> (r) </td><td>---</td><td>&#xb1;3.50 (r)</td><td>---</td><td>---</td><td><sup>+0.00</sup><sub>+0.00</sub> (s) </td><td>---</td><td>---</td><td>---</td></tr>
+<tr><td>Wj</td><td><sup>+0.00</sup><sub>+0.00</sub> (s) <sup>+7.66</sup><sub>-7.80</sub> (r) </td><td><sup>+0.00</sup><sub>+0.00</sub> (s) <sup>+18.00</sup><sub>-17.23</sub> (r) </td><td>&#xb1;2.00 (r)</td><td><sup>+0.00</sup><sub>+0.00</sub> (s) <sup>-2.38</sup><sub>+0.26</sub> (r) </td><td><sup>+0.00</sup><sub>+0.00</sub> (s) <sup>+0.12</sup><sub>-0.13</sub> (r) </td><td>&#xb1;2.60 (r)</td><td><sup>+0.00</sup><sub>+0.00</sub> (s) </td><td><sup>+0.00</sup><sub>+0.00</sub> (s) </td><td><sup>+0.00</sup><sub>+0.00</sub> (s) </td><td><sup>+0.00</sup><sub>+0.00</sub> (s) </td><td><sup>+0.00</sup><sub>+0.00</sub> (s) </td><td><sup>+0.00</sup><sub>+0.00</sub> (s) </td><td><sup>+0.00</sup><sub>+0.00</sub> (s) </td><td><sup>+0.00</sup><sub>+0.00</sub> (s) <sup>+6.08</sup><sub>-0.06</sub> (r) </td><td>---</td><td>---</td><td>&#xb1;4.80 (r)</td><td><sup>+0.00</sup><sub>+0.00</sub> (s) <sup>+5.16</sup><sub>-6.39</sub> (r) </td><td>&#xb1;1.30 (r)</td><td>---</td><td>---</td><td>---</td><td><sup>+0.00</sup><sub>+0.00</sub> (s) </td><td>---</td><td>---</td><td>---</td></tr>
+<tr><td>s_Top</td><td><sup>+0.00</sup><sub>+0.00</sub> (s) <sup>+10.51</sup><sub>-10.93</sub> (r) </td><td><sup>+0.00</sup><sub>+0.00</sub> (s) <sup>+3.66</sup><sub>-3.67</sub> (r) </td><td>&#xb1;2.00 (r)</td><td><sup>+0.00</sup><sub>+0.00</sub> (s) <sup>+3.07</sup><sub>+4.25</sub> (r) </td><td><sup>+0.00</sup><sub>+0.00</sub> (s) <sup>+5.44</sup><sub>+3.43</sub> (r) </td><td>&#xb1;2.60 (r)</td><td><sup>+0.00</sup><sub>+0.00</sub> (s) </td><td><sup>+0.00</sup><sub>+0.00</sub> (s) </td><td><sup>+0.00</sup><sub>+0.00</sub> (s) </td><td><sup>+0.00</sup><sub>+0.00</sub> (s) </td><td><sup>+0.00</sup><sub>+0.00</sub> (s) </td><td><sup>+0.00</sup><sub>+0.00</sub> (s) </td><td><sup>+0.00</sup><sub>+0.00</sub> (s) </td><td><sup>+0.00</sup><sub>+0.00</sub> (s) <sup>-1.73</sup><sub>+0.74</sub> (r) </td><td>---</td><td>&#xb1;4.60 (r)</td><td>---</td><td><sup>+0.00</sup><sub>+0.00</sub> (s) <sup>-1.21</sup><sub>-0.04</sub> (r) </td><td>---</td><td>---</td><td>&#xb1;2.00 (r)</td><td>---</td><td><sup>+0.00</sup><sub>+0.00</sub> (s) </td><td>---</td><td>---</td><td>---</td></tr>
+<tr><td>tH</td><td><sup>+0.00</sup><sub>+0.00</sub> (s) <sup>+7.67</sup><sub>-7.99</sub> (r) </td><td><sup>+0.00</sup><sub>+0.00</sub> (s) <sup>+0.13</sup><sub>-0.13</sub> (r) </td><td>&#xb1;2.00 (r)</td><td><sup>+0.00</sup><sub>+0.00</sub> (s) <sup>+0.10</sup><sub>+0.94</sub> (r) </td><td><sup>+0.00</sup><sub>+0.00</sub> (s) <sup>+2.26</sup><sub>-1.12</sub> (r) </td><td>&#xb1;2.60 (r)</td><td><sup>+0.00</sup><sub>+0.00</sub> (s) <sup>+0.90</sup><sub>-7.22</sub> (r) </td><td><sup>+0.00</sup><sub>+0.00</sub> (s) </td><td><sup>+0.00</sup><sub>+0.00</sub> (s) </td><td><sup>+0.00</sup><sub>+0.00</sub> (s) </td><td><sup>+0.00</sup><sub>+0.00</sub> (s) </td><td><sup>+0.00</sup><sub>+0.00</sub> (s) </td><td><sup>+0.00</sup><sub>+0.00</sub> (s) </td><td><sup>+0.00</sup><sub>+0.00</sub> (s) <sup>+1.12</sup><sub>+0.24</sub> (r) </td><td>---</td><td>---</td><td>---</td><td><sup>+0.00</sup><sub>+0.00</sub> (s) <sup>-0.78</sup><sub>+0.74</sub> (r) </td><td>---</td><td>---</td><td>---</td><td>---</td><td><sup>+0.00</sup><sub>+0.00</sub> (s) </td><td>---</td><td>---</td><td>---</td></tr>
+<tr><td>ttH</td><td><sup>+0.00</sup><sub>+0.00</sub> (s) <sup>+7.50</sup><sub>-7.84</sub> (r) </td><td><sup>+0.00</sup><sub>+0.00</sub> (s) <sup>+0.51</sup><sub>-0.50</sub> (r) </td><td>&#xb1;2.00 (r)</td><td><sup>+0.00</sup><sub>+0.00</sub> (s) <sup>+0.05</sup><sub>+0.62</sub> (r) </td><td><sup>+0.00</sup><sub>+0.00</sub> (s) <sup>+0.96</sup><sub>-0.16</sub> (r) </td><td>&#xb1;2.60 (r)</td><td><sup>+0.00</sup><sub>+0.00</sub> (s) </td><td><sup>+0.00</sup><sub>+0.00</sub> (s) </td><td><sup>+0.00</sup><sub>+0.00</sub> (s) </td><td><sup>+0.00</sup><sub>+0.00</sub> (s) </td><td><sup>+0.00</sup><sub>+0.00</sub> (s) </td><td><sup>+0.00</sup><sub>+0.00</sub> (s) </td><td><sup>+0.00</sup><sub>+0.00</sub> (s) </td><td><sup>+0.00</sup><sub>+0.00</sub> (s) <sup>+0.29</sup><sub>+0.61</sub> (r) </td><td>&#xb1;9.00 (r)</td><td>---</td><td>---</td><td><sup>+0.00</sup><sub>+0.00</sub> (s) <sup>-0.48</sup><sub>+0.57</sub> (r) </td><td>---</td><td>---</td><td>---</td><td>&#xb1;12.50 (r)</td><td><sup>+0.00</sup><sub>+0.00</sub> (s) </td><td>---</td><td>---</td><td>---</td></tr>
+</table>
+
+
+</div>
+<h1 onclick=$('div4').toggle()>4. Nuisance Parameter Priors</h1><div class="inner" id="div4">
+
+    <p>The priors for the nuisance parameters are either Gaussian or gamma distributions. As limit cases, these can have with=0 or width=inf
+    which makes them delta or flat distributions, respectively.</p>
+    <div class="inner"><h3>Prior Parameters</h3>
+<table cellpadding="2" border="1">
+<tr><th>parameter</th><th>distribution type</th><th>distribution parameters</th></tr>
+<tr><td>scale_ttH</td><td>gauss</td><td>width = 1.0; range = [-inf, inf]; mean = 0.0</td></tr>
+<tr><td>pdf_qg</td><td>gauss</td><td>width = 1.0; range = [-inf, inf]; mean = 0.0</td></tr>
+<tr><td>btagHF</td><td>gauss</td><td>width = 1.0; range = [-inf, inf]; mean = 0.0</td></tr>
+<tr><td>lumi</td><td>gauss</td><td>width = 1.0; range = [-inf, inf]; mean = 0.0</td></tr>
+<tr><td>eff_m</td><td>gauss</td><td>width = 1.0; range = [-inf, inf]; mean = 0.0</td></tr>
+<tr><td>scale_V</td><td>gauss</td><td>width = 1.0; range = [-inf, inf]; mean = 0.0</td></tr>
+<tr><td>pileup</td><td>gauss</td><td>width = 1.0; range = [-inf, inf]; mean = 0.0</td></tr>
+<tr><td>madgraphQ2_ttbb</td><td>gauss</td><td>width = 1.0; range = [-inf, inf]; mean = 0.0</td></tr>
+<tr><td>jer</td><td>gauss</td><td>width = 1.0; range = [-inf, inf]; mean = 0.0</td></tr>
+<tr><td>jes</td><td>gauss</td><td>width = 1.0; range = [-inf, inf]; mean = 0.0</td></tr>
+<tr><td>scale_tt</td><td>gauss</td><td>width = 1.0; range = [-inf, inf]; mean = 0.0</td></tr>
+<tr><td>scale_VV</td><td>gauss</td><td>width = 1.0; range = [-inf, inf]; mean = 0.0</td></tr>
+<tr><td>match_ttbb</td><td>gauss</td><td>width = 1.0; range = [-inf, inf]; mean = 0.0</td></tr>
+<tr><td>tthf_b</td><td>gauss</td><td>width = 1.0; range = [-inf, inf]; mean = 0.0</td></tr>
+<tr><td>tthf_bb</td><td>gauss</td><td>width = 1.0; range = [-inf, inf]; mean = 0.0</td></tr>
+<tr><td>match_ttlf</td><td>gauss</td><td>width = 1.0; range = [-inf, inf]; mean = 0.0</td></tr>
+<tr><td>pdf_qqbar</td><td>gauss</td><td>width = 1.0; range = [-inf, inf]; mean = 0.0</td></tr>
+<tr><td>toppt</td><td>gauss</td><td>width = 1.0; range = [-inf, inf]; mean = 0.0</td></tr>
+<tr><td>met</td><td>gauss</td><td>width = 1.0; range = [-inf, inf]; mean = 0.0</td></tr>
+<tr><td>madgraphQ2_tH</td><td>gauss</td><td>width = 1.0; range = [-inf, inf]; mean = 0.0</td></tr>
+<tr><td>madgraphQ2_ttcc</td><td>gauss</td><td>width = 1.0; range = [-inf, inf]; mean = 0.0</td></tr>
+<tr><td>match_ttcc</td><td>gauss</td><td>width = 1.0; range = [-inf, inf]; mean = 0.0</td></tr>
+<tr><td>madgraphQ2_ttlf</td><td>gauss</td><td>width = 1.0; range = [-inf, inf]; mean = 0.0</td></tr>
+<tr><td>tthf_cc</td><td>gauss</td><td>width = 1.0; range = [-inf, inf]; mean = 0.0</td></tr>
+<tr><td>pdf_gg</td><td>gauss</td><td>width = 1.0; range = [-inf, inf]; mean = 0.0</td></tr>
+<tr><td>btagLF</td><td>gauss</td><td>width = 1.0; range = [-inf, inf]; mean = 0.0</td></tr>
+</table>
+
+</div>
+    </div>
+</div>
+<h1 onclick=$('div5').toggle()>5. Basic Model Plots</h1><div class="inner" id="div5">
+<h2>Stackplots</h2>
+<p>Everything normalized to expectation, i.e., to the normalization in the template input file, possibly scaled via the python script file.</p>
+<p>Color Code:</p><ul>
+<li><span style="background: #edd400;">&nbsp;&nbsp;&nbsp;</span> TTb</li>
+<li><span style="background: #f57900;">&nbsp;&nbsp;&nbsp;</span> TTbb</li>
+<li><span style="background: #c17d11;">&nbsp;&nbsp;&nbsp;</span> TTcc</li>
+<li><span style="background: #73d216;">&nbsp;&nbsp;&nbsp;</span> TTlf</li>
+<li><span style="background: #3465a4;">&nbsp;&nbsp;&nbsp;</span> VV</li>
+<li><span style="background: #75507b;">&nbsp;&nbsp;&nbsp;</span> Wj</li>
+<li><span style="background: #d3d7cf;">&nbsp;&nbsp;&nbsp;</span> s_Top</li>
+<li><span style="background: #ef2929;">&nbsp;&nbsp;&nbsp;</span> tH</li>
+<li><span style="background: #555753;">&nbsp;&nbsp;&nbsp;</span> ttH</li>
+</ul>
+<p>Observable 'tH_3tt_mu':<br /><img src="plots/tH_3tt_mu_stack.png" /></p>
+<h2>All 'nominal' Templates</h2>
+<p>Everything normalized to expectation, i.e., to the normalization in the template input file, possibly scaled via the python script file.</p>
+<p>Observable "tH_3tt_mu", Process "TTb":<br/><img src="plots/tH_3tt_mu_TTb.png"/></p>
+<p>Observable "tH_3tt_mu", Process "TTbb":<br/><img src="plots/tH_3tt_mu_TTbb.png"/></p>
+<p>Observable "tH_3tt_mu", Process "TTcc":<br/><img src="plots/tH_3tt_mu_TTcc.png"/></p>
+<p>Observable "tH_3tt_mu", Process "TTlf":<br/><img src="plots/tH_3tt_mu_TTlf.png"/></p>
+<p>Observable "tH_3tt_mu", Process "VV":<br/><img src="plots/tH_3tt_mu_VV.png"/></p>
+<p>Observable "tH_3tt_mu", Process "Wj":<br/><img src="plots/tH_3tt_mu_Wj.png"/></p>
+<p>Observable "tH_3tt_mu", Process "s_Top":<br/><img src="plots/tH_3tt_mu_s_Top.png"/></p>
+<p>Observable "tH_3tt_mu", Process "tH":<br/><img src="plots/tH_3tt_mu_tH.png"/></p>
+<p>Observable "tH_3tt_mu", Process "ttH":<br/><img src="plots/tH_3tt_mu_ttH.png"/></p>
+<p>Observable "tH_3tt_mu", all signals: <br/><img src="plots/tH_3tt_mu_signals.png"/></p>
+<p>Observable "tH_3tt_mu", signal normalization: <br/><img src="plots/tH_3tt_mu_norm_vs_signals.png"/></p>
+<h2>Shape Uncertainty Plots</h2>
+<p>Color Code:</p><ul>
+<li><span style="background: #333333;">&nbsp;&nbsp;&nbsp;</span> nominal</li><li><span style="background: #aa3333;">&nbsp;&nbsp;&nbsp;</span> plus</li><li><span style="background: #3333aa;">&nbsp;&nbsp;&nbsp;</span> minus</li>
+</ul>
+<p>Processes not appearing in the tables do not have any shape uncertainty for this observable.</p>
+<p>Click on an image to enlarge. If you have javascript, the image will be displayed on this page and you can click through all shape uncertainties of that observable                    (instead of clicking, you can also use the left/right key on the keyboard).</p>
+<h3>Observable 'tH_3tt_mu'</h3>
+<table cellpadding="2" border="1">
+<tr><th>process / uncertainty</th><th>btagHF</th><th>btagLF</th><th>jer</th><th>jes</th><th>madgraphQ2_tH</th><th>madgraphQ2_ttbb</th><th>madgraphQ2_ttcc</th><th>madgraphQ2_ttlf</th><th>match_ttbb</th><th>match_ttcc</th><th>match_ttlf</th><th>met</th><th>pileup</th><th>toppt</th></tr>
+<tr><td>TTb</td><td><a href="plots/tH_3tt_mu__TTb__btagHF.png" rel="lightbox[tH_3tt_mu]"><img src="plots/tH_3tt_mu__TTb__btagHF.png" width="200"/></a></td><td><a href="plots/tH_3tt_mu__TTb__btagLF.png" rel="lightbox[tH_3tt_mu]"><img src="plots/tH_3tt_mu__TTb__btagLF.png" width="200"/></a></td><td><a href="plots/tH_3tt_mu__TTb__jer.png" rel="lightbox[tH_3tt_mu]"><img src="plots/tH_3tt_mu__TTb__jer.png" width="200"/></a></td><td><a href="plots/tH_3tt_mu__TTb__jes.png" rel="lightbox[tH_3tt_mu]"><img src="plots/tH_3tt_mu__TTb__jes.png" width="200"/></a></td><td><a href="plots/tH_3tt_mu__TTb__madgraphQ2_tH.png" rel="lightbox[tH_3tt_mu]"><img src="plots/tH_3tt_mu__TTb__madgraphQ2_tH.png" width="200"/></a></td><td><a href="plots/tH_3tt_mu__TTb__madgraphQ2_ttbb.png" rel="lightbox[tH_3tt_mu]"><img src="plots/tH_3tt_mu__TTb__madgraphQ2_ttbb.png" width="200"/></a></td><td><a href="plots/tH_3tt_mu__TTb__madgraphQ2_ttcc.png" rel="lightbox[tH_3tt_mu]"><img src="plots/tH_3tt_mu__TTb__madgraphQ2_ttcc.png" width="200"/></a></td><td><a href="plots/tH_3tt_mu__TTb__madgraphQ2_ttlf.png" rel="lightbox[tH_3tt_mu]"><img src="plots/tH_3tt_mu__TTb__madgraphQ2_ttlf.png" width="200"/></a></td><td><a href="plots/tH_3tt_mu__TTb__match_ttbb.png" rel="lightbox[tH_3tt_mu]"><img src="plots/tH_3tt_mu__TTb__match_ttbb.png" width="200"/></a></td><td><a href="plots/tH_3tt_mu__TTb__match_ttcc.png" rel="lightbox[tH_3tt_mu]"><img src="plots/tH_3tt_mu__TTb__match_ttcc.png" width="200"/></a></td><td><a href="plots/tH_3tt_mu__TTb__match_ttlf.png" rel="lightbox[tH_3tt_mu]"><img src="plots/tH_3tt_mu__TTb__match_ttlf.png" width="200"/></a></td><td><a href="plots/tH_3tt_mu__TTb__met.png" rel="lightbox[tH_3tt_mu]"><img src="plots/tH_3tt_mu__TTb__met.png" width="200"/></a></td><td><a href="plots/tH_3tt_mu__TTb__pileup.png" rel="lightbox[tH_3tt_mu]"><img src="plots/tH_3tt_mu__TTb__pileup.png" width="200"/></a></td><td><a href="plots/tH_3tt_mu__TTb__toppt.png" rel="lightbox[tH_3tt_mu]"><img src="plots/tH_3tt_mu__TTb__toppt.png" width="200"/></a></td></tr>
+<tr><td>TTbb</td><td><a href="plots/tH_3tt_mu__TTbb__btagHF.png" rel="lightbox[tH_3tt_mu]"><img src="plots/tH_3tt_mu__TTbb__btagHF.png" width="200"/></a></td><td><a href="plots/tH_3tt_mu__TTbb__btagLF.png" rel="lightbox[tH_3tt_mu]"><img src="plots/tH_3tt_mu__TTbb__btagLF.png" width="200"/></a></td><td><a href="plots/tH_3tt_mu__TTbb__jer.png" rel="lightbox[tH_3tt_mu]"><img src="plots/tH_3tt_mu__TTbb__jer.png" width="200"/></a></td><td><a href="plots/tH_3tt_mu__TTbb__jes.png" rel="lightbox[tH_3tt_mu]"><img src="plots/tH_3tt_mu__TTbb__jes.png" width="200"/></a></td><td><a href="plots/tH_3tt_mu__TTbb__madgraphQ2_tH.png" rel="lightbox[tH_3tt_mu]"><img src="plots/tH_3tt_mu__TTbb__madgraphQ2_tH.png" width="200"/></a></td><td><a href="plots/tH_3tt_mu__TTbb__madgraphQ2_ttbb.png" rel="lightbox[tH_3tt_mu]"><img src="plots/tH_3tt_mu__TTbb__madgraphQ2_ttbb.png" width="200"/></a></td><td><a href="plots/tH_3tt_mu__TTbb__madgraphQ2_ttcc.png" rel="lightbox[tH_3tt_mu]"><img src="plots/tH_3tt_mu__TTbb__madgraphQ2_ttcc.png" width="200"/></a></td><td><a href="plots/tH_3tt_mu__TTbb__madgraphQ2_ttlf.png" rel="lightbox[tH_3tt_mu]"><img src="plots/tH_3tt_mu__TTbb__madgraphQ2_ttlf.png" width="200"/></a></td><td><a href="plots/tH_3tt_mu__TTbb__match_ttbb.png" rel="lightbox[tH_3tt_mu]"><img src="plots/tH_3tt_mu__TTbb__match_ttbb.png" width="200"/></a></td><td><a href="plots/tH_3tt_mu__TTbb__match_ttcc.png" rel="lightbox[tH_3tt_mu]"><img src="plots/tH_3tt_mu__TTbb__match_ttcc.png" width="200"/></a></td><td><a href="plots/tH_3tt_mu__TTbb__match_ttlf.png" rel="lightbox[tH_3tt_mu]"><img src="plots/tH_3tt_mu__TTbb__match_ttlf.png" width="200"/></a></td><td><a href="plots/tH_3tt_mu__TTbb__met.png" rel="lightbox[tH_3tt_mu]"><img src="plots/tH_3tt_mu__TTbb__met.png" width="200"/></a></td><td><a href="plots/tH_3tt_mu__TTbb__pileup.png" rel="lightbox[tH_3tt_mu]"><img src="plots/tH_3tt_mu__TTbb__pileup.png" width="200"/></a></td><td><a href="plots/tH_3tt_mu__TTbb__toppt.png" rel="lightbox[tH_3tt_mu]"><img src="plots/tH_3tt_mu__TTbb__toppt.png" width="200"/></a></td></tr>
+<tr><td>TTcc</td><td><a href="plots/tH_3tt_mu__TTcc__btagHF.png" rel="lightbox[tH_3tt_mu]"><img src="plots/tH_3tt_mu__TTcc__btagHF.png" width="200"/></a></td><td><a href="plots/tH_3tt_mu__TTcc__btagLF.png" rel="lightbox[tH_3tt_mu]"><img src="plots/tH_3tt_mu__TTcc__btagLF.png" width="200"/></a></td><td><a href="plots/tH_3tt_mu__TTcc__jer.png" rel="lightbox[tH_3tt_mu]"><img src="plots/tH_3tt_mu__TTcc__jer.png" width="200"/></a></td><td><a href="plots/tH_3tt_mu__TTcc__jes.png" rel="lightbox[tH_3tt_mu]"><img src="plots/tH_3tt_mu__TTcc__jes.png" width="200"/></a></td><td><a href="plots/tH_3tt_mu__TTcc__madgraphQ2_tH.png" rel="lightbox[tH_3tt_mu]"><img src="plots/tH_3tt_mu__TTcc__madgraphQ2_tH.png" width="200"/></a></td><td><a href="plots/tH_3tt_mu__TTcc__madgraphQ2_ttbb.png" rel="lightbox[tH_3tt_mu]"><img src="plots/tH_3tt_mu__TTcc__madgraphQ2_ttbb.png" width="200"/></a></td><td><a href="plots/tH_3tt_mu__TTcc__madgraphQ2_ttcc.png" rel="lightbox[tH_3tt_mu]"><img src="plots/tH_3tt_mu__TTcc__madgraphQ2_ttcc.png" width="200"/></a></td><td><a href="plots/tH_3tt_mu__TTcc__madgraphQ2_ttlf.png" rel="lightbox[tH_3tt_mu]"><img src="plots/tH_3tt_mu__TTcc__madgraphQ2_ttlf.png" width="200"/></a></td><td><a href="plots/tH_3tt_mu__TTcc__match_ttbb.png" rel="lightbox[tH_3tt_mu]"><img src="plots/tH_3tt_mu__TTcc__match_ttbb.png" width="200"/></a></td><td><a href="plots/tH_3tt_mu__TTcc__match_ttcc.png" rel="lightbox[tH_3tt_mu]"><img src="plots/tH_3tt_mu__TTcc__match_ttcc.png" width="200"/></a></td><td><a href="plots/tH_3tt_mu__TTcc__match_ttlf.png" rel="lightbox[tH_3tt_mu]"><img src="plots/tH_3tt_mu__TTcc__match_ttlf.png" width="200"/></a></td><td><a href="plots/tH_3tt_mu__TTcc__met.png" rel="lightbox[tH_3tt_mu]"><img src="plots/tH_3tt_mu__TTcc__met.png" width="200"/></a></td><td><a href="plots/tH_3tt_mu__TTcc__pileup.png" rel="lightbox[tH_3tt_mu]"><img src="plots/tH_3tt_mu__TTcc__pileup.png" width="200"/></a></td><td><a href="plots/tH_3tt_mu__TTcc__toppt.png" rel="lightbox[tH_3tt_mu]"><img src="plots/tH_3tt_mu__TTcc__toppt.png" width="200"/></a></td></tr>
+<tr><td>TTlf</td><td><a href="plots/tH_3tt_mu__TTlf__btagHF.png" rel="lightbox[tH_3tt_mu]"><img src="plots/tH_3tt_mu__TTlf__btagHF.png" width="200"/></a></td><td><a href="plots/tH_3tt_mu__TTlf__btagLF.png" rel="lightbox[tH_3tt_mu]"><img src="plots/tH_3tt_mu__TTlf__btagLF.png" width="200"/></a></td><td><a href="plots/tH_3tt_mu__TTlf__jer.png" rel="lightbox[tH_3tt_mu]"><img src="plots/tH_3tt_mu__TTlf__jer.png" width="200"/></a></td><td><a href="plots/tH_3tt_mu__TTlf__jes.png" rel="lightbox[tH_3tt_mu]"><img src="plots/tH_3tt_mu__TTlf__jes.png" width="200"/></a></td><td><a href="plots/tH_3tt_mu__TTlf__madgraphQ2_tH.png" rel="lightbox[tH_3tt_mu]"><img src="plots/tH_3tt_mu__TTlf__madgraphQ2_tH.png" width="200"/></a></td><td><a href="plots/tH_3tt_mu__TTlf__madgraphQ2_ttbb.png" rel="lightbox[tH_3tt_mu]"><img src="plots/tH_3tt_mu__TTlf__madgraphQ2_ttbb.png" width="200"/></a></td><td><a href="plots/tH_3tt_mu__TTlf__madgraphQ2_ttcc.png" rel="lightbox[tH_3tt_mu]"><img src="plots/tH_3tt_mu__TTlf__madgraphQ2_ttcc.png" width="200"/></a></td><td><a href="plots/tH_3tt_mu__TTlf__madgraphQ2_ttlf.png" rel="lightbox[tH_3tt_mu]"><img src="plots/tH_3tt_mu__TTlf__madgraphQ2_ttlf.png" width="200"/></a></td><td><a href="plots/tH_3tt_mu__TTlf__match_ttbb.png" rel="lightbox[tH_3tt_mu]"><img src="plots/tH_3tt_mu__TTlf__match_ttbb.png" width="200"/></a></td><td><a href="plots/tH_3tt_mu__TTlf__match_ttcc.png" rel="lightbox[tH_3tt_mu]"><img src="plots/tH_3tt_mu__TTlf__match_ttcc.png" width="200"/></a></td><td><a href="plots/tH_3tt_mu__TTlf__match_ttlf.png" rel="lightbox[tH_3tt_mu]"><img src="plots/tH_3tt_mu__TTlf__match_ttlf.png" width="200"/></a></td><td><a href="plots/tH_3tt_mu__TTlf__met.png" rel="lightbox[tH_3tt_mu]"><img src="plots/tH_3tt_mu__TTlf__met.png" width="200"/></a></td><td><a href="plots/tH_3tt_mu__TTlf__pileup.png" rel="lightbox[tH_3tt_mu]"><img src="plots/tH_3tt_mu__TTlf__pileup.png" width="200"/></a></td><td><a href="plots/tH_3tt_mu__TTlf__toppt.png" rel="lightbox[tH_3tt_mu]"><img src="plots/tH_3tt_mu__TTlf__toppt.png" width="200"/></a></td></tr>
+<tr><td>VV</td><td><a href="plots/tH_3tt_mu__VV__btagHF.png" rel="lightbox[tH_3tt_mu]"><img src="plots/tH_3tt_mu__VV__btagHF.png" width="200"/></a></td><td><a href="plots/tH_3tt_mu__VV__btagLF.png" rel="lightbox[tH_3tt_mu]"><img src="plots/tH_3tt_mu__VV__btagLF.png" width="200"/></a></td><td><a href="plots/tH_3tt_mu__VV__jer.png" rel="lightbox[tH_3tt_mu]"><img src="plots/tH_3tt_mu__VV__jer.png" width="200"/></a></td><td><a href="plots/tH_3tt_mu__VV__jes.png" rel="lightbox[tH_3tt_mu]"><img src="plots/tH_3tt_mu__VV__jes.png" width="200"/></a></td><td><a href="plots/tH_3tt_mu__VV__madgraphQ2_tH.png" rel="lightbox[tH_3tt_mu]"><img src="plots/tH_3tt_mu__VV__madgraphQ2_tH.png" width="200"/></a></td><td><a href="plots/tH_3tt_mu__VV__madgraphQ2_ttbb.png" rel="lightbox[tH_3tt_mu]"><img src="plots/tH_3tt_mu__VV__madgraphQ2_ttbb.png" width="200"/></a></td><td><a href="plots/tH_3tt_mu__VV__madgraphQ2_ttcc.png" rel="lightbox[tH_3tt_mu]"><img src="plots/tH_3tt_mu__VV__madgraphQ2_ttcc.png" width="200"/></a></td><td><a href="plots/tH_3tt_mu__VV__madgraphQ2_ttlf.png" rel="lightbox[tH_3tt_mu]"><img src="plots/tH_3tt_mu__VV__madgraphQ2_ttlf.png" width="200"/></a></td><td><a href="plots/tH_3tt_mu__VV__match_ttbb.png" rel="lightbox[tH_3tt_mu]"><img src="plots/tH_3tt_mu__VV__match_ttbb.png" width="200"/></a></td><td><a href="plots/tH_3tt_mu__VV__match_ttcc.png" rel="lightbox[tH_3tt_mu]"><img src="plots/tH_3tt_mu__VV__match_ttcc.png" width="200"/></a></td><td><a href="plots/tH_3tt_mu__VV__match_ttlf.png" rel="lightbox[tH_3tt_mu]"><img src="plots/tH_3tt_mu__VV__match_ttlf.png" width="200"/></a></td><td><a href="plots/tH_3tt_mu__VV__met.png" rel="lightbox[tH_3tt_mu]"><img src="plots/tH_3tt_mu__VV__met.png" width="200"/></a></td><td><a href="plots/tH_3tt_mu__VV__pileup.png" rel="lightbox[tH_3tt_mu]"><img src="plots/tH_3tt_mu__VV__pileup.png" width="200"/></a></td><td><a href="plots/tH_3tt_mu__VV__toppt.png" rel="lightbox[tH_3tt_mu]"><img src="plots/tH_3tt_mu__VV__toppt.png" width="200"/></a></td></tr>
+<tr><td>Wj</td><td><a href="plots/tH_3tt_mu__Wj__btagHF.png" rel="lightbox[tH_3tt_mu]"><img src="plots/tH_3tt_mu__Wj__btagHF.png" width="200"/></a></td><td><a href="plots/tH_3tt_mu__Wj__btagLF.png" rel="lightbox[tH_3tt_mu]"><img src="plots/tH_3tt_mu__Wj__btagLF.png" width="200"/></a></td><td><a href="plots/tH_3tt_mu__Wj__jer.png" rel="lightbox[tH_3tt_mu]"><img src="plots/tH_3tt_mu__Wj__jer.png" width="200"/></a></td><td><a href="plots/tH_3tt_mu__Wj__jes.png" rel="lightbox[tH_3tt_mu]"><img src="plots/tH_3tt_mu__Wj__jes.png" width="200"/></a></td><td><a href="plots/tH_3tt_mu__Wj__madgraphQ2_tH.png" rel="lightbox[tH_3tt_mu]"><img src="plots/tH_3tt_mu__Wj__madgraphQ2_tH.png" width="200"/></a></td><td><a href="plots/tH_3tt_mu__Wj__madgraphQ2_ttbb.png" rel="lightbox[tH_3tt_mu]"><img src="plots/tH_3tt_mu__Wj__madgraphQ2_ttbb.png" width="200"/></a></td><td><a href="plots/tH_3tt_mu__Wj__madgraphQ2_ttcc.png" rel="lightbox[tH_3tt_mu]"><img src="plots/tH_3tt_mu__Wj__madgraphQ2_ttcc.png" width="200"/></a></td><td><a href="plots/tH_3tt_mu__Wj__madgraphQ2_ttlf.png" rel="lightbox[tH_3tt_mu]"><img src="plots/tH_3tt_mu__Wj__madgraphQ2_ttlf.png" width="200"/></a></td><td><a href="plots/tH_3tt_mu__Wj__match_ttbb.png" rel="lightbox[tH_3tt_mu]"><img src="plots/tH_3tt_mu__Wj__match_ttbb.png" width="200"/></a></td><td><a href="plots/tH_3tt_mu__Wj__match_ttcc.png" rel="lightbox[tH_3tt_mu]"><img src="plots/tH_3tt_mu__Wj__match_ttcc.png" width="200"/></a></td><td><a href="plots/tH_3tt_mu__Wj__match_ttlf.png" rel="lightbox[tH_3tt_mu]"><img src="plots/tH_3tt_mu__Wj__match_ttlf.png" width="200"/></a></td><td><a href="plots/tH_3tt_mu__Wj__met.png" rel="lightbox[tH_3tt_mu]"><img src="plots/tH_3tt_mu__Wj__met.png" width="200"/></a></td><td><a href="plots/tH_3tt_mu__Wj__pileup.png" rel="lightbox[tH_3tt_mu]"><img src="plots/tH_3tt_mu__Wj__pileup.png" width="200"/></a></td><td><a href="plots/tH_3tt_mu__Wj__toppt.png" rel="lightbox[tH_3tt_mu]"><img src="plots/tH_3tt_mu__Wj__toppt.png" width="200"/></a></td></tr>
+<tr><td>s_Top</td><td><a href="plots/tH_3tt_mu__s_Top__btagHF.png" rel="lightbox[tH_3tt_mu]"><img src="plots/tH_3tt_mu__s_Top__btagHF.png" width="200"/></a></td><td><a href="plots/tH_3tt_mu__s_Top__btagLF.png" rel="lightbox[tH_3tt_mu]"><img src="plots/tH_3tt_mu__s_Top__btagLF.png" width="200"/></a></td><td><a href="plots/tH_3tt_mu__s_Top__jer.png" rel="lightbox[tH_3tt_mu]"><img src="plots/tH_3tt_mu__s_Top__jer.png" width="200"/></a></td><td><a href="plots/tH_3tt_mu__s_Top__jes.png" rel="lightbox[tH_3tt_mu]"><img src="plots/tH_3tt_mu__s_Top__jes.png" width="200"/></a></td><td><a href="plots/tH_3tt_mu__s_Top__madgraphQ2_tH.png" rel="lightbox[tH_3tt_mu]"><img src="plots/tH_3tt_mu__s_Top__madgraphQ2_tH.png" width="200"/></a></td><td><a href="plots/tH_3tt_mu__s_Top__madgraphQ2_ttbb.png" rel="lightbox[tH_3tt_mu]"><img src="plots/tH_3tt_mu__s_Top__madgraphQ2_ttbb.png" width="200"/></a></td><td><a href="plots/tH_3tt_mu__s_Top__madgraphQ2_ttcc.png" rel="lightbox[tH_3tt_mu]"><img src="plots/tH_3tt_mu__s_Top__madgraphQ2_ttcc.png" width="200"/></a></td><td><a href="plots/tH_3tt_mu__s_Top__madgraphQ2_ttlf.png" rel="lightbox[tH_3tt_mu]"><img src="plots/tH_3tt_mu__s_Top__madgraphQ2_ttlf.png" width="200"/></a></td><td><a href="plots/tH_3tt_mu__s_Top__match_ttbb.png" rel="lightbox[tH_3tt_mu]"><img src="plots/tH_3tt_mu__s_Top__match_ttbb.png" width="200"/></a></td><td><a href="plots/tH_3tt_mu__s_Top__match_ttcc.png" rel="lightbox[tH_3tt_mu]"><img src="plots/tH_3tt_mu__s_Top__match_ttcc.png" width="200"/></a></td><td><a href="plots/tH_3tt_mu__s_Top__match_ttlf.png" rel="lightbox[tH_3tt_mu]"><img src="plots/tH_3tt_mu__s_Top__match_ttlf.png" width="200"/></a></td><td><a href="plots/tH_3tt_mu__s_Top__met.png" rel="lightbox[tH_3tt_mu]"><img src="plots/tH_3tt_mu__s_Top__met.png" width="200"/></a></td><td><a href="plots/tH_3tt_mu__s_Top__pileup.png" rel="lightbox[tH_3tt_mu]"><img src="plots/tH_3tt_mu__s_Top__pileup.png" width="200"/></a></td><td><a href="plots/tH_3tt_mu__s_Top__toppt.png" rel="lightbox[tH_3tt_mu]"><img src="plots/tH_3tt_mu__s_Top__toppt.png" width="200"/></a></td></tr>
+<tr><td>tH</td><td><a href="plots/tH_3tt_mu__tH__btagHF.png" rel="lightbox[tH_3tt_mu]"><img src="plots/tH_3tt_mu__tH__btagHF.png" width="200"/></a></td><td><a href="plots/tH_3tt_mu__tH__btagLF.png" rel="lightbox[tH_3tt_mu]"><img src="plots/tH_3tt_mu__tH__btagLF.png" width="200"/></a></td><td><a href="plots/tH_3tt_mu__tH__jer.png" rel="lightbox[tH_3tt_mu]"><img src="plots/tH_3tt_mu__tH__jer.png" width="200"/></a></td><td><a href="plots/tH_3tt_mu__tH__jes.png" rel="lightbox[tH_3tt_mu]"><img src="plots/tH_3tt_mu__tH__jes.png" width="200"/></a></td><td><a href="plots/tH_3tt_mu__tH__madgraphQ2_tH.png" rel="lightbox[tH_3tt_mu]"><img src="plots/tH_3tt_mu__tH__madgraphQ2_tH.png" width="200"/></a></td><td><a href="plots/tH_3tt_mu__tH__madgraphQ2_ttbb.png" rel="lightbox[tH_3tt_mu]"><img src="plots/tH_3tt_mu__tH__madgraphQ2_ttbb.png" width="200"/></a></td><td><a href="plots/tH_3tt_mu__tH__madgraphQ2_ttcc.png" rel="lightbox[tH_3tt_mu]"><img src="plots/tH_3tt_mu__tH__madgraphQ2_ttcc.png" width="200"/></a></td><td><a href="plots/tH_3tt_mu__tH__madgraphQ2_ttlf.png" rel="lightbox[tH_3tt_mu]"><img src="plots/tH_3tt_mu__tH__madgraphQ2_ttlf.png" width="200"/></a></td><td><a href="plots/tH_3tt_mu__tH__match_ttbb.png" rel="lightbox[tH_3tt_mu]"><img src="plots/tH_3tt_mu__tH__match_ttbb.png" width="200"/></a></td><td><a href="plots/tH_3tt_mu__tH__match_ttcc.png" rel="lightbox[tH_3tt_mu]"><img src="plots/tH_3tt_mu__tH__match_ttcc.png" width="200"/></a></td><td><a href="plots/tH_3tt_mu__tH__match_ttlf.png" rel="lightbox[tH_3tt_mu]"><img src="plots/tH_3tt_mu__tH__match_ttlf.png" width="200"/></a></td><td><a href="plots/tH_3tt_mu__tH__met.png" rel="lightbox[tH_3tt_mu]"><img src="plots/tH_3tt_mu__tH__met.png" width="200"/></a></td><td><a href="plots/tH_3tt_mu__tH__pileup.png" rel="lightbox[tH_3tt_mu]"><img src="plots/tH_3tt_mu__tH__pileup.png" width="200"/></a></td><td><a href="plots/tH_3tt_mu__tH__toppt.png" rel="lightbox[tH_3tt_mu]"><img src="plots/tH_3tt_mu__tH__toppt.png" width="200"/></a></td></tr>
+<tr><td>ttH</td><td><a href="plots/tH_3tt_mu__ttH__btagHF.png" rel="lightbox[tH_3tt_mu]"><img src="plots/tH_3tt_mu__ttH__btagHF.png" width="200"/></a></td><td><a href="plots/tH_3tt_mu__ttH__btagLF.png" rel="lightbox[tH_3tt_mu]"><img src="plots/tH_3tt_mu__ttH__btagLF.png" width="200"/></a></td><td><a href="plots/tH_3tt_mu__ttH__jer.png" rel="lightbox[tH_3tt_mu]"><img src="plots/tH_3tt_mu__ttH__jer.png" width="200"/></a></td><td><a href="plots/tH_3tt_mu__ttH__jes.png" rel="lightbox[tH_3tt_mu]"><img src="plots/tH_3tt_mu__ttH__jes.png" width="200"/></a></td><td><a href="plots/tH_3tt_mu__ttH__madgraphQ2_tH.png" rel="lightbox[tH_3tt_mu]"><img src="plots/tH_3tt_mu__ttH__madgraphQ2_tH.png" width="200"/></a></td><td><a href="plots/tH_3tt_mu__ttH__madgraphQ2_ttbb.png" rel="lightbox[tH_3tt_mu]"><img src="plots/tH_3tt_mu__ttH__madgraphQ2_ttbb.png" width="200"/></a></td><td><a href="plots/tH_3tt_mu__ttH__madgraphQ2_ttcc.png" rel="lightbox[tH_3tt_mu]"><img src="plots/tH_3tt_mu__ttH__madgraphQ2_ttcc.png" width="200"/></a></td><td><a href="plots/tH_3tt_mu__ttH__madgraphQ2_ttlf.png" rel="lightbox[tH_3tt_mu]"><img src="plots/tH_3tt_mu__ttH__madgraphQ2_ttlf.png" width="200"/></a></td><td><a href="plots/tH_3tt_mu__ttH__match_ttbb.png" rel="lightbox[tH_3tt_mu]"><img src="plots/tH_3tt_mu__ttH__match_ttbb.png" width="200"/></a></td><td><a href="plots/tH_3tt_mu__ttH__match_ttcc.png" rel="lightbox[tH_3tt_mu]"><img src="plots/tH_3tt_mu__ttH__match_ttcc.png" width="200"/></a></td><td><a href="plots/tH_3tt_mu__ttH__match_ttlf.png" rel="lightbox[tH_3tt_mu]"><img src="plots/tH_3tt_mu__ttH__match_ttlf.png" width="200"/></a></td><td><a href="plots/tH_3tt_mu__ttH__met.png" rel="lightbox[tH_3tt_mu]"><img src="plots/tH_3tt_mu__ttH__met.png" width="200"/></a></td><td><a href="plots/tH_3tt_mu__ttH__pileup.png" rel="lightbox[tH_3tt_mu]"><img src="plots/tH_3tt_mu__ttH__pileup.png" width="200"/></a></td><td><a href="plots/tH_3tt_mu__ttH__toppt.png" rel="lightbox[tH_3tt_mu]"><img src="plots/tH_3tt_mu__ttH__toppt.png" width="200"/></a></td></tr>
+</table>
+

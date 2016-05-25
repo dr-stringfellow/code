@@ -1,0 +1,16 @@
+Use same input variables as in 2014.02.24_Full-analysis/Step1_MVA/ttbar, excluding information on whether jets assigned to b-quarks from top decays are b-tagged or not (as this information is already included in permurations considered for jet assignment).
+
+Here is the complete list:
+  Mass_TopHad - Mass_WHad
+  Mass_WHad
+  Mass_BTopLepLep
+  Eta_TopHad
+  NumBTag_Light
+  DeltaR_Light
+  DeltaR_BTopHadWHad
+  DeltaR_BTopLepWLep
+  RelHt
+  Pt_TopLep
+  Pt_TopHad
+  Charge_BTopHad - Charge_BTopLep
+  SumCharge_Light

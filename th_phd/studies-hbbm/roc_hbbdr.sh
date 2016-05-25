@@ -1,0 +1,1 @@
+th_roc_x tH.config -batch 1 -xmin -7 -xmax 0 -nbinsx 500 -varexpr "hbbdr*(-1.)" -labels   "0.2:0.95:ROC curve of #DeltaR between Higgs jets" "0.60:0.82:Muon + electron channel" "0.60:0.76:3 tag region" -varname HbbDR -legxmin 0.2 -legxmax 0.64 -legymin 0.2 -legymax 0.4

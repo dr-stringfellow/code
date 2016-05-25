@@ -1,0 +1,62 @@
+Three sets of input observables are used:
+
+    // Input variables (set v3a)
+
+    factory.AddVariable("glb_Charge_Lep", 'F');
+    factory.AddVariable("abs(tHq_Eta_Recoil)", 'F');
+    factory.AddVariable("tHq_NumBTag_Higgs", 'F');
+    factory.AddVariable("log(tHq_Pt_Higgs)", 'F');
+    factory.AddVariable("log(tHq_Pt_Recoil)", 'F');
+
+    factory.AddVariable("tt_DeltaR_Light", 'F');
+    factory.AddVariable("log(tt_Mass_TopHad)", 'F');
+    factory.AddVariable("tt_NumPassBTag_Light", 'F');
+   
+   
+    // Input variables (set v3b)
+
+    factory.AddVariable("glb_Charge_Lep", 'F');
+    factory.AddVariable("log(glb_Pt_J1)", 'F');
+    factory.AddVariable("log(glb_MET)", 'F');
+    factory.AddVariable("log(tHq_Pt_Higgs)", 'F');
+    factory.AddVariable("log(tHq_Pt_Recoil)", 'F');
+    factory.AddVariable("abs(tHq_Eta_Recoil)", 'F');
+
+    factory.AddVariable("tt_MaxEta_Light", 'F');
+    factory.AddVariable("log(tt_Mass_TopHad)", 'F');
+    factory.AddVariable("log(tt_DMass_TopHadWHad)", 'F');
+    factory.AddVariable("log(tt_MaxMass_BTopHadLight)", 'F');
+    factory.AddVariable("tHq_NumBTag_Higgs", 'F');
+
+    factory.AddVariable("tt_NumPassBTag_Light", 'F');
+    factory.AddVariable("tHq_DeltaR_BJetsHiggs", 'F');
+
+    factory.AddVariable("tt_DeltaR_Light", 'F');
+    factory.AddVariable("tt_SumCharge_Light", 'F');
+    factory.AddVariable("tt_Charge_BTopHad", 'F');
+   
+   
+    // Input variables (set v3c)
+
+    factory.AddVariable("glb_Charge_Lep", 'F');
+    factory.AddVariable("log(glb_SqrtSHat)", 'F');
+    factory.AddVariable("log(glb_Pt_J1)", 'F');
+    factory.AddVariable("log(glb_MET)", 'F');
+    factory.AddVariable("log(tHq_Pt_Higgs)", 'F');
+    factory.AddVariable("log(tHq_Pt_Recoil)", 'F');
+    factory.AddVariable("tHq_Cos_LepRecoil_TH", 'F');
+    factory.AddVariable("abs(tHq_Eta_Recoil)", 'F');
+
+    factory.AddVariable("glb_Sphericity", 'F');
+    factory.AddVariable("tt_MaxEta_Light", 'F');
+    factory.AddVariable("log(tt_Mass_TopHad)", 'F');
+    factory.AddVariable("log(tt_DMass_TopHadWHad)", 'F');
+    factory.AddVariable("log(tt_MaxMass_BTopHadLight)", 'F');
+    factory.AddVariable("tHq_NumBTag_Higgs", 'F');
+
+    factory.AddVariable("tt_NumPassBTag_Light", 'F');
+    factory.AddVariable("tHq_DeltaR_BJetsHiggs", 'F');
+
+    factory.AddVariable("tt_DeltaR_Light", 'F');
+    factory.AddVariable("tt_SumCharge_Light", 'F');
+    factory.AddVariable("tt_Charge_BTopHad", 'F');

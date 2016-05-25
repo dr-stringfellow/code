@@ -1,0 +1,265 @@
+--- Factory                  : You are running ROOT Version: 5.34/11, Oct 31, 2013
+--- Factory                  : 
+--- Factory                  : _/_/_/_/_/ _|      _|  _|      _|    _|_|   
+--- Factory                  :    _/      _|_|  _|_|  _|      _|  _|    _| 
+--- Factory                  :   _/       _|  _|  _|  _|      _|  _|_|_|_| 
+--- Factory                  :  _/        _|      _|    _|  _|    _|    _| 
+--- Factory                  : _/         _|      _|      _|      _|    _| 
+--- Factory                  : 
+--- Factory                  : ___________TMVA Version 4.2.0, Sep 19, 2013
+--- Factory                  : 
+--- DataSetInfo              : Added class "Signal"	 with internal class number 0
+--- Factory                  : Add Tree Vars of type Signal with 14117 events
+--- DataSetInfo              : Added class "Background"	 with internal class number 1
+--- Factory                  : Add Tree Vars of type Background with 14117 events
+--- Factory                  : Add Tree Vars of type Signal with 44563 events
+--- Factory                  : Add Tree Vars of type Background with 44563 events
+--- DataSetInfo              : Class index : 0  name : Signal
+--- DataSetInfo              : Class index : 1  name : Background
+--- Factory                  : Booking method: [1mGlobalTHReco_BFGS[0m
+--- GlobalTHReco_BFGS        : Create Transformation "N" with events from all classes.
+--- Norm                     : Transformation, Variable selection : 
+--- Norm                     : Input : variable 'log(Mass_Higgs)' (index=0).   <---> Output : variable 'log(Mass_Higgs)' (index=0).
+--- Norm                     : Input : variable 'log(Mass_BTopLep)' (index=1).   <---> Output : variable 'log(Mass_BTopLep)' (index=1).
+--- Norm                     : Input : variable 'abs(Eta_Recoil)' (index=2).   <---> Output : variable 'abs(Eta_Recoil)' (index=2).
+--- Norm                     : Input : variable 'PassBTag_BTop' (index=3).   <---> Output : variable 'PassBTag_BTop' (index=3).
+--- Norm                     : Input : variable 'NumBTag_Higgs' (index=4).   <---> Output : variable 'NumBTag_Higgs' (index=4).
+--- Norm                     : Input : variable 'DeltaR_BJetsHiggs' (index=5).   <---> Output : variable 'DeltaR_BJetsHiggs' (index=5).
+--- Norm                     : Input : variable 'DeltaR_BTopW' (index=6).   <---> Output : variable 'DeltaR_BTopW' (index=6).
+--- Norm                     : Input : variable 'DeltaR_TopHiggs' (index=7).   <---> Output : variable 'DeltaR_TopHiggs' (index=7).
+--- Norm                     : Input : variable 'RelHt' (index=8).   <---> Output : variable 'RelHt' (index=8).
+--- Norm                     : Input : variable 'MaxEta_BHiggs' (index=9).   <---> Output : variable 'MaxEta_BHiggs' (index=9).
+--- Norm                     : Input : variable 'log(MinPt_BHiggs)' (index=10).   <---> Output : variable 'log(MinPt_BHiggs)' (index=10).
+--- Norm                     : Input : variable 'Charge_BTop' (index=11).   <---> Output : variable 'Charge_BTop' (index=11).
+--- GlobalTHReco_BFGS        : Building Network
+--- GlobalTHReco_BFGS        : Initializing weights
+--- DataSetFactory           : Splitmode is: "RANDOM" the mixmode is: "SAMEASSPLITMODE"
+--- DataSetFactory           : Create training and testing trees -- looping over class "Signal" ...
+--- DataSetFactory           : Weight expression for class 'Signal': "Weight"
+--- DataSetFactory           : Create training and testing trees -- looping over class "Background" ...
+--- DataSetFactory           : Weight expression for class 'Background': "Weight"
+--- DataSetFactory           : Number of events in input trees (after possible flattening of arrays):
+--- DataSetFactory           :     Signal          -- number of events       : 58680  / sum of weights: 7.234
+--- DataSetFactory           :     Background      -- number of events       : 58680  / sum of weights: 7.234
+--- DataSetFactory           :     Signal     tree -- total number of entries: 58680
+--- DataSetFactory           :     Background tree -- total number of entries: 58680
+--- DataSetFactory           : Preselection: (will NOT affect number of requested training and testing events)
+--- DataSetFactory           :     No preselection cuts applied on event classes
+--- DataSetFactory           : Weight renormalisation mode: "EqualNumEvents": renormalises all event classes ...
+--- DataSetFactory           :  such that the effective (weighted) number of events in each class is the same 
+--- DataSetFactory           :  (and equals the number of events (entries) given for class=0 )
+--- DataSetFactory           : ... i.e. such that Sum[i=1..N_j]{w_i} = N_classA, j=classA, classB, ...
+--- DataSetFactory           : ... (note that N_j is the sum of TRAINING events
+--- DataSetFactory           :  ..... Testing events are not renormalised nor included in the renormalisation factor!)
+--- DataSetFactory           : --> Rescale Signal     event weights by factor: 8091.97
+--- DataSetFactory           : --> Rescale Background event weights by factor: 8091.97
+--- DataSetFactory           : Number of training and testing events after rescaling:
+--- DataSetFactory           : ------------------------------------------------------
+--- DataSetFactory           : Signal     -- training events            : 14117 (sum of weights: 14117) - requested were 0 events
+--- DataSetFactory           : Signal     -- testing events             : 44563 (sum of weights: 5.48942) - requested were 0 events
+--- DataSetFactory           : Signal     -- training and testing events: 58680 (sum of weights: 14122.5)
+--- DataSetFactory           : Background -- training events            : 14117 (sum of weights: 14117) - requested were 0 events
+--- DataSetFactory           : Background -- testing events             : 44563 (sum of weights: 5.48942) - requested were 0 events
+--- DataSetFactory           : Background -- training and testing events: 58680 (sum of weights: 14122.5)
+--- DataSetFactory           : Create internal training tree
+--- DataSetFactory           : Create internal testing tree
+--- DataSetInfo              : Correlation matrix (Signal):
+--- DataSetInfo              : ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+--- DataSetInfo              :                    log(Mass_Higgs) log(Mass_BTopLep) abs(Eta_Recoil) PassBTag_BTop NumBTag_Higgs DeltaR_BJetsHiggs DeltaR_BTopW DeltaR_TopHiggs   RelHt MaxEta_BHiggs log(MinPt_BHiggs) Charge_BTop
+--- DataSetInfo              :   log(Mass_Higgs):          +1.000            -0.006          -0.004        +0.004        +0.076            -0.003       -0.107          +0.089  +0.171        -0.012            +0.354      -0.013
+--- DataSetInfo              : log(Mass_BTopLep):          -0.006            +1.000          +0.010        +0.007        +0.002            +0.029       +0.138          -0.021  -0.082        +0.012            -0.011      -0.002
+--- DataSetInfo              :   abs(Eta_Recoil):          -0.004            +0.010          +1.000        -0.035        -0.023            +0.020       -0.020          +0.084  -0.055        +0.024            -0.019      +0.005
+--- DataSetInfo              :     PassBTag_BTop:          +0.004            +0.007          -0.035        +1.000        -0.213            -0.003       +0.014          +0.017  +0.056        +0.027            -0.009      -0.008
+--- DataSetInfo              :     NumBTag_Higgs:          +0.076            +0.002          -0.023        -0.213        +1.000            +0.022       +0.029          +0.026  +0.090        -0.044            +0.068      +0.000
+--- DataSetInfo              : DeltaR_BJetsHiggs:          -0.003            +0.029          +0.020        -0.003        +0.022            +1.000       +0.311          -0.101  -0.629        +0.171            -0.648      -0.021
+--- DataSetInfo              :      DeltaR_BTopW:          -0.107            +0.138          -0.020        +0.014        +0.029            +0.311       +1.000          -0.072  -0.583        +0.086            -0.213      -0.014
+--- DataSetInfo              :   DeltaR_TopHiggs:          +0.089            -0.021          +0.084        +0.017        +0.026            -0.101       -0.072          +1.000  +0.121        +0.085            +0.110      -0.000
+--- DataSetInfo              :             RelHt:          +0.171            -0.082          -0.055        +0.056        +0.090            -0.629       -0.583          +0.121  +1.000        -0.087            +0.373      +0.013
+--- DataSetInfo              :     MaxEta_BHiggs:          -0.012            +0.012          +0.024        +0.027        -0.044            +0.171       +0.086          +0.085  -0.087        +1.000            -0.194      -0.011
+--- DataSetInfo              : log(MinPt_BHiggs):          +0.354            -0.011          -0.019        -0.009        +0.068            -0.648       -0.213          +0.110  +0.373        -0.194            +1.000      +0.005
+--- DataSetInfo              :       Charge_BTop:          -0.013            -0.002          +0.005        -0.008        +0.000            -0.021       -0.014          -0.000  +0.013        -0.011            +0.005      +1.000
+--- DataSetInfo              : ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+--- DataSetInfo              : Correlation matrix (Background):
+--- DataSetInfo              : ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+--- DataSetInfo              :                    log(Mass_Higgs) log(Mass_BTopLep) abs(Eta_Recoil) PassBTag_BTop NumBTag_Higgs DeltaR_BJetsHiggs DeltaR_BTopW DeltaR_TopHiggs   RelHt MaxEta_BHiggs log(MinPt_BHiggs) Charge_BTop
+--- DataSetInfo              :   log(Mass_Higgs):          +1.000            +0.059          -0.051        +0.019        +0.015            +0.681       +0.013          +0.084  -0.106        +0.251            +0.595      -0.006
+--- DataSetInfo              : log(Mass_BTopLep):          +0.059            +1.000          -0.005        +0.033        +0.018            +0.039       +0.515          +0.056  -0.220        -0.015            +0.019      -0.030
+--- DataSetInfo              :   abs(Eta_Recoil):          -0.051            -0.005          +1.000        +0.042        +0.068            -0.021       +0.003          -0.018  +0.043        -0.098            -0.010      +0.025
+--- DataSetInfo              :     PassBTag_BTop:          +0.019            +0.033          +0.042        +1.000        -0.123            +0.041       -0.071          -0.038  +0.095        +0.032            +0.003      +0.038
+--- DataSetInfo              :     NumBTag_Higgs:          +0.015            +0.018          +0.068        -0.123        +1.000            -0.116       +0.035          -0.050  +0.198        -0.283            +0.262      -0.003
+--- DataSetInfo              : DeltaR_BJetsHiggs:          +0.681            +0.039          -0.021        +0.041        -0.116            +1.000       +0.067          +0.031  -0.391        +0.352            +0.042      -0.008
+--- DataSetInfo              :      DeltaR_BTopW:          +0.013            +0.515          +0.003        -0.071        +0.035            +0.067       +1.000          +0.041  -0.455        -0.005            -0.003      -0.009
+--- DataSetInfo              :   DeltaR_TopHiggs:          +0.084            +0.056          -0.018        -0.038        -0.050            +0.031       +0.041          +1.000  -0.014        +0.125            +0.068      -0.018
+--- DataSetInfo              :             RelHt:          -0.106            -0.220          +0.043        +0.095        +0.198            -0.391       -0.455          -0.014  +1.000        -0.057            +0.016      +0.003
+--- DataSetInfo              :     MaxEta_BHiggs:          +0.251            -0.015          -0.098        +0.032        -0.283            +0.352       -0.005          +0.125  -0.057        +1.000            -0.151      -0.009
+--- DataSetInfo              : log(MinPt_BHiggs):          +0.595            +0.019          -0.010        +0.003        +0.262            +0.042       -0.003          +0.068  +0.016        -0.151            +1.000      +0.001
+--- DataSetInfo              :       Charge_BTop:          -0.006            -0.030          +0.025        +0.038        -0.003            -0.008       -0.009          -0.018  +0.003        -0.009            +0.001      +1.000
+--- DataSetInfo              : ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+--- DataSetFactory           :  
+--- Factory                  :  
+--- Factory                  : Train all methods for Classification ...
+--- Factory                  : Train method: GlobalTHReco_BFGS for Classification
+--- Norm                     : Preparing the transformation.
+--- TFHandler_GlobalTHReco...: --------------------------------------------------------------------------------------------------------
+--- TFHandler_GlobalTHReco...:          Variable                 Mean                 RMS         [        Min                 Max ]
+--- TFHandler_GlobalTHReco...: --------------------------------------------------------------------------------------------------------
+--- TFHandler_GlobalTHReco...:   log(Mass_Higgs):           -0.14983            0.20639   [            -1.0000             1.0000 ]
+--- TFHandler_GlobalTHReco...: log(Mass_BTopLep):           0.043647            0.20767   [            -1.0000             1.0000 ]
+--- TFHandler_GlobalTHReco...:   abs(Eta_Recoil):            0.20577            0.54554   [            -1.0000             1.0000 ]
+--- TFHandler_GlobalTHReco...:     PassBTag_BTop:            0.56536            0.82485   [            -1.0000             1.0000 ]
+--- TFHandler_GlobalTHReco...:     NumBTag_Higgs:            0.57162            0.56025   [            -1.0000             1.0000 ]
+--- TFHandler_GlobalTHReco...: DeltaR_BJetsHiggs:           -0.39140            0.33338   [            -1.0000             1.0000 ]
+--- TFHandler_GlobalTHReco...:      DeltaR_BTopW:           -0.39266            0.25203   [            -1.0000             1.0000 ]
+--- TFHandler_GlobalTHReco...:   DeltaR_TopHiggs:           -0.33113            0.22014   [            -1.0000             1.0000 ]
+--- TFHandler_GlobalTHReco...:             RelHt:           0.055019            0.37895   [            -1.0000             1.0000 ]
+--- TFHandler_GlobalTHReco...:     MaxEta_BHiggs:          -0.055293            0.47533   [            -1.0000             1.0000 ]
+--- TFHandler_GlobalTHReco...: log(MinPt_BHiggs):           -0.37584            0.32183   [            -1.0000             1.0000 ]
+--- TFHandler_GlobalTHReco...:       Charge_BTop:          -0.040108            0.29593   [            -1.0000             1.0000 ]
+--- TFHandler_GlobalTHReco...: --------------------------------------------------------------------------------------------------------
+--- GlobalTHReco_BFGS        : Begin training
+--- GlobalTHReco_BFGS        : Training Network
+--- GlobalTHReco_BFGS        : End of training                                              
+--- GlobalTHReco_BFGS        : Elapsed time for training with 28234 events: [1;31m1.74e+03 sec[0m         
+--- GlobalTHReco_BFGS        : Create MVA output for classification on training sample
+--- GlobalTHReco_BFGS        : Evaluation of GlobalTHReco_BFGS on training sample (28234 events)
+--- GlobalTHReco_BFGS        : Elapsed time for evaluation of 28234 events: [1;31m0.361 sec[0m       
+--- GlobalTHReco_BFGS        : Creating weight file in xml format: [0;36mweights/GlobalTHReco_GlobalTHReco_BFGS.weights.xml[0m
+--- GlobalTHReco_BFGS        : Creating standalone response class: [0;36mweights/GlobalTHReco_GlobalTHReco_BFGS.class.C[0m
+--- GlobalTHReco_BFGS        : Write special histos to file: infoGlobalTHReco.root:/Method_MLP/GlobalTHReco_BFGS
+--- Factory                  : Training finished
+--- Factory                  : 
+--- Factory                  : Ranking input variables (method specific)...
+--- GlobalTHReco_BFGS        : Ranking result (top variable is best ranked)
+--- GlobalTHReco_BFGS        : ------------------------------------------
+--- GlobalTHReco_BFGS        : Rank : Variable          : Importance
+--- GlobalTHReco_BFGS        : ------------------------------------------
+--- GlobalTHReco_BFGS        :    1 : PassBTag_BTop     : 2.394e+01
+--- GlobalTHReco_BFGS        :    2 : abs_Eta_Recoil_   : 1.235e+01
+--- GlobalTHReco_BFGS        :    3 : NumBTag_Higgs     : 1.053e+01
+--- GlobalTHReco_BFGS        :    4 : log_Mass_BTopLep_ : 8.040e+00
+--- GlobalTHReco_BFGS        :    5 : log_Mass_Higgs_   : 7.368e+00
+--- GlobalTHReco_BFGS        :    6 : log_MinPt_BHiggs_ : 6.286e+00
+--- GlobalTHReco_BFGS        :    7 : DeltaR_BJetsHiggs : 6.100e+00
+--- GlobalTHReco_BFGS        :    8 : MaxEta_BHiggs     : 5.215e+00
+--- GlobalTHReco_BFGS        :    9 : DeltaR_BTopW      : 4.834e+00
+--- GlobalTHReco_BFGS        :   10 : RelHt             : 4.472e+00
+--- GlobalTHReco_BFGS        :   11 : DeltaR_TopHiggs   : 3.301e+00
+--- GlobalTHReco_BFGS        :   12 : Charge_BTop       : 1.641e+00
+--- GlobalTHReco_BFGS        : ------------------------------------------
+--- Factory                  : 
+--- Factory                  : === Destroy and recreate all methods via weight files for testing ===
+--- Factory                  : 
+--- MethodBase               : Reading weight file: [0;36mweights/GlobalTHReco_GlobalTHReco_BFGS.weights.xml[0m
+--- GlobalTHReco_BFGS        : Read method "GlobalTHReco_BFGS" of type "MLP"
+--- GlobalTHReco_BFGS        : MVA method was trained with TMVA Version: 4.2.0
+--- GlobalTHReco_BFGS        : MVA method was trained with ROOT Version: 5.34/11
+--- GlobalTHReco_BFGS        : Building Network
+--- GlobalTHReco_BFGS        : Initializing weights
+--- Factory                  : Test all methods...
+--- Factory                  : Test method: GlobalTHReco_BFGS for Classification performance
+--- GlobalTHReco_BFGS        : Evaluation of GlobalTHReco_BFGS on testing sample (89126 events)
+--- GlobalTHReco_BFGS        : Elapsed time for evaluation of 89126 events: [1;31m1.08 sec[0m       
+--- Factory                  : Evaluate all methods...
+--- Factory                  : Evaluate classifier: GlobalTHReco_BFGS
+--- TFHandler_GlobalTHReco...: --------------------------------------------------------------------------------------------------------
+--- TFHandler_GlobalTHReco...:          Variable                 Mean                 RMS         [        Min                 Max ]
+--- TFHandler_GlobalTHReco...: --------------------------------------------------------------------------------------------------------
+--- TFHandler_GlobalTHReco...:   log(Mass_Higgs):           -0.14763            0.20727   [            -1.0578             1.0161 ]
+--- TFHandler_GlobalTHReco...: log(Mass_BTopLep):           0.044990            0.20901   [            -1.1087             1.0673 ]
+--- TFHandler_GlobalTHReco...:   abs(Eta_Recoil):            0.21213            0.54993   [            -1.0001             1.0000 ]
+--- TFHandler_GlobalTHReco...:     PassBTag_BTop:            0.56680            0.82385   [            -1.0000             1.0000 ]
+--- TFHandler_GlobalTHReco...:     NumBTag_Higgs:            0.56895            0.56558   [            -1.0000             1.0000 ]
+--- TFHandler_GlobalTHReco...: DeltaR_BJetsHiggs:           -0.38835            0.33433   [            -1.0025            0.97122 ]
+--- TFHandler_GlobalTHReco...:      DeltaR_BTopW:           -0.39435            0.25136   [            -1.0035             1.2144 ]
+--- TFHandler_GlobalTHReco...:   DeltaR_TopHiggs:           -0.32952            0.22033   [            -1.0089             1.0072 ]
+--- TFHandler_GlobalTHReco...:             RelHt:           0.058201            0.38113   [            -1.0538             1.0047 ]
+--- TFHandler_GlobalTHReco...:     MaxEta_BHiggs:          -0.051034            0.47273   [            -1.0024             1.0002 ]
+--- TFHandler_GlobalTHReco...: log(MinPt_BHiggs):           -0.37485            0.32698   [            -1.0003             1.1846 ]
+--- TFHandler_GlobalTHReco...:       Charge_BTop:          -0.040028            0.29513   [            -1.0013             1.0000 ]
+--- TFHandler_GlobalTHReco...: --------------------------------------------------------------------------------------------------------
+--- GlobalTHReco_BFGS        : Loop over test events and fill histograms with classifier response...
+--- Factory                  : Write evaluation histograms to file
+--- TFHandler_GlobalTHReco...: Plot event variables for GlobalTHReco_BFGS
+--- TFHandler_GlobalTHReco...: --------------------------------------------------------------------------------------------------------
+--- TFHandler_GlobalTHReco...:          Variable                 Mean                 RMS         [        Min                 Max ]
+--- TFHandler_GlobalTHReco...: --------------------------------------------------------------------------------------------------------
+--- TFHandler_GlobalTHReco...:   log(Mass_Higgs):           -0.14763            0.20727   [            -1.0578             1.0161 ]
+--- TFHandler_GlobalTHReco...: log(Mass_BTopLep):           0.044990            0.20901   [            -1.1087             1.0673 ]
+--- TFHandler_GlobalTHReco...:   abs(Eta_Recoil):            0.21213            0.54993   [            -1.0001             1.0000 ]
+--- TFHandler_GlobalTHReco...:     PassBTag_BTop:            0.56680            0.82385   [            -1.0000             1.0000 ]
+--- TFHandler_GlobalTHReco...:     NumBTag_Higgs:            0.56895            0.56558   [            -1.0000             1.0000 ]
+--- TFHandler_GlobalTHReco...: DeltaR_BJetsHiggs:           -0.38835            0.33433   [            -1.0025            0.97122 ]
+--- TFHandler_GlobalTHReco...:      DeltaR_BTopW:           -0.39435            0.25136   [            -1.0035             1.2144 ]
+--- TFHandler_GlobalTHReco...:   DeltaR_TopHiggs:           -0.32952            0.22033   [            -1.0089             1.0072 ]
+--- TFHandler_GlobalTHReco...:             RelHt:           0.058201            0.38113   [            -1.0538             1.0047 ]
+--- TFHandler_GlobalTHReco...:     MaxEta_BHiggs:          -0.051034            0.47273   [            -1.0024             1.0002 ]
+--- TFHandler_GlobalTHReco...: log(MinPt_BHiggs):           -0.37485            0.32698   [            -1.0003             1.1846 ]
+--- TFHandler_GlobalTHReco...:       Charge_BTop:          -0.040028            0.29513   [            -1.0013             1.0000 ]
+--- TFHandler_GlobalTHReco...: --------------------------------------------------------------------------------------------------------
+--- TFHandler_GlobalTHReco...: Create scatter and profile plots in target-file directory: 
+--- TFHandler_GlobalTHReco...: infoGlobalTHReco.root:/Method_MLP/GlobalTHReco_BFGS/CorrelationPlots
+--- Factory                  : Correlations between input variables and MVA response (signal):
+--- Factory                  : ------------------------------------
+--- Factory                  :                    GlobalTHReco_BFGS
+--- Factory                  :   log(Mass_Higgs):            +0.140
+--- Factory                  : log(Mass_BTopLep):            -0.059
+--- Factory                  :   abs(Eta_Recoil):            +0.173
+--- Factory                  :     PassBTag_BTop:            +0.240
+--- Factory                  :     NumBTag_Higgs:            +0.162
+--- Factory                  : DeltaR_BJetsHiggs:            -0.422
+--- Factory                  :      DeltaR_BTopW:            -0.215
+--- Factory                  :   DeltaR_TopHiggs:            +0.128
+--- Factory                  :             RelHt:            +0.375
+--- Factory                  :     MaxEta_BHiggs:            -0.114
+--- Factory                  : log(MinPt_BHiggs):            +0.343
+--- Factory                  :       Charge_BTop:            -0.201
+--- Factory                  : ------------------------------------
+--- Factory                  : 
+--- Factory                  : Correlations between input variables and MVA response (background):
+--- Factory                  : ------------------------------------
+--- Factory                  :                    GlobalTHReco_BFGS
+--- Factory                  :   log(Mass_Higgs):            -0.196
+--- Factory                  : log(Mass_BTopLep):            -0.275
+--- Factory                  :   abs(Eta_Recoil):            +0.142
+--- Factory                  :     PassBTag_BTop:            +0.148
+--- Factory                  :     NumBTag_Higgs:            +0.288
+--- Factory                  : DeltaR_BJetsHiggs:            -0.230
+--- Factory                  :      DeltaR_BTopW:            -0.176
+--- Factory                  :   DeltaR_TopHiggs:            -0.038
+--- Factory                  :             RelHt:            +0.286
+--- Factory                  :     MaxEta_BHiggs:            -0.169
+--- Factory                  : log(MinPt_BHiggs):            -0.024
+--- Factory                  :       Charge_BTop:            -0.077
+--- Factory                  : ------------------------------------
+--- Factory                  : 
+--- Factory                  : The following "overlap" matrices contain the fraction of events for which 
+--- Factory                  : the MVAs 'i' and 'j' have returned conform answers about "signal-likeness"
+--- Factory                  : An event is signal-like, if its MVA output exceeds the following value:
+--- Factory                  : -------------------------------------
+--- Factory                  :            Method:         Cut value:
+--- Factory                  : -------------------------------------
+--- Factory                  : GlobalTHReco_BFGS:            +0.598
+--- Factory                  : -------------------------------------
+--- Factory                  : which correspond to the working point: eff(signal) = 1 - eff(background)
+--- Factory                  : 
+--- Factory                  : Evaluation results ranked by best signal efficiency and purity (area)
+--- Factory                  : --------------------------------------------------------------------------------
+--- Factory                  : MVA              Signal efficiency at bkg eff.(error):       | Sepa-    Signifi- 
+--- Factory                  : Method:          @B=0.01    @B=0.10    @B=0.30    ROC-integ. | ration:  cance:   
+--- Factory                  : --------------------------------------------------------------------------------
+--- Factory                  : GlobalTHReco_BFGS: 0.239(182)  0.762(181)  0.977(63)    0.932    | 0.604    1.684
+--- Factory                  : --------------------------------------------------------------------------------
+--- Factory                  : 
+--- Factory                  : Testing efficiency compared to training efficiency (overtraining check)
+--- Factory                  : --------------------------------------------------------------------------------
+--- Factory                  : MVA              Signal efficiency: from test sample (from training sample) 
+--- Factory                  : Method:          @B=0.01             @B=0.10            @B=0.30   
+--- Factory                  : --------------------------------------------------------------------------------
+--- Factory                  : GlobalTHReco_BFGS: 0.239 (0.245)       0.762 (0.759)      0.977 (0.975)
+--- Factory                  : --------------------------------------------------------------------------------
+--- Factory                  : 
+--- Dataset:Default          : Created tree 'TestTree' with 89126 events
+--- Dataset:Default          : Created tree 'TrainTree' with 28234 events
+--- Factory                  :   
+--- Factory                  : [1mThank you for using TMVA![0m
+--- Factory                  : [1mFor citation information, please visit: http://tmva.sf.net/citeTMVA.html[0m

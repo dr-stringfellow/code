@@ -1,0 +1,1 @@
+th_roccomparisons_x -input /home/bmaier/thanalysis/th_Lhcp14/bdt-class/bdt_class/BDT_tHnominal.root /home/bmaier/thanalysis/th_Lhcp14/bdt-class-whbbm/bdt_class/BDT_tHnominal.root -lumi 19709 -batch 1 -varexpr "bdtg_zoom"

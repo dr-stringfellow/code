@@ -1,0 +1,107 @@
+[
+[
+"log_Mass_Higgs_",
+2.5,
+7.2,
+35,
+"log m (H)"
+],
+[
+"log_Mass_BTopLep_",
+2.5,
+7.2,
+35,
+"log m (b_{t} + l)"
+],
+[
+"abs_Eta_Recoil_",
+0,
+4.7,
+-1,
+"|#eta (light jet)|"
+],
+[
+"PassBTag_BTop",
+-0.5,
+1.5,
+2,
+"tagged jet (b_{t})"
+],
+[
+"NumBTag_Higgs",
+-0.5,
+2.5,
+3,
+"# b tags of Higgs jets"
+],
+[
+"DeltaR_BJetsHiggs",
+0,
+6.0,
+35,
+"#DeltaR (Higgs jets)"
+],
+[
+"DeltaR_BTopW",
+0,
+7.0,
+35,
+"#DeltaR (b_{t},W)"
+],
+[
+"DeltaR_TopHiggs",
+0,
+6.5,
+35,
+"#DeltaR (H,t)"
+],
+[
+"RelHt",
+0,
+1.0,
+35,
+"relative H_{T}"
+],
+[
+"MaxEta_BHiggs",
+0,
+2.4,
+35,
+"max #eta (Higgs jets)"
+],
+[
+"log_MinPt_BHiggs_",
+2.8,
+6.2,
+35,
+"log min(p_{T} (Higgs jets))"
+],
+[
+"Charge_BTop",
+-0.9199999999999591,
+1.0,
+35,
+"q(b_{t}) #upoint q (l)"
+],
+[
+"Weight",
+-99999,
+-99999.0,
+100,
+"weight"
+],
+[
+"GlobalTHReco_BFGS",
+-0.4800000000000182,
+2.0,
+100,
+"GlobalTHReco_BFGS"
+],
+[
+"weight",
+-99999,
+-99999.0,
+100,
+"weight"
+]
+]

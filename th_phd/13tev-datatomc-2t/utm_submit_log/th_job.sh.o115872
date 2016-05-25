@@ -1,0 +1,461 @@
+/usr/users/bmaier
+/usr/users/bmaier
+CommandLine INFO: include configuration file: ../../samples/13tev/Data.config
+CommandLine INFO: include configuration file: ../../samples/13tev/TH125-madgraph.config
+CommandLine INFO: include configuration file: ../../samples/13tev/TTbar-powheg_bb.config
+CommandLine INFO: include configuration file: ../../samples/13tev/TTbar-powheg_2b.config
+CommandLine INFO: include configuration file: ../../samples/13tev/TTbar-powheg_b.config
+CommandLine INFO: include configuration file: ../../samples/13tev/TTbar-powheg_cc.config
+CommandLine INFO: include configuration file: ../../samples/13tev/TTbar-powheg_lf.config
+CommandLine INFO: include configuration file: ../../samples/13tev/TTH-powheg.config
+CommandLine INFO: include configuration file: ../../samples/13tev/Electroweak.config
+CommandLine INFO: include configuration file: ../../labels/2fbinv.config
+------------------------------------------------------------
+th_datatomc_x options:
+------------------------------------------------------------
+data                    =               SingleMuon_json.root
+                                    SingleMuon_json_ext.root
+                                         SingleEle_json.root
+                                     SingleEle_json_ext.root
+mcs                     =TH125-madgraph-13tev:THQ_Hincl_13TeV-madgraph-pythia8_TuneCUETP8M1.root
+TH125-madgraph-13tev:THW_Hincl_13TeV-madgraph-pythia8_TuneCUETP8M1.root
+   TTbar-powheg_bb:TT_TuneCUETP8M1_13TeV-powheg-pythia8.root
+   TTbar-powheg_2b:TT_TuneCUETP8M1_13TeV-powheg-pythia8.root
+    TTbar-powheg_b:TT_TuneCUETP8M1_13TeV-powheg-pythia8.root
+   TTbar-powheg_cc:TT_TuneCUETP8M1_13TeV-powheg-pythia8.root
+   TTbar-powheg_lf:TT_TuneCUETP8M1_13TeV-powheg-pythia8.root
+           TTH-powheg:ttHTobb_M125_13TeV_powheg_pythia8.root
+Electroweak:WJetsToLNu_TuneCUETP8M1_13TeV-madgraphMLM-pythia8.root
+              Electroweak:WW_TuneCUETP8M1_13TeV-pythia8.root
+              Electroweak:WZ_TuneCUETP8M1_13TeV-pythia8.root
+              Electroweak:ZZ_TuneCUETP8M1_13TeV-pythia8.root
+Electroweak:ST_tW_antitop_5f_inclusiveDecays_13TeV-powheg-pythia8_TuneCUETP8M1.root
+Electroweak:ST_tW_top_5f_inclusiveDecays_13TeV-powheg-pythia8_TuneCUETP8M1.root
+Electroweak:ST_t-channel_antitop_4f_leptonDecays_13TeV-powheg-pythia8_TuneCUETP8M1.root
+Electroweak:ST_t-channel_top_4f_leptonDecays_13TeV-powheg-pythia8_TuneCUETP8M1.root
+signal                  =TH125-madgraph:THQ_Hincl_13TeV-madgraph-pythia8_TuneCUETP8M1.root
+TH125-madgraph:THW_Hincl_13TeV-madgraph-pythia8_TuneCUETP8M1.root
+signalfac               =                                 -1
+mcref                   =                                   
+dirname                 =                                utm
+filesuffix              =                              .root
+treename                =                                  t
+datapath                = /storage/jbod/bmaier/13tev/data_2t
+mcpath                  =      /storage/jbod/bmaier/13tev/2t
+mcsubpath               =                                   
+cuts                    =(((nmu==1 && nel==0)*((Alt$(mupt[0],0))>26)*(met>35)*((Alt$(abs(mueta[0]),0))>0 && (Alt$(abs(mueta[0]),0))<2.1)) || ((nel==1 && nmu ==0)*((Alt$(elpt[0],0))>30)*(met>45)*((Alt$(abs(eleta[0]),0))>0 && (Alt$(abs(eleta[0]),0))<2.1)))
+mccuts                  =                                   
+datacuts                =                                   
+mcweights               =                          Weight_PU
+                                                  Weight_CSV
+                                                sign(Weight)
+                     TTbar-powheg_lf:((genevt_ttxid%100)==0)
+                     TTbar-powheg_b:((genevt_ttxid%100)==51)
+                    TTbar-powheg_2b:((genevt_ttxid%100)==52)
+TTbar-powheg_bb:((genevt_ttxid%100)==53||(genevt_ttxid%100)==54||(genevt_ttxid%100)==55)
+TTbar-powheg_cc:((genevt_ttxid%100)==41||(genevt_ttxid%100)==42||(genevt_ttxid%100)==43||(genevt_ttxid%100)==44||(genevt_ttxid%100)==45)
+mcweightsup             =                                   
+mcweightsdown           =                                   
+ignore                  =                                   
+tightcut                =                                iso
+mm                      =                                   
+epssig                  =                      0.99 +- 0.010
+epsqcd                  =                      0.40 +- 0.025
+varname                 =                             Jet1Pt
+varexpr                 =                                   
+xtitle                  =                                   
+ytitle                  =                         Events/Bin
+nbinsx                  =                                 30
+binsx                   =                                   
+xmin                    =                                  0
+xmax                    =                                400
+ymin                    =                                 -1
+overflow                =                              false
+underflow               =                              false
+logx                    =                              false
+logy                    =                              false
+residuals               =                               true
+resmax                  =                                0.6
+fitresids               =                                   
+stats                   =                                  0
+lumi                    =                                  0
+log_min                 =                               0.01
+leginplot               =                              false
+legx                    =                              0.775
+legy                    =                               0.93
+legw                    =                               0.25
+legh                    =                               0.15
+datalabel               =                               Data
+mclabels                =            TH125-madgraph-13tev:tH
+                                 TTbar-powheg_bb:t#bar{t}+bb
+                                 TTbar-powheg_2b:t#bar{t}+2b
+                                   TTbar-powheg_b:t#bar{t}+b
+                                 TTbar-powheg_cc:t#bar{t}+cc
+                                 TTbar-powheg_lf:t#bar{t}+lf
+                                        TTH-powheg:t#bar{t}H
+                                              Electroweak:EW
+mccolors                =           TH125-madgraph-13tev:633
+                                         TTbar-powheg_bb:805
+                                         TTbar-powheg_2b:634
+                                          TTbar-powheg_b:803
+                                         TTbar-powheg_cc:800
+                                         TTbar-powheg_lf:797
+                                              TTH-powheg:616
+                                             Electroweak:417
+labels                  =    0.60:0.945:2.2 fb^{-1} (13 TeV)
+                          0.175:0.86:Muon + electron channel
+                                     0.175:0.80:2 tag region
+stackmc                 =                                  1
+reversemc               =                              false
+batch                   =                                  1
+formats                 =                                pdf
+opath                   =                        ./pdf_tHlep
+output                  =                                   
+prefix                  =                         tHlep_2tag
+suffix                  =                              lumi0
+chi2test                =                                  0
+kstest                  =                                  0
+mcuncert                =                                  1
+printdiff               =                              false
+printint                =                              false
+plotsys                 =                              false
+dd_file                 =                                   
+dd_hist                 =                                   
+poisson                 =                                  1
+binlabels               =                                   
+up_uncfile              =                                   
+down_uncfile            =                                   
+------------------------------------------------------------
+
+===================================================================================================
+FILENAME                                                            EVENTS      SELECTION  PRESCALE
+===================================================================================================
+/storage/jbod/bmaier/13tev/data_2t/SingleMuon_json.root               3050              1         1
+/storage/jbod/bmaier/13tev/data_2t/SingleMuon_json_ext.root           8260              1         1
+/storage/jbod/bmaier/13tev/data_2t/SingleEle_json.root                2183              1         1
+/storage/jbod/bmaier/13tev/data_2t/SingleEle_json_ext.root            5676              1         1
+===================================================================================================
+
+=============================================================================================================================================================================
+MC SAMPLE      FILENAME                                                                                                     EVENTS  XSEC[PB]            EFF  KFAC     INTLUMI
+=============================================================================================================================================================================
+Electroweak    /storage/jbod/bmaier/13tev/2t/ST_t-channel_top_4f_leptonDecays_13TeV-powheg-pythia8_TuneCUETP8M1.root         10144      45.3     0.00329351     1       67991
+Electroweak    /storage/jbod/bmaier/13tev/2t/ST_t-channel_antitop_4f_leptonDecays_13TeV-powheg-pythia8_TuneCUETP8M1.root      5351        27     0.00334961     1     59166.6
+Electroweak    /storage/jbod/bmaier/13tev/2t/ST_tW_top_5f_inclusiveDecays_13TeV-powheg-pythia8_TuneCUETP8M1.root              4135      35.9     0.00415053     1     27750.9
+Electroweak    /storage/jbod/bmaier/13tev/2t/ST_tW_antitop_5f_inclusiveDecays_13TeV-powheg-pythia8_TuneCUETP8M1.root          4110      35.9     0.00418865     1     27332.1
+Electroweak    /storage/jbod/bmaier/13tev/2t/ZZ_TuneCUETP8M1_13TeV-pythia8.root                                                 89      15.4    8.89731e-05     1     64954.7
+Electroweak    /storage/jbod/bmaier/13tev/2t/WZ_TuneCUETP8M1_13TeV-pythia8.root                                                 78      44.9    8.12876e-05     1       21371
+Electroweak    /storage/jbod/bmaier/13tev/2t/WW_TuneCUETP8M1_13TeV-pythia8.root                                                 22     118.7    2.22961e-05     1     8312.72
+Electroweak    /storage/jbod/bmaier/13tev/2t/WJetsToLNu_TuneCUETP8M1_13TeV-madgraphMLM-pythia8.root                            192   61526.7    2.67548e-06     1     1166.37
+TTH-powheg     /storage/jbod/bmaier/13tev/2t/ttHTobb_M125_13TeV_powheg_pythia8.root                                         200782    0.2934      0.0511357     1 1.33826e+07
+TTbar-powheg_lf/storage/jbod/bmaier/13tev/2t/TT_TuneCUETP8M1_13TeV-powheg-pythia8.root                                     1467688    831.76      0.0126448     1      139548
+TTbar-powheg_cc/storage/jbod/bmaier/13tev/2t/TT_TuneCUETP8M1_13TeV-powheg-pythia8.root                                     1467688    831.76      0.0126448     1      139548
+TTbar-powheg_b /storage/jbod/bmaier/13tev/2t/TT_TuneCUETP8M1_13TeV-powheg-pythia8.root                                     1467688    831.76      0.0126448     1      139548
+TTbar-powheg_2b/storage/jbod/bmaier/13tev/2t/TT_TuneCUETP8M1_13TeV-powheg-pythia8.root                                     1467688    831.76      0.0126448     1      139548
+TTbar-powheg_bb/storage/jbod/bmaier/13tev/2t/TT_TuneCUETP8M1_13TeV-powheg-pythia8.root                                     1467688    831.76      0.0126448     1      139548
+TH125-madgraph-13tev/storage/jbod/bmaier/13tev/2t/THW_Hincl_13TeV-madgraph-pythia8_TuneCUETP8M1.root                              51623    0.1472      0.0354898     1  9.8817e+06
+TH125-madgraph-13tev/storage/jbod/bmaier/13tev/2t/THQ_Hincl_13TeV-madgraph-pythia8_TuneCUETP8M1.root                             148684    0.2583      0.0429439     1 1.34041e+07
+=============================================================================================================================================================================
+
+
+====================================================================================================================================================
+MC SAMPLE      FILENAME                                                                            EVENTS  XSEC[PB]            EFF  KFAC     INTLUMI
+====================================================================================================================================================
+TH125-madgraph /storage/jbod/bmaier/13tev/2t/THQ_Hincl_13TeV-madgraph-pythia8_TuneCUETP8M1.root    148684    0.2583      0.0429439     1 1.34041e+07
+TH125-madgraph /storage/jbod/bmaier/13tev/2t/THW_Hincl_13TeV-madgraph-pythia8_TuneCUETP8M1.root     51623    0.1472      0.0354898     1  9.8817e+06
+====================================================================================================================================================
+
+[[1;31m%[0m[1;31m%[0m------------------] [1;31m10%[0m completed.  [[1;31m%[0m[1;31m%[0m[1;31m%[0m[1;31m%[0m[1;31m%[0m---------------] [1;31m25%[0m completed.  [[1;33m%[0m[1;33m%[0m[1;33m%[0m[1;33m%[0m[1;33m%[0m[1;33m%[0m[1;33m%[0m[1;33m%[0m------------] [1;33m40%[0m completed.  [[1;33m%[0m[1;33m%[0m[1;33m%[0m[1;33m%[0m[1;33m%[0m[1;33m%[0m[1;33m%[0m[1;33m%[0m[1;33m%[0m[1;33m%[0m----------] [1;33m50%[0m completed.  [[1;33m%[0m[1;33m%[0m[1;33m%[0m[1;33m%[0m[1;33m%[0m[1;33m%[0m[1;33m%[0m[1;33m%[0m[1;33m%[0m[1;33m%[0m[1;33m%[0m[1;33m%[0m--------] [1;33m60%[0m completed.  [[1;33m%[0m[1;33m%[0m[1;33m%[0m[1;33m%[0m[1;33m%[0m[1;33m%[0m[1;33m%[0m[1;33m%[0m[1;33m%[0m[1;33m%[0m[1;33m%[0m[1;33m%[0m[1;33m%[0m[1;33m%[0m[1;33m%[0m-----] [1;33m75%[0m completed.  [[1;32m%[0m[1;32m%[0m[1;32m%[0m[1;32m%[0m[1;32m%[0m[1;32m%[0m[1;32m%[0m[1;32m%[0m[1;32m%[0m[1;32m%[0m[1;32m%[0m[1;32m%[0m[1;32m%[0m[1;32m%[0m[1;32m%[0m[1;32m%[0m[1;32m%[0m[1;32m%[0m--] [1;32m90%[0m completed.  [[1;32m%[0m[1;32m%[0m[1;32m%[0m[1;32m%[0m[1;32m%[0m[1;32m%[0m[1;32m%[0m[1;32m%[0m[1;32m%[0m[1;32m%[0m[1;32m%[0m[1;32m%[0m[1;32m%[0m[1;32m%[0m[1;32m%[0m[1;32m%[0m[1;32m%[0m[1;32m%[0m[1;32m%[0m[1;32m%[0m] [1;32m100%[0m completed.  1th0
+2th0
+3th0.502756
+4th24.8634
+5th38.7533
+6th81.0965
+7th75.4178
+8th65.6303
+9th54.4538
+10th48.4161
+11th46.9213
+12th39.3592
+13th31.591
+14th28.7777
+15th24.5602
+16th30.4691
+17th18.4957
+18th11.3137
+19th16.1138
+20th19.454
+21th11.0455
+22th11.7701
+23th9.38956
+24th6.13531
+25th13.1082
+26th7.06718
+27th2.83701
+28th3.09338
+29th2.0764
+30th2.48495
+1th0
+2th0
+3th2.67254
+4th135.149
+5th551.11
+6th994.583
+7th1145.25
+8th1070.52
+9th928.481
+10th766.804
+11th627.555
+12th505.344
+13th405.408
+14th321.329
+15th258.002
+16th217.048
+17th165.126
+18th129.993
+19th113.561
+20th94.7746
+21th73.9504
+22th66.9572
+23th52.073
+24th40.5409
+25th43.6017
+26th31.6003
+27th25.2576
+28th21.5706
+29th17.5497
+30th16.1369
+1th0
+2th0
+3th3.10057
+4th150.42
+5th631.188
+6th1146.65
+7th1337.28
+8th1261.25
+9th1098.76
+10th919.556
+11th752.859
+12th606.175
+13th495.611
+14th393.127
+15th317.565
+16th264.755
+17th203.807
+18th161.126
+19th142.503
+20th116.874
+21th94.0535
+22th83.1409
+23th66.2717
+24th51.0466
+25th53.5859
+26th40.3434
+27th32.647
+28th28.4242
+29th23.5597
+30th20.8677
+1th0
+2th0
+3th3.28677
+4th155.733
+5th654.399
+6th1189.71
+7th1389.73
+8th1317.19
+9th1147.65
+10th964.796
+11th791.669
+12th637.161
+13th519.963
+14th414.928
+15th334.474
+16th278.214
+17th214.372
+18th170.929
+19th150.233
+20th123.3
+21th99.7369
+22th87.7944
+23th69.7672
+24th54.3536
+25th56.466
+26th42.8882
+27th34.3135
+28th30.2533
+29th25.2212
+30th22.2528
+1th0
+2th0
+3th3.28778
+4th156.768
+5th658.719
+6th1201.73
+7th1406.73
+8th1335.66
+9th1165.17
+10th980.964
+11th806.777
+12th650.963
+13th531.844
+14th425.894
+15th344.788
+16th286.283
+17th220.782
+18th177.119
+19th155.411
+20th127.262
+21th103.888
+22th91.9159
+23th72.2244
+24th56.792
+25th58.3974
+26th44.9686
+27th35.9667
+28th32.2296
+29th26.6805
+30th23.8111
+1th0
+2th0
+3th3.34429
+4th159.675
+5th669.483
+6th1224.92
+7th1438.78
+8th1371.31
+9th1200.02
+10th1011.91
+11th834.229
+12th673.87
+13th552.763
+14th441.932
+15th359.449
+16th298.516
+17th230.521
+18th185.62
+19th163.6
+20th134.364
+21th108.455
+22th96.5006
+23th75.5933
+24th61.0587
+25th60.9897
+26th47.5266
+27th37.9538
+28th34.3717
+29th28.3861
+30th25.6755
+1th0
+2th0
+3th3.34802
+4th159.802
+5th670.07
+6th1226.02
+7th1440.21
+8th1372.85
+9th1201.57
+10th1013.35
+11th835.556
+12th675.097
+13th553.917
+14th442.935
+15th360.318
+16th299.342
+17th231.261
+18th186.24
+19th164.159
+20th134.841
+21th108.873
+22th96.8804
+23th75.9216
+24th61.3395
+25th61.2476
+26th47.7473
+27th38.1521
+28th34.5521
+29th28.5456
+30th25.8445
+ i : 3 bin :  -0.402632 err :  0.422403
+ i : 3 bin : -0.402632 err- :  0.385844 err+ :  0.787886
+I am here
+ i : 4 bin :  -0.105142 err :  0.0748318
+ i : 4 bin : -0.105142 err- :  0.0717683 err+ :  0.0780261
+I am here
+ i : 5 bin :  -0.0135366 err :  0.038369
+ i : 5 bin : -0.0135366 err- :  0.03763 err+ :  0.0391224
+I am here
+ i : 6 bin :  -0.0220426 err :  0.028243
+ i : 6 bin : -0.0220426 err- :  0.0278381 err+ :  0.0286537
+I am here
+ i : 7 bin :  -0.00639521 err :  0.026266
+ i : 7 bin : -0.00639521 err- :  0.0259211 err+ :  0.0266155
+I am here
+ i : 8 bin :  0.00520628 err :  0.0270592
+ i : 8 bin : 0.00520628 err- :  0.0266975 err+ :  0.0274259
+I am here
+ i : 9 bin :  -0.0595625 err :  0.0279763
+ i : 9 bin : -0.0595625 err- :  0.0275633 err+ :  0.0283955
+I am here
+ i : 10 bin :  -0.0161375 err :  0.0311592
+ i : 10 bin : -0.0161375 err- :  0.0306697 err+ :  0.0316566
+I am here
+ i : 11 bin :  0.0160894 err :  0.0348721
+ i : 11 bin : 0.0160894 err- :  0.0342788 err+ :  0.0354756
+I am here
+ i : 12 bin :  0.0161508 err :  0.0387968
+ i : 12 bin : 0.0161508 err- :  0.0380633 err+ :  0.0395445
+I am here
+ i : 13 bin :  0.00917592 err :  0.0426836
+ i : 13 bin : 0.00917592 err- :  0.0417905 err+ :  0.0435958
+I am here
+ i : 14 bin :  0.0565887 err :  0.0488408
+ i : 14 bin : 0.0565887 err- :  0.047725 err+ :  0.0499827
+I am here
+ i : 15 bin :  0.140659 err :  0.0562645
+ i : 15 bin : 0.140659 err- :  0.054894 err+ :  0.0576693
+I am here
+ i : 16 bin :  0.0422855 err :  0.0590078
+ i : 16 bin : 0.0422855 err- :  0.0573611 err+ :  0.0607018
+I am here
+ i : 17 bin :  0.0334643 err :  0.0668492
+ i : 17 bin : 0.0334643 err- :  0.0647221 err+ :  0.0690463
+I am here
+ i : 18 bin :  0.0148182 err :  0.0738172
+ i : 18 bin : 0.0148182 err- :  0.0711813 err+ :  0.0765507
+I am here
+ i : 19 bin :  -0.0192406 err :  0.0772947
+ i : 19 bin : -0.0192406 err- :  0.0743088 err+ :  0.0804005
+I am here
+ i : 20 bin :  0.164333 err :  0.0929239
+ i : 20 bin : 0.164333 err- :  0.0892898 err+ :  0.0967059
+I am here
+ i : 21 bin :  0.00116522 err :  0.0958942
+ i : 21 bin : 0.00116522 err- :  0.0914116 err+ :  0.100597
+I am here
+ i : 22 bin :  0.114776 err :  0.107269
+ i : 22 bin : 0.114776 err- :  0.102232 err+ :  0.112554
+I am here
+ i : 23 bin :  0.0273761 err :  0.116327
+ i : 23 bin : 0.0273761 err- :  0.116078 err+ :  0.129996
+I am here
+ i : 24 bin :  -0.0218379 err :  0.12628
+ i : 24 bin : -0.0218379 err- :  0.125927 err+ :  0.143285
+I am here
+ i : 25 bin :  -0.0530244 err :  0.124344
+ i : 25 bin : -0.0530244 err- :  0.123984 err+ :  0.141386
+I am here
+ i : 26 bin :  -0.0365954 err :  0.142046
+ i : 26 bin : -0.0365954 err- :  0.141528 err+ :  0.164019
+I am here
+ i : 27 bin :  -0.292307 err :  0.136196
+ i : 27 bin : -0.292307 err- :  0.135347 err+ :  0.164086
+I am here
+ i : 28 bin :  0.215555 err :  0.187564
+ i : 28 bin : 0.215555 err- :  0.186814 err+ :  0.217995
+I am here
+ i : 29 bin :  -0.124208 err :  0.175158
+ i : 29 bin : -0.124208 err- :  0.173979 err+ :  0.212523
+I am here
+ i : 30 bin :  -0.110064 err :  0.185565
+ i : 30 bin : -0.110064 err- :  0.184206 err+ :  0.226943
+I am here

@@ -1,0 +1,15 @@
+I use same same observables as in 2014.02.24_Full-analysis/Step1_MVA/thq, excluding PassBTag_Recoil and Cos_LepRecoil_TH. The former one is unnecesary because now only untagged jets are matched to the recoil quark in the permutations. The second observable is quite discriminative but is mismodelled, and thus cannot be used.
+
+The complete list:
+  Mass_Higgs
+  Mass_BTopLep
+  Eta_Recoil
+  PassBTag_BTop
+  NumBTag_Higgs
+  DeltaR_BJetsHiggs
+  DeltaR_BTopW
+  DeltaR_TopHiggs
+  RelHt
+  MaxEta_BHiggs
+  MinPt_BHiggs
+  Charge_BTop

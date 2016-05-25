@@ -1,0 +1,47 @@
+<p>Observables (xmin, xmax, nbins):</p>
+<ul>
+<li>tH_4tt_mu (-0.1, 1.1, 15)</li>
+</ul>
+<p>Background processes:</p>
+<ul>
+<li>TTb</li>
+<li>TTbb</li>
+<li>TTcc</li>
+<li>TTlf</li>
+<li>VV</li>
+<li>Wj</li>
+<li>s_Top</li>
+<li>ttH</li>
+</ul>
+<p>Signal processes:</p><ul>
+<li>tH</li>
+</ul>
+<p>Nuisance parameters (includes only those which apply to the background-only model):</p>
+<ul>
+<li>btagHF (morph and rate)</li>
+<li>btagLF (morph and rate)</li>
+<li>eff_m (rate only)</li>
+<li>jer (morph and rate)</li>
+<li>jes (morph and rate)</li>
+<li>lumi (rate only)</li>
+<li>madgraphQ2_tH (morph and rate)</li>
+<li>madgraphQ2_ttbb (morph and rate)</li>
+<li>madgraphQ2_ttcc (morph and rate)</li>
+<li>madgraphQ2_ttlf (morph and rate)</li>
+<li>match_ttbb (morph and rate)</li>
+<li>match_ttcc (morph and rate)</li>
+<li>match_ttlf (morph and rate)</li>
+<li>met (morph and rate)</li>
+<li>pdf_gg (rate only)</li>
+<li>pdf_qg (rate only)</li>
+<li>pdf_qqbar (rate only)</li>
+<li>pileup (morph and rate)</li>
+<li>scale_V (rate only)</li>
+<li>scale_VV (rate only)</li>
+<li>scale_tt (rate only)</li>
+<li>scale_ttH (rate only)</li>
+<li>toppt (morph and rate)</li>
+<li>tthf_b (rate only)</li>
+<li>tthf_bb (rate only)</li>
+<li>tthf_cc (rate only)</li>
+</ul>

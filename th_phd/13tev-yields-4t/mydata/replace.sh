@@ -1,0 +1,1 @@
+for i in $(ls *.dat);do sed -i -e "s/[[:space:]]\+/ /g" ${i};done

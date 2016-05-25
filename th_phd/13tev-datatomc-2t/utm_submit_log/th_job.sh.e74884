@@ -1,0 +1,4 @@
+**** Following environment variables are going to be unset.
+       ROOT_GCC_TOOLCHAIN
+       MAGIC
+       LHAPDF_DATA_PATH

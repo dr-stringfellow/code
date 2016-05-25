@@ -1,0 +1,1 @@
+th_roccomparisons_x -input /portal/ekpcms5/home/bmaier/thanalysis/th_Lhcp14/bdt-class/bdt_class/BDT_tHnominal.root /portal/ekpcms5/home/bmaier/thanalysis/th_Lhcp14/bdt-class-whbbm/bdt_class/BDT_tHnominal.root -lumi 19709 -batch 1 -labels   "0.2:0.95:ROC curve of classification NN output" "0.2:0.75:Muon + electron channel" "0.2:0.69:3 tag region"  -varexpr "bdtg"

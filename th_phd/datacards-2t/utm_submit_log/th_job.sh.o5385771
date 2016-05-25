@@ -1,0 +1,5 @@
+/usr/users/cboeser
+Loading version: /wlcg/sw/cms/slc5_amd64_gcc462/lcg/root/5.32.00-cms21/bin/root ->[1m DONE.[0m
+Standalone framework setup and ready to roll...
+[INFO]  executing script all-el-4tt.py
+[INFO]  workdir is /portal/ekpcms5/home/cboeser/thanalysis/ichep/datacards-master/all-el-4tt

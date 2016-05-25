@@ -1,0 +1,59 @@
+imax   1   number of channels
+jmax   8   number of backgrounds
+kmax   *   number of systematics (automatic)
+------------------------------
+shapes * * ./tH_ttbar_cr_el.root  $CHANNEL__$PROCESS__nominal  $CHANNEL__$PROCESS__$SYSTEMATIC
+------------------------------
+bin                              tH_ttbar_cr_el    
+observation                      39770             
+------------------------------
+bin                              tH_ttbar_cr_el    tH_ttbar_cr_el    tH_ttbar_cr_el    tH_ttbar_cr_el    tH_ttbar_cr_el    tH_ttbar_cr_el    tH_ttbar_cr_el    tH_ttbar_cr_el    tH_ttbar_cr_el    
+process                          tH                TTbb              TTb               TTcc              TTlf              s_Top             ttH               VV                Wj                
+process                          0                 1                 2                 3                 4                 5                 6                 7                 8                 
+rate                             23.7729           1064.2            946.518           4804.62           24636.9           1475.01           46.3316           34.5462           518.691           
+------------------------------
+pdf_gg                 lnN       -                 1.026             1.026             1.026             1.026             -                 1.09              -                 -                 
+pdf_qg                 lnN       1.02              -                 -                 -                 -                 1.046             -                 -                 -                 
+pdf_qqbar              lnN       -                 -                 -                 -                 -                 -                 -                 -                 1.048             
+QCDscale_ttbar         lnN       -                 1.03              1.03              1.03              1.03              1.02              -                 -                 -                 
+QCDscale_ttH           lnN       -                 -                 -                 -                 -                 -                 1.125             -                 -                 
+QCDscale_V             lnN       -                 -                 -                 -                 -                 -                 -                 -                 1.013             
+QCDscale_VV            lnN       -                 -                 -                 -                 -                 -                 -                 1.035             -                 
+lumi_8TeV              lnN       1.026             1.026             1.026             1.026             1.026             1.026             1.026             1.026             1.026             
+CMS_eff_m              lnN       -                 -                 -                 -                 -                 -                 -                 -                 -                 
+CMS_eff_e              lnN       1.02              1.02              1.02              1.02              1.02              1.02              1.02              1.02              1.02              
+CMS_tHq_ttlf           lnN       -                 -                 -                 -                 1.10              -                 -                 -                 -                 
+CMS_tHq_tt2b           lnN       -                 1.50              -                 -                 -                 -                 -                 -                 -                 
+CMS_tHq_tt1b           lnN       -                 -                 1.50              -                 -                 -                 -                 -                 -                 
+CMS_tHq_ttc            lnN       -                 -                 -                 1.50              -                 -                 -                 -                 -                 
+CMS_tHq_fake_b         shape     1                 1                 1                 1                 1                 1                 1                 1                 1                 
+CMS_tHq_eff_b          shape     1                 1                 1                 1                 1                 1                 1                 1                 1                 
+CMS_tHq_pu             shape     1                 1                 1                 1                 1                 1                 1                 1                 1                 
+CMS_tHq_topPtcorr      shape     1                 1                 1                 1                 1                 1                 1                 1                 1                 
+CMS_tHq_met            shape     1                 1                 1                 1                 1                 1                 1                 1                 1                 
+CMS_res_j              shape     1                 1                 1                 1                 1                 1                 1                 1                 1                 
+CMS_scale0_j           shape     1                 1                 1                 1                 1                 1                 1                 1                 1                 
+CMS_scale1_j           shape     1                 1                 1                 1                 1                 1                 1                 1                 1                 
+CMS_scale2_j           shape     1                 1                 1                 1                 1                 1                 1                 1                 1                 
+CMS_scale3_j           shape     1                 1                 1                 1                 1                 1                 1                 1                 1                 
+CMS_scale5_j           shape     1                 1                 1                 1                 1                 1                 1                 1                 1                 
+CMS_scale6_j           shape     1                 1                 1                 1                 1                 1                 1                 1                 1                 
+CMS_scale7_j           shape     1                 1                 1                 1                 1                 1                 1                 1                 1                 
+CMS_scale8_j           shape     1                 1                 1                 1                 1                 1                 1                 1                 1                 
+CMS_scale9_j           shape     1                 1                 1                 1                 1                 1                 1                 1                 1                 
+CMS_scale10_j          shape     1                 1                 1                 1                 1                 1                 1                 1                 1                 
+CMS_scale11_j          shape     1                 1                 1                 1                 1                 1                 1                 1                 1                 
+CMS_scale12_j          shape     1                 1                 1                 1                 1                 1                 1                 1                 1                 
+CMS_scale13_j          shape     1                 1                 1                 1                 1                 1                 1                 1                 1                 
+CMS_scale14_j          shape     1                 1                 1                 1                 1                 1                 1                 1                 1                 
+CMS_scale15_j          shape     1                 1                 1                 1                 1                 1                 1                 1                 1                 
+CMS_scale16_j          shape     1                 1                 1                 1                 1                 1                 1                 1                 1                 
+Q2scale_tH             shape     1                 1                 1                 1                 1                 1                 1                 1                 1                 
+Q2scale_tt2b           shape     1                 1                 1                 1                 1                 1                 1                 1                 1                 
+Q2scale_tt1b           shape     1                 1                 1                 1                 1                 1                 1                 1                 1                 
+Q2scale_ttcc           shape     1                 1                 1                 1                 1                 1                 1                 1                 1                 
+Q2scale_ttlf           shape     1                 1                 1                 1                 1                 1                 1                 1                 1                 
+Matching_tt2b          shape     1                 1                 1                 1                 1                 1                 1                 1                 1                 
+Matching_tt1b          shape     1                 1                 1                 1                 1                 1                 1                 1                 1                 
+Matching_ttcc          shape     1                 1                 1                 1                 1                 1                 1                 1                 1                 
+Matching_ttlf          shape     1                 1                 1                 1                 1                 1                 1                 1                 1                 

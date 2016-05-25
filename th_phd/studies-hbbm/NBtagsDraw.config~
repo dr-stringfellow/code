@@ -1,0 +1,67 @@
+data = "bkg:/storage/a/singletophiggs/Moriond/winter14-jan28/mc/ana-ichep/3tt_incl/mu/eval/TTbar-madgraph-SemiLept-Summer12.root"
+        "bkg:/storage/a/singletophiggs/Moriond/winter14-jan28/mc/ana-ichep/3tt_incl/mu/eval/TTbar-madgraph-FullLept-Summer12.root"
+        "bkg:/storage/a/singletophiggs/Moriond/winter14-jan28/mc/ana-ichep/3tt_incl/mu/eval/TTbar-madgraph-Hadronic-Summer12.root"
+	"bkg:/storage/a/singletophiggs/Moriond/winter14-jan28/mc/ana-ichep/3tt_incl/mu/eval/SingleTop_Leptonic_t-powheg-Summer12.root"        
+        "bkg:/storage/a/singletophiggs/Moriond/winter14-jan28/mc/ana-ichep/3tt_incl/mu/eval/SingleTopBar_Leptonic_t-powheg-Summer12.root"        
+        "bkg:/storage/a/singletophiggs/Moriond/winter14-jan28/mc/ana-ichep/3tt_incl/mu/eval/SingleTop_Leptonic_s-powheg-Summer12.root"        
+	"bkg:/storage/a/singletophiggs/Moriond/winter14-jan28/mc/ana-ichep/3tt_incl/mu/eval/SingleTopBar_Leptonic_s-powheg-Summer12.root"        
+	"bkg:/storage/a/singletophiggs/Moriond/winter14-jan28/mc/ana-ichep/3tt_incl/mu/eval/SingleTop_tW-powheg-Summer12.root"        
+	"bkg:/storage/a/singletophiggs/Moriond/winter14-jan28/mc/ana-ichep/3tt_incl/mu/eval/SingleTopBar_tW-powheg-Summer12.root"
+	"bkg:/storage/a/singletophiggs/Moriond/winter14-jan28/mc/ana-ichep/3tt_incl/mu/eval/TTH-aMCatNLO-Summer12.root"        	        
+	"bkg:/storage/a/singletophiggs/Moriond/winter14-jan28/mc/ana-ichep/3tt_incl/mu/eval/ZZ-pythia6-Summer12.root"        	        
+	"bkg:/storage/a/singletophiggs/Moriond/winter14-jan28/mc/ana-ichep/3tt_incl/mu/eval/WZ-pythia6-Summer12.root"        	        
+	"bkg:/storage/a/singletophiggs/Moriond/winter14-jan28/mc/ana-ichep/3tt_incl/mu/eval/WW-pythia6-Summer12.root"        	        
+	"bkg:/storage/a/singletophiggs/Moriond/winter14-jan28/mc/ana-ichep/3tt_incl/mu/eval/W2Jets-madgraph-Summer12.root"        	        
+	"bkg:/storage/a/singletophiggs/Moriond/winter14-jan28/mc/ana-ichep/3tt_incl/mu/eval/W3Jets-madgraph-Summer12.root"        	        
+	"bkg:/storage/a/singletophiggs/Moriond/winter14-jan28/mc/ana-ichep/3tt_incl/mu/eval/W4Jets-madgraph-Summer12.root"        	        
+	"bkg:/storage/a/singletophiggs/Moriond/winter14-jan28/mc/ana-ichep/3tt_incl/mu/eval/ZJets-madgraph-Summer12.root"        	        
+	"tH:/storage/a/singletophiggs/Moriond/winter14-jan28/mc/ana-ichep/3tt_incl/mu/eval/TH-madgraph-Summer12.root"
+
+$$data =  "bkg:/storage/a/singletophiggs/Moriond/winter14-jan28/mc/ana-nominal/3tt_incl/whbbm/TTbar-madgraph-SemiLept-Summer12.root"
+$$        "bkg:/storage/a/singletophiggs/Moriond/winter14-jan28/mc/ana-nominal/3tt_incl/whbbm/TTbar-madgraph-FullLept-Summer12.root"
+$$        "bkg:/storage/a/singletophiggs/Moriond/winter14-jan28/mc/ana-nominal/3tt_incl/whbbm/TTbar-madgraph-Hadronic-Summer12.root"
+$$	"bkg:/storage/a/singletophiggs/Moriond/winter14-jan28/mc/ana-nominal/3tt_incl/whbbm/SingleTop_Leptonic_t-powheg-Summer12.root"        
+$$        "bkg:/storage/a/singletophiggs/Moriond/winter14-jan28/mc/ana-nominal/3tt_incl/whbbm/SingleTopBar_Leptonic_t-powheg-Summer12.root"        
+$$        "bkg:/storage/a/singletophiggs/Moriond/winter14-jan28/mc/ana-nominal/3tt_incl/whbbm/SingleTop_Leptonic_s-powheg-Summer12.root"        
+$$	"bkg:/storage/a/singletophiggs/Moriond/winter14-jan28/mc/ana-nominal/3tt_incl/whbbm/SingleTopBar_Leptonic_s-powheg-Summer12.root"        
+$$	"bkg:/storage/a/singletophiggs/Moriond/winter14-jan28/mc/ana-nominal/3tt_incl/whbbm/SingleTop_tW-powheg-Summer12.root"        
+$$	"bkg:/storage/a/singletophiggs/Moriond/winter14-jan28/mc/ana-nominal/3tt_incl/whbbm/SingleTopBar_tW-powheg-Summer12.root"
+$$	"bkg:/storage/a/singletophiggs/Moriond/winter14-jan28/mc/ana-nominal/3tt_incl/whbbm/TTH-aMCatNLO-Summer12.root"        	        
+$$	"bkg:/storage/a/singletophiggs/Moriond/winter14-jan28/mc/ana-nominal/3tt_incl/whbbm/ZZ-pythia6-Summer12.root"        	        
+$$	"bkg:/storage/a/singletophiggs/Moriond/winter14-jan28/mc/ana-nominal/3tt_incl/whbbm/WZ-pythia6-Summer12.root"        	        
+$$	"bkg:/storage/a/singletophiggs/Moriond/winter14-jan28/mc/ana-nominal/3tt_incl/whbbm/WW-pythia6-Summer12.root"        	        
+$$	"bkg:/storage/a/singletophiggs/Moriond/winter14-jan28/mc/ana-nominal/3tt_incl/whbbm/W2Jets-madgraph-Summer12.root"        	        
+$$	"bkg:/storage/a/singletophiggs/Moriond/winter14-jan28/mc/ana-nominal/3tt_incl/whbbm/W3Jets-madgraph-Summer12.root"        	        
+$$	"bkg:/storage/a/singletophiggs/Moriond/winter14-jan28/mc/ana-nominal/3tt_incl/whbbm/W4Jets-madgraph-Summer12.root"        	        
+$$	"bkg:/storage/a/singletophiggs/Moriond/winter14-jan28/mc/ana-nominal/3tt_incl/whbbm/ZJets-madgraph-Summer12.root"        	        
+$$	"tH:/storage/a/singletophiggs/Moriond/winter14-jan28/mc/ana-nominal/3tt_incl/whbbm/TH-madgraph-Summer12.root"
+
+	
+datalabels = "tH:tHq #scale[0.8]{(^{}#it{C}_{t}=-1)}"
+	     "bkg:background sum"
+
+
+datacolors = "tH:598"
+	     "bkg:633"
+	     
+
+ytitle = "Norm. to unit area"
+
+legx       = "0.20"
+legy       = "0.7"
+legh       = "0.04"
+legw       = "0.35"
+batch      = "true" 
+varexpr    = "(jtcsvt[hbbjtidx[0]]>0.898)*(abs(jteta[hbbjtidx[0]])<2.4)+(jtcsvt[hbbjtidx[1]]>0.898)*(abs(jteta[hbbjtidx[1]])<2.4)"
+xtitle     = "# b-tags of Higgs jets" 
+suffix     = "nbtags_sigbkg" 
+nbinsx     = "3"
+xmin       = "-0.5"
+xmax       = "2.5"
+resolution = 0
+
+$$include /portal/ekpcms6/home/bmaier/thanalysis/labels/8TeV.config
+
+labels+  = "0.2:0.87:42:0.045:Muon + electron channel"
+	   "0.2:0.82:42:0.045:3 tag region"
+

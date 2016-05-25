@@ -1,0 +1,1379 @@
+/usr/users/bmaier
+/usr/users/bmaier
+CommandLine INFO: include configuration file: ../../samples/13tev/THQ125-madgraph.config
+CommandLine INFO: include configuration file: ../../samples/13tev/THW125-madgraph.config
+CommandLine INFO: include configuration file: ./Lumi.config
+CommandLine INFO: include configuration file: ./Processes.config
+CommandLine INFO: include configuration file: ./Binning.config
+CommandLine INFO: include configuration file: ./Data.config
+CommandLine INFO: include configuration file: ../../samples/13tev/Data.config
+CommandLine INFO: include configuration file: ./Selection_2t.config
+CommandLine INFO: include configuration file: ../../samples/13tev/TTbar-powheg_bb.config
+CommandLine INFO: include configuration file: ../../samples/13tev/TTbar-powheg_2b.config
+CommandLine INFO: include configuration file: ../../samples/13tev/TTbar-powheg_b.config
+CommandLine INFO: include configuration file: ../../samples/13tev/TTbar-powheg_cc.config
+CommandLine INFO: include configuration file: ../../samples/13tev/TTbar-powheg_lf.config
+CommandLine INFO: include configuration file: ../../samples/13tev/ST-powheg_DC.config
+CommandLine INFO: include configuration file: ../../samples/13tev/TTH-powheg.config
+CommandLine INFO: include configuration file: ../../samples/13tev/Electroweak_DC.config
+------------------------------------------------------------
+th_makedatacards_x options:
+------------------------------------------------------------
+data                    =               SingleMuon_json.root
+                                    SingleMuon_json_ext.root
+                                         SingleEle_json.root
+                                     SingleEle_json_ext.root
+mcs                     =THQ125-madgraph:THQ_Hincl_13TeV-madgraph-pythia8_TuneCUETP8M1.root
+THW125-madgraph:THW_Hincl_13TeV-madgraph-pythia8_TuneCUETP8M1.root
+   TTbar-powheg_bb:TT_TuneCUETP8M1_13TeV-powheg-pythia8.root
+   TTbar-powheg_2b:TT_TuneCUETP8M1_13TeV-powheg-pythia8.root
+    TTbar-powheg_b:TT_TuneCUETP8M1_13TeV-powheg-pythia8.root
+   TTbar-powheg_cc:TT_TuneCUETP8M1_13TeV-powheg-pythia8.root
+   TTbar-powheg_lf:TT_TuneCUETP8M1_13TeV-powheg-pythia8.root
+SingleTop-powheg:ST_t-channel_antitop_4f_leptonDecays_13TeV-powheg-pythia8_TuneCUETP8M1.root
+SingleTop-powheg:ST_t-channel_top_4f_leptonDecays_13TeV-powheg-pythia8_TuneCUETP8M1.root
+SingleTop-powheg:ST_tW_antitop_5f_inclusiveDecays_13TeV-powheg-pythia8_TuneCUETP8M1.root
+SingleTop-powheg:ST_tW_top_5f_inclusiveDecays_13TeV-powheg-pythia8_TuneCUETP8M1.root
+           TTH-powheg:ttHTobb_M125_13TeV_powheg_pythia8.root
+Wjets:WJetsToLNu_TuneCUETP8M1_13TeV-madgraphMLM-pythia8.root
+                  Diboson:WW_TuneCUETP8M1_13TeV-pythia8.root
+                  Diboson:WZ_TuneCUETP8M1_13TeV-pythia8.root
+                  Diboson:ZZ_TuneCUETP8M1_13TeV-pythia8.root
+lumi                    =                              2198.
+datapath                = /storage/jbod/bmaier/13tev/data_2t
+mcpath                  = /storage/jbod/bmaier/13tev/2t/eval
+dirname                 =                                utm
+filesuffix              =                              .root
+treename                =                                  t
+cuts                    =(((nmu==1 && nel==0)*((Alt$(mupt[0],0))>26)*(met>35)*((Alt$(abs(mueta[0]),0))>0 && (Alt$(abs(mueta[0]),0))<2.1)) || ((nel==1 && nmu ==0)*((Alt$(elpt[0],0))>30)*(met>45)*((Alt$(abs(eleta[0]),0))>0 && (Alt$(abs(eleta[0]),0))<2.1)))
+mccuts                  =                                   
+mcweights               =                          Weight_PU
+                                                  Weight_CSV
+                     TTbar-powheg_lf:((genevt_ttxid%100)==0)
+                     TTbar-powheg_b:((genevt_ttxid%100)==51)
+                    TTbar-powheg_2b:((genevt_ttxid%100)==52)
+TTbar-powheg_bb:((genevt_ttxid%100)==53||(genevt_ttxid%100)==54||(genevt_ttxid%100)==55)
+TTbar-powheg_cc:((genevt_ttxid%100)==41||(genevt_ttxid%100)==42||(genevt_ttxid%100)==43||(genevt_ttxid%100)==44||(genevt_ttxid%100)==45)
+           THQ125-madgraph:weights_syst[467]/weights_syst[0]
+                                THQ125-madgraph:1.0275157887
+                                 THW125-madgraph:1.006125405
+           THW125-madgraph:weights_syst[467]/weights_syst[0]
+                                 THQ125-madgraph:0.767312488
+                                 THW125-madgraph:0.767312488
+                                      TTH-powheg:0.767312488
+varname                 =                                   
+varexpr                 =                         bdtout[22]
+nbinsx                  =                                 12
+binsx                   =                                   
+xmin                    =                               -0.8
+xmax                    =                                0.8
+overflow                =                               true
+underflow               =                               true
+batch                   =                               true
+formats                 =                                   
+prefix                  =                                   
+suffix                  =                                   
+datalabel               =                               data
+mclabels                =THQ125-madgraph:tHq #scale[0.8]{(^{}#it{C}_{t}=-1)}
+         THW125-madgraph:tHW #scale[0.8]{(^{}#it{C}_{t}=-1)}
+                                 TTbar-powheg_bb:t#bar{t}+bb
+                                 TTbar-powheg_2b:t#bar{t}+2b
+                                   TTbar-powheg_b:t#bar{t}+b
+                                 TTbar-powheg_cc:t#bar{t}+cc
+                                 TTbar-powheg_lf:t#bar{t}+lf
+                           SingleTop-powheg:t/#bar{t} powheg
+                                        TTH-powheg:t#bar{t}H
+                                                Wjets:W+jets
+                                                  Diboson:VV
+mccolors                =                THQ125-madgraph:633
+                                         THW125-madgraph:632
+                                         TTbar-powheg_bb:805
+                                         TTbar-powheg_2b:634
+                                          TTbar-powheg_b:803
+                                         TTbar-powheg_cc:800
+                                         TTbar-powheg_lf:797
+                                        SingleTop-powheg:817
+                                              TTH-powheg:616
+                                                   Wjets:417
+                                                 Diboson:418
+labels                  =                                   
+datacard                =                       tH_2t_22.txt
+opath                   =                                  .
+rootfile                =                      tH_2t_22.root
+channel                 =                              tH_2t
+processes               =                     TTH-powheg:ttH
+                                                    Wjets:Wj
+                                                  Diboson:VV
+                                      SingleTop-powheg:s_Top
+                                        TTbar-powheg_bb:TTbb
+                                        TTbar-powheg_2b:TT2b
+                                         TTbar-powheg_b:TT1b
+                                        TTbar-powheg_cc:TTcc
+                                        TTbar-powheg_lf:TTlf
+                                         THW125-madgraph:tHW
+                                         THQ125-madgraph:tHq
+systematic              =                                   
+direction               =                                   
+howmanysigs             =                                  2
+blind                   =                              false
+theta                   =                              false
+histo                   =                                   
+hpath                   =                                   
+ddscalefactor           =                                  1
+------------------------------------------------------------
+HERE
+HERE2
+
+===================================================================================================
+FILENAME                                                            EVENTS      SELECTION  PRESCALE
+===================================================================================================
+/storage/jbod/bmaier/13tev/data_2t/SingleMuon_json.root               3050              1         1
+/storage/jbod/bmaier/13tev/data_2t/SingleMuon_json_ext.root           8260              1         1
+/storage/jbod/bmaier/13tev/data_2t/SingleEle_json.root                2183              1         1
+/storage/jbod/bmaier/13tev/data_2t/SingleEle_json_ext.root            5676              1         1
+===================================================================================================
+utm t /storage/jbod/bmaier/13tev/2t/eval .root
+
+==================================================================================================================================================================================
+MC SAMPLE      FILENAME                                                                                                          EVENTS  XSEC[PB]            EFF  KFAC     INTLUMI
+==================================================================================================================================================================================
+THQ125-madgraph/storage/jbod/bmaier/13tev/2t/eval/THQ_Hincl_13TeV-madgraph-pythia8_TuneCUETP8M1.root                             148684    0.2583      0.0429439     1 1.34041e+07
+THW125-madgraph/storage/jbod/bmaier/13tev/2t/eval/THW_Hincl_13TeV-madgraph-pythia8_TuneCUETP8M1.root                              51623    0.1472      0.0354898     1  9.8817e+06
+TTbar-powheg_bb/storage/jbod/bmaier/13tev/2t/eval/TT_TuneCUETP8M1_13TeV-powheg-pythia8.root                                     1467688    831.76      0.0126448     1      139548
+TTbar-powheg_2b/storage/jbod/bmaier/13tev/2t/eval/TT_TuneCUETP8M1_13TeV-powheg-pythia8.root                                     1467688    831.76      0.0126448     1      139548
+TTbar-powheg_b /storage/jbod/bmaier/13tev/2t/eval/TT_TuneCUETP8M1_13TeV-powheg-pythia8.root                                     1467688    831.76      0.0126448     1      139548
+TTbar-powheg_cc/storage/jbod/bmaier/13tev/2t/eval/TT_TuneCUETP8M1_13TeV-powheg-pythia8.root                                     1467688    831.76      0.0126448     1      139548
+TTbar-powheg_lf/storage/jbod/bmaier/13tev/2t/eval/TT_TuneCUETP8M1_13TeV-powheg-pythia8.root                                     1467688    831.76      0.0126448     1      139548
+SingleTop-powheg/storage/jbod/bmaier/13tev/2t/eval/ST_t-channel_antitop_4f_leptonDecays_13TeV-powheg-pythia8_TuneCUETP8M1.root      5351        27     0.00334961     1     59166.6
+SingleTop-powheg/storage/jbod/bmaier/13tev/2t/eval/ST_t-channel_top_4f_leptonDecays_13TeV-powheg-pythia8_TuneCUETP8M1.root         10144      45.3     0.00329351     1       67991
+SingleTop-powheg/storage/jbod/bmaier/13tev/2t/eval/ST_tW_antitop_5f_inclusiveDecays_13TeV-powheg-pythia8_TuneCUETP8M1.root          4110      35.9     0.00418865     1     27332.1
+SingleTop-powheg/storage/jbod/bmaier/13tev/2t/eval/ST_tW_top_5f_inclusiveDecays_13TeV-powheg-pythia8_TuneCUETP8M1.root              4135      35.9     0.00415053     1     27750.9
+TTH-powheg     /storage/jbod/bmaier/13tev/2t/eval/ttHTobb_M125_13TeV_powheg_pythia8.root                                         200782    0.2934      0.0511357     1 1.33826e+07
+Wjets          /storage/jbod/bmaier/13tev/2t/eval/WJetsToLNu_TuneCUETP8M1_13TeV-madgraphMLM-pythia8.root                            192   61526.7    2.67548e-06     1     1166.37
+Diboson        /storage/jbod/bmaier/13tev/2t/eval/WW_TuneCUETP8M1_13TeV-pythia8.root                                                 22     118.7    2.22961e-05     1     8312.72
+Diboson        /storage/jbod/bmaier/13tev/2t/eval/WZ_TuneCUETP8M1_13TeV-pythia8.root                                                 78      44.9    8.12876e-05     1       21371
+Diboson        /storage/jbod/bmaier/13tev/2t/eval/ZZ_TuneCUETP8M1_13TeV-pythia8.root                                                 89      15.4    8.89731e-05     1     64954.7
+==================================================================================================================================================================================
+
+HERE3
+./tH_2t_22.root opened.
+tH_2t__tHq__nominal: 12.0419
+tH_2t__tHW__nominal: 6.36586
+tH_2t__TTbb__nominal: 324.58
+tH_2t__TT2b__nominal: 192.196
+tH_2t__TT1b__nominal: 444.227
+tH_2t__TTcc__nominal: 1540.92
+tH_2t__TTlf__nominal: 7360.03
+tH_2t__s_Top__nominal: 500.752
+tH_2t__ttH__nominal: 13.288
+tH_2t__Wj__nominal: 150.105
+tH_2t__VV__nominal: 7.23804
+tH_2t__data_obs__nominal: 11765
+./tH_2t_22.root written.
+#### 1 ####
+#### 2 ####
+#### 4 ####
+New datacard tH_2t_22.txt is being written... #### 5 ####
+done.
+tH_2t_22
+------------------------------------------------------------
+th_addsftodc_x options:
+------------------------------------------------------------
+datacard                =                       tH_2t_22.txt
+channels                =                              tH_2t
+                                                       tH_3t
+                                                       tH_4t
+processes               =                                tHq
+                                                         tHW
+                                                       s_Top
+                                                          Wj
+                                                          VV
+                                                         ttH
+                                                        TTbb
+                                                        TT2b
+                                                        TT1b
+                                                        TTcc
+                                                        TTlf
+systematic              =                         lumi_13TeV
+type                    =                                lnN
+scale                   =                              1.045
+------------------------------------------------------------
+Datacard tH_2t_22.txt is being appended... done.
+------------------------------------------------------------
+th_addsftodc_x options:
+------------------------------------------------------------
+datacard                =                       tH_2t_22.txt
+channels                =                              tH_2t
+                                                       tH_3t
+                                                       tH_4t
+processes               =                                tHq
+                                                         tHW
+                                                       s_Top
+                                                          Wj
+                                                          VV
+                                                         ttH
+                                                        TTbb
+                                                        TT2b
+                                                        TT1b
+                                                        TTcc
+                                                        TTlf
+systematic              =                        CMS_eff_lep
+type                    =                                lnN
+scale                   =                               1.02
+------------------------------------------------------------
+Datacard tH_2t_22.txt is being appended... done.
+------------------------------------------------------------
+th_addsftodc_x options:
+------------------------------------------------------------
+datacard                =                       tH_2t_22.txt
+channels                =                              tH_2t
+                                                       tH_3t
+                                                       tH_4t
+processes               =                               TTbb
+systematic              =                       CMS_tHq_ttbb
+type                    =                                lnN
+scale                   =                               1.50
+------------------------------------------------------------
+Datacard tH_2t_22.txt is being appended... done.
+------------------------------------------------------------
+th_addsftodc_x options:
+------------------------------------------------------------
+datacard                =                       tH_2t_22.txt
+channels                =                              tH_2t
+                                                       tH_3t
+                                                       tH_4t
+processes               =                               TT2b
+systematic              =                       CMS_tHq_tt2b
+type                    =                                lnN
+scale                   =                               1.50
+------------------------------------------------------------
+Datacard tH_2t_22.txt is being appended... done.
+------------------------------------------------------------
+th_addsftodc_x options:
+------------------------------------------------------------
+datacard                =                       tH_2t_22.txt
+channels                =                              tH_2t
+                                                       tH_3t
+                                                       tH_4t
+processes               =                               TT1b
+systematic              =                       CMS_tHq_tt1b
+type                    =                                lnN
+scale                   =                               1.50
+------------------------------------------------------------
+Datacard tH_2t_22.txt is being appended... done.
+------------------------------------------------------------
+th_addsftodc_x options:
+------------------------------------------------------------
+datacard                =                       tH_2t_22.txt
+channels                =                              tH_2t
+                                                       tH_3t
+                                                       tH_4t
+processes               =                               TTcc
+systematic              =                       CMS_tHq_ttcc
+type                    =                                lnN
+scale                   =                               1.50
+------------------------------------------------------------
+Datacard tH_2t_22.txt is being appended... done.
+------------------------------------------------------------
+th_addsftodc_x options:
+------------------------------------------------------------
+datacard                =                       tH_2t_22.txt
+channels                =                              tH_2t
+                                                       tH_3t
+                                                       tH_4t
+processes               =                               TTbb
+                                                        TT2b
+                                                        TT1b
+                                                        TTcc
+                                                        TTlf
+                                                         ttH
+systematic              =                             pdf_gg
+type                    =                                lnN
+scale                   =                         TTbb:1.042
+                                                  TT2b:1.042
+                                                  TT1b:1.042
+                                                  TTcc:1.042
+                                                  TTlf:1.042
+                                                    ttH:1.09
+------------------------------------------------------------
+Datacard tH_2t_22.txt is being appended... done.
+------------------------------------------------------------
+th_addsftodc_x options:
+------------------------------------------------------------
+datacard                =                       tH_2t_22.txt
+channels                =                              tH_2t
+                                                       tH_3t
+                                                       tH_4t
+processes               =                              s_Top
+                                                         tHq
+                                                         tHW
+systematic              =                             pdf_qg
+type                    =                                lnN
+scale                   =                        s_Top:1.047
+                                                    tHq:1.02
+                                                    tHW:1.02
+------------------------------------------------------------
+Datacard tH_2t_22.txt is being appended... done.
+------------------------------------------------------------
+th_addsftodc_x options:
+------------------------------------------------------------
+datacard                =                       tH_2t_22.txt
+channels                =                              tH_2t
+                                                       tH_3t
+                                                       tH_4t
+processes               =                                 Wj
+systematic              =                          pdf_qqbar
+type                    =                                lnN
+scale                   =                           Wj:1.048
+------------------------------------------------------------
+Datacard tH_2t_22.txt is being appended... done.
+------------------------------------------------------------
+th_addsftodc_x options:
+------------------------------------------------------------
+datacard                =                       tH_2t_22.txt
+channels                =                              tH_2t
+                                                       tH_3t
+                                                       tH_4t
+processes               =                                 VV
+systematic              =                        QCDscale_VV
+type                    =                                lnN
+scale                   =                              1.035
+------------------------------------------------------------
+Datacard tH_2t_22.txt is being appended... done.
+------------------------------------------------------------
+th_addsftodc_x options:
+------------------------------------------------------------
+datacard                =                       tH_2t_22.txt
+channels                =                              tH_2t
+                                                       tH_3t
+                                                       tH_4t
+processes               =                              s_Top
+systematic              =                        QCDscale_ST
+type                    =                                lnN
+scale                   =                        1.027/1.021
+------------------------------------------------------------
+Datacard tH_2t_22.txt is being appended... done.
+CommandLine INFO: include configuration file: ../../samples/13tev/THQ125-madgraph.config
+CommandLine INFO: include configuration file: ../../samples/13tev/THW125-madgraph.config
+CommandLine INFO: include configuration file: ./Lumi.config
+CommandLine INFO: include configuration file: ./Processes.config
+CommandLine INFO: include configuration file: ./Binning.config
+CommandLine INFO: include configuration file: ./Data.config
+CommandLine INFO: include configuration file: ../../samples/13tev/Data.config
+CommandLine INFO: include configuration file: ./Selection_2t.config
+CommandLine INFO: include configuration file: ../../samples/13tev/TTbar-powheg_bb.config
+CommandLine INFO: include configuration file: ../../samples/13tev/TTbar-powheg_2b.config
+CommandLine INFO: include configuration file: ../../samples/13tev/TTbar-powheg_b.config
+CommandLine INFO: include configuration file: ../../samples/13tev/TTbar-powheg_cc.config
+CommandLine INFO: include configuration file: ../../samples/13tev/TTbar-powheg_lf.config
+CommandLine INFO: include configuration file: ../../samples/13tev/ST-powheg_DC.config
+CommandLine INFO: include configuration file: ../../samples/13tev/TTH-powheg.config
+CommandLine INFO: include configuration file: ../../samples/13tev/Electroweak_DC.config
+------------------------------------------------------------
+th_makedatacards_x options:
+------------------------------------------------------------
+data                    =               SingleMuon_json.root
+                                    SingleMuon_json_ext.root
+                                         SingleEle_json.root
+                                     SingleEle_json_ext.root
+mcs                     =THQ125-madgraph:THQ_Hincl_13TeV-madgraph-pythia8_TuneCUETP8M1.root
+THW125-madgraph:THW_Hincl_13TeV-madgraph-pythia8_TuneCUETP8M1.root
+   TTbar-powheg_bb:TT_TuneCUETP8M1_13TeV-powheg-pythia8.root
+   TTbar-powheg_2b:TT_TuneCUETP8M1_13TeV-powheg-pythia8.root
+    TTbar-powheg_b:TT_TuneCUETP8M1_13TeV-powheg-pythia8.root
+   TTbar-powheg_cc:TT_TuneCUETP8M1_13TeV-powheg-pythia8.root
+   TTbar-powheg_lf:TT_TuneCUETP8M1_13TeV-powheg-pythia8.root
+SingleTop-powheg:ST_t-channel_antitop_4f_leptonDecays_13TeV-powheg-pythia8_TuneCUETP8M1.root
+SingleTop-powheg:ST_t-channel_top_4f_leptonDecays_13TeV-powheg-pythia8_TuneCUETP8M1.root
+SingleTop-powheg:ST_tW_antitop_5f_inclusiveDecays_13TeV-powheg-pythia8_TuneCUETP8M1.root
+SingleTop-powheg:ST_tW_top_5f_inclusiveDecays_13TeV-powheg-pythia8_TuneCUETP8M1.root
+           TTH-powheg:ttHTobb_M125_13TeV_powheg_pythia8.root
+Wjets:WJetsToLNu_TuneCUETP8M1_13TeV-madgraphMLM-pythia8.root
+                  Diboson:WW_TuneCUETP8M1_13TeV-pythia8.root
+                  Diboson:WZ_TuneCUETP8M1_13TeV-pythia8.root
+                  Diboson:ZZ_TuneCUETP8M1_13TeV-pythia8.root
+lumi                    =                              2198.
+datapath                = /storage/jbod/bmaier/13tev/data_2t
+mcpath                  = /storage/jbod/bmaier/13tev/2t/eval
+dirname                 =                                utm
+filesuffix              =                              .root
+treename                =                                  t
+cuts                    =(((nmu==1 && nel==0)*((Alt$(mupt[0],0))>26)*(met>35)*((Alt$(abs(mueta[0]),0))>0 && (Alt$(abs(mueta[0]),0))<2.1)) || ((nel==1 && nmu ==0)*((Alt$(elpt[0],0))>30)*(met>45)*((Alt$(abs(eleta[0]),0))>0 && (Alt$(abs(eleta[0]),0))<2.1)))
+mccuts                  =                                   
+mcweights               =                          Weight_PU
+                                                  Weight_CSV
+                     TTbar-powheg_lf:((genevt_ttxid%100)==0)
+                     TTbar-powheg_b:((genevt_ttxid%100)==51)
+                    TTbar-powheg_2b:((genevt_ttxid%100)==52)
+TTbar-powheg_bb:((genevt_ttxid%100)==53||(genevt_ttxid%100)==54||(genevt_ttxid%100)==55)
+TTbar-powheg_cc:((genevt_ttxid%100)==41||(genevt_ttxid%100)==42||(genevt_ttxid%100)==43||(genevt_ttxid%100)==44||(genevt_ttxid%100)==45)
+             THQ125-madgraph:weights_syst[4]/weights_syst[0]
+           THQ125-madgraph:weights_syst[467]/weights_syst[0]
+           THW125-madgraph:weights_syst[467]/weights_syst[0]
+                                THQ125-madgraph:1.0275157887
+                                 THW125-madgraph:1.006125405
+                                 THQ125-madgraph:0.767312488
+                                 THW125-madgraph:0.767312488
+                                      TTH-powheg:0.767312488
+varname                 =                                   
+varexpr                 =                         bdtout[22]
+nbinsx                  =                                 12
+binsx                   =                                   
+xmin                    =                               -0.8
+xmax                    =                                0.8
+overflow                =                               true
+underflow               =                               true
+batch                   =                               true
+formats                 =                                   
+prefix                  =                                   
+suffix                  =                                   
+datalabel               =                               data
+mclabels                =THQ125-madgraph:tHq #scale[0.8]{(^{}#it{C}_{t}=-1)}
+         THW125-madgraph:tHW #scale[0.8]{(^{}#it{C}_{t}=-1)}
+                                 TTbar-powheg_bb:t#bar{t}+bb
+                                 TTbar-powheg_2b:t#bar{t}+2b
+                                   TTbar-powheg_b:t#bar{t}+b
+                                 TTbar-powheg_cc:t#bar{t}+cc
+                                 TTbar-powheg_lf:t#bar{t}+lf
+                           SingleTop-powheg:t/#bar{t} powheg
+                                        TTH-powheg:t#bar{t}H
+                                                Wjets:W+jets
+                                                  Diboson:VV
+mccolors                =                THQ125-madgraph:633
+                                         THW125-madgraph:632
+                                         TTbar-powheg_bb:805
+                                         TTbar-powheg_2b:634
+                                          TTbar-powheg_b:803
+                                         TTbar-powheg_cc:800
+                                         TTbar-powheg_lf:797
+                                        SingleTop-powheg:817
+                                              TTH-powheg:616
+                                                   Wjets:417
+                                                 Diboson:418
+labels                  =                                   
+datacard                =                       tH_2t_22.txt
+opath                   =                                  .
+rootfile                =                      tH_2t_22.root
+channel                 =                              tH_2t
+processes               =                     TTH-powheg:ttH
+                                                    Wjets:Wj
+                                                  Diboson:VV
+                                      SingleTop-powheg:s_Top
+                                        TTbar-powheg_bb:TTbb
+                                        TTbar-powheg_2b:TT2b
+                                         TTbar-powheg_b:TT1b
+                                        TTbar-powheg_cc:TTcc
+                                        TTbar-powheg_lf:TTlf
+                                         THW125-madgraph:tHW
+                                         THQ125-madgraph:tHq
+systematic              =                        Q2scale_tHq
+direction               =                                 Up
+howmanysigs             =                                  2
+blind                   =                              false
+theta                   =                              false
+histo                   =                                   
+hpath                   =                                   
+ddscalefactor           =                                  1
+------------------------------------------------------------
+HERE
+HERE2
+
+===================================================================================================
+FILENAME                                                            EVENTS      SELECTION  PRESCALE
+===================================================================================================
+/storage/jbod/bmaier/13tev/data_2t/SingleMuon_json.root               3050              1         1
+/storage/jbod/bmaier/13tev/data_2t/SingleMuon_json_ext.root           8260              1         1
+/storage/jbod/bmaier/13tev/data_2t/SingleEle_json.root                2183              1         1
+/storage/jbod/bmaier/13tev/data_2t/SingleEle_json_ext.root            5676              1         1
+===================================================================================================
+utm t /storage/jbod/bmaier/13tev/2t/eval .root
+
+==================================================================================================================================================================================
+MC SAMPLE      FILENAME                                                                                                          EVENTS  XSEC[PB]            EFF  KFAC     INTLUMI
+==================================================================================================================================================================================
+THQ125-madgraph/storage/jbod/bmaier/13tev/2t/eval/THQ_Hincl_13TeV-madgraph-pythia8_TuneCUETP8M1.root                             148684    0.2583      0.0429439     1 1.34041e+07
+THW125-madgraph/storage/jbod/bmaier/13tev/2t/eval/THW_Hincl_13TeV-madgraph-pythia8_TuneCUETP8M1.root                              51623    0.1472      0.0354898     1  9.8817e+06
+TTbar-powheg_bb/storage/jbod/bmaier/13tev/2t/eval/TT_TuneCUETP8M1_13TeV-powheg-pythia8.root                                     1467688    831.76      0.0126448     1      139548
+TTbar-powheg_2b/storage/jbod/bmaier/13tev/2t/eval/TT_TuneCUETP8M1_13TeV-powheg-pythia8.root                                     1467688    831.76      0.0126448     1      139548
+TTbar-powheg_b /storage/jbod/bmaier/13tev/2t/eval/TT_TuneCUETP8M1_13TeV-powheg-pythia8.root                                     1467688    831.76      0.0126448     1      139548
+TTbar-powheg_cc/storage/jbod/bmaier/13tev/2t/eval/TT_TuneCUETP8M1_13TeV-powheg-pythia8.root                                     1467688    831.76      0.0126448     1      139548
+TTbar-powheg_lf/storage/jbod/bmaier/13tev/2t/eval/TT_TuneCUETP8M1_13TeV-powheg-pythia8.root                                     1467688    831.76      0.0126448     1      139548
+SingleTop-powheg/storage/jbod/bmaier/13tev/2t/eval/ST_t-channel_antitop_4f_leptonDecays_13TeV-powheg-pythia8_TuneCUETP8M1.root      5351        27     0.00334961     1     59166.6
+SingleTop-powheg/storage/jbod/bmaier/13tev/2t/eval/ST_t-channel_top_4f_leptonDecays_13TeV-powheg-pythia8_TuneCUETP8M1.root         10144      45.3     0.00329351     1       67991
+SingleTop-powheg/storage/jbod/bmaier/13tev/2t/eval/ST_tW_antitop_5f_inclusiveDecays_13TeV-powheg-pythia8_TuneCUETP8M1.root          4110      35.9     0.00418865     1     27332.1
+SingleTop-powheg/storage/jbod/bmaier/13tev/2t/eval/ST_tW_top_5f_inclusiveDecays_13TeV-powheg-pythia8_TuneCUETP8M1.root              4135      35.9     0.00415053     1     27750.9
+TTH-powheg     /storage/jbod/bmaier/13tev/2t/eval/ttHTobb_M125_13TeV_powheg_pythia8.root                                         200782    0.2934      0.0511357     1 1.33826e+07
+Wjets          /storage/jbod/bmaier/13tev/2t/eval/WJetsToLNu_TuneCUETP8M1_13TeV-madgraphMLM-pythia8.root                            192   61526.7    2.67548e-06     1     1166.37
+Diboson        /storage/jbod/bmaier/13tev/2t/eval/WW_TuneCUETP8M1_13TeV-pythia8.root                                                 22     118.7    2.22961e-05     1     8312.72
+Diboson        /storage/jbod/bmaier/13tev/2t/eval/WZ_TuneCUETP8M1_13TeV-pythia8.root                                                 78      44.9    8.12876e-05     1       21371
+Diboson        /storage/jbod/bmaier/13tev/2t/eval/ZZ_TuneCUETP8M1_13TeV-pythia8.root                                                 89      15.4    8.89731e-05     1     64954.7
+==================================================================================================================================================================================
+
+HERE3
+./tH_2t_22.root opened.
+tH_2t__tHq__Q2scale_tHqUp: 9.91594
+tH_2t__tHW__Q2scale_tHqUp: 6.36586
+tH_2t__TTbb__Q2scale_tHqUp: 324.58
+tH_2t__TT2b__Q2scale_tHqUp: 192.196
+tH_2t__TT1b__Q2scale_tHqUp: 444.227
+tH_2t__TTcc__Q2scale_tHqUp: 1540.92
+tH_2t__TTlf__Q2scale_tHqUp: 7360.03
+tH_2t__s_Top__Q2scale_tHqUp: 500.752
+tH_2t__ttH__Q2scale_tHqUp: 13.288
+tH_2t__Wj__Q2scale_tHqUp: 150.105
+tH_2t__VV__Q2scale_tHqUp: 7.23804
+./tH_2t_22.root written.
+#### 1 ####
+#### 2 ####
+Datacard tH_2t_22.txt is being appended... done.
+CommandLine INFO: include configuration file: ../../samples/13tev/THQ125-madgraph.config
+CommandLine INFO: include configuration file: ../../samples/13tev/THW125-madgraph.config
+CommandLine INFO: include configuration file: ./Lumi.config
+CommandLine INFO: include configuration file: ./Processes.config
+CommandLine INFO: include configuration file: ./Binning.config
+CommandLine INFO: include configuration file: ./Data.config
+CommandLine INFO: include configuration file: ../../samples/13tev/Data.config
+CommandLine INFO: include configuration file: ./Selection_2t.config
+CommandLine INFO: include configuration file: ../../samples/13tev/TTbar-powheg_bb.config
+CommandLine INFO: include configuration file: ../../samples/13tev/TTbar-powheg_2b.config
+CommandLine INFO: include configuration file: ../../samples/13tev/TTbar-powheg_b.config
+CommandLine INFO: include configuration file: ../../samples/13tev/TTbar-powheg_cc.config
+CommandLine INFO: include configuration file: ../../samples/13tev/TTbar-powheg_lf.config
+CommandLine INFO: include configuration file: ../../samples/13tev/ST-powheg_DC.config
+CommandLine INFO: include configuration file: ../../samples/13tev/TTH-powheg.config
+CommandLine INFO: include configuration file: ../../samples/13tev/Electroweak_DC.config
+------------------------------------------------------------
+th_makedatacards_x options:
+------------------------------------------------------------
+data                    =               SingleMuon_json.root
+                                    SingleMuon_json_ext.root
+                                         SingleEle_json.root
+                                     SingleEle_json_ext.root
+mcs                     =THQ125-madgraph:THQ_Hincl_13TeV-madgraph-pythia8_TuneCUETP8M1.root
+THW125-madgraph:THW_Hincl_13TeV-madgraph-pythia8_TuneCUETP8M1.root
+   TTbar-powheg_bb:TT_TuneCUETP8M1_13TeV-powheg-pythia8.root
+   TTbar-powheg_2b:TT_TuneCUETP8M1_13TeV-powheg-pythia8.root
+    TTbar-powheg_b:TT_TuneCUETP8M1_13TeV-powheg-pythia8.root
+   TTbar-powheg_cc:TT_TuneCUETP8M1_13TeV-powheg-pythia8.root
+   TTbar-powheg_lf:TT_TuneCUETP8M1_13TeV-powheg-pythia8.root
+SingleTop-powheg:ST_t-channel_antitop_4f_leptonDecays_13TeV-powheg-pythia8_TuneCUETP8M1.root
+SingleTop-powheg:ST_t-channel_top_4f_leptonDecays_13TeV-powheg-pythia8_TuneCUETP8M1.root
+SingleTop-powheg:ST_tW_antitop_5f_inclusiveDecays_13TeV-powheg-pythia8_TuneCUETP8M1.root
+SingleTop-powheg:ST_tW_top_5f_inclusiveDecays_13TeV-powheg-pythia8_TuneCUETP8M1.root
+           TTH-powheg:ttHTobb_M125_13TeV_powheg_pythia8.root
+Wjets:WJetsToLNu_TuneCUETP8M1_13TeV-madgraphMLM-pythia8.root
+                  Diboson:WW_TuneCUETP8M1_13TeV-pythia8.root
+                  Diboson:WZ_TuneCUETP8M1_13TeV-pythia8.root
+                  Diboson:ZZ_TuneCUETP8M1_13TeV-pythia8.root
+lumi                    =                              2198.
+datapath                = /storage/jbod/bmaier/13tev/data_2t
+mcpath                  = /storage/jbod/bmaier/13tev/2t/eval
+dirname                 =                                utm
+filesuffix              =                              .root
+treename                =                                  t
+cuts                    =(((nmu==1 && nel==0)*((Alt$(mupt[0],0))>26)*(met>35)*((Alt$(abs(mueta[0]),0))>0 && (Alt$(abs(mueta[0]),0))<2.1)) || ((nel==1 && nmu ==0)*((Alt$(elpt[0],0))>30)*(met>45)*((Alt$(abs(eleta[0]),0))>0 && (Alt$(abs(eleta[0]),0))<2.1)))
+mccuts                  =                                   
+mcweights               =                          Weight_PU
+                                                  Weight_CSV
+                     TTbar-powheg_lf:((genevt_ttxid%100)==0)
+                     TTbar-powheg_b:((genevt_ttxid%100)==51)
+                    TTbar-powheg_2b:((genevt_ttxid%100)==52)
+TTbar-powheg_bb:((genevt_ttxid%100)==53||(genevt_ttxid%100)==54||(genevt_ttxid%100)==55)
+TTbar-powheg_cc:((genevt_ttxid%100)==41||(genevt_ttxid%100)==42||(genevt_ttxid%100)==43||(genevt_ttxid%100)==44||(genevt_ttxid%100)==45)
+             THQ125-madgraph:weights_syst[8]/weights_syst[0]
+           THQ125-madgraph:weights_syst[467]/weights_syst[0]
+           THW125-madgraph:weights_syst[467]/weights_syst[0]
+                                THQ125-madgraph:1.0275157887
+                                 THW125-madgraph:1.006125405
+                                 THQ125-madgraph:0.767312488
+                                 THW125-madgraph:0.767312488
+                                      TTH-powheg:0.767312488
+varname                 =                                   
+varexpr                 =                         bdtout[22]
+nbinsx                  =                                 12
+binsx                   =                                   
+xmin                    =                               -0.8
+xmax                    =                                0.8
+overflow                =                               true
+underflow               =                               true
+batch                   =                               true
+formats                 =                                   
+prefix                  =                                   
+suffix                  =                                   
+datalabel               =                               data
+mclabels                =THQ125-madgraph:tHq #scale[0.8]{(^{}#it{C}_{t}=-1)}
+         THW125-madgraph:tHW #scale[0.8]{(^{}#it{C}_{t}=-1)}
+                                 TTbar-powheg_bb:t#bar{t}+bb
+                                 TTbar-powheg_2b:t#bar{t}+2b
+                                   TTbar-powheg_b:t#bar{t}+b
+                                 TTbar-powheg_cc:t#bar{t}+cc
+                                 TTbar-powheg_lf:t#bar{t}+lf
+                           SingleTop-powheg:t/#bar{t} powheg
+                                        TTH-powheg:t#bar{t}H
+                                                Wjets:W+jets
+                                                  Diboson:VV
+mccolors                =                THQ125-madgraph:633
+                                         THW125-madgraph:632
+                                         TTbar-powheg_bb:805
+                                         TTbar-powheg_2b:634
+                                          TTbar-powheg_b:803
+                                         TTbar-powheg_cc:800
+                                         TTbar-powheg_lf:797
+                                        SingleTop-powheg:817
+                                              TTH-powheg:616
+                                                   Wjets:417
+                                                 Diboson:418
+labels                  =                                   
+datacard                =                       tH_2t_22.txt
+opath                   =                                  .
+rootfile                =                      tH_2t_22.root
+channel                 =                              tH_2t
+processes               =                     TTH-powheg:ttH
+                                                    Wjets:Wj
+                                                  Diboson:VV
+                                      SingleTop-powheg:s_Top
+                                        TTbar-powheg_bb:TTbb
+                                        TTbar-powheg_2b:TT2b
+                                         TTbar-powheg_b:TT1b
+                                        TTbar-powheg_cc:TTcc
+                                        TTbar-powheg_lf:TTlf
+                                         THW125-madgraph:tHW
+                                         THQ125-madgraph:tHq
+systematic              =                        Q2scale_tHq
+direction               =                               Down
+howmanysigs             =                                  2
+blind                   =                              false
+theta                   =                              false
+histo                   =                                   
+hpath                   =                                   
+ddscalefactor           =                                  1
+------------------------------------------------------------
+HERE
+HERE2
+
+===================================================================================================
+FILENAME                                                            EVENTS      SELECTION  PRESCALE
+===================================================================================================
+/storage/jbod/bmaier/13tev/data_2t/SingleMuon_json.root               3050              1         1
+/storage/jbod/bmaier/13tev/data_2t/SingleMuon_json_ext.root           8260              1         1
+/storage/jbod/bmaier/13tev/data_2t/SingleEle_json.root                2183              1         1
+/storage/jbod/bmaier/13tev/data_2t/SingleEle_json_ext.root            5676              1         1
+===================================================================================================
+utm t /storage/jbod/bmaier/13tev/2t/eval .root
+
+==================================================================================================================================================================================
+MC SAMPLE      FILENAME                                                                                                          EVENTS  XSEC[PB]            EFF  KFAC     INTLUMI
+==================================================================================================================================================================================
+THQ125-madgraph/storage/jbod/bmaier/13tev/2t/eval/THQ_Hincl_13TeV-madgraph-pythia8_TuneCUETP8M1.root                             148684    0.2583      0.0429439     1 1.34041e+07
+THW125-madgraph/storage/jbod/bmaier/13tev/2t/eval/THW_Hincl_13TeV-madgraph-pythia8_TuneCUETP8M1.root                              51623    0.1472      0.0354898     1  9.8817e+06
+TTbar-powheg_bb/storage/jbod/bmaier/13tev/2t/eval/TT_TuneCUETP8M1_13TeV-powheg-pythia8.root                                     1467688    831.76      0.0126448     1      139548
+TTbar-powheg_2b/storage/jbod/bmaier/13tev/2t/eval/TT_TuneCUETP8M1_13TeV-powheg-pythia8.root                                     1467688    831.76      0.0126448     1      139548
+TTbar-powheg_b /storage/jbod/bmaier/13tev/2t/eval/TT_TuneCUETP8M1_13TeV-powheg-pythia8.root                                     1467688    831.76      0.0126448     1      139548
+TTbar-powheg_cc/storage/jbod/bmaier/13tev/2t/eval/TT_TuneCUETP8M1_13TeV-powheg-pythia8.root                                     1467688    831.76      0.0126448     1      139548
+TTbar-powheg_lf/storage/jbod/bmaier/13tev/2t/eval/TT_TuneCUETP8M1_13TeV-powheg-pythia8.root                                     1467688    831.76      0.0126448     1      139548
+SingleTop-powheg/storage/jbod/bmaier/13tev/2t/eval/ST_t-channel_antitop_4f_leptonDecays_13TeV-powheg-pythia8_TuneCUETP8M1.root      5351        27     0.00334961     1     59166.6
+SingleTop-powheg/storage/jbod/bmaier/13tev/2t/eval/ST_t-channel_top_4f_leptonDecays_13TeV-powheg-pythia8_TuneCUETP8M1.root         10144      45.3     0.00329351     1       67991
+SingleTop-powheg/storage/jbod/bmaier/13tev/2t/eval/ST_tW_antitop_5f_inclusiveDecays_13TeV-powheg-pythia8_TuneCUETP8M1.root          4110      35.9     0.00418865     1     27332.1
+SingleTop-powheg/storage/jbod/bmaier/13tev/2t/eval/ST_tW_top_5f_inclusiveDecays_13TeV-powheg-pythia8_TuneCUETP8M1.root              4135      35.9     0.00415053     1     27750.9
+TTH-powheg     /storage/jbod/bmaier/13tev/2t/eval/ttHTobb_M125_13TeV_powheg_pythia8.root                                         200782    0.2934      0.0511357     1 1.33826e+07
+Wjets          /storage/jbod/bmaier/13tev/2t/eval/WJetsToLNu_TuneCUETP8M1_13TeV-madgraphMLM-pythia8.root                            192   61526.7    2.67548e-06     1     1166.37
+Diboson        /storage/jbod/bmaier/13tev/2t/eval/WW_TuneCUETP8M1_13TeV-pythia8.root                                                 22     118.7    2.22961e-05     1     8312.72
+Diboson        /storage/jbod/bmaier/13tev/2t/eval/WZ_TuneCUETP8M1_13TeV-pythia8.root                                                 78      44.9    8.12876e-05     1       21371
+Diboson        /storage/jbod/bmaier/13tev/2t/eval/ZZ_TuneCUETP8M1_13TeV-pythia8.root                                                 89      15.4    8.89731e-05     1     64954.7
+==================================================================================================================================================================================
+
+HERE3
+./tH_2t_22.root opened.
+tH_2t__tHq__Q2scale_tHqDown: 14.8889
+tH_2t__tHW__Q2scale_tHqDown: 6.36586
+tH_2t__TTbb__Q2scale_tHqDown: 324.58
+tH_2t__TT2b__Q2scale_tHqDown: 192.196
+tH_2t__TT1b__Q2scale_tHqDown: 444.227
+tH_2t__TTcc__Q2scale_tHqDown: 1540.92
+tH_2t__TTlf__Q2scale_tHqDown: 7360.03
+tH_2t__s_Top__Q2scale_tHqDown: 500.752
+tH_2t__ttH__Q2scale_tHqDown: 13.288
+tH_2t__Wj__Q2scale_tHqDown: 150.105
+tH_2t__VV__Q2scale_tHqDown: 7.23804
+./tH_2t_22.root written.
+#### 1 ####
+Datacard tH_2t_22.txt and entry already existing
+CommandLine INFO: include configuration file: ../../samples/13tev/THQ125-madgraph.config
+CommandLine INFO: include configuration file: ../../samples/13tev/THW125-madgraph.config
+CommandLine INFO: include configuration file: ./Lumi.config
+CommandLine INFO: include configuration file: ./Processes.config
+CommandLine INFO: include configuration file: ./Binning.config
+CommandLine INFO: include configuration file: ./Data.config
+CommandLine INFO: include configuration file: ../../samples/13tev/Data.config
+CommandLine INFO: include configuration file: ./Selection_2t.config
+CommandLine INFO: include configuration file: ../../samples/13tev/TTbar-powheg_bb.config
+CommandLine INFO: include configuration file: ../../samples/13tev/TTbar-powheg_2b.config
+CommandLine INFO: include configuration file: ../../samples/13tev/TTbar-powheg_b.config
+CommandLine INFO: include configuration file: ../../samples/13tev/TTbar-powheg_cc.config
+CommandLine INFO: include configuration file: ../../samples/13tev/TTbar-powheg_lf.config
+CommandLine INFO: include configuration file: ../../samples/13tev/ST-powheg_DC.config
+CommandLine INFO: include configuration file: ../../samples/13tev/TTH-powheg.config
+CommandLine INFO: include configuration file: ../../samples/13tev/Electroweak_DC.config
+------------------------------------------------------------
+th_makedatacards_x options:
+------------------------------------------------------------
+data                    =               SingleMuon_json.root
+                                    SingleMuon_json_ext.root
+                                         SingleEle_json.root
+                                     SingleEle_json_ext.root
+mcs                     =THQ125-madgraph:THQ_Hincl_13TeV-madgraph-pythia8_TuneCUETP8M1.root
+THW125-madgraph:THW_Hincl_13TeV-madgraph-pythia8_TuneCUETP8M1.root
+   TTbar-powheg_bb:TT_TuneCUETP8M1_13TeV-powheg-pythia8.root
+   TTbar-powheg_2b:TT_TuneCUETP8M1_13TeV-powheg-pythia8.root
+    TTbar-powheg_b:TT_TuneCUETP8M1_13TeV-powheg-pythia8.root
+   TTbar-powheg_cc:TT_TuneCUETP8M1_13TeV-powheg-pythia8.root
+   TTbar-powheg_lf:TT_TuneCUETP8M1_13TeV-powheg-pythia8.root
+SingleTop-powheg:ST_t-channel_antitop_4f_leptonDecays_13TeV-powheg-pythia8_TuneCUETP8M1.root
+SingleTop-powheg:ST_t-channel_top_4f_leptonDecays_13TeV-powheg-pythia8_TuneCUETP8M1.root
+SingleTop-powheg:ST_tW_antitop_5f_inclusiveDecays_13TeV-powheg-pythia8_TuneCUETP8M1.root
+SingleTop-powheg:ST_tW_top_5f_inclusiveDecays_13TeV-powheg-pythia8_TuneCUETP8M1.root
+           TTH-powheg:ttHTobb_M125_13TeV_powheg_pythia8.root
+Wjets:WJetsToLNu_TuneCUETP8M1_13TeV-madgraphMLM-pythia8.root
+                  Diboson:WW_TuneCUETP8M1_13TeV-pythia8.root
+                  Diboson:WZ_TuneCUETP8M1_13TeV-pythia8.root
+                  Diboson:ZZ_TuneCUETP8M1_13TeV-pythia8.root
+lumi                    =                              2198.
+datapath                = /storage/jbod/bmaier/13tev/data_2t
+mcpath                  = /storage/jbod/bmaier/13tev/2t/eval
+dirname                 =                                utm
+filesuffix              =                              .root
+treename                =                                  t
+cuts                    =(((nmu==1 && nel==0)*((Alt$(mupt[0],0))>26)*(met>35)*((Alt$(abs(mueta[0]),0))>0 && (Alt$(abs(mueta[0]),0))<2.1)) || ((nel==1 && nmu ==0)*((Alt$(elpt[0],0))>30)*(met>45)*((Alt$(abs(eleta[0]),0))>0 && (Alt$(abs(eleta[0]),0))<2.1)))
+mccuts                  =                                   
+mcweights               =                          Weight_PU
+                                                  Weight_CSV
+                     TTbar-powheg_lf:((genevt_ttxid%100)==0)
+                     TTbar-powheg_b:((genevt_ttxid%100)==51)
+                    TTbar-powheg_2b:((genevt_ttxid%100)==52)
+TTbar-powheg_bb:((genevt_ttxid%100)==53||(genevt_ttxid%100)==54||(genevt_ttxid%100)==55)
+TTbar-powheg_cc:((genevt_ttxid%100)==41||(genevt_ttxid%100)==42||(genevt_ttxid%100)==43||(genevt_ttxid%100)==44||(genevt_ttxid%100)==45)
+             THW125-madgraph:weights_syst[4]/weights_syst[0]
+           THQ125-madgraph:weights_syst[467]/weights_syst[0]
+           THW125-madgraph:weights_syst[467]/weights_syst[0]
+                                THQ125-madgraph:1.0275157887
+                                 THW125-madgraph:1.006125405
+                                 THQ125-madgraph:0.767312488
+                                 THW125-madgraph:0.767312488
+                                      TTH-powheg:0.767312488
+varname                 =                                   
+varexpr                 =                         bdtout[22]
+nbinsx                  =                                 12
+binsx                   =                                   
+xmin                    =                               -0.8
+xmax                    =                                0.8
+overflow                =                               true
+underflow               =                               true
+batch                   =                               true
+formats                 =                                   
+prefix                  =                                   
+suffix                  =                                   
+datalabel               =                               data
+mclabels                =THQ125-madgraph:tHq #scale[0.8]{(^{}#it{C}_{t}=-1)}
+         THW125-madgraph:tHW #scale[0.8]{(^{}#it{C}_{t}=-1)}
+                                 TTbar-powheg_bb:t#bar{t}+bb
+                                 TTbar-powheg_2b:t#bar{t}+2b
+                                   TTbar-powheg_b:t#bar{t}+b
+                                 TTbar-powheg_cc:t#bar{t}+cc
+                                 TTbar-powheg_lf:t#bar{t}+lf
+                           SingleTop-powheg:t/#bar{t} powheg
+                                        TTH-powheg:t#bar{t}H
+                                                Wjets:W+jets
+                                                  Diboson:VV
+mccolors                =                THQ125-madgraph:633
+                                         THW125-madgraph:632
+                                         TTbar-powheg_bb:805
+                                         TTbar-powheg_2b:634
+                                          TTbar-powheg_b:803
+                                         TTbar-powheg_cc:800
+                                         TTbar-powheg_lf:797
+                                        SingleTop-powheg:817
+                                              TTH-powheg:616
+                                                   Wjets:417
+                                                 Diboson:418
+labels                  =                                   
+datacard                =                       tH_2t_22.txt
+opath                   =                                  .
+rootfile                =                      tH_2t_22.root
+channel                 =                              tH_2t
+processes               =                     TTH-powheg:ttH
+                                                    Wjets:Wj
+                                                  Diboson:VV
+                                      SingleTop-powheg:s_Top
+                                        TTbar-powheg_bb:TTbb
+                                        TTbar-powheg_2b:TT2b
+                                         TTbar-powheg_b:TT1b
+                                        TTbar-powheg_cc:TTcc
+                                        TTbar-powheg_lf:TTlf
+                                         THW125-madgraph:tHW
+                                         THQ125-madgraph:tHq
+systematic              =                        Q2scale_tHW
+direction               =                                 Up
+howmanysigs             =                                  2
+blind                   =                              false
+theta                   =                              false
+histo                   =                                   
+hpath                   =                                   
+ddscalefactor           =                                  1
+------------------------------------------------------------
+HERE
+HERE2
+
+===================================================================================================
+FILENAME                                                            EVENTS      SELECTION  PRESCALE
+===================================================================================================
+/storage/jbod/bmaier/13tev/data_2t/SingleMuon_json.root               3050              1         1
+/storage/jbod/bmaier/13tev/data_2t/SingleMuon_json_ext.root           8260              1         1
+/storage/jbod/bmaier/13tev/data_2t/SingleEle_json.root                2183              1         1
+/storage/jbod/bmaier/13tev/data_2t/SingleEle_json_ext.root            5676              1         1
+===================================================================================================
+utm t /storage/jbod/bmaier/13tev/2t/eval .root
+
+==================================================================================================================================================================================
+MC SAMPLE      FILENAME                                                                                                          EVENTS  XSEC[PB]            EFF  KFAC     INTLUMI
+==================================================================================================================================================================================
+THQ125-madgraph/storage/jbod/bmaier/13tev/2t/eval/THQ_Hincl_13TeV-madgraph-pythia8_TuneCUETP8M1.root                             148684    0.2583      0.0429439     1 1.34041e+07
+THW125-madgraph/storage/jbod/bmaier/13tev/2t/eval/THW_Hincl_13TeV-madgraph-pythia8_TuneCUETP8M1.root                              51623    0.1472      0.0354898     1  9.8817e+06
+TTbar-powheg_bb/storage/jbod/bmaier/13tev/2t/eval/TT_TuneCUETP8M1_13TeV-powheg-pythia8.root                                     1467688    831.76      0.0126448     1      139548
+TTbar-powheg_2b/storage/jbod/bmaier/13tev/2t/eval/TT_TuneCUETP8M1_13TeV-powheg-pythia8.root                                     1467688    831.76      0.0126448     1      139548
+TTbar-powheg_b /storage/jbod/bmaier/13tev/2t/eval/TT_TuneCUETP8M1_13TeV-powheg-pythia8.root                                     1467688    831.76      0.0126448     1      139548
+TTbar-powheg_cc/storage/jbod/bmaier/13tev/2t/eval/TT_TuneCUETP8M1_13TeV-powheg-pythia8.root                                     1467688    831.76      0.0126448     1      139548
+TTbar-powheg_lf/storage/jbod/bmaier/13tev/2t/eval/TT_TuneCUETP8M1_13TeV-powheg-pythia8.root                                     1467688    831.76      0.0126448     1      139548
+SingleTop-powheg/storage/jbod/bmaier/13tev/2t/eval/ST_t-channel_antitop_4f_leptonDecays_13TeV-powheg-pythia8_TuneCUETP8M1.root      5351        27     0.00334961     1     59166.6
+SingleTop-powheg/storage/jbod/bmaier/13tev/2t/eval/ST_t-channel_top_4f_leptonDecays_13TeV-powheg-pythia8_TuneCUETP8M1.root         10144      45.3     0.00329351     1       67991
+SingleTop-powheg/storage/jbod/bmaier/13tev/2t/eval/ST_tW_antitop_5f_inclusiveDecays_13TeV-powheg-pythia8_TuneCUETP8M1.root          4110      35.9     0.00418865     1     27332.1
+SingleTop-powheg/storage/jbod/bmaier/13tev/2t/eval/ST_tW_top_5f_inclusiveDecays_13TeV-powheg-pythia8_TuneCUETP8M1.root              4135      35.9     0.00415053     1     27750.9
+TTH-powheg     /storage/jbod/bmaier/13tev/2t/eval/ttHTobb_M125_13TeV_powheg_pythia8.root                                         200782    0.2934      0.0511357     1 1.33826e+07
+Wjets          /storage/jbod/bmaier/13tev/2t/eval/WJetsToLNu_TuneCUETP8M1_13TeV-madgraphMLM-pythia8.root                            192   61526.7    2.67548e-06     1     1166.37
+Diboson        /storage/jbod/bmaier/13tev/2t/eval/WW_TuneCUETP8M1_13TeV-pythia8.root                                                 22     118.7    2.22961e-05     1     8312.72
+Diboson        /storage/jbod/bmaier/13tev/2t/eval/WZ_TuneCUETP8M1_13TeV-pythia8.root                                                 78      44.9    8.12876e-05     1       21371
+Diboson        /storage/jbod/bmaier/13tev/2t/eval/ZZ_TuneCUETP8M1_13TeV-pythia8.root                                                 89      15.4    8.89731e-05     1     64954.7
+==================================================================================================================================================================================
+
+HERE3
+./tH_2t_22.root opened.
+tH_2t__tHq__Q2scale_tHWUp: 12.0419
+tH_2t__tHW__Q2scale_tHWUp: 5.87627
+tH_2t__TTbb__Q2scale_tHWUp: 324.58
+tH_2t__TT2b__Q2scale_tHWUp: 192.196
+tH_2t__TT1b__Q2scale_tHWUp: 444.227
+tH_2t__TTcc__Q2scale_tHWUp: 1540.92
+tH_2t__TTlf__Q2scale_tHWUp: 7360.03
+tH_2t__s_Top__Q2scale_tHWUp: 500.752
+tH_2t__ttH__Q2scale_tHWUp: 13.288
+tH_2t__Wj__Q2scale_tHWUp: 150.105
+tH_2t__VV__Q2scale_tHWUp: 7.23804
+./tH_2t_22.root written.
+#### 1 ####
+#### 2 ####
+Datacard tH_2t_22.txt is being appended... done.
+CommandLine INFO: include configuration file: ../../samples/13tev/THQ125-madgraph.config
+CommandLine INFO: include configuration file: ../../samples/13tev/THW125-madgraph.config
+CommandLine INFO: include configuration file: ./Lumi.config
+CommandLine INFO: include configuration file: ./Processes.config
+CommandLine INFO: include configuration file: ./Binning.config
+CommandLine INFO: include configuration file: ./Data.config
+CommandLine INFO: include configuration file: ../../samples/13tev/Data.config
+CommandLine INFO: include configuration file: ./Selection_2t.config
+CommandLine INFO: include configuration file: ../../samples/13tev/TTbar-powheg_bb.config
+CommandLine INFO: include configuration file: ../../samples/13tev/TTbar-powheg_2b.config
+CommandLine INFO: include configuration file: ../../samples/13tev/TTbar-powheg_b.config
+CommandLine INFO: include configuration file: ../../samples/13tev/TTbar-powheg_cc.config
+CommandLine INFO: include configuration file: ../../samples/13tev/TTbar-powheg_lf.config
+CommandLine INFO: include configuration file: ../../samples/13tev/ST-powheg_DC.config
+CommandLine INFO: include configuration file: ../../samples/13tev/TTH-powheg.config
+CommandLine INFO: include configuration file: ../../samples/13tev/Electroweak_DC.config
+------------------------------------------------------------
+th_makedatacards_x options:
+------------------------------------------------------------
+data                    =               SingleMuon_json.root
+                                    SingleMuon_json_ext.root
+                                         SingleEle_json.root
+                                     SingleEle_json_ext.root
+mcs                     =THQ125-madgraph:THQ_Hincl_13TeV-madgraph-pythia8_TuneCUETP8M1.root
+THW125-madgraph:THW_Hincl_13TeV-madgraph-pythia8_TuneCUETP8M1.root
+   TTbar-powheg_bb:TT_TuneCUETP8M1_13TeV-powheg-pythia8.root
+   TTbar-powheg_2b:TT_TuneCUETP8M1_13TeV-powheg-pythia8.root
+    TTbar-powheg_b:TT_TuneCUETP8M1_13TeV-powheg-pythia8.root
+   TTbar-powheg_cc:TT_TuneCUETP8M1_13TeV-powheg-pythia8.root
+   TTbar-powheg_lf:TT_TuneCUETP8M1_13TeV-powheg-pythia8.root
+SingleTop-powheg:ST_t-channel_antitop_4f_leptonDecays_13TeV-powheg-pythia8_TuneCUETP8M1.root
+SingleTop-powheg:ST_t-channel_top_4f_leptonDecays_13TeV-powheg-pythia8_TuneCUETP8M1.root
+SingleTop-powheg:ST_tW_antitop_5f_inclusiveDecays_13TeV-powheg-pythia8_TuneCUETP8M1.root
+SingleTop-powheg:ST_tW_top_5f_inclusiveDecays_13TeV-powheg-pythia8_TuneCUETP8M1.root
+           TTH-powheg:ttHTobb_M125_13TeV_powheg_pythia8.root
+Wjets:WJetsToLNu_TuneCUETP8M1_13TeV-madgraphMLM-pythia8.root
+                  Diboson:WW_TuneCUETP8M1_13TeV-pythia8.root
+                  Diboson:WZ_TuneCUETP8M1_13TeV-pythia8.root
+                  Diboson:ZZ_TuneCUETP8M1_13TeV-pythia8.root
+lumi                    =                              2198.
+datapath                = /storage/jbod/bmaier/13tev/data_2t
+mcpath                  = /storage/jbod/bmaier/13tev/2t/eval
+dirname                 =                                utm
+filesuffix              =                              .root
+treename                =                                  t
+cuts                    =(((nmu==1 && nel==0)*((Alt$(mupt[0],0))>26)*(met>35)*((Alt$(abs(mueta[0]),0))>0 && (Alt$(abs(mueta[0]),0))<2.1)) || ((nel==1 && nmu ==0)*((Alt$(elpt[0],0))>30)*(met>45)*((Alt$(abs(eleta[0]),0))>0 && (Alt$(abs(eleta[0]),0))<2.1)))
+mccuts                  =                                   
+mcweights               =                          Weight_PU
+                                                  Weight_CSV
+                     TTbar-powheg_lf:((genevt_ttxid%100)==0)
+                     TTbar-powheg_b:((genevt_ttxid%100)==51)
+                    TTbar-powheg_2b:((genevt_ttxid%100)==52)
+TTbar-powheg_bb:((genevt_ttxid%100)==53||(genevt_ttxid%100)==54||(genevt_ttxid%100)==55)
+TTbar-powheg_cc:((genevt_ttxid%100)==41||(genevt_ttxid%100)==42||(genevt_ttxid%100)==43||(genevt_ttxid%100)==44||(genevt_ttxid%100)==45)
+             THW125-madgraph:weights_syst[8]/weights_syst[0]
+           THQ125-madgraph:weights_syst[467]/weights_syst[0]
+           THW125-madgraph:weights_syst[467]/weights_syst[0]
+                                THQ125-madgraph:1.0275157887
+                                 THW125-madgraph:1.006125405
+                                 THQ125-madgraph:0.767312488
+                                 THW125-madgraph:0.767312488
+                                      TTH-powheg:0.767312488
+varname                 =                                   
+varexpr                 =                         bdtout[22]
+nbinsx                  =                                 12
+binsx                   =                                   
+xmin                    =                               -0.8
+xmax                    =                                0.8
+overflow                =                               true
+underflow               =                               true
+batch                   =                               true
+formats                 =                                   
+prefix                  =                                   
+suffix                  =                                   
+datalabel               =                               data
+mclabels                =THQ125-madgraph:tHq #scale[0.8]{(^{}#it{C}_{t}=-1)}
+         THW125-madgraph:tHW #scale[0.8]{(^{}#it{C}_{t}=-1)}
+                                 TTbar-powheg_bb:t#bar{t}+bb
+                                 TTbar-powheg_2b:t#bar{t}+2b
+                                   TTbar-powheg_b:t#bar{t}+b
+                                 TTbar-powheg_cc:t#bar{t}+cc
+                                 TTbar-powheg_lf:t#bar{t}+lf
+                           SingleTop-powheg:t/#bar{t} powheg
+                                        TTH-powheg:t#bar{t}H
+                                                Wjets:W+jets
+                                                  Diboson:VV
+mccolors                =                THQ125-madgraph:633
+                                         THW125-madgraph:632
+                                         TTbar-powheg_bb:805
+                                         TTbar-powheg_2b:634
+                                          TTbar-powheg_b:803
+                                         TTbar-powheg_cc:800
+                                         TTbar-powheg_lf:797
+                                        SingleTop-powheg:817
+                                              TTH-powheg:616
+                                                   Wjets:417
+                                                 Diboson:418
+labels                  =                                   
+datacard                =                       tH_2t_22.txt
+opath                   =                                  .
+rootfile                =                      tH_2t_22.root
+channel                 =                              tH_2t
+processes               =                     TTH-powheg:ttH
+                                                    Wjets:Wj
+                                                  Diboson:VV
+                                      SingleTop-powheg:s_Top
+                                        TTbar-powheg_bb:TTbb
+                                        TTbar-powheg_2b:TT2b
+                                         TTbar-powheg_b:TT1b
+                                        TTbar-powheg_cc:TTcc
+                                        TTbar-powheg_lf:TTlf
+                                         THW125-madgraph:tHW
+                                         THQ125-madgraph:tHq
+systematic              =                        Q2scale_tHW
+direction               =                               Down
+howmanysigs             =                                  2
+blind                   =                              false
+theta                   =                              false
+histo                   =                                   
+hpath                   =                                   
+ddscalefactor           =                                  1
+------------------------------------------------------------
+HERE
+HERE2
+
+===================================================================================================
+FILENAME                                                            EVENTS      SELECTION  PRESCALE
+===================================================================================================
+/storage/jbod/bmaier/13tev/data_2t/SingleMuon_json.root               3050              1         1
+/storage/jbod/bmaier/13tev/data_2t/SingleMuon_json_ext.root           8260              1         1
+/storage/jbod/bmaier/13tev/data_2t/SingleEle_json.root                2183              1         1
+/storage/jbod/bmaier/13tev/data_2t/SingleEle_json_ext.root            5676              1         1
+===================================================================================================
+utm t /storage/jbod/bmaier/13tev/2t/eval .root
+
+==================================================================================================================================================================================
+MC SAMPLE      FILENAME                                                                                                          EVENTS  XSEC[PB]            EFF  KFAC     INTLUMI
+==================================================================================================================================================================================
+THQ125-madgraph/storage/jbod/bmaier/13tev/2t/eval/THQ_Hincl_13TeV-madgraph-pythia8_TuneCUETP8M1.root                             148684    0.2583      0.0429439     1 1.34041e+07
+THW125-madgraph/storage/jbod/bmaier/13tev/2t/eval/THW_Hincl_13TeV-madgraph-pythia8_TuneCUETP8M1.root                              51623    0.1472      0.0354898     1  9.8817e+06
+TTbar-powheg_bb/storage/jbod/bmaier/13tev/2t/eval/TT_TuneCUETP8M1_13TeV-powheg-pythia8.root                                     1467688    831.76      0.0126448     1      139548
+TTbar-powheg_2b/storage/jbod/bmaier/13tev/2t/eval/TT_TuneCUETP8M1_13TeV-powheg-pythia8.root                                     1467688    831.76      0.0126448     1      139548
+TTbar-powheg_b /storage/jbod/bmaier/13tev/2t/eval/TT_TuneCUETP8M1_13TeV-powheg-pythia8.root                                     1467688    831.76      0.0126448     1      139548
+TTbar-powheg_cc/storage/jbod/bmaier/13tev/2t/eval/TT_TuneCUETP8M1_13TeV-powheg-pythia8.root                                     1467688    831.76      0.0126448     1      139548
+TTbar-powheg_lf/storage/jbod/bmaier/13tev/2t/eval/TT_TuneCUETP8M1_13TeV-powheg-pythia8.root                                     1467688    831.76      0.0126448     1      139548
+SingleTop-powheg/storage/jbod/bmaier/13tev/2t/eval/ST_t-channel_antitop_4f_leptonDecays_13TeV-powheg-pythia8_TuneCUETP8M1.root      5351        27     0.00334961     1     59166.6
+SingleTop-powheg/storage/jbod/bmaier/13tev/2t/eval/ST_t-channel_top_4f_leptonDecays_13TeV-powheg-pythia8_TuneCUETP8M1.root         10144      45.3     0.00329351     1       67991
+SingleTop-powheg/storage/jbod/bmaier/13tev/2t/eval/ST_tW_antitop_5f_inclusiveDecays_13TeV-powheg-pythia8_TuneCUETP8M1.root          4110      35.9     0.00418865     1     27332.1
+SingleTop-powheg/storage/jbod/bmaier/13tev/2t/eval/ST_tW_top_5f_inclusiveDecays_13TeV-powheg-pythia8_TuneCUETP8M1.root              4135      35.9     0.00415053     1     27750.9
+TTH-powheg     /storage/jbod/bmaier/13tev/2t/eval/ttHTobb_M125_13TeV_powheg_pythia8.root                                         200782    0.2934      0.0511357     1 1.33826e+07
+Wjets          /storage/jbod/bmaier/13tev/2t/eval/WJetsToLNu_TuneCUETP8M1_13TeV-madgraphMLM-pythia8.root                            192   61526.7    2.67548e-06     1     1166.37
+Diboson        /storage/jbod/bmaier/13tev/2t/eval/WW_TuneCUETP8M1_13TeV-pythia8.root                                                 22     118.7    2.22961e-05     1     8312.72
+Diboson        /storage/jbod/bmaier/13tev/2t/eval/WZ_TuneCUETP8M1_13TeV-pythia8.root                                                 78      44.9    8.12876e-05     1       21371
+Diboson        /storage/jbod/bmaier/13tev/2t/eval/ZZ_TuneCUETP8M1_13TeV-pythia8.root                                                 89      15.4    8.89731e-05     1     64954.7
+==================================================================================================================================================================================
+
+HERE3
+./tH_2t_22.root opened.
+tH_2t__tHq__Q2scale_tHWDown: 12.0419
+tH_2t__tHW__Q2scale_tHWDown: 6.50747
+tH_2t__TTbb__Q2scale_tHWDown: 324.58
+tH_2t__TT2b__Q2scale_tHWDown: 192.196
+tH_2t__TT1b__Q2scale_tHWDown: 444.227
+tH_2t__TTcc__Q2scale_tHWDown: 1540.92
+tH_2t__TTlf__Q2scale_tHWDown: 7360.03
+tH_2t__s_Top__Q2scale_tHWDown: 500.752
+tH_2t__ttH__Q2scale_tHWDown: 13.288
+tH_2t__Wj__Q2scale_tHWDown: 150.105
+tH_2t__VV__Q2scale_tHWDown: 7.23804
+./tH_2t_22.root written.
+#### 1 ####
+Datacard tH_2t_22.txt and entry already existing
+CommandLine INFO: include configuration file: ../../samples/13tev/THQ125-madgraph.config
+CommandLine INFO: include configuration file: ../../samples/13tev/THW125-madgraph.config
+CommandLine INFO: include configuration file: ./Lumi.config
+CommandLine INFO: include configuration file: ./Processes.config
+CommandLine INFO: include configuration file: ./Binning.config
+CommandLine INFO: include configuration file: ./Data.config
+CommandLine INFO: include configuration file: ../../samples/13tev/Data.config
+CommandLine INFO: include configuration file: ./Selection_2t.config
+CommandLine INFO: include configuration file: ../../samples/13tev/TTbar-powheg_bb.config
+CommandLine INFO: include configuration file: ../../samples/13tev/TTbar-powheg_2b.config
+CommandLine INFO: include configuration file: ../../samples/13tev/TTbar-powheg_b.config
+CommandLine INFO: include configuration file: ../../samples/13tev/TTbar-powheg_cc.config
+CommandLine INFO: include configuration file: ../../samples/13tev/TTbar-powheg_lf.config
+CommandLine INFO: include configuration file: ../../samples/13tev/ST-powheg_DC.config
+CommandLine INFO: include configuration file: ../../samples/13tev/TTH-powheg.config
+CommandLine INFO: include configuration file: ../../samples/13tev/Electroweak_DC.config
+------------------------------------------------------------
+th_makedatacards_x options:
+------------------------------------------------------------
+data                    =               SingleMuon_json.root
+                                    SingleMuon_json_ext.root
+                                         SingleEle_json.root
+                                     SingleEle_json_ext.root
+mcs                     =THQ125-madgraph:THQ_Hincl_13TeV-madgraph-pythia8_TuneCUETP8M1.root
+THW125-madgraph:THW_Hincl_13TeV-madgraph-pythia8_TuneCUETP8M1.root
+   TTbar-powheg_bb:TT_TuneCUETP8M1_13TeV-powheg-pythia8.root
+   TTbar-powheg_2b:TT_TuneCUETP8M1_13TeV-powheg-pythia8.root
+    TTbar-powheg_b:TT_TuneCUETP8M1_13TeV-powheg-pythia8.root
+   TTbar-powheg_cc:TT_TuneCUETP8M1_13TeV-powheg-pythia8.root
+   TTbar-powheg_lf:TT_TuneCUETP8M1_13TeV-powheg-pythia8.root
+SingleTop-powheg:ST_t-channel_antitop_4f_leptonDecays_13TeV-powheg-pythia8_TuneCUETP8M1.root
+SingleTop-powheg:ST_t-channel_top_4f_leptonDecays_13TeV-powheg-pythia8_TuneCUETP8M1.root
+SingleTop-powheg:ST_tW_antitop_5f_inclusiveDecays_13TeV-powheg-pythia8_TuneCUETP8M1.root
+SingleTop-powheg:ST_tW_top_5f_inclusiveDecays_13TeV-powheg-pythia8_TuneCUETP8M1.root
+           TTH-powheg:ttHTobb_M125_13TeV_powheg_pythia8.root
+Wjets:WJetsToLNu_TuneCUETP8M1_13TeV-madgraphMLM-pythia8.root
+                  Diboson:WW_TuneCUETP8M1_13TeV-pythia8.root
+                  Diboson:WZ_TuneCUETP8M1_13TeV-pythia8.root
+                  Diboson:ZZ_TuneCUETP8M1_13TeV-pythia8.root
+lumi                    =                              2198.
+datapath                = /storage/jbod/bmaier/13tev/data_2t
+mcpath                  = /storage/jbod/bmaier/13tev/2t/eval
+dirname                 =                                utm
+filesuffix              =                              .root
+treename                =                                  t
+cuts                    =(((nmu==1 && nel==0)*((Alt$(mupt[0],0))>26)*(met>35)*((Alt$(abs(mueta[0]),0))>0 && (Alt$(abs(mueta[0]),0))<2.1)) || ((nel==1 && nmu ==0)*((Alt$(elpt[0],0))>30)*(met>45)*((Alt$(abs(eleta[0]),0))>0 && (Alt$(abs(eleta[0]),0))<2.1)))
+mccuts                  =                                   
+mcweights               =                          Weight_PU
+                                                  Weight_CSV
+                     TTbar-powheg_lf:((genevt_ttxid%100)==0)
+                     TTbar-powheg_b:((genevt_ttxid%100)==51)
+                    TTbar-powheg_2b:((genevt_ttxid%100)==52)
+TTbar-powheg_bb:((genevt_ttxid%100)==53||(genevt_ttxid%100)==54||(genevt_ttxid%100)==55)
+TTbar-powheg_cc:((genevt_ttxid%100)==41||(genevt_ttxid%100)==42||(genevt_ttxid%100)==43||(genevt_ttxid%100)==44||(genevt_ttxid%100)==45)
+             TTbar-powheg_bb:weights_syst[4]/weights_syst[0]
+           THQ125-madgraph:weights_syst[467]/weights_syst[0]
+           THW125-madgraph:weights_syst[467]/weights_syst[0]
+                                THQ125-madgraph:1.0275157887
+                                 THW125-madgraph:1.006125405
+                                 THQ125-madgraph:0.767312488
+                                 THW125-madgraph:0.767312488
+                                      TTH-powheg:0.767312488
+varname                 =                                   
+varexpr                 =                         bdtout[22]
+nbinsx                  =                                 12
+binsx                   =                                   
+xmin                    =                               -0.8
+xmax                    =                                0.8
+overflow                =                               true
+underflow               =                               true
+batch                   =                               true
+formats                 =                                   
+prefix                  =                                   
+suffix                  =                                   
+datalabel               =                               data
+mclabels                =THQ125-madgraph:tHq #scale[0.8]{(^{}#it{C}_{t}=-1)}
+         THW125-madgraph:tHW #scale[0.8]{(^{}#it{C}_{t}=-1)}
+                                 TTbar-powheg_bb:t#bar{t}+bb
+                                 TTbar-powheg_2b:t#bar{t}+2b
+                                   TTbar-powheg_b:t#bar{t}+b
+                                 TTbar-powheg_cc:t#bar{t}+cc
+                                 TTbar-powheg_lf:t#bar{t}+lf
+                           SingleTop-powheg:t/#bar{t} powheg
+                                        TTH-powheg:t#bar{t}H
+                                                Wjets:W+jets
+                                                  Diboson:VV
+mccolors                =                THQ125-madgraph:633
+                                         THW125-madgraph:632
+                                         TTbar-powheg_bb:805
+                                         TTbar-powheg_2b:634
+                                          TTbar-powheg_b:803
+                                         TTbar-powheg_cc:800
+                                         TTbar-powheg_lf:797
+                                        SingleTop-powheg:817
+                                              TTH-powheg:616
+                                                   Wjets:417
+                                                 Diboson:418
+labels                  =                                   
+datacard                =                       tH_2t_22.txt
+opath                   =                                  .
+rootfile                =                      tH_2t_22.root
+channel                 =                              tH_2t
+processes               =                     TTH-powheg:ttH
+                                                    Wjets:Wj
+                                                  Diboson:VV
+                                      SingleTop-powheg:s_Top
+                                        TTbar-powheg_bb:TTbb
+                                        TTbar-powheg_2b:TT2b
+                                         TTbar-powheg_b:TT1b
+                                        TTbar-powheg_cc:TTcc
+                                        TTbar-powheg_lf:TTlf
+                                         THW125-madgraph:tHW
+                                         THQ125-madgraph:tHq
+systematic              =                       Q2scale_ttbb
+direction               =                                 Up
+howmanysigs             =                                  2
+blind                   =                              false
+theta                   =                              false
+histo                   =                                   
+hpath                   =                                   
+ddscalefactor           =                                  1
+------------------------------------------------------------
+HERE
+HERE2
+
+===================================================================================================
+FILENAME                                                            EVENTS      SELECTION  PRESCALE
+===================================================================================================
+/storage/jbod/bmaier/13tev/data_2t/SingleMuon_json.root               3050              1         1
+/storage/jbod/bmaier/13tev/data_2t/SingleMuon_json_ext.root           8260              1         1
+/storage/jbod/bmaier/13tev/data_2t/SingleEle_json.root                2183              1         1
+/storage/jbod/bmaier/13tev/data_2t/SingleEle_json_ext.root            5676              1         1
+===================================================================================================
+utm t /storage/jbod/bmaier/13tev/2t/eval .root
+
+==================================================================================================================================================================================
+MC SAMPLE      FILENAME                                                                                                          EVENTS  XSEC[PB]            EFF  KFAC     INTLUMI
+==================================================================================================================================================================================
+THQ125-madgraph/storage/jbod/bmaier/13tev/2t/eval/THQ_Hincl_13TeV-madgraph-pythia8_TuneCUETP8M1.root                             148684    0.2583      0.0429439     1 1.34041e+07
+THW125-madgraph/storage/jbod/bmaier/13tev/2t/eval/THW_Hincl_13TeV-madgraph-pythia8_TuneCUETP8M1.root                              51623    0.1472      0.0354898     1  9.8817e+06
+TTbar-powheg_bb/storage/jbod/bmaier/13tev/2t/eval/TT_TuneCUETP8M1_13TeV-powheg-pythia8.root                                     1467688    831.76      0.0126448     1      139548
+TTbar-powheg_2b/storage/jbod/bmaier/13tev/2t/eval/TT_TuneCUETP8M1_13TeV-powheg-pythia8.root                                     1467688    831.76      0.0126448     1      139548
+TTbar-powheg_b /storage/jbod/bmaier/13tev/2t/eval/TT_TuneCUETP8M1_13TeV-powheg-pythia8.root                                     1467688    831.76      0.0126448     1      139548
+TTbar-powheg_cc/storage/jbod/bmaier/13tev/2t/eval/TT_TuneCUETP8M1_13TeV-powheg-pythia8.root                                     1467688    831.76      0.0126448     1      139548
+TTbar-powheg_lf/storage/jbod/bmaier/13tev/2t/eval/TT_TuneCUETP8M1_13TeV-powheg-pythia8.root                                     1467688    831.76      0.0126448     1      139548
+SingleTop-powheg/storage/jbod/bmaier/13tev/2t/eval/ST_t-channel_antitop_4f_leptonDecays_13TeV-powheg-pythia8_TuneCUETP8M1.root      5351        27     0.00334961     1     59166.6
+SingleTop-powheg/storage/jbod/bmaier/13tev/2t/eval/ST_t-channel_top_4f_leptonDecays_13TeV-powheg-pythia8_TuneCUETP8M1.root         10144      45.3     0.00329351     1       67991
+SingleTop-powheg/storage/jbod/bmaier/13tev/2t/eval/ST_tW_antitop_5f_inclusiveDecays_13TeV-powheg-pythia8_TuneCUETP8M1.root          4110      35.9     0.00418865     1     27332.1
+SingleTop-powheg/storage/jbod/bmaier/13tev/2t/eval/ST_tW_top_5f_inclusiveDecays_13TeV-powheg-pythia8_TuneCUETP8M1.root              4135      35.9     0.00415053     1     27750.9
+TTH-powheg     /storage/jbod/bmaier/13tev/2t/eval/ttHTobb_M125_13TeV_powheg_pythia8.root                                         200782    0.2934      0.0511357     1 1.33826e+07
+Wjets          /storage/jbod/bmaier/13tev/2t/eval/WJetsToLNu_TuneCUETP8M1_13TeV-madgraphMLM-pythia8.root                            192   61526.7    2.67548e-06     1     1166.37
+Diboson        /storage/jbod/bmaier/13tev/2t/eval/WW_TuneCUETP8M1_13TeV-pythia8.root                                                 22     118.7    2.22961e-05     1     8312.72
+Diboson        /storage/jbod/bmaier/13tev/2t/eval/WZ_TuneCUETP8M1_13TeV-pythia8.root                                                 78      44.9    8.12876e-05     1       21371
+Diboson        /storage/jbod/bmaier/13tev/2t/eval/ZZ_TuneCUETP8M1_13TeV-pythia8.root                                                 89      15.4    8.89731e-05     1     64954.7
+==================================================================================================================================================================================
+
+HERE3
+./tH_2t_22.root opened.
+tH_2t__tHq__Q2scale_ttbbUp: 12.0419
+tH_2t__tHW__Q2scale_ttbbUp: 6.36586
+tH_2t__TTbb__Q2scale_ttbbUp: 271.54
+tH_2t__TT2b__Q2scale_ttbbUp: 192.196
+tH_2t__TT1b__Q2scale_ttbbUp: 444.227
+tH_2t__TTcc__Q2scale_ttbbUp: 1540.92
+tH_2t__TTlf__Q2scale_ttbbUp: 7360.03
+tH_2t__s_Top__Q2scale_ttbbUp: 500.752
+tH_2t__ttH__Q2scale_ttbbUp: 13.288
+tH_2t__Wj__Q2scale_ttbbUp: 150.105
+tH_2t__VV__Q2scale_ttbbUp: 7.23804
+./tH_2t_22.root written.
+#### 1 ####
+#### 2 ####
+Datacard tH_2t_22.txt is being appended... done.
+CommandLine INFO: include configuration file: ../../samples/13tev/THQ125-madgraph.config
+CommandLine INFO: include configuration file: ../../samples/13tev/THW125-madgraph.config
+CommandLine INFO: include configuration file: ./Lumi.config
+CommandLine INFO: include configuration file: ./Processes.config
+CommandLine INFO: include configuration file: ./Binning.config
+CommandLine INFO: include configuration file: ./Data.config
+CommandLine INFO: include configuration file: ../../samples/13tev/Data.config
+CommandLine INFO: include configuration file: ./Selection_2t.config
+CommandLine INFO: include configuration file: ../../samples/13tev/TTbar-powheg_bb.config
+CommandLine INFO: include configuration file: ../../samples/13tev/TTbar-powheg_2b.config
+CommandLine INFO: include configuration file: ../../samples/13tev/TTbar-powheg_b.config
+CommandLine INFO: include configuration file: ../../samples/13tev/TTbar-powheg_cc.config
+CommandLine INFO: include configuration file: ../../samples/13tev/TTbar-powheg_lf.config
+CommandLine INFO: include configuration file: ../../samples/13tev/ST-powheg_DC.config
+CommandLine INFO: include configuration file: ../../samples/13tev/TTH-powheg.config
+CommandLine INFO: include configuration file: ../../samples/13tev/Electroweak_DC.config
+------------------------------------------------------------
+th_makedatacards_x options:
+------------------------------------------------------------
+data                    =               SingleMuon_json.root
+                                    SingleMuon_json_ext.root
+                                         SingleEle_json.root
+                                     SingleEle_json_ext.root
+mcs                     =THQ125-madgraph:THQ_Hincl_13TeV-madgraph-pythia8_TuneCUETP8M1.root
+THW125-madgraph:THW_Hincl_13TeV-madgraph-pythia8_TuneCUETP8M1.root
+   TTbar-powheg_bb:TT_TuneCUETP8M1_13TeV-powheg-pythia8.root
+   TTbar-powheg_2b:TT_TuneCUETP8M1_13TeV-powheg-pythia8.root
+    TTbar-powheg_b:TT_TuneCUETP8M1_13TeV-powheg-pythia8.root
+   TTbar-powheg_cc:TT_TuneCUETP8M1_13TeV-powheg-pythia8.root
+   TTbar-powheg_lf:TT_TuneCUETP8M1_13TeV-powheg-pythia8.root
+SingleTop-powheg:ST_t-channel_antitop_4f_leptonDecays_13TeV-powheg-pythia8_TuneCUETP8M1.root
+SingleTop-powheg:ST_t-channel_top_4f_leptonDecays_13TeV-powheg-pythia8_TuneCUETP8M1.root
+SingleTop-powheg:ST_tW_antitop_5f_inclusiveDecays_13TeV-powheg-pythia8_TuneCUETP8M1.root
+SingleTop-powheg:ST_tW_top_5f_inclusiveDecays_13TeV-powheg-pythia8_TuneCUETP8M1.root
+           TTH-powheg:ttHTobb_M125_13TeV_powheg_pythia8.root
+Wjets:WJetsToLNu_TuneCUETP8M1_13TeV-madgraphMLM-pythia8.root
+                  Diboson:WW_TuneCUETP8M1_13TeV-pythia8.root
+                  Diboson:WZ_TuneCUETP8M1_13TeV-pythia8.root
+                  Diboson:ZZ_TuneCUETP8M1_13TeV-pythia8.root
+lumi                    =                              2198.
+datapath                = /storage/jbod/bmaier/13tev/data_2t
+mcpath                  = /storage/jbod/bmaier/13tev/2t/eval
+dirname                 =                                utm
+filesuffix              =                              .root
+treename                =                                  t
+cuts                    =(((nmu==1 && nel==0)*((Alt$(mupt[0],0))>26)*(met>35)*((Alt$(abs(mueta[0]),0))>0 && (Alt$(abs(mueta[0]),0))<2.1)) || ((nel==1 && nmu ==0)*((Alt$(elpt[0],0))>30)*(met>45)*((Alt$(abs(eleta[0]),0))>0 && (Alt$(abs(eleta[0]),0))<2.1)))
+mccuts                  =                                   
+mcweights               =                          Weight_PU
+                                                  Weight_CSV
+                     TTbar-powheg_lf:((genevt_ttxid%100)==0)
+                     TTbar-powheg_b:((genevt_ttxid%100)==51)
+                    TTbar-powheg_2b:((genevt_ttxid%100)==52)
+TTbar-powheg_bb:((genevt_ttxid%100)==53||(genevt_ttxid%100)==54||(genevt_ttxid%100)==55)
+TTbar-powheg_cc:((genevt_ttxid%100)==41||(genevt_ttxid%100)==42||(genevt_ttxid%100)==43||(genevt_ttxid%100)==44||(genevt_ttxid%100)==45)
+             TTbar-powheg_bb:weights_syst[8]/weights_syst[0]
+           THQ125-madgraph:weights_syst[467]/weights_syst[0]
+           THW125-madgraph:weights_syst[467]/weights_syst[0]
+                                THQ125-madgraph:1.0275157887
+                                 THW125-madgraph:1.006125405
+                                 THQ125-madgraph:0.767312488
+                                 THW125-madgraph:0.767312488
+                                      TTH-powheg:0.767312488
+varname                 =                                   
+varexpr                 =                         bdtout[22]
+nbinsx                  =                                 12
+binsx                   =                                   
+xmin                    =                               -0.8
+xmax                    =                                0.8
+overflow                =                               true
+underflow               =                               true
+batch                   =                               true
+formats                 =                                   
+prefix                  =                                   
+suffix                  =                                   
+datalabel               =                               data
+mclabels                =THQ125-madgraph:tHq #scale[0.8]{(^{}#it{C}_{t}=-1)}
+         THW125-madgraph:tHW #scale[0.8]{(^{}#it{C}_{t}=-1)}
+                                 TTbar-powheg_bb:t#bar{t}+bb
+                                 TTbar-powheg_2b:t#bar{t}+2b
+                                   TTbar-powheg_b:t#bar{t}+b
+                                 TTbar-powheg_cc:t#bar{t}+cc
+                                 TTbar-powheg_lf:t#bar{t}+lf
+                           SingleTop-powheg:t/#bar{t} powheg
+                                        TTH-powheg:t#bar{t}H
+                                                Wjets:W+jets
+                                                  Diboson:VV
+mccolors                =                THQ125-madgraph:633
+                                         THW125-madgraph:632
+                                         TTbar-powheg_bb:805
+                                         TTbar-powheg_2b:634
+                                          TTbar-powheg_b:803
+                                         TTbar-powheg_cc:800
+                                         TTbar-powheg_lf:797
+                                        SingleTop-powheg:817
+                                              TTH-powheg:616
+                                                   Wjets:417
+                                                 Diboson:418
+labels                  =                                   
+datacard                =                       tH_2t_22.txt
+opath                   =                                  .
+rootfile                =                      tH_2t_22.root
+channel                 =                              tH_2t
+processes               =                     TTH-powheg:ttH
+                                                    Wjets:Wj
+                                                  Diboson:VV
+                                      SingleTop-powheg:s_Top
+                                        TTbar-powheg_bb:TTbb
+                                        TTbar-powheg_2b:TT2b
+                                         TTbar-powheg_b:TT1b
+                                        TTbar-powheg_cc:TTcc
+                                        TTbar-powheg_lf:TTlf
+                                         THW125-madgraph:tHW
+                                         THQ125-madgraph:tHq
+systematic              =                       Q2scale_ttbb
+direction               =                               Down
+howmanysigs             =                                  2
+blind                   =                              false
+theta                   =                              false
+histo                   =                                   
+hpath                   =                                   
+ddscalefactor           =                                  1
+------------------------------------------------------------
+HERE
+HERE2
+
+===================================================================================================
+FILENAME                                                            EVENTS      SELECTION  PRESCALE
+===================================================================================================
+/storage/jbod/bmaier/13tev/data_2t/SingleMuon_json.root               3050              1         1
+/storage/jbod/bmaier/13tev/data_2t/SingleMuon_json_ext.root           8260              1         1
+/storage/jbod/bmaier/13tev/data_2t/SingleEle_json.root                2183              1         1
+/storage/jbod/bmaier/13tev/data_2t/SingleEle_json_ext.root            5676              1         1
+===================================================================================================
+utm t /storage/jbod/bmaier/13tev/2t/eval .root
+
+==================================================================================================================================================================================
+MC SAMPLE      FILENAME                                                                                                          EVENTS  XSEC[PB]            EFF  KFAC     INTLUMI
+==================================================================================================================================================================================
+THQ125-madgraph/storage/jbod/bmaier/13tev/2t/eval/THQ_Hincl_13TeV-madgraph-pythia8_TuneCUETP8M1.root                             148684    0.2583      0.0429439     1 1.34041e+07
+THW125-madgraph/storage/jbod/bmaier/13tev/2t/eval/THW_Hincl_13TeV-madgraph-pythia8_TuneCUETP8M1.root                              51623    0.1472      0.0354898     1  9.8817e+06
+TTbar-powheg_bb/storage/jbod/bmaier/13tev/2t/eval/TT_TuneCUETP8M1_13TeV-powheg-pythia8.root                                     1467688    831.76      0.0126448     1      139548
+TTbar-powheg_2b/storage/jbod/bmaier/13tev/2t/eval/TT_TuneCUETP8M1_13TeV-powheg-pythia8.root                                     1467688    831.76      0.0126448     1      139548
+TTbar-powheg_b /storage/jbod/bmaier/13tev/2t/eval/TT_TuneCUETP8M1_13TeV-powheg-pythia8.root                                     1467688    831.76      0.0126448     1      139548
+TTbar-powheg_cc/storage/jbod/bmaier/13tev/2t/eval/TT_TuneCUETP8M1_13TeV-powheg-pythia8.root                                     1467688    831.76      0.0126448     1      139548
+TTbar-powheg_lf/storage/jbod/bmaier/13tev/2t/eval/TT_TuneCUETP8M1_13TeV-powheg-pythia8.root                                     1467688    831.76      0.0126448     1      139548
+SingleTop-powheg/storage/jbod/bmaier/13tev/2t/eval/ST_t-channel_antitop_4f_leptonDecays_13TeV-powheg-pythia8_TuneCUETP8M1.root      5351        27     0.00334961     1     59166.6
+SingleTop-powheg/storage/jbod/bmaier/13tev/2t/eval/ST_t-channel_top_4f_leptonDecays_13TeV-powheg-pythia8_TuneCUETP8M1.root         10144      45.3     0.00329351     1       67991
+SingleTop-powheg/storage/jbod/bmaier/13tev/2t/eval/ST_tW_antitop_5f_inclusiveDecays_13TeV-powheg-pythia8_TuneCUETP8M1.root          4110      35.9     0.00418865     1     27332.1
+SingleTop-powheg/storage/jbod/bmaier/13tev/2t/eval/ST_tW_top_5f_inclusiveDecays_13TeV-powheg-pythia8_TuneCUETP8M1.root              4135      35.9     0.00415053     1     27750.9
+TTH-powheg     /storage/jbod/bmaier/13tev/2t/eval/ttHTobb_M125_13TeV_powheg_pythia8.root                                         200782    0.2934      0.0511357     1 1.33826e+07
+Wjets          /storage/jbod/bmaier/13tev/2t/eval/WJetsToLNu_TuneCUETP8M1_13TeV-madgraphMLM-pythia8.root                            192   61526.7    2.67548e-06     1     1166.37
+Diboson        /storage/jbod/bmaier/13tev/2t/eval/WW_TuneCUETP8M1_13TeV-pythia8.root                                                 22     118.7    2.22961e-05     1     8312.72
+Diboson        /storage/jbod/bmaier/13tev/2t/eval/WZ_TuneCUETP8M1_13TeV-pythia8.root                                                 78      44.9    8.12876e-05     1       21371
+Diboson        /storage/jbod/bmaier/13tev/2t/eval/ZZ_TuneCUETP8M1_13TeV-pythia8.root                                                 89      15.4    8.89731e-05     1     64954.7
+==================================================================================================================================================================================
+
+HERE3
+./tH_2t_22.root opened.
+tH_2t__tHq__Q2scale_ttbbDown: 12.0419
+tH_2t__tHW__Q2scale_ttbbDown: 6.36586
+tH_2t__TTbb__Q2scale_ttbbDown: 

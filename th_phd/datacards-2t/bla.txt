@@ -1,0 +1,27 @@
+imax   1   number of channels
+jmax   8   number of backgrounds
+kmax   *   number of systematics (automatic)
+------------------------------
+shapes * * ./tH_2t_el.root  $CHANNEL__$PROCESS__nominal  $CHANNEL__$PROCESS__$SYSTEMATIC
+------------------------------
+bin                              tH_2t_el    
+observation                      39770             
+------------------------------
+bin                              tH_2t_el    tH_2t_el    tH_2t_el    tH_2t_el    tH_2t_el    tH_2t_el    tH_2t_el    tH_2t_el    tH_2t_el    
+process                          tH                TTbb              TTb               TTcc              TTlf              s_Top             ttH               VV                Wj                
+process                          0                 1                 2                 3                 4                 5                 6                 7                 8                 
+rate                             23.7729           1064.2            946.518           4804.62           24636.9           1475.01           46.3316           34.5462           518.691           
+------------------------------
+pdf_gg                 lnN       -                 -                 -                 -                 -                 -                 -                 -                 -                 
+pdf_qg                 lnN       -                 -                 -                 -                 -                 -                 -                 -                 -                 
+pdf_qqbar              lnN       -                 -                 -                 -                 -                 -                 -                 -                 -                 
+QCDscale_ttbar         lnN       -                 -                 -                 -                 -                 -                 -                 -                 -                 
+QCDscale_ttH           lnN       -                 -                 -                 -                 -                 -                 -                 -                 -                 
+QCDscale_V             lnN       -                 -                 -                 -                 -                 -                 -                 -                 -                 
+QCDscale_VV            lnN       -                 -                 -                 -                 -                 -                 -                 -                 -                 
+lumi_8TeV              lnN       -                 -                 -                 -                 -                 -                 -                 -                 -                 
+CMS_eff_m              lnN       -                 -                 -                 -                 -                 -                 -                 -                 -                 
+CMS_eff_e              lnN       -                 -                 -                 -                 -                 -                 -                 -                 -                 
+CMS_tHq_tt2b           lnN       -                 -                 -                 -                 -                 -                 -                 -                 -                 
+CMS_tHq_tt1b           lnN       -                 -                 -                 -                 -                 -                 -                 -                 -                 
+CMS_tHq_ttc            lnN       -                 -                 -                 -                 -                 -                 -                 -                 -                 
